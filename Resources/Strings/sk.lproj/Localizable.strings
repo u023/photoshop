@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "Používateľ %@ vám poslal videosprávu";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "Používateľ %@ vám poslal fotografiu";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "Používateľ %@ vám odoslal Moji";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "Používateľ %@ vám odoslal hlasovú správu";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "Používateľ %@ vám odoslal súbor";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "Máte nové označenie Páči sa mi to";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "Moje konto";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "Odoslať pripomienky";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "Všetko ako prečítané";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "Pridať ľudí";
+"HELP_NAVBAR_BUTTON" = "Pomocník";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "Máte neprečítané pripomienky.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "Pripomienky pre vývojárov";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "Zobraziť";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "Zrušiť";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "Pridať k obľúbeným";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "Odstrániť z obľúbených";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "Pridajte si ľubovoľný kontakt ako obľúbený pomocou príslušnej ponuky.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "Odhlásiť sa";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "Hovor od používateľa %@";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "Videohovor od používateľa %@";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "Skupinový hovor od používateľa %@";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "Videospráva od používateľa %@.";
+"BACKGROUND_MISSEDCALL_ONE" = "Zmeškaný hovor od používateľa %@.";
+"BACKGROUND_MISSEDCALL_GROUP" = "Zmeškaný skupinový hovor od používateľa %@.";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "Nová žiadosť o kontakt od používateľa %@.";
+"BACKGROUND_VOICEMAIL_ONE" = "Nová hlasová správa od používateľa %@.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "Skontrolujte nastavenie siete a skúste to znova.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "Odpovedať";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "Odmietnuť";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "Pridať do hovoru";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "Zavesiť";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "Ukončiť hovor";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "Videospráva";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "Odoslať videosprávu";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "Zrušiť";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "Hotovo";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "Nastavenia";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "Vytvoriť konto";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "Vytvorenie konta";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "%@ je neplatné telefónne číslo. Skontrolujte ho a skúste to znova.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "Adresár";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "Predvoľba krajiny alebo oblasť";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "Zmení predvoľbu krajiny alebo oblasť.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "Zmeňte predvoľbu krajiny alebo oblasť.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "Hľadať";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Telefónne číslo";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "Zrušiť";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "Otvoriť";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "Vytvoriť udalosť";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "Zobraziť kalendár";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "Kopírovať";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "Pridať do zoznamu Na prečítanie";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "Otvoriť v Safari";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "Upraviť";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "Citovať";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "%1$@ %2$@ používateľ %3$@ napísal:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "Odstrániť";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "Preposlať";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "Preposlať";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "Zdieľať";
+"SHARE_MESSAGE_TITLE" = "Zdieľať";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "Načítava sa";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "Na zrušenie dvakrát ťuknite";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "Spúšťa sa video…";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "Hovor sa presmerováva…";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "Video";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "Klávesnica";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "Obnoviť hovor";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "Technické informácie o hovore";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "Možnosti hovoru";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ chce zdieľať svoje video";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ nie je vo vašich kontaktoch, napriek tomu chce zdieľať svoje video.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Účastníci tohto hovoru môžu používať video";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Chcete prijímať video v rámci tohto hovoru?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Prijať";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Odmietnuť";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "Pridať účastníkov";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "Dvomi ťuknutiami pridáte účastníkov.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "Heslo";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "Prihlásiť sa";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Meno v Skype";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Meno v Skype, e-mail, mobil";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "Vaše kontá";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "Vyberte konto, ktoré chcete používať.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Konto Skype";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Konto Microsoft";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "Prihlásenie";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "Vyberte typ konta, pomocou ktorého sa chcete prihlásiť do Skypu.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Konto Microsoft";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Meno v Skype";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "Prispôsobenie profilu";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "Pridať fotografiu";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "Zmeniť fotografiu";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Prihlásiť sa";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Problémy s prihlásením?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "OK";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "OK, rozumiem";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "Pokračovať";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "Teraz nie";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "Ďalšie informácie";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "Nastavenia";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "Nepripomínať znova";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "Zapnúť oznámenia";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "Vymazať text";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "Odoslať";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "Hovor,";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "Hovor";
+"CHAT_CALL_EVENT_CALL_STARTED" = "Hovor sa začal";
+"CHAT_CALL_EVENT_NO_ANSWER" = "Hovor, žiadna odpoveď";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "Zmeškaný hovor";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "Zmeškané hovory: %d";
+"CHAT_CALL_EVENT_BUSY" = "Hovor, obsadené";
+"CHAT_CALL_EVENT_BLOCKED" = "Blokované";
+"CHAT_CALL_EVENT_FAILED" = "Hovor, nespojené";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "Aká bola kvalita tohto hovoru?";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "Ďakujeme za vašu odozvu.";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "Skutočne slabé";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "Nízka";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "Priemerná";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "Dobrá";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "Vynikajúca";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "Hovor";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "Hovor, %@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "Hovor";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "Hovor, %@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "Hovor, nespojené";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "Zmeškaný hovor";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "Hovor, žiadna odpoveď";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "Hovor, zablokovaný";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "Odoslané";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "Doručené";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "Prečítané";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "Odoslané";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "Doručené";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "Prečítané";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "Používateľ %@ vytvoril novú skupinu.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "Používateľ %@ vytvoril novú skupinu s používateľom %@.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "Používateľ %@ vytvoril novú skupinu s používateľmi %@ a %@.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "Používateľ %@ vytvoril novú skupinu s používateľmi %@, %@ a jedným ďalším používateľom.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "Používateľ %@ vytvoril novú skupinu s používateľmi %@, %@ a %u ďalšími používateľmi.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "<name>%@</name> má dnes narodeniny";
+"CHAT_GRANTED_AUTH" = "Začali ste zdieľať svoje kontaktné údaje";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "Používateľ %@ pridal do tejto skupiny nasledujúcich používateľov: %@";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "Roboti pridaní do tejto skupiny majú prístup k menu v Skype a zobrazovanému menu každého účastníka, ako aj k novým chatovým správam a novému obsahu zdieľanému v skupine.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "Vitajte! V tejto skupine je minimálne jeden robot. Roboti majú prístup k menu v Skype a zobrazovanému menu každého účastníka, ako aj k novým chatovým správam a novému obsahu zdieľanému v skupine.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "Používateľ %@ sa pripojil ku skupine";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "Používateľ %@ opustil skupinu";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "Používateľ %@ odstránil z tejto skupiny nasledujúcich používateľov: %@";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "Platnosť konta hosťa uplynula pre týchto používateľov: %@";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "Zablokovali ste používateľa %@";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "Používateľ %@ zmenil rolu používateľa %@ na %@";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "Autor";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "Správca";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "Čitateľ";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "Pisateľ";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "Rečník";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "Žiadateľ o pripojenie";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "Odídený účastník";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "Zablokovaný účastník";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "Zmenila sa rola";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "Konverzácia bez názvu";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "Zobraziť chat";
+"CONVERSATION_HIDE_CHAT" = "Skryť chat";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "Zobraziť bočný panel";
+"CONVERSATION_HIDE_TIMELINE" = "Skryť bočný panel";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "Prepnúť na zobrazenie mriežky";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "Prepnúť na samostatné zobrazenie";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "Pripojiť sa k hovoru";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "Pripojiť sa k hovoru";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "Zobraziť správy zo <a href=\"jump\">staršieho chatu</a>";
+"CHAT_GOTO_NEW_CHAT" = "Tento chat bol aktualizovaný na novú verziu. <a href=\"jump\">Prejsť na nový chat</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "Používateľ %@ sa na tomto chate môže zúčastniť až po aktualizácii Skypu. Pomôžte mu a pošlite ho na stránku skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Získajte ďalšie informácie o novom skupinovom chate</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "Používatelia %@ sa na tomto chate môžu zúčastniť až po aktualizácii Skypu. Pomôžte im a pošlite ich na stránku skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Získajte ďalšie informácie o novom skupinovom chate</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ sa teraz môže zúčastniť tohto chatu.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "Otvorí chat medzi dvomi účastníkmi.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "Usmievam sa";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "Smútok";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "Smejem sa";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "Pohoda";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "Prekvapenie";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "Žmurkám";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "Plačem";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "Potím sa";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "Nemám slov";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "Bozk";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "Vyplazený jazyk";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "Hanbím sa";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "Zvedavý";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "Ospalý";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "Nechápem";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "Zamilovaný";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "Zlovestný úškrn";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "Držím palce";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "Zívam";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "Vraciam";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "Do čerta!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "Hnevám sa";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "To nie ja";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "Párty";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "Trápim sa";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "Mmmm..."; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "Inteligent";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "Mlčím ako hrob";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "Ahoj";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "To snáď nie je možné";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "Diabol";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "Anjel";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "Závidím";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "Počkaj";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "Objímam";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "Maľujem sa";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "Chichocem sa";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "Tlieskam";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "Rozmýšľam";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "Klaniam sa";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "Váľam sa od smiechu";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "Odľahlo mi";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "Šťastný";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "Uškŕňam sa";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "Súhlas";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "Nesúhlas";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "Čakám";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "Emo";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "Áno";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "Nie";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "Dohodnuté";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "Daj na to";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "Srdce";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "Nepočúvam";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "Heidy";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "Kvet";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "Prší";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "Slnko";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "Ticho pred búrkou";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "Hudba";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "Bandita";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "Príliš veľa informácií";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "Káva";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "Pizza";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "Peniaze";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "Svaly";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "Torta";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "Pivo";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "Nápoj";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "Tancujem";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "Nindža";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "Hviezda";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "Vystrčený zadok";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "Telefón";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "Vystrčený prostredník";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "Bazénová párty";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "Zlomené srdce";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "Opitý";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "Hreším";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "Film";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "Fajčím";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "Hodiny";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "Muž a pes";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "Fotografujúci muž";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "Máte novú poštu";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "Som rocker";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "Udieram päsťou";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "Trieskam si hlavu";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "Zavolať mi";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "Pracujem z domu";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "Chrobák";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "Rozprávam";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "Chodím ako páv";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "Muž s klobúkom";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "Futbalista";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "Nezaujíma ma to";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "Nápad";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "Ovca";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "Mačka";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "Bicykel";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "Pes";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "Emotikon: %@";
+
+"EMOTICON_TYPE_FLAG" = "Príznak: %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "Ak chcete v Skype pridať nové kontakty, <a href=\"add-people\">hľadajte v adresári Skypu</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "V Skype nemáte žiadne kontakty.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "Vo vašom adresári sme zatiaľ nenašli žiadne kontakty Skype. <a href=\"add-people\">Pridajte ľudí</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "Vo vašom adresári sme zatiaľ nenašli žiadne kontakty Skype.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Hľadanie v adresári Skype"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "Vyhľadajte na Skype ľudí, ktorých poznáte"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "Hľadajú sa ľudia, ktorých poznáte"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "Vyhľadávanie zrušíte dvojitým ťuknutím";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "Vyzerá to dobre!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "Nahrávajte, keď vám to bude vyhovovať.";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "Zrušiť nahrávanie";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "Nahrávať znova";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "Zrušiť";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "Dostali ste novú videosprávu. Ak ju chcete zobraziť, stačí skopírovať tento tajný kód %2 a svoju videosprávu môžete sledovať tu: %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "Zrušiť";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "Nahrávať";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "Zastaviť";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "Odoslať";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "Ukážka";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "Prepnúť na prednú kameru";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "Prepnúť na zadnú kameru";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "Nahratý čas";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "Efekty videa";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "normálne";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "bubliny";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "medvedíky";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "kaleidoskop";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "pixelovať";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "stlačiť";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "vyduť";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "röntgen";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "plagát";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "sneh";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "zrkadlo";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "srdiečka";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "kostým";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "Halloween";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "Jazyk titulkov";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "Titulky sa zobrazia po dokončení nahrávania";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "Vytvárajú sa titulky...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "Titulky sa nepodarilo vytvoriť";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "Počúvanie";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "Videospráva";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "Do tohto chatu už nemôžete odosielať videosprávy.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "Odstránenie videa";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "Naozaj chcete odstrániť túto videosprávu?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "Odstrániť";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Zrušiť";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "Odstrániť videosprávu";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "Prehrať";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "Pozastaviť";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "Hlasová správa";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Hlasová správa, %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "Prehrá hlasovú správu";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "Zastaví prehrávanie";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Videospráva";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "Prehrateľné";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "Odovzdáva sa";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "Nie je k dispozícii";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "Prehrá videosprávu";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "Používa sa predná kamera";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "Používa sa zadná kamera";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "Nahráva sa";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "Zastavené";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "Odosiela sa";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "Neodoslané – čaká sa na internetové pripojenie...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "Skontrolujte pripojenie a skúste to znova neskôr.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "Neprijaté – čaká sa na internetové pripojenie...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "Video nie je k dispozícii";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "Video nie je k dispozícii";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ odosiela fotografiu";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "Problémy s prihlásením?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "Problém s prihlásením";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "Nedá sa pripojiť k Skypu, skúste to znovu neskôr.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "Nedá sa pripojiť k Microsoftu. Skontrolujte nastavenie siete a skúste to znova.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "Nedá sa pripojiť k Microsoftu, skúste to znova neskôr.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "Ľutujeme, s týmto kontom Microsoft sa nemôžete prihlásiť do Skypu, pretože nespĺňate minimálny vekový limit stanovený vo vašej krajine alebo oblasti.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "Skontrolujte svoje údaje";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "Tieto prihlasovacie údaje sme nerozpoznali. Skontrolujte ich a skúste to znova.";
+"LOGIN_PROBLEM_NO_NETWORK" = "Nepodarilo sa prihlásiť. Skontrolujte internetové pripojenie a skúste to znova.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Kredit Skype";
+"IAP_PURCHASE_BUTTON" = "Pridať kredit (%@)";
+"IAP_CALLPHONES" = "Volanie na telefóny";
+"IAP_SEND_SMS" = "Odoslať SMS správu";
+"IAP_WITHSKYPECREDIT_TITLE" = "Prečo platiť za kredit Skype?";
+"IAP_WITHSKYPECREDIT_BODY" = "Pretože sa môžete spojiť s ľuďmi, ktorí nie sú na Skype. Môžete im za nízke ceny zavolať na mobilný telefón alebo pevnú linku, prípadne odoslať SMS správu.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Hovory medzi kontami Skype sú zadarmo, s trochou kreditu ale budete môcť využívať mnohé ďalšie možnosti.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "Váš aktuálny zostatok je %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "Konverzia meny"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "%@, po konverzii %@ – táto suma sa pripíše k vášmu zostatku v rámci kreditu Skype.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "Ďalšie informácie";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "Konvertované podľa kurzu Európskej centrálnej banky z %@.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "Zdá sa, že mena vo vašom obchode s aplikáciami sa nezhoduje s menou v Skype. Na tento účel skonvertujeme menu v obchode s aplikáciami.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "Ak chcete tieto nastavenia zmeniť, prihláste sa na lokalite Skype.com a v časti Moje konto vyberte možnosť Zmeniť menu.";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "Nedostatočný kredit";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "Na volanie na toto číslo nemáte dostatočný kredit Skype.";
+"IAP_CALL_NO_CREDIT_TITLE" = "Žiadny kredit";
+"IAP_CALL_NO_CREDIT_BODY" = "Na volanie na toto číslo potrebujete kredit Skype.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "Nákup prebehol úspešne";
+"IAP_RESULT_SUCCESS_1_BODY" = "Do vášho konta Skype sa pridala suma %@.";
+"IAP_RESULT_SUCCESS_2_BODY" = "Do vášho konta Skype sa pridáva suma %@.";
+"IAP_RESULT_SUCCESS_3_BODY" = "Do vášho konta Skype sa už pridala suma %@.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "Vaša predchádzajúca objednávka kreditu Skype je zrealizovaná. Do vášho konta Skype sa pridala suma %@.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "Vaša predchádzajúca objednávka kreditu Skype sa momentálne spracováva.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "Vaša predchádzajúca objednávka kreditu Skype sa úspešne zrealizovala.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "Nákup bol zrušený";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "Ľutujeme";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "Vašu objednávku sa nám nepodarilo spracovať, skúste to znova neskôr.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "Vašu objednávku sa momentálne nepodarilo spracovať. Budeme sa však o to snažiť aj naďalej a oznámime vám, keď ju zrealizujeme.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "Vašu predchádzajúci objednávku kreditu Skype sa momentálne nepodarilo spracovať. Budeme sa však o to snažiť aj naďalej a oznámime vám, keď ju zrealizujeme.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "Pred nákupom kreditu si prečítajte a prijmite podmienky používania Skypu.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "Vašu objednávku sa nám nepodarilo spracovať, pretože váš poskytovateľ platieb je momentálne nedostupný. Skúste to znova neskôr.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "Vašu objednávku sa nám nepodarilo spracovať, pretože vaše konto spravuje správca.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "Vašu objednávku sa nám nepodarilo spracovať. O pomoc požiadajte tím podpory pre zákazníkov Skypu.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "Vaše konto iTunes je momentálne nedostupné.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "Vašu objednávku sa nám nepodarilo spracovať, pretože vaše konto iTunes je momentálne nedostupné. Skúste to znova neskôr.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "Vašu objednávku sa nám nepodarilo spracovať, pretože Skype nepodporuje menu, ktorú máte nastavenú v konte iTunes.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "Mena nastavená vo vašom konte Skype sa nezhoduje s vaším kontom iTunes. Menu môžete prepnúť v nastaveniach svojho konta na stránke skype.com.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "Vašu objednávku sa nám nepodarilo spracovať. Skontrolujte sieťové pripojenie a skúste to znova.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "Vašu objednávku sa nám nepodarilo spracovať. Skontrolujte sieťové pripojenie. Keď sa opäť pripojíte, skúsime to znova.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "Vašu predchádzajúcu objednávku kreditu Skype sa nám nepodarilo spracovať. Skontrolujte sieťové pripojenie a skúste to znova. Keď sa opäť pripojíte, skúsime to znova.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "Získať pomoc";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Konto Microsoft";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "Zrušiť a začať znova";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "Prepojené konto Skype";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "Toto konto Skype už bolo prepojené s iným kontom Microsoft. Ak chcete pokračovať, prihláste sa s údajmi tohto konta Microsoft.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "Pri prepájaní vašich kont sa vyskytol problém. Skúste to znova neskôr.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Pri otváraní vášho konta sa vyskytol problém. Skontrolujte sieťové pripojenie a skúste to znova.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "Telefón";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "Domov";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "Do práce";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "Mobil";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "Iné";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "Neznáme číslo";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (hosť)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "Pripája sa...";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "Vyzváňa...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "Volá sa...";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "Hovor podržaný";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "Hovor sa skončil";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "Spúšťa sa...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "Volá sa...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "Naživo";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "Hovor podržaný";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "Hovor podržaný druhým účastníkom";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "Ostatní sú k dispozícii naživo";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "Ostatní sú naplno k dispozícii naživo";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "Prehráva sa hlasová správa";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "Nahráva sa";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "Používatelia, ktorí boli nedávno k dispozícii naživo";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "Prenáša sa";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "Prihlasuje sa…";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "Načítavajú sa kontakty…";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "Aktualizuje sa…";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "Táto správa bola odstránená";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "Nedá sa pripojiť k Skypu.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "Skontrolujte nastavenie siete a skúste to znova.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "Toto meno v Skype je neplatné.";
+"Account::INVALID_EMAIL" = "Táto e-mailová adresa je neplatná.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "Skontrolujte to a skúste to znova.";
+"Account::UNACCEPTABLE_PASSWORD" = "Toto heslo je neplatné.";
+"Account::SKYPENAME_TAKEN" = "Toto meno v Skype už používa niekto iný.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "Zadajte nové meno.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "Nepodarilo sa nám rozpoznať vaše meno v Skype alebo heslo.";
+"Account::INCORRECT_PASSWORD" = "Nepodarilo sa nám rozpoznať vaše meno v Skype alebo heslo.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "Vykonali ste príliš veľa pokusov o prihlásenie.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "Skúste to znova neskôr.";
+"Account::ATO_BLOCKED" = "Vaše konto je pozastavené. <a href = 'https://go.skype.com/account.recovery.ios'>Ťuknutím sem získate ďalšie informácie</a>.";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "Pri prihlasovaní s vaším kontom Microsoft sa vyskytol problém. Skúste to znova neskôr.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "Prihlásenie nie je možné, pretože nemáte dostatok ukladacieho priestoru vo svojom zariadení.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "Nedá sa prihlásiť. Reštartujte svoje zariadenie a skúste to znova.(%d)";
+"Account::DB_FAILURE" = "Nedá sa prihlásiť. Reštartujte svoje zariadenie a skúste to znova.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "Nedá sa prihlásiť. Skúste Skype preinštalovať z obchodu App Store.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "Vaše heslo sa zmenilo. Ak chcete Skype používať aj naďalej, prihláste sa.";
+"Account::LOGOUT_REMOTE" = "Ste odhlásení.";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "Táto verzia Skypu nie je podporovaná.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "Ak chcete pokračovať, vykonajte aktualizáciu na novšiu verziu Skypu.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "Nedá sa prihlásiť, skúste to znova neskôr.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "Nemôžete sa prihlásiť do Skypu, pretože nespĺňate minimálny vekový limit stanovený pre vašu krajinu alebo oblasť.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "Skúste to znova.(%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "Hovor";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "Videohovor";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "Videospráva";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "Klávesnica na vytáčanie"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "Volať na telefónne čísla";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "Začať nový chat";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Začať nový chat na Skype";
+
+
+"HUB_RECENTS_TITLE" = "Najnovšie";
+"HUB_PEOPLE_TITLE" = "Ľudia";
+"HUB_FAVOURIES_TITLE" = "Obľúbené";
+"CANCEL_ALERT_BUTTON" = "Zrušiť";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "Obľúbené";
+"PEOPLEPICKER_CONTACTS_TITLE" = "Kontakty";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "Hľadať kontakty";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "Vyhľadávanie nových kontaktov";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "Hľadajte používateľa %@";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Hľadajte používateľa %@ v adresári Skype";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "Ľudia";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "Roboti";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "Nespojení"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "V Skype"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Spojenie cez Skype";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "Zrušiť";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "Spojiť";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "Nový chat";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "Vyberte dvojitým ťuknutím.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "Tu sa zobrazia posledné konverzácie.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "Nemáte žiadne neprečítané správy";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "Tu sa zobrazia najnovšie hovory na mobilné telefóny a pevné linky, <a href=\"open-dialpad\">zavolajte niektorému priateľovi</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, nové správy, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "Hovor podržaný druhým účastníkom";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "Hovor podržaný";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "Prebiehajúci hovor";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "Aktuálny hovor, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "Aktuálny hovor";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "Upravené";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "Upraviť";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "uložiť fotografiu";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "Uložiť video";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "Zobraziť označenia Páči sa mi to";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "Páči sa mi to";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "Už sa mi to nepáči";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "Zavrieť";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "Označenia Páči sa mi to";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "Dvomi ťuknutiami zobrazíte kontakt";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "Nové";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "Používateľovi sa páči vaša správa.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "Používateľovi sa páči vaša správa: %@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "Používateľovi sa páči vaša fotografia.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "Používateľovi %@ sa páči vaša správa.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "Používateľovi %1$@ sa páči vaša správa: %2$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "Používateľovi %@ sa páči vaša fotografia.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>Zatiaľ sa to nikomu nepáči</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "Komu sa to páči: vy";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "Prihlásiť sa";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Meno v Skype";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Konto Microsoft";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "Vytvoriť konto";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Prihlásiť sa s menom v Skype";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Prihlásiť sa s kontom Microsoft";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Vytvoriť konto";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "Pole prihlasovacích údajov";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "Už používate Skype?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "Áno";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Áno, už mám konto Skype.";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "Nie";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Nie, nemám konto Skype.";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "Filter zoznamu ľudí";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "Všetky kontakty";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "Online kontakty";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "Zobraziť všetky kontakty.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "Zobraziť iba kontakty, ktoré sú online.";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "Zobraziť iba kontakty v Skype.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "Hlasový hovor";
+"CHATINPUT_PLACEHOLDER" = "Sem napíšte správu";
+"CHATINPUT_PLACEHOLDER_SMS" = "Sem napíšte SMS správu";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "Pozdravte používateľa %@";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "Vaša konverzácia sa zobrazí tu.";
+"CHATTYPING_SINGLEUSER" = "%@ píše...";
+"CHATTYPING_TWOUSERS" = "%@ a %@ píšu...";
+"CHATTYPING_THREEUSERS" = "%@, %@ a jeden ďalší používateľ píšu...";
+"CHATTYPING_MULTIPLEUSERS" = "%@, %@ a %d ďalší používatelia píšu...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "Volať na telefón";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "Odoslať pozvanie";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Odošlite SMS správu s prepojením na chat v Skype.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "Chat";
+"SEND_SMS_TO_CONTACT_BUTTON" = "SMS";
+"EMPTY_PAGE_HEADER_TITLE" = "Pozdravte používateľa";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "Dobrý deň. Poďme chatovať na Skype: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "Odoslanie tejto SMS správy stojí %@";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "Vyberte krajinu alebo oblasť";
+"DIALPAD_CALL_BUTTON" = "Zavolať";
+"DIALPAD_STAR_BUTTON" = "Hviezdička";
+"DIALPAD_HASH_BUTTON" = "Mriežka";
+"DIALPAD_BACKSPACE_BUTTON" = "Odstrániť";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "SMS";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "Otvorí chat s kontaktom %@";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "Klávesnica bola skrytá.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "Zobraziť klávesnicu";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "Tomuto kontaktu sa nedá zavolať";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "Pri volaní tomuto kontaktu sa vyskytol problém.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "Skontrolujte to a skúste to znova.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "Tiesňové čísla";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "Hovory na tiesňové čísla nie sú vo vašom zariadení podporované.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "Neplatné telefónne číslo";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "Pri volaní na toto telefónne číslo sa vyskytol problém.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "Skontrolujte ho a skúste to znova.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "Už ste účastníkom hovoru";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "Prebieha telefonát.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Pred začatím nového hovoru cez Skype tento hovor zaveste.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "Už ste účastníkom hovoru";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "Momentálne prebieha cez Skype iný hovor.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Pred začatím nového hovoru tento hovor zaveste.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "Hovor sa nedá uskutočniť";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "Váš operátor nepovoľuje hovory cez Skype cez mobilnú sieť. Ak chcete volať cez Skype, pripojte sa k Wi-Fi sieti.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "Hovor zlyhal";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "Sami sebe nemôžete volať.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "Blokovaný kontakt";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "Ak chcete zavolať tomuto kontaktu, najskôr ho odblokujte.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "Prístup k mikrofónu";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "Ak nepovolíte používanie svojho mikrofónu, počas hovorov alebo vo videosprávach vás ľudia nebudú počuť.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Prejdite do nastavení svojho zariadenia a v časti Súkromie udeľte povolenie.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "Prístup ku kamere";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "Ak nepovolíte používanie svojej kamery, počas hovorov alebo vo videosprávach vás ľudia neuvidia.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Prejdite do nastavení svojho zariadenia a v časti Súkromie udeľte povolenie.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "Bez povolenia na používanie fotoaparátu nebudete môcť v Skype snímať fotografie.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "Hovor sa nedá uskutočniť";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "Skypu bráni v prehrávaní zvuku iná zvuková aplikácia.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "Skontrolujte ju a skúste to znova.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "Hovor sa nedá uskutočniť";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "Vyskytol sa problém so zvukom na vašom zariadení.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "Skontrolujte ho a skúste to znova.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "Hovor sa nedá uskutočniť";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "Vyskytol sa problém so zvukom na vašom zariadení.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "Ak chcete pokračovať, reštartujte Skype.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "Hovor sa nedá uskutočniť";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "Vyskytol sa problém so zvukom vo vašom zariadení.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "Skúste to znova neskôr.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "Hovor sa nedá uskutočniť";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "Vyskytol sa problém so zvukom vo vašom zariadení.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "Skúste to znova neskôr.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "Hovor sa nedá uskutočniť";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "Pri prepájaní tohto hovoru sa vyskytol problém.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "Skúste to znova neskôr.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "Hovor sa nedá uskutočniť";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "Keď ste v Indii, iným ľuďom v tejto krajine môžete volať iba vtedy, keď sú aj oni na Skype (bezplatne). Na mobilné telefóny a pevné linky v Indii však cez Skype volať nemôžete.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "Ďalšie informácie";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "K hovoru sa nedá pripojiť";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Tento skupinový hovor je momentálne plný, skúste sa k nemu pripojiť neskôr.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "Kamera sa používa";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "Momentálne máte skupinový hovor.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "Najskôr vypnite video a až potom skúste použiť kameru.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Skupinové hovory";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Táto skupina je príliš veľká na začatie hlasového hovoru na tomto zariadení (max. počet účastníkov je %d).";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "Skupinové videohovory";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Skupinám s %d a viacerými účastníkmi nie je možné volať z tohto zariadenia.";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "Ste offline";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "Na telefonovanie v Skype musíte byť online.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Skupinové hovory";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "V tomto hovore sa dosiahol maximálny počet účastníkov.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "Hovor podržaný";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "Nových účastníkov budete môcť pridávať až po obnovení hovoru.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "Hovor podržaný druhým účastníkom";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "Nových účastníkov budete môcť pridávať až po obnovení hovoru.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "Hovor sa nastavuje";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "Počas prepájania hovoru nemožno pridávať účastníkov.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "Počkajte, kým sa hovor prepojí.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "Skupina";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "Vyskytol sa problém s pridávaním účastníkov, skúste to znova neskôr.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "Nie je možné spustiť video";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "Pri zapínaní videa sa vyskytol problém.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "Skontrolujte, či všetci účastníci tohto hovoru používajú najnovšiu verziu Skypu.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "Nie je možné spustiť video";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skypu sa nepodarilo spustiť vaše video.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "Skúste to znova neskôr.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "Obnovuje sa hovor";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "Pri obnovovaní tohto hovoru sa vyskytol problém.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "Pred obnovením tohto hovoru cez Skype zatvorte všetky aplikácie, ktoré momentálne používajú zvuk, a ukončite všetky prebiehajúce hovory.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "Žiadosť o kontakt";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "Účastníci boli pridaní alebo odstránení";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "<name>%@</name> má dnes narodeniny"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "Skupinový chat bol vytvorený";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "Kontakt bol zablokovaný";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "Vám odoslal(-a) videosprávu";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "Odoslali ste videosprávu";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>Vy</name> a <name>%@</name> ste teraz kontaktmi.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "je teraz kontaktom";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "Začali ste zdieľať svoje kontaktné údaje";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "Vám odoslal(-a) hlasovú správu";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "Odoslali ste hlasovú správu.";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "Používateľ %@ vám odoslal kontakt. Táto verzia Skypu to zatiaľ nepodporuje.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "Odoslali ste kontakt. Táto verzia Skypu to zatiaľ nepodporuje.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "Dvomi ťuknutiami zobrazíte kontakt";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "Dvomi ťuknutiami zobrazíte kontakty";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "Kontakt odoslaný";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "Pridať do kontaktov";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "Už je v kontaktoch";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "Zobraziť kontakty";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "Odoslanie kontaktov";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "Odoslať kontakty";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "a %d ďalší";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "Vybrať kontakty";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "V Skype nemáte žiadne kontakty na odoslanie.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "Žiadne kontakty";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "Kontakty";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "Odoslanie kontaktov";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "Žiadosť o kontakt odoslaná";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "Čakajúca žiadosť o kontakt";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "Odoslané kontakty";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "Používateľ %@ vám odoslal správu, ktorú táto verzia Skypu zatiaľ nepodporuje.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "Odoslali ste správu, ktorú táto verzia Skypu zatiaľ nepodporuje.";
+
+"RECENTS_DELETE_CONVERSATION" = "Odstrániť chat";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "Označiť ako prečítané";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "Označiť ako neprečítané";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "Chat";
+"CALL_ACCESSIBILITYLABEL" = "Zavolať";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "Hlavné prihlásenie";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Prihlásiť sa s kontom Skype";
+"HUB_ACCESSIBILITYLABEL" = "Centrum";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "Navrhovaná hľadaná položka: %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "Zobraziť emotikony";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "Zobraziť klávesnicu";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "Odstrániť";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Hľadať";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "Obchod";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "Naposledy použité";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "Emotikony";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Moji";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "Vyhľadávanie";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "Návrhy";
+"EXPRESSION_SEARCH_NO_RESULTS" = "Nič sa nenašlo";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "Pripojte sa k môjmu chatu v Skype a pozrite si tento Moji: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "Dobrý deň,\npripojte sa k môjmu chatu v Skype a pozrite si tento Moji: %@\nDo skorého počutia";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "Pozrite si tento Moji";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "Ľutujeme";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "Vyskytol sa problém so zdieľaním tohto Moji, skúste to znova neskôr.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Skype Obchod";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "Loading Mojis and emoticons...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "Search";
+"EXPRESSION_STORE_FREE" = "Zdarma";
+"EXPRESSION_STORE_REMOVE" = "Odstrániť";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "Free download";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "Sťahuje sa";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "Stiahnuté";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "Ľutujeme";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "There was a problem loading Mojis and emoticons.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "There was a problem finding Mojis and emoticons, <a href=\"re-try fetching\">retry</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "Vyhľadávať emotikony a Moji";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "Tu sa zobrazia naposledy použité emotikony.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "Odporúčané";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "Na zobrazenie ukážky dvakrát ťuknite.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "Na odoslanie dvakrát ťuknite.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "Na zavretie ukážky dvakrát ťuknite.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "Znovu prehrať";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Ukážka Moji";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "Na odoslanie ťuknite znova.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Udeľte v nastaveniach zariadenia používateľovi %@ prístup k svojmu mikrofónu, aby vás počul.";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Udeľte v nastaveniach zariadenia prístup k svojmu mikrofónu, aby vás ostatní počuli.";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Udeľte v nastaveniach zariadenia používateľovi %@ prístup k svojej kamere, aby vás videl.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Udeľte v nastaveniach zariadenia prístup k svojej kamere, aby vás ostatní videli.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "V tomto hovore sa dosiahol maximálny počet účastníkov";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "Na telefonovanie potrebujete sieťové pripojenie";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "Vaša kamera je v rozdelenom zobrazení vypnutá.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Prístup potiahnutím prstom nepodporuje video.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "Reproduktor je zapnutý";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "Reproduktor vypnete dvojitým ťuknutím";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "Reproduktor je vypnutý";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "Reproduktor zapnete dvojitým ťuknutím";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "Hovor stlmený";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "Stlmenie hovoru zrušíte dvojitým ťuknutím";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "Stlmenie hovoru zrušené";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "Hovor stlmíte dvojitým ťuknutím";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "Video je zapnuté";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "Video vypnete dvojitým ťuknutím";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "Video je vypnuté";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "Video zapnete dvojitým ťuknutím";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "Prichádzajúce";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "Odchádzajúce";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 účastník"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "Počet účastníkov: %d"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "Žiadni účastníci"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%1$d z %2$d v tomto hovore";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "%1$@ musí pred pripojením k tomuto hovoru aktualizovať Skype.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "%1$@ a %2$@ musia pred pripojením k tomuto hovoru aktualizovať Skype.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "%1$@ a %2$@ musia pred pripojením k tomuto hovoru aktualizovať Skype.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ", ";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Prichádzajúci hovor cez Skype od používateľa %@";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Prichádzajúci skupinový hovor od používateľov %@ a %@";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Prichádzajúci skupinový hovor od používateľov %@, %@ a jedného ďalšieho používateľa";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Prichádzajúci skupinový hovor od používateľov %@, %@ a %d ďalších používateľov";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Prichádzajúci videohovor od používateľa %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Prichádzajúci skupinový videohovor od používateľov %@ a %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Prichádzajúci skupinový videohovor od používateľov %@, %@ a jedného ďalšieho používateľa";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Prichádzajúci skupinový videohovor od používateľov %@, %@ a %d ďalších používateľov";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Hovor cez Skype s používateľom %@";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Skupinový hovor s používateľmi %@ a %@";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Skupinový hovor s používateľmi %@, %@ a jedným ďalším používateľom";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Skupinový hovor s používateľmi %@, %@ a %d ďalšími používateľmi";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "Videohovor s používateľom %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "Videohovor s používateľmi %@ a %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "Videohovor s používateľmi %@, %@ a jedným ďalším používateľom";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "Videohovor s používateľmi %@, %@ a %d ďalšími používateľmi";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Hovor cez Skype s používateľom %@";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Skupinový hovor s používateľmi %@ a %@";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Skupinový hovor s používateľmi %@, %@ a jedným ďalším používateľom";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Skupinový hovor s používateľmi %@, %@ a %d ďalšími používateľmi";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Videohovor s používateľom %@";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Skupinový videohovor s používateľmi %@ a %@";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Skupinový videohovor s používateľmi %@, %@ a jedným ďalším používateľom";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Skupinový videohovor s používateľmi %@, %@ a %d ďalšími používateľmi";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Obnovuje sa hovor cez Skype s používateľom %@";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Obnovuje sa skupinový hovor s používateľmi %@ a %@";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Obnovuje sa skupinový hovor s používateľmi %@, %@ a jedným ďalším používateľom";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Obnovuje sa skupinový hovor s používateľmi %@, %@ a %d ďalšími používateľmi";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Obnovuje sa videohovor s používateľom %@";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Obnovuje sa skupinový videohovor s používateľmi %@ a %@";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Obnovuje sa skupinový videohovor s používateľmi %@, %@ a jedným ďalším používateľom";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Obnovuje sa skupinový videohovor s používateľmi %@, %@ a %d ďalšími používateľmi";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "Hovor bol ukončený";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "Trvanie hovoru";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "Nahrávanie hlasovej správy";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "d.";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "d.";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "h";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "h";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "min";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "min";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "s";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "s";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "Prijať";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "Odmietnuť";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> si vás chce pridať na Skype\n\"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "Používateľ <name>%@</name> vám odoslal správu z miesta <location>%@</location>"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "Pozdravte používateľa <name>%@</name> a pridajte si ho do svojich kontaktov.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ zatiaľ nie je v kontaktoch.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "%@ <a href=\"edit-contact-request-message\">Upraviť</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "Odoslať žiadosť o kontakt";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "Pridať do kontaktov";
+"CONTACT_REQUEST_PENDING" = "Čaká sa, kým <name>%@</name> prijme žiadosť o kontakt.\n<a href=\"resend-request\">Znova odoslať žiadosť o kontakt</a>";
+"CONTACT_REQUEST_BLOCKED" = "Používateľ <name>%@</name> je blokovaný";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "Odblokovať";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "Áno";
+"CONTACT_REQUEST_BLOCK_TITLE" = "Blokovanie kontaktu";
+"CONTACT_REQUEST_DECLINED_TITLE" = "Žiadosť o kontakt bola odmietnutá";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "Zrušiť";
+"CONTACT_REQUEST_BLOCK_ALERT" = "Naozaj chcete zablokovať tento kontakt?";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "Chcete tiež zablokovať a nahlásiť túto osobu?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "Zablokovať";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "Zablokovať a odstrániť";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "Zablokovať a nahlásiť";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "Pridať účastníkov";
+"CHAT_OPTION_START_NEW_GROUP" = "Vytvoriť novú skupinu";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "Zobraziť profil";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "Oznámenia";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "Oznámenia tohto chatu sú zapnuté.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "Oznámenia tohto chatu sú vypnuté.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "Zapnúť oznámenia";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "Vypnúť oznámenia";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "Odísť zo skupiny";
+
+"CHAT_OPTION_PARTICIPANTS" = "Zobraziť účastníkov";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "ZAP";
+"MK_SWITCH_OFF_MESSAGE" = "VYP";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "Vypne alebo zapne.";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "Nový chat";
+"NEWCHATSCENE_TITLE_TOKEN" = "KOMU:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "a %d ďalší"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "a %d ďalší"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "Vyberte kontakty na pridanie";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Domov";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Zrušiť vytváranie novej skupiny";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Vytvoriť novú skupinu";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "Hlasový hovor";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "Videohovor";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "Klávesnica na vytáčanie";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "Zrušiť";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "Späť";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "Informácie o mne";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "Otvoriť ponuku médií";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "Zavrieť ponuku médií";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "Pomocník";
+"MY_INFO_FEEDBACK_ACTION" = "Odoslať pripomienky";
+
+"MY_INFO_CONNECTING" = "Pripája sa...";
+
+"MY_INFO_STATUS" = "Stav";
+"MY_INFO_CREDIT" = "Kredit Skype";
+"MY_INFO_PROFILE_LINK" = "Moje konto";
+"MY_INFO_SETTINGS" = "Nastavenie";
+"MY_INFO_SIGN_OUT" = "Odhlásiť sa";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "Zadajte správu o stave";
+"MY_INFO_MOOD_MESSAGE" = "Správa o stave";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "Dvojitým ťuknutím ju upravíte";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "Odoslanie pripomienok";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "Zmeniť obrázok profilu";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "Odfotografovať";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "Vybrať existujúcu fotografiu";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "Odstrániť obrázok profilu";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "Nastavenie";
+
+"SETTINGS_GENERAL" = "Všeobecné";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "Povoliť cielené reklamy";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "Povoľte spoločnosti Microsoft používať informácie vo vašom profile v Skype, aby sme vám mohli v tejto aplikácii zobrazovať relevantnejšiu reklamu. <a href=\"skype.com\">Ďalšie informácie</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "Chatové oznámenia";
+"SETTINGS_PUSH_NOTIFICATIONS" = "Zobrazovanie oznámení";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Zobrazovanie oznámení";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "Oznámenia o správach budete dostávať, aj keď bude Skype zatvorený.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "Oznámenia o správach nebudete dostávať, keď bude Skype zatvorený.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "Oznámenia v aplikácii";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Oznámenia v aplikácii";
+"SETTINGS_INAPP_SOUNDS" = "Zvuky v aplikácii";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "Zvuky v aplikácii";
+"SETTINGS_OTHER" = "Iné";
+
+"SETTINGS_PRIVACY" = "Ochrana osobných údajov";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "Ako ma možno nájsť";
+"SETTINGS_PRIVACY_EXPLANATION" = "Na základe týchto kontaktných údajov vás možno nájsť na Skype.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "Pridať telefónne číslo";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "Profilový obrázok";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "Viditeľný pre každého";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "Viditeľný pre moje kontakty";
+
+"SETTINGS_CONTACTS_HEADER" = "Kontakty";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "Pridávanie mojich priateľov";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype sa pozrie do vašich kontaktov a automaticky vám do zoznamu kontaktov na Skype pridá vašich známych.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "Priateľov budete musieť na Skype vyhľadať a pridať manuálne.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "Ukážky webových prepojení";
+
+"SETTINGS_EMOTICONS_HEADER" = "Emotikony";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "Používanie veľkých emotikonov";
+
+"SETTINGS_EDIT_BUTTON" = "Upraviť";
+"SETTINGS_DONE_BUTTON" = "Hotovo";
+
+"SETTINGS_ABOUT" = "Informácie";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "Zadajte svoje číslo";
+"PNV_HOW_IS_MY_NUMBER_USED" = "Ak sa moje číslo používa?";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "Môžu sa účtovať štandardné poplatky za SMS správy.";
+"PNV_ENTER_THE_CODE" = "Zadajte kód";
+"PNV_CODE_SENT" = "Na vaše číslo sme odoslali kód";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>Zavolať mi</a> alebo <a href='pnv://resendcode'>znova odoslať kód</a>";
+"PNV_VERIFYING_NUMBER" = "Overuje sa číslo";
+"PNV_NUMBER_VERIFIED" = "Overené";
+"PNV_NUMBER_USAGE_EXPLANATION" = "Pomocou čísla vás priatelia jednoduchšie nájdu na Skype. Výrazne sa tým zjednoduší aj hľadanie nových kontaktov.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "Kód";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "Ak chcete zmeniť spôsob, ako vás možno nájsť, v nastaveniach prejdite na možnosť %@, kde môžete odstrániť alebo vypnúť ľubovoľné zo svojich telefónnych čísel.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "Ak svoje číslo používať nechcete a nové kontakty chcete vyhľadávať a pridávať radšej manuálne, vyberte možnosť %@ nižšie.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Politika ochrany osobných údajov v Skype";
+"PNV_NOT_NOW" = "Teraz nie";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Telefónne číslo";
+
+"PNV_WELCOME_HEADING" = "Hľadanie priateľov je ešte jednoduchšie";
+"PNV_WELCOME_PARAGRAPH" = "Najskôr stačí zadať telefónne číslo.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Ďalej";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "Pozor";
+"PNV_DEFAULT_ERROR_MESSAGE" = "Vyskytol sa problém s overovaním vášho čísla. Skúste to znova neskôr.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "Dosiahli ste maximálny počet overených čísel. Ďalšie budete môcť pridávať až po odstránení niektorých čísel v nastaveniach.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "Zadané číslo je neplatné. Skontrolujte ho a skúste to znova.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "Na toto číslo nemôžeme odoslať SMS správu. Skontrolujte ho a skúste to znova.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "Zdá sa, že platnosť kódu uplynula. Nižšie vyberte možnosť Poslať znova a získajte nový kód.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "Zdá sa, že kód bol nesprávny. Skontrolujte ho a skúste to znova.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "Vyskytol sa problém s vaším sieťovým pripojením. Skontrolujte nastavenie siete a skúste to znova.";
+"PNV_ERROR_TRY_AGAIN" = "Skúsiť znova";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Pridanie priateľov na Skype";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "Na Skype pohľadáme vašich známych a pridáme vám ich medzi kontakty.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Ďalšie informácie";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "Občas sa pozrieme do vášho adresára a pohľadáme vašich známych, aby sme automaticky pridali nové skypové kontakty. Buďte bez obáv, vašim priateľom nebudeme odosielať žiaden pozvánkový spam.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "Ak kedykoľvek zmeníte názor, v nastaveniach stačí vypnúť možnosť %@. Vašich známych už nebudeme hľadať podľa vášho adresára a ľudí budete musieť pridávať manuálne.";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "Ak chcete zmeniť spôsob, ako vás možno nájsť, v nastaveniach prejdite na možnosť %@, kde môžete odstrániť alebo vypnúť ľubovoľné zo svojich telefónnych čísel.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Politika ochrany osobných údajov v Skype";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "Nezabudnite, že Skype sa nedá používať na tiesňové hovory";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "Hľadanie priateľov je ešte jednoduchšie";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "Boli pridané nové kontakty";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "Pridať kontakt";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "Zrušiť";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "Hľadať";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Zrušiť";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "V Skype môžete ľudí hľadať podľa ich mena v Skype, e-mailu alebo celého mena.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "Už je v kontaktoch Skype";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "Nenašli sa žiadne zhody";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "Dozadu";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "Dopredu";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "Zdieľať";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "Informácie";
+"ABOUT_APPLICATION_VERSION" = "Verzia Skypu";
+"ABOUT_COPYRIGHT" = "© 2003 – 2016 Skype & Microsoft\nPrihlásené patenty";
+"ABOUT_THIRD_PARTY_NOTICES" = "Upozornenia tretích strán";
+"ABOUT_PRIVACY_POLICY" = "Politika ochrany osobných údajov";
+"ABOUT_TERMS_OF_USE" = "Podmienky používania";
+"ABOUT_COPYRIGHT_TEXT" = "Názov Skype, súvisiace ochranné známky a logá a logo „S“ sú ochrannými známkami spoločnosti Skype alebo súvisiacich subjektov.\n\nUpozornenie: Tento program je chránený zákonmi o autorských právach a medzinárodnými dohodami. Neoprávnené kopírovanie alebo rozširovanie tohto programu alebo ktorejkoľvek jeho časti sa môže postihovať maximálnymi sadzbami podľa občianskeho a trestného práva.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "Chyba";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "E-mailom";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "Informovať ma o nových ponukách a funkciách Skypu e-mailom";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Informovať ma o nových ponukách a funkciách Skypu:";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "Pridať obrázok profilu";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "E-mail";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "jano@example.com";
+"CREATEACCOUNT_FULLNAME_LABEL" = "Celé meno";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "Meno";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "Priezvisko";
+"CREATEACCOUNT_PASSWORD_LABEL" = "Heslo";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6 až 20 znakov";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "Znova zadajte heslo";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Meno v Skype";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "Povinné";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "Telefónne číslo";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "s predvoľbou krajiny";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "Niektoré vyššie zobrazené polia neboli vyplnené";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "Vaše heslá sa nezhodujú. Skontrolujte ich a skúste to znova.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Podmienky používania Skypu";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "Áno, mám prečítané <a href='%1$@'>podmienky používania Skypu</a> a <a href='%2$@'>zásady ochrany osobných údajov v Skype</a> a súhlasím s nimi.";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "Skype nepodporuje tiesňové hovory";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype nenahrádza telefón a nemožno ho použiť na uskutočnenie tiesňových hovorov.";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "Súhlasím";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "Musí mať 6 až 32 znakov.";
+"SkyLib::TOO_LONG" = "Musí mať 6 až 32 znakov.";
+"SkyLib::CONTAINS_INVALID_CHAR" = "Neplatný znak (napr. Σ, à, ß).";
+"SkyLib::CONTAINS_SPACE" = "Nemôže obsahovať medzeru ani znak tabulátora.";
+"SkyLib::SAME_AS_USERNAME" = "Príliš podobné vášmu menu v Skype.";
+"SkyLib::INVALID_FORMAT" = "Neplatný formát.";
+"SkyLib::CONTAINS_INVALID_WORD" = "Jednoduché na uhádnutie (napr. abcd, Skype).";
+"SkyLib::TOO_SIMPLE" = "Musí obsahovať aspoň jedno písmeno a jedno číslo.";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "Musí začínať písmenom (A – Z).";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "Skúste zadať nové meno v Skype.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "Skúste zadať nové heslo.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "Skúste zadať novú e-mailovú adresu.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "Skúste to znova.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Meno v Skype";
+"SkyLib::ACCOUNT_PASSWORD" = "Heslo";
+"SkyLib::CONTACT_EMAILS" = "E-mail";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "Používateľ <name>%@</name> premenoval túto skupinu na %@";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Domovská stránka Skype";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "Používateľ <name>%@</name> aktualizoval fotografiu skupiny.";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "Používateľ <name>%@</name> aktualizoval skupinu";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "Skryť";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "Nové oznámenia (%d)";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "Jedno nové oznámenie";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "Žiadne nové oznámenia";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "Dobrý deň, chcem si vás pridať na Skype.";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "Žiadosť o kontakt";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. V chate %3$@";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "Chce si vás pridať na Skype";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "Teraz nie";
+"ALLOW_BUTTON" = "Povoliť";
+"PERMISSION_VIEW_TITLE" = "Nastavovanie";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vášmu mikrofónu.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vášmu fotoaparátu.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vašim kontaktom.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vašim oznámeniam.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vášmu mikrofónu a vašej kamere.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vášmu mikrofónu a vašim kontaktom.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vášmu mikrofónu a vašim oznámeniam.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vašej kamere a vašim kontaktom.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vašej kamere a vašim oznámeniam.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vašim kontaktom a oznámeniam.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vášmu mikrofónu, vašej kamere a vašim oznámeniam.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vášmu mikrofónu a vašim kontaktom a oznámeniam.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vášmu mikrofónu, vašej kamere a vašim a oznámeniam.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vašej kamere a vaším kontaktom a oznámeniam.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Ak chcete Skype využívať naplno, potrebujeme prístup k vášmu mikrofónu, vašej kamere a vašim kontaktom a oznámeniam.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "Kontakty";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "Mikrofón";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "Kamera";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "Oznámenia";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "Naozaj to chcete?";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "Bez prístupu k týmto funkciám nebudete môcť správne uskutočňovať ani prijímať hovory a nebudete ani dostávať oznámenia o prichádzajúcich hovoroch a správach.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "Budete mať prázdny zoznam kontaktov a nebudete môcť na Skype uskutočňovať ani prijímať hovory.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Ďalšie informácie";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "Mikrofón a kamera";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "Na uskutočňovanie a prijímanie hovorov na Skype potrebujeme prístup k vášmu mikrofónu a vašej kamere. Bez týchto povolení Skype fungovať nebude.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "Kontakty";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "Na nastavenie vášho zoznamu kontaktov na Skype potrebujeme prístup k vaším kontaktom. Občas pozrieme do vašich kontaktov a pohľadáme vašich známych na Skype. Buďte bez obáv, vašim priateľom nebudeme odosielať žiaden pozvánkový spam.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "Ak kedykoľvek zmeníte názor, v nastaveniach stačí vypnúť možnosť %@. Vašich známych už nebudeme hľadať podľa vášho adresára a ľudí budete musieť pridávať manuálne.";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "Oznámenia";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "Na upozorňovanie na prichádzajúce hovory a správy, keď je Skype zavretý, potrebujeme prístup k vaším oznámeniam. Ak nechcete byť rušení, oznámenia o konkrétnych chatoch môžete neskôr vypnúť.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "Poskytnutie prístupu ku kontaktom";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Na vyhľadanie vašich známych potrebuje Skype prístup ku kontaktom. Prístup povolíte zapnutím kontaktov v nastaveniach.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "Vynechať";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "Pripojte sa";
+"ONBOARDING_GET_STARTED_BUTTON" = "Začať";
+
+"ONBOARDING_IPHONE_TITLE1" = "Upravené pre iPhone";
+"ONBOARDING_IPAD_TITLE1" = "Upravené pre iPad";
+"ONBOARDING_TEXT1" = "Nikdy predtým nebolo používanie Skypu jednoduchšie – či už píšete priateľom alebo niekomu voláte.";
+
+"ONBOARDING_TITLE2" = "Nájde všetko";
+"ONBOARDING_TEXT2" = "Hľadajte ľudí, skupiny a dokonca aj predchádzajúce konverzácie.";
+
+"ONBOARDING_IPHONE_TITLE3" = "Efektívnejšia práca";
+"ONBOARDING_IPAD_TITLE3" = "Viac možností v Skype";
+
+"ONBOARDING_IPHONE_TEXT3" = "Zdieľajte polohu a fotografie alebo si pozerajte ukážky webových prepojení – to všetko počas komunikácie s priateľmi.";
+"ONBOARDING_IPAD_TEXT3" = "Potešte sa väčšími emotikonami, pozerajte si ukážky webových prepojení a vytvárajte nové skupiny priamo z iPadu.";
+
+"ONBOARDING_TITLE4" = "S priateľmi je Skype lepší";
+"ONBOARDING_TEXT4" = "Pridajte si do Skypu telefónne číslo, aby vás priatelia jednoduchšie našli.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "Jednoduché zdieľanie";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Ak chcete priateľom v Skype odosielať webové lokality alebo fotografie z priečinka Z fotoaparátu, jednoducho ťuknite na tlačidlo zdieľania.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "Pridanie účastníkov";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "PRIDAŤ:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "Už je účastníkom";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "Už je účastníkom hovoru";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "V TOMTO HOVORE";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "NIE V TOMTO HOVORE";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "Pripája sa...";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "Pripája sa k používateľovi %@";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "Volá sa...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "Volá sa používateľovi %@";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "Hovor podržaný";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "Hovor s používateľom %@ podržaný";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "Pridať k obľúbeným";
+"ADDFAVORITES_EMPTY_TITLE" = "Všetkých obľúbených ľudí môžete mať na rovnakom mieste. <a href=\"add-favorites\">Pridať k obľúbeným</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "kontakty Skype";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "Prenos súborov";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ jeden ďalší";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ ďalšie (%d)";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "Tento súbor ste odoslali z iného zariadenia.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "Tieto súbory ste odoslali z iného zariadenia.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "Táto verzia Skypu nepodporuje prijímanie súborov.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "Táto aplikácia podporuje len nové funkcie zdieľania fotografií v Skype.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "Odoslali ste súbor";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "Odoslali ste súbory (%d)";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "Vám odoslal(-a) súbor";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "Vám odoslal(-a) súbory (%d)";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "Online";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "Nerušiť";
+"CONTACT_AVAILABILITY_AWAY" = "Som preč";
+"CONTACT_AVAILABILITY_INVISIBLE" = "Neviditeľný/-á";
+"CONTACT_AVAILABILITY_OFFLINE" = "Offline";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "K dispozícii";
+"CONTACT_AVAILABILITY_BUSY" = "Nemám čas";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "Blokované";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Obľúbené";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Obľúbené";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Táto osoba je medzi obľúbenými. Dvojitým ťuknutím ju odstránite z obľúbených.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Táto osoba nie je medzi obľúbenými. Dvojitým ťuknutím ju pridáte medzi obľúbené.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Obľúbené";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Obľúbené";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Táto skupina nie je vo vašich obľúbených. Dvojitým ťuknutím ju pridáte medzi obľúbené.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Táto skupina je vo vašich obľúbených. Dvojitým ťuknutím ju odstránite z obľúbených.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@, %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "MENO V SKYPE";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "WEBOVÁ LOKALITA";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "O MNE";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "NARODENINY";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "POHLAVIE";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "JAZYK";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "KONTAKTY";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "MOŽNOSTI";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "OCHRANA OSOBNÝCH ÚDAJOV";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "VYTVORIL:";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "POPIS";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "Odosielanie a prijímanie okamžitých správ a fotografií.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "Tento robot bude mať prístup k vášmu zobrazovanému menu, menu v Skype, všetkým chatovým správam a obsahu, ktorý v skupine zdieľate vy alebo iní jej účastníci.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "Žena";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "Muž";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "Blokovanie kontaktu";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "Odblokovanie kontaktu";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "Odstrániť kontakt";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "Odstránenie kontaktu";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "%@ sa odstráni z vášho zoznamu kontaktov.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "Odstrániť";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "Zrušiť";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "Skryť";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "Profil skupiny";
+"GROUPPROFILE_NOTIFICATIONS" = "Oznámenia";
+"GROUPPROFILE_MENU_TITLE" = "Zobraziť profil";
+"GROUPPROFILE_LEAVE_CHAT" = "Odísť zo skupiny";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "Účastníci";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "Pozvať";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "Pozvánky na chat";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "Históriu chatu si bude môcť zobraziť ktokoľvek";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "Zapnite pozvánky na chat a pozvite do tohto chatu ľubovoľnú osobu.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "Do tohto chatu je možné pridať len kontakty v Skype.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "Pozvite do tohto chatu ľubovoľnú osobu, nemusí ani používať Skype.";
+"GROUPPROFILE_CHAT_HISTORY" = "História chatu";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "História chatu sa momentálne nezobrazuje novým účastníkom.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "História chatu sa zobrazuje všetkým.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "Pridať účastníkov";
+"GROUP_ADMIN_STRING" = "%@ (Správca)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "Pozvánky na chat";
+"GROUPPROFILE_ALERT_BODY" = "Pozvánka na tento chat je momentálne nedostupná. Skúste to znova neskôr.";
+"GROUPPROFILE_ALERT_BUTTON" = "OK";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Pripojte sa k môjmu chatu v Skype: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "Pripojte sa k môjmu chatu";
+"INVITES_MAIL_BODY" = "Zdravím.\nV Skype sa mi podarilo vytvoriť skupinu, kde môžeme chatovať, zdieľať a spolupracovať.\nPridať sa môžete kliknutím na prepojenie:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "Premenovanie skupiny";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "Premenovať skupinu";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "Premenovanie kontaktu";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "Dvomi ťuknutiami premenujete kontakt";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "Pridať robota";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "Odoslať žiadosť o kontakt";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "Znova odoslať žiadosť o kontakt";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "Žiadosť o kontakt odoslaná";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "Prijať";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "Odmietnuť";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "<name>%@</name> si vás chce pridať na Skype"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "Otvoriť";
+"PUSH_CHAT_CALL" = "Zavolať";
+"PUSH_CHAT_TEXT_REPLY" = "Odpovedať";
+"PUSH_CALL_ANSWER" = "Odpovedať";
+"PUSH_CALL_DECLINE" = "Odmietnuť";
+"PUSH_CALL_VIDEO_VIDEO" = "Videohovor";
+"PUSH_CALL_VIDEO_AUDIO" = "Hlasový hovor";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "Správa";
+"PUSH_MISSED_CALL_CALLBACK" = "Zavolať späť";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "Problém s kontaktmi";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "Pri prístupe k telefónnym číslam z kontaktov sa vyskytol problém. Problém skúste vyriešiť opätovnou synchronizáciou poštových kont v nastaveniach.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "Uloženie telefónneho čísla";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "Žiadne zodpovedajúce hovory.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "Jeden zodpovedajúci hovor.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "viacero (%d) zodpovedajúcich hovorov.";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@), posledný hovor: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@, naposledy sa na toto číslo volalo: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@ patrí medzi kontakty v adresári.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Spojiť cez Skype";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@ patrí medzi kontakty v adresári. S týmto kontaktom môžete telefonovať a chatovať na Skype.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Ešte nie ste v spojení cez Skype";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "Vymazať text";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Zrušiť";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "Prehľadávajte Skype";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "Vyhľadať nové kontakty";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "Ťuknutím nájdete nové kontakty";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "Vyhľadať používateľa %@";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Adresár Skype";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "História hľadania";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "Vymazať";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "Kontakty";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "Nenašli sa žiadne zhody";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "Skupiny";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "Konverzácie";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "Uloženie čísla";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "Uložiť číslo";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "Zadajte meno";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "Zadajte číslo";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "Ukladanie čísla";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "Číslo uložené";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "Neplatné číslo";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "Toto číslo nemôžete pridať, pretože je neplatné. Skúste iné.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "Neplatné číslo";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "Do Skypu nemôžete pridať tiesňové čísla.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "Zahodiť";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "Naozaj chcete zavolať: %@?";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "Naozaj chcete zavolať cez videohovor sem: %@?";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "Hlasový hovor";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "Videohovor";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "Zavolať";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "Zobraziť originál";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "Zobraziť preklad";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "Zdieľate polohu";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "Zdieľa s vami polohu";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "Zdieľa polohu (%@)";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "Na otvorenie dvakrát ťuknite";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "Navigačné pokyny k polohe";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "Poloha";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "Zdieľať vašu polohu";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "Odoslaná poloha";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "Prístup k polohe";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "Bez povolenia používať vašu polohu nebudete môcť svoju polohu zdieľať s priateľmi v Skype.";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Prejdite do nastavení svojho zariadenia a v časti Súkromie udeľte povolenie.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "Prístup ku kontaktom";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "Váš adresár budeme môcť v Skype zobraziť, až keď budeme mať prístup k vašim kontaktom.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "Prejdite do nastavení zariadenia a v časti ochrany osobných údajov udeľte povolenie.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "Ľutujeme";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "Vyskytol sa problém s načítavaním mapy.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "Skontrolujte sieťové pripojenie a skúste to znova.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "Vymazať";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "Vymazať pridané pripnuté položky";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "Zdieľanie polohy";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "V tomto chate už nemôžete zdieľať svoju polohu";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "Zdieľať polohu";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "Hľadať";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "Nenašli sa žiadne výsledky";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "Pri hľadaní tejto polohy sa vyskytol problém. Počkajte a skúste to znova.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Domov";
+"TIMELINE_ICON_DIALPAD" = "Číselná klávesnica";
+"TIMELINE_ICON_PEOPLE" = "Kontakty";
+"TIMELINE_SWIPEACTION_MUTE" = "Stlmiť";
+"TIMELINE_SWIPEACTION_UNMUTE" = "Zrušiť stlmenie";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "Zobrazovanie oznámení";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "Po zapnutí zobrazovania oznámení budete dostávať upozornenia na hovory a správy, keď nebudete na Skype.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "Upozornenia na hovory a správy môžete dostávať, aj keď nie ste na Skype. Prejdite do nastavení iPhonu > na položku Centrum hlásení a zapnite oznámenia Skypu.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "Upozornenia na hovory a správy môžete dostávať, aj keď nie ste na Skype. Prejdite do nastavení iPhonu, potom na položku Centrum hlásení a zapnite oznámenia Skypu.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "Zobrazovanie oznámení";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "Oznámenia budete dostávať až po zapnutí oznámení Skypu v nastaveniach zariadenia.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "Otvoriť";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "Zobraziť";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "Vypočuť";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "Prehrať";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Pri otváraní správy sa vyskytol problém. Skontrolujte sieťové pripojenie a skúste to znova.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "Zdieľanie mediálneho dokumentu";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "Na otvorenie dvakrát ťuknite";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "Zdroj nie je dôveryhodný";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "Fotografia";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "Odfotografovať";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "Vybrať existujúcu fotografiu";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "Vybrať existujúcu fotografiu alebo existujúce video";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "Zrušiť";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "Vybrať";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "dvojitým ťuknutím zatvoríte";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "Tento používateľ vám odoslal fotografiu. Dvojitým ťuknutím ju otvoríte.";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "Prijíma sa fotografia";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "Odosiela sa fotografia";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "Pri odosielaní tejto fotografie sa vyskytol problém";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "Pri prijímaní tejto fotografie sa vyskytol problém";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "dvojitým ťuknutím zopakujete pokus";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "Odoslať";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "Zrušiť";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "Video sa nedá odoslať, pretože má viac než %d MB";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "Fotografia sa nedá odoslať, pretože má viac než %d MB";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "Používateľ odoslal videosprávu. Dvojitým ťuknutím ju otvoríte.";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "Prijíma sa videospráva";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "Odosiela sa videospráva";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "Pri odosielaní tejto videosprávy sa vyskytol problém";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "Pri prijímaní tejto videosprávy sa vyskytol problém";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "Súbor sa odoslal. Dvomi ťuknutiami ho stiahnete.";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "Prijali ste súbor. Dvojitým ťuknutím ho otvoríte.";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "Sťahuje sa";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "Súbor %@ sa stiahol. Dvomi ťuknutiami ho otvoríte.";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "Súbor má viac než %d MB. Môžu sa účtovať poplatky za prenos údajov.";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "Súbor nie je k dispozícii";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "Reštartovať";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "Pri prijímaní tohto súboru sa vyskytol problém";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "Tento súbor by mohol byť potenciálne nebezpečný";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "Stiahnutie nie je možné, zistil sa vírus";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "Čaká sa na internetové pripojenie…";
+"FILE_TRANSFER_BUTTON_CANCEL" = "Zrušiť";
+"FILE_TRANSFER_BUTTON_RETRY" = "Skúsiť znova";
+"FILE_TRANSFER_LABEL_CANCELED" = "Zrušené";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "Stiahnuť";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "Ďalšie informácie";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "Zdieľané súbory sa zo Skypu odstránia po %d dňoch. Ak si chcete niektorý súbor nechať dlhšie, uložte ho do zariadenia.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "Súbor nie je k dispozícii";
+"FILE_SENDING_LABEL_ERROR" = "Pri odosielaní tohto súboru sa vyskytol problém";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "Prijať súbor?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "Súbory prijímajte len od ľudí, ktorým dôverujete. Chcete prijať súbor %@ od používateľa %@?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "Upozornenie – tento súbor môže byť pre váš počítač alebo vaše zariadenie nebezpečný";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "Chcete prijať súbor %@ od používateľa %@?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "Nepýtať sa znova";
+"FILE_TRANSFER_ACCEPT" = "Prijať";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "Nedostatok miesta";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "Prejdite do časti Nastavenia > Všeobecné > Použitie a uvoľnite miesto v tomto zariadení.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "Používateľ zamietol aplikácii prístup k svojim médiám";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "Ak to chcete povoliť, prejdite do časti Nastavenia > Súkromie > Fotky a povoľte Skype.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "Odoslali ste fotografiu";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "Vám odoslal(-a) fotografiu";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "Používateľ %@ odoslal fotografiu.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "Ak chcete zobraziť túto zdieľanú fotografiu, prejdite sem: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "Nedostupná fotografia";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "Táto fotografia je momentálne nedostupná.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "Zrušiť";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "Skúsiť znova";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "Nedostupná fotografia";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "Táto fotografia je momentálne nedostupná.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "OK";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "Uložiť fotografiu";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "Zrušiť";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "Pozor";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "Pri ukladaní tejto fotografie sa vyskytol problém.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "Skúsiť znova";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "Zrušiť";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "Webové médiá";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "Hľadať Giphy";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Aktualizácia Skypu";
+"FORCE_UPGRADE_CAPTION" = "Vaša verzia Skypu je neaktuálna. Získajte najnovšiu verziu a s ňou aj nové funkcie a vylepšenia.";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "Získať hneď";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "Odoslal/-a vám Moji";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "Odoslali ste Moji";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "Sťahuje sa Moji";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "Vyskytol sa problém so sťahovaním tohto Moji";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "Dvojitým ťuknutím zopakujete pokus";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "Prehrať Moji";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "Tento obsah sa odstránil";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "Platnosť tohto obsahu uplynula";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "Naposledy zobrazené pred chvíľou";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "Naposledy zobrazené pred vyše týždňom";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "Telefón";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "Okamžite môžete hľadať priateľov, správy alebo nové kontakty";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Moji v Skype";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "Teraz si užijete ešte viac zábavy s Moji vďaka klipom z filmu %@!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "Vyhľadávacie pole";
+
+"TAB_RECENT_TITLE" = "Najnovšie";
+"TAB_CONTACTS_TITLE" = "Kontakty";
+"TAB_CALLS_TITLE" = "Volanie na telefóny";
+"TAB_MYINFO_TITLE" = "Informácie o mne";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "Všetky";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "Neprečítané";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "Všetky";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "Online";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "Ďakujeme!";
+"APPSTORE_RATING_SUBTITLE" = "Šírte dobro a pridajte do App Storu hodnotenie. Trvá to len chvíľku.";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "Ohodnotiť aplikáciu";
+
+"CONTACTS_ADD_FAVORITES" = "Pridať k obľúbeným";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "Hľadať kontakty";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "Žiadne internetové pripojenie";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "Ste offline. <a href=\"reconnect\">Znova sa pripojiť</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Skype má problémy";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "Pripája sa";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "Pripojené";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "Aktualizujú sa konverzácie…";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "Odstrániť chat";
+"DELETECHAT_ALERT_MESSAGE"              = "Naozaj chcete odstrániť tento chat z tohto zariadenia? Odstráni sa aj história chatu.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "Odstrániť";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "Upraviť";
+"LIST_EDITING_CANCEL" = "Zrušiť";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "Všetko ako prečítané";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "Označiť ako prečítané";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "Odstrániť všetko";
+"LIST_EDITING_DELETE_TOOLBAR" = "Odstrániť (%d)";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "Odstrániť všetky chaty";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "Odstrániť všetko";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "Skryť všetko";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "Neskôr sa na to pozriem";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "Nový hovor";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "podržaný";
+"CALLING_BANNER_STATUS_MUTED" = "stlmený";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Certifikované Skypom";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "Začatie nového skupinového hovoru";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "Začína sa nový skupinový hovor";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "Váš aktuálny hovor sa ukončí (dajte o tom vedieť aj druhému účastníkovi) a začne sa nový skupinový hovor";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "Zavolať";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "Zrušiť";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "vytvoril/-a <a href=\"%@\">skupinovú konverzáciu.</a>";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "Odošlite valentínsku videosprávu";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "Valentínske videosprávy";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "Potešte svoju lásku";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "Vyznajte lásku";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "Potešte svoju lásku odoslaním valentínky.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "Teraz nie";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "Odoslať kontaktom";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "Zdieľať video";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "Šťastného Valentína";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "Šťastného\nValentína";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "Podarilo sa mi nahrať špeciálnu valentínsku videosprávu len pre teba. Vlastnú správu môžeš nahrať na stránke https://go.skype.com/vmhci";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "Odosiela sa vaša špeciálna valentínska správa…";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "Stlmiť";
+"INCALLCONTROLS_VIDEO_CAPTION" = "Video";
+"INCALLCONTROLS_AUDIO_CAPTION" = "Reproduktor";
+"INCALLCONTROLS_ADD_CAPTION" = "Pridať";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "Viac";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "Klávesnica";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "Ďalšie akcie";
+"GVC_CALLING_ME_ON_RIBBON" = "Ja";
+
+"GVC_NOTIFICATION_HUNG_UP" = "Používateľ %@ odišiel";
+"GVC_NOTIFICATION_JOINED" = "Používateľ %@ sa pripojil";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "Vytvorte skupinu – teraz so skupinovými videohovormi.";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "Spustite skupinový videohovor priamo z chatu.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "Skúste zmeniť zobrazenie.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "Ťuknutím znova zrušte pripnutie tejto osoby.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "Zmeňte hovor na bezplatný skupinový videohovor.";
+"GVC_INTERSTITIAL_TITLE" = "Zoznámte sa so skupinovými videohovormi";
+"GVC_INTERSTITIAL_CAPTION" = "Spojte všetkých kedykoľvek a zadarmo.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "Rozumiem";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "Pridať účastníkov";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";

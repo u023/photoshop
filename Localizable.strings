@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "%@ sent you a video message";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "%@ sent you a photo";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "%@ sent you a Moji";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "%@ sent you a voice message";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "%@ sent you a file";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "New like received";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "My account";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "Send feedback";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "Mark all as read";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "Add people";
+"HELP_NAVBAR_BUTTON" = "Help";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "You have unread feedback.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "Developer feedback";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "Show";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "Cancel";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "Add to favorites";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "Remove from favorites";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "Add new favorites via the menu on any contact.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "Sign out";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "Call from %@";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "Video call from %@";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "Group call from %@";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "Video message from %@.";
+"BACKGROUND_MISSEDCALL_ONE" = "Missed call from %@.";
+"BACKGROUND_MISSEDCALL_GROUP" = "Missed group call from %@";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "New contact request from %@.";
+"BACKGROUND_VOICEMAIL_ONE" = "New voice message from %@.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "Please check your network settings and try again.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "Answer";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "Decline";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "Add to call";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "Hang up";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "End call";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "Video message";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "Send video message";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "Cancel";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "Done";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "Settings";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "Create account";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "Create account";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "%@ is an invalid phone number. Please check and try again.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "Address book";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "Country code or region";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "Changes the country code or region.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "Change country code or region.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "Search";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Phone number";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "Dismiss";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "Open";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "Create event";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "Show Calendar";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "Copy";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "Add to Reading List";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "Open in Safari";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "Edit";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "Quote";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "On %1$@, at %2$@, %3$@ wrote:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "Delete";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "Forward";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "Forward";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "Share";
+"SHARE_MESSAGE_TITLE" = "Share";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "Loading";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "Double tap to cancel";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "Starting video…";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "Call is being forwarded…";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "Video";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "Dial pad";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "Resume call";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "Technical call information";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "Call options";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ wants to share their video";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ is not one of your contacts but wants to share their video.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Participants in this call have enabled video";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Do you want to accept video in this call?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Accept";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Decline";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "Add participants";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "Double tap to add participants.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "Password";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "Sign in";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Skype Name";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Skype Name, email or mobile";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "Your accounts";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "Select the account you'd like to use.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Skype account";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Microsoft account";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "Sign in";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "Select the type of account you'd like to use to sign into Skype.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Microsoft account";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Skype Name";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "Personalize your profile";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "Add photo";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "Change photo";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Sign in";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Problems signing in?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "OK";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "OK, got it";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "Continue";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "Not now";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "Learn more";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "Settings";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "Don't remind me again";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "Turn on notifications";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "Clear text";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "Send";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "Call,";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "Call";
+"CHAT_CALL_EVENT_CALL_STARTED" = "Call started";
+"CHAT_CALL_EVENT_NO_ANSWER" = "Call, no answer";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "Missed call";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "%d missed calls";
+"CHAT_CALL_EVENT_BUSY" = "Call, busy";
+"CHAT_CALL_EVENT_BLOCKED" = "Blocked";
+"CHAT_CALL_EVENT_FAILED" = "Call, failed";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "How was the quality of this call?";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "Thanks for your feedback.";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "Really poor";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "Poor";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "Fair";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "Good";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "Excellent";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "Call";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "Call, %@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "Call";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "Call, %@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "Call failed";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "Missed call";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "Call, no answer";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "Call, blocked";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "Sent";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "Delivered";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "Read";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "Sent";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "Delivered";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "Read";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "%@ created a new group.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "%@ created a new group with %@.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "%@ created a new group with %@ and %@.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "%@ created a new group with %@, %@ and one other.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "%@ created a new group with %@, %@ and %u others.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "It's <name>%@'s</name> birthday today";
+"CHAT_GRANTED_AUTH" = "You have shared your contact details";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "%@ added %@ to this group";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "Bots added to this group have access to each participant's Skype Name, Display Name and any new chat messages or new content shared in the group.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "Welcome! This group includes one or more bots. They have access to each participant's Skype Name, Display Name and any new chat messages or new content shared in the group.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "%@ joined the group";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "%@ left the group";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "%@ removed %@ from this group";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "The guest account for %@ has expired";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "You blocked %@";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "%@ changed the role of %@ to %@";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "Creator";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "Admin";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "Spectator";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "Writer";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "Speaker";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "Applicant";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "Retired";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "Outlaw";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "A role was changed";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "Untitled conversation";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "Show chat";
+"CONVERSATION_HIDE_CHAT" = "Hide chat";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "Show sidebar";
+"CONVERSATION_HIDE_TIMELINE" = "Hide sidebar";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "Switch to grid view";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "Switch to individual view";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "Join ongoing call";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "Join ongoing call";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "Show messages from <a href=\"jump\">older chat</a>";
+"CHAT_GOTO_NEW_CHAT" = "This chat has been updated to a new version. <a href=\"jump\">Go to the new chat</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "%@ needs to update Skype to participate in this chat. Help by sending them to Skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Learn more about new group chat</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "%@ need to update Skype to participate in this chat. Help by sending them to Skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Learn more about new group chat</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ can now participate in this chat.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "Opens one to one chat.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "Smiling";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "Sad";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "Laughing";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "Cool";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "Surprised";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "Winking";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "Crying";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "Sweating";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "Speechless";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "Kiss";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "Cheeky";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "Blushing";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "Wondering";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "Sleepy";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "Rolls eyes";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "In love";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "Evil grin";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "Fingers crossed";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "Yawning";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "Puking";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "Doh!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "Angry";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "It wasn't me";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "Party";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "Worried";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "mmm"; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "Nerdy";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "My lips are sealed";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "Waving";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "Facepalm";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "Devil";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "Angel";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "Envy";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "Wait";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "Hug";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "Make-up";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "Giggling";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "Clapping";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "Thinking";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "Bowing";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "Rolling on the floor laughing";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "Relieved";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "Happy";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "Smirking";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "Nodding";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "Shaking head";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "Waiting";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "Emo";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "Yes";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "No";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "Handshake";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "High five";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "Heart";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "Not listening";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "Squirrel";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "Flower";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "Raining";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "Sun";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "Tumbleweed";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "Music";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "Bandit";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "Too much information";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "Coffee";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "Pizza";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "Cash";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "Muscley arm";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "Cake";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "Beer";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "Cocktail";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "Dancing";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "Ninja";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "Star";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "Mooning";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "Phone";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "Middle finger";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "Pool party";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "Broken heart";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "Drunk";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "Swearing";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "Movie";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "Smoking";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "Clock";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "Man and dog";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "Man taking a photo";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "You got mail";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "Rock out";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "Punching";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "Banging head on wall";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "Call me";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "Working from home";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "Bug";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "Talking";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "Strutting";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "Man wearing a hat";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "Football player";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "Talk to the hand";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "Idea";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "Sheep";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "Cat";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "Bike";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "Dog";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "Emoticon: %@";
+
+"EMOTICON_TYPE_FLAG" = "Flag: %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "To add new contacts on Skype, <a href=\"add-people\">search Skype directory</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "You have no contacts on Skype.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "We haven’t found any Skype contacts in your address book yet. <a href=\"add-people\">Add people</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "We haven’t found any Skype contacts in your address book yet.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Search Skype directory"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "Find people you know on Skype"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "Searching for people you know"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "Double tap to cancel search.";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "Looking good!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "Hit record when you're ready.";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "Cancel recording";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "Re-record";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "Cancel";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "You've received a new video message. To see it, simply copy this secret code %2 and watch your video message here %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "Cancel";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "Record";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "Stop";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "Send";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "Preview";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "Switch to front camera";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "Switch to rear camera";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "Time recorded";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "Video Effects";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "normal";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "balloons";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "bears";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "kaleidoscope";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "pixelate";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "squeeze";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "bulge";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "X-ray";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "poster";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "snow";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "mirror";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "hearts";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "costume";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "Halloween";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "Subtitle language";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "Subtitles will appear after recording has completed";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "Creating subtitles...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "Subtitles could not be created";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "Listening";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "Video Message";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "You're no longer able to send video messages to this chat.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "Delete video";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "Are you sure you want to delete this video message?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "Delete";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Cancel";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "Delete video message";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "Play";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "Pause";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "Voice message";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Voice message, %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "Plays voice message";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "Stops playback";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Video message";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "Playable";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "Uploading";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "Unavailable";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "Plays video message";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "Using the front camera";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "Using the rear camera";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "Recording";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "Stopped";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "Sending";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "Not sent - Waiting for internet connection...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "Please check your connection and try again later.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "Not received - Waiting for internet connection...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "Video unavailable";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "Video unavailable";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ is sending a photo";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "Problems signing in?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "Problem signing in";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "Unable to connect to Skype, please try again later.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "Unable to connect to Microsoft, check your network settings and try again.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "Unable to connect to Microsoft, please try again later.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "Sorry, you can't sign into Skype with this Microsoft account because you don't meet the minimum age limit for your country/region.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "Oops, please check your details";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "We didn’t recognise these sign in details, please check and try again.";
+"LOGIN_PROBLEM_NO_NETWORK" = "Unable to sign in, please check your internet connection and try again.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Skype Credit";
+"IAP_PURCHASE_BUTTON" = "Add %@ credit";
+"IAP_CALLPHONES" = "Call phones";
+"IAP_SEND_SMS" = "Send SMS";
+"IAP_WITHSKYPECREDIT_TITLE" = "Why pay for Skype Credit?";
+"IAP_WITHSKYPECREDIT_BODY" = "Because you can reach people who aren't on Skype by calling mobile and landline numbers, or sending SMS, at low-cost rates.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Skype to Skype calls are free but with a little credit, you can do a lot more.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "Your current balance is %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "Currency conversion"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "%@ will convert to %@ for your Skype Credit balance.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "Learn more";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "Converted at the European Central Bank rate on %@.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "It looks like your app store currency and Skype currency don’t match. We’ll convert the app store currency for this purchase.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "To change these settings, sign in to Skype.com and select \"Change currency\" in My Account.";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "Insufficient credit";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "You don't have enough Skype Credit to call this number.";
+"IAP_CALL_NO_CREDIT_TITLE" = "No credit";
+"IAP_CALL_NO_CREDIT_BODY" = "You need Skype Credit to call this number.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "Your purchase was successful";
+"IAP_RESULT_SUCCESS_1_BODY" = "%@ has been added to your Skype account.";
+"IAP_RESULT_SUCCESS_2_BODY" = "%@ is being added to your Skype account.";
+"IAP_RESULT_SUCCESS_3_BODY" = "%@ has already been added to your Skype account.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "Your previous Skype Credit order is now complete. %@ has been added to your Skype account.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "Your previous Skype Credit order is currently being processed.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "Your previous Skype Credit order was successfully completed.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "Your purchase was cancelled";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "Sorry";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "We were unable to process your order, please try again later.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "Your order could not be completed right now but we’ll keep trying and you’ll be notified once your order is complete.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "Your previous Skype Credit order could not be completed right now but we’ll keep trying and you’ll be notified once your order is complete.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "Please read and accept Skype’s Terms of Use before purchasing credit.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "We were unable to process your order because your payment provider is currently unavailable, please try again later.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "We were unable to process your order as your account is managed by an administrator.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "We were unable to process your order, please contact Skype’s customer support team for help.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "Your iTunes account is currently unavailable.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "We were unable to complete your order because your iTunes account is currently unavailable, please try again later.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "We were unable to process your order as Skype does not support the currency set in your iTunes account.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "The currency set in your Skype account does not match your iTunes account. You can switch currency from your account settings on skype.com.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "We were unable to process your order, please check your network connection and try again.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "We were unable to process your order, please check your network connection and we’ll try again as soon as you've reconnected.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "We were unable to process your previous Skype Credit order, please check your network connection and we’ll try again as soon as you’ve reconnected.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "Get help";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Microsoft account";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "Cancel and start again";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "Linked Skype account";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "This Skype account has already been linked with another Microsoft account. Sign in with these Microsoft details to continue.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "There was a problem linking your accounts, please try again later.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "There was a problem opening your account, check your network connection and try again.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "Phone";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "Home";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "Office";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "Mobile";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "Other";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "Unknown number";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (Guest)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "Connecting...";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "Ringing...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "Calling...";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "Call on hold";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "Call ended";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "Starting...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "Calling...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "Live";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "Call on hold";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "Call held remotely";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "Others are live";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "Others are live full";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "Playing voice message";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "Recording";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "Recently live";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "Transferring";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "Signing in…";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "Loading contacts…";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "Updating…";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "This message has been removed";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "Unable to connect to Skype.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "Please check your network settings and try again.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "This Skype Name is invalid.";
+"Account::INVALID_EMAIL" = "This email address is invalid.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "Please check and try again.";
+"Account::UNACCEPTABLE_PASSWORD" = "This password is invalid.";
+"Account::SKYPENAME_TAKEN" = "This Skype Name is already taken.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "Please enter a new one.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "We didn’t recognize your Skype Name or password.";
+"Account::INCORRECT_PASSWORD" = "We didn’t recognize your Skype Name or password.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "You've tried to sign in too many times.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "Please try again later.";
+"Account::ATO_BLOCKED" = "Your account has been suspended,\n<a href = 'https://go.skype.com/account.recovery.ios'>tap here for more information.</a>";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "There was a problem signing in with your Microsoft account, please try again later.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "Unable to sign in, as you have run out of storage space on your device.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "Unable to sign in, please restart your device and try again.(%d)";
+"Account::DB_FAILURE" = "Unable to sign in, please restart your device and try again.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "Unable to sign in, try reinstalling Skype from the App Store.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "Your password has been changed, sign in to continue using Skype.";
+"Account::LOGOUT_REMOTE" = "You have been signed out.";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "This version of Skype is not supported.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "Update to the latest version of Skype to continue.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "Unable to sign in, please try again later.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "You cannot sign in to Skype as you do not meet the minimum age limit for your country/region.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "Please try again.(%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "Call";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "Video call";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "Video Message";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "Dial pad"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "Call phone numbers";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "Start a new chat";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Start a new chat on Skype";
+
+
+"HUB_RECENTS_TITLE" = "Recent";
+"HUB_PEOPLE_TITLE" = "People";
+"HUB_FAVOURIES_TITLE" = "Favorites";
+"CANCEL_ALERT_BUTTON" = "Cancel";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "Favorites";
+"PEOPLEPICKER_CONTACTS_TITLE" = "Contacts";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "Search for contacts";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "Find new contacts";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "Search for \"%@\"";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Search Skype directory for \"%@\"";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "People";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "Bots";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "Not connected"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "On Skype"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Connect on Skype";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "Cancel";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "Connect";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "New chat";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "Double tap to select.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "Recent conversations will appear here.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "You have no unread messages";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "Recent calls to mobiles and landlines will appear here, <a href=\"open-dialpad\">call a friend</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, new messages, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "Call held remotely";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "Call on hold";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "Ongoing call";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "Current call, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "Current call";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "Edited";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "Edit";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "Save photo";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "Save video";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "Show likes";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "Like";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "Unlike";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "Close";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "Likes";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "Double tap to view contact";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "New";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "Likes your message.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "Likes your message: %@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "Likes your photo.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "%@ likes your message.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "%1$@ likes your message: %2$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "%@ likes your photo.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>No one likes this yet</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "You like this";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "Sign in";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Skype Name";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Microsoft account";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "Create account";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Sign in with Skype Name";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Sign in with a Microsoft account";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Create account";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "Sign in details field";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "Already using Skype?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "Yes";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Yes, I already have a Skype account.";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "No";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "No, I do not have a Skype account.";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "People list filter";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "All contacts";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "Online contacts";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "Show all contacts.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "Only show online contacts.";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "Only show skype contacts.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "Voice call";
+"CHATINPUT_PLACEHOLDER" = "Type a message here";
+"CHATINPUT_PLACEHOLDER_SMS" = "Type an SMS here";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "Say hi to %@";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "Your conversation will appear here.";
+"CHATTYPING_SINGLEUSER" = "%@ is typing...";
+"CHATTYPING_TWOUSERS" = "%@ and %@ are typing...";
+"CHATTYPING_THREEUSERS" = "%@, %@ and one other are typing...";
+"CHATTYPING_MULTIPLEUSERS" = "%@, %@ and %d others are typing...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "Call phone";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "Send invite";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Send them an SMS link to chat on Skype.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "Chat";
+"SEND_SMS_TO_CONTACT_BUTTON" = "SMS";
+"EMPTY_PAGE_HEADER_TITLE" = "Say hello to";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "Hi, let’s chat on Skype: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "This SMS costs %@ to send";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "Select country/region";
+"DIALPAD_CALL_BUTTON" = "Call";
+"DIALPAD_STAR_BUTTON" = "Star";
+"DIALPAD_HASH_BUTTON" = "Hash";
+"DIALPAD_BACKSPACE_BUTTON" = "Delete";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "SMS";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "Opens a chat with %@";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "Keypad was hidden.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "Show keypad";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "Unable to call this contact";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "There was a problem calling this contact.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "Please check and try again.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "Emergency numbers";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "Calls to emergency numbers are not supported on your device.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "Invalid phone number";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "There was a problem calling this phone number.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "Please check and try again.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "You're already on a call";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "There is a phone call in progress.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Hang up first before starting a Skype call.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "You're already on a call";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "There is another Skype call in progress.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Hang up first before starting a new call.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "Unable to make call";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "Your operator does not allow Skype calls over your mobile network. Connect to a WiFi network first to make Skype calls.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "Call failed";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "You cannot make a call to yourself.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "Blocked contact";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "Unblock this contact first before calling them.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "Microphone access";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "Without permission to use your microphone, people won't be able to hear you during calls or video messages.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Go to your device settings and then Privacy to grant permission.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "Camera access";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "Without permission to use your camera, people won't be able to see you during calls or video messages.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Go to your device settings and then Privacy to grant permission.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "Without permission to use your camera, you won’t be able to take photos in Skype.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "Unable to make a call";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "Another audio application is preventing Skype from playing audio.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "Please check and try again.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "Unable to make a call";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "There is a problem with the audio on your device.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "Please check and try again.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "Unable to make a call";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "There is a problem with the audio on your device.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "Please restart Skype to continue.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "Unable to make a call";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "There is a problem with the audio on your device.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "Please try again later.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "Unable to make a call";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "There is a problem with the audio on your device.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "Please try again later.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "Unable to make call";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "There was a problem connecting this call.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "Please try again later.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "Unable to make call";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "While in India, you'll only be able to call other people in the country if they're also on Skype (for free). Unfortunately, you can't call mobiles or landlines in India over Skype.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "Learn more";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Unable to join call";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "This group call is full right now, try joining later.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "Camera in use";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "You're currently on a video call.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "Turn your video off first before trying to use the camera.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Group calls";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Groups with %d or more participants cannot be called from this device.";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "Group video calls";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Groups with %d or more participants cannot be called from this device.";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "You're offline";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "You need to be online to make calls on Skype.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Group calls";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Maximum number of participants reached on this call.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "Call on hold";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "Resume your call first before adding new participants.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "Call held remotely";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "This call needs to be resumed first before you can add new participants.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "Call is being set up";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "Unable to add participants while the call is being connected.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "Please wait until the call has been connected.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "Group";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "There was a problem adding participants, please try again later.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "Unable to start video";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "There was a problem turning the video on.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "Check that everyone on this call is on the latest version of Skype.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "Unable to start video";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skype was unable to start your video.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "Please try again later.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "Resuming call";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "There was a problem resuming this call.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "Close any applications currently using audio and end any ongoing phone calls before resuming this Skype call.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "Contact request";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "Participants were added or removed";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "It's <name>%@'s</name> birthday today"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "A group chat was created";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "Contact was blocked";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "Sent you a video message";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "You sent a video message";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>You</name> and <name>%@</name> are now contacts.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "is now a contact";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "You shared your contact details";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "Sent you a voice message";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "You sent a voice message.";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "%@ sent you a contact. This version of Skype doesn't support that yet.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "You sent a contact. This version of Skype doesn't support that yet.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "Double tap to view contact";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "Double tap to view contacts";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "Contact sent";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "Add to contacts";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "Already a contact";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "View contacts";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "Send contacts";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "Send contacts";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "& %d other";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "Select contacts";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "You have no contacts on Skype to send.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "No contacts";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "Contacts";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "Send contacts";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "Contact request sent";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "Contact request pending";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "Sent contacts";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "%@ sent you a message that this version of Skype doesn't support yet.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "You sent a message that this version of Skype doesn't support yet.";
+
+"RECENTS_DELETE_CONVERSATION" = "Delete chat";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "Mark as read";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "Mark as unread";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "Chat";
+"CALL_ACCESSIBILITYLABEL" = "Call";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "Main sign in";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Skype sign in";
+"HUB_ACCESSIBILITYLABEL" = "Hub";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "Suggested search item %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "Show emoticons";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "Show keyboard";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "Delete";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Search";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "Store";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "Recent";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "Emoticons";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Mojis";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "Search";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "Suggestions";
+"EXPRESSION_SEARCH_NO_RESULTS" = "Nothing found";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "Join my chat on Skype to watch this Moji: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "Hi there,\nJoin my chat on Skype to watch this Moji I've sent you: %@\nTalk soon,";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "Check this Moji out";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "Oops";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "There was a problem sharing this Moji, please try again later.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Skype Store";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "Loading Mojis and emoticons...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "Search";
+"EXPRESSION_STORE_FREE" = "Free";
+"EXPRESSION_STORE_REMOVE" = "Remove";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "Free download";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "Downloading";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "Downloaded";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "Oops";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "There was a problem loading Mojis and emoticons.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "There was a problem finding Mojis and emoticons, <a href=\"re-try fetching\">retry</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "Search for emoticons and Mojis";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "Recently used emoticons will appear here.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "Featured";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "Double tap to preview.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "Double tap to send.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "Double tap to close preview.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "Replay";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Moji preview";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "Tap again to send.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Grant access to your microphone in device settings for %@ to hear you.";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Grant access to your microphone in device settings for everyone to hear you.";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Grant access to your camera in device settings for %@ to see you.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Grant access to your camera in device settings for everyone to see you.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "Maximum number of participants reached on this call";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "You need a network connection to make a call";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "Your camera is disabled while in Split View.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Video is not supported in Slide Over.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "Speaker phone is turned on";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "Double tap to turn speaker phone off.";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "Speaker phone is turned off";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "Double tap to turn speaker phone on.";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "Call muted";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "Double tap to unmute call.";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "Call unmuted";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "Double tap to mute call.";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "Video is turned on";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "Double tap to turn video off.";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "Video is turned off";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "Double tap to turn video on.";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "Incoming";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "Outgoing";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 participant"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d participants"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "No participants"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%1$d of %2$d on this call";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "%1$@ needs to update Skype before joining this call.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "%1$@ and %2$@ need to update Skype before they can join this call.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "%1$@ and %2$@ need to update Skype before they can join this call.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ", ";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Incoming Skype call from %@";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Incoming group call from %@ and %@";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Incoming group call from %@, %@, and one other person";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Incoming group call from %@, %@, and %d other people";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Incoming video call from %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Incoming group video call from %@ and %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Incoming group video call from %@, %@, and one other person";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Incoming group video call from %@, %@, and %d other people";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skype call to %@";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Group call to %@ and %@";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Group call to %@, %@, and one other person";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Group call to %@, %@, and %d other people";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "Video call with %@.";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "Video call with %@ and %@.";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "Video call with %@, %@ and one other person.";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "Video call to %@, %@ and %d other people.";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skype call with %@";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Group call with %@ and %@";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Group call with %@, %@, and one other person";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Group call with %@, %@, and %d other people";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Video call with %@";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Group video call with %@ and %@";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Group video call with %@, %@, and one other person";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Group video call with %@, %@, and %d other people";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Bringing back Skype call with %@";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Bringing back group call with %@ and %@";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Bringing back group call with %@, %@, and one other person";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Bringing back group call with %@, %@, and %d other people";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Bringing back video call with %@";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Bringing back group video call with %@ and %@";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Bringing back group video call with %@, %@, and one other person";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Bringing back group video call with %@, %@, and %d other people";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "Call was ended";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "Call duration";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "Recording voice message";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "d";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "d";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "h";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "h";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "min";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "min";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "s";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "s";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "Accept";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "Decline";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> would like to add you on Skype\n\"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> sent you a message from <location>%@</location>"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "Say hi to <name>%@</name> and add this person to Contacts.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ is not a contact yet.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "\"%@\" <a href=\"edit-contact-request-message\">Edit</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "Send contact request";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "Add to contacts";
+"CONTACT_REQUEST_PENDING" = "Waiting for <name>%@</name> to accept contact request.\n<a href=\"resend-request\">Resend contact request</a>";
+"CONTACT_REQUEST_BLOCKED" = "<name>%@</name> is blocked";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "Unblock";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "Yes";
+"CONTACT_REQUEST_BLOCK_TITLE" = "Block contact";
+"CONTACT_REQUEST_DECLINED_TITLE" = "Contact request declined";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "Cancel";
+"CONTACT_REQUEST_BLOCK_ALERT" = "Are you sure you want to block this contact?";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "Would you also like to block and report this person?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "Block";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "Block and remove";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "Block and report";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "Add participants";
+"CHAT_OPTION_START_NEW_GROUP" = "Start new group";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "View profile";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "Notifications";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "Notifications for this chat are on.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "Notifications for this chat are off.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "Turn notifications on";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "Turn notifications off";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "Leave group";
+
+"CHAT_OPTION_PARTICIPANTS" = "Show participants";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "ON";
+"MK_SWITCH_OFF_MESSAGE" = "OFF";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "Turns on and off.";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "New chat";
+"NEWCHATSCENE_TITLE_TOKEN" = "TO:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "& %d other"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "& %d others"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "Select contacts to add";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Home";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Cancel creating new group";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Create new group";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "Voice call";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "Video call";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "Dial pad";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "Cancel";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "Back";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "My info";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "Open media menu";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "Close media menu";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "Help";
+"MY_INFO_FEEDBACK_ACTION" = "Send feedback";
+
+"MY_INFO_CONNECTING" = "Connecting...";
+
+"MY_INFO_STATUS" = "Status";
+"MY_INFO_CREDIT" = "Skype Credit";
+"MY_INFO_PROFILE_LINK" = "My account";
+"MY_INFO_SETTINGS" = "Settings";
+"MY_INFO_SIGN_OUT" = "Sign out";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "Enter mood message";
+"MY_INFO_MOOD_MESSAGE" = "Mood message";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "Double tap to edit";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "Send feedback";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "Change profile picture";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "Take photo";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "Choose existing photo";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "Remove profile picture";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "Settings";
+
+"SETTINGS_GENERAL" = "General";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "Allow targeted ads";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "Allow Microsoft to use your Skype profile information to show you more relevant ads in this app. <a href=\"skype.com\">Learn more</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "Chat notifications";
+"SETTINGS_PUSH_NOTIFICATIONS" = "Push notifications";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Push notifications";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "You'll receive message notifications even when Skype is closed.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "You won't receive message notifications when Skype is closed.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "In-App notifications";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "In-App notifications";
+"SETTINGS_INAPP_SOUNDS" = "In-App sounds";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "In-App sounds";
+"SETTINGS_OTHER" = "Other";
+
+"SETTINGS_PRIVACY" = "Privacy";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "How people find me";
+"SETTINGS_PRIVACY_EXPLANATION" = "These contact details can be used to find you on Skype.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "Add phone number";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "Profile picture";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "Visible to everyone";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "Visible to my contacts";
+
+"SETTINGS_CONTACTS_HEADER" = "Contacts";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "Automatically add friends";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype will check your Contacts and automatically add people you know to your Skype contact list.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "You'll need to manually find and add friends on Skype.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "Web link previews";
+
+"SETTINGS_EMOTICONS_HEADER" = "Emoticons";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "Use large emoticons";
+
+"SETTINGS_EDIT_BUTTON" = "Edit";
+"SETTINGS_DONE_BUTTON" = "Done";
+
+"SETTINGS_ABOUT" = "About";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "Enter your number";
+"PNV_HOW_IS_MY_NUMBER_USED" = "How is my number used?";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "Standard SMS rates may apply.";
+"PNV_ENTER_THE_CODE" = "Enter the code";
+"PNV_CODE_SENT" = "We've sent a code to your number";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>Call me</a> or <a href='pnv://resendcode'>resend code</a>";
+"PNV_VERIFYING_NUMBER" = "Verifying number";
+"PNV_NUMBER_VERIFIED" = "Verified";
+"PNV_NUMBER_USAGE_EXPLANATION" = "Your number will be used to help friends find you on Skype. It'll also make searching for new contacts much easier.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "Code";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "To change how people find you, go to \"%@\" in Settings to remove or disable any of your phone numbers.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "Alternatively, if you don't want to use your number and prefer to manually search and add new contacts, select \"%@\" below.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Skype's Privacy Policy";
+"PNV_NOT_NOW" = "Not now";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Phone number";
+
+"PNV_WELCOME_HEADING" = "Finding friends just got easier";
+"PNV_WELCOME_PARAGRAPH" = "Simply add your phone number to get started.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Next";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "Oops!";
+"PNV_DEFAULT_ERROR_MESSAGE" = "There was a problem verifying your number, please try again later.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "You've reached the maximum number of verified numbers. Delete one of your numbers from Settings before adding any more.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "The number you entered is invalid. Please check and try again.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "We cannot send an SMS to this number. Please check and try again.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "Looks like that code has expired. Select resend below to get a new code.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "Looks like that code was incorrect. Please check and try again.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "There was a problem with your network connection. Please check your network settings and try again.";
+"PNV_ERROR_TRY_AGAIN" = "Try again";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Add friends on Skype";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "We'll look for people you know on Skype and add them to your Contacts.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Learn more";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "To automatically add new Skype contacts, we'll check your address book from time to time to find people you know. Don't worry, we will not spam your friends with invites.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "If you change your mind at any time, simply turn off \"%@\" in Settings. Your address book will no longer be used to find people you know and you'll need to add people manually.";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "To change how people find you, go to \"%@\" in Settings to remove or disable any of your phone numbers.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Skype's Privacy Policy";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "Remember, Skype can't be used for emergency calling";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "Finding friends just got easier";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "New contacts have been added";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "Add contact";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "Cancel";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "Search";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Cancel";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "Search for people on Skype using their Skype Name, email or full name.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "Already a Skype contact";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "No matches found";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "Back";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "Forward";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "Share";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "About";
+"ABOUT_APPLICATION_VERSION" = "Skype version";
+"ABOUT_COPYRIGHT" = "© 2003-2016 Skype & Microsoft\nPatent Pending";
+"ABOUT_THIRD_PARTY_NOTICES" = "Third party notices";
+"ABOUT_PRIVACY_POLICY" = "Privacy Policy";
+"ABOUT_TERMS_OF_USE" = "Terms of Use";
+"ABOUT_COPYRIGHT_TEXT" = "The Skype name, associated trade marks and logos and the “S” logo are trade marks of Skype or related entities.\n\nWarning: This program is protected by copyright law and international treaties. Unauthorized reproduction or distribution of this program, or any portion of it, may result in severe criminal and civil penalties and will be prosecuted to the maximum extent possible under the law.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "Error";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "By email";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "Tell me about new Skype offers and features by email";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Tell me about new Skype offers and features:";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "Add profile picture";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "Email";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "john@example.com";
+"CREATEACCOUNT_FULLNAME_LABEL" = "Full name";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "First name";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "Last name";
+"CREATEACCOUNT_PASSWORD_LABEL" = "Password";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6-20 characters";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "Repeat password";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Skype Name";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "Required";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "Phone number";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "with country code";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "Some fields above haven't been filled in";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "Your passwords do not match, check and try again.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Skype Terms of Use";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "Yes, I have read, and accept <a href='%1$@'>Skype's Terms of Use</a> and <a href='%2$@'>Privacy Policy.</a>";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "No emergency calls with Skype";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype is not a replacement for your traditional telephone service and cannot be used for emergency calling.";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "I agree";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "Needs to be 6–32 characters long.";
+"SkyLib::TOO_LONG" = "Needs to be 6–32 characters long.";
+"SkyLib::CONTAINS_INVALID_CHAR" = "Invalid character e.g. Σ, à, ß.";
+"SkyLib::CONTAINS_SPACE" = "Can’t contain a space or a tab.";
+"SkyLib::SAME_AS_USERNAME" = "Too similar to your Skype Name.";
+"SkyLib::INVALID_FORMAT" = "Invalid format.";
+"SkyLib::CONTAINS_INVALID_WORD" = "Too easy to guess e.g. abcd, skype.";
+"SkyLib::TOO_SIMPLE" = "Needs to have at least 1 letter and 1 number.";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "Must start with a letter (A–Z).";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "Try a new Skype Name.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "Try a new password.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "Try a new email address.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "Please try again.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Skype Name";
+"SkyLib::ACCOUNT_PASSWORD" = "Password";
+"SkyLib::CONTACT_EMAILS" = "Email";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> renamed this group \"%@\"";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Skype Home";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> updated the group photo.";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> updated the group";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "Hide";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "%d new notifications";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "One new notification";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "No new notification";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "Hi, I'd like to add you on Skype.";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "Contact request";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. In %3$@";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "Would like to add you on Skype";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "Not now";
+"ALLOW_BUTTON" = "Allow";
+"PERMISSION_VIEW_TITLE" = "Let's get set up";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "For the best Skype experience, we'll need access to your microphone.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "For the best Skype experience, we'll need access to your camera.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "For the best Skype experience, we'll need access to your contacts.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "For the best Skype experience, we'll need access to your notifications.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "For the best Skype experience, we'll need access to your microphone and camera.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "For the best Skype experience, we'll need access to your microphone and contacts.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "For the best Skype experience, we'll need access to your microphone and notifications.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "For the best Skype experience, we'll need access to your camera and contacts.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "For the best Skype experience, we'll need access to your camera and notifications.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "For the best Skype experience, we'll need access to your contacts and notifications.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "For the best Skype experience, we'll need access to your microphone, camera and notifications.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "For the best Skype experience, we'll need access to your microphone, contacts and notifications.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "For the best Skype experience, we'll need access to your microphone, camera and notifications.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "For the best Skype experience, we'll need access to your camera, contacts and notifications.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "For the best Skype experience, we'll need access to your microphone, camera, contacts and notifications.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "Contacts";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "Microphone";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "Camera";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "Notifications";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "Are you sure?";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "Without access to these features, you won't be able to make or receive calls properly or be notified of incoming calls and messages.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "Your contact list will be empty and you won't be able to make or receive calls on Skype.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Learn more";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "Microphone and camera";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "To make or receive calls on Skype, we need access to your microphone and camera. Unfortunately, Skype will not work without these permissions.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "Contacts";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "To set up your Skype contact list, we need access to your Contacts. We’ll check your Contacts from time to time to find people you know on Skype. Don’t worry, we won’t spam your friends with invites.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "If you change your mind at any time, simply turn off \"%@\" in Settings. Your address book will no longer be used to find people you know and you'll need to add people manually";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "Notifications";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "To notify you of incoming calls and messages when Skype is closed, we need access to Notifications. You can also decide later to turn off individual chat notifications, if you don’t want to be disturbed.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "Grant access to Contacts";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Skype needs access to Contacts to find people you know. Go to Settings and enable Contacts to allow access.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "Skip";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "Get connected";
+"ONBOARDING_GET_STARTED_BUTTON" = "Get started";
+
+"ONBOARDING_IPHONE_TITLE1" = "Redesigned for iPhone";
+"ONBOARDING_IPAD_TITLE1" = "Redesigned for iPad";
+"ONBOARDING_TEXT1" = "Skype is easier to use than ever before - whether you're messaging friends or making a call.";
+
+"ONBOARDING_TITLE2" = "Find anything";
+"ONBOARDING_TEXT2" = "Search for people, groups or even previous conversations.";
+
+"ONBOARDING_IPHONE_TITLE3" = "Get more done";
+"ONBOARDING_IPAD_TITLE3" = "Do more on Skype";
+
+"ONBOARDING_IPHONE_TEXT3" = "Share your location, photos or see web link previews - all while catching up with friends.";
+"ONBOARDING_IPAD_TEXT3" = "Enjoy larger emoticons, web link previews and create new groups right from your iPad.";
+
+"ONBOARDING_TITLE4" = "Skype is better with friends";
+"ONBOARDING_TEXT4" = "Add your phone number to Skype to help friends find you.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "Sharing made easy";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Simply tap the share button to send websites or photos from your Camera Roll to friends on Skype.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "Add participants";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "ADD:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "Already a participant";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "Already on the call";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "ON THIS CALL";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "NOT ON THIS CALL";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "Connecting...";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "Connecting to %@";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "Calling...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "Calling %@";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "Call on hold";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "Call on hold for %@";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "Add favorites";
+"ADDFAVORITES_EMPTY_TITLE" = "Keep all your favorite people together, <a href=\"add-favorites\">add favorites</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "Skype contacts";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "File transfer";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ one other";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ %d others";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "You sent this file from another device.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "You sent these files from another device.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "This version of Skype does not support receiving files.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "This app only supports Skype's new photo sharing features.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "You sent a file";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "You sent %d files";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "Sent you a file";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "Sent you %d files";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "Online";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "Do not disturb";
+"CONTACT_AVAILABILITY_AWAY" = "Away";
+"CONTACT_AVAILABILITY_INVISIBLE" = "Invisible";
+"CONTACT_AVAILABILITY_OFFLINE" = "Offline";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "Available";
+"CONTACT_AVAILABILITY_BUSY" = "Busy";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "Blocked";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorite";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorite";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "This person is a favorite. Double tap to remove from favorites.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "This person is not a favorite. Double tap to add to favorites.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorite";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorite";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "This group is not in your favorites. Double tap to add to favorites.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "This group is in your favorites. Double tap to remove from favorites.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@ %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@ %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "SKYPE NAME";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "WEBSITE";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "ABOUT ME";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "BIRTHDAY";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "GENDER";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "LANGUAGE";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "CONTACTS";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "CAPABILITIES";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "PRIVACY";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "CREATED BY";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "DESCRIPTION";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "Send and receive instant messages and photos.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "This bot will have access to your Display Name, Skype Name, and any chat messages or content that you or other group participants share with it.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "Female";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "Male";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "Block contact";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "Unblock contact";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "Remove contact";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "Remove contact";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "%@ will be removed from your contact list.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "Remove";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "Cancel";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "Hide";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "Group profile";
+"GROUPPROFILE_NOTIFICATIONS" = "Notifications";
+"GROUPPROFILE_MENU_TITLE" = "View profile";
+"GROUPPROFILE_LEAVE_CHAT" = "Leave group";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "Participants";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "Invite";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "Chat invitations";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "Chat history will be visible to everyone";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "Enable chat invitations to invite anyone to this chat.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "Only Skype contacts can be added to this chat.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "Invite anyone to this chat, even if they're not on Skype.";
+"GROUPPROFILE_CHAT_HISTORY" = "Chat history";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "Chat history is currently hidden from new participants.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "Chat history is visible to everyone.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "Add participants";
+"GROUP_ADMIN_STRING" = "%@ (Admin)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "Chat invitations";
+"GROUPPROFILE_ALERT_BODY" = "The invite for this chat is currently unavailable, please try again later.";
+"GROUPPROFILE_ALERT_BUTTON" = "OK";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Join my chat on Skype: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "Join my chat";
+"INVITES_MAIL_BODY" = "Hi there,\nI've made a group on Skype for us to chat, share and collaborate.\nJoin it by clicking the link:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "Rename group";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "Rename group";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "Rename contact";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "Double tap to rename contact";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "Add bot";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "Send contact request";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "Resend contact request";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "Contact request sent";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "Accept";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "Decline";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "<name>%@</name> would like to add you on Skype"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "Open";
+"PUSH_CHAT_CALL" = "Call";
+"PUSH_CHAT_TEXT_REPLY" = "Reply";
+"PUSH_CALL_ANSWER" = "Answer";
+"PUSH_CALL_DECLINE" = "Decline";
+"PUSH_CALL_VIDEO_VIDEO" = "Video";
+"PUSH_CALL_VIDEO_AUDIO" = "Voice";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "Message";
+"PUSH_MISSED_CALL_CALLBACK" = "Call back";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "Problem with Contacts";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "There was a problem accessing phone numbers from your Contacts. Try re-syncing your mail accounts in Settings to fix the problem.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "Save phone number";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "No matching calls.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "One matching call.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "%d matching calls.";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@) last called: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@, last called: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@ is an address book contact, but needs you to connect first before chatting.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Connect on Skype";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@ is an address book contact. You can call and chat with them on Skype.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Not yet connected on Skype";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "Clear text";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Cancel";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "Search Skype";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "Find new contacts";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "Tap to find new contacts";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "Search for \"%@\"";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Skype directory";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "Search history";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "Clear";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "Contacts";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "No matches found";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "Groups";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "Conversations";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "Save number";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "Save number";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "Enter a name";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "Enter a number";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "Saving number";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "Number saved";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "Invalid number";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "You can't add this number because it's an invalid number. Try a different one.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "Invalid number";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "You can't add emergency numbers to Skype.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "Discard";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "Are you sure you want to call:\n\n%@?";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "Are you sure you want to video call:\n\n%@?";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "Voice call";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "Video call";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "Call";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "See original";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "See translation";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "You shared a location";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "Shared a location with you";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "Shared the location (%@)";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "Double tap to open";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "Directions To Location";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "Location";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "Share your location";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "Sent a location";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "Location access";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "Without permission to use your location, you won't be able to share your location with friends on Skype.";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Go to your device settings and then Privacy to grant permission.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "Access to Contacts";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "We need access to your Contacts before we can show your address book in Skype.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "Go to your device settings and then Privacy to grant permission.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "Uh-oh";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "There was a problem loading the map.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "Check your network connection and try again.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "Clear";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "Clear added pins";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "Location sharing";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "You're no longer able to share your location to this chat.";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "Share the location";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "Search";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "No results found";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "There was a problem finding this location, please wait and try again.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Home";
+"TIMELINE_ICON_DIALPAD" = "Dialpad";
+"TIMELINE_ICON_PEOPLE" = "Contacts";
+"TIMELINE_SWIPEACTION_MUTE" = "Mute";
+"TIMELINE_SWIPEACTION_UNMUTE" = "Unmute";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "Push notifications";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "Turn push notifications on to receive call and message alerts when you’re away from Skype.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "Receive call and message alerts when you’re away from Skype by going to iPhone Settings > Notification Center and turning Skype notifications on.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "Receive call and message alerts when you’re away from Skype by going to iPhone Settings then Notification Centre and turning Skype notifications on.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "Push notifications";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "You’ll need to turn on Skype notifications from your device settings first before you can receive push notifications.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "Open";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "View";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "Listen";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "Play";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "There was a problem opening the message, check your network connection and try again.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "Shared a media document";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "Double tap to open";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "Source is not trusted";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "Photo";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "Take photo";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "Choose existing photo";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "Choose existing photo or video";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "Cancel";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "Choose";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "double tap to close";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "Sent a photo. Double tap to open";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "Receiving photo";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "Sending photo";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "There was a problem sending this photo";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "There was a problem receiving this photo";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "double tap to retry";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "Send";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "Cancel";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "Video cannot be sent as it is larger than %d MB";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "Photo cannot be sent as it is larger than %d MB";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "Sent a video message. Double tap to open";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "Receiving video message";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "Sending video message";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "There was a problem sending this video message";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "There was a problem receiving this video message";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "File sent. Double tap to download";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "Received a file. Double tap to open";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "Downloading";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "%@ downloaded. Double tap to open";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "File is larger than %d MB. Data charges may apply";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "File unavailable";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "Restart";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "There was a problem receiving this file";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "This file could potentially be unsafe";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "Cannot download, virus detected";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "Waiting for internet connection…";
+"FILE_TRANSFER_BUTTON_CANCEL" = "Cancel";
+"FILE_TRANSFER_BUTTON_RETRY" = "Retry";
+"FILE_TRANSFER_LABEL_CANCELED" = "Canceled";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "Download";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "Learn more";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "Shared files are deleted from Skype after %d days. To keep a file for longer, save it to your device.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "File unavailable";
+"FILE_SENDING_LABEL_ERROR" = "There was a problem sending this file";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "Accept file?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "Only accept files from people you trust. Do you want to accept the file %@ from %@?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "Warning - this file may be unsafe for your computer/device";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "Do you want to accept the file %@ from %@?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "Do not ask me again";
+"FILE_TRANSFER_ACCEPT" = "Accept";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "Insufficient space";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "Go to Settings > General > Usage to free up storage space on this device.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "The user has denied the application access to their media";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "To allow, go to Settings > Privacy > Photos and enable Skype.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "You sent a photo";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "Sent you a photo";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "%@ sent a photo.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "This device doesn't support Skype's new photo sharing features yet, but you can still view it in your browser here: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "Photo unavailable";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "Oops, this photo is currently unavailable.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "Cancel";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "Retry";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "Photo unavailable";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "Oops, this photo is currently unavailable.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "OK";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "Save photo";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "Cancel";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "Oops";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "There was a problem saving this photo.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "Retry";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "Cancel";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "Web media";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "Search Giphy";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Update Skype";
+"FORCE_UPGRADE_CAPTION" = "Your version of Skype is out of date. Get the latest version to enjoy new features and improvements.";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "Get it now";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "Sent you a Moji";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "You sent a Moji";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "Downloading Moji";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "There was a problem downloading this Moji";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "Double tap to retry";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "Play Moji";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "This content has been removed";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "This content has expired";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "Last seen moments ago";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "Last seen over one week ago";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "Phone";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "Instantly find friends, messages or new contacts";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Skype Mojis";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "More Moji fun now with %@ clips!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "Search field";
+
+"TAB_RECENT_TITLE" = "Recent";
+"TAB_CONTACTS_TITLE" = "Contacts";
+"TAB_CALLS_TITLE" = "Call phones";
+"TAB_MYINFO_TITLE" = "My info";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "All";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "Unread";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "All";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "Online";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "Thank you!";
+"APPSTORE_RATING_SUBTITLE" = "Share the love and leave a rating in the App Store. It'll only take a moment.";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "Rate app";
+
+"CONTACTS_ADD_FAVORITES" = "Add favorites";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "Search contacts";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "No internet connection";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "You're offline. <a href=\"reconnect\">Reconnect</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Skype is having problems";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "Connecting";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "Connected";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "Updating conversations…";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "Delete chat";
+"DELETECHAT_ALERT_MESSAGE"              = "Are you sure you want to delete this chat from this device? Chat history will also be deleted.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "Delete";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "Edit";
+"LIST_EDITING_CANCEL" = "Cancel";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "Mark all as read";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "Mark as read";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "Delete all";
+"LIST_EDITING_DELETE_TOOLBAR" = "Delete (%d)";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "Delete all chats";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "Delete all";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "Hide all";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "I'll take a look later";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "New call";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "on hold";
+"CALLING_BANNER_STATUS_MUTED" = "muted";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Skype Certified";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "Start a new group call";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "New group call starting";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "Your current call will end (please let the other person know) and your new group call will start";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "Call";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "Cancel";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "has created a <a href=\"%@\">group conversation.</a>";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "Send a Valentine’s Day video message";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "Valentine’s video messages";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "Make a loved one’s day special";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "Share the love";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "Make a loved one’s day special by sending them a Valentine’s Day message.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "Not right now";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "Send to contacts";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "Share video";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "Happy Valentine’s Day";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "Happy\nValentine’s Day";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "I’ve recorded a special Valentine’s Day video message just for you. To record your own visit https://go.skype.com/vmhci";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "Sending you a special Valentine’s Day message…";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "Mute";
+"INCALLCONTROLS_VIDEO_CAPTION" = "Video";
+"INCALLCONTROLS_AUDIO_CAPTION" = "Speaker";
+"INCALLCONTROLS_ADD_CAPTION" = "Add";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "More";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "Dial Pad";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "More actions";
+"GVC_CALLING_ME_ON_RIBBON" = "Me";
+
+"GVC_NOTIFICATION_HUNG_UP" = "%@ left";
+"GVC_NOTIFICATION_JOINED" = "%@ joined";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "Create a group - now with group video calling.";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "Start a group video call straight from your chat.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "Try changing the view.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "Tap again to unpin this person.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "Turn this into a free group video call.";
+"GVC_INTERSTITIAL_TITLE" = "Say hello to group video calling";
+"GVC_INTERSTITIAL_CAPTION" = "Get everyone together, whenever you want, for free.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "Got it";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "Add participants";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";

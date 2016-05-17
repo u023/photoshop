@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "%@ size görüntülü mesaj gönderdi.";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "%@ size fotoğraf gönderdi";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "%@ size bir Moji gönderdi";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "%@ size bir sesli mesaj gönderdi";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "%@ size bir dosya gönderdi";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "Yeni bir beğeni alındı";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "Hesabım";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "Görüşlerinizi bildirin";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "Tümünü okundu yap";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "Kişi ekle";
+"HELP_NAVBAR_BUTTON" = "Yardım";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "Okunmamış geri bildiriminiz var.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "Geliştirici geri bildirimi";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "Göster";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "İptal";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "Favorilere ekle";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "Favorilerden çıkar";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "Kişilerden herhangi biri üzerindeki menü aracılığıyla yeni favoriler ekleyin.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "Oturumu kapat";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "%@ kişisinden çağrı";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "%@ kişisinden görüntülü çağrı";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "%@ kişisinden grup görüşmesi";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "%@ kişisinden görüntülü mesaj.";
+"BACKGROUND_MISSEDCALL_ONE" = "%@ kişisinden cevapsız çağrı.";
+"BACKGROUND_MISSEDCALL_GROUP" = "%@ kişisinden cevapsız grup görüşmesi";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "%@ kişisinden yeni kişi ekleme isteği.";
+"BACKGROUND_VOICEMAIL_ONE" = "%@ kişisinden yeni sesli mesaj.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "Lütfen ağ ayarlarınızı kontrol edip tekrar deneyin.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "Yanıtla";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "Reddet";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "Çağrıya ekle";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "Kapat";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "Çağrıyı sonlandır";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "Görüntülü mesaj";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "Görüntülü mesaj gönder";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "İptal";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "Tamam";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "Ayarlar";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "Hesap oluştur";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "Hesap oluştur";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "%@ geçersiz bir telefon numarasıdır. Lütfen kontrol edip tekrar deneyin.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "Adres defteri";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "Ülke kodu veya bölge";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "Ülke kodunu veya bölgeyi değiştirir.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "Ülke kodunu veya bölgeyi değiştirin.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "Ara";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Telefon numarası";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "Kapat";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "Aç";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "Etkinlik oluştur";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "Takvimi Göster";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "Kopyala";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "Okuma Listesine Ekle";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "Safari'de aç";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "Düzenle";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "Alıntı";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "%1$@ tarihinde, %2$@, %3$@ yazdı:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "Sil";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "İleri";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "İleri";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "Paylaş";
+"SHARE_MESSAGE_TITLE" = "Paylaş";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "Yükleniyor";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "İptal etmek için iki kez dokunun";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "Görüntü başlatılıyor...";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "Çağrı yönlendiriliyor…";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "Görüntülü";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "Tuş takımı";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "Çağrıyı sürdür";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "Teknik çağrı bilgileri";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "Çağrı seçenekleri";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ görüntülerini paylaşmak istiyor";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ kişilerinizden biri değil ancak görüntülerini paylaşmak istiyor.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Bu çağrıdaki katılımcılar görüntülü görüşmeyi etkinleştirdi";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Bu çağrıda görüntülü görüşmeyi kabul etmek istiyor musunuz?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Kabul et";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Reddet";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "Katılımcı ekle";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "Katılımcı eklemek için iki kez dokunun.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "Parola";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "Oturum aç";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Skype Adı";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Skype Adı, e-posta veya cep no";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "Hesaplarınız";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "Kullanmak istediğiniz hesabı seçin.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Skype hesabı";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Microsoft hesabı";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "Oturum aç";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "Skype'ta oturum açmak için kullanmak istediğiniz hesap türünü seçin.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Microsoft hesabı";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Skype Adı";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "Profilinizi kişiselleştirin";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "Fotoğraf ekle";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "Fotoğrafı değiştir";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Oturum açın";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Oturum açmada sorun mu var?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "Tamam";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "Tamam, anladım";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "Devam";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "Şimdi değil";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "Daha fazla bilgi edinin";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "Ayarlar";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "Tekrar hatırlatma";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "Bildirimleri aç";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "Metni sil";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "Gönder";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "Çağrı,";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "Çağrı";
+"CHAT_CALL_EVENT_CALL_STARTED" = "Çağrı başladı";
+"CHAT_CALL_EVENT_NO_ANSWER" = "Çağrı, yanıt yok";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "Cevapsız çağrı";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "%d cevapsız çağrı";
+"CHAT_CALL_EVENT_BUSY" = "Çağrı, meşgul";
+"CHAT_CALL_EVENT_BLOCKED" = "Engellenmiş";
+"CHAT_CALL_EVENT_FAILED" = "Çağrı yapılamadı";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "Bu çağrının kalitesi nasıldı?";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "Görüşleriniz için teşekkür ederiz.";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "Çok kötü";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "Kötü";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "Fena değil";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "İyi";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "Mükemmel";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "Çağrı";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "Ara, %@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "Çağrı";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "Ara, %@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "Çağrı yapılamadı";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "Cevapsız çağrı";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "Çağrı, yanıt yok";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "Çağrı, engellendi";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "Gönderildi";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "Teslim edildi";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "Okundu";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "Gönderildi";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "Teslim edildi";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "Okundu";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "%@ yeni bir grup oluşturdu.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "%@, %@ ile yeni bir grup oluşturdu.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "%@; %@ ve %@ ile yeni bir grup oluşturdu.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "%@; %@, %@ ve bir başkasıyla yeni bir grup oluşturdu.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "%@; %@, %@ ve %u başka kişiyle yeni bir grup oluşturdu.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "Bugün <name>%@</name> doğdu";
+"CHAT_GRANTED_AUTH" = "Kişi ayrıntılarınızı paylaştınız";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "%@, %@ kullanıcısını bu gruba ekledi";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "Bu gruba eklenen robotlar, her katılımcının Skype Adına, Görünen Adına ve grupta paylaşılan yeni sohbet mesajlarına veya yeni içeriğe erişebilir.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "Hoş geldiniz! Bu grup bir veya daha fazla robot içerir. Bu robotlar, her katılımcının Skype Adına, Görünen Adına ve grupta paylaşılan yeni sohbet mesajlarına veya yeni içeriğe erişebilir.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "%@ gruba katıldı";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "%@ gruptan çıktı";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "%@, %@ kullanıcısını bu gruptan çıkardı";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "%@ için konuk hesabının süresi doldu";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "%@ kullanıcısını engellediniz";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "%@, %@ rolünü %@ olarak değiştirdi";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "Oluşturan";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "Yönetici";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "Gözlemci";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "Yazar";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "Konuşmacı";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "Aday";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "Ayrıldı";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "Engellendi";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "Rol değiştirildi";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "Adsız konuşma";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "Sohbeti göster";
+"CONVERSATION_HIDE_CHAT" = "Sohbeti gizle";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "Kenar çubuğunu göster";
+"CONVERSATION_HIDE_TIMELINE" = "Kenar çubuğunu gizle";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "Kılavuz görünümüne geç";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "Tekli görünüme geç";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "Çağrıya katıl";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "Çağrıya katıl";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "<a href=\"jump\">Eski sohbetten</a> mesajları göster";
+"CHAT_GOTO_NEW_CHAT" = "Bu sohbet yeni bir sürüme güncellendi. <a href=\"jump\">Yeni sohbete gidin</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "%@ kullanıcısının bu sohbete katılabilmesi için Skype'ı güncellemesi gerekiyor. Onlara, skype.com/updateme bağlantısına yönlendirerek yardımcı olun. <a href=\"https://support.skype.com/faq/FA12361/\">Yeni grup sohbeti hakkında daha fazla bilgi edinin</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "%@ kullanıcısının bu sohbete katılabilmek için Skype'ı güncellemesi gerekiyor. Onlara, skype.com/updateme bağlantısına yönlendirerek yardımcı olun. <a href=\"https://support.skype.com/faq/FA12361/\">Yeni grup sohbeti hakkında daha fazla bilgi edinin</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ şimdi bu sohbete katılabilir.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "Bire bir sohbeti açar.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "Gülümseme";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "Mutsuz";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "Kahkaha";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "Havalı";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "Şaşırmış";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "Göz Kırp";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "Ağlıyorum";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "Ter döküyorum";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "Nutkum tutuldu";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "Öpücük";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "Şımarık";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "Utanmış";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "Meraklı";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "Uykulu";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "Pek inanmadım";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "Aşık";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "Şeytani gülümseme";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "Dua ediyorum";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "Esniyorum";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "Kusuyorum";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "Peh!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "Kızgın";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "Ben yapmadım";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "Parti";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "Endişeli";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "mmm"; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "İnek";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "Dudaklarım mühürlü";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "El sallıyorum";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "Utanç içindeyim";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "Şeytan";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "Melek";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "Kıskanç";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "Bekle";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "Kucaklama";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "Makyaj";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "Kıkırdıyorum";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "Alkış";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "Düşünüyorum";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "Saygılar";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "Gülmekten yerlere yattım";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "Ucuz atlattım";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "Mutlu";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "Sırıtış";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "Onaylıyor";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "Başımı sallıyorum";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "Bekleniyor";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "Duygusal";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "Evet";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "Hayır";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "Tokalaşma";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "Çak";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "Kalp";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "Dinlemiyor";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "Sincap";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "Çiçek";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "Yağmur";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "Güneş";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "Çalı yumağı";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "Müzik";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "Haydut";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "Çok fazla detay";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "Kahve";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "Pizza";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "Nakit";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "Kaslı kol";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "Pasta";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "Bira";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "Kokteyl";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "Dans";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "Ninja";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "Yıldız";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "Çok da umurumdaydı";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "Telefon";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "Orta parmak";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "Havuz partisi";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "Kırık kalp";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "Sarhoş";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "Küfür";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "Film";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "Sigara içiyor";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "Saat";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "Adam ve köpek";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "Fotoğraf çeken adam";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "Postanız var";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "Rock yapıyorum";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "Yumruk atıyorum";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "Kafamı duvarlara vuruyorum";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "Beni ara";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "Evden çalışıyorum";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "Böcek";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "Konuşuyorum";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "Kasılıyorum";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "Şapkalı adam";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "Futbolcu";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "Külahıma anlat";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "Fikir";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "Koyun";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "Kedi";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "Bisiklet";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "Köpek";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "İfade: %@";
+
+"EMOTICON_TYPE_FLAG" = "Bayrak: %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "Skype'da yeni kişi eklemek üzere <a href=\"add-people\">Skype dizininde arama yapın</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "Skype'da ekli kişiniz yok.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "Adres defterinizde henüz hiçbir Skype kişisi bulamadık. <a href=\"add-people\">Kişi ekleyin</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "Adres defterinizde henüz hiçbir Skype kişisi bulamadık.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Skype dizininde ara"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "Tanıdığınız kişileri Skype'ta bulun"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "Tanıdığınız kişiler aranıyor"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "Aramayı iptal etmek için iki kez dokunun";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "Her şey hazır!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "Siz hazır olduğunuzda kaydetmeye başlayın.";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "Kaydı iptal et";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "Yeniden kaydet";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "İptal";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "Yeni bir görüntülü mesaj aldınız. Görmek için %2 gizli kodunu kopyalamanız yeterlidir, görüntülü mesajınızı buradan izleyebilirsiniz: %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "İptal";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "Kayıt";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "Durdur";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "Gönder";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "Önizleme";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "Ön kameraya geç";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "Arka kameraya geç";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "Kaydedilme saati";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "Video Efektleri";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "Normal";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "balonlar";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "ayılar";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "çiçek dürbünü";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "pikselleştir";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "sığdır";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "kabarık";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "Röntgen";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "poster";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "kar";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "ayna";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "kupa";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "kostüm";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "Cadılar Bayramı";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "Altyazı dili";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "Altyazı kayıt tamamlandıktan sonra görünür";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "Altyazı oluşturuluyor...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "Altyazı oluşturulamadı";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "Dinleniyor";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "Görüntülü Mesaj";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "Bu sohbete artık görüntülü mesaj gönderemeyeceksiniz.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "Tamam";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "Videoyu sil";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "Bu görüntülü mesajı silmek istediğinizden emin misiniz?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "Sil";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "İptal";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "Görüntülü mesajı sil";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "Oynat";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "Duraklat";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "Sesli mesaj";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Sesli mesaj, %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "Sesli mesajı oynatır.";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "Oynatmayı durdurur";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Görüntülü mesaj";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "Oynatılabilir";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "Karşıya Yükleniyor";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "Kullanılamaz";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "Görüntülü mesajı oynatır";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "Ön kamera kullanılıyor";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "Arka kamera kullanılıyor";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "Kaydediliyor";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "Durduruldu";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "Gönderiliyor";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "Gönderilmedi - İnternet bağlantısı bekleniyor...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "Lütfen bağlantınızı kontrol edin ve daha sonra tekrar deneyin.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "Alınmadı - İnternet bağlantısı bekleniyor...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "Video kullanılamıyor";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "Video kullanılamıyor";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ fotoğraf gönderiyor";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "Oturum açmada sorun mu var?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "Oturum açma sorunu";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "Skype'a bağlanılamıyor, lütfen daha sonra tekrar deneyin.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "Microsoft'a bağlanılamıyor, ağ ayarlarınızı kontrol edip tekrar deneyin.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "Microsoft'a bağlanılamıyor, lütfen daha sonra tekrar deneyin.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "Maalesef ülkenizdeki/bölgenizdeki en düşük yaş sınırlamasına uygun olmadığınız için bu Microsoft hesabıyla Skype'ta oturum açamazsınız.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "Lütfen bilgilerinizi kontrol edin";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "Bu oturum açma bilgilerini tanıyamadık; lütfen kontrol edip tekrar deneyin.";
+"LOGIN_PROBLEM_NO_NETWORK" = "Oturum açılamıyor, lütfen İnternet bağlantınızı denetleyin ve tekrar deneyin.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Skype Kontörü";
+"IAP_PURCHASE_BUTTON" = "%@ kontörü ekle";
+"IAP_CALLPHONES" = "Telefonlara çağrı yapın";
+"IAP_SEND_SMS" = "SMS gönder";
+"IAP_WITHSKYPECREDIT_TITLE" = "Skype Kontörü satın almanın yararları neler?";
+"IAP_WITHSKYPECREDIT_BODY" = "Skype Kontörü ile mobil ve sabit hatlı telefon numaralarına düşük ücretlerle çağrı yaparak veya SMS göndererek Skype'ta olmayan kişilere de ulaşabilirsiniz.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Skype'tan Skype'a çağrılar ücretsizdir ancak kontörle çok daha fazlasını yapabilirsiniz.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "Mevcut bakiyeniz: %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "Para birimi dönüştürme"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "Skype Kontörü bakiyeniz için %@, %@ olarak dönüştürülecek.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "Daha fazla bilgi";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "%@ tarihindeki Avrupa Merkez Bankası oranına göre dönüştürüldü.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "Uygulama mağazası para biriminiz ve Skype para biriminiz eşleşmiyor. Bu satın alma işleminde uygulama mağazası para birimini dönüştüreceğiz.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "Bu ayarları değiştirmek için Skype.com adresinde oturum açın ve Hesabım menüsünden \"Para birimini değiştir\"i seçin.";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "Yetersiz kontör";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "Bu numarayı aramak için yeterli Skype Kontörünüz yok.";
+"IAP_CALL_NO_CREDIT_TITLE" = "Kontör yok";
+"IAP_CALL_NO_CREDIT_BODY" = "Bu numarayı aramak için Skype Kontörüne ihtiyacınız var.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "Satın alma işleminiz başarılı";
+"IAP_RESULT_SUCCESS_1_BODY" = "Skype hesabınıza %@ eklendi.";
+"IAP_RESULT_SUCCESS_2_BODY" = "Skype hesabınıza %@ ekleniyor.";
+"IAP_RESULT_SUCCESS_3_BODY" = "Skype hesabınıza %@ zaten eklendi.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "Önceki Skype Kontörü siparişiniz şimdi tamamlandı. Skype hesabınıza %@ eklendi.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "Önceki Skype Kontörü siparişiniz şu anda işleniyor.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "Önceki Skype Kontörü siparişiniz başarıyla tamamlandı.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "Satın alma işleminiz iptal edildi";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "Üzgünüz";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "Siparişinizi işleme alamadık, lütfen daha sonra tekrar deneyin.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "Siparişiniz şu anda tamamlanamıyor, ancak denemeye devam edeceğiz. Siparişiniz tamamlandığında sizi bilgilendireceğiz.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "Önceki Skype Kontörü siparişiniz şu anda tamamlanamıyor, ancak denemeye devam edeceğiz. Siparişiniz tamamlandığında sizi bilgilendireceğiz.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "Kontör satın almadan önce lütfen Skype Kullanım Şartları'nı okuyup kabul edin.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "Ödeme sağlayıcınız şu anda kullanılamadığı için siparişinizi işleme alamadık, lütfen daha sonra tekrar deneyin.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "Hesabınız yönetici kontrolünde olduğu için siparişinizi işleme alamadık.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "Siparişinizi işleme alamadık, yardım için lütfen Skype müşteri desteği ile iletişim kurun.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "iTunes hesabınız şu anda kullanılamıyor.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "iTunes hesabınız şu anda kullanılamadığı için siparişinizi işleme alamadık, lütfen daha sonra tekrar deneyin.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "Skype, iTunes hesabınızda belirtilen para birimini desteklemediği için siparişinizi işleme alamadık.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "Skype hesabınızda belirtilen para birimi iTunes hesabınızla eşleşmiyor. Para biriminizi skype.com üzerindeki hesap ayarlarınızdan değiştirebilirsiniz.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "Siparişinizi işleme alamadık, lütfen ağ bağlantınızı kontrol ettikten sonra tekrar deneyin.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "Siparişinizi işleme alamadık, lütfen ağ bağlantınızı kontrol edin. Tekrar bağlandığınızda yeniden deneyeceğiz.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "Önceki Skype Kontörü siparişinizi işleme alamadık, lütfen ağ bağlantınızı kontrol edin. Tekrar bağlandığınızda yeniden deneyeceğiz.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "Yardım alın";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Microsoft hesabı";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "İptal et ve tekrar başlat";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "Bağlı Skype hesabı";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "Bu Skype hesabı zaten başka bir Microsoft hesabına bağlı. Devam etmek için bu Microsoft bilgileriyle oturum açın.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "Hesaplarınız ilişkilendirilirken bir sorun oluştu, lütfen daha sonra tekrar deneyin.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Hesabınız açılırken bir sorun oluştu, ağ bağlantınızı kontrol edip tekrar deneyin.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "Telefon";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "Ana Sayfa";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "Office";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "Cep";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "Diğer";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "Bilinmeyen numara";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (Konuk)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "Bağlanıyor...";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "Çalıyor...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "Arıyor...";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "Çağrı beklemede";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "Çağrı sona erdi";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "Başlıyor...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "Arıyor...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "Canlı";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "Çağrı beklemede";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "Çağrı karşı tarafta beklemeye alındı";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "Diğerleri canlı bağlantıda";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "Diğerleri tam canlı bağlantıda";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "Sesli mesaj dinletiliyor";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "Kaydediliyor";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "Yakın zamanda oturum açmışlar";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "Aktarılıyor";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "Oturum açılıyor...";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "Kişiler yükleniyor…";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "Güncelleniyor...";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "Bu mesaj kaldırıldı";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "Skype’a bağlanılamıyor.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "Lütfen ağ ayarlarınızı kontrol edip tekrar deneyin.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "Bu Skype Adı geçersiz.";
+"Account::INVALID_EMAIL" = "Bu e-posta adresi geçersiz.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "Lütfen kontrol edip tekrar deneyin.";
+"Account::UNACCEPTABLE_PASSWORD" = "Bu parola geçersiz.";
+"Account::SKYPENAME_TAKEN" = "Bu Skype Adı zaten alınmış.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "Lütfen yenisini girin.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "Skype Adınızı veya parolanızı tanıyamadık.";
+"Account::INCORRECT_PASSWORD" = "Skype Adınızı veya parolanızı tanıyamadık.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "Çok fazla oturum açma denemesi yaptınız.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "Lütfen daha sonra tekrar deneyin.";
+"Account::ATO_BLOCKED" = "Hesabınız askıya alındı, <a href = 'https://go.skype.com/account.recovery.ios'>daha fazla bilgi için buraya dokunun</a>.";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "Microsoft hesabınızla oturum açarken bir sorun oluştu, lütfen daha sonra tekrar deneyin.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "Cihazınızda depolama alanı kalmadığı için oturum açılamıyor.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "Oturum açılamıyor, lütfen cihazınızı yeniden başlatıp tekrar deneyin.(%d)";
+"Account::DB_FAILURE" = "Oturum açılamıyor, lütfen cihazınızı yeniden başlatıp tekrar deneyin.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "Oturum açılamıyor, App Store'dan Skype'ı tekrar yüklemeyi deneyin.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "Parolanız değiştirildi; Skype kullanmaya devam etmek için oturum açın.";
+"Account::LOGOUT_REMOTE" = "Çıkış yaptınız.";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "Skype'ın bu sürümü desteklenmiyor.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "Devam etmek için Skype'ın son sürümüne güncelleştirin.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "Oturum açılamıyor, lütfen daha sonra tekrar deneyin.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "Ülkenizdeki/bölgenizdeki en düşük yaş sınırlamasına uygun olmadığınız için Skype'ta oturum açamazsınız.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "Lütfen tekrar deneyin.(%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "Çağrı";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "Görüntülü çağrı";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "Görüntülü Mesaj";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "Tuş takımı"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "Telefon numaralarını ara";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "Yeni sohbet başlat";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Skype'ta yeni sohbet başlatın";
+
+
+"HUB_RECENTS_TITLE" = "Son";
+"HUB_PEOPLE_TITLE" = "Kişiler";
+"HUB_FAVOURIES_TITLE" = "Favoriler";
+"CANCEL_ALERT_BUTTON" = "İptal";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "Favoriler";
+"PEOPLEPICKER_CONTACTS_TITLE" = "Kişiler";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "Kişileri arayın";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "Yeni kişi bul";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "Şunu ara: \"%@\"";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Skype dizininde şunu ara: \"%@\"";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "Kişiler";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "Robotlar";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "Bağlı değil"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "Skype'ta"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Skype üzerinden bağlanın";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "İptal";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "Bağlı";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "Yeni sohbet";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "Seçmek için iki kez dokunun.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "En son sohbetleriniz burada görüntülenir.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "Okunmamış mesajınız yok";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "Son telefon çağrıları burada görüntülenir, <a href=\"open-dialpad\">bir arkadaşınızı arayın</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, yeni mesajlar, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "Çağrı uzaktan beklemeye alındı";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "Çağrı beklemede";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "Devam eden çağrı";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "Geçerli çağrı, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "Geçerli çağrı";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "Düzenlendi";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "Düzenle";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "fotoğrafı kaydet";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "Videoyu kaydet";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "Beğenileri göster";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "Beğen";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "Beğenmekten vazgeç";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "Kapat";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "Beğeniler";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "Kişiyi görüntülemek için iki kez dokunun";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "Yeni";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "Mesajınızı beğendi.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "Mesajınızı beğendi: %@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "Fotoğrafınızı beğendi.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "%@ mesajınızı beğendi.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "%1$@ mesajınızı beğendi: %2$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "%@ fotoğrafınızı beğendi.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>Bunu henüz kimse beğenmedi</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "Bunu beğendiniz";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "Oturum açın";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Skype Adı";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Microsoft hesabı";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "Hesap oluştur";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Skype Adı ile oturum aç";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Microsoft hesabı ile oturum aç";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Hesap oluştur";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "Oturum açma bilgileri alanı";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "Zaten Skype kullanıyor musunuz?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "Evet";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Evet, zaten bir Skype hesabım var.";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "Hayır";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Hayır, bir Skype hesabım yok.";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "Kişi listesi filtresi";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "Tüm kişiler";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "Çevrimiçi kişiler";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "Tüm kişileri göster.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "Yalnızca çevrimiçi kişileri göster.";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "Yalnızca Skype kişilerini göster.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "Sesli çağrı";
+"CHATINPUT_PLACEHOLDER" = "Buraya bir mesaj yazın";
+"CHATINPUT_PLACEHOLDER_SMS" = "Buraya bir SMS yazın";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "Merhaba %@ deyin";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "Görüşmeniz burada görünür.";
+"CHATTYPING_SINGLEUSER" = "%@ yazıyor...";
+"CHATTYPING_TWOUSERS" = "%@ ve %@ yazıyor...";
+"CHATTYPING_THREEUSERS" = "%@, %@ ve bir kişi daha yazıyor...";
+"CHATTYPING_MULTIPLEUSERS" = "%@, %@ ve %d kişi daha yazıyor...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "Telefona çağrı yap";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "Davet gönder";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Skype üzerinden sohbet etmek için SMS bağlantısı gönderin.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "Sohbet";
+"SEND_SMS_TO_CONTACT_BUTTON" = "SMS";
+"EMPTY_PAGE_HEADER_TITLE" = "Merhaba deyin";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "Merhaba, Skype üzerinden sohbet edelim mi?: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "Bu SMS'in gönderim ücreti %@";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "Ülke/bölge seçin";
+"DIALPAD_CALL_BUTTON" = "Çağrı";
+"DIALPAD_STAR_BUTTON" = "Yıldız";
+"DIALPAD_HASH_BUTTON" = "Kare";
+"DIALPAD_BACKSPACE_BUTTON" = "Sil";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "SMS";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "%@ ile bir sohbet açar";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "Tuş takımı gizlendi.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "Tuş takımını göster";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "Bu kişi aranamıyor";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "Bu kişi aranırken bir sorun oluştu.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "Lütfen kontrol edip tekrar deneyin.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "Acil durum numaraları";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "Cihazınızda acil durum numaralarına çağrı desteklenmiyor.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "Geçersiz telefon numarası";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "Bu telefon numarası aranırken bir sorun oluştu.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "Lütfen kontrol edip tekrar deneyin.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "Zaten bir çağrıdasınız";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "Devam eden bir telefon çağrısı var.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Yeni çağrı başlatmadan önce çağrıyı bitirin.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "Zaten bir çağrıdasınız";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "Devam eden başka bir Skype çağrısı var.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Yeni çağrı başlatmadan önce çağrıyı bitirin.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "Çağrı yapılamıyor";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "Operatörünüz cep telefonu şebekeniz üzerinden Skype çağrılarına izin vermiyor. Skype çağrısı yapmak için önce bir WiFi ağına bağlanın.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "Çağrı yapılamadı";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "Kendinize çağrı yapamazsınız.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "Engellenen kişi";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "Bu kişiye çağrı yapmadan önce engellemesini kaldırın.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "Mikrofon erişimi";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "Mikrofonunuzu kullanma izni olmayan kişiler çağrı veya görüntülü mesaj sırasında sizi duyamazlar.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "İzin vermek için cihaz ayarlarınıza ve Gizlilik'e gidin.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "Kamera erişimi";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "Kameranızı kullanma izni olmayan kişiler çağrı veya görüntülü mesaj sırasında sizi göremez.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "İzin vermek için cihaz ayarlarınıza ve Gizlilik'e gidin.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "Kameranızı kullanma izni olmadan Skype'ta fotoğraf çekemezsiniz.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "Çağrı yapılamıyor";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "Başka bir ses uygulaması Skype'ın ses çalmasına engel oluyor.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "Lütfen kontrol edip tekrar deneyin.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "Çağrı yapılamıyor";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "Cihazınızdaki seste bir sorun var.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "Lütfen kontrol edip tekrar deneyin.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "Çağrı yapılamıyor";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "Cihazınızdaki seste bir sorun var.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "Devam etmek için lütfen Skype'ı yeniden başlatın.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "Çağrı yapılamıyor";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "Cihazınızdaki seste bir sorun var.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "Lütfen daha sonra tekrar deneyin.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "Çağrı yapılamıyor";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "Cihazınızın sesiyle ilgili bir sorun var.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "Lütfen daha sonra tekrar deneyin.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "Çağrı yapılamıyor";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "Bu çağrıyı bağlarken bir sorun oluştu.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "Lütfen daha sonra tekrar deneyin.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "Çağrı yapılamıyor";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "Hindistan'dayken sadece Skype'ta olmaları halinde ülkedeki diğer kişileri ücretsiz olarak arayabilirsiniz. Maalesef Skype üzerinden Hindistan'daki cep telefonlarını veya sabit hatları arayamazsınız.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "Daha fazla bilgi edinin";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Çağrıya katılamıyor";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Bu grup çağrısı şu anda dolu, daha sonra deneyin.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "Kamera kullanımda";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "Şu anda görüntülü çağrıdasınız.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "Kamerayı kullanmadan önce görüntülü çağrınızı kapatın.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Grup çağrıları";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Bu grup, bu cihaz üzerinde sesli çağrı başlatamayacak kadar büyük (en çok %d katılımcı).";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "Grup görüntülü görüşmeleri";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Bu cihazdan %d veya daha fazla katılımcısı olan gruplara çağrı yapılamaz.";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "Çevrimdışısınız";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "Skype'da çağrı yapabilmek için çevrimiçi olmanız gerekir.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Grup çağrıları";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Bu çağrı için maksimum katılımcı sayısına ulaşıldı.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "Çağrı beklemede";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "Yeni katılımcılar eklemeden önce çağrınızı sürdürün.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "Çağrı uzaktan beklemeye alındı";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "Yeni katılımcılar ekleyebilmeniz için öncelikle bu çağrının sürdürülmesi gereklidir.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "Çağrı ayarlanıyor";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "Çağrı bağlıyken katılımcı eklenemez.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "Lütfen çağrı bağlanana kadar bekleyin.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "Grup";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "Katılımcılar eklenirken bir sorun oluştu, lütfen daha sonra tekrar deneyin.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "Görüntü başlatılamıyor";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "Görütüyü açarken bir sorun oluştu.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "Bu çağrıdaki herkeste en son Skype sürümü olduğundan emin olun.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "Görüntü başlatılamıyor";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skype, görüntünüzü başlatamadı.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "Lütfen daha sonra tekrar deneyin.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "Çağrı sürdürülüyor";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "Bu çağrı sürdürülürken bir sorun oluştu.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "Bu Skype çağrısını sürdürmeden önce şu an sesi kullanmakta olan tüm uygulamaları kapatın ve tüm giden telefon çağrılarını sonlandırın.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "Kişi ekleme isteği";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "Katılımcılar eklendi veya kaldırıldı";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "Bugün <name>%@</name> adlı kişinin doğum günü"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "Grup sohbeti oluşturuldu";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "Kişi engellendi";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "Size görüntülü mesaj gönderdi";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "Görüntülü mesaj gönderdiniz";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>Siz</name> ve <name>%@</name> birbirinizin kişi listesine eklendiniz.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "kişi listenize eklendi";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "Kişi bilgilerinizi paylaştınız";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "Size sesli mesaj gönderdi";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "Sesli mesaj gönderdiniz.";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "%@ size bir kişi gönderdi. Bu Skype sürümü henüz bu işlemi desteklemiyor.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "Bir kişi gönderdiniz. Bu Skype sürümü henüz bu işlemi desteklemiyor.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "Kişiyi görüntülemek için iki kez dokunun.";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "Kişileri görüntülemek için iki kez dokunun.";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "Kişi gönderildi";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "Kişilere ekle";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "Zaten kişilerinizde kayıtlı";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "Kişileri görüntüle";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "Kişi gönder";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "Kişi gönder";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "ve %d kişi daha";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "Kişileri seçin";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "Skype'ta gönderilecek kişiniz yok.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "Kişi yok";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "Kişiler";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "Kişileri gönder";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "Kişi ekleme isteği gönderildi";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "Kişi ekleme isteği bekliyor";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "Gönderilen kişiler";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "%@ size bu Skype sürümünün henüz desteklemediği bir mesaj gönderdi.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "Bu Skype sürümünün henüz desteklemediği bir mesaj gönderdiniz.";
+
+"RECENTS_DELETE_CONVERSATION" = "Sohbeti sil";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "Okundu olarak işaretle";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "Okunmadı olarak işaretle";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "Sohbet";
+"CALL_ACCESSIBILITYLABEL" = "Çağrı";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "Ana oturum açma";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Skype hesabıyla oturum açın";
+"HUB_ACCESSIBILITYLABEL" = "Hub";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "Önerilen arama öğesi %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "İfadeleri göster";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "Klavyeyi göster";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "Sil";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Ara";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "Store";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "Son";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "İfadeler";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Moji'ler";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "Ara";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "Öneriler";
+"EXPRESSION_SEARCH_NO_RESULTS" = "Bir şey bulunamadı";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "Skype'ta sohbet oturumuma katılarak bu Moji'yi izleyebilirsiniz: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "Merhaba,\nSkype'taki sohbet oturumuma katılarak gönderdiğim Moji'yi izleyebilirsin: %@\nGörüşürüz,";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "Bu Moji'ye bir göz atın";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "Hay aksi!";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "Bu Moji paylaşılırken bir hata oluştu, lütfen daha sonra tekrar deneyin.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Skype Mağazası";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "Loading Mojis and emoticons...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "Ara";
+"EXPRESSION_STORE_FREE" = "Ücretsiz";
+"EXPRESSION_STORE_REMOVE" = "Kaldır";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "Free download";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "İndiriliyor";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "İndirildi";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "Hay aksi!";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "There was a problem loading Mojis and emoticons.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "There was a problem finding Mojis and emoticons, <a href=\"re-try fetching\">retry</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "İfadeleri ve Moji'lerde ara";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "Yakın zamanda kullanılan ifadeler burada görüntülenir.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "Öne çıkanlar";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "Önizlemeyi açmak için iki kez dokunun.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "Açmak için iki kez dokunun.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "Önizlemeyi kapatmak için iki kez dokunun.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "Yeniden Yürüt";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Moji önizlemesi";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "Göndermek için tekrar dokunun.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "%@ kişisinin sizi duyabilmesi için mikrofonunuza erişim izni verin.";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Herkesin sizi duyabilmesi için cihaz ayarlarında mikrofonunuza erişim izni verin.";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "%@ adlı kullanıcının sizi görebilmesi için kameranıza erişim izni verin.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Herkesin sizi görebilmesi için cihaz ayarlarında kameranıza erişim izni verin.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "Bu çağrıda maksimum katılımcı sayısına ulaşıldı";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "Çağrı yapmak için ağ bağlantısı gereklidir";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "Bölünmüş Görünümde kameranız devre dışı bırakılır.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Yana Kaydırma'da video desteklenmez.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "Telefon hoparlörü açık";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "Telefon hoparlörünü kapatmak için iki kez dokunun";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "Telefon hoparlörü kapalı";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "Telefon hoparlörünü açmak için iki kez dokunun";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "Çağrı sessize alındı";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "Çağrı sesini açmak için iki kez dokunun";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "Çağrı sesi açıldı";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "Çağrıyı sessize almak için iki kez dokunun";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "Görüntü açıldı";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "Görüntüyü kapatmak için iki kez dokunun";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "Görüntü kapatıldı";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "Görüntüyü açmak için iki kez dokunun";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "Gelen";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "Giden";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 katılımcı"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d katılımcı"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "Katılımcı yok"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%1$d / %2$d kullanıcı bu çağrıda";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "%1$@ adlı kişinin bu çağrıya katılmadan önce Skype'ı güncellemesi gerekiyor.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "%1$@ ve %2$@ adlı kişilerin bu çağrıya katılmadan önce Skype'ı güncellemeleri gerekiyor.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "%1$@ ve %2$@ adlı kişilerin bu çağrıya katılmadan önce Skype'ı güncellemeleri gerekiyor.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ", ";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ kişisinden gelen Skype çağrısı";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ ve %@ kişilerinden gelen grup görüşmesi";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ ve bir başka kişiden daha gelen grup görüşmesi";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ ve %d başka kişiden daha gelen grup görüşmesi";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ adlı kişiden gelen görüntülü çağrı";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ ve %@ kişilerinden gelen görüntülü grup görüşmesi";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ ve bir başka kişiden daha gelen görüntülü grup görüşmesi";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ ve %d başka kişiden daha gelen görüntülü grup görüşmesi";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ kişisine Skype çağrısı";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ ve %@ kişilerine grup görüşmesi";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ ve bir kişiye daha grup görüşmesi";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ ve %d başka kişiye daha grup görüşmesi";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "%@ ile görüntülü çağrı";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "%@ ve %@ ile görüntülü çağrı";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ ve bir kişi ile daha görüntülü çağrı";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ ve %d kişi ile daha görüntülü çağrı";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ ile Skype çağrısı";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ ve %@ ile grup görüşmesi";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ ve bir kişi ile daha grup görüşmesi";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ ve %d kişi ile daha grup görüşmesi";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ ile görüntülü çağrı";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ ve %@ ile görüntülü grup görüşmesi";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ ve bir kişi ile daha görüntülü grup görüşmesi";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ ve %d kişi ile daha görüntülü grup görüşmesi";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ ile Skype çağrısı geri getiriliyor";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ ve %@ ile grup görüşmesi geri getiriliyor";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ ve bir kişi ile daha ile grup görüşmesi geri getiriliyor";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ ve %d kişi ile daha ile grup görüşmesi geri getiriliyor";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ ile görüntülü çağrı geri getiriliyor";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ ve %@ ile görüntülü grup görüşmesi geri getiriliyor";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ ve bir kişi ile daha görüntülü grup görüşmesi geri getiriliyor";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ ve %d kişi ile daha görüntülü grup görüşmesi geri getiriliyor";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "Çağrı sonlandırıldı";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "Çağrı süresi";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "Sesli mesaj kaydediliyor";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "g";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "g";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "s";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "s";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "dak.";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "dak.";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "sn.";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "sn.";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "Kabul et";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "Reddet";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> sizi Skype'a eklemek istiyor\n\"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> size <location>%@</location> konumundan bir mesaj gönderdi"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "Merhaba <name>%@</name> deyin ve bu kişiyi Kişilere ekleyin.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ henüz kişi listenize eklenmedi.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "\"%@\" <a href=\"edit-contact-request-message\">Düzenle</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "Kişi ekleme isteği gönder";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "Kişilere ekle";
+"CONTACT_REQUEST_PENDING" = "<name>%@</name> adlı kullanıcının kişi ekleme isteğini kabul etmesi bekleniyor.\n<a href=\"resend-request\">Kişi ekleme isteğini yeniden gönder</a>";
+"CONTACT_REQUEST_BLOCKED" = "<name>%@</name> engellendi";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "Engeli kaldır";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "Evet";
+"CONTACT_REQUEST_BLOCK_TITLE" = "Kişiyi engelle";
+"CONTACT_REQUEST_DECLINED_TITLE" = "Kişi isteği reddedildi";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "İptal";
+"CONTACT_REQUEST_BLOCK_ALERT" = "Bu kişiyi engellemek istediğinizden emin misiniz?";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "Bu kişiyi engellemek ve Skype'a bildirmek de istiyor musunuz?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "Engelle";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "Engelle ve kaldır";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "Engelle ve bildir";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "Katılımcı ekle";
+"CHAT_OPTION_START_NEW_GROUP" = "Yeni grup başlat";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "Profili görüntüle";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "Bildirimler";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "Bu sohbet için bildirimler açık.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "Bu sohbet için bildirimler kapalı.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "Bildirimleri aç";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "Bildirimleri kapat";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "Gruptan ayrıl";
+
+"CHAT_OPTION_PARTICIPANTS" = "Katılımcıları göster";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "AÇIK";
+"MK_SWITCH_OFF_MESSAGE" = "KAPALI";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "Açar ve kapatır.";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "Yeni sohbet";
+"NEWCHATSCENE_TITLE_TOKEN" = "KİME:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "ve %d kişi daha"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "ve %d kişi daha"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "Eklenecek kişileri seçin";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Ana Sayfa";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Yeni grup oluşturma işlemini iptal et";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Yeni grup oluştur";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "Sesli çağrı";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "Görüntülü çağrı";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "Tuş takımı";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "İptal";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "Geri";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "Bilgilerim";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "Medya menüsünü aç";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "Medya menüsünü kapat";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "Yardım";
+"MY_INFO_FEEDBACK_ACTION" = "Görüşlerinizi bildirin";
+
+"MY_INFO_CONNECTING" = "Bağlanıyor...";
+
+"MY_INFO_STATUS" = "Durum";
+"MY_INFO_CREDIT" = "Skype Kontörü";
+"MY_INFO_PROFILE_LINK" = "Hesabım";
+"MY_INFO_SETTINGS" = "Ayarlar";
+"MY_INFO_SIGN_OUT" = "Oturumu kapat";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "Ruh hali mesajı girin";
+"MY_INFO_MOOD_MESSAGE" = "Ruh hali mesajı";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "Düzenlemek için iki kez dokunun";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "Görüşlerinizi bildirin";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "Profil resmini değiştir";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "Fotoğraf çek";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "Mevcut fotoğrafı seç";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "Profil resmini kaldır";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "Ayarlar";
+
+"SETTINGS_GENERAL" = "Genel";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "Hedefli reklamlara izin ver";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "Microsoft'un bu uygulamada sizinle daha ilişkili bilgiler göstermesi için Skype profil bilgilerinizi kullanmasına izin verin. <a href=\"skype.com\">Daha fazla bilgi edinin</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "Sohbet bildirimleri";
+"SETTINGS_PUSH_NOTIFICATIONS" = "Anında bildirimler";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Anında bildirimler";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "Skype kapalıyken bile mesaj bildirimleri alırsınız.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "Skype kapalıyken mesaj bildirimleri almazsınız.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "Uygulama içi bildirimler";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Uygulama içi bildirimler";
+"SETTINGS_INAPP_SOUNDS" = "Uygulama içi sesler";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "Uygulama içi sesler";
+"SETTINGS_OTHER" = "Diğer";
+
+"SETTINGS_PRIVACY" = "Gizlilik";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "Kişiler beni nasıl bulur?";
+"SETTINGS_PRIVACY_EXPLANATION" = "Bu kişi bilgileri sizi Skype'ta bulmak için kullanılabilir.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "Telefon numarası ekle";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "Profil resmi";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "Herkes görebilir";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "Kişilerim görebilir";
+
+"SETTINGS_CONTACTS_HEADER" = "Kişiler";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "Arkadaşlarımı ekle";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype, Kişilerinizi kontrol eder ve tanıdığınız insanları Skype kişi listenize otomatik olarak ekler.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "Skype'ta arkadaşlarınızı manuel olarak bulmanız ve eklemeniz gerekir.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "Web bağlantısı önizlemeleri";
+
+"SETTINGS_EMOTICONS_HEADER" = "İfadeler";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "Büyük ifadeleri kullan";
+
+"SETTINGS_EDIT_BUTTON" = "Düzenle";
+"SETTINGS_DONE_BUTTON" = "Tamam";
+
+"SETTINGS_ABOUT" = "Hakkında";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "Numaranızı girin";
+"PNV_HOW_IS_MY_NUMBER_USED" = "Numaram nasıl kullanılır?";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "Standart SMS ücretleri uygulanabilir.";
+"PNV_ENTER_THE_CODE" = "Kodu girin";
+"PNV_CODE_SENT" = "Numaranıza bir kod gönderdik";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>Beni ara</a> veya <a href='pnv://resendcode'>kodu yeniden gönder</a>";
+"PNV_VERIFYING_NUMBER" = "Numara doğrulanıyor";
+"PNV_NUMBER_VERIFIED" = "Doğrulandı";
+"PNV_NUMBER_USAGE_EXPLANATION" = "Numaranız, Skype'ta arkadaşlarınızı bulmanıza yardımcı olmak için kullanılır. Ayrıca yeni kişiler için arama yapmayı da çok daha kolay bir hale getirir.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "Kod";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "İnsanların sizi bulma yöntemini değiştirmek için Ayarlar'da %@ öğesine giderek istediğiniz telefon numarasını kaldırın veya devre dışı bırakın.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "Alternatif olarak, numaranızı kullanmak istemiyor ve yeni kişileri manuel olarak aramak ve eklemek istiyorsanız aşağıdaki %@ seçeneğini belirleyin.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Skype Gizlilik Politikası";
+"PNV_NOT_NOW" = "Şimdi değil";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Telefon numarası";
+
+"PNV_WELCOME_HEADING" = "Skype'ta arkadaşları bulmak şimdi çok daha kolay";
+"PNV_WELCOME_PARAGRAPH" = "Başlamak için telefon numaranızı eklemeniz yeterlidir.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Sonraki";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "Hata";
+"PNV_DEFAULT_ERROR_MESSAGE" = "Numaranız doğrulanırken bir sorun oluştu, lütfen daha sonra tekrar deneyin.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "Doğrulanmış numaralarınız için izin verilen maksimum sayıya ulaştınız. Başka ekleme işlemi yapmadan önce Ayarlar'da numaralarınızdan birini silin.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "Girdiğiniz numarası geçersiz. Lütfen kontrol edip tekrar deneyin.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "Bu numaraya SMS gönderemiyoruz. Lütfen kontrol edip tekrar deneyin.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "Kodun kullanım süresinin dolduğu görülüyor. Yeni bir kod almak için aşağıdaki yeniden gönder seçeneğini belirleyin.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "Kodun doğru olmadığı görülüyor. Lütfen kontrol edip tekrar deneyin.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "Ağ bağlantınızda bir sorun oldu. Lütfen ağ ayarlarınızı kontrol edip tekrar deneyin.";
+"PNV_ERROR_TRY_AGAIN" = "Tekrar dene";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Skype'ta arkadaş ekle";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "Tanıdığınız kişileri Skype'ta arayacak ve onları Kişilerinize ekleyeceğiz.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Daha fazla bilgi edinin";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "Yeni Skype kişilerini otomatik olarak eklemek için zaman zaman adres defterinizi kontrol ederek tanıdığınız kişileri buluruz. Endişelenmeyin, arkadaşlarınıza istenmeyen davet postaları göndermeyiz.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "Günün birinde fikrinizi değiştirecek olursanız ayarlarda %@ özelliğini kapatmanız yeterlidir. Bundan sonra, adres defteriniz tanıdığınız kişileri bulmak için kullanılmaz; onları manuel olarak eklemeniz gerekir.";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "İnsanların sizi bulma yöntemini değiştirmek için Ayarlar'da %@ öğesine giderek istediğiniz telefon numarasını kaldırın veya devre dışı bırakın.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Skype Gizlilik Politikası";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "Unutmayın, Skype acil durum çağrıları için kullanılamaz";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "Arkadaşlarınızı bulmak artık çok daha kolay";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "Yeni kişiler eklendi";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "Kişi ekle";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "İptal";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "Ara";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "İptal";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "Skype Adlarını, e-postalarını veya gerçek adlarını kullanarak Skype'da kişileri arayın.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "Zaten bir Skype kişisi";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "Eşleşme bulunamadı";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "Geri";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "İleri";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "Paylaş";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "Hakkında";
+"ABOUT_APPLICATION_VERSION" = "Skype sürümü";
+"ABOUT_COPYRIGHT" = "© 2003-2016 Skype & Microsoft\nPatent Beklemede";
+"ABOUT_THIRD_PARTY_NOTICES" = "Üçüncü taraf bildirimleri";
+"ABOUT_PRIVACY_POLICY" = "Gizlilik İlkesi";
+"ABOUT_TERMS_OF_USE" = "Kullanım Şartları";
+"ABOUT_COPYRIGHT_TEXT" = "Skype adı, ilgili ticari markalar, logolar ve “S” logosu, Skype'ın veya ilgili kuruluşların ticari markalarıdır.\n\nUyarı: Bu program, telif hakkı yasası ve uluslararası anlaşmalarla korunmaktadır. Bu programın veya herhangi bir kısmının izinsiz çoğaltılması veya dağıtılması, ciddi para cezası ve cezai işlemlerle sonuçlanabilir ve yasalarca imkan tanınan azami sınırlar çerçevesinde kanuni yollara başvurulacaktır.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "Hata";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "E-posta ile";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "Yeni Skype teklifleri ve özellikleri hakkında beni e-posta ile bilgilendir";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Yeni Skype teklifleri ve özellikleri hakkında beni bilgilendir:";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "Profil resmi ekle";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "E-posta";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "can@example.com";
+"CREATEACCOUNT_FULLNAME_LABEL" = "Tam ad";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "Ad";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "Soyadı";
+"CREATEACCOUNT_PASSWORD_LABEL" = "Parola";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6–20 karakter";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "Parolayı tekrar yazın";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Skype Adı";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "Zorunlu";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "Telefon numarası";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "ülke kodu ile";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "Bazı alanlar doldurulmadı";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "Parolalarınız eşleşmiyor, kontrol edip tekrar deneyin.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Skype Kullanım Şartları";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "Evet, <a href='%1$@'>Skype Kullanım Şartları</a>'nı ve <a href='%2$@'>Gizlilik İlkesi</a>'ni okudum ve kabul ediyorum.";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "Skype ile acil durum çağrıları yapılamaz";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype normal telefonunuzun yerine geçmez ve acil durum çağrıları yapmak için kullanılamaz.";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "Kabul ediyorum";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "6–32 karakter uzunlukta olması gerekiyor.";
+"SkyLib::TOO_LONG" = "6–32 karakter uzunlukta olması gerekiyor.";
+"SkyLib::CONTAINS_INVALID_CHAR" = "Geçersiz karakter, örn. Σ, à, ß.";
+"SkyLib::CONTAINS_SPACE" = "Boşluk veya sekme içeremez.";
+"SkyLib::SAME_AS_USERNAME" = "Skype Adınıza fazla benziyor.";
+"SkyLib::INVALID_FORMAT" = "Geçersiz biçim.";
+"SkyLib::CONTAINS_INVALID_WORD" = "Tahmin etmesi çok kolay, örn. abcd, skype.";
+"SkyLib::TOO_SIMPLE" = "En az 1 harf ve 1 rakam içermesi gerekiyor.";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "Harfle başlaması gerekiyor (A–Z).";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "Yeni bir Skype Adı deneyin.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "Yeni parola deneyin.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "Yeni e-posta adresi deneyin.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "Lütfen tekrar deneyin.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Skype Adı";
+"SkyLib::ACCOUNT_PASSWORD" = "Parola";
+"SkyLib::CONTACT_EMAILS" = "E-posta";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> bu grubu yeniden adlandırdı \"%@\"";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Skype Ana Sayfa";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> grup fotoğrafını güncelledi.";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name>, grubu güncelledi";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "Gizle";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "%d yeni bildirim";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "Bir yeni bildirim";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "Yeni bildirim yok";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "Merhaba, seni Skype'a eklemek istiyorum.";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "Kişi ekleme isteği";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. %3$@ içinde";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "Sizi Skype'a eklemek istiyor.";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "Şimdi değil";
+"ALLOW_BUTTON" = "İzin ver";
+"PERMISSION_VIEW_TITLE" = "Haydi başlayalım";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "En iyi Skype deneyimi için mikrofonunuza erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "En iyi Skype deneyimi için kameranıza erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "En iyi Skype deneyimi için kişilerinize erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "En iyi Skype deneyimi için bildirimlerinize erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "En iyi Skype deneyimi için mikrofonunuza ve kameranıza erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "En iyi Skype deneyimi için mikrofonunuza ve kişilerinize erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "En iyi Skype deneyimi için mikrofonunuza ve bildirimlere erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "En iyi Skype deneyimi için kameranıza ve kişilerinize erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "En iyi Skype deneyimi için kameranıza ve bildirimlere erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "En iyi Skype deneyimi için kişilerinize ve bildirimlere erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "En iyi Skype deneyimi için mikrofonunuza, kameranıza ve bildirimlere erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "En iyi Skype deneyimi için mikrofonunuza, kişilerinize ve bildirimlere erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "En iyi Skype deneyimi için mikrofonunuza, kameranıza ve bildirimlere erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "En iyi Skype deneyimi için kameranıza, kişilerinize ve bildirimlere erişmemiz gerekir.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "En iyi Skype deneyimi için mikrofonunuza, kameranıza, kişilerinize ve bildirimlere erişmemiz gerekir.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "Kişiler";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "Mikrofon";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "Kamera";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "Bildirimler";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "Emin misiniz?";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "Bu özelliklere erişim olmadan düzgün şekilde çağrı yapamaz veya alamaz, gelen çağrı ve mesajlar hakkında bilgilendirilemezsiniz.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "Kişi listeniz boş olacak ve Skype'ta çağrı yapamayacak veya alamayacaksınız.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Daha fazla bilgi edinin";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "Mikrofon ve kamera";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "Skype'ta çağrı yapmak veya almak için mikrofonunuza ve kameranıza erişmemiz gerekir. Maalesef Skype, bu izinler olmadan çalışmaz.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "Kişiler";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "Skype kişi listenizi ayarlamak için Kişilerinize erişmemiz gerekir. Skype'ta, tanıdığınız kişileri bulmak için zaman zaman Kişilerinizi kontrol ederiz. Endişelenmeyin, arkadaşlarınıza istenmeyen davet postaları göndermeyeceğiz.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "Günün birinde fikrinizi değiştirecek olursanız ayarlarda %@ özelliğini kapatmanız yeterlidir. Bundan sonra, adres defteriniz tanıdığınız kişileri bulmak için kullanılmaz; onları manuel olarak eklemeniz gerekir";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "Bildirimler";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "Skype kapalı olduğunda gelen çağrılar ve mesajlar hakkında sizi bilgilendirmemiz için Bildirimler özelliğine erişmemiz gerekir. Ayrıca, rahatsız edilmek istemediğinizde bireysel sohbet özelliklerini kapatabilirsiniz.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "Kişilere erişime izin verme";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Tanıdığınız kişileri bulmak için Skype'ın Kişiler özelliğine erişmesi gerekir. Ayarlar'a gidin ve erişimi etkinleştirmek için Kişiler özelliğini etkinleştirin.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "Atla";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "Bağlanın";
+"ONBOARDING_GET_STARTED_BUTTON" = "Başlarken";
+
+"ONBOARDING_IPHONE_TITLE1" = "iPhone için yeniden tasarlandı";
+"ONBOARDING_IPAD_TITLE1" = "iPad için yeniden tasarlandı";
+"ONBOARDING_TEXT1" = "İster arkadaşlarınızla mesajlaşın, isterseniz de arama yapıyor olun, Skype'ı kullanmak öncekinden daha kolay.";
+
+"ONBOARDING_TITLE2" = "Tüm aradıklarınızı bulun";
+"ONBOARDING_TEXT2" = "Kişileri, grupları ve hatta önceki konuşmalarınızı arayın.";
+
+"ONBOARDING_IPHONE_TITLE3" = "Daha fazlasını yapın";
+"ONBOARDING_IPAD_TITLE3" = "Skype'ta daha fazlasını yapın";
+
+"ONBOARDING_IPHONE_TEXT3" = "Konumunuzu ve fotoğraflarınızı paylaşın veya web bağlantısı önizlemelerini görün. Bunları yaparken arkadaşlarınızdan haberdar olun.";
+"ONBOARDING_IPAD_TEXT3" = "Daha büyük ifadeler ve web bağlantısı önizlemelerinin keyfini çıkarın, doğrudan iPad'inizden yeni gruplar oluşturun.";
+
+"ONBOARDING_TITLE4" = "Skype arkadaşlarla daha güzeldir";
+"ONBOARDING_TEXT4" = "Arkadaşlarınızın sizi bulmalarına yardımcı olmak için numaranızı Skype'a ekleyin.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "Kolay paylaşım";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Skype'taki arkadaşlarınıza Film Rulonuzdan web sitesi veya fotoğraf göndermek için paylaş düğmesine dokunmanız yeterlidir.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "Katılımcı ekle";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "EKLE:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "Zaten bir katılımcı";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "Zaten çağrıda";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "BU ÇAĞRIDA";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "BU ÇAĞRIDA DEĞİL";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "Bağlanıyor...";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "%@ adlı kişiye bağlanıyor";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "Arıyor...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "%@ aranıyor";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "Çağrı beklemede";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "Çağrı %@ için beklemede";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "Favorilere ekle";
+"ADDFAVORITES_EMPTY_TITLE" = "Favori listenizdeki herkesi bir arada tutun, <a href=\"add-favorites\">favori ekleyin</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "Skype kişileri";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "Dosya aktarımı";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ bir daha";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ %d kişi daha";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "Bu dosyayı başka bir cihazdan gönderdiniz.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "Bu dosyaları başka bir cihazdan gönderdiniz.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "Skype'ın bu sürümü dosya almayı desteklemiyor.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "Bu uygulama, sadece Skype'ın yeni fotoğraf paylaşma özelliklerini destekliyor.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "Bir dosya gönderdiniz";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "%d dosya gönderdiniz";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "Size bir dosya gönderdi";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "Size %d dosya gönderdi";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "Çevrimiçi";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "Rahatsız etmeyin";
+"CONTACT_AVAILABILITY_AWAY" = "Uzakta";
+"CONTACT_AVAILABILITY_INVISIBLE" = "Görünmez";
+"CONTACT_AVAILABILITY_OFFLINE" = "Çevrimdışı";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "Uygun";
+"CONTACT_AVAILABILITY_BUSY" = "Meşgul";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "Engellenmiş";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favori";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favori";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Bu kişi favoridir. Favorilerden çıkarmak için iki kez dokunun.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Bu kişi favori değildir. Favorilere eklemek için iki kez dokunun.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favori";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favori";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Bu grup favorileriniz içinde değil. Favorilere eklemek için iki kez dokunun.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Bu grup favorileriniz içinde. Favorilerden çıkarmak için iki kez dokunun.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@ %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@ %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "SKYPE ADI";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "WEB SİTESİ";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "HAKKINDA";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "DOĞUM GÜNÜ";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "CİNSİYET";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "DİL";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "KİŞİLER";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "YAPILABİLECEKLER";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "GİZLİLİK";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "OLUŞTURAN";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "AÇIKLAMA";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "Anlık mesajlar ve fotoğraflar alıp gönderin.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "Bu robot, Görüntülenen Adınız, Skype Adınız ve grupla paylaştığınız veya diğer grup katılımcılarının paylaştığı herhangi bir sohbet mesajı ya da içeriğe erişebilecek.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "Kadın";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "Erkek";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "Kişiyi engelle";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "Kişinin engellemesini kaldır";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "Kişiyi kaldır";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "Kişiyi kaldır";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "%@, kişiler listenizden kaldırılacak.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "Kaldır";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "İptal";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "Gizle";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "Grup profili";
+"GROUPPROFILE_NOTIFICATIONS" = "Bildirimler";
+"GROUPPROFILE_MENU_TITLE" = "Profili görüntüle";
+"GROUPPROFILE_LEAVE_CHAT" = "Gruptan ayrıl";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "Katılımcılar";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "Davet Et";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "Sohbet davetleri";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "Sohbet geçmişi herkes tarafından görülebilir";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "Bu sohbete herkesi davet etmek için sohbet davetlerini etkinleştirin.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "Bu sohbete yalnızca Skype kişileri eklenebilir.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "Skype'ta olmasalar bile herkesi bu sohbete davet edin.";
+"GROUPPROFILE_CHAT_HISTORY" = "Sohbet geçmişi";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "Sohbet geçmişi şu anda yeni katılımcılardan gizlidir.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "Sohbet geçmişi herkes tarafından görülebilir.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "Katılımcı ekleme";
+"GROUP_ADMIN_STRING" = "%@ (Yönetici)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "Sohbet davetleri";
+"GROUPPROFILE_ALERT_BODY" = "Bu sohbetin daveti şu anda kullanılamıyor, lütfen daha sonra tekrar deneyin.";
+"GROUPPROFILE_ALERT_BUTTON" = "Tamam";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Skype'taki sohbetime katılın: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "Sohbetime katılın";
+"INVITES_MAIL_BODY" = "Merhaba,\nSkype'ta sohbet edebileceğimiz, paylaşımda bulunabileceğimiz ve birlikte çalışabileceğimiz bir grup oluşturdum.\nBağlantıya tıklayarak katılın:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "Grubu yeniden adlandır";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "Grubu yeniden adlandır";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "Kişiyi yeniden adlandır";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "Kişiyi yeniden adlandırmak için iki kez dokunun";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "Robot ekle";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "Kişi ekleme isteği gönder";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "Kişi ekleme isteğini yeniden gönder";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "Kişi ekleme isteği gönderildi";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "Kabul et";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "Reddet";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "<name>%@</name>, sizi Skype'ta eklemek istiyor"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "Aç";
+"PUSH_CHAT_CALL" = "Çağrı";
+"PUSH_CHAT_TEXT_REPLY" = "Yanıtla";
+"PUSH_CALL_ANSWER" = "Yanıtla";
+"PUSH_CALL_DECLINE" = "Reddet";
+"PUSH_CALL_VIDEO_VIDEO" = "Görüntülü görüşme";
+"PUSH_CALL_VIDEO_AUDIO" = "Sesli çağrı";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "Mesaj";
+"PUSH_MISSED_CALL_CALLBACK" = "Geri ara";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "Kişiler İle İlgili Sorun";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "Kişilerinizden telefon numaralarına erişirken bir sorun oldu. Sorunu çözmek için Ayarlar'da posta hesaplarınızı senkronize etmeyi deneyin.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "Telefon numarasını kaydet";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "Eşleşen çağrı yok.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "Bir eşleşen çağrı.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "%d eşleşen çağrı.";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@) son arama: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@, son aranan: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@, adres defterinde yer alıyor.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Skype üzerinden bağlanın";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@, adres defterinde yer alıyor. Onları Skype'ta arayabilir ve sohbet edebilirsiniz.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Skype listenizde bulunmuyor";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "Metni sil";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "İptal";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "Skype'ta Ara";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "Yeni kişi bul";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "Yeni kişiler bulmak için dokunun";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "Şunu ara: \"%@\"";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Skype dizini";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "Arama geçmişi";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "Temizle";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "Kişiler";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "Eşleşme bulunamadı";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "Gruplar";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "Konuşmalar";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "Numarayı kaydet";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "Numarayı kaydet";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "Bir ad girin";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "Numara Girin";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "Numara kaydediliyor";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "Numara kaydedildi";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "Geçersiz numara";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "Geçersiz bir numara olduğu için bunu ekleyemezsiniz. Farklı bir numara deneyin.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "Geçersiz numara";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "Skype'a acil durum numaraları ekleyemezsiniz.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "At";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "%@ hedefine çağrı yapmak istediğinizden emin misiniz?";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "%@ hedefine görüntülü çağrı yapmak istediğinizden emin misiniz?";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "Sesli çağrı";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "Görüntülü çağrı";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "Çağrı";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "Orijinali göster";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "Çeviriyi göster";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "Konum paylaştınız";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "Sizinle bir konum paylaştı";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "Konum paylaştı (%@)";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "Açmak için iki kez dokunun";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "Konum Tarifleri";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "Konum";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "Konumunuzu paylaşın";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "Konum gönderdi";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "Konum erişimi";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "Konumunuzu kullanma izni olmadan, Skype'ta arkadaşlarınızla konumunuzu paylaşmanız mümkün olmaz.";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "İzin vermek için cihaz ayarlarınıza ve Gizlilik'e gidin.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "Kişilere erişim";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "Skype'ta adres defterinizi gösterebilmemiz için Kişilerinize erişmemiz gerekiyor.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "İzin vermek için cihaz ayarlarınıza ve Gizlilik'e gidin.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "Olamaz...";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "Harita yüklenirken bir sorun oluştu.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "Ağ bağlantınızı kontrol edip tekrar deneyin.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "Temizle";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "Eklenen iğneleri temizle";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "Konum paylaşımı";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "Bu sohbette artık konumunuzu paylaşamazsınız.";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "Tamam";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "Konumu paylaş";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "Ara";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "Sonuç bulunamadı";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "Bu konum aranırken bir sorun oluştu, lütfen biraz bekleyip tekrar deneyin.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Ana Sayfa";
+"TIMELINE_ICON_DIALPAD" = "Tuş takımı";
+"TIMELINE_ICON_PEOPLE" = "Kişiler";
+"TIMELINE_SWIPEACTION_MUTE" = "Sesi kapat";
+"TIMELINE_SWIPEACTION_UNMUTE" = "Sesi aç";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "Anında bildirimler";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "Skype'ta olmadığınız zamanlarda çağrı ve mesaj uyarılarını almak için anında bildirimleri açın.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "Skype'ta olmadığınız zamanlarda çağrı ve mesaj uyarılarını almak üzere iPhone Ayarları > Bildirim Merkezi'ne gidin ve Skype bildirimlerini açın.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "Skype'ta olmadığınız zamanlarda çağrı ve mesaj uyarılarını almak üzere iPhone Ayarları'na, ardından Bildirim Merkezi'ne gidin ve Skype bildirimlerini açın.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "Anında bildirimler";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "Anında bildirimleri almadan önce cihaz ayarlarınızda Skype bildirimlerini açmanız gerekir.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "Aç";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "Görüntüle";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "Dinle";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "Oynat";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Mesaj açılırken bir sorun oluştu, ağ bağlantınızı kontrol edip tekrar deneyin.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "Bir medya belgesi paylaştı";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "Açmak için iki kez dokunun";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "Kaynak güvenilir değil";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "Fotoğraf";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "Fotoğraf çek";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "Mevcut fotoğrafı seç";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "Mevcut fotoğraf veya videoyu seç";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "İptal";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "Seç";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "kapatmak için iki kez dokunun";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "Fotoğraf gönderildi. Açmak için iki kez dokunun";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "Fotoğraf alınıyor";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "Fotoğraf gönderiliyor";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "Bu fotoğraf gönderilirken bir sorun oluştu";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "Bu fotoğraf alınırken bir sorun oluştu";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "yeniden denemek için iki kez dokunun";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "Gönder";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "İptal";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "Video %d MB'tan büyük olduğu için gönderilemiyor";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "Fotoğraf %d MB'tan büyük olduğu için gönderilemiyor";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "Görüntülü mesaj gönderildi. Açmak için iki kez dokunun";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "Görüntülü mesaj alınıyor";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "Görüntülü mesaj gönderiliyor";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "Bu görüntülü mesaj gönderilirken bir sorun oluştu";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "Bu görüntülü mesaj alınırken bir sorun oluştu";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "Dosya gönderildi. İndirmek için iki kez dokunun";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "Bir dosya alındı. Açmak için iki kez dokunun";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "İndiriliyor";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "%@ indirildi. Açmak için iki kez dokunun";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "Dosya %d MB'tan büyük. Veri ücretleri uygulanabilir";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "Dosya kullanılamıyor";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "Yeniden başlat";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "Bu dosya alınırken bir sorun oluştu";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "Bu dosya güvenli olmayabilir";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "İndirilemiyor, virüs algılandı";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "İnternet bağlantısı bekleniyor…";
+"FILE_TRANSFER_BUTTON_CANCEL" = "İptal";
+"FILE_TRANSFER_BUTTON_RETRY" = "Yeniden dene";
+"FILE_TRANSFER_LABEL_CANCELED" = "İptal edildi";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "İndir";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "Daha fazla bilgi";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "Paylaşılan dosyalar %d gün sonra Skype'tan silinir. Bir dosyayı daha uzun süre saklamak için cihazınıza kaydedin.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "Dosya kullanılamıyor";
+"FILE_SENDING_LABEL_ERROR" = "Bu dosya gönderilirken bir sorun oluştu.";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "Dosya kabul edilsin mi?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "Yalnızca güvendiğiniz kişilerden gelen dosyaları kabul edin. %@ dosyasını %@ adlı kişiden kabul etmek istiyor musunuz?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "Uyarı: Bu dosya bilgisayarınız/cihazınız için güvenli olmayabilir";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "%@ dosyasını %@ adlı kişiden kabul etmek istiyor musunuz?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "Tekrar sorma";
+"FILE_TRANSFER_ACCEPT" = "Kabul Et";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "Yetersiz alan";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "Bu cihazın depolama alanında yer açmak için Ayarlar > Genel > Kullanım'a gidin.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "Kullanıcı, uygulamanın medyasına erişmesine izin vermedi";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "İzin vermek için Ayarlar > Gizlilik > Fotoğraflar'a gidin ve Skype'ı etkinleştirin.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "Fotoğraf gönderdiniz";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "Size fotoğraf gönderdi";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "%@ fotoğraf gönderdi.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "Bu paylaşılan fotoğrafı görmek için şuraya gidin: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "Fotoğraf kullanılamıyor";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "Bu fotoğraf şu anda kullanılamıyor.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "İptal";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "Yeniden dene";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "Fotoğraf kullanılamıyor";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "Bu fotoğraf şu anda kullanılamıyor.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "Tamam";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "Fotoğrafı kaydet";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "İptal";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "Hata";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "Bu fotoğraf kaydedilirken bir sorun oluştu.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "Yeniden dene";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "İptal";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "Web medyası";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "Giphy arama";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Skype'ı güncelleyin";
+"FORCE_UPGRADE_CAPTION" = "Skype sürümünüz güncel değil Yeni özelliklerden ve iyileştirmelerden faydalanmak için en son sürümü edinin.";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "Şimdi edinin";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "Size bir Moji gönderdi";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "Moji gönderdiniz";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "Moji indiriliyor";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "Bu Moji indirilirken bir sorun oluştu";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "Tekrar denemek için iki kez dokunun";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "Moji'yi oynat";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "Bu içerik kaldırıldı";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "Bu içeriğin süresi doldu";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "En son kısa bir süre önce görüldü";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "En son görülmesi üzerinden bir haftadan fazla geçti";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "Telefon";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "Arkadaşlarınızı, mesajları veya yeni kişileri anında bulun";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Skype Mojileri";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "%@ klipleriyle Mojiler artık daha eğlenceli!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "Arama alanı";
+
+"TAB_RECENT_TITLE" = "Son";
+"TAB_CONTACTS_TITLE" = "Kişiler";
+"TAB_CALLS_TITLE" = "Telefonlara çağrı yapma";
+"TAB_MYINFO_TITLE" = "Bilgilerim";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "Tümü";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "Okunmamış";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "Tümü";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "Çevrimiçi";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "Teşekkürler!";
+"APPSTORE_RATING_SUBTITLE" = "Beğendiğinizi göstermek için uygulamayı App Store'da değerlendirin. Bu, yalnızca bir dakikanızı alır.";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "Uygulamayı değerlendir";
+
+"CONTACTS_ADD_FAVORITES" = "Favorilere ekle";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "Kişileri ara";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "İnternet bağlantısı yok";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "Çevrimdışısınız. <a href=\"reconnect\">Yeniden bağlanın</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Skype ile ilgili bir sorun var";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "Bağlanıyor";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "Bağlandı";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "Görüşmeler güncelleniyor…";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "Sohbeti sil";
+"DELETECHAT_ALERT_MESSAGE"              = "Bu cihazdan bu sohbeti silmek istediğinizden emin misiniz? Sohbet geçmişi de silinecek.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "Sil";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "Düzenle";
+"LIST_EDITING_CANCEL" = "İptal";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "Tümünü okundu yap";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "Okundu olarak işaretle";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "Tümünü sil";
+"LIST_EDITING_DELETE_TOOLBAR" = "Sil (%d)";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "Tüm sohbetleri sil";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "Tümünü sil";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "Tümünü gizle";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "Daha sonra bakacağım";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "Yeni çağrı";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "beklemede";
+"CALLING_BANNER_STATUS_MUTED" = "sessize alındı";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Skype Sertifikalı";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "Yeni grup çağrısı başlatma";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "Yeni grup çağrısı başlatılıyor";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "Geçerli çağrınız sonlandırılacak (lütfen çağrının sonlanacağını kişiye bildirin) ve yeni grup çağrınız başlatılacak";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "Çağrı Yap";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "İptal";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "bir <a href=\"%@\">grup sohbeti</a> oluşturdu.";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "Görüntülü Sevgililer Günü mesajı gönderin";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "Görüntülü Sevgililer Günü mesajları";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "Sevdiğiniz kişiye kendini özel hissettirin";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "Sevgiyi paylaşın";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "Görüntülü bir Sevgililer Günü mesajı göndererek sevdiğiniz kişiyi özel hissettirin.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "Şimdi değil";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "Kişilere gönder";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "Video paylaş";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "Sevgililer Gününüz Kutlu Olsun";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "Sevgililer Gününüz\nKutlu Olsun";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "Sana özel bir görüntülü Sevgililer Günü mesajı kaydettim. Sen de bir mesaj kaydetmek için https://go.skype.com/vmhci adresini ziyaret edebilirsin";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "Sana özel bir Sevgililer Günü mesajı gönderiyorum…";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "Sesi kapat";
+"INCALLCONTROLS_VIDEO_CAPTION" = "Görüntülü";
+"INCALLCONTROLS_AUDIO_CAPTION" = "Konuşmacı";
+"INCALLCONTROLS_ADD_CAPTION" = "Ekle";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "Daha fazla";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "Tuş Takımı";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "Diğer eylemler";
+"GVC_CALLING_ME_ON_RIBBON" = "Ben";
+
+"GVC_NOTIFICATION_HUNG_UP" = "%@ ayrıldı";
+"GVC_NOTIFICATION_JOINED" = "%@ katıldı";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "Artık görüntülü grup görüşmesi özelliğiyle grup oluşturun.";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "Doğrudan sohbetinizden görüntülü grup görüşmesi başlatın.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "Görünümü değiştirmeyi deneyin.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "Bu kişiyi kaldırmak için tekrar dokunun.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "Bunu ücretsiz bir görüntülü grup görüşmesine dönüştürün.";
+"GVC_INTERSTITIAL_TITLE" = "Görüntülü grup görüşmesiyle tanışın";
+"GVC_INTERSTITIAL_CAPTION" = "Dilediğiniz zaman ücretsiz olarak bir araya gelin.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "Anladım";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "Katılımcı ekle";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";

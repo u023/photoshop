@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "%@ sendte dig en videobesked";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "%@ sendte dig et billede";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "%@ sendte dig en Moji";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "%@ sendte en talebesked";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "%@ sendte en fil";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "Nyt hjerte modtaget";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "Min konto";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "Send feedback";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "Markér alle som læst";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "Tilføj personer";
+"HELP_NAVBAR_BUTTON" = "Hjælp";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "Du har ulæst feedback.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "Feedback til udviklere";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "Vis";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "Annuller";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "Føj til favoritter";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "Fjern fra favoritter";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "Tilføj nye favoritter via menuen for en kontaktperson.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "Log af";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "Opkald fra %@";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "Videoopkald fra %@";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "Gruppeopkald fra %@";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "Videobesked fra %@.";
+"BACKGROUND_MISSEDCALL_ONE" = "Ubesvaret opkald fra %@.";
+"BACKGROUND_MISSEDCALL_GROUP" = "Mistet gruppeopkald fra %@";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "Ny kontaktanmodning fra %@.";
+"BACKGROUND_VOICEMAIL_ONE" = "Ny talebesked fra %@.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "Kontroller dine netværksindstillinger og prøv igen.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "Besvar";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "Afvis";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "Føj til opkald";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "Læg på";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "Afslut opkald";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "Videobesked";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "Send videobesked";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "Annuller";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "Udført";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "Indstillinger";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "Opret konto";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "Opret konto";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "%@ er et ugyldigt telefonnummer. Kontrollér nummeret, og prøv igen.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "Adressebog";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "Landekode eller område";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "Ændrer landekoden eller området.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "Skift landekode eller område.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "Søg";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Telefonnummer";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "Afvis";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "Åbn";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "Opret begivenhed";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "Vis kalender";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "Kopiér";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "Send til Læseliste";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "Åbn i Safari";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "Rediger";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "Citér";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "Den %1$@ kl. %2$@ skrev %3$@:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "Slet";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "Videresend";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "Videresend";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "Del";
+"SHARE_MESSAGE_TITLE" = "Del";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "Indlæser";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "Dobbelttryk for at annullere";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "Starter video ...";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "Opkaldet er viderestillet";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "Video";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "Numerisk tastatur";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "Genoptag opkald";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "Teknisk opkaldsinfo";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "Opkaldsindstillinger";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ vil dele sin video med dig";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ er ikke en af dine kontakter, men ønsker at dele sin video med dig.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Deltagere i denne samtale har aktiveret video";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Vil du acceptere video i denne samtale?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Acceptér";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Afvis";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "Tilføj deltagere";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "Dobbelttryk for at tilføje deltagere.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "Adgangskode";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "Log på";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Skype-navn";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Skype-navn, mail eller mobil";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "Dine konti";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "Vælg den konto, du gerne vil bruge.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Skype-konto";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Microsoft-konto";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "Log på";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "Vælg den type konto, du vil bruge til at logge på Skype.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Microsoft-konto";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Skype-navn";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "Tilpas din profil";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "Tilføj foto";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "Skift foto";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Log på";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Problemer med at logge på?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "OK";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "Ok, det er forstået";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "Fortsæt";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "Ikke nu";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "Få mere at vide";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "Indstillinger";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "Påmind mig ikke igen";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "Slå meddelelser til";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "Slet tekst";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "Send";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "Opkald,";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "Opkald";
+"CHAT_CALL_EVENT_CALL_STARTED" = "Opkald startet";
+"CHAT_CALL_EVENT_NO_ANSWER" = "Opkald, besvares ikke";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "Ubesvaret opkald";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "%d mistede opkald";
+"CHAT_CALL_EVENT_BUSY" = "Opkald, optaget";
+"CHAT_CALL_EVENT_BLOCKED" = "Blokeret";
+"CHAT_CALL_EVENT_FAILED" = "Opkald, mislykkedes";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "Hvordan var kvaliteten af dette opkald?";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "Tak for din feedback!";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "Meget dårlig";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "Dårlig";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "Nogenlunde";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "God";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "Helt i top";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "Opkald";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "Opkald,%@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "Opkald";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "Opkald,%@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "Opkald mislykkedes";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "Ubesvaret opkald";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "Opkald, besvares ikke";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "Opkald, blokeret";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "Sendt";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "Leveret";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "Læst";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "Sendt";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "Leveret";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "Læst";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "%@ oprettede en ny gruppe.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "%@ oprettede en ny gruppe med %@.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "%@ oprettede en ny gruppe med %@ og %@.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "%@ oprettede en ny gruppe med %@, %@ og en anden.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "%@ oprettede en ny gruppe med %@, %@ og %u andre.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "<name>%@</name> har fødselsdag i dag";
+"CHAT_GRANTED_AUTH" = "Du har delt dine kontaktoplysninger";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "%@ tilføjede %@ til denne gruppe";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "Robotter, der føjes til denne gruppe, har adgang til alle deltagernes Skype-navne, viste navne og de nye chatbeskeder eller det nye indhold, der deles i gruppen.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "Velkommen! Denne gruppe indeholder en eller flere robotter. De har adgang til alle deltagernes Skype-navne, viste navne og de nye chatbeskeder eller det nye indhold, der deles i gruppen.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "%@ deltager i gruppen";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "%@ forlod gruppen";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "%@ fjernede %@ fra denne gruppe";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "Gæstekontoen for %@ er udløbet";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "Du blokerede %@";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "%@ har ændret rollen for %@ til %@";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "Oprettet af";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "Administrator";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "Tilskuer";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "Forfatter";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "Taler";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "Ansøger";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "Pensioneret";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "Lovløs";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "En rolle er blevet ændret";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "Samtale uden navn";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "Vis chat";
+"CONVERSATION_HIDE_CHAT" = "Skjul chat";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "Vis sidepanel";
+"CONVERSATION_HIDE_TIMELINE" = "Skjul sidepanel";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "Skift til gittervisning";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "Skift til individuel visning";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "Deltag i opkaldet";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "Slut dig til igangværende samtale";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "Vis beskeder fra <a href=\"jump\">ældre chat</a>";
+"CHAT_GOTO_NEW_CHAT" = "Denne chat er blevet opdateret til en ny version. <a href=\"jump\">Gå til den nye chat</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "%@ skal opdatere Skype for at deltage i denne chat. Hjælp ved at sende dem til skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Læs mere om den nye gruppechat</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "%@ skal opdatere Skype for at deltage i denne chat. Hjælp ved at sende dem til skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Læs mere om den nye gruppechat</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ kan nu deltage i denne chat.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "Åbner en til en-chat.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "Smiler";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "Trist";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "Griner";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "Sej";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "Overrasket";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "Blinker";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "Græder";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "Sveder";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "Målløs";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "Kys";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "Fræk";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "Rødmer";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "Undres";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "Træt";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "Himmelvendte øjne";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "Forelsket";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "Ondt grin";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "Krydser fingre";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "Gaber";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "Kaster op";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "Doh!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "Vred";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "Det var ikke mig!";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "Fest";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "Bekymret";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "Mmm"; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "Nørdet";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "Min mund er lukket";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "Vinker";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "Slår sig for panden";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "Djævel";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "Engel";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "Misundelse";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "Vent";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "Knus";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "Makeup";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "Fniser";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "Klapper";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "Tænker";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "Bukker";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "Ruller rundt på gulvet og griner";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "Lettet";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "Glad";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "Griner smørret";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "Nikker";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "Ryster på hovedet";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "Venter";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "Emo";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "Ja";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "Nej";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "Håndtryk";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "Klør fem";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "Hjerte";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "Lytter ikke";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "Egern";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "Blomst";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "Regner";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "Sol";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "Steppeløber";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "Musik";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "Bandit";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "For mange oplysninger";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "Kaffe";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "Pizza";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "Kontanter";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "Store armmuskler";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "Kage";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "Øl";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "Cocktail";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "Danser";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "Ninja";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "Stjerne";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "Mooner";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "Telefon";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "Langfinger";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "Pool-fest";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "Knust hjerte";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "Fuld";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "Bander";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "Film";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "Ryger";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "Ur";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "Mand og hund";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "Mand, der tager et billede";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "Du har fået en e-mail";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "Rock out";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "Bokser";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "Slår hoved mod væggen";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "Ring til mig!";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "Arbejder hjemmefra";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "Insekt";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "Taler";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "Spankulerer";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "Mand med hat";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "Fodboldspiller";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "Tal til hånden";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "Idé";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "Får";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "Kat";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "Cykel";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "Hund";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "Humørikon: %@";
+
+"EMOTICON_TYPE_FLAG" = "Flag: %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "Hvis du vil tilføje nye kontakter på Skype, kan du <a href=\"add-people\">søge i Skype-telefonbogen</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "Du har ingen kontakter på Skype.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "Vi har ikke fundet nogen Skype-kontakter i adressebogen endnu. <a href=\"add-people\">Tilføj personer</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "Vi har ikke fundet nogen Skype-kontakter i adressekartoteket endnu.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Søg i Skype-biblioteket"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "Find personer, du kender på Skype"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "Søger efter personer, du kender"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "Dobbeltklik for at annullere søgning.";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "Det ser godt ud!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "Klik på optag, når du er klar.";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "Annuller optagelse";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "Optag igen";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "Annuller";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "Du har modtaget en ny videobesked. Hvis du vil se den, skal du bare kopiere denne hemmelige kode %2 og se din videobesked her: %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "Annuller";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "Optag";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "Stop";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "Send";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "Eksempel";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "Skift til forsidekamera";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "Skift til bagsidekamera";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "Tid optaget";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "Videoeffekter";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "normal";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "balloner";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "bamser";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "kalejdoskop";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "pixelering";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "klem";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "udbulning";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "Røntgen";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "plakat";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "sne";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "spejl";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "hjerter";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "udklædning";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "Halloween";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "Sprog for undertekster";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "Undertekster vises, når optagelsen er fuldført";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "Opretter undertekster...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "Der kunne ikke oprettes undertekster";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "Lytter";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "Videobesked";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "Du kan ikke længere sende videobeskeder til denne chat.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "Slet video";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "Er du sikker på, at du vil slette denne videobesked?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "Slet";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Annuller";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "Slet videobesked";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "Afspil";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "Pause";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "Talebesked";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Talebesked, %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "Afspiller talebesked.";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "Stopper afspilning.";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Videobesked";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "Kan afspilles";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "Overfører";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "Ikke tilgængelig";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "Afspiller videobesked.";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "Med frontkameraet";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "Med bagsidekameraet";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "Optager";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "Stoppet";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "Sender";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "Ikke sendt – venter på internetforbindelse ...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "Tjek forbindelsen, og prøv igen senere.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "Ikke modtaget – venter på internetforbindelse ...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "Video ikke tilgængelig";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "Video ikke tilgængelig";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ er ved at sende et billede";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "Problemer med at logge på?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "Problem med at logge på";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "Der kunne ikke oprettes forbindelse til Skype. Prøv igen senere.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "Der kunne ikke oprettes forbindelse til Microsoft. Kontrollér netværksindstillingerne, og prøv igen.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "Der kunne ikke oprettes forbindelse til Microsoft. Prøv igen senere.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "Du kan desværre ikke logge på Skype med denne Microsoft-konto, da du ikke opfylder mindstekravet til alder for dit land/område.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "Kontrollér dine oplysninger.";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "Vi kunne ikke genkende disse logonoplysninger. Kontrollér oplysningerne, og prøv igen.";
+"LOGIN_PROBLEM_NO_NETWORK" = "Det var ikke muligt at logge på. Kontrollér internetforbindelsen, og prøv igen.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Skype-kredit";
+"IAP_PURCHASE_BUTTON" = "Tilføj %@-kredit";
+"IAP_CALLPHONES" = "Ring til telefoner";
+"IAP_SEND_SMS" = "Send sms";
+"IAP_WITHSKYPECREDIT_TITLE" = "Hvorfor betale for Skype-kredit?";
+"IAP_WITHSKYPECREDIT_BODY" = "Fordi du kan få fat på personer, som ikke er på Skype, ved at ringe til mobil- og fastnettelefoner eller sende sms'er til lave priser.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Skype til Skype-opkald er gratis, men med kredit har du endnu flere muligheder.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "Din aktuelle saldo er %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "Valutaomregning"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "%@ omregnes til %@ til din Skype-kreditsaldo.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "Få mere at vide";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "Omregnet til Den Europæiske Centralbanks kurs den %@.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "Det ser ud til, at valutaen i din appbutik og Skype-valutaen ikke stemmer overens. Vi konverterer valutaen fra appbutikken til dette køb.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "Hvis du vil ændre disse indstillinger, skal du logge på Skype.com og vælge \"Skift valuta\" under Min konto.";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "Ikke nok kredit";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "Du har ikke nok Skype-kredit til at ringe til dette nummer.";
+"IAP_CALL_NO_CREDIT_TITLE" = "Ingen kredit";
+"IAP_CALL_NO_CREDIT_BODY" = "Du skal have Skype-kredit for at ringe til dette nummer.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "Købet blev gennemført";
+"IAP_RESULT_SUCCESS_1_BODY" = "%@ er blevet føjet til din Skype-konto.";
+"IAP_RESULT_SUCCESS_2_BODY" = "%@ bliver føjet til din Skype-konto.";
+"IAP_RESULT_SUCCESS_3_BODY" = "%@ er allerede blevet føjet til din Skype-konto.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "Din forrige ordre på Skype-kredit er nu gennemført. %@ er blevet føjet til din Skype-konto.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "Din forrige ordre på Skype-kredit er ved at blive behandlet.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "Din forrige ordre på Skype-kredit er gennemført.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "Købet blev annulleret";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "Vi beklager";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "Vi kunne desværre ikke behandle din ordre. Prøv igen senere.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "Din ordre kunne ikke gennemføres lige nu, men vi bliver ved med at prøve, og du får besked, så snart din ordre er gennemført.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "Din forrige ordre på Skype-kredit kunne ikke gennemføres lige nu, men vi bliver ved med at prøve, og du får besked, så snart din ordre er gennemført.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "Læs og acceptér Skypes vilkår for anvendelse, inden du køber kredit.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "Vi kunne ikke behandle din ordre, fordi din betalingsudbyder ikke er tilgængelig i øjeblikket. Prøv igen senere.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "Vi kunne ikke behandle din ordre, fordi din konto administreres af en administrator.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "Vi kunne ikke behandle din ordre. Kontakt Skypes kundesupport for at få hjælp.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "Din iTunes-konto er ikke tilgængelig i øjeblikket.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "Vi kunne ikke fuldføre ordren, fordi din iTunes-konto ikke er tilgængelig i øjeblikket. Prøv igen senere.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "Vi kunne ikke behandle din ordre, fordi Skype ikke understøtter den valuta, der er angivet i din iTunes-konto.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "Valutaen for din Skype-konto er ikke den samme som i din iTunes-konto. Du kan skifte valuta fra dine kontoindstillinger på skype.com.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "Vi kunne ikke behandle din ordre. Kontrollér netværksforbindelsen, og prøv igen.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "Vi kunne ikke behandle din ordre. Kontrollér netværksforbindelsen, så prøver vi igen, så snart du har oprettet forbindelse.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "Vi kunne ikke behandle din forrige ordre på Skype-kredit. Kontrollér netværksforbindelsen, så prøver vi igen, så snart du har oprettet forbindelse.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "Få hjælp";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Microsoft-konto";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "Annuller, og begynd forfra";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "Tilknyttet Skype-konto";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "Denne Skype-konto er allerede blevet knyttet til en anden Microsoft-konto. Log på med disse Microsoft-oplysninger for at fortsætte.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "Ups, der opstod et problem med at sammenkæde dine konti. Prøv igen senere.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Der opstod et problem med at åbne din konto. Kontrollér netværksforbindelsen, og prøv igen.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "Telefon";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "Hjemme";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "Kontor";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "Mobil";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "Andre";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "Ukendt nummer";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (gæst)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "Opretter forbindelse...";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "Ringer...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "Ringer…";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "Opkaldet er parkeret";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "Opkaldet er afsluttet";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "Starter...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "Ringer...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "Live";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "Opkaldet er parkeret";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "Dit opkald venter";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "Andre er live";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "Andre er live fyldt";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "Afspiller besked";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "Optager";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "Seneste live";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "Overfører";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "Logger på...";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "Indlæser kontakter...";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "Opdaterer…";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "Denne besked er blevet fjernet";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "Kan ikke forbinde til Skype.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "Kontroller dine netværksindstillinger og prøv igen.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "Dette Skype-navn er ugyldigt.";
+"Account::INVALID_EMAIL" = "Denne mailadresse er ugyldig.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "Kontrollér oplysningerne, og prøv igen.";
+"Account::UNACCEPTABLE_PASSWORD" = "Denne adgangskode er ugyldig.";
+"Account::SKYPENAME_TAKEN" = "Dette Skype-navn er allerede taget.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "Indtast et nyt.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "Vi kunne ikke genkende dit Skype-navn og adgangskode.";
+"Account::INCORRECT_PASSWORD" = "Vi kunne ikke genkende dit Skype-navn og adgangskode.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "Du har forsøgt at logge på for mange gange.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "Prøv igen senere.";
+"Account::ATO_BLOCKED" = "Din konto er blevet suspenderet. \n<a href = 'https://go.skype.com/account.recovery.ios'>Tryk her for at få flere oplysninger</a>.";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "Der opstod et problem med at logge på med din Microsoft-konto. Prøv igen senere.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "Det var ikke muligt at logge på, da der ikke er mere lagerplads på din enhed.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "Det var ikke muligt at logge på. Genstart din enhed, og prøv igen.(%d)";
+"Account::DB_FAILURE" = "Det var ikke muligt at logge på. Genstart din enhed, og prøv igen.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "Det var ikke muligt at logge på. Prøv at geninstallere Skype fra App Store.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "Din adgangskode er blevet ændret. Log på for at fortsætte med at bruge Skype.";
+"Account::LOGOUT_REMOTE" = "Du er logget af.";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "Denne version af Skype understøttes ikke.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "Opdater til den nyeste version af Skype for at fortsætte.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "Det var ikke muligt at logge på. Prøv igen senere.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "Du kan ikke logge på Skype, da du ikke opfylder mindstekravet til alder for dit land/område.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "Prøv igen.(%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "Opkald";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "Videoopkald";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "Videobesked";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "Tastatur"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "Ring til telefonnumre";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "Start en ny chat";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Start en ny chat på Skype";
+
+
+"HUB_RECENTS_TITLE" = "Seneste";
+"HUB_PEOPLE_TITLE" = "Personer";
+"HUB_FAVOURIES_TITLE" = "Favoritter";
+"CANCEL_ALERT_BUTTON" = "Annuller";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "Favoritter";
+"PEOPLEPICKER_CONTACTS_TITLE" = "Kontakter";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "Søg efter kontakter";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "Find nye kontakter";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "Søg efter \"%@\"";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Søg i Skype-telefonbogen efter \"%@\"";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "Personer";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "Robotter";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "Ikke tilsluttet"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "På Skype"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Tilføj som kontakt på Skype";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "Annuller";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "Opret forbindelse";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "Ny chat";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "Dobbelttryk for at vælge.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "Dine seneste samtaler vises her.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "Du har ingen ulæste beskeder";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "Seneste opkald til mobiltelefoner og fastnettelefoner bliver vist her. <a href=\"open-dialpad\">ring til en ven</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, nye beskeder, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "Dit opkald venter";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "Opkaldet er parkeret";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "igangværende samtale";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "Aktive opkald, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "Aktive opkald";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "Redigeret";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "Rediger";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "Gem billede";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "Gem video";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "Vis hjerter";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "Tildel hjerte";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "Fjern hjerte";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "Luk";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "Hjerter";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "Dobbelttryk for at få vist kontakten";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "Nyt";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "har givet din besked et hjerte.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "har givet et hjerte til beskeden: %@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "har givet dit billede et hjerte.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "%@ har givet din besked et hjerte.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "%1$@ har givet et hjerte til beskeden: %2$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "%@ har givet dit billede et hjerte.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>Ingen hjerter endnu</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "Du har givet dette et hjerte";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "Log på";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Skype-navn";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Microsoft-konto";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "Opret konto";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Log på med Skype-navn";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Log på med en Microsoft-konto";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Opret konto";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "Feltet logonoplysninger";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "Allerede på Skype?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "Ja";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Ja, jeg har allerede en Skype-konto";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "Nej";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Nej, jeg har ikke en Skype-konto";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "Filter til liste over personer";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "Alle kontakter";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "Onlinekontakter";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "Vis alle kontakter.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "Vis kun kontakter, der er online";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "Vis kun Skype-kontakter.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "Taleopkald";
+"CHATINPUT_PLACEHOLDER" = "Indtast besked her";
+"CHATINPUT_PLACEHOLDER_SMS" = "Skriv en sms her";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "Sig hej til %@";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "Dine samtaler vises her.";
+"CHATTYPING_SINGLEUSER" = "%@ skriver...";
+"CHATTYPING_TWOUSERS" = "%@ og %@ skriver...";
+"CHATTYPING_THREEUSERS" = "%@, %@ og én anden skriver...";
+"CHATTYPING_MULTIPLEUSERS" = "%@, %@ og %d andre skriver...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "Ring til telefon";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "Send invitation";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Send et link via sms til at chatte på Skype.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "Chat";
+"SEND_SMS_TO_CONTACT_BUTTON" = "Send sms";
+"EMPTY_PAGE_HEADER_TITLE" = "Sig hej til";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "Hej, lad os chatte på Skype: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "Det koster %@ at sende denne sms";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "Vælg land/område";
+"DIALPAD_CALL_BUTTON" = "Opkald";
+"DIALPAD_STAR_BUTTON" = "Stjerne";
+"DIALPAD_HASH_BUTTON" = "Firkant";
+"DIALPAD_BACKSPACE_BUTTON" = "Slet";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "Sms";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "Åbner en chat med %@";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "Tastaturet er skjult.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "Vis tastatur";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "Det er ikke muligt at ringe op til denne kontaktperson";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "Der opstod et problem med at ringe til denne kontaktperson.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "Kontroller oplysningerne, og prøv igen.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "Numre til nødopkald";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "Nødopkald understøttes ikke på din enhed.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "Ugyldigt telefonnummer";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "Der opstod et problem med at ringe til dette telefonnummer.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "Kontroller oplysningerne, og prøv igen.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "Du har allerede en aktiv samtale.";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "Der er et opkald i gang.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Læg på, inden du starter et Skype-opkald.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "Du har allerede en aktiv samtale.";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "Der er et andet Skype-opkald i gang.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Læg på, inden du starter et nyt opkald.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "Det er ikke muligt at ringe op";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "Din operatør tillader ikke Skype-opkald over dit mobilnetværk. Tilslut til et WiFi-netværk først for at foretage Skype-opkald.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "Opkald mislykkedes";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "Du kan ikke ringe op til dig selv.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "Blokeret kontaktperson";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "Fjern blokering fra denne kontaktperson, inden du ringer ham/hende op.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "Mikrofonadgang";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "Uden tilladelse til at bruge din mikrofon, kan andre ikke høre dig under opkald eller videobeskeder.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Gå til dine enhedsindstillinger, og derefter til Anonymitet for at give tilladelse til brug.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "Kameraadgang";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "Uden tilladelse til at bruge dit kamera kan andre ikke se dig under opkald eller videobeskeder.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Gå til dine enhedsindstillinger og derefter til Anonymitet for at give tilladelse.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "Du kan ikke tage fotos i Skype, hvis du ikke giver tilladelse til at anvende dit kamera.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "Det er ikke muligt at ringe op";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "En anden lyd-applikation forhindrer Skype i at afspille lyd.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "Kontroller oplysningerne, og prøv igen.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "Det er ikke muligt at ringe op";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "Der er problemer med lyden på din enhed.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "Kontroller oplysningerne, og prøv igen.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "Det er ikke muligt at ringe op";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "Der er problemer med lyden på din enhed.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "Genstart Skype for at fortsætte.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "Det er ikke muligt at ringe op";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "Der er problemer med lyden på din enhed.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "Prøv igen senere.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "Det er ikke muligt at foretage et opkald";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "Der er problemer med lyden på din enhed.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "Prøv igen senere.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "Det er ikke muligt at ringe op";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "Der opstod et problem med at opnå forbindelse.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "Prøv igen senere.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "Det er ikke muligt at ringe op";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "Mens du er i Indien, kan du kun kunne ringe til andre i Indien, hvis de er også på Skype (gratis). Desværre kan du ikke ringe til mobil- eller fastnettelefoner i Indien via Skype.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "Få mere at vide";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Du kan ikke deltage i opkaldet";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Dette gruppeopkald har det maksimalt tilladte antal deltagere lige nu. Prøv at deltage senere.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "Kameraet er i brug";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "Du deltager i et videoopkald lige nu.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "Sluk for din video, før du prøver at bruge kameraet.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Gruppeopkald";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Du kan ikke foretage opkald til grupper med %d eller flere deltagere fra denne enhed.";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "Gruppevideosamtaler";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Du kan ikke foretage opkald til grupper med %d eller flere deltagere fra denne enhed.";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "Du er offline";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "Du skal være online for at foretage opkald på Skype.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Gruppeopkald";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Det maksimale antal deltagere for dette opkald er nået.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "Opkaldet er parkeret";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "Du skal genoptage opkaldet, før du tilføjer nye deltagere.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "Opkald parkeret af modparten";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "Dette opkald skal genoptages, før du kan tilføje nye deltagere.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "Opkaldet konfigureres";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "Der kan ikke tilføjes deltagere, mens der oprettes forbindelse.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "Vent, til forbindelsen er oprettet.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "Gruppe";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "Der opstod et problem med at tilføje deltagere. Prøv igen senere.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "Kunne ikke starte video";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "Der opstod et problem med at slå video til.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "Kontrollér, at alle i denne samtale anvender den nyeste version af Skype.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "Kunne ikke starte video";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skype kunne ikke starte din video.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "Prøv igen senere.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "Genoptager opkald";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "Der opstod et problem med genoptage opkaldet.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "Luk alle programmer, der på nuværende tidspunkt bruger lyd, og afslut alle igangværende telefonopkald, før dette Skype-opkald genoptages.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "Kontaktanmodning";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "Deltagere blev tilføjet eller fjernet";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "<name>%@</name> har fødselsdag i dag"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "Der blev oprettet en gruppechat";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "Kontaktpersonen blev blokeret";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "Sendte dig en videobesked";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "Du sendte en videobesked";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>Du</name> og <name>%@</name> er nu kontaktpersoner.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "er nu en kontakt";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "Du har delt dine kontaktoplysninger";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "Sendte dig en talebesked";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "Du har sendt en talebesked.";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "%@ har sendt dig en kontaktperson. Denne version af Skype understøtter ikke denne funktion endnu.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "Du har sendt en kontaktperson. Denne version af Skype understøtter ikke denne funktion endnu.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "Dobbelttryk for at få vist kontakten";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "Dobbelttryk for at få vist kontakterne";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "Kontakt sendt";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "Føj til kontakter";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "Allerede på din liste over kontakter";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "Vis kontakter";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "Send kontakter";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "Send kontakter";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "& %d anden";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "Vælg kontakter";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "Du har ingen kontakter på Skype, som du kan sende.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "Ingen kontakter";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "Kontakter";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "Send kontakter";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "Kontaktanmodningen er sendt";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "Kontaktanmodningen afventer";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "Sendte kontakter";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "%@ har sendt dig en besked, som denne version af Skype ikke understøtter endnu.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "Du har sendt en besked, som denne version af Skype ikke understøtter endnu.";
+
+"RECENTS_DELETE_CONVERSATION" = "Slet chat";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "Markér som læst";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "Markér som ulæst";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "Chat";
+"CALL_ACCESSIBILITYLABEL" = "Taleopkald";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "Primær login-konto";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Log på med Skype";
+"HUB_ACCESSIBILITYLABEL" = "Hub";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "Foreslået søgeemne %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "Vis humørikoner";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "Vis tastatur";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "Slet";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Søg";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "Store";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "Seneste";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "Humørikoner";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Mojis";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "Søg";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "Forslag";
+"EXPRESSION_SEARCH_NO_RESULTS" = "Intet fundet";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "Deltag i min chat på Skype for at se denne Moji: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "Hej\nDeltag i min chat på Skype for at se denne Moji, som jeg har sendt til dig: %@\nVi tales ved";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "Se lige den her Moji";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "Hovsa";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "Der opstod et problem med at dele denne Moji. Prøv igen senere.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Skype Store";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "Indlæser Mojis og humørikoner ...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "Søg";
+"EXPRESSION_STORE_FREE" = "Gratis";
+"EXPRESSION_STORE_REMOVE" = "Fjern";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "Download gratis";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "Downloader";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "Downloadet";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "Hovsa";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "Der opstod et problem under indlæsningen af Mojis og humørikoner.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "Der opstod et problem med at finde Mojis og humørikoner, <a href=\"prøv at hente dem igen\">retry</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "Søg efter humørikoner og Mojis";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "De senest brugte humørikoner vises her.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "Udvalgte";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "Dobbelttryk for at få vist et eksempel.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "Dobbelttryk for at sende.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "Dobbelttryk for at lukke eksempelvisningen.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "Afspil igen";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Vis Moji";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "Tryk igen for at sende.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Giv adgang til din mikrofon under enhedsindstillinger, så %@ kan høre dig.";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Giv adgang til din mikrofon under enhedsindstillinger, så alle kan høre dig.";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Giv adgang til dit kamera under enhedsindstillinger, så %@ kan se dig.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Giv adgang til dit kamera under enhedsindstillinger, så alle kan se dig.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "Det maksimale antal deltagere for dette opkald er nået";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "Hvis du vil foretage et opkald, skal du bruge en netværksforbindelse.";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "Dit kamera er deaktiveret i visningen med opdelt skærmbillede.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Video understøttes ikke ved Slide Over.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "Højttaleren er slået til";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "Dobbeltklik for at slå højttaleren fra.";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "Højttaleren er slået fra";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "Dobbeltklik for at slå højttaleren til.";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "Lyden er slået fra";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "Dobbeltklik for at slå mikrofonen til.";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "Mikrofon slået til";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "Dobbeltklik for at slå mikrofonen fra.";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "Video er slået til";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "Dobbeltklik for at slå video fra.";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "Video er slået fra";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "Dobbeltklik for at slå video til.";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "Indgående";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "Udgående";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 deltager"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d deltagere"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "Ingen deltagere"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%1$d af %2$d i dette opkald";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "%1$@ skal opdatere Skype før vedkommende kan deltage i samtalen.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "%1$@ og %2$@ skal opdatere Skype, før de kan deltage i opkaldet.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "%1$@ og %2$@ skal opdatere Skype, før de kan deltage i opkaldet.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ",";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Indgående Skype-opkald fra %@";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Indgående gruppeopkald fra %@ og %@";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Indgående gruppeopkald fra %@, %@ og en anden person";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Indgående gruppeopkald fra %@, %@ og %d andre personer";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "indgående videoopkald fra %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Indgående gruppevideoopkald fra %@ og %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Indgående gruppevideoopkald fra %@, %@ og en anden person";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Indgående gruppevideoopkald fra %@, %@ og %d andre personer";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skype-opkald til %@";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Gruppeopkald til %@ og %@";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Gruppeopkald til %@, %@ og en anden person";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Gruppeopkald til %@, %@ og %d andre personer";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "Videoopkald til %@.";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "Videoopkald til %@ og %@.";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "Videoopkald med %@, %@ og en anden person.";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "Videoopkald til %@, %@ og %d andre personer.";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skype-samtale med %@";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Gruppeopkald med %@ og %@";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Gruppeopkald med %@, %@ og en anden person";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Gruppeopkald med %@, %@ og %d andre personer";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Videosamtale med %@";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Gruppevideoopkald med %@ og %@";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Gruppevideoopkald med %@, %@ og en anden person";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Gruppevideoopkald med %@, %@ og %d andre personer";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Henter Skype-opkald med %@";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Henter gruppeopkald med %@ og %@";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Henter gruppeopkald med %@, %@ og en anden person";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Henter gruppeopkald med %@, %@ og %d andre personer";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Henter videoopkald med %@";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Henter gruppevideoopkald med %@ og %@";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Henter gruppevideoopkald med %@, %@ og en anden person";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Henter gruppevideoopkald med %@, %@ og %d andre personer";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "Opkaldet blev afsluttet";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "Opkaldets varighed";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "Optager talebesked";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "d";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "d";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "t";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "t";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "min.";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "min.";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "s";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "s";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "Acceptér";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "Afvis";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> vil gerne tilføje dig på Skype\n\"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> sendte dig en besked fra <location>%@</location>"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "Sig hej til <name>%@</name>, og føj vedkommende til Kontakter.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ er endnu ikke en kontaktperson.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "\"%@\"<a href=\"edit-contact-request-message\">Rediger</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "Send kontaktanmodning";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "Føj til kontakter";
+"CONTACT_REQUEST_PENDING" = "Venter på, at <name>%@</name> accepterer din kontaktanmodning.\n<a href=\"resend-request\">Send kontaktanmodningen igen</a>";
+"CONTACT_REQUEST_BLOCKED" = "<name>%@</name> er blokeret";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "Fjern blokering";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "Ja";
+"CONTACT_REQUEST_BLOCK_TITLE" = "Bloker kontakt";
+"CONTACT_REQUEST_DECLINED_TITLE" = "Kontaktanmodningen blev afvist";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "Annuller";
+"CONTACT_REQUEST_BLOCK_ALERT" = "Er du sikker på, at du vil blokere denne kontaktperson?";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "Vil du også blokere og anmelde denne person?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "Bloker";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "Bloker og fjern";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "Bloker og anmeld";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "Tilføj deltagere";
+"CHAT_OPTION_START_NEW_GROUP" = "Start en ny gruppe";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "Vis profil";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "Meddelelser";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "Meddelelser for denne chat er slået til.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "Meddelelser for denne chat er slået fra.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "Slå meddelelser til";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "Slå meddelelser fra";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "Forlad gruppen";
+
+"CHAT_OPTION_PARTICIPANTS" = "Vis deltagere";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "TIL";
+"MK_SWITCH_OFF_MESSAGE" = "FRA";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "Tænder og slukker.";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "Ny chat";
+"NEWCHATSCENE_TITLE_TOKEN" = "Til:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "& %d anden"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "& %d andre"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "Vælg kontakter, der skal tilføjes";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Start";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Annuller oprettelse af ny gruppe";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Opret ny gruppe";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "Taleopkald";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "Videoopkald";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "Tastatur";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "Annuller";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "Tilbage";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "Mine oplysninger";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "Åbn mediemenuen";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "Luk mediemenuen";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "Hjælp";
+"MY_INFO_FEEDBACK_ACTION" = "Send feedback";
+
+"MY_INFO_CONNECTING" = "Opretter forbindelse...";
+
+"MY_INFO_STATUS" = "Status";
+"MY_INFO_CREDIT" = "Skype-kredit";
+"MY_INFO_PROFILE_LINK" = "Min konto";
+"MY_INFO_SETTINGS" = "Indstillinger";
+"MY_INFO_SIGN_OUT" = "Log af";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "Skriv humørbesked";
+"MY_INFO_MOOD_MESSAGE" = "Humørbesked";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "Dobbeltklik for at redigere";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "Send feedback";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "Skift profilbillede";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "Tag et billede";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "Vælg eksisterende billede";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "Fjern profilbillede";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "Indstillinger";
+
+"SETTINGS_GENERAL" = "Generelt";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "Tillad målrettede reklamer";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "Giv Microsoft tilladelse til at bruge oplysningerne i din Skype-profil til at vise dig mere relevante reklamer i denne app. <a href=\"skype.com\">Læs mere</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "Meddelelser om chatbeskeder";
+"SETTINGS_PUSH_NOTIFICATIONS" = "Pushmeddelelser";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Pushmeddelelser";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "Du modtager meddelelser om nye beskeder, også når Skype er lukket.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "Du modtager ikke meddelelser om beskeder, når Skype er lukket.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "Meddelelser i appen";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Meddelelser i appen";
+"SETTINGS_INAPP_SOUNDS" = "Lyde i appen";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "Lyde i appen";
+"SETTINGS_OTHER" = "Andet";
+
+"SETTINGS_PRIVACY" = "Anonymitet";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "Hvordan folk finder mig";
+"SETTINGS_PRIVACY_EXPLANATION" = "Disse kontaktoplysninger kan bruges til at finde dig på Skype.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "Tilføj et telefonnummer";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "Profilbillede";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "Synligt for alle";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "Synligt for mine kontakter";
+
+"SETTINGS_CONTACTS_HEADER" = "Kontakter";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "Tilføj mine venner";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype tjekker dine kontakter og tilføjer automatisk personer, du kender, til din liste over Skype-kontakter.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "Du skal manuelt finde og tilføje venner på Skype.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "Eksempelvisning af weblinks";
+
+"SETTINGS_EMOTICONS_HEADER" = "Humørikoner";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "Brug store humørikoner";
+
+"SETTINGS_EDIT_BUTTON" = "Rediger";
+"SETTINGS_DONE_BUTTON" = "Udført";
+
+"SETTINGS_ABOUT" = "Om";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "Indtast dit nummer";
+"PNV_HOW_IS_MY_NUMBER_USED" = "Hvordan bruges mit nummer?";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "Der bliver muligvis opkrævet almindelig sms-takst.";
+"PNV_ENTER_THE_CODE" = "Indtast koden";
+"PNV_CODE_SENT" = "Vi har sendt en kode til dit nummer";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>Ring til mig</a> eller <a href='pnv://resendcode'>send koden igen</a>";
+"PNV_VERIFYING_NUMBER" = "Bekræfter nummer";
+"PNV_NUMBER_VERIFIED" = "Bekræftet";
+"PNV_NUMBER_USAGE_EXPLANATION" = "Dit nummer bruges til at hjælpe dine venner med at finde dig på Skype. Det gør det også meget nemmere at søge efter nye kontakter.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "Kode";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "Hvis du vil ændre, hvordan andre kan finde dig, skal du gå til %@ i Indstillinger for at fjerne eller deaktivere relevante telefonnumre.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "Hvis du ikke vil bruge dit nummer og foretrækker at søge efter og tilføje nye kontakter manuelt, skal du vælge %@ nedenfor.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Skypes politik om beskyttelse af personlige oplysninger";
+"PNV_NOT_NOW" = "Ikke nu";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Telefonnummer";
+
+"PNV_WELCOME_HEADING" = "Det er blevet nemmere at finde vennerne";
+"PNV_WELCOME_PARAGRAPH" = "Du skal bare tilføje dit telefonnummer for at komme i gang.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Næste";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "Hovsa";
+"PNV_DEFAULT_ERROR_MESSAGE" = "Der opstod et problem med bekræftelse af dit nummer. Prøv igen senere.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "Du har nået det maksimale antal bekræftede numre. Slet et af dine numre fra Indstillinger, inden du tilføjer flere.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "Det indtastede nummer er ugyldigt. Kontrollér oplysningerne, og prøv igen.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "Vi kan ikke sende en sms til dette nummer. Kontrollér oplysningerne, og prøv igen.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "Det ser ud, som om koden er udløbet. Vælg Send igen nedenfor for at få en ny kode.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "Det ser ud til, at koden er forkert. Kontrollér den, og prøv igen.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "Der er et problem med din netværksforbindelse Kontrollér netværksindstillingerne, og prøv igen.";
+"PNV_ERROR_TRY_AGAIN" = "Prøv igen";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Tilføj venner på Skype";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "Vi leder efter personer, du kender på Skype, og føjer dem til dine kontakter.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Få mere at vide";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "Vi tjekker adressebog fra tid til anden for at finde personer, du kender, for automatisk at tilføje nye Skype-kontakter. Bare rolig, vi spammer ikke dine venner med invitationer.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "Hvis du på et tidspunkt ombestemmer dig, kan du bare slå %@ fra under Indstillinger. Så bruges adressebogen ikke længere til at finde personer, du kender, og du vil skulle tilføje personer manuelt.";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "Hvis du vil ændre, hvordan andre kan finde dig, skal du gå til %@ i Indstillinger for at fjerne eller deaktivere relevante telefonnumre.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Skypes politik om beskyttelse af personlige oplysninger";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "Husk, at Skype ikke kan bruges til nødopkald";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "Det er blevet nemmere at finde vennerne";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "Der er tilføjet nye kontakter";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "Tilføj kontakt";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "Annuller";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "Søg";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Annuller";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "Søg efter personer på Skype ved hjælp af deres Skype-navn, mailadresse eller fulde navn.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "Allerede en Skype-kontaktperson";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "Der blev ikke fundet nogen resultater";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "Tilbage";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "Frem";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "Del";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "Om";
+"ABOUT_APPLICATION_VERSION" = "Skype-version";
+"ABOUT_COPYRIGHT" = "© 2003-2016 Skype & Microsoft\nPatentanmeldt";
+"ABOUT_THIRD_PARTY_NOTICES" = "Meddelelser fra tredjepart";
+"ABOUT_PRIVACY_POLICY" = "Personoplysninger";
+"ABOUT_TERMS_OF_USE" = "Vilkår for anvendelse";
+"ABOUT_COPYRIGHT_TEXT" = "Skype-navnet, tilknyttede varemærker og logoer og \"S\"-logoet er varemærker, der tilhører Skype eller relaterede enheder.\n\nAdvarsel: Dette program er beskyttet af international copyrightlovgivning og internationale traktater. Uautoriseret reproduktion eller distribution af dette program, eller dele heraf, er ulovligt og vil blive retsforfulgt.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "Fejl";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "Via mail";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "Giv mig besked om nye Skype-tilbud og -funktioner på mail";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Giv mig besked om nye Skype-tilbud og funktioner:";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "Tilføj et profilbillede";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "Mail";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "john@example.com";
+"CREATEACCOUNT_FULLNAME_LABEL" = "Navn";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "Fornavn";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "Efternavn";
+"CREATEACCOUNT_PASSWORD_LABEL" = "Adgangskode";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6-20 tegn";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "Gentag adgangskode";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Skype-navn";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "Påkrævet";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "Telefonnummer";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "med landekode";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "Nogle af felterne ovenfor ikke er blevet udfyldt";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "Adgangskoderne er ikke identiske. Prøv igen.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Skypes vilkår for anvendelse";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "Ja, jeg har læst og accepterer <a href='%1$@'>Skypes vilkår for anvendelse</a> og <a href='%2$@'>Skypes politik om beskyttelse af personlige oplysninger</a>.";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "Skype understøtter ikke nødopkald";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype er ikke en erstatning for din traditionelle telefontjeneste og kan ikke anvendes til nødopkald.";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "Jeg accepterer";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "Skal være 6-32 tegn langt.";
+"SkyLib::TOO_LONG" = "Skal være 6-32 tegn langt.";
+"SkyLib::CONTAINS_INVALID_CHAR" = "Ugyldigt tegn, f.eks. Σ, à, ß.";
+"SkyLib::CONTAINS_SPACE" = "Må ikke indeholde mellemrum eller tabulatur.";
+"SkyLib::SAME_AS_USERNAME" = "For tæt på dit Skype-navn.";
+"SkyLib::INVALID_FORMAT" = "Ugyldigt format.";
+"SkyLib::CONTAINS_INVALID_WORD" = "For let at gætte, f.eks. abcd, skype.";
+"SkyLib::TOO_SIMPLE" = "Skal indeholde mindst 1 bogstav samt 1 tal.";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "Skal starte med et bogstav (A-Z).";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "Prøv et nyt Skype-navn.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "Prøv en ny adgangskode.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "Prøv en ny email-adresse.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "Prøv igen.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Skype-navn";
+"SkyLib::ACCOUNT_PASSWORD" = "Adgangskode";
+"SkyLib::CONTACT_EMAILS" = "E-mail";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> har omdøbt denne gruppe til \"%@\"";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Skype Home";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> opdaterede gruppebilledet";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> opdaterede gruppen";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "Skjul";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "%d nye meddelelser";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "1 ny meddelelse";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "Ingen nye meddelelser";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "Hej! Jeg vil gerne tilføje dig på Skype.";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "Kontaktanmodning";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. I %3$@";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "Vil gerne tilføje dig på Skype";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "Ikke nu";
+"ALLOW_BUTTON" = "Tillad";
+"PERMISSION_VIEW_TITLE" = "Lad os komme i gang";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til din mikrofon.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til dit kamera.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til dine kontakter.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til dine meddelelser.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til din mikrofon og dit kamera.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til din mikrofon og dine kontakter.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til din mikrofon og dine meddelelser.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til dit kamera og dine kontakter.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til dit kamera og dine meddelelser.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til dine kontakter og meddelelser.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til din mikrofon, dit kamera og dine meddelelser.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til din mikrofon, dine kontakter og dine meddelelser.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til din mikrofon, dit kamera og dine meddelelser.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til dit kamera, dine kontakter og dine meddelelser.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Hvis du vil opnå den bedste Skype-oplevelse, skal vi have adgang til mikrofon, kamera, kontakter og meddelelser.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "Kontakter";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "Mikrofon";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "Kamera";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "Meddelelser";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "Er du sikker?";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "Hvis vi ikke har adgang til disse funktioner, vil du ikke kunne foretage eller modtage opkald korrekt, eller få meddelelser om indgående opkald og beskeder.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "Din kontaktliste vil være tom, og du kan ikke foretage eller modtage opkald via Skype.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Få mere at vide";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "Mikrofon og kamera";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "Hvis du vil foretage eller modtage opkald via Skype, skal vi have adgang til mikrofonen og kameraet. Desværre fungerer Skype ikke uden disse tilladelser.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "Kontakter";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "Vi skal have adgang til dine kontakter for at konfigurere din Skype-kontaktliste. Vi tjekker dine kontakter fra tid til anden for at finde personer, du kender, på Skype. Bare rolig, vi spammer ikke dine venner med invitationer.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "Hvis du på et tidspunkt ombestemmer dig, kan du bare slå %@ fra under Indstillinger. Så bruges adressebogen ikke længere til at finde personer, du kender, og du vil skulle tilføje personer manuelt.";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "Meddelelser";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "Vi skal have adgang til Meddelelser for at gøre dig opmærksom på indgående opkald og beskeder, når Skype er lukket. Du kan også beslutte på et senere tidspunkt, om du vil slå individuelle meddelelser om chat fra, hvis du ikke vil forstyrres.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "Tillad adgang til kontakter";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Skype kræver adgang til kontakter for at finde personer, du kender. Gå til Indstillinger, og tillad adgang til kontakter.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "Spring over";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "Opret forbindelse";
+"ONBOARDING_GET_STARTED_BUTTON" = "Kom i gang";
+
+"ONBOARDING_IPHONE_TITLE1" = "Redesignet til iPhone";
+"ONBOARDING_IPAD_TITLE1" = "Redesignet til iPad";
+"ONBOARDING_TEXT1" = "Skype er nemmere at bruge end nogensinde før – uanset om du sender beskeder til venner eller foretager et opkald.";
+
+"ONBOARDING_TITLE2" = "Du kan finde alt";
+"ONBOARDING_TEXT2" = "Søg efter personer, grupper eller dine tidligere samtaler.";
+
+"ONBOARDING_IPHONE_TITLE3" = "Få mere fra hånden";
+"ONBOARDING_IPAD_TITLE3" = "Flere muligheder på Skype";
+
+"ONBOARDING_IPHONE_TEXT3" = "Del din placering, dine fotos eller se eksempler på weblinks – mens du hører seneste nyt fra vennerne.";
+"ONBOARDING_IPAD_TEXT3" = "Nu med større humørikoner og eksempelvisning af weblinks. Og så kan du oprette nye grupper direkte fra din iPad.";
+
+"ONBOARDING_TITLE4" = "Skype er sjovere sammen med venner";
+"ONBOARDING_TEXT4" = "Tilføj dit telefonnummer på Skype, så venner lettere kan finde dig.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "Nem deling";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Hvis du vil sende websteder eller billeder fra din Kamerarulle til venner via Skype, skal du blot trykke på knappen Del.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "Tilføj deltagere";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "Tilføj:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "Allerede deltager";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "Deltager allerede i opkaldet";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "deltager i dette opkald";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "deltager ikke i dette opkald";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "Opretter forbindelse...";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "Opretter forbindelse til %@";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "Ringer...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "Ringer til %@";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "Opkaldet er parkeret";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "Opkaldet er parkeret for %@";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "Tilføj favoritter";
+"ADDFAVORITES_EMPTY_TITLE" = "Du kan samle alle dine favoritpersoner: <a href=\"add-favorites\">Føj til favoritter</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "Skype-kontakter";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "Filoverførsel";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ én anden";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ %d andre";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "Du har sendt denne fil fra en anden enhed.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "Du har sendt disse filer fra en anden enhed.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "Denne version af Skype understøtter ikke modtagelse af filer.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "Denne app understøtter kun Skypes nye billeddelingsfunktioner.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "Du sendte en fil";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "Du sendte %d filer";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "Sendte dig en fil";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "Sendte %d filer";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "Online";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "Forstyr ikke";
+"CONTACT_AVAILABILITY_AWAY" = "Væk";
+"CONTACT_AVAILABILITY_INVISIBLE" = "Usynlig";
+"CONTACT_AVAILABILITY_OFFLINE" = "Offline";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "Online";
+"CONTACT_AVAILABILITY_BUSY" = "Optaget";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "Blokeret";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Denne person er en favorit. Dobbelttryk for at fjerne fra favoritter.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Denne person er ikke en favorit. Dobbelttryk for at føje til favoritter.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Denne gruppe findes ikke under dine favoritter. Dobbelttryk for at føje til favoritter.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Denne gruppe findes i dine favoritter. Dobbelttryk for at fjerne fra favoritter.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@ %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@ %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "SKYPE-NAVN";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "WEBSTED";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "OM MIG";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "FØDSELSDAG";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "KØN";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "SPROG";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "KONTAKTPERSONER";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "EGENSKABER";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "ANONYMITET";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "OPRETTET AF";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "BESKRIVELSE";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "Send og modtag chatbeskeder og billeder.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "Denne robot får adgang til dit viste navn, Skype-navn og de chatbeskeder eller det indhold, som du eller andre gruppedeltagere deler med den.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "Kvinde";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "Mand";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "Bloker kontakt";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "Fjern blokering af kontakt";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "Fjern kontakt";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "Fjern kontakt";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "%@ bliver fjernet fra din liste over personer.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "Fjern";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "Annuller";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "Skjul";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "Gruppeprofil";
+"GROUPPROFILE_NOTIFICATIONS" = "Meddelelser";
+"GROUPPROFILE_MENU_TITLE" = "Vis profil";
+"GROUPPROFILE_LEAVE_CHAT" = "Forlad gruppen";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "Deltagere";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "Inviter";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "Chatinvitationer";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "Chatoversigten vil være synlig for alle";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "Aktivér chatinvitationer for at invitere enhver til denne chat.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "Kun Skype-kontakter kan føjes til denne chat.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "Invitér enhver til denne chat, også selvom de ikke er på Skype.";
+"GROUPPROFILE_CHAT_HISTORY" = "Chatoversigt";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "Chathistorik er i øjeblikket skjult for nye deltagere.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "Chathistorik er synlig for alle.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "Tilføj deltagere";
+"GROUP_ADMIN_STRING" = "%@ (administrator)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "Chatinvitationer";
+"GROUPPROFILE_ALERT_BODY" = "Invitationen til denne chat er ikke tilgængelig i øjeblikket. Prøv igen senere.";
+"GROUPPROFILE_ALERT_BUTTON" = "OK";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Deltag i min chat på Skype: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "Deltag i min chat";
+"INVITES_MAIL_BODY" = "Hej\nJeg har lavet en gruppe på Skype, som vi kan bruge til at chatte, dele og samarbejde.\nDeltag i den ved at klikke på linket:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "Omdøb gruppe";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "Omdøb gruppe";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "Omdøb kontakt";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "Dobbelttryk for at omdøbe kontakten";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "Tilføj robot";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "Send kontaktanmodning";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "Send kontaktanmodningen igen";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "Kontaktanmodningen er sendt";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "Acceptér";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "Afvis";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "<name>%@</name> vil gerne tilføje dig på Skype"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "Åbn";
+"PUSH_CHAT_CALL" = "Ring op";
+"PUSH_CHAT_TEXT_REPLY" = "Svar";
+"PUSH_CALL_ANSWER" = "Besvar";
+"PUSH_CALL_DECLINE" = "Afvis";
+"PUSH_CALL_VIDEO_VIDEO" = "Video";
+"PUSH_CALL_VIDEO_AUDIO" = "Tale";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "Besked";
+"PUSH_MISSED_CALL_CALLBACK" = "Ring tilbage";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "Problem med kontakter";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "Der opstod et problem med adgang til telefonnumre fra dine kontakter. Prøv at synkronisere dine mailkonti i Indstillinger for at løse problemet.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "Gem telefonnummer";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "Ingen matchende opkald.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "Ét matchende opkald.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "%d matchende opkald.";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@) seneste opkald: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@. Seneste opkald: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@ er en kontakt fra adressebogen.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Opret forbindelse på Skype";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@ er en kontakt fra adressebogen. Du kan ringe til og chatte med vedkommende på Skype.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Endnu ikke tilføjet på Skype";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "Slet tekst";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Annuller";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "Søg i Skype";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "Find nye kontakter";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "Tryk for at finde nye kontakter";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "Søg efter \"%@\"";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Skype-telefonbog";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "Søgeoversigt";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "Ryd";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "Kontakter";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "Der blev ikke fundet nogen resultater";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "Grupper";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "Samtaler";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "Gem nummer";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "Gem nummer";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "Indtast et navn";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "Indtast et nummer";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "Gemmer nummer";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "Nummeret er blevet gemt";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "Ugyldigt nummer";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "Du kan ikke tilføje dette nummer, da det er et ugyldigt nummer. Prøv et andet nummer.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "Ugyldigt nummer";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "Du kan ikke tilføje nødopkaldsnumre på Skype.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "Fjern";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "Er du sikker på, at du vil ringe til\n\n%@?";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "Er du sikker på, at du vil foretage et videoopkald til\n\n%@?";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "Taleopkald";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "Videoopkald";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "Opkald";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "Se original";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "Se oversættelse";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "Du delte en placering";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "Delte en placering med dig";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "Delte placeringen (%@)";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "Dobbeltklik for at åbne";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "Rutevejledning til placering";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "Placering";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "Del din placering";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "Sendte en placering";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "Adgang til data for placering";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "Du kan ikke dele din placering med venner på Skype, hvis du ikke har givet tilladelse til at bruge din placering..";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Gå til dine enhedsindstillinger og derefter til Anonymitet for at give tilladelse.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "Adgang til kontakter";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "Vi skal have adgang til dine kontakter, før vi kan vise dit adressekartotek i Skype.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "Gå til dine enhedsindstillinger og derefter til Anonymitet for at give tilladelse.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "Åh nej";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "Der var problemer med indlæsning af kortet.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "Kontrollér netværksforbindelsen, og prøv igen.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "Ryd";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "Fjern kortnåle";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "Deling af placering";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "Du kan ikke længere dele din placering til denne chat.";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "Del placeringen";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "Søg";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "Ingen resultater fundet";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "Der opstod et problem med at finde denne placering. Vent et øjeblik, og prøv igen.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Start";
+"TIMELINE_ICON_DIALPAD" = "Numerisk tastatur";
+"TIMELINE_ICON_PEOPLE" = "Kontakter";
+"TIMELINE_SWIPEACTION_MUTE" = "Slå lyden fra";
+"TIMELINE_SWIPEACTION_UNMUTE" = "Slå lyden til";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "Pushmeddelelser";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "Slå Pushmeddelelser til for at modtage beskeder om opkald og meddelelser, når du er væk fra Skype.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "Modtag beskeder om opkald og meddelelser, når du er væk fra Skype, ved at gå til iPhone-indstillinger > Meddelelsescenter og slå Skype-meddelelser til.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "Modtag beskeder om opkald og meddelelser, når du er væk fra Skype, ved at gå til iPhone-indstillinger, Meddelelser og slå Skype-meddelelser til.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "Pushmeddelelser";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "Du skal slå Skype-meddelelser til under enhedsindstillinger, før du kan modtage pushmeddelelser.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "Åbn";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "Vis";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "Lyt";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "Afspil";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Meddelelsen kunne ikke åbnes. Kontrollér netværksforbindelsen, og prøv igen.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "Delte et mediedokument";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "Dobbeltklik for at åbne";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "Der er ikke tillid til kilden";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "Billede";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "Tag et billede";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "Vælg eksisterende billede";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "Vælg eksisterende billede eller video";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "Annuller";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "Vælg";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "dobbeltklik for at lukke";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "sendte et billede. Dobbelttryk for at åbne";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "Modtager billede";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "Sender billede";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "Der opstod et problem med at sende dette billede";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "Der opstod et problem med at modtage dette billede";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "dobbeltklik for at prøve igen";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "Send";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "Annuller";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "Videoen kan ikke sendes, da den er større end %d MB";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "Billedet kan ikke sendes, da det er større end %d MB";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "Sendte en videobesked. Dobbelttryk for at åbne";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "Modtager videobesked";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "Sender videobesked";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "Der var et problem med at sende denne videobesked";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "Der var et problem med at modtage denne videobesked";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "Filen blev sendt. Dobbelttryk for at downloade";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "Du har modtaget en fil. Dobbelttryk for at åbne";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "Downloader";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "%@ blev downloadet. Dobbelttryk for at åbne";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "Filen er større end %d MB. Der kan blive pålagt gebyr for data";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "Filen er ikke tilgængelig";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "Genstart";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "Der var et problem med at modtage filen";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "Denne fil kan potentielt være usikker";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "Kan ikke downloade, da der blev registreret virus";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "Venter på internetforbindelse ...";
+"FILE_TRANSFER_BUTTON_CANCEL" = "Annuller";
+"FILE_TRANSFER_BUTTON_RETRY" = "Prøv igen";
+"FILE_TRANSFER_LABEL_CANCELED" = "Annulleret";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "Download";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "Få mere at vide";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "Delte filer slettes fra Skype efter %d dage. Hvis du vil beholde en fil i længere tid, skal du gemme den på din enhed.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "Filen er ikke tilgængelig";
+"FILE_SENDING_LABEL_ERROR" = "Der var et problem med at sende filen";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "Vil du acceptere filen?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "Acceptér kun filer fra personer, du har tillid til. Vil du acceptere filen %@ fra %@?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "Advarsel – denne fil kan være usikker for din computer/enhed";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "Vil du acceptere filen %@ fra %@?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "Spørg mig ikke igen";
+"FILE_TRANSFER_ACCEPT" = "Acceptér";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "Ikke tilstrækkelig plads";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "Gå til Indstillinger > Generelt > Brug for at frigøre lagringsplads på denne enhed.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "Brugeren har nægtet programmet til sine medier";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "Hvis du vil tillade adgang, skal du gå til Indstillinger > Anonymitet > Fotos og aktivere Skype.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "Du sendte et billede";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "Sendte dig et billede";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "%@ sendte et billede.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "Denne enhed understøtter endnu ikke Skypes nye billeddelingsfunktioner, men du kan stadig se det i din browser her: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "Billedet er ikke tilgængeligt";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "Dette billede er ikke tilgængeligt i øjeblikket.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "Annuller";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "Prøv igen";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "Billedet er ikke tilgængeligt";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "Dette billede er ikke tilgængeligt i øjeblikket.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "OK";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "Gem billede";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "Annuller";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "Hovsa";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "Der opstod et problem med at gemme dette billede.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "Prøv igen";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "Annuller";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "Internetmedier";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "Søg efter en Giphy";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Opdater Skype";
+"FORCE_UPGRADE_CAPTION" = "Din version af Skype er forældet. Hent den nyeste version, og få de nyeste funktioner og forbedringer..";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "Hent den nu";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "Sendte dig en Moji";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "Du sendte en Moji";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "Henter Moji";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "Der opstod et problem med at hente denne Moji";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "Dobbelttryk for at prøve igen";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "Afspil Moji";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "Dette indhold er blevet fjernet";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "Dette indhold er udløbet";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "Sidst set for lidt siden";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "Sidst set for mere end en uge siden";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "Telefon";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "Find venner, beskeder eller nye kontakter i en fart";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Skype Mojis";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "Mere sjov med Mojis, nu med klip fra %@!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "Søgefelt";
+
+"TAB_RECENT_TITLE" = "Seneste";
+"TAB_CONTACTS_TITLE" = "Kontakter";
+"TAB_CALLS_TITLE" = "Ring til telefoner";
+"TAB_MYINFO_TITLE" = "Mine oplysninger";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "Alle";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "Ulæste";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "Alle";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "Online";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "Tak!";
+"APPSTORE_RATING_SUBTITLE" = "Del din begejstring, og læg en bedømmelse i App Store. Det tager kun et øjeblik.";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "Bedøm appen";
+
+"CONTACTS_ADD_FAVORITES" = "Tilføj favoritter";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "Søg i kontakter";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "Der er ingen internetforbindelse";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "Du er offline. <a href=\"reconnect\">Genopret forbindelse</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Der er problemer med Skype.";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "Opretter forbindelse";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "Tilsluttet";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "Opdaterer samtaler ...";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "Slet chat";
+"DELETECHAT_ALERT_MESSAGE"              = "Er du sikker på, at du vil slette denne chat fra denne enhed? Chatoversigten bliver også slettet.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "Slet";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "Rediger";
+"LIST_EDITING_CANCEL" = "Annuller";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "Markér alle som læst";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "Markér som læst";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "Slet alle";
+"LIST_EDITING_DELETE_TOOLBAR" = "Slet (%d)";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "Slet alle chatsamtaler";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "Slet alle";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "Skjul alle";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "Jeg ser på det senere";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "Nyt opkald";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "på hold";
+"CALLING_BANNER_STATUS_MUTED" = "lyden er slået fra";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Skype-certificeret";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "Start nyt gruppeopkald";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "Nye gruppeopkald starter";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "Dit nuværende opkald afsluttes (husk at give den anden person besked), og dit nye gruppeopkald starter";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "Ring op";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "Annuller";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "har oprettet en <a href=\"%@\">gruppesamtale.</a>";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "Send en videobesked til valentinsdag";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "Videobeskeder til valentinsdag";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "Gør dagen til noget særligt for en, du holder af";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "Spred kærligheden";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "Gør dagen til noget særligt for en, du holder af, og send en besked til valentinsdag.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "Ikke lige nu";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "Send til kontakter";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "Del video";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "Glædelig valentinsdag";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "Glædelig\nvalentinsdag";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "Jeg har optaget en særlig valentinsdag-videobesked kun til dig. Du kan optage din egen på https://go.skype.com/vmhci";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "Sender dig en særlig valentinsdag-besked …";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "Slå lyden fra";
+"INCALLCONTROLS_VIDEO_CAPTION" = "Video";
+"INCALLCONTROLS_AUDIO_CAPTION" = "Højttaler";
+"INCALLCONTROLS_ADD_CAPTION" = "Tilføj";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "Flere";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "Tastatur";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "Flere handlinger";
+"GVC_CALLING_ME_ON_RIBBON" = "Mig";
+
+"GVC_NOTIFICATION_HUNG_UP" = "%@ forlod opkaldet";
+"GVC_NOTIFICATION_JOINED" = "%@ deltager i opkaldet";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "Opret en gruppe – nu med gruppevideosamtale.";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "Start en gruppevideosamtale direkte fra din chat.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "Prøv at ændre visningen.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "Tryk igen for at frigøre denne person.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "Gør dette til en gratis gruppevideosamtale.";
+"GVC_INTERSTITIAL_TITLE" = "Sig hej til gruppevideosamtaler";
+"GVC_INTERSTITIAL_CAPTION" = "Få alle samlet, lige når du vil – helt gratis.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "Forstået";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "Tilføj deltagere";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";

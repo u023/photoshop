@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "%@ vam šalje videoporuku";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "%@ vam šalje fotografiju";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "%@ šalje vam Moji";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "Korisnik %@ poslao vam je govornu poruku";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "Korisnik %@ poslao vam je datoteku";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "Sviđa se nekom novom";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "Moj račun";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "Pošalji komentar";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "Označi sve kao pročitano";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "Dodaj osobe";
+"HELP_NAVBAR_BUTTON" = "Pomoć";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "Imate nepročitane komentare.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "Komentar razvojnog inženjera";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "Prikaži";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "Odustani";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "Dodaj u favorite";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "Ukloni iz favorita";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "Dodajte nove favorite putem izbornika na bilo kojem kontaktu.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "Odjava";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "Poziv osobe %@";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "Videopoziv osobe %@";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "Grupni poziv osobe %@";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "Videoporuka osobe %@.";
+"BACKGROUND_MISSEDCALL_ONE" = "Propušteni poziv osobe %@.";
+"BACKGROUND_MISSEDCALL_GROUP" = "Propušteni grupni poziv osobe %@.";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "Novi zahtjev za kontakt osobe %@.";
+"BACKGROUND_VOICEMAIL_ONE" = "Nova glasovna poruka osobe %@.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "Provjerite postavke mreže i pokušajte ponovno.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "Odgovori";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "Odbij";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "Dodaj u poziv";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "Završi poziv";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "Završi poziv";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "Videoporuka";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "Pošalji videoporuku";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "Odustani";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "Gotovo";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "Postavke";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "Izradi račun";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "Izradi račun";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "%@ nije važeći telefonski broj. Provjerite i pokušajte ponovno.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "Adresar";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "Pozivni broj države ili regije";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "Mijenja pozivni broj države ili regije.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "Promijenite pozivni broj države ili regije.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "Traži";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Telefonski broj";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "Odbaci";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "Otvori";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "Stvori događaj";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "Pokaži kalendar";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "Kopiraj";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "Dodaj na Popis za čitanje";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "Otvori u Safariju";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "Uredi";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "Citat";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "%1$@ u %2$@ korisnik %3$@ napisao je:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "Izbriši";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "Naprijed";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "Naprijed";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "Podijeli";
+"SHARE_MESSAGE_TITLE" = "Podijeli";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "Učitavanje";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "Dvostruko dodirnite da biste odustali";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "Pokretanje videoprikaza...";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "Poziv se preusmjerava...";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "Videopoziv";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "Tipkovnica telefona";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "Nastavi poziv";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "Tehnički podatci o pozivu";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "Mogućnosti poziva";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ želi podijeliti videozapis";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ nije vaš kontakt, no želi podijeliti videozapis.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Sudionici ovog poziva omogućili su videoprikaz";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Želite li prihvatiti videoprikaz u ovom pozivu?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Prihvati";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Odbij";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "Dodavanje sudionika";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "Dvaput dodirnite za dodavanje sudionika.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "Lozinka";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "Prijava";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Skype ime";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Skype ime, e-pošta ili mobitel";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "Vaši računi";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "Odaberite račun kojim biste se željeli služiti.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Račun za Skype";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Microsoftov račun";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "Prijava";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "Odaberite vrstu računa kojom biste se voljeli služiti za prijavu u Skype.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Microsoftov račun";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Skype ime";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "Personalizirajte svoj profil";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "Dodajte fotografiju";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "Promijenite fotografiju";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Prijava";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Problemi prilikom prijave?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "U redu";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "U redu, shvaćam";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "Nastavi";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "Ne sada";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "Saznajte više";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "Postavke";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "Ne podsjećaj me ponovno";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "Uključi obavijesti";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "Izbriši tekst";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "Pošalji";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "Poziv,";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "Poziv";
+"CHAT_CALL_EVENT_CALL_STARTED" = "Poziv započet";
+"CHAT_CALL_EVENT_NO_ANSWER" = "Poziv, nema odgovora";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "Propušten poziv";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "Propušteni pozivi (%d)";
+"CHAT_CALL_EVENT_BUSY" = "Poziv, zauzeto";
+"CHAT_CALL_EVENT_BLOCKED" = "Blokiran";
+"CHAT_CALL_EVENT_FAILED" = "Poziv, nije uspostavljen";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "Kakva je bila kvaliteta ovoga poziva?";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "Hvala vam na povratnoj informaciji.";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "Vrlo loša";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "Loša";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "Prosječna";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "Dobra";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "Izvrsna";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "Poziv";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "Poziv, %@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "Poziv";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "Poziv, %@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "Poziv nije uspostavljen";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "Propušten poziv";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "Poziv, nema odgovora";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "Poziv, blokiran";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "Poslano";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "Isporučeno";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "Pročitano";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "Poslano";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "Isporučeno";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "Pročitano";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "%@ stvara novu grupu.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "%@ stvara novu grupu čiji je član %@.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "%@ stvara novu grupu čiji su članovi %@ i %@.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "%@ stvara novu grupu čiji su članovi %@, %@ i još jedna osoba.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "%@ stvara novu grupu čiji su članovi %@, %@ i još %u osobe/a.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "<name>%@</name> danas ima rođendan";
+"CHAT_GRANTED_AUTH" = "Podijelili ste svoje podatke za kontakt";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "%@ dodaje osobu %@ u ovu grupu";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "Botovi dodani u grupu imaju pristup Skype imenu i zaslonskom imenu svih sudionika te svim novim porukama čavrljanja te novom sadržaju podijeljenom u grupi.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "Dobro došli! Ova grupa sadrži bot ili više njih. Oni imaju pristup Skype imenu i zaslonskom imenu svih sudionika te svim novim porukama čavrljanja te novom sadržaju podijeljenom u grupi.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "%@ se pridružuje grupi";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "%@ napušta grupu";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "%@ iz grupe uklanja osobu %@";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "Gostov je račun za osobu %@ istekao";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "Blokirali ste osobu %@";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "%@ mijenja ulogu osobe %@ u %@";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "Autor";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "Administrator";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "Promatrač";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "Upisivač";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "Govornik";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "Kandidat";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "Napustio";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "Blokiran";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "Uloga je promijenjena";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "Čavrljanje bez naziva";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "Prikaži čavrljanje";
+"CONVERSATION_HIDE_CHAT" = "Sakrij čavrljanje";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "Prikaži rubni stupac";
+"CONVERSATION_HIDE_TIMELINE" = "Sakrij rubni stupac";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "Prijelaz na prikaz rešetke";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "Prijelaz na pojedinačni prikaz";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "Pristupi pozivu";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "Pristupi pozivu";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "Pokaži poruke iz <a href=\"jump\">starijeg čavrljanja</a>";
+"CHAT_GOTO_NEW_CHAT" = "Ovo čavrljanje ažurirano je na novu verziju. <a href=\"jump\">Idite na novo čavrljanje</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "Korisnik %@ mora ažurirati Skype za sudjelovanje u čavrljanju. Pomozite mu tako da ga uputite na web-mjesto skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Saznajte više o novom grupnom čavrljanju</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "Korisnici %@ moraju ažurirati Skype za sudjelovanje u čavrljanju. Pomozite im tako da ih uputite na web-mjesto skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Saznajte više o novom grupnom čavrljanju</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ sada može sudjelovati u ovom čavrljanju.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "Otvara čavrljanje jedan na jedan.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "Osmijeh";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "Tuga";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "Smijanje";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "Kul";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "Iznenađenost";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "Namigivanje";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "Plač";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "Znojenje";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "Bez teksta";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "Poljubac";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "Drskost";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "Crvenjenje";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "Čuđenje";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "Pospanost";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "Okretanje očima";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "Zaljubljenost";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "Zločesti osmijeh";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "Držanje palčeva";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "Zijevanje";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "Povraćanje";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "Ma nemoj!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "Ljutnja";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "Nisam ja";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "Zabava";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "Zabrinutost";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "mmm"; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "Štreber";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "Nikom ni riječi";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "Mahanje";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "O neeee";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "Vrag";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "Anđeo";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "Zavist";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "Čekanje";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "Zagrljaj";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "Šminkanje";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "Smijuljenje";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "Pljeskanje";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "Razmišljanje";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "Naklon";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "Valjanje po podu od smijeha";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "Olakšanje";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "Sreća";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "Zlobno smješkanje";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "Kimanje";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "Odmahivanje glavom";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "Čekanje";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "Emo";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "Da";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "Ne";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "Rukovanje";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "Daj pet";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "Srce";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "Ništa ne čujem";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "Vjeverica";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "Cvijet";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "Kiša";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "Sunce";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "Kamo nas noge odnesu";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "Glazba";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "Bandit";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "Previše informacija";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "Kava";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "Pizza";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "Novac";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "Mišićava ruka";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "Torta";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "Pivo";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "Koktel";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "Ples";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "Nindža";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "Zvijezda";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "Gologuzi pozdrav";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "Telefon";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "Srednji prst";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "Zabava uz bazen";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "Slomljeno srce";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "Pijanac";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "Psovanje";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "Film";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "Pušenje";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "Sat";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "Čovjek i pas";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "Čovjek fotografira";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "Imaš poštu";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "Rokaj";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "Udarac";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "Udaranje glavom o zid";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "Nazovite me";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "Rad od kuće";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "Kukac";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "Razgovaranje";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "Šepirenje";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "Čovjek sa šeširom";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "Nogometaš";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "Pričaj nekom drugom";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "Ideja";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "Ovca";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "Mačka";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "Bicikl";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "Pas";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "Emotikon: %@";
+
+"EMOTICON_TYPE_FLAG" = "Zastava: %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "Da biste u Skype dodali nove kontakte, <a href=\"add-people\">pretražite Skypeov imenik</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "Nemate kontakata na Skypeu.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "U vašem adresaru još nismo pronašli nijedan kontakt iz Skypea. <a href=\"add-people\">Dodajte osobe</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "U vašem adresaru još nismo pronašli nijedan kontakt iz Skypea.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Pretraži Skypeov imenik"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "Pronađite osobe koje poznajete na Skypeu"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "Tražimo osobe koje poznajete"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "Dvaput dodirnite za otkazivanje pretrage";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "Sve izgleda odlično!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "Kada budete spremni, dodirnite i snimajte.";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "Otkaži snimanje";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "Ponovo snimi";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "Odustani";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "Primili ste novu videoporuku. Za prikaz videoporuke jednostavno kopirajte ovaj tajni kod %2 i pogledajte svoju videoporuku ovdje: %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "Odustani";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "Snimi";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "Zaustavi";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "Pošalji";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "Pretpregled";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "Upotrijebi prednju kameru";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "Upotrijebi stražnju kameru";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "Trajanje snimke";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "Videoefekti";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "normalno";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "baloni";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "medvjedi";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "kaleidoskop";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "pikselacija";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "sužavanje";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "izbočina";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "x-zrake";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "poster";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "snijeg";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "zrcalo";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "srca";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "kostim";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "Noć vještica";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "Jezik titlova";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "Titlovi će se pojaviti nakon završetka snimanja";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "Stvaranje titlova...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "Titlove nije moguće stvoriti";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "Osluškivanje";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "Videoporuka";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "Više ne možete slati videoporuke u ovo čavrljanje.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "U redu";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "Brisanje videozapisa";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "Želite li zaista izbrisati ovu videoporuku?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "Izbriši";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Odustani";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "Izbriši videoporuku";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "Reproduciraj";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "Pauziraj";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "Glasovna poruka";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Glasovna poruka, %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "Reproducira glasovnu poruku";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "Zaustavlja reprodukciju";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Videoporuka";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "Može se reproducirati";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "Učitavanje";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "Nedostupno";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "Reproducira videoporuku";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "Upotrebljava se prednja kamera";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "Upotrebljava se stražnja kamera";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "Snimanje";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "Zaustavljeno";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "Slanje";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "Nije poslano – čeka se internetska veza...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "Provjerite vezu i pokušajte ponovno kasnije.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "Nije primljeno – čeka se internetska veza...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "Videozapis nije dostupan";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "Videozapis nije dostupan";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ šalje fotografiju";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "Problemi prilikom prijave?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "Problem prilikom prijave";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "Povezivanje sa Skypeom nije moguće, pokušajte ponovno kasnije.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "Povezivanje s Microsoftom nije moguće. Provjerite mrežne postavke i pokušajte ponovno.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "Povezivanje s Microsoftom nije moguće, pokušajte ponovno kasnije.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "Žao nam je, ne možete se prijaviti u Skype putem ovog Microsoftova računa jer ne zadovoljavate minimalnu dobnu granicu svoje države/regije.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "Provjerite svoje podatke";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "Nismo prepoznali unesene podatke za prijavu. Provjerite ih i pokušajte ponovno.";
+"LOGIN_PROBLEM_NO_NETWORK" = "Prijava nije moguća. Provjerite internetsku vezu i pokušajte ponovno.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Kredit za Skype";
+"IAP_PURCHASE_BUTTON" = "Dodaj kredit od %@";
+"IAP_CALLPHONES" = "Zvanje telefona";
+"IAP_SEND_SMS" = "Pošalji SMS";
+"IAP_WITHSKYPECREDIT_TITLE" = "Zašto plaćati Skype kreditima?";
+"IAP_WITHSKYPECREDIT_BODY" = "Zato što možete doći do osoba koje nisu na Skypeu tako da nazovete mobilne ili fiksne brojeve ili pak pošaljete SMS uz male troškove.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Pozivi unutar Skypea su besplatni, no s kreditom možete učiniti mnogo više.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "Vaš trenutni saldo iznosi %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "Pretvorba valute"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "%@ će se pretvoriti u %@ za iznos Skype kredita.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "Saznajte više";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "Pretvoreno po tečaju Europske centralne banke %@.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "Čini se da se valuta u trgovini aplikacijama i Skypeova valuta ne podudaraju. Za ovu ćemo kupnju pretvoriti valutu trgovine aplikacijama.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "Da biste promijenili te postavke, prijavite se na Skype.com i odaberite Promjena valute u odjeljku Moj račun.";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "Nedovoljan kredit";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "Nemate dovoljno Skype kredita za zvanje ovoga broja.";
+"IAP_CALL_NO_CREDIT_TITLE" = "Nema kredita";
+"IAP_CALL_NO_CREDIT_BODY" = "Za pozivanje ovog broja potreban je Skype kredit.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "Kupovina je uspješna";
+"IAP_RESULT_SUCCESS_1_BODY" = "%@ je dodano na vaš račun za Skype.";
+"IAP_RESULT_SUCCESS_2_BODY" = "%@ se dodaje na vaš račun za Skype.";
+"IAP_RESULT_SUCCESS_3_BODY" = "%@ već je dodano na vaš račun za Skype.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "Vaša prethodna narudžba za Skype kredit sada je dovršena. %@ je dodano na vaš račun za Skype.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "Vaša prethodna narudžba za Skype kredit trenutno se obrađuje.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "Vaša prethodna narudžba za Skype kredit uspješno je dovršena.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "Kupovina je otkazana";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "Žao nam je";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "Ne možemo obraditi vašu narudžbu, pokušajte ponovno kasnije.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "Vaša narudžba trenutno se ne može dovršiti, no pokušavat ćemo i dalje te vas obavijestiti kada se narudžba dovrši.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "Vaša prethodna narudžba za Skype kredit trenutno se ne može dovršiti, no pokušavat ćemo i dalje te vas obavijestiti kada se narudžba dovrši.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "Prije kupnje kredite pročitajte i prihvatite Uvjete upotrebe Skypea.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "Nismo mogli obraditi vašu narudžbu jer vaš pružatelj usluge plaćanja trenutno nije dostupan. Pokušajte ponovno kasnije.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "Nismo mogli obraditi vašu narudžbu jer vašim računom upravlja administrator.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "Nismo mogli obraditi vašu narudžbu. Pomoć zatražite od Skypeova tima podrške za korisnike.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "Vaš iTunes račun trenutno nije dostupan.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "Nismo mogli dovršiti vašu narudžbu jer vaš iTunes račun trenutno nije dostupan. Pokušajte ponovno kasnije.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "Nismo mogli obraditi vašu narudžbu jer Skype ne podržava valutu postavljenu na vašem iTunes računu.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "Valuta postavljena na vašem računu za Skype ne odgovara onoj na vašem iTunes računu. Valutu možete promijeniti u postavkama svoga računa na adresi skype.com.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "Nismo mogli obraditi vašu narudžbu. Provjerite svoju mrežnu vezu i pokušajte ponovno.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "Nismo mogli obraditi vašu narudžbu. Provjerite svoju mrežnu vezu, a mi ćemo pokušati ponovno čim veza bude uspostavljena.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "Nismo mogli obraditi vašu prethodnu narudžbu za Skype kredit. Provjerite svoju mrežnu vezu, a mi ćemo pokušati ponovno čim veza bude uspostavljena.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "Potražite pomoć";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Microsoftov račun";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "Odustani i počni ispočetka";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "Spojeni račun za Skype";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "Taj je račun za Skype već spojen s drugim Microsoftovim računom. Za nastavak se prijavite sa sljedećim podacima za Microsoft.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "Došlo je do problema prilikom povezivanja vaših računa, pokušajte ponovno kasnije.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Došlo je do problema prilikom otvaranja vašeg računa. Provjerite mrežnu vezu i pokušajte ponovno.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "Telefon";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "Kuća";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "Ured";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "Mobitel";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "Ostalo";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "Nepoznat broj";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (gost)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "Povezivanje...";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "Zvoni...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "Pozivanje...";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "Poziv na čekanju";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "Poziv je završen";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "Početak...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "Pozivanje...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "Aktivno";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "Poziv na čekanju";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "Stavljeni ste na čekanje";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "Drugi su aktivni";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "Drugi su potpuno aktivni";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "Reprodukcija glasovne poruke";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "Snimanje";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "Nedavno aktivno";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "Prijenos";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "Prijavljivanje...";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "Učitavanje kontakata...";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "Ažuriranje...";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "Ova poruka je uklonjena";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "Nije se moguće povezati sa Skypeom.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "Provjerite postavke mreže i pokušajte ponovno.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "Ovo Skype ime nije važeće.";
+"Account::INVALID_EMAIL" = "Ova adresa e-pošte nije važeća.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "Provjerite i pokušajte ponovno.";
+"Account::UNACCEPTABLE_PASSWORD" = "Ova lozinka nije važeća.";
+"Account::SKYPENAME_TAKEN" = "Ovo Skype ime već je u upotrebi.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "Unesite novo ime.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "Nismo prepoznali vaše Skype ime niti lozinku.";
+"Account::INCORRECT_PASSWORD" = "Nismo prepoznali vaše Skype ime niti lozinku.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "Pokušali ste se prijaviti previše puta.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "Pokušajte ponovo kasnije.";
+"Account::ATO_BLOCKED" = "Vaš je račun obustavljen, <a href = 'https://go.skype.com/account.recovery.ios'>dodirnite ovdje za više informacija</a>.";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "Došlo je do problema prilikom prijave s Microsoftovim računom, pokušajte ponovno kasnije.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "Prijava nije moguća jer ste potrošili sav prostor za pohranu na svom uređaju.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "Prijava nije moguća, iznova pokrenite svoj uređaj i pokušajte ponovno.(%d)";
+"Account::DB_FAILURE" = "Prijava nije moguća, iznova pokrenite svoj uređaj i pokušajte ponovno.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "Prijava nije moguća, pokušajte ponovno instalirati Skype iz trgovine App Store.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "Vaša lozinka je promijenjena, prijavite se da biste se mogli i dalje služiti Skypeom.";
+"Account::LOGOUT_REMOTE" = "Odjavljeni ste.";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "Ova verzija Skypea nije podržana.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "Za nastavak ažurirajte Skype na najnoviju verziju.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "Prijava nije moguća, pokušajte ponovno kasnije.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "Ne možete se prijaviti u Skype jer ne zadovoljavate minimalnu dobnu granicu svoje države/regije.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "Pokušajte ponovo. (%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "Poziv";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "Videopoziv";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "Videoporuka";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "Tipkovnica telefona"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "Zovite telefonske brojeve";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "Započnite novo čavrljanje";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Započnite novo čavrljanje na Skypeu.";
+
+
+"HUB_RECENTS_TITLE" = "Nedavno";
+"HUB_PEOPLE_TITLE" = "Osobe";
+"HUB_FAVOURIES_TITLE" = "Favoriti";
+"CANCEL_ALERT_BUTTON" = "Odustani";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "Favoriti";
+"PEOPLEPICKER_CONTACTS_TITLE" = "Kontakti";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "Traži kontakte";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "Pronađite nove kontakte";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "Potraži osobu „%@”";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Potraži osobu „%@” u Skypeovu direktoriju";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "Osobe";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "Botovi";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "Niste povezani"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "Na Skypeu"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Poveži na Skypeu";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "Odustani";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "Poveži";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "Novo čavrljanje";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "Dvostruko dodirnite da biste odabrali.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "Ovdje će se prikazivati nedavni razgovori.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "Nemate nepročitanih poruka";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "Nedavni pozivi prema mobilnim i fiksnim linijama pojavit će se ovdje, <a href=\"open-dialpad\">pozovite prijatelja</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, nove poruke, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "Stavljeni ste na čekanje";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "Poziv na čekanju";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "Poziv u tijeku";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "Trenutni poziv, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "Trenutni poziv";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "Uređeno";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "Uredi";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "spremi fotografiju";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "Spremi videozapis";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "Prikaži oznake sviđanja";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "Sviđa mi se";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "Ne sviđa mi se";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "Zatvori";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "Oznake sviđanja";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "Dvostruko dodirnite da biste pogledali kontakt";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "Novo";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "Sviđa mu se vaša poruka.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "Sviđa mu se vaša poruka: %@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "Sviđa mu se vaša fotografija.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "Korisniku %@ sviđa se vaša poruka.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "Korisniku %1$@ sviđa se vaša poruka: %2$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "Korisniku %@ sviđa se vaša fotografija.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>Ovo se još nikom ne sviđa</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "Ovo se sviđa vama";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "Prijava";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Skype ime";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Microsoftov račun";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "Izradi račun";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Prijavite se sa Skype imenom";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Prijavite se putem Microsoftova računa";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Izradi račun";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "Polje za unos podataka za prijavu";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "Već se služite Skypeom?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "Da";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Da, već imam račun za Skype.";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "Ne";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Ne, nemam račun za Skype.";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "Filtar popisa osoba";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "Svi kontakti";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "Kontakti na mreži";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "Prikaži sve kontakte.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "Pokaži samo kontakte na mreži.";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "Pokaži samo kontakte sa Skypea.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "Govorni poziv";
+"CHATINPUT_PLACEHOLDER" = "Ovdje upišite poruku";
+"CHATINPUT_PLACEHOLDER_SMS" = "Ovdje upišite SMS";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "Pozdravite osobu %@";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "Vaše će se čavrljanje pojaviti ovdje.";
+"CHATTYPING_SINGLEUSER" = "%@ upisuje tekst...";
+"CHATTYPING_TWOUSERS" = "%@ i %@ upisuju tekst...";
+"CHATTYPING_THREEUSERS" = "%@, %@ i još jedna osoba upisuju tekst...";
+"CHATTYPING_MULTIPLEUSERS" = "%@, %@ i još %d osobe/a upisuju tekst...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "Nazovi na telefon";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "Pošalji pozivnicu";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Pošalji vezu u SMS-u za čavrljanje na Skypeu.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "Čavrljanje";
+"SEND_SMS_TO_CONTACT_BUTTON" = "SMS";
+"EMPTY_PAGE_HEADER_TITLE" = "Pozdravite korisnika";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "Pozdrav. Možemo čavrljati na Skypeu: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "Slanje SMS-a košta %@";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "Odaberite državu/regiju";
+"DIALPAD_CALL_BUTTON" = "Poziv";
+"DIALPAD_STAR_BUTTON" = "Zvijezda";
+"DIALPAD_HASH_BUTTON" = "Ljestve";
+"DIALPAD_BACKSPACE_BUTTON" = "Izbriši";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "SMS";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "Otvara čavrljanje s osobom %@";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "Tipkovnica je bila skrivena.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "Pokaži tipkovnicu";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "Zvanje ovog kontakta nije moguće";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "Došlo je do problema prilikom zvanja ovog kontakta.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "Provjerite i pokušajte ponovno.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "Brojevi za hitan poziv";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "Pozivanje brojeva za hitan poziv nije podržano na vašem uređaju.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "Telefonski broj nije važeći";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "Došlo je do problema prilikom zvanja ovog telefonskog broja.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "Provjerite i pokušajte ponovno.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "Već sudjelujete u pozivu";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "Telefonski poziv je u tijeku.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Završite ga prije no što započnete novi poziv.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "Već sudjelujete u pozivu";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "Drugi Skype poziv je u tijeku.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Završite ga prije no što započnete novi poziv.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "Zvanje nije moguće";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "Vaš operater ne dopušta Skype pozive putem svoje mobilne mreže. Spojite se na Wi-Fi mrežu kako biste mogli upućivati Skype pozive.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "Poziv nije uspostavljen";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "Ne možete zvati sami sebe.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "Blokiran kontakt";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "Deblokirajte kontakt prije no što ga nazovete.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "Pristup mikrofonu";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "Bez dopuštenja za upotrebu vašeg mikrofona, osobe vas neće moći čuti tijekom poziva ili u videoporukama.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Za dopuštenje pristupa idite u postavke uređaja, zatim u Privatnost.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "Pristup kameri";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "Bez dopuštenja za upotrebu vaše kamere, osobe vas neće moći vidjeti tijekom poziva ili u videoporukama.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Za dopuštenje pristupa idite u postavke uređaja, zatim u Privatnost.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "Bez dopuštenja za upotrebu kamere nećete moći snimati fotografije u Skypeu.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "Zvanje nije moguće";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "Druga audioaplikacija onemogućuje Skypeu reprodukciju zvuka.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "Provjerite i pokušajte ponovno.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "Zvanje nije moguće";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "Postoji problem sa zvukom na vašem uređaju.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "Provjerite i pokušajte ponovno.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "Zvanje nije moguće";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "Postoji problem sa zvukom na vašem uređaju.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "Za nastavak ponovno pokrenite Skype.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "Zvanje nije moguće";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "Postoji problem sa zvukom na vašem uređaju.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "Pokušajte ponovo kasnije.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "Zvanje nije moguće";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "Postoji problem sa zvukom na vašem uređaju.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "Pokušajte ponovo kasnije.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "Zvanje nije moguće";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "Došlo je do problema prilikom spajanja ovog poziva.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "Pokušajte ponovo kasnije.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "Zvanje nije moguće";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "Dok ste u Indiji, druge osobe u toj državi moći ćete zvati samo ako su i one na Skypeu (besplatno). Na žalost, u Indiji ne možete zvati mobilne ili fiksne linije putem Skypea.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "Saznajte više";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Pridruživanje pozivu nije moguće";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Ovaj grupni poziv trenutno je pun, pokušajte se pridružiti kasnije.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "Kamera u upotrebi";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "Trenutno sudjelujete u videopozivu.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "Isključite videoprikaz prije no što pokušate upotrijebiti kameru.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Grupni pozivi";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Ova grupa prevelika je za pokretanje govornog poziva na ovom uređaju (maks. %d sudionika).";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "Grupni videopozivi";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Grupe sa %d ili više sudionika ne mogu se pozivati s ovog uređaja.";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "Niste na mreži";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "Morate biti na mreži da biste mogli upućivati pozive putem Skypea.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Grupni pozivi";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "U ovom je pozivu dosegnut maksimalan broj sudionika.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "Poziv na čekanju";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "Nastavite svoj poziv prije dodavanja novih sudionika.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "Stavljeni ste na čekanje";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "Ovaj se poziv najprije mora nastaviti da bi se mogli dodati novi sudionici.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "Poziv se postavlja";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "Sudionici se ne mogu dodavati dok se poziv uspostavlja.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "Pričekajte do uspostave poziva.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "Grupa";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "Došlo je do problema prilikom dodavanja sudionika. Pokušajte ponovno kasnije.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "Videoprikaz se ne može pokrenuti";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "Došlo je do problema prilikom uključivanja videoprikaza.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "Provjerite imaju li svi sudionici poziva najnoviju verziju Skypea.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "Videoprikaz se ne može pokrenuti";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skype ne može pokrenuti vaš videoprikaz.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "Pokušajte ponovo kasnije.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "Nastavak poziva";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "Došlo je do problema pri nastavku ovog poziva.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "Zatvorite sve aplikacije koje se trenutno služe zvukom i završite sve aktivne telefonske pozive prije nastavka ovog Skype poziva.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "Zahtjev za kontakt";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "Sudionici su dodani ili uklonjeni";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "<name>%@</name> danas ima rođendan"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "Stvoreno je grupno čavrljanje";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "Kontakt je blokiran";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "Šalje vam videoporuku";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "Poslali ste videoporuku";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>Vi</name> i <name>%@</name> ste sada kontakti.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "sada je kontakt";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "Podijelili ste svoje podatke za kontakt";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "Šalje vam glasovnu poruku";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "Poslali ste glasovnu poruku.";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "%@ vam šalje kontakt. Ova verzija Skypea to još ne podržava.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "Poslali ste kontakt. Ova verzija Skypea to još ne podržava.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "Dvaput dodirnite za prikaz kontakta";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "Dvaput dodirnite za prikaz kontakta";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "Kontakt poslan";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "Dodaj u kontakte";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "Već je kontakt";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "Prikaz kontakata";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "Slanje kontakata";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "Slanje kontakata";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "i još %d osoba";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "Odaberite kontakte";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "Nemate kontakata na Skypeu za slanje.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "Nema kontakata";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "Kontakti";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "Slanje kontakata";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "Zahtjev za kontakt poslan";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "Zahtjev za kontakt na čekanju";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "Poslani kontakti";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "%@ vam šalje poruku koju ova verzija Skypea još ne podržava.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "Poslali ste poruku koju ova verzija Skypea još ne podržava.";
+
+"RECENTS_DELETE_CONVERSATION" = "Izbriši čavrljanje";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "Označi kao pročitano";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "Označi kao nepročitano";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "Čavrljanje";
+"CALL_ACCESSIBILITYLABEL" = "Poziv";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "Glavna prijava";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Prijava putem računa za Skype";
+"HUB_ACCESSIBILITYLABEL" = "Središte";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "Predložena stavka pretraživanja %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "Prikaži emotikone";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "Pokaži tipkovnicu";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "Izbriši";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Traži";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "Trgovina";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "Nedavno";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "Emotikoni";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Moji";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "Traži";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "Prijedlozi";
+"EXPRESSION_SEARCH_NO_RESULTS" = "Ništa nije pronađeno";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "Pridružite se mojem čavrljanju na Skypeu da biste pogledali ovaj Moji: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "Pozdrav!\nPridružite se mojem čavrljanju na Skypeu da biste pogledali ovaj Moji koji sam vam poslao: %@\nČujemo se uskoro,";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "Pogledajte ovaj Moji";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "Ajoj";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "Došlo je do problema prilikom dijeljenja ovog Mojija. Pokušajte ponovno kasnije.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Skype trgovina";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "Učitavanje isječaka Moji i emotikona...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "Traži";
+"EXPRESSION_STORE_FREE" = "Besplatno";
+"EXPRESSION_STORE_REMOVE" = "Ukloni";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "Besplatno preuzimanje";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "Preuzimanje";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "Preuzeto";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "Ajoj";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "Pojavio se problem prilikom učitavanja isječaka Moji i emotikona.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "Pojavio se problem prilikom pronalaženja isječaka Moji i emotikona, <a href=\"re-try fetching\">pokušajte ponovno</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "Traženje emotikona i mojija";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "Nedavno upotrijebljeni emotikoni pojavit će se ovdje.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "Istaknuto";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "Dvaput dodirnite za pretpregled.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "Dvaput dodirnite za slanje.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "Dvaput dodirnite za zatvaranje pretpregleda.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "Ponovno reproduciraj";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Pretpregled mojija";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "Dodirnite još jednom za slanje.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Dopustite pristup svom mikrofonu u postavkama uređaja kako bi vas %@ mogao/mogla čuti.";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Dopustite pristup svom mikrofonu u postavkama uređaja kako bi vas svi mogli čuti.";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Dopustite pristup svojoj kameri u postavkama uređaja kako bi vas %@ mogao/mogla čuti.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Dopustite pristup svojoj kameri u postavkama uređaja kako bi vas svi mogli čuti.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "U ovom je pozivu dosegnut maksimalan broj sudionika";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "Za upućivanje poziva potrebna vam je mrežna veza";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "Kamera je onemogućena u podijeljenom prikazu.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Slide Over ne podržava videozapise.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "Zvučnik je uključen";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "Dvaput dodirnite za isključivanje zvučnika";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "Zvučnik je isključen";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "Dvaput dodirnite za uključivanje zvučnika";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "Zvuk poziva je isključen";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "Dvaput dodirnite za uključivanje zvuka poziva";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "Zvuk poziva je uključen";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "Dvaput dodirnite za isključivanje zvuka poziva";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "Videoprikaz je uključen";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "Dvaput dodirnite za isključivanje videoprikaza";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "Videoprikaz je isključen";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "Dvaput dodirnite za uključivanje videoprikaza";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "Dolazni";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "Odlazni";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 sudionik"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d sudionika"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "Nema‭‬ sudionika"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%1$d od %2$d u ovom pozivu";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "Korisnik %1$@ mora ažurirati Skype da bi se mogao uključiti u poziv.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "Korisnici %1$@ i %2$@ moraju ažurirati Skype da bi se mogli uključiti u poziv.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "Korisnici %1$@ i %2$@ moraju ažurirati Skype da bi se mogli uključiti u poziv.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ", ";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Dolazni Skype poziv osobe %@";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Dolazni grupni poziv osoba %@ i %@";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Dolazni grupni poziv osoba %@, %@ i još jedne osobe";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Dolazni grupni poziv osoba %@, %@ i još %d osobe/a";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Dolazni videopoziv osobe %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Dolazni grupni videopoziv osoba %@ i %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Dolazni grupni video poziv osoba %@, %@ i još jedne osobe";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Dolazni grupni videopoziv osoba %@, %@ i još %d osobe/a";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skype poziv osobi %@";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Grupni poziv osobama %@ i %@";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Grupni poziv osobama %@, %@ i još jednoj osobi";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Grupni poziv osobama %@, %@ i još %d osobama";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "Videopoziv s osobom %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "Videopoziv s osobama %@ i %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "Videopoziv s osobama %@, %@ i još jednom osobom";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "Videopoziv osobama %@, %@ i još %d osobama";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skype poziv s osobom %@";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Grupni poziv s osobama %@ i %@";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Grupni poziv s osobama %@, %@ i još jednom osobom";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Grupni poziv s osobama %@, %@ i još sljedećim brojem osoba: %d";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Videopoziv s osobom %@";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Grupni videopoziv s osobama %@ i %@";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Grupni videopoziv s osobama %@, %@ i još jednom osobom";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Grupni videopoziv s osobama %@, %@ i još sljedećim brojem osoba: %d";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Povratak Skype poziva s osobom %@";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Povratak grupnog poziva s osobama %@ i %@";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Povratak grupnog poziva s osobama %@, %@ i još jednom osobom";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Povratak grupnog poziva s osobama %@, %@ i još sljedećim brojem osoba: %d";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Povratak videopoziva s osobom %@";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Povratak grupnog videopoziva s osobama %@ i %@";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Povratak grupnog videopoziva s osobama %@, %@ i još jednom osobom";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Povratak grupnog videopoziva s osobama %@, %@ i još sljedećim brojem osoba: %d";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "Poziv je završen";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "Trajanje poziva";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "Snimanje glasovne poruke";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "d";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "d";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "h";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "h";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "min";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "min";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "s";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "s";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "Prihvati";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "Odbij";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> vas želi dodati za kontakt na Skypeu\n\"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "Korisnik <name>%@</name> poslao vam je poruku iz mjesta <location>%@</location>"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "Pozdravite osobu <name>%@</name> i dodajte je u Kontakte.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ još nije kontakt.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "\"%@\" <a href=\"edit-contact-request-message\">Uredi</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "Pošalji zahtjev za kontakt";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "Dodaj u kontakte";
+"CONTACT_REQUEST_PENDING" = "Čeka se da <name>%@</name> prihvati zahtjev za kontakt.\n<a href=\"resend-request\">Ponovo pošalji zahtjev</a>";
+"CONTACT_REQUEST_BLOCKED" = "<name>%@</name> je blokiran/a";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "Deblokiraj";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "Da";
+"CONTACT_REQUEST_BLOCK_TITLE" = "Blokiraj kontakt";
+"CONTACT_REQUEST_DECLINED_TITLE" = "Zahtjev za kontakt je odbijen";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "Odustani";
+"CONTACT_REQUEST_BLOCK_ALERT" = "Jeste li sigurni da želite blokirati ovaj kontakt?";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "Želite li i blokirati i prijaviti tu osobu?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "Blokiraj";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "Blokiraj i ukloni";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "Blokiraj i prijavi";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "Dodavanje sudionika";
+"CHAT_OPTION_START_NEW_GROUP" = "Pokreni novu grupu";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "Prikaži profil";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "Obavijesti";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "Obavijesti su uključene za ovo čavrljanje.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "Obavijesti su isključene za ovo čavrljanje.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "Uključi obavijesti";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "Isključi obavijesti";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "Napusti grupu";
+
+"CHAT_OPTION_PARTICIPANTS" = "Prikaži sudionike";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "UKLJUČENO";
+"MK_SWITCH_OFF_MESSAGE" = "ISKLJUČENO";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "Uključuje i isključuje.";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "Novo čavrljanje";
+"NEWCHATSCENE_TITLE_TOKEN" = "PRIMA:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "i još %d osoba"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "i još %d osobe/a"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "Odaberite kontakte za dodavanje";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Kuća";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Poništi izradu nove grupe";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Stvori novu grupu";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "Govorni poziv";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "Videopoziv";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "Tipkovnica telefona";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "Odustani";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "Natrag";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "Moje informacije";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "Otvori izbornik medija";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "Zatvori izbornik medija";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "Pomoć";
+"MY_INFO_FEEDBACK_ACTION" = "Pošalji komentar";
+
+"MY_INFO_CONNECTING" = "Povezivanje...";
+
+"MY_INFO_STATUS" = "Status";
+"MY_INFO_CREDIT" = "Kredit za Skype";
+"MY_INFO_PROFILE_LINK" = "Moj račun";
+"MY_INFO_SETTINGS" = "Postavke";
+"MY_INFO_SIGN_OUT" = "Odjava";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "Unesite poruku o raspoloženju";
+"MY_INFO_MOOD_MESSAGE" = "Poruka o raspoloženju";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "Dvaput dodirnite za uređivanje";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "Pošalji komentar";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "Promijenite sliku profila";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "Snimi fotografiju";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "Odaberite postojeću fotografiju";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "Ukloni sliku profila";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "Postavke";
+
+"SETTINGS_GENERAL" = "Općenito";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "Dopusti ciljane oglase";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "Dopustite Microsoftu upotrebu vaših profilnih podataka sa Skypea kako bi vam u ovoj aplikaciji prikazivao bolje prilagođene oglase. <a href=\"skype.com\">Saznajte više</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "Obavijesti o čavrljanju";
+"SETTINGS_PUSH_NOTIFICATIONS" = "Proslijeđene obavijesti";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Proslijeđene obavijesti";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "Primat ćete obavijesti o porukama čak i kada je Skype zatvoren.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "Nećete primati obavijesti o porukama kada je Skype zatvoren.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "Obavijesti u aplikaciji";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Obavijesti u aplikaciji";
+"SETTINGS_INAPP_SOUNDS" = "Zvukovi u aplikaciji";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "Zvukovi u aplikaciji";
+"SETTINGS_OTHER" = "Ostalo";
+
+"SETTINGS_PRIVACY" = "Privatnost";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "Kako me osobe pronalaze";
+"SETTINGS_PRIVACY_EXPLANATION" = "Ovi podaci za kontakt mogu se upotrijebiti kako bi vas osobe pronašle na Skypeu.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "Dodajte telefonski broj";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "Slika profila";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "Vidljiva svima";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "Vidljiva mojim kontaktima";
+
+"SETTINGS_CONTACTS_HEADER" = "Kontakti";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "Dodaj moje prijatelje";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype će provjeriti vaše Kontakte i automatski dodati osobe koje poznajete na popis kontakata u Skypeu.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "Trebat ćete ručno pronaći i dodati prijatelje na Skypeu.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "Pregledi veza";
+
+"SETTINGS_EMOTICONS_HEADER" = "Emotikoni";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "Veliki emotikoni";
+
+"SETTINGS_EDIT_BUTTON" = "Uredi";
+"SETTINGS_DONE_BUTTON" = "Gotovo";
+
+"SETTINGS_ABOUT" = "O programu";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "Unesite svoj broj";
+"PNV_HOW_IS_MY_NUMBER_USED" = "Kako se upotrebljava moj broj?";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "Moguća je naplata uobičajenih naknada za slanje SMS poruka.";
+"PNV_ENTER_THE_CODE" = "Unesite kôd";
+"PNV_CODE_SENT" = "Poslali smo kôd na vaš broj";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>Nazovi me</a> ili <a href='pnv://resendcode'>ponovo pošalji kôd</a>";
+"PNV_VERIFYING_NUMBER" = "Provjera broja";
+"PNV_NUMBER_VERIFIED" = "Provjereno";
+"PNV_NUMBER_USAGE_EXPLANATION" = "Vaš broj upotrijebit će se kako bi vašim prijateljima pomogao da vas pronađu. Također će uvelike olakšati pretragu za novim kontaktima.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "Kôd";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "Da biste promijenili način na koji vas osobe pronalaze, idite na %@ u Postavkama kako biste uklonili ili onemogućili bilo koji od svojih brojeva telefona.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "No, ako ne želite upotrebljavati svoj broj i radije biste ručno tražili i dodavali nove kontakte, odaberite %@ u nastavku.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Skypeova Pravila o zaštiti privatnosti";
+"PNV_NOT_NOW" = "Ne sada";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Telefonski broj";
+
+"PNV_WELCOME_HEADING" = "Pronalaženje prijatelja upravo je postalo lakše";
+"PNV_WELCOME_PARAGRAPH" = "Za početak jednostavno dodajte svoj broj telefona.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Sljedeće";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "Ajoj!";
+"PNV_DEFAULT_ERROR_MESSAGE" = "Došlo je do problema prilikom provjere vašeg broja, pokušajte ponovo kasnije.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "Dosegnuli ste maksimalan broj potvrđenih brojeva. Prije dodavanja novog broja izbrišite neki od brojeva iz Postavki.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "Broj koji ste unijeli nije važeći. Provjerite i pokušajte ponovno.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "Ne možemo poslati SMS na ovaj broj. Provjerite i pokušajte ponovno.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "Čini se da je taj kôd istekao. Ispod odaberite ponovno slanje kako biste dobili novi kôd.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "Čini se da je taj kôd bio netočan. Provjerite i pokušajte ponovno.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "Došlo je do problema s vašom mrežnom vezom. Provjerite postavke mreže i pokušajte ponovno.";
+"PNV_ERROR_TRY_AGAIN" = "Ponovni pokušaj";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Dodajte prijatelje na Skypeu";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "Potražit ćemo osobe koje poznajete na Skypeu i dodati ih u vaše Kontakte.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Saznajte više";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "Za automatsko dodavanje novih kontakata u Skype, povremeno ćemo provjeriti vaš adresar kako bismo pronašli osobe koje poznajete. Ne brinite se, vašim prijateljima nećemo slati neželjene pozivnice.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "Ako se u bilo kojem trenu predomislite, u postavkama jednostavno isključite stavku %@. Vaš adresar više se neće upotrebljavati za pronalaženje osoba koje poznajete, pa ćete osobe morati dodavati ručno.";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "Da biste promijenili način na koji vas osobe pronalaze, idite na %@ u Postavkama kako biste uklonili ili onemogućili bilo koji od svojih brojeva telefona.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Skypeova Pravila o zaštiti privatnosti";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "Imajte na umu da se Skype ne može koristiti za pozivanje hitnih službi";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "Pronalaženje prijatelja upravo je postalo lakše";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "Dodani su novi kontakti";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "Dodaj kontakt";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "Odustani";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "Traži";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Odustani";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "Potražite osobe na Skypeu tako da unesete njihovo Skype ime, adresu e-pošte ili ime i prezime.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "Već je Skype kontakt";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "Nema podudaranja";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "Natrag";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "Naprijed";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "Podijeli";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "O programu";
+"ABOUT_APPLICATION_VERSION" = "Verzija Skypea";
+"ABOUT_COPYRIGHT" = "© 2003-2016 Skype i Microsoft\nPatent u postupku priznavanja";
+"ABOUT_THIRD_PARTY_NOTICES" = "Obavijesti trećih strana";
+"ABOUT_PRIVACY_POLICY" = "Pravila zaštite privatnosti";
+"ABOUT_TERMS_OF_USE" = "Uvjeti upotrebe";
+"ABOUT_COPYRIGHT_TEXT" = "Naziv Skype, pridruženi zaštitni znakovi i logotipovi te logotip „S“ zaštitni su znakovi tvrtke Skype ili povezanih entiteta.\n\nUpozorenje: Ovaj program zaštićen je zakonom o autorskim pravima i međunarodnim ugovorima. Neovlašteno umnožavanje ili distribucija ovog programa ili bilo kojeg njegovog dijela kažnjivo je prema građanskom i kaznenom zakonu, a protiv počinitelja bit će upotrijebljena sva zakonom dopuštena sredstva.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "Pogreška";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "Putem e-pošte";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "Informirajte me o novim Skypeovim ponudama i značajkama putem e-pošte";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Informirajte me o novim Skypeovim ponudama i značajkama:";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "Dodajte profilnu sliku";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "E-pošta";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "john@example.com";
+"CREATEACCOUNT_FULLNAME_LABEL" = "Ime i prezime";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "Ime";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "Prezime";
+"CREATEACCOUNT_PASSWORD_LABEL" = "Lozinka";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "Od 6 do 20 znakova";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "Ponovite lozinku";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Skype ime";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "Potrebno";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "Telefonski broj";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "s pozivnim brojem države";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "Neka od gornjih polja nisu popunjena";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "Vaše lozinke se na podudaraju, provjerite i pokušajte ponovno.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Uvjeti upotrebe Skypea";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "Da, pročitao/la sam i prihvaćam <a href='%1$@'>Uvjete upotrebe Skypea</a> i <a href='%2$@'>Pravila zaštite privatnosti.</a>";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "Sa Skypeom nema hitnih poziva";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype nije zamjena za telefon i ne može se upotrebljavati za hitne pozive.";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "Prihvaćam";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "Treba sadržavati 6-32 znamenke.";
+"SkyLib::TOO_LONG" = "Treba sadržavati 6-32 znamenke.";
+"SkyLib::CONTAINS_INVALID_CHAR" = "Nevažeći znak npr. Σ, à, ß.";
+"SkyLib::CONTAINS_SPACE" = "Ne smije sadržavati razmak ni tabulator.";
+"SkyLib::SAME_AS_USERNAME" = "Preslično vašem Skype imenu.";
+"SkyLib::INVALID_FORMAT" = "Nevažeći format.";
+"SkyLib::CONTAINS_INVALID_WORD" = "Može se prelako pogoditi, npr. abcd, skype.";
+"SkyLib::TOO_SIMPLE" = "Mora imati najmanje 1 slovo i 1 broj.";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "Mora započeti slovom (A – Ž).";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "Unesite novo Skype ime.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "Unesite novu lozinku.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "Unesite novu e-mail adresu.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "Pokušajte ponovo.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Skype ime";
+"SkyLib::ACCOUNT_PASSWORD" = "Lozinka";
+"SkyLib::CONTACT_EMAILS" = "E-pošta";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> mijenja ime grupi u „%@“";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Početna stranica za Skype";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> ažurira fotografiju grupe.";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> ažurira grupu";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "Sakrij";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "Nove obavijesti (%d)";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "Jedna nova obavijest";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "Nema novih obavijesti";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "Bok, želim te dodati na Skype.";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "Zahtjev za kontakt";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. U čavrljanju %3$@";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "Želi vas dodati za kontakt na Skypeu";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "Ne sada";
+"ALLOW_BUTTON" = "Dopusti";
+"PERMISSION_VIEW_TITLE" = "Obavimo pripreme";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupan vaš mikrofon.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupna vaša kamera.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupni vaši kontakti.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupne vaše obavijesti.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupni vaš mikrofon i kamera.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupan vaš mikrofon i kontakti.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupan vaš mikrofon i obavijesti.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupna vaša kamera i kontakti.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupna vaša kamera i obavijesti.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupni vaši kontakti i obavijesti.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupan vaš mikrofon, kamera i obavijesti.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupan vaš mikrofon, kontakti i obavijesti.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupan vaš mikrofon, kamera i obavijesti.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupna vaša kamera, kontakti i obavijesti.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Za najbolji doživljaj upotrebe Skypea trebat će nam biti dostupan vaš mikrofon, kamera, kontakti i obavijesti.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "Kontakti";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "Mikrofon";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "Kamera";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "Obavijesti";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "Jeste li sigurni?";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "Bez pristupa tim značajkama nećete moći pravilno upućivati niti primati pozive niti ćete moći primati obavijesti o dolaznim pozivima i porukama.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "Vaš popis kontakata bit će prazan i nećete moći upućivati niti primati pozive putem Skypea.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Saznajte više";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "Mikrofon i kamera";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "Pristup vašem mikrofonu i kameri treba nam kako biste mogli upućivati i primati pozive putem Skypea. Na žalost, Skype neće raditi bez tih dopuštenja.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "Kontakti";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "Pristup vašim Kontaktima treba nam kako bismo postavili popis kontakata na Skypeu. Povremeno ćemo provjeriti vaše Kontakte kako bismo pronašli osobe koje poznajete na Skypeu. Ne brinite se, vašim prijateljima nećemo slati neželjene pozivnice.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "Ako se u bilo kojem trenu predomislite, u postavkama jednostavno isključite stavku %@. Vaš adresar više se neće upotrebljavati za pronalaženje osoba koje poznajete, pa ćete osobe morati dodavati ručno";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "Obavijesti";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "Pristup vašem odjeljku Obavijesti treba nam da bismo vas mogli obavijestiti o dolaznim pozivima i porukama dok je Skype zatvoren. Naknadno možete odlučiti i hoćete li isključiti obavijesti za pojedinačna čavrljanja ako želite izbjeći ometanje.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "Dopusti pristup Kontaktima";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Skypeu treba pristup Kontaktima kako bi pronašao osobe koje poznajete. Idite u Postavke i omogućite Kontakte kako biste dopustili pristup.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "Preskoči";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "Povežite se";
+"ONBOARDING_GET_STARTED_BUTTON" = "Prvi koraci";
+
+"ONBOARDING_IPHONE_TITLE1" = "Redizajnirano za iPhone";
+"ONBOARDING_IPAD_TITLE1" = "Redizajnirano za iPad";
+"ONBOARDING_TEXT1" = "Skype je jednostavniji za upotrebu no ikada ranije – bez obzira na to šaljete li prijateljima poruke ili upućujete poziv.";
+
+"ONBOARDING_TITLE2" = "Pronađite bilo što";
+"ONBOARDING_TEXT2" = "Tražite osobe, grupe ili čak prethodne razgovore.";
+
+"ONBOARDING_IPHONE_TITLE3" = "Učinite više";
+"ONBOARDING_IPAD_TITLE3" = "Učinite više na Skypeu";
+
+"ONBOARDING_IPHONE_TEXT3" = "Dijelite lokaciju, fotografije ili pogledajte pretpregled web-veze – i sve to dok čavrljate s prijateljima.";
+"ONBOARDING_IPAD_TEXT3" = "Uživajte u većim emotikonima i pretpregledima web-veza te izrađujte nove grupe izravno s uređaja iPad.";
+
+"ONBOARDING_TITLE4" = "Skype je bolji uz prijatelje";
+"ONBOARDING_TEXT4" = "Unesite svoj broj telefona kako biste svojim prijateljima pomogli da vas pronađu.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "Pojednostavljeno dijeljenje";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Jednostavno dodirnite ikonu za dijeljenje da biste prijateljima na Skypeu poslali web-mjesta ili neku od snimljenih fotografija.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "Dodavanje sudionika";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "DODAJ:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "Već je sudionik";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "Već sudjeluje u pozivu";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "SUDJELUJU U POZIVU";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "NE SUDJELUJU U POZIVU";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "Povezivanje...";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "Povezivanje s osobom: %@";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "Pozivanje...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "Zove se %@";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "Poziv na čekanju";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "Poziv na čekanju za osobu: %@";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "Dodaj favorite";
+"ADDFAVORITES_EMPTY_TITLE" = "Okupite sve omiljene osobe na jednom mjestu, <a href=\"add-favorites\">dodajte favorite</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "kontakti sa Skypea";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "Prijenos datoteka";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ još jedna";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ još %d";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "Poslali ste ovu datoteku s drugog uređaja.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "Poslali ste ove datoteke s drugog uređaja.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "Ova verzija Skypea ne podržava primanje datoteka.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "Ova aplikacija samo podržava Skypeove nove značajke dijeljenja fotografija.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "Poslali ste datoteku";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "Poslali ste datoteke (%d)";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "Šalje vam datoteku";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "Šalje vam datoteke (%d)";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "Na mreži";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "Ne ometaj";
+"CONTACT_AVAILABILITY_AWAY" = "Odsutan/na";
+"CONTACT_AVAILABILITY_INVISIBLE" = "Nevidljiv/a";
+"CONTACT_AVAILABILITY_OFFLINE" = "Izvan mreže";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "Dostupan";
+"CONTACT_AVAILABILITY_BUSY" = "Zauzet";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "Blokiran/a";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Ova osoba je favorit. Dvaput dodirnite za uklanjanje iz favorita.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Ova osoba nije favorit. Dvaput dodirnite za dodavanje u favorite.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Ova grupa nije u favoritima. Dvaput dodirnite za dodavanje u favorite.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Ova je grupa u favoritima. Dvaput dodirnite za uklanjanje iz favorita.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@, %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "SKYPE IME";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "WEB-MJESTO";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "O MENI";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "ROĐENDAN";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "SPOL";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "JEZIK";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "KONTAKTI";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "MOGUĆNOSTI";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "PRIVATNOST";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "STVORIO KORISNIK";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "OPIS";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "Šaljite i primajte izravne poruke i fotografije.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "Bot će imati pristup vašem zaslonskom imenu i Skype imenu te svim porukama čavrljanja i sadržajima koje s grupom podijelite vi ili drugi sudionici grupe.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "Žensko";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "Muško";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "Blokiraj kontakt";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "Deblokiraj kontakt";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "Ukloni kontakt";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "Ukloni kontakt";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "%@ će biti uklonjen/a s vašeg popisa kontakata.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "Ukloni";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "Odustani";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "Sakrij";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "Profil grupe";
+"GROUPPROFILE_NOTIFICATIONS" = "Obavijesti";
+"GROUPPROFILE_MENU_TITLE" = "Prikaži profil";
+"GROUPPROFILE_LEAVE_CHAT" = "Napusti grupu";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "Sudionici";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "Pozovi";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "Pozivnice za čavrljanje";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "Povijest čavrljanja bit će vidljiva svima";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "Omogućite pozivnice za čavrljanje da biste mogli bilo koga pozvati u čavrljanje.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "U ovo se čavrljanje mogu dodati samo kontakti sa Skypea.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "Pozovite bilo koga u ovo čavrljanje, čak i ako nisu na Skypeu.";
+"GROUPPROFILE_CHAT_HISTORY" = "Povijest čavrljanja";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "Povijest čavrljanja trenutno je skrivena novim sudionicima.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "Povijest čavrljanja vidljiva je svima.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "Dodavanje sudionika";
+"GROUP_ADMIN_STRING" = "%@ (administrator)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "Pozivnice za čavrljanje";
+"GROUPPROFILE_ALERT_BODY" = "Pozivnica za to čavrljanje trenutno nije dostupna, pokušajte ponovno kasnije.";
+"GROUPPROFILE_ALERT_BUTTON" = "U redu";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Pridružite se mom razgovoru na Skypeu: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "Pridružite se mom razgovoru";
+"INVITES_MAIL_BODY" = "Pozdrav,\nna Skypeu je stvorena grupa za naš razgovor, dijeljenje sadržaja i suradnju.\nPridružite se tako da kliknete vezu:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "Preimenuj grupu";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "Preimenuj grupu";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "Preimenovanje kontakta";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "Dodirnite dva puta da biste preimenovali kontakt";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "Dodavanje bota";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "Pošalji zahtjev za kontakt";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "Ponovo pošalji zahtjev";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "Zahtjev za kontakt poslan";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "Prihvati";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "Odbij";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "<name>%@</name> vas želi dodati na Skypeu"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "Otvori";
+"PUSH_CHAT_CALL" = "Zovi";
+"PUSH_CHAT_TEXT_REPLY" = "Odgovori";
+"PUSH_CALL_ANSWER" = "Odgovori";
+"PUSH_CALL_DECLINE" = "Odbijam";
+"PUSH_CALL_VIDEO_VIDEO" = "Videopoziv";
+"PUSH_CALL_VIDEO_AUDIO" = "Govorni poziv";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "Poruka";
+"PUSH_MISSED_CALL_CALLBACK" = "Uzvrati poziv";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "Problem s Kontaktima";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "Došlo je do problema prilikom pristupa brojevima telefona iz Kontakata. Pokušajte ponovno sinkronizirati račune za poštu u Postavkama da biste riješili problem.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "Spremi telefonski broj";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "Nema odgovarajućih poziva.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "Jedan odgovarajući poziv.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "odgovarajući pozivi (%d).";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@), posljednji poziv: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@, posljednji poziv: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@ je kontakt iz adresara.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Poveži na Skypeu";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@ je kontakt iz adresara. Tu osobu možete nazvati i čavrljati s njom putem Skypea.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Još niste povezani na Skypeu";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "Izbriši tekst";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Odustani";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "Pretraži Skype";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "Pronađite nove kontakte";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "Dodirnite za pronalaženje novih kontakata";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "Potraži osobu „%@”";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Skypeov imenik";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "Povijest pretraživanja";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "Izbriši";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "Kontakti";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "Nema podudaranja";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "Grupe";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "Čavrljanja";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "Spremi broj";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "Spremi broj";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "Unesite ime";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "Unesite broj";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "Spremanje broja";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "Broj spremljen";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "Broj nije valjan";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "Ne možete dodati taj broj jer broj nije valjan. Pokušajte unijeti drugi broj.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "Broj nije valjan";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "U Skype ne možete dodati brojeve za hitan poziv.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "Odbaci";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "Jeste li sigurni da želite uputiti poziv sljedećem kontaktu: %@?";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "Jeste li sigurni da želite uputiti videopoziv sljedećem kontaktu: %@?";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "Govorni poziv";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "Videopoziv";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "Poziv";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "Prikaži izvornik";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "Prikaži prijevod";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "Podijelili ste lokaciju";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "Dijeli lokaciju s vama";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "Osoba je podijelila lokaciju (%@)";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "Dvaput dodirnite za otvaranje";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "Upute do lokacije";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "Lokacija";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "Podijelite svoju lokaciju";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "Šalje lokaciju";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "Pristup lokaciji";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "Bez dopuštenja za upotrebu lokacije nećete moći podijeliti svoju lokaciju s prijateljima na Skypeu.";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Za dopuštenje pristupa idite u postavke uređaja, zatim u Privatnost.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "Pristup Kontaktima";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "Trebamo pristup vašim Kontaktima kako bismo mogli prikazati vaš adresar u Skypeu.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "Za dopuštenje pristupa idite u postavke uređaja, zatim u Privatnost.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "O, ne";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "Došlo je do problema pri učitavanju karte.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "Provjerite mrežnu vezu i pokušajte ponovo.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "Izbriši";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "Izbriši dodane pribadače";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "Dijeljenje lokacije";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "Više ne možete podijeliti svoju lokaciju u ovom čavrljanju.";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "U redu";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "Podijelite lokaciju";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "Pretraži";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "Nema rezultata";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "Došlo je do problema pri pronalaženju ove lokacije, pričekajte i pokušajte ponovno.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Početak";
+"TIMELINE_ICON_DIALPAD" = "Tipkovnica telefona";
+"TIMELINE_ICON_PEOPLE" = "Kontakti";
+"TIMELINE_SWIPEACTION_MUTE" = "Isključi zvuk";
+"TIMELINE_SWIPEACTION_UNMUTE" = "Uključi zvuk";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "Proslijeđene obavijesti";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "Uključite proslijeđene obavijesti za primanje poziva i obavijesti o porukama kada niste na Skypeu.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "Idite u postavke uređaja iPhone > Centar za obavijesti i uključite Skypeove obavijesti kako biste primali pozive i obavijesti o porukama kada niste na Skypeu.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "Idite u postavke uređaja iPhone, a zatim Centar za obavijesti i uključite Skypeove obavijesti kako biste primali obavijesti o pozivima i porukama kada niste na Skypeu.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "Proslijeđene obavijesti";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "Da biste mogli primati proslijeđene obavijesti, najprije ćete morati uključiti Skypeove obavijesti u postavkama uređaja.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "Otvori";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "Prikaži";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "Slušaj";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "Reproduciraj";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Došlo je do problema prilikom otvaranja poruke. Provjerite mrežnu vezu i pokušajte ponovno.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "Dijeli medijski dokument";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "Dvaput dodirnite za otvaranje";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "Izvoru se ne može vjerovati";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "Fotografija";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "Snimi fotografiju";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "Odaberite postojeću fotografiju";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "Odabir postojeće fotografije ili videozapisa";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "Odustani";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "Odaberi";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "dvaput dodirnite za zatvaranje";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "šalje fotografiju. Dvaput dodirnite za otvaranje";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "Primanje fotografije";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "Slanje fotografije";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "Došlo je do problema prilikom slanja ove fotografije";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "Došlo je do problema prilikom primanja ove fotografije";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "dvaput dodirnite za ponovni pokušaj";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "Pošalji";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "Odustani";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "Videozapis se ne može poslati jer je veći od %d MB";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "Fotografija se ne može poslati jer je veća od %d MB";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "Poslana je videoporuka. Dvaput dodirnite da biste je otvorili";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "Primanje videoporuke";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "Slanje videoporuke";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "Pojavio se problem prilikom slanja videoporuke";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "Pojavio se problem prilikom primanja videporuke";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "Datoteka je poslana. Dvostruko dodirnite da biste je preuzeli";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "Primili ste datoteku. Dvostruko dodirnite da biste je otvorili";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "Preuzimanje";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "Preuzeta je stavka %@. Dvostruko dodirnite da biste je otvorili";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "Datoteka je veća od %d MB. Moguća je naplata podatkovnog prometa";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "Datoteka nije dostupna";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "Ponovno pokreni";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "Pojavio se problem prilikom primanja datoteke";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "Ta bi datoteka mogla biti nesigurna";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "Preuzimanje nije moguće, otkriven je virus";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "Čeka se internetska veza…";
+"FILE_TRANSFER_BUTTON_CANCEL" = "Odustani";
+"FILE_TRANSFER_BUTTON_RETRY" = "Pokušaj ponovno";
+"FILE_TRANSFER_LABEL_CANCELED" = "Otkazano";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "Preuzmi";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "Saznajte više";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "Podijeljene datoteke brišu se sa Skypea nakon %d dana. Da biste neku datoteku zadržali dulje, spremite je na uređaj.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "Datoteka nije dostupna";
+"FILE_SENDING_LABEL_ERROR" = "Došlo je do problema prilikom slanja datoteke";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "Želite li prihvatiti datoteku?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "Datoteke prihvaćajte samo od osoba kojima vjerujete. Želite li prihvatiti datoteku %@ od korisnika %@?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "Upozorenje – datoteka možda nije sigurna za vaše računalo/uređaj";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "Želite li prihvatiti datoteku %@ od korisnika %@?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "Ne pitaj ponovno";
+"FILE_TRANSFER_ACCEPT" = "Prihvati";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "Nema dovoljno prostora";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "Idite u Postavke > Općenito > Uporaba kako biste oslobodili prostor za pohranu na ovom uređaju.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "Korisnik je aplikaciji uskratio pristup svojim medijima";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "Za dopuštanje pristupa idite na Postavke > Privatnost > Foto i omogućite Skype.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "Poslali ste fotografiju";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "Šalje vam fotografiju";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "%@ šalje fotografiju.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "Za prikaz podijeljene fotografije idite na: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "Fotografija nije dostupna";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "Ova fotografija trenutno nije dostupna.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "Odustani";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "Ponovi";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "Fotografija nije dostupna";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "Ova fotografija trenutno nije dostupna.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "U redu";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "Spremi fotografiju";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "Odustani";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "Ajoj!";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "Došlo je do problema prilikom spremanja ove fotografije.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "Ponovi";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "Odustani";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "Internetski mediji";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "Pretraživanje aplikacije Giphy";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Ažuriraj Skype";
+"FORCE_UPGRADE_CAPTION" = "Vaša verzija Skypea je zastarjela. Nabavite najnoviju verziju kako biste uživali u najnovijim značajkama i poboljšanjima.";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "Nabavite odmah";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "Šalje vam Moji";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "Poslali ste Moji";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "Moji se preuzima";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "Došlo je do problema pri preuzimanju ovog isječka Moji.";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "Dvaput dodirnite za ponovni pokušaj";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "Reproduciraj Moji";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "Ovaj je sadržaj uklonjen";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "Ovaj je sadržaj istekao";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "Zadnji put viđen prije nekoliko trenutaka";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "Zadnji put viđen prije više od jednog tjedna";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "Telefon";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "U trenu pronađite prijatelje, poruke ili nove kontakte";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Skype Moji";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "Od sada Moji nudi više zabave s isječcima %@!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "Polje za pretraživanje";
+
+"TAB_RECENT_TITLE" = "Nedavno";
+"TAB_CONTACTS_TITLE" = "Kontakti";
+"TAB_CALLS_TITLE" = "Zvanje telefona";
+"TAB_MYINFO_TITLE" = "Moje informacije";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "Sve";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "Nepročitano";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "Svi";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "Na mreži";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "Hvala!";
+"APPSTORE_RATING_SUBTITLE" = "Širite ljubav i ostavite ocjenu u trgovini App Store. Trajat će samo trenutak.";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "Ocijenite aplikaciju";
+
+"CONTACTS_ADD_FAVORITES" = "Dodaj favorite";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "Pretražite kontakte";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "Nema veze s internetom";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "Niste na mreži. <a href=\"reconnect\">Ponovno poveži</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Skype ima problema";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "Povezivanje";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "Povezan";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "Ažuriranje razgovora…";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "Izbriši čavrljanje";
+"DELETECHAT_ALERT_MESSAGE"              = "Želite li zaista izbrisati ovo čavrljanje s uređaja? I povijest čavrljanja će se izbrisati.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "Izbriši";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "Uredi";
+"LIST_EDITING_CANCEL" = "Odustani";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "Označi sve kao pročitano";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "Označi kao pročitano";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "Izbriši sve";
+"LIST_EDITING_DELETE_TOOLBAR" = "Izbriši (%d)";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "Izbriši sva čavrljanja";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "Izbriši sve";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "Sakrij sve";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "Provjerit ću kasnije";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "Novi poziv";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "na čekanju";
+"CALLING_BANNER_STATUS_MUTED" = "isključen zvuk";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Certificirano za Skype";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "Započni novi grupni poziv";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "Novi grupni poziv započinje";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "Vaš će se trenutni poziv završiti (obavijestite o tome drugu osobu) i započet će novi grupni poziv";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "Nazovi";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "Odustani";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "stvara <a href=\"%@\">grupni razgovor.</a>";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "Pošaljite videoporuku za Valentinovo";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "Videoporuke za Valentinovo";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "Uljepšajte dan voljenoj osobi";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "Podijelite ljubav";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "Uljepšajte dan voljenoj osobi slanjem poruke za Valentinovo.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "Ne sada";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "Pošalji kontaktima";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "Podijeli videozapis";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "Sretno Valentinovo";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "Sretno\nValentinovo";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "Ova je posebna videoporuka za Valentinovo snimljena samo za vas. Snimite i vi svoju na adresi https://go.skype.com/vmhci";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "Šaljem vam posebnu poruku za Valentinovo…";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "Isključi zvuk";
+"INCALLCONTROLS_VIDEO_CAPTION" = "Videopoziv";
+"INCALLCONTROLS_AUDIO_CAPTION" = "Zvučnik";
+"INCALLCONTROLS_ADD_CAPTION" = "Dodaj";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "Više";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "Tipkovnica";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "Više akcija";
+"GVC_CALLING_ME_ON_RIBBON" = "Ja";
+
+"GVC_NOTIFICATION_HUNG_UP" = "Korisnik %@ napustio je poziv";
+"GVC_NOTIFICATION_JOINED" = "Korisnik %@ pridružio se pozivu";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "Stvorite grupu – odsad s grupnim videopozivima.";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "Započnite grupni videopoziv izravno iz čavrljanja.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "Probajte promijeniti prikaz.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "Da biste otkvačili ovu osobu, ponovno dodirnite.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "Pretvorite ovo u besplatan grupni videopoziv.";
+"GVC_INTERSTITIAL_TITLE" = "Pozdravite grupne videopozive";
+"GVC_INTERSTITIAL_CAPTION" = "Okupite sve na jedno mjesto kad god poželite, i to besplatno.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "Razumijem";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "Dodavanje sudionika";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";
