@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "%@ hat Ihnen eine Videonachricht gesendet";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "%@ hat Ihnen ein Foto gesendet";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "%@ hat Ihnen ein Moji gesendet";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "%@ hat Ihnen eine Sprachmitteilung gesendet";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "%@ hat Ihnen eine Datei gesendet";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "Neue „Gefällt mir“-Bewertung erhalten";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "Mein Konto";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "Feedback senden";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "Alle als gelesen markieren";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "Kontakte hinzufügen";
+"HELP_NAVBAR_BUTTON" = "Hilfe";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "Sie haben ungelesenes Feedback.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "Entwickler-Feedback";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "Anzeigen";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "Abbrechen";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "Zu Favoriten hinzufügen";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "Aus Favoriten entfernen";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "Fügen Sie neue Favoriten über das Menü eines beliebigen Kontakts hinzu.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "Abmelden";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "Anruf von %@";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "Videoanruf von %@";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "Gruppen-Anruf mit %@";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "Videonachricht von %@.";
+"BACKGROUND_MISSEDCALL_ONE" = "Verpasster Anruf von %@.";
+"BACKGROUND_MISSEDCALL_GROUP" = "Verpasster Gruppenanruf von %@";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "Neue Kontaktanfrage von %@.";
+"BACKGROUND_VOICEMAIL_ONE" = "Neue Sprachnachricht von %@.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "Bitte Netzwerkeinstellungen überprüfen und erneut versuchen.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "Annehmen";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "Ablehnen";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "Zum Anruf hinzufügen";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "Auflegen";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "Anruf beenden";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "Videonachricht";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "Videonachricht senden";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "Abbrechen";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "Fertig";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "Einstellungen";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "Konto erstellen";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "Konto erstellen";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "%@ ist keine gültige Rufnummer. Bitte überprüfen Sie sie und versuchen es erneut.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "Adressbuch";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "Landesvorwahl oder Region";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "Ändert die Landesvorwahl oder Region.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "Ändern Sie die Landesvorwahl oder Region.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "Suchen";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Rufnummer";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "Schließen";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "Öffnen";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "Ereignis erstellen";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "Kalender anzeigen";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "Kopieren";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "Zur Leseliste hinzufügen";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "In Safari öffnen";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "Bearbeiten";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "Zitieren";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "Am %1$@ um %2$@ hat %3$@ geschrieben:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "Löschen";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "Weiterleiten";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "Weiterleiten";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "Freigeben";
+"SHARE_MESSAGE_TITLE" = "Freigeben";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "Wird geladen";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "Zum Abbrechen doppelt tippen";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "Video starten…";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "Anruf wird weitergeleitet…";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "Video­";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "Wähltastatur";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "Anruf fortsetzen";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "Technische Anrufinformationen";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "Anrufoptionen";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ möchte ein Video freigeben";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ ist nicht in Ihrer Kontaktliste, möchte aber ein Video für Sie freigeben.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Teilnehmer dieses Anrufs haben Video aktiviert";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Wollen Sie in diesem Anruf Video empfangen?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Annehmen";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Ablehnen";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "Teilnehmer hinzufügen";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "Doppeltippen, um Teilnehmer hinzuzufügen.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "Kennwort";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "Anmelden";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Skype-Name";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Skype-Name, E-Mail oder Handynr.";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "Ihre Konten";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "Wählen Sie das Konto aus, das Sie verwenden möchten.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Skype-Konto";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Microsoft-Konto";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "Anmelden";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "Wählen Sie den Kontotyp aus, mit dem Sie sich bei Skype anmelden möchten.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Microsoft-Konto";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Skype-Name";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "Personalisieren Sie Ihr Profil.";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "Foto hinzufügen";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "Foto ändern";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Anmelden";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Probleme bei der Anmeldung?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "OK";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "Ok, verstanden";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "Fortsetzen";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "Später";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "Weitere Informationen";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "Einstellungen";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "Nicht mehr erinnern";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "Benachrichtigungen aktivieren";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "Text löschen";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "Senden";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "Anruf,";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "Anruf";
+"CHAT_CALL_EVENT_CALL_STARTED" = "Anruf begonnen";
+"CHAT_CALL_EVENT_NO_ANSWER" = "Anruf, keine Antwort";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "Verpasster Anruf";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "%d verpasste Anrufe";
+"CHAT_CALL_EVENT_BUSY" = "Anruf, besetzt";
+"CHAT_CALL_EVENT_BLOCKED" = "Blockiert";
+"CHAT_CALL_EVENT_FAILED" = "Anruf, fehlgeschlagen";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "Wie war die Qualität dieses Anrufs?";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "Vielen Dank für Ihr Feedback.";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "Sehr schlecht";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "Schlecht";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "Mittelmäßig";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "Gut";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "Ausgezeichnet";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "Anruf";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "Anruf, %@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "Anruf";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "Anruf, %@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "Anruf fehlgeschlagen";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "Verpasster Anruf";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "Anruf, keine Antwort";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "Anruf, blockiert";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "Gesendet";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "Übermittelt";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "Gelesen";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "Gesendet";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "Übermittelt";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "Gelesen";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "%@ hat eine neue Gruppe erstellt.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "%@ hat eine neue Gruppe erstellt mit %@.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "%@ hat eine neue Gruppe erstellt mit %@ und %@.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "%@ hat eine neue Gruppe erstellt mit %@, %@ und einem weiteren Benutzer.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "%@ hat eine neue Gruppe erstellt mit %@, %@ und %u weiteren.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "<name>%@</name> hat heute Geburtstag";
+"CHAT_GRANTED_AUTH" = "Sie haben Ihre Kontaktdetails geteilt";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "%@ hat %@ zu dieser Gruppe hinzugefügt";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "Bots, die dieser Gruppe hinzugefügt werden, haben Zugriff auf den Skype- und Anzeigenamen jedes Teilnehmers und auf alle neuen Chatnachrichten oder Inhalte, die in der Gruppe geteilt werden.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "Willkommen! Diese Gruppe enthält einen oder mehrere Bots. Diese haben Zugriff auf den Skype- und Anzeigenamen jedes Teilnehmers und auf alle neuen Chatnachrichten oder Inhalte, die in der Gruppe geteilt werden.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "%@ ist der Gruppe beigetreten.";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "%@ hat die Gruppe verlassen";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "%@ hat %@ aus dieser Gruppe entfernt";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "Das Gastkonto für %@ ist abgelaufen";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "Sie haben %@ blockiert";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "%@ hat die Rolle von %@ in %@ geändert.";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "Ersteller";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "Administrator";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "Zuschauer";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "Schreiber";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "Sprecher";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "Anwärter";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "Zurückgetretener";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "Geächteter";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "Eine Rolle wurde geändert.";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "Unbenannte Unterhaltung";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "Chat anzeigen";
+"CONVERSATION_HIDE_CHAT" = "Chat ausblenden";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "Seitenleiste anzeigen";
+"CONVERSATION_HIDE_TIMELINE" = "Seitenleiste verbergen";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "Zur Rasteransicht wechseln";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "Zur individuellen Ansicht wechseln";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "Anruf beitreten";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "Aktivem Anruf beitreten";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "Nachrichten aus dem <a href=\"jump\">älteren Chat</a> anzeigen";
+"CHAT_GOTO_NEW_CHAT" = "Dieser Chat wurde auf eine neue Version aktualisiert. <a href=\"jump\">Zum neuen Chat wechseln</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "%@ muss Skype aktualisieren, um an diesem Chat teilzunehmen. Empfehlen Sie skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Erfahren Sie jetzt mehr über den neuen Gruppenchat</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "%@ müssen Skype aktualisieren, um an diesem Chat teilzunehmen. Empfehlen Sie skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Erfahren Sie jetzt mehr über den neuen Gruppenchat</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ kann jetzt an diesem Chat teilnehmen.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "Einzelchat öffnen.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "Lächeln";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "Traurig";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "Lachen";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "Cool";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "Überrascht";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "Zwinkern";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "Weinen";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "Schwitzen";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "Sprachlos";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "Kuss";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "Grinsen mit Zunge";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "Verlegen";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "Fragend";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "Schläfrig";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "Augenrollen";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "Verliebt";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "Fieses Grinsen";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "Daumen drücken";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "Gähnen";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "Übergeben";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "Doh!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "Wütend";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "Ich war's nicht!";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "Party";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "Besorgt";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "Mmmmm..."; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "Schlauberger";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "Ich sage nichts";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "Winken";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "Fremdschämen";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "Teuflisch";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "Engel";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "Neidisch";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "Warte!";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "Umarmen";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "Schminken";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "Kichern";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "Klatschen";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "Denken";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "Verbeugen";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "Lachend über den Boden rollen";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "Erleichtert";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "Fröhlich";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "Schmunzeln";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "Kopfnicken";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "Kopfschütteln";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "Warten";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "Emo";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "Ja";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "Nein";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "Händeschütteln";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "Abklatschen";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "Herz";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "Ich höre gar nicht zu";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "Eichhörnchen";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "Blume";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "Regen";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "Sonne";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "Betretene Stille";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "Musik";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "Schurke";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "Das ist zu viel";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "Kaffee";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "Pizza";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "Kohle";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "Muskeln";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "Torte";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "Bier";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "Cocktail";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "Tanzen";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "Ninja";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "Stern";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "nackter Hintern";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "Telefon";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "Mittelfinger";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "Poolparty";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "Gebrochenes Herz";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "Betrunken";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "Fluchen";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "Film";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "Rauchen";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "Uhr";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "Mann mit Hund";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "Mann macht ein Foto";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "E-Mail";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "Abrocken";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "Fausthieb";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "Kopf gegen die Wand schlagen";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "Ruf mich an";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "Arbeite von zu Hause";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "Bug";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "Sprechen";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "Stolzieren";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "Mann mit Hut";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "Fußballspieler";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "Kein Interesse";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "Idee";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "Schaf";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "Katze";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "Fahrrad";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "Hund";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "Emoticon %@";
+
+"EMOTICON_TYPE_FLAG" = "Flagge %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "Fügen Sie neue Kontakte bei Skype hinzu: <a href=\"add-people\">Skype-Verzeichnis durchsuchen</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "Sie haben keine Skype-Kontakte.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "Wir konnten noch keine Skype-Kontakte in Ihrem Adressbuch finden. <a href=\"add-people\">Kontakte hinzufügen</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "Wir konnten noch keine Skype-Kontakte in Ihrem Adressbuch finden.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Skype-Verzeichnis durchsuchen"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "In Skype Bekannte finden"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "Suche nach Bekannten läuft"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "Doppeltippen, um Suche abzubrechen.";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "Sieht gut aus!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "„Aufnehmen“ klicken, wenn Sie bereit sind.";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "Aufnahme abbrechen";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "Erneut aufnehmen";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "Abbrechen";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "Sie haben eine neue Videonachricht erhalten. Um sie abzurufen, kopieren Sie einfach den Geheimcode %2 und sehen sich Ihre Videonachricht hier an: %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "Abbrechen";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "Aufnehmen";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "Stoppen";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "Senden";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "Vorschau";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "Zur Frontkamera wechseln";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "Zur Rückkamera wechseln";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "Aufnahmedauer";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "Videoeffekte";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "Normal";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "Ballons";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "Bären";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "Kaleidoskop";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "Verpixeln";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "Quetschen";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "Wölben";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "Röntgen";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "Poster";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "Schnee";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "Spiegel";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "Herzen";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "Kostüm";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "Halloween";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "Sprache der Untertitel";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "Untertitel werden nach der Aufnahme angezeigt";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "Untertitel werden erstellt...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "Die Untertitel konnten nicht erstellt werden";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "Anhören";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "Videonachricht";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "Sie können keine Videonachrichten mehr an diesen Chat senden.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "Video löschen";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "Möchten Sie diese Videonachricht löschen?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "Löschen";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Abbrechen";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "Videonachricht löschen";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "Abspielen";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "Anhalten";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "Sprachnachricht";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Sprachnachricht, %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "Sprachnachricht wiedergeben.";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "Wiedergabe beenden.";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Videonachricht";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "Wiedergebbar";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "Wird hochgeladen";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "Nicht verfügbar";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "Videonachricht abspielen.";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "Mit der Frontkamera";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "Mit der Rückkamera";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "Aufnahme läuft";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "Aufnahme gestoppt";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "Wird gesendet";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "Nicht gesendet – es wird auf die Internetverbindung gewartet…";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "Bitte prüfen Sie Ihre Netzwerkverbindung und versuchen Sie es erneut.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "Nicht empfangen – es wird auf die Internetverbindung gewartet…";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "Video nicht verfügbar";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "Video nicht verfügbar";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ sendet ein Foto";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "Probleme beim Anmelden?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "Problem beim Anmelden";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "Keine Verbindung zu Skype möglich. Bitte versuchen Sie es später erneut.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "Keine Verbindung zu Microsoft möglich. Überprüfen Sie Ihre Netzwerkeinstellungen und versuchen Sie es erneut.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "Keine Verbindung zu Microsoft möglich. Bitte versuchen Sie es später erneut.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "Sie können sich mit diesem Microsoft-Konto leider nicht bei Skype anmelden, da Sie unterhalb der Altersbeschränkung für Ihr Land/Ihre Region liegen.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "Bitte prüfen Sie Ihre Details";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "Diese Anmeldedaten wurden nicht erkannt. Bitte überprüfen Sie sie und versuchen Sie es erneut.";
+"LOGIN_PROBLEM_NO_NETWORK" = "Anmeldung nicht möglich. Überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Skype-Guthaben";
+"IAP_PURCHASE_BUTTON" = "%@-Guthaben hinzufügen";
+"IAP_CALLPHONES" = "Telefone anrufen";
+"IAP_SEND_SMS" = "SMS senden";
+"IAP_WITHSKYPECREDIT_TITLE" = "Warum sollte ich für Skype-Guthaben bezahlen?";
+"IAP_WITHSKYPECREDIT_BODY" = "Mit Skype-Guthaben können Sie zu günstigen Tarifen Personen anrufen (Festnetz- oder Handynummer), die kein Skype besitzen, oder ihnen SMS senden.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Anrufe unter Skype-Nutzern sind kostenlos, aber mit nur geringem Guthaben können Sie noch mehr machen.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "Ihr aktuelles Guthaben beträgt %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "Währungsumrechnung"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "%@ wird für Ihr Skype-Guthaben in %@ umgerechnet.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "Weitere Informationen";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "Am %@ gemäß des Wechselkurses der Europäischen Zentralbank umgerechnet.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "Ihre App Store-Währung und Ihre Skype-Währung stimmen nicht überein. Für diesen Kauf werden wir Ihre App Store-Währung umrechnen.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "Um diese Einstellungen zu ändern, melden Sie sich auf Skype.com an und wählen Sie in unter „Mein Konto“ „Währung ändern“ aus.";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "Zu wenig Guthaben";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "Sie haben nicht ausreichend Skype-Guthaben, um diese Nummer anzurufen.";
+"IAP_CALL_NO_CREDIT_TITLE" = "Kein Guthaben";
+"IAP_CALL_NO_CREDIT_BODY" = "Sie benötigen Skype-Guthaben, um diese Nummer anzurufen.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "Ihr Kauf war erfolgreich.";
+"IAP_RESULT_SUCCESS_1_BODY" = "%@ wurden Ihrem Skype-Konto hinzugefügt.";
+"IAP_RESULT_SUCCESS_2_BODY" = "%@ werden Ihrem Skype-Konto hinzugefügt.";
+"IAP_RESULT_SUCCESS_3_BODY" = "%@ wurden Ihrem Skype-Konto bereits hinzugefügt.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "Ihre vorherige Bestellung von Skype-Guthaben ist nun abgeschlossen. %@ wurden Ihrem Skype-Konto hinzugefügt.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "Ihre vorherige Bestellung von Skype-Guthaben wird derzeit bearbeitet.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "Ihre vorherige Bestellung von Skype-Guthaben wurde erfolgreich abgeschlossen.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "Ihr Kauf wurde abgebrochen.";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "Entschuldigung";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "Ihr Auftrag konnte nicht verarbeitet werden, bitte versuchen Sie es später erneut.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "Ihre Bestellung konnte leider nicht abgeschlossen werden. Wir versuchen es weiterhin und benachrichtigen Sie, sobald die Bestellung abgeschlossen ist.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "Ihre vorherige Bestellung von Skype-Guthaben konnte leider nicht abgeschlossen werden. Wir versuchen es weiterhin und benachrichtigen Sie, sobald die Bestellung abgeschlossen ist.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "Bitte lesen und akzeptieren Sie die Skype-Nutzungsbedingungen, bevor Sie Guthaben erwerben.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "Wir konnten Ihre Bestellung leider nicht verarbeiten, da Ihr Zahlungsdienstleister derzeit nicht verfügbar ist. Bitte versuchen Sie es später erneut.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "Wir konnten Ihre Bestellung leider nicht verarbeiten, da Ihr Konto von einem Administrator verwaltet wird.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "Wir konnten Ihre Bestellung leider nicht verarbeiten, bitte kontaktieren Sie den Skype-Kundendienst für weitere Hilfe.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "Ihr iTunes-Konto ist derzeit nicht verfügbar.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "Wir konnten Ihre Bestellung leider nicht abschließen, da Ihr iTunes-Konto derzeit nicht verfügbar ist. Bitte versuchen Sie es später erneut.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "Wir konnten Ihre Bestellung leider nicht verarbeiten, da Skype die Währung Ihres iTunes-Kontos nicht unterstützt.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "Die Währung Ihres Skype-Kontos entspricht nicht der Ihres iTunes-Kontos. Sie können die Währung in Ihren Kontoeinstellungen auf skype.com ändern.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "Wir konnten Ihre Bestellung leider nicht verarbeiten, bitte prüfen Sie Ihre Netzwerkverbindung und versuchen Sie es erneut.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "Wir konnten Ihre Bestellung leider nicht verarbeiten, bitte prüfen Sie Ihre Netzwerkverbindung. Wir versuchen es erneut, sobald Sie die Verbindung wieder hergestellt haben.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "Wir konnten Ihre vorherige Bestellung von Skype-Guthaben leider nicht verarbeiten. Bitte prüfen Sie Ihre Netzwerkverbindung. Wir versuchen es erneut, sobald Sie die Verbindung wieder hergestellt haben.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "Hilfe erhalten";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Microsoft-Konto";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "Abbrechen und erneut starten";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "Verknüpftes Skype-Konto";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "Dieses Skype-Konto wurde bereits mit einem anderen Microsoft-Konto verknüpft. Melden Sie sich mit dessen Microsoft-Anmeldedaten an, um fortzufahren.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "Beim Zusammenführen Ihrer Konten ist ein Fehler aufgetreten, bitte versuchen Sie es erneut.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Beim Öffnen Ihres Kontos ist ein Problem aufgetreten, überprüfen Sie Ihre Netzwerkverbindung und versuchen Sie es erneut.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "Telefon";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "Privat";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "Geschäftlich";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "Handy";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "Andere";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "Unbekannte Nummer";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (Gast)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "Verbindung wird hergestellt …";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "Klingeln...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "Ruft an …";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "Anruf wird gehalten";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "Anruf beendet";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "Wird gestartet ...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "Ruft an ...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "Live";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "Anruf wird gehalten";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "Von Gesprächspartner gehalten";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "Andere sind schon im Anruf";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "Andere sind schon im vollen Anruf";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "Sprachnachricht wiedergeben";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "Aufnahme läuft";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "Vor Kurzem live";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "Durchstellen";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "Anmelden…";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "Kontakte laden…";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "Aktualisierung läuft...";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "Diese Nachricht wurde entfernt.";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "Keine Verbindung zu Skype.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "Prüfen Sie ihre Netzwerkeinstellungen und versuchen Sie es erneut.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "Der Skype-Name ist ungültig.";
+"Account::INVALID_EMAIL" = "Die E-Mail-Adresse ist ungültig.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "Überprüfen Sie Ihre Eingabe und versuchen Sie es erneut.";
+"Account::UNACCEPTABLE_PASSWORD" = "Dieses Kennwort ist ungültig.";
+"Account::SKYPENAME_TAKEN" = "Skype-Name bereits vergeben.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "Bitte ein neues eingeben.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "Skype-Name oder Kennwort wurden nicht erkannt.";
+"Account::INCORRECT_PASSWORD" = "Skype-Name oder Kennwort wurden nicht erkannt.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "Sie haben zu viele Anmeldeversuche unternommen.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "Bitte versuchen Sie es später erneut.";
+"Account::ATO_BLOCKED" = "Ihr Konto wurde vorübergehend gesperrt.\n<a href = 'https://go.skype.com/account.recovery.ios'>Tippen Sie hier für weitere Informationen</a>.";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "Bei der Anmeldung mit einem Microsoft-Konto ist ein Fehler aufgetreten, versuchen Sie es später erneut.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "Anmeldung nicht möglich, da der Speicherplatz auf Ihrem Gerät nicht ausreicht.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "Anmeldung nicht möglich, bitte starten Sie Ihr Gerät neu und versuchen Sie es erneut.(%d)";
+"Account::DB_FAILURE" = "Anmeldung nicht möglich, bitte starten Sie Ihr Gerät neu und versuchen Sie es erneut.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "Anmeldung nicht möglich. Installieren Sie Skype erneut aus dem App Store.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "Ihr Kennwort wurde geändert. Melden Sie sich an, um Skype weiterhin zu nutzen.";
+"Account::LOGOUT_REMOTE" = "Sie wurden abgemeldet.";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "Diese Skype-Version wird nicht unterstützt.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "Aktualisieren Sie auf die neueste Skype-Version, um fortzufahren.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "Anmeldung nicht möglich, bitte versuchen Sie es später erneut.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "Sie können sich nicht bei Skype anmelden, da Sie unterhalb der Altersbeschränkung für Ihr Land/Ihre Region liegen.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "Bitte erneut versuchen.(%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "Anruf";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "Videoanruf";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "Videonachricht";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "Wähltasten"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "Telefonnummern wählen";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "Einen neuen Chat starten";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Einen neuen Chat über Skype starten";
+
+
+"HUB_RECENTS_TITLE" = "Kürzlich";
+"HUB_PEOPLE_TITLE" = "Kontakte";
+"HUB_FAVOURIES_TITLE" = "Favoriten";
+"CANCEL_ALERT_BUTTON" = "Abbrechen";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "Favoriten";
+"PEOPLEPICKER_CONTACTS_TITLE" = "Kontakte";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "Suche nach Kontakten";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "Neue Kontakte finden";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "Nach \"%@\" suchen";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Im Skype-Verzeichnis nach \"%@\" suchen";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "Kontakte";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "Bots";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "Nicht verbunden"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "Auf Skype"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Als Skype-Kontakt hinzufügen";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "Abbrechen";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "Verbinden";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "Neuer Chat";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "Zum Auswählen doppeltippen.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "Ihre neuesten Unterhaltungen werden hier angezeigt.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "Sie haben keine ungelesenen Nachrichten";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "Zuletzt gewählte Handy- und Festnetznummern werden hier angezeigt, <a href=\"open-dialpad\">Freund anrufen</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, neue Nachrichten, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "Von Gesprächspartner gehalten";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "Anruf wird gehalten";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "Aktiver Anruf";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "Aktueller Anruf, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "Aktueller Anruf";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "Bearbeitet";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "Bearbeiten";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "Foto speichern";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "Video speichern";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "„Gefällt mir“-Angaben anzeigen";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "Gefällt mir";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "Gefällt mir nicht mehr";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "Schließen";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "„Gefällt mir“-Angaben";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "Doppeltippen, um Kontakt anzuzeigen";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "Neues";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "gefällt Ihre Nachricht.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "%@ gefällt Ihre Nachricht";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "gefällt Ihr Foto.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "%@ gefällt Ihre Nachricht.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "%1$@ gefällt Ihre Nachricht „%2$@“";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "%@ gefällt Ihr Foto.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>Bisher gefällt das niemandem</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "Ihnen gefällt das";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "Anmelden";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Skype-Name";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Microsoft-Konto";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "Konto erstellen";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Mit Skype-Namen anmelden";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Mit Microsoft-Konto anmelden";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Konto erstellen";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "Eingabefeld für Anmeldeinformationen";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "Sie nutzen bereits Skype?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "Ja";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Ja, ich habe bereits ein Skype-Konto.";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "Nein";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Nein, ich habe kein Skype-Konto.";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "Kontaktlistenfilter";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "Alle Kontakte";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "Onlinekontakte";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "Alle Kontakte anzeigen.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "Nur Onlinekontakte anzeigen.";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "Nur Skype-Kontakte anzeigen.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "Sprachanruf";
+"CHATINPUT_PLACEHOLDER" = "Nachricht hier eingeben";
+"CHATINPUT_PLACEHOLDER_SMS" = "SMS hier eingeben";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "%@ grüßen";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "Ihr Chat wird hier angezeigt.";
+"CHATTYPING_SINGLEUSER" = "%@ schreibt gerade...";
+"CHATTYPING_TWOUSERS" = "%@ und %@ schreiben gerade...";
+"CHATTYPING_THREEUSERS" = "%@, %@ und eine weitere Person schreiben gerade...";
+"CHATTYPING_MULTIPLEUSERS" = "%@, %@ und %d weitere Personen schreiben gerade...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "Telefon anrufen";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "Einl. senden";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Senden Sie ihnen einen SMS-Link, um in Skype zu chatten.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "Chat";
+"SEND_SMS_TO_CONTACT_BUTTON" = "SMS";
+"EMPTY_PAGE_HEADER_TITLE" = "Kontaktaufnahme mit";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "Hallo! Chatten wir auf Skype: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "Das Versenden dieser SMS kostet %@";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "Land/Region auswählen";
+"DIALPAD_CALL_BUTTON" = "Anrufen";
+"DIALPAD_STAR_BUTTON" = "Sternchen";
+"DIALPAD_HASH_BUTTON" = "Raute";
+"DIALPAD_BACKSPACE_BUTTON" = "Löschen";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "SMS";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "Öffnet einen Chat mit %@";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "Die Tastatur wurde ausgeblendet.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "Tastatur einblenden";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "Dieser Kontakt kann nicht angerufen werden";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "Beim Anrufen dieses Kontakts ist ein Problem aufgetreten.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "Überprüfen Sie Ihre Eingabe und versuchen Sie es erneut.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "Notrufnummern";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "Anrufe an Notrufnummern werden auf Ihrem Gerät nicht unterstützt.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "Ungültige Rufnummer";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "Beim Anrufen dieser Telefonnummer ist ein Problem aufgetreten.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "Überprüfen Sie Ihre Eingabe und versuchen Sie es erneut.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "Sie sind bereits an einem Anruf beteiligt";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "Es findet gerade ein Anruf statt.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Legen Sie auf, bevor Sie einen Skype-Anruf starten.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "Sie sind bereits an einem Anruf beteiligt";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "Es findet gerade noch ein anderer Skype-Anruf statt.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Legen Sie zuerst auf, bevor Sie einen neuen Anruf starten.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "Anruf nicht möglich";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "Ihr Mobilfunkanbieter erlaubt keine Skype-Anrufe über Ihr Mobilnetzwerk. Stellen Sie eine Verbindung zu einem Drahtlosnetzwerk her, um Skype-Anrufe zu tätigen.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "Anruf fehlgeschlagen";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "Sie können sich nicht selbst anrufen.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "Blockierter Kontakt";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "Geben Sie diesen Kontakt zuerst frei, bevor Sie ihn anrufen.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "Mikrofonzugriff";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "Ohne Berechtigung, das Mikrofon zu verwenden, kann man Sie bei Anrufen oder Videonachrichten nicht hören.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Gehen Sie unter den Geräteeinstellungen zu „Datenschutz“, um die Berechtigung zu erteilen.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "Kamerazugriff";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "Ohne Berechtigung, das Kamera zu verwenden, kann man Sie bei Anrufen oder Videonachrichten nicht hören.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Gehen Sie in den Geräteeinstellungen zu „Datenschutz“, um die Berechtigung zu erteilen.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "Sie können nur dann Fotos in Skype aufnehmen, wenn Sie die Berechtigung erteilen, auf Ihre Kamera zuzugreifen.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "Anruf nicht möglich";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "Eine andere Audioanwendung hindert Skype an der Audiowiedergabe.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "Überprüfen Sie Ihre Eingabe und versuchen Sie es erneut.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "Anruf nicht möglich";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "Es besteht ein Audioproblem auf Ihrem Gerät.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "Überprüfen Sie Ihre Eingabe und versuchen Sie es erneut.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "Anruf nicht möglich";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "Es besteht ein Audioproblem auf Ihrem Gerät.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "Starten Sie Skype neu, um fortzufahren.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "Anruf nicht möglich";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "Es besteht ein Audioproblem auf Ihrem Gerät.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "Bitte versuchen Sie es später erneut.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "Anruf nicht möglich";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "Es besteht ein Audioproblem auf Ihrem Gerät.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "Bitte versuchen Sie es später erneut.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "Anruf nicht möglich";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "Beim Verbindungsaufbau ist ein Fehler aufgetreten.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "Bitte versuchen Sie es später erneut.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "Anruf nicht möglich";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "In Indien können Sie Kontakte innerhalb des Landes nur anrufen, wenn sie Skype nutzen (kostenlos). Anrufe an Handys oder Festnetztelefone über Skype sind in Indien leider nicht möglich.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "Weitere Informationen";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Anruf kann nicht beigetreten werden";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Dieser Gruppenanruf hat die maximale Teilnehmerzahl erreicht. Versuchen Sie es später noch einmal.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "Kamera in Verwendung";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "Sie sind bereits an einem Videoanruf beteiligt.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "Schalten Sie das eigene Video aus, bevor Sie versuchen, die Kamera zu verwenden.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Gruppenanrufe";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Von diesem Gerät aus können keine Gruppen mit %d oder mehr Teilnehmern angerufen werden.";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "Gruppen-Videoanrufe";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Von diesem Gerät aus können keine Gruppen mit %d oder mehr Teilnehmern angerufen werden.";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "Sie sind offline";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "Sie müssen online sein, um auf Skype Anrufe tätigen zu können.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Gruppenanrufe";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Die maximale Teilnehmeranzahl für diesen Anruf ist erreicht.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "Anruf wird gehalten";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "Setzen Sie Ihren Anruf fort, bevor Sie neue Teilnehmer hinzufügen.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "Anruf wird von Gesprächspartner gehalten";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "Dieser Anruf muss zuerst fortgesetzt werden, bevor Sie neue Teilnehmer hinzufügen können.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "Anruf wird eingerichtet";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "Teilnehmer können nicht hinzugefügt werden, während der Anruf verbunden wird.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "Bitte warten Sie, bis der Anruf verbunden wurde.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "Gruppe";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "Beim Hinzufügen von Teilnehmern ist ein Problem aufgetreten. Versuchen Sie es später erneut.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "Video kann nicht gestartet werden";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "Beim Einschalten des Videos ist ein Fehler aufgetreten.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "Vergewissern Sie sich, dass alle Gesprächsteilnehmer über die aktuelle Skype-Version verfügen.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "Video kann nicht gestartet werden";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skype konnte den Videostream nicht starten.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "Versuchen Sie es später erneut.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "Anruf fortsetzen";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "Beim Fortsetzen dieses Anrufs ist ein Fehler aufgetreten.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "Schließen Sie andere Anwendungen, die aktuell Audio verwenden und beenden Sie aktive Telefonanrufe, bevor Sie diesen Skype-Anruf fortsetzen.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "Kontaktanfrage";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "Teilnehmer wurden hinzugefügt oder entfernt";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "<name>%@</name> hat heute Geburtstag"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "Ein Gruppen-Chat wurde erstellt";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "Kontakt wurde blockiert";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "hat Ihnen eine Videonachricht gesendet";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "Sie haben eine Videonachricht gesendet";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>Sie</name> und <name>%@</name> sind jetzt Kontakte.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "ist jetzt ein Kontakt";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "Sie haben Ihre Kontaktdetails geteilt";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "hat Ihnen eine Sprachnachricht gesendet";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "Sie haben eine Sprachnachricht gesendet. ";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "%@ hat Ihnen einen Kontakt gesendet. Diese Skype-Version unterstützt dies noch nicht.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "Sie haben einen Kontakt gesendet. Diese Skype-Version unterstützt dies noch nicht.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "Doppeltippen, um Kontakt anzuzeigen";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "Doppeltippen, um Kontakte anzuzeigen";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "Kontakt gesendet";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "Zu Kontakten hinzufügen";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "Bereits in der Kontaktliste";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "Kontakte anzeigen";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "Kontakte senden";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "Kontakte senden";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "& %d weitere";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "Kontakte auswählen";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "Sie haben keine Kontakte zum Senden in Skype.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "Keine Kontakte";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "Kontakte";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "Kontakte senden";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "Kontaktanfrage gesendet";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "Kontaktanfrage ausstehend";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "Gesendete Kontakte";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "%@ hat Ihnen eine Nachricht gesendet, die diese Skype-Version noch nicht unterstützt.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "Sie haben eine Nachricht gesendet, die diese Skype-Version noch nicht unterstützt.";
+
+"RECENTS_DELETE_CONVERSATION" = "Chat löschen";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "Als gelesen markieren";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "Als ungelesen markieren";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "Chat";
+"CALL_ACCESSIBILITYLABEL" = "Anruf";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "Haupt-Anmeldung";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Skype-Anmeldung";
+"HUB_ACCESSIBILITYLABEL" = "Hub";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "Vorgeschlagenes Suchelement %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "Emoticons anzeigen";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "Tastatur anzeigen";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "Löschen";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Suchen";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "Store";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "Zuletzt verwendet";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "Emoticons";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Mojis";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "Suchen";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "Vorschläge";
+"EXPRESSION_SEARCH_NO_RESULTS" = "Nichts gefunden";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "Nimm an meinem Chat teil, um dieses Moji anzusehen: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "Hallo!\nNimm an meinem Chat auf Skype teil, um dieses Moji anzusehen, das ich dir gesendet habe: %@\nBis bald!";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "Sieh dir dieses Moji an";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "Hoppla!";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "Beim Teilen dieses Mojis ist ein Problem aufgetreten, versuchen Sie es später erneut.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Skype Store";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "Mojis und Emoticons werden geladen...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "Suchen";
+"EXPRESSION_STORE_FREE" = "Gratis";
+"EXPRESSION_STORE_REMOVE" = "Entfernen";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "Kostenloser Download";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "Download läuft";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "Heruntergeladen";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "Hoppla!";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "Es ist ein Problem beim Laden von Mojis und Emoticons aufgetreten.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "Es ist ein Problem bei der Suche nach Mojis und Emoticons aufgetreten. <a href=\"re-try fetching\">Erneut versuchen</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "Nach Emoticons und Mojis suchen";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "Hier werden die zuletzt verwendeten Emoticons angezeigt.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "Highlights";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "Für eine Vorschau doppeltippen.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "Zum Senden doppeltippen.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "Zum Schließen der Vorschau doppeltippen.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "Erneut wiedergeben";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Moji-Vorschau";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "Zum Senden erneut tippen.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Erlauben Sie den Mikrofon-Zugriff in den Einstellungen, damit %@ Sie hören kann. ";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Erlauben Sie den Mikrofon-Zugriff in den Einstellungen, damit alle Sie hören können. ";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Erlauben Sie den Kamera-Zugriff in den Einstellungen, damit %@ Sie sehen kann.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Erlauben Sie den Kamera-Zugriff in den Einstellungen, damit alle Sie sehen können.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "Maximale Teilnehmeranzahl für diesen Anruf erreicht";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "Für Anrufe benötigen Sie eine Netzwerkverbindung";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "Die Kamera ist in der geteilten Ansicht deaktiviert.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Video wird im Slide Over-Modus nicht unterstützt.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "Lautsprecher ist eingeschaltet";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "Doppeltippen, um den Lautsprecher auszuschalten.";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "Lautsprecher ist ausgeschaltet";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "Doppeltippen, um den Lautsprecher einzuschalten.";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "Anruf stumm geschaltet";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "Doppeltippen, um Stummschaltung aufzuheben.";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "Stummschaltung aufgehoben";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "Doppeltippen, um Gespräch stumm zu schalten.";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "Video ist eingeschaltet";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "Doppeltippen, um das Video auszuschalten.";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "Video ist ausgeschaltet";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "Doppeltippen, um das Video einzuschalten.";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "Eingehender";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "Ausgehender";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 Teilnehmer"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d Teilnehmer"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "Keine Teilnehmer"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%1$d von %2$d in diesem Anruf";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "%1$@ muss Skype aktualisieren, um an diesem Anruf teilzunehmen.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "%1$@ und %2$@ müssen Skype aktualisieren, um an diesem Anruf teilzunehmen.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "%1$@ und %2$@ müssen Skype aktualisieren, um an diesem Anruf teilzunehmen.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ",";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Eingehendes Skype-Anruf von %@";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Eingehender Gruppenanruf von %@ und %@";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Eingehender Gruppenanruf von %@, %@ und einer weiteren Person";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Eingehender Gruppenanruf von %@, %@ und %d weiteren Personen";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Eingehendes Videogespräch von %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Eingehender Gruppen-Videoanruf von %@ und %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Eingehender Gruppen-Videoanruf von %@, %@ und einer weiteren Person";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Eingehender Gruppen-Videoanruf von %@, %@ und %d weiteren Personen";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skype-Anruf an %@";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Gruppenanruf mit %@ und %@";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Gruppen-Anruf an %@, %@ und eine weiteren Person";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Gruppen-Anruf an %@, %@ und %d weitere Personen";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "Videoanruf an %@.";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "Videoanruf an %@ und %@.";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "Videoanruf mit %@, %@ und einer weiteren Person.";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "Videoanruf an %@, %@ und %d weitere Personen.";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skype-Anruf mit %@";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Gruppenanruf mit %@ und %@";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Gruppen-Anruf mit %@, %@ und einer weiteren Person";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Gruppen-Anruf mit %@, %@ und %d weiteren Personen";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Videoanruf mit %@";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Gruppen-Videoanruf mit %@ und %@";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Gruppen-Videoanruf mit %@, %@ und einer weiteren Person";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Gruppen-Videoanruf mit %@, %@ und %d weiteren Personen";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Wiederaufnahme des Skype-Anrufs mit %@";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Wiederaufnahme des Gruppen-Anrufs mit %@ und %@";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Wiederaufnahme des Gruppen-Anrufs mit %@, %@ und einer weiteren Person";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Wiederaufnahme des Gruppen-Anrufs mit %@, %@ und %d weiteren Personen";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Wiederaufnahme des Videoanrufs mit %@";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Wiederaufnahme des Gruppen-Videoanrufs mit %@ und %@";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Wiederaufnahme des Gruppen-Videoanrufs mit %@, %@ und einer weiteren Person";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Wiederaufnahme des Gruppen-Videoanrufs mit %@, %@ und %d weiteren Personen";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "Anruf wurde beendet";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "Anrufdauer";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "Aufnahme der Sprachnachricht läuft";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "Tage";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "Tag";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "Std.";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "Std.";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "Min.";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "Min.";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "Sek.";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "Sek.";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "Annehmen";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "Ablehnen";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> möchte Sie auf Skype\n\"%@\" als Kontakt hinzufügen"; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> hat Ihnen eine Nachricht aus <location>%@</location> gesendet"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "Jetzt <name>%@</name> begrüßen und zu Ihren Kontakten hinzufügen!";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ ist noch kein Kontakt.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "„%@“ <a href=\"edit-contact-request-message\">Bearbeiten</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "Kontaktanfrage senden";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "Zu Kontakten hinzufügen";
+"CONTACT_REQUEST_PENDING" = "Warten, dass <name>%@</name> die Kontaktanfrage annimmt.\n<a href=\"resend-request\">Kontaktanfrage erneut senden</a>";
+"CONTACT_REQUEST_BLOCKED" = "<name>%@</name> ist blockiert";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "Zulassen";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "Ja";
+"CONTACT_REQUEST_BLOCK_TITLE" = "Kontakt blockieren";
+"CONTACT_REQUEST_DECLINED_TITLE" = "Kontaktanfrage abgelehnt";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "Abbrechen";
+"CONTACT_REQUEST_BLOCK_ALERT" = "Möchten Sie diesen Kontakt blockieren?";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "Möchten Sie diese Person auch blockieren und melden?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "Blockieren";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "Blockieren und entfernen";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "Blockieren und melden";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "Teilnehmer hinzufügen";
+"CHAT_OPTION_START_NEW_GROUP" = "Neue Gruppe starten";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "Profil anzeigen";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "Benachrichtigungen";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "Benachrichtigungen für diesen Chat sind aktiviert.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "Benachrichtigungen für diesen Chat sind deaktiviert.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "Benachrichtigungen ein";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "Benachrichtigungen aus";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "Gruppe verlassen";
+
+"CHAT_OPTION_PARTICIPANTS" = "Teilnehmer anzeigen";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "EIN";
+"MK_SWITCH_OFF_MESSAGE" = "AUS";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "Ein- und ausschalten.";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "Neuer Chat";
+"NEWCHATSCENE_TITLE_TOKEN" = "An:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "& %d weitere Person"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "& %d weitere Personen"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "Kontakte auswählen";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Start";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Erstellen neuer Gruppe abbrechen";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Neue Gruppe erstellen";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "Sprachanruf";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "Videoanruf";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "Wähltasten";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "Abbrechen";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "Zurück";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "Meine Informationen";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "Medienmenü öffnen";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "Medienmenü schließen";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "Hilfe";
+"MY_INFO_FEEDBACK_ACTION" = "Feedback senden";
+
+"MY_INFO_CONNECTING" = "Verbindung wird hergestellt …";
+
+"MY_INFO_STATUS" = "Status";
+"MY_INFO_CREDIT" = "Skype-Guthaben";
+"MY_INFO_PROFILE_LINK" = "Mein Konto";
+"MY_INFO_SETTINGS" = "Einstellungen";
+"MY_INFO_SIGN_OUT" = "Abmelden";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "Persönliche Nachricht eingeben";
+"MY_INFO_MOOD_MESSAGE" = "Persönliche Nachricht";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "Zum Bearbeiten doppeltippen";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "Feedback senden";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "Anzeigebild ändern";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "Foto aufnehmen";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "Vorhandenes Foto auswählen";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "Profilbild entfernen";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "Einstellungen";
+
+"SETTINGS_GENERAL" = "Allgemein";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "Personalisierte Werbung zulassen";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "Microsoft erlauben, unter Verwendung Ihrer Skype-Profildaten personalisierte Anzeigen in dieser App anzuzeigen. <a href=\"skype.com\">Weitere Informationen</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "Chatbenachrichtigungen";
+"SETTINGS_PUSH_NOTIFICATIONS" = "Pushbenachrichtigungen";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Pushbenachrichtigungen";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "Sie erhalten Benachrichtigungen über neue Nachrichten, auch wenn Skype geschlossen ist.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "Sie erhalten keine Benachrichtigungen über neue Nachrichten, wenn Skype geschlossen ist.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "In-App-Benachrichtigungen";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "In-App-Benachrichtigungen";
+"SETTINGS_INAPP_SOUNDS" = "In-App-Sounds";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "In-App-Sounds";
+"SETTINGS_OTHER" = "Sonstige";
+
+"SETTINGS_PRIVACY" = "Datenschutz";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "So findet man Sie in Skype";
+"SETTINGS_PRIVACY_EXPLANATION" = "Diese Kontaktdetails können verwendet werden, um Sie bei Skype zu finden.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "Rufnummer hinzufügen";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "Profilbild";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "Für jeden sichtbar";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "Nur für meine Kontakte sichtbar";
+
+"SETTINGS_CONTACTS_HEADER" = "Kontakte";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "Freunde hinzufügen";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype prüft Ihre Kontakte und fügt Personen, die Sie kennen, automatisch zu Ihrer Skype-Kontaktliste hinzu.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "Sie müssen Freunde in Skype manuell suchen und hinzufügen.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "Weblink-Vorschau";
+
+"SETTINGS_EMOTICONS_HEADER" = "Emoticons";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "Große Emoticons verwenden";
+
+"SETTINGS_EDIT_BUTTON" = "Bearbeiten";
+"SETTINGS_DONE_BUTTON" = "Fertig";
+
+"SETTINGS_ABOUT" = "Info";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "Eigene Rufnummer eingeben";
+"PNV_HOW_IS_MY_NUMBER_USED" = "Wie wird meine Nummer verwendet?";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "Es können SMS-Standardtarife anfallen.";
+"PNV_ENTER_THE_CODE" = "Code eingeben";
+"PNV_CODE_SENT" = "Wir haben einen Code an Ihre Nummer gesendet:";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>Anrufen lassen</a> oder <a href='pnv://resendcode'>Code erneut senden</a>";
+"PNV_VERIFYING_NUMBER" = "Nummer wird bestätigt";
+"PNV_NUMBER_VERIFIED" = "Bestätigt";
+"PNV_NUMBER_USAGE_EXPLANATION" = "Ihre Nummer wird verwendet, damit Ihre Freunde Sie in Skype besser finden können. Darüber hinaus wird die Suche nach neuen Kontakten vereinfacht.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "Code";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "Um zu ändern, wie Sie gefunden werden können, gehen Sie in den Einstellungen zu „%@“ und entfernen oder deaktivieren Sie eine oder mehrere Ihrer Rufnummern.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "Wenn Sie Kontakte vorzugsweise manuell suchen und hinzufügen möchten, wählen Sie unten „%@“ aus.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Skype-Datenschutzrichtlinien";
+"PNV_NOT_NOW" = "Später";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Rufnummer";
+
+"PNV_WELCOME_HEADING" = "Die Suche nach Freunden ist jetzt einfacher";
+"PNV_WELCOME_PARAGRAPH" = "Fügen Sie einfach Ihre Telefonnummer hinzu und schon kann's losgehen.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Weiter";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "Hoppla!";
+"PNV_DEFAULT_ERROR_MESSAGE" = "Bei der Überprüfung Ihrer Nummer ist ein Problem aufgetreten. Versuchen Sie es später erneut.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "Sie haben die Höchstanzahl bestätigter Nummern erreicht. Löschen Sie eine Ihrer Nummern aus den Einstellungen, bevor Sie neue hinzufügen.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "Die Nummer ist ungültig. Überprüfen Sie Ihre Eingabe und versuchen Sie es erneut.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "An diese Nummer kann keine SMS gesendet werden. Überprüfen Sie Ihre Eingabe und versuchen Sie es erneut.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "Dieser Code ist offenbar abgelaufen. Wählen Sie unten „Erneut senden“, um einen neuen Code zu erhalten.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "Dieser Code ist offenbar falsch. Überprüfen Sie Ihre Eingabe und versuchen Sie es erneut.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "Es gab ein Problem mit Ihrer Netzwerkverbindung. Überprüfen Sie Ihre Netzwerkeinstellungen und versuchen Sie es erneut.";
+"PNV_ERROR_TRY_AGAIN" = "Erneut versuchen";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Freunde in Skype hinzufügen";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "Wir suchen in Skype nach Bekannten und fügen sie zu Ihren Kontakten hinzu.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Weitere Informationen";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "Um automatisch neue Skype-Kontakte hinzuzufügen, prüfen wir Ihr Adressbuch von Zeit zu Zeit, um Personen zu finden, die Sie kennen. Machen Sie sich keine Sorgen, wir senden keine Spam-Einladungen an Ihre Freunde.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "Wenn Sie es sich anders überlegen, können Sie „%@“ jederzeit in den Einstellungen deaktivieren. Ihr Adressbuch wird nicht mehr verwendet, um Personen zu finden, die Sie kennen, und Sie müssen Kontakte manuell hinzufügen.";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "Um zu ändern, wie Sie gefunden werden können, gehen Sie in den Einstellungen zu „%@“ und entfernen oder deaktivieren Sie eine oder mehrere Ihrer Rufnummern.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Skype-Datenschutzrichtlinien";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "Beachten Sie, dass Skype nicht für Notrufe verwendet werden kann";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "Die Suche nach Freunden ist soeben einfacher geworden";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "Es wurden neue Kontakte hinzugefügt";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "Kontakt hinzufügen";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "Abbrechen";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "Suchen";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Abbrechen";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "Suchen Sie nach Kontakten bei Skype, indem Sie den Skype-Namen, die E-Mail-Adresse oder den Vor- und Nachnamen eingeben.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "Bereits ein Skype-Kontakt";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "Keine Übereinstimmungen gefunden";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "Zurück";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "Vorwärts";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "Teilen";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "Info";
+"ABOUT_APPLICATION_VERSION" = "Skype-Version";
+"ABOUT_COPYRIGHT" = "© 2003–2016 Skype & Microsoft\nPatent angemeldet";
+"ABOUT_THIRD_PARTY_NOTICES" = "Hinweise zu Drittanbietern";
+"ABOUT_PRIVACY_POLICY" = "Datenschutzrichtlinien";
+"ABOUT_TERMS_OF_USE" = "Nutzungsbedingungen";
+"ABOUT_COPYRIGHT_TEXT" = "Der Name „Skype“, entsprechende Marken und Logos sowie das Symbol „S“ sind Marken von Skype oder verbundenen Unternehmen.\n\nHinweis: Dieses Computerprogramm ist durch Urheberrechtsgesetze und internationale Vereinbarungen geschützt. Unbefugte Vervielfältigung oder unbefugter Vertrieb dieses Programms oder eines Teils davon sind strafbar. Dies wird sowohl straf- als auch zivilrechtlich verfolgt und kann schwere Strafen und Schadenersatzforderungen zur Folge haben.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "Fehler";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "Per E-Mail";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "Ja, senden Sie mir Skype-News und Werbeaktionen per E-Mail";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Ja, senden Sie mir Skype-News und Werbeaktionen";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "Profilbild hinzufügen";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "E-Mail";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "hans@beispiel.de";
+"CREATEACCOUNT_FULLNAME_LABEL" = "Voller Name";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "Vorname";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "Nachname";
+"CREATEACCOUNT_PASSWORD_LABEL" = "Kennwort";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6–20 Zeichen";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "Kennwort wiederholen";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Skype-Name";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "Erforderlich";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "Telefonnummer";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "mit Landesvorwahl";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "Einige Felder wurden nicht ausgefüllt";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "Die Kennwörter stimmen nicht überein. Bitte prüfen und erneut versuchen.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Skype-Nutzungsbedingungen";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "Ja, ich habe die <a href='%1$@'>Skype-Nutzungsbedingungen</a> und die <a href='%2$@'>Skype-Datenschutzrichtlinien</a> gelesen und akzeptiere diese.";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "Keine Notrufe mit Skype";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype ist kein Ersatz für ein herkömliches Telefon und kann nicht für Notrufe verwendet werden. ";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "Ich stimme zu";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "Muss zwischen 6 und 20 Zeichen enthalten";
+"SkyLib::TOO_LONG" = "Muss zwischen 6 und 20 Zeichen enthalten";
+"SkyLib::CONTAINS_INVALID_CHAR" = "Ungültiges Zeichen wie Σ, à, ß";
+"SkyLib::CONTAINS_SPACE" = "Darf kein Leerzeichen oder Tab enthalten";
+"SkyLib::SAME_AS_USERNAME" = "Ähnelt dem Skype-Namen zu sehr";
+"SkyLib::INVALID_FORMAT" = "Ungültiges Format";
+"SkyLib::CONTAINS_INVALID_WORD" = "Zu einfach zu erraten, z.B. abcd, skype";
+"SkyLib::TOO_SIMPLE" = "Muss mindestens einen Buchstaben und eine Zahl enthalten";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "Muss mit einem Buchstaben (A-Z) beginnen";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "Versuchen Sie es mit einem neuen Skype-Namen.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "Versuchen Sie ein neues Kennwort.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "Versuchen Sie eine neue E-Mail-Adresse.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "Bitte erneut versuchen.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Skype-Name";
+"SkyLib::ACCOUNT_PASSWORD" = "Kennwort";
+"SkyLib::CONTACT_EMAILS" = "E-Mail";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> hat diese Gruppe umbenannt: \"%@\"";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Skype Home";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> hat das Gruppenfoto aktualisiert.";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> hat die Gruppe aktualisiert";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "Ausblenden";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "%d neue Benachrichtigungen";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "Eine neue Benachrichtigung";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "Keine neuen Benachrichtigungen";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "Hallo, ich würde Sie gerne in meine Skype-Kontaktliste aufnehmen.";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "Kontaktanfrage";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. In %3$@";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "würde Sie gerne in Skype hinzufügen";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "Später";
+"ALLOW_BUTTON" = "Zulassen";
+"PERMISSION_VIEW_TITLE" = "Einrichten";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Ihr Mikrofon.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Ihre Kamera.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Ihre Kontakte.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Ihre Benachrichtigungen.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Mikrofon und Kamera.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Mikrofon und Kontakte.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Mikrofon und Benachrichtigungen.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Kamera und Kontakte.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Kamera und Benachrichtigungen.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Kontakte und Benachrichtigungen.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Mikrofon, Kamera und Benachrichtigungen.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Mikrofon, Kontakte und Benachrichtigungen.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Mikrofon, Kamera und Benachrichtigungen.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Kamera, Kontakte und Benachrichtigungen.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Für ein optimales Skype-Erlebnis benötigen wir Zugriff auf Mikrofon, Kamera, Kontakte und Benachrichtigungen.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "Kontakte";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "Mikrofon";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "Kamera";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "Benachrichtigungen";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "Sind Sie sicher?";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "Ohne Zugriff auf diese Funktionen können Sie keine Anrufe tätigen bzw. entgegennehmen oder Benachrichtigungen über eingehende Anrufe und Nachrichten erhalten.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "Ihre Kontaktliste ist dann leer und Sie können in Skype keine Anrufe tätigen bzw. entgegennehmen.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Weitere Informationen";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "Mikrofon und Kamera";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "Damit Sie in Skype Anrufe tätigen bzw. entgegennehmen können, benötigen wir Zugriff auf Mikrofon und Kamera. Ohne diese Berechtigungen funktioniert Skype leider nicht.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "Kontakte";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "Zum Einrichten Ihrer Skype-Kontaktliste benötigen wir Zugriff auf Ihre Kontakte. Wir prüfen Ihre Kontakte von Zeit zu Zeit, um Personen in Skype zu finden, die Sie kennen. Machen Sie sich keine Sorgen, wir senden keine Spam-Einladungen an Ihre Freunde.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "Wenn Sie es sich anders überlegen, können Sie „%@“ jederzeit in den Einstellungen deaktivieren. Ihr Adressbuch wird nicht mehr verwendet, um Personen zu finden, die Sie kennen, und Sie müssen Kontakte manuell hinzufügen";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "Benachrichtigungen";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "Um Sie auch dann über eingehende Anrufe und Nachrichten zu informieren, wenn Skype geschlossen ist, benötigen wir Zugriff auf Benachrichtigungen. Sie können auch zu einem späteren Zeitpunkt einzelne Chat-Benachrichtigungen deaktivieren, wenn Sie nicht gestört werden möchten.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "Zugriff auf Kontakte erlauben";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Skype benötigt Zugriff auf Kontakte, um Personen zu finden, die Sie kennen. Gehen Sie zu „Einstellungen“ und aktivieren Sie den Zugriff auf Kontakte.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "Überspringen";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "Verbinden";
+"ONBOARDING_GET_STARTED_BUTTON" = "Erste Schritte";
+
+"ONBOARDING_IPHONE_TITLE1" = "Neu gestaltet für das iPhone";
+"ONBOARDING_IPAD_TITLE1" = "Neu gestaltet für das iPad";
+"ONBOARDING_TEXT1" = "Skype ist einfacher zu verwenden als jemals zuvor – egal, ob sie Freunden schreiben oder einen Anruf tätigen.";
+
+"ONBOARDING_TITLE2" = "Überall suchen";
+"ONBOARDING_TEXT2" = "Suchen Sie nach Personen, Gruppen oder sogar alten Unterhaltungen.";
+
+"ONBOARDING_IPHONE_TITLE3" = "Mehr erledigen";
+"ONBOARDING_IPAD_TITLE3" = "Mehr Skype-Funktionen";
+
+"ONBOARDING_IPHONE_TEXT3" = "Teilen Sie Ihren Standort und Fotos oder sehen Sie sich eine Vorschau auf Weblinks an – und das während Sie mit Freunden Neuigkeiten austauschen.";
+"ONBOARDING_IPAD_TEXT3" = "Verwenden Sie größere Emoticons, eine Vorschau auf Weblinks und erstellen Sie neue Gruppen direkt über Ihr iPad.";
+
+"ONBOARDING_TITLE4" = "Mit Freunden macht Skype gleich noch viel mehr Spaß";
+"ONBOARDING_TEXT4" = "Fügen Sie Ihre Telefonnummer hinzu, damit Ihre Freunde Sie in Skype besser finden können.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "Teilen leicht gemacht";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Tippen Sie einfach auf die Freigabeschaltfläche, um auf Skype Websites oder Fotos aus Ihren Aufnahmen an Freunde zu senden.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "Teilnehmer hinzufügen";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "Hinzufügen:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "Bereits ein Teilnehmer";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "Bereits ein Teilnehmer";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "In diesem Anruf";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "Nicht in diesem Anruf";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "Verbinden…";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "Verbinden mit %@";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "Anrufen...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "%@ anrufen";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "Anruf wird gehalten";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "Anruf für %@ wird gehalten";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "Favoriten hinzufügen";
+"ADDFAVORITES_EMPTY_TITLE" = "Bringen Sie alle Ihre bevorzugten Kontakte zusammen, <a href=\"add-favorites\">Favoriten hinzufügen</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "Skype-kontakte";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "Dateiübertragung";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ eine weitere Datei";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ %d weitere Dateien";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "Sie haben diese Datei von einem anderen Gerät gesendet.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "Sie haben diese Dateien von einem anderen Gerät gesendet.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "Diese Version von Skype unterstützt den Empfang von Dateien nicht.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "Diese App unterstützt nur die neuen Fotoaustauschfunktionen von Skype.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "Sie haben eine Datei gesendet.";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "Sie haben %d Dateien gesendet.";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "hat Ihnen eine Datei gesendet.";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "Hat %d Dateien gesendet";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "Online";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "Beschäftigt";
+"CONTACT_AVAILABILITY_AWAY" = "Abwesend";
+"CONTACT_AVAILABILITY_INVISIBLE" = "Als offline anzeigen";
+"CONTACT_AVAILABILITY_OFFLINE" = "Offline";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "Verfügbar";
+"CONTACT_AVAILABILITY_BUSY" = "Beschäftigt";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "Blockiert";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Dieser Kontakt ist ein Favorit. Zum Entfernen aus den Favoriten doppeltippen.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Dieser Kontakt ist kein Favorit. Zum Hinzufügen zu den Favoriten doppeltippen.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Diese Gruppe ist nicht in Ihren Favoriten. Zum Hinzufügen zu den Favoriten doppeltippen.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Diese Gruppe ist in Ihren Favoriten. Zum Entfernen aus den Favoriten doppeltippen.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@ %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@ %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "SKYPE-NAME";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "WEBSITE";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "ÜBER MICH";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "GEBURTSTAG";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "GESCHLECHT";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "SPRACHE";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "KONTAKTE";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "FUNKTIONEN";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "DATENSCHUTZ";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "ERSTELLT VON";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "BESCHREIBUNG";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "Senden und empfangen Sie Chatnachrichten und Fotos.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "Dieser Bot hat Zugriff auf Ihren Anzeigenamen, Skype-Namen und auf alle Chatnachrichten oder Inhalte, die Sie oder andere Gruppenteilnehmer mit ihm teilen.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "Weiblich";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "Männlich";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "Kontakt blockieren";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "Kontakt zulassen";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "Kontakt entfernen";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "Kontakt entfernen";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "%@ wird aus Ihrer Kontaktliste entfernt.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "Entfernen";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "Abbrechen";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "Ausblenden";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "Gruppenprofil";
+"GROUPPROFILE_NOTIFICATIONS" = "Benachrichtigungen";
+"GROUPPROFILE_MENU_TITLE" = "Profil anzeigen";
+"GROUPPROFILE_LEAVE_CHAT" = "Gruppe verlassen";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "Teilnehmer";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "Einladen";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "Chat-Einladungen";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "Chatverlauf ist für alle sichtbar.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "Aktivieren Sie Chat-Einladungen, um jeden zu diesem Chat einzuladen.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "Es können nur Skype-Kontakte zu diesem Chat hinzugefügt werden.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "Laden Sie jeden zu diesem Chat ein, selbst wenn die Person nicht bei Skype ist.";
+"GROUPPROFILE_CHAT_HISTORY" = "Chatverlauf";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "Der Chat-Verlauf ist derzeit für neue Teilnehmer ausgeblendet.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "Der Chat-Verlauf ist für jeden sichtbar.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "Teilnehmer hinzufügen";
+"GROUP_ADMIN_STRING" = "%@ (Administrator)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "Chat-Einladungen";
+"GROUPPROFILE_ALERT_BODY" = "Die Einladung für diesen Chat ist momentan nicht verfügbar. Bitte versuchen Sie es später erneut.";
+"GROUPPROFILE_ALERT_BUTTON" = "OK";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Meinem Chat auf Skype beitreten: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "Meinem Chat beitreten";
+"INVITES_MAIL_BODY" = "Hallo!\nIch habe für uns auf Skype eine Gruppe eingerichtet, in der wir chatten, teilen und zusammenarbeiten können.\nKlicke auf den Link, um ihr beizutreten:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "Gruppe umbenennen";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "Gruppe umbenennen";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "Kontakt umbenennen";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "Zum Umbenennen des Kontakts doppelt tippen";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "Bot hinzufügen";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "Kontaktanfrage senden";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "Kontaktanfrage erneut senden";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "Kontaktanfrage gesendet";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "Annehmen";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "Ablehnen";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "<name>%@</name> möchte Sie gerne bei Skype hinzufügen"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "Öffnen";
+"PUSH_CHAT_CALL" = "Anrufen";
+"PUSH_CHAT_TEXT_REPLY" = "Antworten";
+"PUSH_CALL_ANSWER" = "Annehmen";
+"PUSH_CALL_DECLINE" = "Ablehnen";
+"PUSH_CALL_VIDEO_VIDEO" = "Video­";
+"PUSH_CALL_VIDEO_AUDIO" = "Sprach­e";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "Nachricht";
+"PUSH_MISSED_CALL_CALLBACK" = "Rückruf";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "Problem mit Kontakten";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "Es gab ein Problem beim Zugriff auf die Rufnummern Ihrer Kontakte. Versuchen Sie, Ihr E-Mail-Konto über „Einstellungen“ neu zu synchronisieren, um das Problem zu beheben.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "Rufnummer speichern";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "Keine Treffer in der Anrufliste gefunden.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "Einen Treffer in der Anrufliste gefunden.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "%d Treffer in Anrufe.";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@); zuletzt angerufen: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@, letzter Anruf: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@ ist ein Adressbuchkontakt.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Über Skype in Kontakt treten";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@ ist ein Adressbuchkontakt. Sie können jetzt über Skype miteinander sprechen und chatten.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Noch kein Skype-Kontakt";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "Text löschen";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Abbrechen";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "In Skype suchen";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "Neue Kontakte finden";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "Hier tippen, um neue Kontakte zu finden";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "Nach \"%@\" suchen";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Skype-Verzeichnis";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "Suchverlauf";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "Löschen";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "Kontakte";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "Keine Übereinstimmungen gefunden";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "Gruppen";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "Unterhaltungen";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "Nummer speichern";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "Nummer speichern";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "Namen eingeben";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "Nummer eingeben";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "Die Nummer wird gespeichert.";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "Die Nummer wurde gespeichert.";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "Ungültige Nummer";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "Sie dürfen keine ungültigen Nummern hinzufügen. Versuchen Sie es mit einer anderen Nummer.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "Ungültige Nummer";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "Sie dürfen keine Notrufnummern bei Skype hinzufügen.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "Verwerfen";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "Möchten Sie\n\n%@ anrufen?";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "Möchten Sie einen Videoanruf mit \n\n%@ führen?";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "Sprachanruf";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "Videoanruf";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "Anrufen";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "Original anzeigen";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "Übersetzung anzeigen";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "Sie haben einen Standort freigegeben";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "hat einen Standort für Sie freigegeben";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "hat den Standort (%@) freigegeben";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "Zum Öffnen doppeltippen";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "Route zum Standort";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "Standort";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "Eigenen Standort freigeben";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "Standort wurde gesendet";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "Standortzugriff";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "Ohne die Berechtigung zu erteilen, auf Ihren Standort zuzugreifen, können Sie Ihren Standort nicht über Skype für Ihre Freunde freigeben.";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Gehen Sie in den Geräteeinstellungen zu „Datenschutz“, um die Berechtigung zu erteilen.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "Zugriff auf Kontakte";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "Wir benötigen Zugriff auf Ihre Kontakte, bevor wir Ihr Adressbuch in Skype anzeigen können.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "Gehen Sie zu den Geräteeinstellungen und dann zu „Datenschutz“, um die Berechtigung zu erteilen.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "Oh, oh";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "Beim Laden der Karte ist ein Problem aufgetreten.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "Überprüfen Sie Ihre Netzwerkverbindung und versuchen Sie es erneut.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "Löschen";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "Anmerkungen löschen";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "Freigeben des Standorts";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "Sie können Ihren Standort nicht mehr für diesen Chat freigeben.";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "Den Standort freigeben";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "Suchen";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "Keine Ergebnisse gefunden";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "Beim Suchen dieses Standorts ist ein Problem aufgetreten. Bitte warten Sie und versuchen Sie es später noch einmal.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Startseite";
+"TIMELINE_ICON_DIALPAD" = "Wähltastatur";
+"TIMELINE_ICON_PEOPLE" = "Kontakte";
+"TIMELINE_SWIPEACTION_MUTE" = "Stumm";
+"TIMELINE_SWIPEACTION_UNMUTE" = "Stummschaltung aufheben";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "Push-Benachrichtigungen";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "Durch Aktivieren von Push-Benachrichtigungen erhalten Sie Anruf- und Nachrichtenhinweise, wenn Sie per Skype nicht erreichbar sind.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "Um Anruf- und Nachrichtenhinweise zu erhalten, wenn Sie per Skype nicht erreichbar sind, müssen Sie auf Ihrem iPhone unter „Einstellungen > Mitteilungszentrale“ Skype-Benachrichtigungen aktivieren.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "Um Anruf- und Nachrichtenhinweise zu erhalten, wenn Sie per Skype nicht erreichbar sind, müssen Sie auf Ihrem iPhone unter „Einstellungen“ und „Mitteilungszentrale“ Skype-Benachrichtigungen aktivieren.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "Push-Benachrichtigungen";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "Um Push-Benachrichtigungen zu empfangen, müssen Sie in den Geräteeinstellungen Skype-Benachrichtigungen aktivieren.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "Öffnen";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "Anzeigen";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "Anhören";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "Abspielen";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Beim Öffnen der Nachricht ist ein Problem aufgetreten, überprüfen Sie Ihre Netzwerkverbindung und versuchen Sie es erneut.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "hat eine Mediendatei freigegeben";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "Zum Öffnen doppeltippen";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "Die Quelle ist nicht vertrauenswürdig.";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "Foto";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "Foto aufnehmen";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "Vorhandenes Foto auswählen";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "Vorhandenes Foto oder Video auswählen";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "Abbrechen";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "Auswählen";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "Zum Schließen doppeltippen";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "hat ein Foto gesendet. Zum Öffnen doppeltippen";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "Videoempfang";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "Videoversand";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "Beim Senden dieses Fotos ist ein Problem aufgetreten.";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "Beim Empfangen dieses Fotos ist ein Problem aufgetreten.";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "Doppeltippen, um es erneut zu versuchen.";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "Senden";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "Abbrechen";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "Das Video kann nicht gesendet werden, da es größer als %d MB ist";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "Das Foto kann nicht gesendet werden, da es größer als %d MB ist";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "Hat eine Videonachricht gesendet. Zum Öffnen doppeltippen";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "Videomitteilung wird empfangen";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "Video wird gesendet";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "Beim Senden dieser Videomitteilung ist ein Problem aufgetreten";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "Beim Empfangen dieser Videomitteilung ist ein Problem aufgetreten";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "Datei gesendet. Zum Herunterladen doppeltippen";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "Datei empfangen. Zum Öffnen doppelt tippen.";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "Download läuft";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "%@ heruntergeladen. Zum Öffnen doppeltippen";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "Die Datei ist größer als %d MB. Es fallen ggf. Datengebühren an";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "Datei nicht verfügbar";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "Neu starten";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "Beim Empfangen dieser Datei ist ein Problem aufgetreten";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "Diese Datei ist potentiell unsicher";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "Download nicht möglich, Virus gefunden";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "Es wird auf die Internetverbindung gewartet…";
+"FILE_TRANSFER_BUTTON_CANCEL" = "Abbrechen";
+"FILE_TRANSFER_BUTTON_RETRY" = "Erneut versuchen";
+"FILE_TRANSFER_LABEL_CANCELED" = "Abgebrochen";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "Herunterladen";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "Weitere Informationen";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "Freigegebene Dateien werden nach %d Tagen von Skype gelöscht. Wenn Sie eine Datei länger behalten möchten, speichern Sie sie auf Ihrem Gerät.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "Datei nicht verfügbar";
+"FILE_SENDING_LABEL_ERROR" = "Problem beim Senden der Datei";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "Datei annehmen?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "Nur Dateien von vertrauenswürdigen Personen annehmen. Möchten Sie die Datei %@ von %@ annehmen?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "Warnung: Diese Datei ist möglicherweise für Ihren Computer/Ihr Gerät nicht sicher";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "Möchten Sie die Datei %@ von %@ annehmen?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "Nicht erneut fragen";
+"FILE_TRANSFER_ACCEPT" = "Annehmen";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "Nicht genügend Speicherplatz";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "Gehen Sie zu Einstellungen > Allgemein > Benutzung, um Speicherplatz auf diesem Gerät freizumachen.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "Der Nutzer hat der Anwendung den Zugriff auf seine Medien verweigert";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "Um diesen zu erlauben, gehen Sie zu Einstellungen > Datenschutz > Fotos und aktivieren Sie Skype.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "Sie haben ein Foto gesendet";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "hat Ihnen ein Foto gesendet";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "%@ hat ein Foto gesendet.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "Dieses Gerät unterstützt die neuen Fotoaustauschfunktionen von Skype noch nicht, aber Sie können es sich hier im Browser ansehen: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "Foto nicht verfügbar";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "Dieses Foto ist momentan nicht verfügbar.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "Abbrechen";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "Erneut versuchen";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "Foto nicht verfügbar";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "Dieses Foto ist momentan nicht verfügbar.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "OK";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "Foto speichern";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "Abbrechen";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "Hoppla!";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "Beim Speichern dieses Fotos ist ein Problem aufgetreten.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "Erneut versuchen";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "Abbrechen";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "Webmedien";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "Giphy suchen";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Skype aktualisieren";
+"FORCE_UPGRADE_CAPTION" = "Ihre Version von Skype ist veraltet. Laden Sie die aktuelle Version herunter, um von neuen Funktionen und Verbesserungen zu profitieren.";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "Jetzt herunterladen";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "hat Ihnen ein Moji gesendet";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "Sie haben ein Moji gesendet";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "Moji wird heruntergeladen";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "Beim Herunterladen dieses Moji ist ein Problem aufgetreten";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "Doppeltippen, um es erneut zu versuchen";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "Moji abspielen";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "Dieser Inhalt wurde entfernt";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "Dieser Inhalt ist abgelaufen";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "Zuletzt gesehen: vor Kurzem";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "Zuletzt gesehen: vor über einer Woche";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "Telefon";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "Freunde, Nachrichten und neue Kontakte sofort finden";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Skype-Emojis";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "Noch mehr Moji-Spaß mit Clips aus %@!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "Suchfeld";
+
+"TAB_RECENT_TITLE" = "Kürzlich verwendet";
+"TAB_CONTACTS_TITLE" = "Kontakte";
+"TAB_CALLS_TITLE" = "Telefone anrufen";
+"TAB_MYINFO_TITLE" = "Mein Profil";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "Alle";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "Ungelesen";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "Alle";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "Online";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "Vielen Dank!";
+"APPSTORE_RATING_SUBTITLE" = "Teilen Sie Ihre Begeisterung und hinterlassen Sie eine Bewertung im App Store. Es dauert auch nicht lange.";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "App bewerten";
+
+"CONTACTS_ADD_FAVORITES" = "Favoriten hinzufügen";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "Kontakte suchen";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "Keine Internetverbindung";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "Sie sind offline. <a href=\"reconnect\">Erneut verbinden</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Probleme in Skype";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "Verbindung wird hergestellt";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "Verbunden";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "Unterhaltungen werden aktualisiert…";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "Chat löschen";
+"DELETECHAT_ALERT_MESSAGE"              = "Wollen Sie diesen Chat vom Gerät löschen? Auch der Chatverlauf wird gelöscht.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "Löschen";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "Bearbeiten";
+"LIST_EDITING_CANCEL" = "Abbrechen";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "Alle als gelesen m.";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "Als gelesen markieren";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "Alle löschen";
+"LIST_EDITING_DELETE_TOOLBAR" = "Löschen (%d)";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "Alle Chats löschen";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "Alle löschen";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "Alle ausblenden";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "Sehe ich mir später an";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "Neuer Anruf";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "Wird gehalten";
+"CALLING_BANNER_STATUS_MUTED" = "Stummgeschaltet";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Skype-zertifiziert";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "Neuen Gruppenanruf starten";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "Neuer Gruppenanruf wird gestartet";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "Ihr aktueller Anruf wird beendet (bitte geben Sie Ihrem Gesprächspartner Bescheid) und Ihr neuer Gruppenanruf wird gestartet";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "Anrufen";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "Abbrechen";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "hat eine <a href=\"%@\">Gruppenunterhaltung</a> erstellt.";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "Videonachricht zum Valentinstag senden";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "Videonachrichten zum Valentinstag";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "Versüßen Sie einer geliebten Person den Tag";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "Liebe schenken";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "Versüßen Sie einer geliebten Person den Tag, indem Sie ihr eine Nachricht zum Valentinstag senden.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "Nicht jetzt";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "An Kontakte senden";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "Video teilen";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "Fröhlichen Valentinstag";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "Fröhlichen\nValentinstag";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "Ich habe nur für dich eine besondere Videonachricht zum Valentinstag aufgenommen. Erstelle unter https://go.skype.com/vmhci deine eigene";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "Eine besondere Nachricht für dich zum Valentinstag …";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "Stumm";
+"INCALLCONTROLS_VIDEO_CAPTION" = "Video­";
+"INCALLCONTROLS_AUDIO_CAPTION" = "Lautsprecher";
+"INCALLCONTROLS_ADD_CAPTION" = "Hinzufügen";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "Mehr";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "Wähltastatur";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "Weitere Aktionen";
+"GVC_CALLING_ME_ON_RIBBON" = "Ich";
+
+"GVC_NOTIFICATION_HUNG_UP" = "%@ hat den Anruf verlassen";
+"GVC_NOTIFICATION_JOINED" = "%@ ist dem Anruf beigetreten";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "Erstellen Sie eine Gruppe – jetzt auch mit Gruppen-Videoanrufen.";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "Starten Sie einen Gruppen-Videoanruf direkt von Ihrem Chat aus.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "Versuchen Sie, die Ansicht zu ändern.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "Tippen Sie erneut, um diese Person zu lösen.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "Ändern Sie diesen Anruf in einen kostenlosen Gruppen-Videoanruf.";
+"GVC_INTERSTITIAL_TITLE" = "Begrüßen Sie Gruppen-Videoanrufe";
+"GVC_INTERSTITIAL_CAPTION" = "Bringen Sie alle zusammen, jederzeit und kostenlos.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "Verstanden!";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "Teilnehmer hinzufügen";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";

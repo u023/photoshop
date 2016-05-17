@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "%@ 已傳送視訊留言給您";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "%@ 已傳送照片給您";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "%@ 已傳送 Moji 給您";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "%@ 已傳送語音留言給您";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "%@ 已傳送檔案給您";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "收到新的讚";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "我的帳戶";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "傳送意見";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "全部標示為已讀";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "新增人員";
+"HELP_NAVBAR_BUTTON" = "說明";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "您有未讀取的意見。";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "開發人員意見";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "顯示";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "取消";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "新增到常用列表";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "從常用列表移除";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "透過功能表將任何聯絡人新增為常用聯絡人。";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "登出";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "%@ 來電";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "來自 %@ 的視訊通話";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "群組通話來自 %@";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "影像留言來自 %@。";
+"BACKGROUND_MISSEDCALL_ONE" = "來自 %@ 的未接來電。";
+"BACKGROUND_MISSEDCALL_GROUP" = "未接聽群組通話（%@）";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "新聯絡人請求，來自：%@。";
+"BACKGROUND_VOICEMAIL_ONE" = "新語音留言來自 %@。";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "請檢查您的網路設定並再試一次。";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "接聽";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "拒絕";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "新增到通話";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "結束通話";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "結束通話";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "視訊留言";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "傳送視訊留言";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "取消";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "完成";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "設定";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "建立帳戶";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "建立帳戶";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "%@ 為無效電話號碼。請檢查並再試一次。";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "通訊錄";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "國碼 (地區碼) 或地區";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "變更國碼 (地區碼) 或地區。";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "變更國碼 (地區碼) 或地區。";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "搜尋";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "電話號碼";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "關閉";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "開啟";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "建立活動";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "顯示行事曆";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "複製";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "新增至閱讀列表";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "在 Safari 中開啟";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "編輯";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "引文";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "%3$@ 在 %1$@%2$@ 寫下:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "刪除";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "轉接";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "轉接";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "分享";
+"SHARE_MESSAGE_TITLE" = "分享";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "載入中";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "點兩下可取消";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "視訊啟動中…";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "來電已轉接";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "視訊";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "撥號盤";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "恢復通話";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "技術通話資訊";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "通話選項";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ 想要與您分享視訊";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ 不是您的聯絡人，但想要與您分享視訊。";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "此通話的參與者已啟用視訊。";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "您確定要接受此通話的視訊?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "接受";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "拒絕";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "新增參與者";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "輕點兩下可新增參與者。";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "密碼";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "登入";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Skype 名稱";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Skype 名稱、電子郵件或行動電話";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "您的帳戶";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "選取您要使用的帳戶。";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Skype 帳戶";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Microsoft 帳戶";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "登入";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "選取您要用來登入 Skype 的帳戶類型。";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Microsoft 帳戶";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Skype 名稱";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "個人化您的設定檔";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "新增相片";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "變更相片";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "登入";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "無法登入?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "確定";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "好，瞭解了";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "繼續";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "現在不要";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "瞭解詳情";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "設定";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "不需要再次提醒";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "開啟通知";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "清除文字";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "傳送";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "通話，";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "通話";
+"CHAT_CALL_EVENT_CALL_STARTED" = "通話開始";
+"CHAT_CALL_EVENT_NO_ANSWER" = "撥打，無人接聽";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "未接來電";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "%d 通未接來電";
+"CHAT_CALL_EVENT_BUSY" = "撥打，忙線中";
+"CHAT_CALL_EVENT_BLOCKED" = "已封鎖";
+"CHAT_CALL_EVENT_FAILED" = "通話失敗";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "本次通話的品質如何？";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "感謝您提供意見。";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "極差";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "不良";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "普通";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "良好";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "極佳";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "通話";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "通話，%@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "通話";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "通話，%@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "通話失敗";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "未接來電";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "撥打，無人接聽";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "通話，已封鎖";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "已傳送";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "已送達";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "讀取";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "已傳送";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "已送達";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "讀取";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "%@ 已建立新群組。";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "%@ 已建立成員包含 %@ 的新群組。";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "%@ 已建立成員包含 %@ 和 %@ 的新群組。";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "%@ 已建立成員包含 %@、%@ 和另一人的新群組。";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "%@ 已建立成員包含 %@、%@ 和其他 %u 人的新群組。";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "今天是 <name>%@</name> 的生日";
+"CHAT_GRANTED_AUTH" = "您已分享您的聯絡方式";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "%@ 已將 %@ 加入此群組";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "新增至此群組的機器人可存取每位參與者的「Skype 名稱」、「顯示名稱」，以及任何在群組中分享的新聊天訊息或新內容。";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "歡迎! 此群組包含一或多個機器人。它們可以存取每位參與者的「Skype 名稱」、「顯示名稱」，以及任何在群組中分享的新聊天訊息或新內容。";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "%@ 已加入群組";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "%@ 已離開群組";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "%@ 已將 %@ 從此群組中移除";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "%@ 的來賓帳戶已過期";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "您已封鎖 %@";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "%@ 已將 %@ 的角色變更為 %@";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "建立者";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "管理員";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "參與視訊成員";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "可傳送訊息成員";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "可發言成員";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "申請加入者";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "已離開成員";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "被禁止加入成員";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "角色已變更";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "未命名的交談";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "顯示聊天";
+"CONVERSATION_HIDE_CHAT" = "隱藏聊天";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "顯示側邊欄";
+"CONVERSATION_HIDE_TIMELINE" = "隱藏側邊欄";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "切換為方格檢視";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "切換為個別檢視";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "加入通話";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "加入進行中通話";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "顯示<a href=\"jump\">歷史聊天</a>記錄";
+"CHAT_GOTO_NEW_CHAT" = "此聊天室已更新為新版本。<a href=\"jump\">前往新的聊天室</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "%@ 需要更新 Skype 才能加入此聊天室。 帶他們前往 skype.com/updateme 提供協助。<a href=\"https://support.skype.com/faq/FA12361/\">進一步瞭解新的群組聊天</a>。";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "%@ 需要更新 Skype 才能加入此聊天室。 帶他們前往 skype.com/updateme 提供協助。<a href=\"https://support.skype.com/faq/FA12361/\">進一步瞭解新的群組聊天</a>。";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ 現在可以加入此聊天室。";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "開啟一對一聊天。";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "微笑";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "悲傷";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "大笑";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "酷";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "驚訝";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "眨眼";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "哭泣";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "流汗";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "啞口無言";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "親一個";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "吐舌頭";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "害羞";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "思考中";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "想睡";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "翻白眼";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "戀愛";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "奸笑";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "祝你好運";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "打哈欠";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "嘔吐";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "哼!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "生氣";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "不是我啦";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "歡樂";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "擔心";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "嗯嗯嗯"; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "阿宅";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "守口如瓶";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "揮手";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "失望";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "惡魔";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "天使";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "嫉妒";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "等待";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "擁抱";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "化妝";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "嘻嘻笑";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "拍手";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "思考中";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "鞠躬";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "捧腹大笑";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "鬆一口氣";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "好心情";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "嘻嘻笑";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "點頭";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "搖頭";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "等待";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "耍帥";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "是";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "遜啦";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "握手";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "擊掌";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "愛心";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "充耳不聞";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "松鼠";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "花";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "下雨";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "太陽";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "無言";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "音樂";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "搶匪";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "太多資訊";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "咖啡";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "披薩";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "錢";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "肌肉";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "蛋糕";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "啤酒";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "雞尾酒";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "跳舞";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "忍者";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "星星";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "露屁股";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "電話";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "中指";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "泳池派對";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "心碎";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "酒醉";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "罵髒話";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "電影";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "抽菸";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "時鐘";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "人與狗";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "照相";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "您有新郵件";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "搖滾";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "拳擊";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "撞牆";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "打電話給我";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "在家工作";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "蟲";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "對話";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "趾高氣昂";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "戴帽子";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "足球員";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "不想理你";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "思考中";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "羊";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "貓";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "腳踏車";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "狗";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "表情符號: %@";
+
+"EMOTICON_TYPE_FLAG" = "國旗: %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "若要在 Skype 上新增聯絡人，請<a href=\"add-people\">搜尋 Skype 通訊錄</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "您在 Skype 上沒有聯絡人。";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "我們尚未在您的通訊錄中找到任何 Skype 聯絡人。<a href=\"add-people\">新增聯絡人</a>。";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "我們在您的通訊錄中沒有找到任何 Skype 聯絡人。";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "搜尋 Skype 通訊錄"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "在 Skype 上尋找認識的人"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "搜尋您認識的人"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "輕點兩下可取消搜尋。";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "看起來還不賴！";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "準備好時，請按下錄製。";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "取消錄製";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "重新錄製";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "取消";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "您收到一則新的影像留言。 只要直接複製此密碼 %2，即可在此觀看您的影像留言： %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "取消";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "記錄";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "停止";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "傳送";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "預覽";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "切換為前方攝影機";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "切換為後方攝影機";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "錄製長度";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "視訊效果";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "標準";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "氣球";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "熊";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "萬花筒";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "像素化";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "擠壓";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "膨脹";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "X 光";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "海報";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "雪";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "鏡子";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "愛心";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "化妝舞會";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "萬聖節";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "字幕語言";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "字幕將會在錄製完成後出現";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "正在建立字幕...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "無法建立字幕";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "正在聆聽";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "影像留言";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "您不能再傳送影像留言到此聊天中。";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "確定";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "刪除視訊";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "您確定要刪除此視訊留言嗎?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "刪除";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "取消";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "刪除視訊留言";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "播放";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "暫停";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "語音留言";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "語音留言，%@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "播放語音留言";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "停止播放";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "影像留言";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "可播放";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "正在上傳";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "無法使用";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "播放視訊留言";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "使用前方攝影機";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "使用後方攝影機";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "錄製中";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "已停止";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "傳送中";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "未傳送 - 正在等候網際網路連線...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "請檢查您的連線狀況，然後稍後再試一次。";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "未接收 - 正在等候網際網路連線...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "無法使用視訊";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "無法使用視訊";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ 正在傳送一張照片";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "無法登入?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "登入有問題";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "無法連線至 Skype，請再試一次。";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "無法連線至 Microsoft，請檢查您的網路設定後再試一次。";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "無法連線至 Microsoft，請再試一次。";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "很抱歉，您無法使用此 Microsoft 帳戶登入 Skype，因為您不符合貴國家/地區的最小年齡限制。";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "很抱歉請檢查登入資訊";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "系統無法辨識這些登入詳細資料，請檢查並再試一次。";
+"LOGIN_PROBLEM_NO_NETWORK" = "無法登入，請檢查您的網際網路連線後再試一次。";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Skype 點數";
+"IAP_PURCHASE_BUTTON" = "新增 %@ 點數";
+"IAP_CALLPHONES" = "撥打電話";
+"IAP_SEND_SMS" = "傳送簡訊";
+"IAP_WITHSKYPECREDIT_TITLE" = "為何要支付 Skype 點數?";
+"IAP_WITHSKYPECREDIT_BODY" = "因為您可以用低費率撥打到行動電話和有線電話，或是傳送手機簡訊，以聯絡不在 Skype 上的人。";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Skype 網內通話不收取任何費用，但只要擁有一些點數，您就能享受更多功能。";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "目前餘額 %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "貨幣轉換"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "%@ 將會轉換成 %@ 以增加您的 Skype 點數餘額。";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "瞭解詳情";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "依歐洲中央銀行 %@ 的匯率轉換。";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "您的 App Store 貨幣和 Skype 貨幣不相符。我們將會針對此次購買轉換 App Store 貨幣。";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "若要變更這些設定，請登入 Skype.com 並在 [我的帳戶] 選取 [變更貨幣]。";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "點數不足";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "您沒有足夠的 Skype 點數來撥打此號碼。";
+"IAP_CALL_NO_CREDIT_TITLE" = "沒有點數";
+"IAP_CALL_NO_CREDIT_BODY" = "您需有 Skype 點數才能撥打此號碼。";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "您已購買成功";
+"IAP_RESULT_SUCCESS_1_BODY" = "%@ 已加到您的 Skype 帳戶。";
+"IAP_RESULT_SUCCESS_2_BODY" = "%@ 正加到您的 Skype 帳戶。";
+"IAP_RESULT_SUCCESS_3_BODY" = "%@ 已加到您的 Skype 帳戶。";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "您的前一個 Skype 點數訂單現已完成。 %@ 已加到您的 Skype 帳戶。";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "您先前的 Skype 點數訂單目前正在處理中。";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "您先前的 Skype 點數訂單已成功完成。";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "已取消您的購買";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "很抱歉！";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "我們無法處理您的訂單，請稍後再試。";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "目前無法完成您的購買程序，但我們會繼續嘗試。您的購買程序一旦完成後，我們將會通知您。";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "目前無法完成您先前的 Skype 點數購買程序，但我們會繼續嘗試，您的購買程序一旦完成後，我們將會通知您。";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "請先閱讀並接受 Skype 使用條款，才能購買點數。";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "我們無法處理您的訂單，因為您所採用的付款方式暫時無法使用，請稍後再試。";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "我們無法處理您的訂單，因為您的帳戶是由管理員管理。";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "我們無法處理您的訂單，請聯絡 Skype 客戶支援小組以尋求協助。";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "您的 iTunes 帳戶目前無法使用。";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "我們無法完成您的訂單，因為您的 iTunes 帳戶目前無法使用，請稍後再試。";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "我們無法處理您的訂單，因為 Skype 不支援您在 iTunes 帳戶所設定的幣值。";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "您目前 Skype 和 iTunes 的帳戶幣值不同。 請到 skype.com 官網轉換幣值。";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "我們無法處理您的訂單，請檢查您的網路連線，然後再試一次。";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "我們無法處理您的訂單，請檢查您的網路連線，我們會在您重新連線後再試一次。";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "我們無法處理您先前的 Skype 點數訂單，請檢查您的網路連線，我們會在您重新連線後再試一次。";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "取得協助";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Microsoft 帳號";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "取消並再次開始";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "已連結 Skype 帳戶";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "此 Skype 帳戶已與另一個 Microsoft 帳戶相連結。請用這些 Microsoft 詳細資料登入以繼續。";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "連結您的帳戶時發生問題，請稍後再試一次。";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "開啟您的帳戶時發生問題，請檢查網路連線，然後再試一次。";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "電話";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "住宅";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "公司";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "行動";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "其他號碼";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "未知的號碼";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (來賓)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "連線中…";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "響鈴中...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "撥號中…";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "保留通話";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "通話結束";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "啟動中...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "撥號中...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "線上對話";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "保留通話";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "對方保留通話中";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "線上對話";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "線上對話人數已滿";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "語音留言播放中";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "錄製中";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "最近的通話";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "轉接中";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "正在登入…";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "正在載入聯絡人…";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "更新中...";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "這則訊息已被移除";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "無法連線到 Skype。";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "請檢查您的網路設定並再試一次。";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "這個 Skype 名稱無效。";
+"Account::INVALID_EMAIL" = "這個電子郵件地址無效。";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "請檢查後再試一次。";
+"Account::UNACCEPTABLE_PASSWORD" = "這個密碼無效。";
+"Account::SKYPENAME_TAKEN" = "這個 Skype 帳號名稱已經被別人使用了。";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "請輸入一個新的名稱。";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "無法辨識您的 Skype 名稱和密碼。";
+"Account::INCORRECT_PASSWORD" = "無法辨識您的 Skype 名稱和密碼。";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "您嘗試登入的次數過多。";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "請稍後再試。";
+"Account::ATO_BLOCKED" = "您的帳戶已被暫停使用,\n<a href = 'https://go.skype.com/account.recovery.ios'>點一下這裡可取得更多資訊</a>。";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "使用您的 Microsoft 帳戶登入時發生問題，請稍後再試一次。";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "無法登入，您的裝置已無儲存空間。";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "無法登入，請重新啟動您的裝置並再試一次。(%d)";
+"Account::DB_FAILURE" = "無法登入，請重新啟動您的裝置，然後再試一次。(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "無法登入，請從 App Store 重新嘗試安裝 Skype。(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "您的密碼已變更，請登入以繼續使用 Skype。";
+"Account::LOGOUT_REMOTE" = "您已經登出。";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "我們不再支援此版本的 Skype。";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "請更新至最新版的 Skype 以繼續。";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "無法登入，請稍後再試。";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "無法登入 Skype，因為您不符合貴國家/地區的最小年齡限制。";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "請再試一次。(%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "語音通話";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "視訊通話";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "視訊留言";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "撥號盤"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "撥打電話號碼";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "在 Skype 上開始新聊天";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "在 Skype 上開始新聊天";
+
+
+"HUB_RECENTS_TITLE" = "最近";
+"HUB_PEOPLE_TITLE" = "聯絡人";
+"HUB_FAVOURIES_TITLE" = "常用聯絡人";
+"CANCEL_ALERT_BUTTON" = "取消";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "常用聯絡人";
+"PEOPLEPICKER_CONTACTS_TITLE" = "聯絡人";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "搜尋聯絡人";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "尋找新聯絡人";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "搜尋「%@」";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "在 Skype 通訊錄中搜尋「%@」";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "聯絡人";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "機器人";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "無法接通"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "在 Skype 上"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "透過 Skype 聯繫";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "取消";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "聯繫";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "新增聊天";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "點兩下以選取。";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "此處會顯示最近的交談。";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "您沒有未讀訊息";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "最近撥打到行動電話及有線電話的通話會顯示在這裡，<a href=\"open-dialpad\">與朋友通話</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@，新訊息，%@，%@，%@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "對方保留通話中";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "保留通話";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "通話進行中";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "目前的通話，%@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "目前的通話";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "已編輯";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "編輯";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "儲存照片";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "儲存視訊";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "顯示讚";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "讚";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "收回讚";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "關閉";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "讚";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "點兩下以檢視聯絡人";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "新增";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "對您的訊息說讚。";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "對您的訊息說讚: %@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "對您的相片說讚。";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "%@ 對您的訊息說讚。";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "%1$@ 對您的訊息說讚: %2$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "%@ 對您的相片說讚。";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>還沒有人說這讚</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "您說這讚";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "登入";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Skype 名稱";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Microsoft 帳戶";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "建立帳戶";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "以 Skype 名稱登入";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "以 Microsoft 帳戶登入";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "建立新帳號";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "登入詳細資料欄位";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "已經在使用Skype?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "是";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "是，我已有 Skype 帳戶。";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "否";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "否，我沒有 Skype 帳戶。";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "聯絡人名單篩選器";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "所有聯絡人";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "上線的聯絡人";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "顯示所有聯絡人。";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "僅顯示上線的聯絡人。";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "只顯示 Skype 聯絡人。";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "語音通話";
+"CHATINPUT_PLACEHOLDER" = "在這裡輸入訊息";
+"CHATINPUT_PLACEHOLDER_SMS" = "在此輸入簡訊";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "跟 %@ 打聲招呼";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "您的對話將會顯示在這裡。";
+"CHATTYPING_SINGLEUSER" = "%@ 輸入中...";
+"CHATTYPING_TWOUSERS" = "%@ 與 %@ 輸入中...";
+"CHATTYPING_THREEUSERS" = "%@、%@ 和另一人輸入中...";
+"CHATTYPING_MULTIPLEUSERS" = "%@、%@ 和另 %d 人輸入中...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "打電話";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "傳送邀請";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "傳送簡訊連結，邀請對方在 Skype 聊天。";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "聊天";
+"SEND_SMS_TO_CONTACT_BUTTON" = "簡訊";
+"EMPTY_PAGE_HEADER_TITLE" = "跟對方打個招呼吧";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "嗨，來 Skype 聊個天吧: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "傳送此簡訊會花費 %@";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "選擇國家/地區";
+"DIALPAD_CALL_BUTTON" = "撥打";
+"DIALPAD_STAR_BUTTON" = "米字鍵";
+"DIALPAD_HASH_BUTTON" = "井字鍵";
+"DIALPAD_BACKSPACE_BUTTON" = "刪除";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "簡訊";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "開啟與 %@ 的聊天視窗";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "已隱藏鍵盤。";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "顯示鍵盤";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "無法撥號給此聯絡人";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "撥號給此聯絡人時發生問題。";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "請檢查後再試一次。";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "緊急電話";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "您的裝置不支援撥打緊急電話。";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "電話號碼無效";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "撥打此電話號碼時發生問題。";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "請檢查後再試一次。";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "您已在通話中";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "有通話正在進行。";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "先掛斷再開始 Skype 通話。";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "您已在通話中";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "有另一通 Skype 通話進行中。";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "先掛斷再開始新的通話。";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "無法撥打電話";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "您的電信業者不允許透過行動電信網路撥打 Skype 電話。 請先連線至 WiFi 網路以撥打 Skype 通話。";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "呼叫未接通";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "無法撥打電話給自己。";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "封鎖的聯絡人";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "請先取消封鎖此聯絡人，然後再撥號。";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "取用麥克風";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "您若沒有使用麥克風的權限，對方將無法在通話或視訊留言中聽到您的聲音。";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "移至裝置設定，然後移至「隱私」來授予權限。";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "取用攝影機";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "對方若沒有您的攝影機的使用權限，就無法在通話或視訊留言中看到您。";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "請至裝置設定中的 [隱私權] 以授予權限。";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "系統沒有使用您攝影機的權限，您無法在 Skype 中拍照。";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "無法撥打電話";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "其他音訊應用程式使得 Skype 無法播放音訊。";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "請檢查後再試一次。";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "無法撥打電話";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "裝置上的音訊有問題。";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "請檢查後再試一次。";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "無法撥打電話";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "裝置上的音訊有問題。";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "請重新啟動 Skype 以繼續。";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "無法撥打電話";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "裝置上的音訊有問題。";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "請稍後再試。";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "無法撥打電話";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "裝置上的音訊有問題。";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "請稍後再試。";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "無法撥打電話";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "連接這個通話時發生問題。";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "請稍後再試。";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "無法通話";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "若身在印度，您只能與也在印度國內的其他人進行 Skype 網內免費通話(他們也必須在 Skype 上)。";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "瞭解詳情";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "無法加入通話";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "此群組通話的人數已達上限，請稍後再嘗試加入。";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "攝影機使用中";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "您正在進行視訊通話。";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "在嘗試使用攝影機前，請先關閉視訊。";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "群組通話";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "無法從此裝置撥打至 %d 名或更多參與者的群組。";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "群組視訊通話";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "無法從此裝置撥打給 %d 名或更多參與者的群組。";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "您已離線";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "您必須上線，才能在 Skype 撥號。";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "群組通話";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "此通話已達到參與者人數上限。";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "保留通話";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "在新增參與者前請先恢復通話。";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "對方保留通話中";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "您需要先恢復通話後，才能新增參與者。";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "正在設定通話";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "通話連接中，無法新增參與者。";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "請待通話連接完成。";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "群組";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "新增參與者時發生問題。請稍後再試。";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "無法啟動視訊";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "開啟視訊時發生問題。";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "檢查此通話中是否所有人均使用最新版的 Skype。";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "無法啟動視訊";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skype 無法啟動您的視訊。";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "請稍後再試。";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "恢復通話";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "恢復這個通話時發生問題。";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "請先關閉目前正在使用音訊的應用程式，以及結束進行中的通話，然後再恢復這個 Skype 通話。";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "聯絡人授權請求";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "參與者已新增或移除";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "今天是 <name>%@</name> 的生日"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "已建立群組聊天";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "聯絡人已封鎖";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "傳送了一則影像留言給您";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "您傳送了一則影像留言";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>您</name>和 <name>%@</name> 現在是彼此的聯絡人。";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "現在已成為您的聯絡人";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "您已分享您的聯絡方式";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "已傳送語音留言給您";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "您傳送了語音留言。";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "%@ 已傳送聯絡人給您。此版本的 Skype 尚不支援該功能。";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "您傳送了聯絡人。此版本的 Skype 目前不支援該功能。";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "點兩下以檢視聯絡人";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "點兩下以檢視聯絡人";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "已傳送的聯絡人";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "新增至聯絡人";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "已在聯絡人名單中";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "檢視聯絡人";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "傳送聯絡人";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "傳送聯絡人";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "和其他 %d 人";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "選擇聯絡人";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "您在 Skype 上沒有可傳送的聯絡人。";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "沒有聯絡人";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "聯絡人";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "傳送聯絡人";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "已傳送聯絡人授權請求";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "聯絡人授權請求擱置中";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "傳送聯絡人";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "%@ 已傳送訊息給您。此版本的 Skype 尚不支援該功能。";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "這個 Skype 版本目前不支援您所傳送的訊息。";
+
+"RECENTS_DELETE_CONVERSATION" = "刪除聊天";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "標示為已讀";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "標示為未讀";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "聊天";
+"CALL_ACCESSIBILITYLABEL" = "撥打";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "登入畫面";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Skype 登入";
+"HUB_ACCESSIBILITYLABEL" = "中心";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "建議的搜尋項目 %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "顯示表情符號";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "顯示鍵盤";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "刪除";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "搜尋";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "市集";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "最近";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "表情符號";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Moji";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "搜尋";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "建議";
+"EXPRESSION_SEARCH_NO_RESULTS" = "沒有找到任何項目";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "在 Skype 上加入我的聊天即可觀看此 Moji: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "您好，\n在 Skype 上加入我的聊天即可觀看這個我傳給您的 Moji: %@\n下次再聊，";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "看看此 Moji";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "糟糕";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "分享此 Moji 時發生問題，請稍後再試。";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Skype 市集";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "正在載入 Moji 和表情符號...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "搜尋";
+"EXPRESSION_STORE_FREE" = "免費";
+"EXPRESSION_STORE_REMOVE" = "移除";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "免費下載";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "正在下載";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "已下載";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "糟糕";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "載入 Moji 和表情符號時發生問題。";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "尋找 Moji 和表情符號時發生問題，請<a href=\"re-try fetching\">再試一次</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "搜尋表情符號和 Moji";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "最近使用過的表情符號將會顯示在這裡。";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "精選";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "點兩下以預覽。";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "點兩下以傳送。";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "點兩下以關閉預覽。";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "重播";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Moji 預覽";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "再次點選以傳送。";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "需允許取用麥克風才能讓 %@ 聽見您的聲音。";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "需允許取用麥克風才能讓所有人聽見您的聲音。";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "在裝置設定中開放攝影機的存取權，讓 %@ 能看到您。";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "在裝置設定中開放攝影機的存取權，讓每個人都能看到您。";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "此通話已達到參與者人數上限";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "您需有網路連線才能撥打電話";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "您的攝影機在 [分割檢視] 中已停用。";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Slide Over 不支援視訊。";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "免持通話已開啟";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "輕點兩次關閉免持通話。";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "免持通話已關閉";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "輕點兩次開啟免持通話。";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "通話已靜音";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "輕點兩次取消通話靜音。";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "靜音已取消靜音";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "輕點兩次將通話靜音。";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "視訊已開啟";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "輕點兩次以關閉視訊。";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "已關閉視訊";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "輕點兩次以開啟視訊。";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "撥入";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "撥出";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 位參與者"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d 位參與者"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "沒有參與者"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%2$d 人中有 %1$d 人加入此通話";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "%1$@ 必須更新 Skype，才能加入此通話。";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "%1$@ 和 %2$@ 需要更新 Skype，才能加入此通話。";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "%1$@ 和 %2$@ 需要更新 Skype，才能加入此通話。";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = "、";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ 來電";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "來自 %@ 及 %@ 的撥入群組通話";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "來自 %@、%@ 及另 1 人的撥入群組通話";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "來自 %@、%@ 及其他 %d 人的撥入群組通話";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ 視訊來電";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "來自 %@ 及 %@ 的撥入群組視訊通話";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "來自 %@、%@ 及另 1 人的撥入群組視訊通話";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "來自 %@、%@ 及其他 %d 人的撥入群組視訊通話";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "與 %@ 進行Skype 通話";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "撥打群組通話給 %@ 及 %@";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "撥打群組通話給 %@、%@ 及另 1 人";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "撥打群組通話給 %@、%@ 及其他 %d 人";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "與 %@ 視訊通話。";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "與 %@ 和 %@ 視訊通話。";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "與 %@、%@ 及另 1 人進行視訊通話。";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "撥打視訊通話給 %@、%@ 及其他 %d 人。";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "與 %@ 進行Skype 通話";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "與 %@ 和 %@ 進行群組通話";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "與 %@、%@ 及另 1 人進行群組通話";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "與 %@、%@ 及其他 %d 人進行群組通話";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "與 %@ 視訊通話";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "與 %@ 和 %@ 進行群組視訊通話";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "與 %@、%@ 及另 1 人進行群組視訊通話";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "與 %@、%@ 和其他 %d 人進行群組視訊通話";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "恢復與 %@ 的 Skype 通話";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "恢復與 %@ 和 %@ 的群組通話";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "恢復與 %@、%@ 及另 1 人的群組通話";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "恢復與 %@、%@ 及其他 %d 人的群組通話";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "恢復與 %@ 的視訊通話";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "恢復與 %@ 和 %@ 的群組視訊通話";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "恢復與 %@、%@ 及另 1 人的群組視訊通話";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "恢復與 %@、%@ 及其他 %d 人的群組視訊通話";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "通話結束";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "通話時間";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "語音留言錄製中";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "天";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "天";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "小時";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "小時";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "分";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "分";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "秒";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "秒";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "接受";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "拒絕";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> 想將您新增為 Skype 聯絡人\n\"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> 從 <location>%@</location> 傳送訊息給您"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "向 <name>%@</name> 打聲招呼，並加為聯絡人。";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ 尚未成為聯絡人。";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "「 %@ 」<a href=\"edit-contact-request-message\">編輯</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "傳送聯絡人授權請求";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "新增至聯絡人";
+"CONTACT_REQUEST_PENDING" = "正在等候 <name>%@</name> 接受聯絡人授權請求。\n<a href=\"resend-request\">重新傳送聯絡人授權請求</a>";
+"CONTACT_REQUEST_BLOCKED" = "<name>%@</name> 已遭到封鎖";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "取消封鎖";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "是";
+"CONTACT_REQUEST_BLOCK_TITLE" = "封鎖聯絡人";
+"CONTACT_REQUEST_DECLINED_TITLE" = "聯絡人授權請求遭拒";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "取消";
+"CONTACT_REQUEST_BLOCK_ALERT" = "確定要封鎖此聯絡人嗎？";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "是否要同時封鎖並檢舉此人?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "封鎖";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "封鎖並移除";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "封鎖並檢舉";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "新增參與者";
+"CHAT_OPTION_START_NEW_GROUP" = "開始新群組";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "檢視個人資料";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "通知";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "此聊天的通知已開啟。";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "此聊天的通知已關閉。";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "開啟通知";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "關閉通知";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "離開群組";
+
+"CHAT_OPTION_PARTICIPANTS" = "顯示參與者";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "開啟";
+"MK_SWITCH_OFF_MESSAGE" = "關閉";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "開啟和關閉。";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "新增聊天";
+"NEWCHATSCENE_TITLE_TOKEN" = "交談對象："; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "和其他 %d 人"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "和其他 %d 人"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "選取要加入的聯絡人";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Home";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "取消建立新群組";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "建立新群組";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "語音通話";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "視訊通話";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "撥號盤";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "取消";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "返回";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "我的資訊";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "開啟媒體功能表";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "關閉媒體功能表";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "說明";
+"MY_INFO_FEEDBACK_ACTION" = "傳送意見";
+
+"MY_INFO_CONNECTING" = "連線中…";
+
+"MY_INFO_STATUS" = "狀態";
+"MY_INFO_CREDIT" = "Skype 點數";
+"MY_INFO_PROFILE_LINK" = "我的帳戶";
+"MY_INFO_SETTINGS" = "設定";
+"MY_INFO_SIGN_OUT" = "登出";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "輸入心情小語";
+"MY_INFO_MOOD_MESSAGE" = "心情小語";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "輕點兩下可編輯";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "傳送意見";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "變更個人資料圖片";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "拍攝照片";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "選擇現有的照片";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "移除個人資料圖片";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "設定";
+
+"SETTINGS_GENERAL" = "一般";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "允許目標廣告";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "允許 Microsoft 使用您的 Skype 的個人資料，將和您更相關的廣告顯示於此應用程式中。<a href=\"skype.com\">瞭解詳情</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "聊天通知";
+"SETTINGS_PUSH_NOTIFICATIONS" = "推播通知";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "推播通知";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "在 Skype 關閉狀態下也會接收到訊息通知。";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "在 Skype 關閉狀態下不會接收到訊息通知。";
+"SETTINGS_INAPP_NOTIFICATIONS" = "應用程式內通知";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "應用程式內通知";
+"SETTINGS_INAPP_SOUNDS" = "應用程式內音效";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "應用程式內音效";
+"SETTINGS_OTHER" = "其他";
+
+"SETTINGS_PRIVACY" = "隱私權";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "其他人能找到我的方式";
+"SETTINGS_PRIVACY_EXPLANATION" = "這些聯絡詳細資料可用來讓其他人在 Skype 上找到您。";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "新增電話號碼";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "個人資料圖片";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "每個人都能看見";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "只有我的聯絡人能看見";
+
+"SETTINGS_CONTACTS_HEADER" = "聯絡人";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "新增我的朋友";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype 會檢查您的聯絡資訊，並自動將您認識的人加到 Skype 聯絡人名單中。";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "之後您將需要在 Skype 上手動尋找及新增朋友。";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "連結預覽";
+
+"SETTINGS_EMOTICONS_HEADER" = "表情符號";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "大型表情符號";
+
+"SETTINGS_EDIT_BUTTON" = "編輯";
+"SETTINGS_DONE_BUTTON" = "完成";
+
+"SETTINGS_ABOUT" = "關於";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "輸入您的號碼";
+"PNV_HOW_IS_MY_NUMBER_USED" = "我的電話號碼會如何使用？";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "可能會收取標準簡訊費用。";
+"PNV_ENTER_THE_CODE" = "輸入驗證碼";
+"PNV_CODE_SENT" = "我們已將驗證碼傳送到您的電話號碼";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>打電話給我</a>或<a href='pnv://resendcode'>重新傳送驗證碼</a>";
+"PNV_VERIFYING_NUMBER" = "驗證號碼";
+"PNV_NUMBER_VERIFIED" = "已驗證";
+"PNV_NUMBER_USAGE_EXPLANATION" = "您的電話號碼會用來協助朋友在 Skype 上找到您。 並且使搜尋新聯絡人容易許多。";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "代碼";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "若要變更其他人找到您的方式，請至 [設定] 中的 [%@]，移除或停用您所有的電話號碼。";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "或者，如果您不想使用您的電話號碼，而是希望手動搜尋和新增聯絡人，請選取下方的 [%@]。";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Skype 隱私權政策";
+"PNV_NOT_NOW" = "現在不要";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "電話號碼";
+
+"PNV_WELCOME_HEADING" = "尋找朋友更方便";
+"PNV_WELCOME_PARAGRAPH" = "只要新增您的電話號碼即可開始使用。";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "下一步";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "糟糕！";
+"PNV_DEFAULT_ERROR_MESSAGE" = "驗證號碼時發生問題，請稍後再試。";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "您已達到驗證號碼的數量上限。 請從 [設定] 刪除您的其中一個號碼後再新增其他號碼。";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "您輸入的號碼無效。 請檢查後再試一次。";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "我們無法傳送簡訊到這組號碼。 請檢查後再試一次。";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "驗證碼似乎已過期。 請選取下方的 [重新傳送] 以取得新驗證碼。";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "驗證碼似乎不正確。 請檢查後再試一次。";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "您的網路連線有問題。 請檢查網路設定並再試一次。";
+"PNV_ERROR_TRY_AGAIN" = "再試一次";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "在 Skype 上新增朋友";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "我們會在 Skype 上尋找您認識的人，並將他們加為您的聯絡人。";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "瞭解詳情";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "為了自動新增 Skype 聯絡人，我們會不時檢查您的通訊錄，以尋找您認識的人。 別擔心，我們不會用邀請函塞爆您朋友的信箱。";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "如果您改變主意，可以隨時關閉 [設定] 中的 [%@]。 系統不會再用通訊錄尋找您認識的人，您必須手動新增朋友。";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "若要變更其他人找到您的方式，請至 [設定] 中的 [%@]，移除或停用您所有的電話號碼。";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Skype 隱私權政策";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "請記住，Skype 無法用來撥打緊急電話";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "尋找朋友更方便";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "已新增聯絡人";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "新增聯絡人";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "取消";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "搜尋";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "取消";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "使用 Skype 名稱、電子郵件或全名，在 Skype 上搜尋人員。";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "已經是 Skype 聯絡人";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "找不到相符項目";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "返回";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "轉接";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "分享";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "關於";
+"ABOUT_APPLICATION_VERSION" = "Skype 版本";
+"ABOUT_COPYRIGHT" = "© 2003-2016 Skype & Microsoft\n專利申請中";
+"ABOUT_THIRD_PARTY_NOTICES" = "協力廠商注意事項";
+"ABOUT_PRIVACY_POLICY" = "隱私權政策";
+"ABOUT_TERMS_OF_USE" = "使用條款";
+"ABOUT_COPYRIGHT_TEXT" = "Skype 名稱、相關商標、標誌及「S」符號均為 Skype 或其相關集團實體的商標。\n\n警告： 本程式受版權法和國際條約保護。 未經許可擅自複製或散佈本程式或其中任何部分可能導致嚴重的刑事及民事懲處，並會根據法律予以最嚴重的起訴。";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "錯誤";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "透過電子郵件";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "以電子郵件通知我 Skype 的新優惠和新功能";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Skype 最新消息與功能:";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "新增個人資料圖片";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "電子郵件信箱";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "john@example.com";
+"CREATEACCOUNT_FULLNAME_LABEL" = "完整姓名";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "名";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "姓";
+"CREATEACCOUNT_PASSWORD_LABEL" = "密碼";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6 到 20 個字元";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "再次輸入密碼";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Skype 名稱";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "必須";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "電話號碼";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "含國碼 (地區碼)";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "上列某些欄位未填寫";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "您的密碼不相符，請檢查並再試一次。";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Skype 使用條款";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "是的，我已閱讀並同意 <a href='%1$@'>Skype 的使用條款</a>和<a href='%2$@'>隱私權政策</a>。";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "無法透過Skype撥打緊急電話";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype 無法取代一般電話，也無法撥打緊急電話。";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "同意";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "必須為6到20個字元長度。";
+"SkyLib::TOO_LONG" = "必須為6到20個字元長度。";
+"SkyLib::CONTAINS_INVALID_CHAR" = "無效字元，例如 Σ、 à、ß。";
+"SkyLib::CONTAINS_SPACE" = "不可包含空格或 tab 鍵。";
+"SkyLib::SAME_AS_USERNAME" = "和您的 Skype 帳號太過類似。";
+"SkyLib::INVALID_FORMAT" = "無效的格式。";
+"SkyLib::CONTAINS_INVALID_WORD" = "太過簡單易被猜出，例如 abcd、skype。";
+"SkyLib::TOO_SIMPLE" = "至少必須包含1個字母和1個數字。";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "必須以英文字母(A–Z)為開頭。";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "請改用另一個 Skype 名稱。";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "請嘗試一個新的密碼。";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "請嘗試一個新的電子信箱。";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "請再試一次。";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Skype 名稱";
+"SkyLib::ACCOUNT_PASSWORD" = "密碼";
+"SkyLib::CONTACT_EMAILS" = "電子郵件";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> 已將此群組重新命名為「%@」";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Skype Home";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> 已更新群組照片。";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> 已更新群組";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "隱藏";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "%d 則新通知";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "1 則新通知";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "沒有新通知";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "您好，我想將您新增為 Skype 聯絡人。";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "聯絡人授權請求";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@： %2$@。 於 %3$@";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "想將您新增為 Skype 聯絡人";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "現在不要";
+"ALLOW_BUTTON" = "允許";
+"PERMISSION_VIEW_TITLE" = "讓我們開始設定吧！";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的麥克風。";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的攝影機。";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的聯絡人。";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的通知。";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的麥克風及攝影機。";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的麥克風及聯絡人。";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的麥克風及通知。";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的攝影機及聯絡人。";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的攝影機及通知。";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的聯絡人及通知。";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的麥克風、攝影機及通知。";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的麥克風、聯絡人及通知。";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的麥克風、攝影機及通知。";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的攝影機、聯絡人及通知。";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "為確保您擁有最佳的 Skype 體驗，我們需要有權使用您的麥克風、攝影機、聯絡人及通知。";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "聯絡人";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "麥克風";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "攝影機";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "通知";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "是否確定？";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "如果我們無權使用這些功能，您將無法正常撥打或接聽電話，或收到來電和訊息的通知。";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "您的聯絡人名單會是空的，您也無法在 Skype 上撥打或接聽電話。";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "瞭解詳情";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "麥克風和攝影機";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "若要在 Skype 上撥打或接聽電話，我們需要有權使用您的麥克風和攝影機。 很抱歉，若沒有這些使用權限，Skype 將無法運作。";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "聯絡人";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "若要設定您的 Skype 聯絡人名單，我們需要有權使用您的聯絡資訊。 我們會不時檢查您的聯絡資訊，以在 Skype 上尋找您認識的人。 別擔心，我們不會用邀請信塞爆您朋友的信箱。";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "如果您改變主意，可以隨時關閉 [設定] 中的 [%@]。 系統不會再用通訊錄尋找您認識的人，您必須手動新增朋友";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "通知";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "若要在 Skype 關閉時收到來電和訊息的通知，我們需要有權使用您的通知。 如果您不想受到打擾，也可以稍後再決定是否要關閉個別的聊天通知。";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "授予使用聯絡資訊的權限";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Skype 需要有權使用聯絡資訊，以尋找您認識的人。 請移至 [設定] 並啟用 [聯絡資訊]，以允許使用權限。";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "略過";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "取得連線";
+"ONBOARDING_GET_STARTED_BUTTON" = "開始使用";
+
+"ONBOARDING_IPHONE_TITLE1" = "專為 iPhone 重新設計";
+"ONBOARDING_IPAD_TITLE1" = "專為 iPad 重新設計";
+"ONBOARDING_TEXT1" = "Skype 比以前更好用 - 無論是要傳送訊息給朋友或是通話。";
+
+"ONBOARDING_TITLE2" = "尋找任何項目";
+"ONBOARDING_TEXT2" = "搜尋人員、群組，或甚至是之前的交談。";
+
+"ONBOARDING_IPHONE_TITLE3" = "事半功倍";
+"ONBOARDING_IPAD_TITLE3" = "Skype 提供更多功能";
+
+"ONBOARDING_IPHONE_TEXT3" = "與朋友大聊特聊時，可同時分享您的所在位置、相片，或查看網頁連結預覽。";
+"ONBOARDING_IPAD_TEXT3" = "在您的 iPad 上享有較大的表情符號、預覽網頁連結，以及建立新群組。";
+
+"ONBOARDING_TITLE4" = "Skype 更能與朋友充分交流";
+"ONBOARDING_TEXT4" = "將您的電話號碼新增至 Skype，讓朋友更容易找到您。";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "輕鬆分享";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "只要點一下分享按鈕，就能在 Skype 上傳送網站或相機膠捲中的相片給朋友。";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "新增參與者";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "新增："; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "已是參與者";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "已通話";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "在此通話中";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "不在此通話中";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "連線中…";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "正連線至 %@";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "撥號中...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "正撥號給 %@";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "保留通話";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "為 %@ 保留通話";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "新增常用聯絡人";
+"ADDFAVORITES_EMPTY_TITLE" = "<a href=\"add-favorites\">新增常用聯絡人</a>，將您的常用聯絡人放在一起。";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "Skype 聯絡人";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "傳送檔案";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ 另一個檔案";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ 另 %d 個檔案";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "您已從另一部裝置傳送這個檔案。";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "您已從另一部裝置傳送這些檔案。";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "這個版本的 Skype 不支援接收檔案。";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "此應用程式只支援 Skype 新的照片分享功能。";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "您已傳送一個檔案";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "您已傳送 %d 個檔案";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "已傳送檔案給您";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "已傳送 %d 個檔案";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "上線";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "請勿打擾";
+"CONTACT_AVAILABILITY_AWAY" = "暫時離開";
+"CONTACT_AVAILABILITY_INVISIBLE" = "隱藏";
+"CONTACT_AVAILABILITY_OFFLINE" = "離線";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "線上";
+"CONTACT_AVAILABILITY_BUSY" = "忙碌";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "已封鎖";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "常用聯絡人";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "常用聯絡人";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "此人為常用聯絡人。 輕點兩下從常用聯絡人移除。";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "此人不是常用聯絡人。 輕點兩下新增至常用聯絡人。";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "常用群組";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "常用群組";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "此群組不在您的常用群組中。 輕點兩下可新增至常用群組。";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "此群組在您的常用群組中。 輕點兩下可從常用群組移除。";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%2$@，%1$@ %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@ %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@，%2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%2$@，%1$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "Skype 名稱";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "網站";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "關於我";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "生日";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "性別";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "語言";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "聯絡人";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "功能";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "隱私權";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "建立者";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "描述";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "傳送及接收即時訊息和相片。";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "此機器人將可存取您的「顯示名稱」、「Skype 名稱」，以及任何您或其他群組參與者與它分享的聊天訊息或內容。";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "女性";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "男性";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "封鎖聯絡人";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "解除封鎖聯絡人";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "移除聯絡人";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "移除聯絡人";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "將從您的聯絡人名單中移除 %@";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "移除";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "取消";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "隱藏";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "群組設定檔";
+"GROUPPROFILE_NOTIFICATIONS" = "通知";
+"GROUPPROFILE_MENU_TITLE" = "檢視個人資料";
+"GROUPPROFILE_LEAVE_CHAT" = "離開群組";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "參與者";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "邀請";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "聊天邀請";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "所有人都可檢視聊天記錄";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "啟用聊天邀請，以邀請其他人加入此聊天。";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "只有 Skype 聯絡人可新增至此聊天。";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "邀請任何人加入此聊天，即使他們不在 Skype 上也沒問題。";
+"GROUPPROFILE_CHAT_HISTORY" = "聊天記錄";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "目前對新參與者隱藏聊天記錄。";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "每個人都可查看聊天記錄。";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "新增參與者";
+"GROUP_ADMIN_STRING" = "%@ (管理員)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "聊天邀請";
+"GROUPPROFILE_ALERT_BODY" = "此聊天的邀請目前無法使用，請稍後再試。";
+"GROUPPROFILE_ALERT_BUTTON" = "確定";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "在 Skype 上加入我的聊天: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "加入我的聊天";
+"INVITES_MAIL_BODY" = "嗨，\n我已在 Skype 上建立群組，方便我們聊天、分享和共同作業。\n按一下連結就能加入:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "重新命名群組";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "重新命名群組";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "重新命名聯絡人";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "點兩下以重新命名聯絡人";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "新增機器人";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "傳送聯絡人授權請求";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "重新傳送聯絡人授權請求";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "已傳送聯絡人授權請求";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "接受";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "拒絕";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "<name>%@</name> 想將您新增為 Skype 聯絡人"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "開啟";
+"PUSH_CHAT_CALL" = "撥打";
+"PUSH_CHAT_TEXT_REPLY" = "回覆";
+"PUSH_CALL_ANSWER" = "接聽";
+"PUSH_CALL_DECLINE" = "拒絕";
+"PUSH_CALL_VIDEO_VIDEO" = "視訊";
+"PUSH_CALL_VIDEO_AUDIO" = "語音";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "訊息";
+"PUSH_MISSED_CALL_CALLBACK" = "回撥";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "聯絡資訊發生問題";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "從您的聯絡資訊存取電話號碼時發生問題。 請嘗試在 [設定] 中重新同步您的郵件帳戶，以修正問題。";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "儲存電話號碼";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "沒有條件相符的通話。";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "一個條件相符的通話。";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "%d 個條件相符的通話。";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@) 上次通話: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@，上次通話時間： %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@ 是通訊錄上的聯絡人。";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "透過 Skype 聯繫";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@ 是通訊錄上的聯絡人。 您可以在 Skype 上撥打電話與他們聊天。";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "還不是 Skype 名單上的聯絡人";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "清除文字";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "取消";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "搜尋 Skype";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "尋找新聯絡人";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "點選以尋找新聯絡人";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "搜尋「%@」";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Skype 通訊錄";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "搜尋通話記錄";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "清除";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "聯絡人";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "找不到相符項目";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "群組";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "對話視窗";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "儲存號碼";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "儲存號碼";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "輸入名稱";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "輸入號碼";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "儲存號碼";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "儲存的號碼";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "無效號碼";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "您無法新增此無效號碼。 請嘗試其他號碼。";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "無效號碼";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "您無法新增緊急電話號碼至 Skype。";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "捨棄";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "是否確定撥打給 \n\n%@？";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "是否確定撥打視訊電話給 \n\n%@？";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "語音通話";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "視訊通話";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "撥打";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "查看原文";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "查看翻譯";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "您已共用位置";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "與您共用位置";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "已共用位置 (%@)";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "輕點兩下可開啟";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "位置導航";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "位置";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "共用您的位置";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "已傳送位置";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "取得所在位置資料";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "如果不授權系統使用您的位置，就無法與 Skype 上的朋友共用您的位置。";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "請至裝置設定中的 [隱私權] 以授予權限。";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "存取聯絡人";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "我們需要存取您的聯絡人，才能在 Skype 中顯示您的通訊錄。";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "請前往裝置設定，然後移至 [隱私] 來授予權限。";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "糟糕...";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "載入地圖時發生問題。";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "請檢查網路連線後再試一次。";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "清除";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "清除已新增的釘選";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "位置共用";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "您無法再將所在位置共用到此聊天。";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "確定";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "共用位置";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "搜尋";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "找不到任何搜尋結果";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "尋找此位置時發生問題，請稍後再試。";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Home";
+"TIMELINE_ICON_DIALPAD" = "撥號盤";
+"TIMELINE_ICON_PEOPLE" = "聯絡人";
+"TIMELINE_SWIPEACTION_MUTE" = "關閉通知";
+"TIMELINE_SWIPEACTION_UNMUTE" = "開啟通知";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "推播通知";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "開啟推播通知後，當您關閉 Skype 時也能收到來電和訊息通知。";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "如要在 Skype 關閉時也能收到來電和訊息通知，請移至 iPhone 的 [設定] > [通知中心]，再開啟 Skype 通知。";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "若要在 Skype 關閉時也能收到來電和訊息通知，請移至 iPhone [設定] 中的 [通知中心]，再開啟 Skype 通知。";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "推播通知";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "您必須先從裝置設定開啟 Skype 通知，才能接收推播通知。";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "開啟";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "檢視";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "聆聽";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "播放";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "開啟訊息時發生問題，請檢查網路連線，然後再試一次。";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "共用媒體文件";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "輕點兩下可開啟";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "不受信任的來源";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "照片";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "拍攝照片";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "選擇現有的照片";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "選擇現有的相片或視訊";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "取消";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "選擇";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "輕點兩次可關閉";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "傳送一張照片。點兩下可開啟";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "接收照片";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "傳送照片";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "傳送這張照片時發生問題";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "接收這張照片時發生問題";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "輕點兩次可重試";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "傳送";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "取消";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "無法傳送視訊，因其大於 %d MB";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "無法傳送相片，因其大於 %d MB";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "已傳送視訊留言。點兩下即可開啟";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "正在接收視訊留言";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "正在傳送視訊留言";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "傳送此視訊留言時發生問題";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "接收此視訊留言時發生問題";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "已傳送檔案。點兩下以下載";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "已收到檔案。連點兩下以開啟";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "正在下載";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "已下載 %@。點兩下以開啟";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "檔案大於 %d MB。可能會收取資料傳輸費用";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "無法使用檔案";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "重新啟動";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "接收此檔案時發生問題。";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "此檔案可能有潛在的危險。";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "偵測到病毒，無法下載";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "正在等待網際網路連線…";
+"FILE_TRANSFER_BUTTON_CANCEL" = "取消";
+"FILE_TRANSFER_BUTTON_RETRY" = "重試";
+"FILE_TRANSFER_LABEL_CANCELED" = "已取消";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "下載";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "瞭解詳情";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "共用的檔案會在 %d 天後從 Skype 刪除。若要將檔案保留更久，請將其儲存至您的裝置。";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "無法使用檔案";
+"FILE_SENDING_LABEL_ERROR" = "傳送此檔案時發生問題";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "接受檔案?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "請僅接受來自您所信任人員的檔案。您要接受檔案 %@ (來自 %@)?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "警告 - 此檔案可能會危害您的電腦/裝置";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "您要接受檔案 %@ (來自 %@)?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "不用再詢問";
+"FILE_TRANSFER_ACCEPT" = "接受";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "空間不足";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "移至 [設定] > [一般] > [用量]，以釋放這部裝置的儲存空間。";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "使用者已拒絕此應用程式存取其媒體";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "如要允許，請前往 [設定] > [隱私] > [照片] 並啟用 Skype。";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "您傳送一張照片";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "傳送一張照片給您";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "%@ 已傳送照片。";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "此裝置尚未支援 Skype 新的照片分享功能，但您仍可在瀏覽器此處檢視： %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "無法使用照片";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "目前無法使用這張照片。";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "取消";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "重試";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "無法使用照片";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "目前無法使用這張照片。";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "確定";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "儲存照片";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "取消";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "糟糕！";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "儲存此照片時發生問題。";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "重試";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "取消";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "網路媒體";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "搜尋 Giphy";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "更新 Skype";
+"FORCE_UPGRADE_CAPTION" = "您的 Skype 版本已過期。 取得最新版本，享受新功能與改良後的效能。";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "立即取得";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "已傳送 Moji 給您";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "您已傳送 Moji";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "正在下載 Moji";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "下載此 Moji 時發生問題";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "輕點兩次可重試";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "播放 Moji";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "此內容已被移除";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "此內容已過期";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "上次出現於不久前";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "上次出現於一週前";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "電話";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "立即尋找朋友、訊息，或新的聯絡人";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Skype Moji";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "快來 %@ 短片，獲得更多 Moji 樂趣!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "搜尋欄位";
+
+"TAB_RECENT_TITLE" = "最近";
+"TAB_CONTACTS_TITLE" = "聯絡人";
+"TAB_CALLS_TITLE" = "撥打電話";
+"TAB_MYINFO_TITLE" = "我的資訊";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "全部";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "未讀";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "全部";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "上線";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "感謝您!";
+"APPSTORE_RATING_SUBTITLE" = "在 App Store 分享愛，並留下評價。這只會佔用您一點時間。";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "評分應用程式";
+
+"CONTACTS_ADD_FAVORITES" = "新增常用聯絡人";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "搜尋聯絡人";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "網際網路未連線";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "您已離線。<a href=\"reconnect\">重新連線</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Skype 目前發生問題";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "連線中";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "已連線";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "正在更新交談…";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "刪除聊天";
+"DELETECHAT_ALERT_MESSAGE"              = "確定要從這個裝置刪除此聊天? 聊天記錄也會一併刪除。";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "刪除";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "編輯";
+"LIST_EDITING_CANCEL" = "取消";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "全部標示為已讀";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "標示為已讀";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "全部刪除";
+"LIST_EDITING_DELETE_TOOLBAR" = "刪除 (%d)";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "刪除所有聊天";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "全部刪除";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "全部隱藏";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "我稍後再看";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "新增通話";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "保留";
+"CALLING_BANNER_STATUS_MUTED" = "已靜音";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "經 Skype 認證";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "開始新的群組通話";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "正在開始新的群組通話";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "您目前的通話將結束 (請讓其他人知道此事)，並開始您的新群組通話";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "通話";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "取消";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "已建立<a href=\"%@\">群組交談。</a>";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "傳送情人節視訊留言";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "情人視訊留言";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "讓所愛的人度過特別的一天";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "傳達愛";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "傳送情人節留言給所愛的人，讓對方度過特別的一天。";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "現在不要";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "傳送給聯絡人";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "分享視訊";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "情人節快樂";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "情人節\n快樂";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "我特別為你錄製了情人節視訊留言。如果你要錄製自己的留言，請造訪 https://go.skype.com/vmhci";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "傳送特別的情人節留言給您...";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "靜音";
+"INCALLCONTROLS_VIDEO_CAPTION" = "視訊";
+"INCALLCONTROLS_AUDIO_CAPTION" = "喇叭";
+"INCALLCONTROLS_ADD_CAPTION" = "新增";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "更多";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "撥號盤";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "更多動作";
+"GVC_CALLING_ME_ON_RIBBON" = "我";
+
+"GVC_NOTIFICATION_HUNG_UP" = "%@ 已離開";
+"GVC_NOTIFICATION_JOINED" = "%@ 已加入";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "建立群組 - 立即享受群組視訊通話的便利。";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "一邊聊天一邊即可直接啟動群組視訊通話。";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "試試變更檢視畫面。";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "再次點選即可取消釘選此連絡人。";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "想切換到免費的群組視訊通話嗎?";
+"GVC_INTERSTITIAL_TITLE" = "群組視訊通話功能新登場";
+"GVC_INTERSTITIAL_CAPTION" = "不分時段皆可免費享受齊聚一堂歡快暢聊的樂趣。";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "瞭解";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "新增參與者";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";

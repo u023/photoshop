@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "%@ heeft u een videobericht gestuurd";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "%@ heeft u een foto gestuurd";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "%@ heeft u een Moji verzonden";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "%@ heeft u een voicemailbericht gestuurd";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "%@ heeft u een bestand gestuurd";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "Nieuwe vind-ik-leuk ontvangen";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "Mijn account";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "Verzend feedback";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "Markeer alles als gelezen";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "Voeg personen toe";
+"HELP_NAVBAR_BUTTON" = "Help";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "U hebt ongelezen feedback.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "Feedback aan ontwikkelaars";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "Toon";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "Annuleer";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "Voeg toe aan favorieten";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "Verwijder uit favorieten";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "Voeg nieuwe favorieten toe via het menu bij elk contact.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "Meld af";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "Oproep van %@";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "Videogesprek van %@";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "Groepsgesprek van %@";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "Videobericht van %@.";
+"BACKGROUND_MISSEDCALL_ONE" = "Gemiste oproep van %@.";
+"BACKGROUND_MISSEDCALL_GROUP" = "Gemist groepsgesprek van %@";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "Nieuw contactverzoek van %@.";
+"BACKGROUND_VOICEMAIL_ONE" = "Nieuwe voicemail van %@.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "Controleer uw netwerkinstellingen en probeer opnieuw.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "Beantwoord";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "Weiger";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "Voeg toe aan gesprek";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "Hang op";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "Verbreek";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "Videobericht";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "Verzend videobericht";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "Annuleer";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "Gereed";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "Instellingen";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "Maak account";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "Maak account";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "%@ is geen geldig telefoonnummer. Controleer en probeer opnieuw.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "Adresboek";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "Landnummer of regio";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "Wijzigt het landnummer of de regio.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "Wijzig het landnummer of de regio.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "Zoeken";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Telefoonnummer";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "Sluit";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "Open";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "Maak gebeurtenis";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "Geef agenda weer";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "Kopieer";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "Voeg toe aan leeslijst";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "Open in Safari";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "Bewerk";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "Citeer";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "Op %1$@, om %2$@, schreef %3$@:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "Verwijder";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "Stuur door";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "Stuur door";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "Deel";
+"SHARE_MESSAGE_TITLE" = "Deel";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "Laden…";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "Dubbeltik om te annuleren";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "Video starten…";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "Oproep wordt doorgeschakeld…";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "Video";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "Toetsenblok";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "Hervat gesprek";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "Technische gespreksinformatie";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "Belopties";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ wil zijn/haar video delen";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ is geen contact van u, maar wil zijn/haar video delen.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Deelnemers aan dit gesprek hebben video ingeschakeld";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Wilt u video accepteren in dit gesprek?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Accepteer";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Weiger";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "Deelnemers toevoegen";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "Dubbeltik om deelnemers toe te voegen.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "Wachtwoord";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "Meld aan";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Skypenaam";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Skype-naam, e-mail of mobiel";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "Uw accounts";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "Selecteer het account dat u wilt gebruiken.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Skype-account";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Microsoft-account";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "Meld aan";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "Selecteer het type account dat u wilt gebruiken om aan te melden bij Skype.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Microsoft-account";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Skype-naam";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "Uw profiel personaliseren";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "Voeg foto toe";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "Wijzig foto";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Log in";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Problemen met aanmelden?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "OK";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "ik begrijp het";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "Ga door";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "Niet nu";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "Meer info";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "Instellingen";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "Herinner mij niet opnieuw";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "Schakel meldingen in";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "Wis tekst";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "Verzend";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "Gesprek,";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "Gesprek";
+"CHAT_CALL_EVENT_CALL_STARTED" = "Gesprek begonnen";
+"CHAT_CALL_EVENT_NO_ANSWER" = "Gebeld, geen antwoord";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "Gemiste oproep";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "%d gemiste gesprekken";
+"CHAT_CALL_EVENT_BUSY" = "Gesprek, bezet";
+"CHAT_CALL_EVENT_BLOCKED" = "Geblokkeerd";
+"CHAT_CALL_EVENT_FAILED" = "Gesprek, mislukt";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "Hoe was de kwaliteit van dit gesprek?";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "Bedankt voor uw feedback.";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "Erg slecht";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "Slecht";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "Redelijk";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "Goed";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "Uitstekend";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "Gesprek";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "Gesprek, %@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "Gesprek";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "Gesprek, %@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "Oproep mislukt";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "Gemiste oproep";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "Gebeld, geen antwoord";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "Gesprek, geblokkeerd";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "Verzonden";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "Geleverd";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "Gelezen";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "Verzonden";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "Geleverd";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "Gelezen";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "%@ heeft een nieuwe groep gemaakt.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "%@ heeft een nieuwe groep gemaakt met %@.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "%@ heeft een nieuwe groep gemaakt met %@ en %@.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "%@ heeft een nieuwe groep gemaakt met %@, %@ en nog iemand anders.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "%@ heeft een nieuwe groep gemaakt met %@, %@ en %u anderen.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "Vandaag is <name>%@</name> jarig";
+"CHAT_GRANTED_AUTH" = "U hebt uw contactgegevens gedeeld";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "%@ heeft %@ toegevoegd aan deze groep";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "Bots die worden toegevoegd aan deze groep hebben toegang tot de Skype-naam en schermnaam van elke deelnemer in de groep, en alle nieuwe chatberichten en inhoud die worden gedeeld in de groep.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "Welkom. Deze groep heeft een of meer bots. Deze hebben toegang tot de Skype-naam en schermnaam van elke deelnemer in de groep, en alle nieuwe chatberichten en inhoud die worden gedeeld in de groep.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "%@ heeft zich bij de groep gevoegd";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "%@ heeft de groep verlaten";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "%@ heeft %@ verwijderd uit deze groep";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "Het gastaccount voor %@ is verlopen";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "U hebt %@ geblokkeerd";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "%@ heeft de rol van %@ gewijzigd in %@";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "Initiator";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "Beheerder";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "Toeschouwer";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "Schrijver";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "Spreker";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "Kandidaat";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "Vertrokken";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "Verbannen";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "Er is een rol gewijzigd";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "Naamloos gesprek";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "Toon chat";
+"CONVERSATION_HIDE_CHAT" = "Verberg chat";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "Toon zijbalk";
+"CONVERSATION_HIDE_TIMELINE" = "Verberg zijbalk";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "Schakel over naar rasterweergave";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "Schakel over naar afzonderlijke weergave";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "Neem deel aan gesprek";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "Neem deel aan gesprek";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "Toon berichten uit <a href=\"jump\">oudere chat</a>";
+"CHAT_GOTO_NEW_CHAT" = "Deze chat is bijgewerkt naar een nieuwere versie. <a href=\"jump\">Ga naar de nieuwe chat</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "%@ moet Skype updaten om deel te nemen in deze chat Help door deze gebruikers(s) te verwijzen naar skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Lees meer over de nieuwe groepschat</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "%@ moeten Skype updaten om deel te nemen in deze chat. Help door deze gebruikers(s) te verwijzen naar skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Meer info over de nieuwe groepschat</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ kan nu deelnemen in deze chat.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "Opent een privéchat.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "Grijnzen";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "Teurig";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "Lachen";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "Cool";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "Verrast";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "Knipogen";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "Huilen";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "Zweten";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "Sprakeloos";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "Kus";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "Brutaal";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "Blozen";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "Vraag het me af";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "Slaperig";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "Rollende ogen";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "Verliefd";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "Kwaadaardige lach";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "Vingers gekruist";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "Gapen";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "Kotsen";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "Joh!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "Boos";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "Ik was het niet";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "Feest!";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "Bezorgd";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "mmm"; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "Nerd";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "Ik zeg niks";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "Zwaaien";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "Facepalm";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "Duivel";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "Engel";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "Jaloers";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "Wacht";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "Omhelzing";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "Make-up";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "Grinniken";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "Klappen";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "Denken";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "Buigen";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "Rolt lachend over de vloer";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "Opgelucht";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "Blij";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "Meesmuilen";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "Knikken";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "Hoofdschudden";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "Wachten";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "Emo";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "Ja";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "Geen";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "Handdruk";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "High five";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "Hart";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "Ik luister niet";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "Eekhoorn";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "Bloem";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "Regen";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "Zon";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "Tumbleweed";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "Muziek";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "Schurk";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "Teveel informatie";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "Koffie";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "Pizza";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "Geld";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "Gespierde arm";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "Taart";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "Bier";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "Cocktail";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "Dansen";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "Ninja";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "Ster";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "Blote billen";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "Telefoon";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "Middelvinger";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "Zwembadfeest";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "Gebroken hart";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "Dronken";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "Vloeken";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "Film";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "Roken";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "Klok";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "Man en hond";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "Fotograferende man";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "U hebt mail";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "Rock out";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "Stompen";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "Slaat hoofd tegen muur";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "Bel me";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "Werkt thuis";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "Bug";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "Praten";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "Paraderen";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "Man met pet";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "Football-speler";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "Ik negeer je";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "Idee";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "Schaap";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "Kat";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "Fiets";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "Hond";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "Emoticon: %@";
+
+"EMOTICON_TYPE_FLAG" = "Vlag: %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "<a href=\"add-people\">Zoek in de Skype-gebruikerslijst</a> om nieuwe contacten toe te voegen.";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "U hebt geen contacten op Skype.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "Skype kan geen Skype-contacten vinden in uw adresboek. <a href=\"add-people\">Voeg mensen toe</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "Er zijn nog geen Skype-contacten gevonden in het adresboek.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Zoek in Skype-gebruikerslijst"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "Zoek mensen die u kent op Skype"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "Er wordt gezocht naar bekenden"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "Tik dubbel om het zoeken te annuleren.";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "Perfect!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "Tap op Neem op als u klaar bent";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "Annuleer opname";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "Neem opnieuw op";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "Annuleer";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "U hebt een nieuw videoboodschap ontvangen. Kopieer deze geheime code %2 en bekijk uw videoboodschap hier: %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "Annuleer";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "Neem op";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "Stoppen";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "Stuur";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "Voorvertoning";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "Overschakelen naar voorcamera";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "Overschakelen naar achtercamera";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "Opnametijd";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "Video-effecten";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "normaal";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "ballonnen";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "beren";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "caleidoscoop";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "pixels";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "knijpen";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "bol-effect";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "röntgenfoto";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "poster";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "sneeuw";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "spiegel";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "hartjes";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "kostuum";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "Halloween";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "Taal van ondertitels";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "Ondertitels worden weergegeven na afloop van de opname";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "Ondertitels maken...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "Ondertitels kunnen niet worden gemaakt";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "Luisteren";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "Videoboodschap";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "U kunt geen videoboodschappen meer sturen naar deze chat.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "Verwijder video";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "Weet u zeker dat u dit videobericht wilt verwijderen?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "Verwijder";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Annuleer";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "Verwijder videobericht";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "Speel af";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "Onderbreek";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "Voicemailbericht";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Voicemailbericht, %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "Speelt voicemailbericht af";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "Stopt het afspelen";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Videoboodschap";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "Afspeelbaar";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "Bezig met uploaden";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "Niet beschikbaar";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "Speelt videobericht af";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "Met de camera voor";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "Met de camera achter";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "Neem op";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "Gestopt";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "Sturen";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "Niet verzonden. Wachten op internetverbinding...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "Controleer de verbinding en probeer het later opnieuw.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "Niet ontvangen. Wachten op internetverbinding...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "Videobeelden zijn niet beschikbaar";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "Videobeelden zijn niet beschikbaar";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ stuurt een foto";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "Problemen met aanmelden?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "Probleem met aanmelden";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "Kon niet verbinden met Skype. Probeer het later nog eens.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "Kon niet verbinden met Microsoft. Controleer uw netwerkinstellingen en probeer opnieuw";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "Kon niet verbinden met Microsoft. Probeer het later nog eens.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "Je kunt je niet aanmelden bij Skype met dit Microsoft-account omdat je niet voldoet aan de leeftijdsgrens voor je land/regio.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "Oeps, controleer uw gegevens";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "De aanmeldgegevens worden niet herkend. Controleer de gegevens en probeer het opnieuw.";
+"LOGIN_PROBLEM_NO_NETWORK" = "Aanmelden is mislukt. Controleer uw internetverbinding en probeer het opnieuw.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Skype-tegoed";
+"IAP_PURCHASE_BUTTON" = "Voeg %@-tegoed toe";
+"IAP_CALLPHONES" = "Bellen";
+"IAP_SEND_SMS" = "Verzend sms";
+"IAP_WITHSKYPECREDIT_TITLE" = "Waarom betalen voor Skype-tegoed?";
+"IAP_WITHSKYPECREDIT_BODY" = "Met Skype-tegoed bereikt u personen die geen Skype hebben. U kunt bellen of sms-berichten verzenden naar mobiele en vaste nummers, tegen lage tarieven.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Skype-naar-Skype-gesprekken zijn gratis, maar met een beetje tegoed krijgt u nog meer mogelijkheden.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "Uw huidige saldo is %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "Valuta omrekenen"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "%@ is omgerekend %@ voor uw Skype-tegoedsaldo.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "Meer informatie";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "Omgerekend tegen de koers van de Europese Centrale Bank op %@.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "De valuta van de App Store en de valuta van Skype komen niet overeen. De valuta van de App Store wordt omgerekend voor deze aankoop.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "Wijzig deze instellingen door u aan te melden op Skype.com en Wijzig valuta te selecteren in Mijn account.";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "Onvoldoende tegoed";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "U hebt niet genoeg Skype-tegoed om dit nummer te bellen.";
+"IAP_CALL_NO_CREDIT_TITLE" = "Geen tegoed";
+"IAP_CALL_NO_CREDIT_BODY" = "U hebt Skype-tegoed nodig om dit nummer te bellen.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "Uw aankoop is voltooid";
+"IAP_RESULT_SUCCESS_1_BODY" = "Er is %@ toegevoegd aan uw Skype-account.";
+"IAP_RESULT_SUCCESS_2_BODY" = "Er wordt %@ toegevoegd aan uw Skype-account.";
+"IAP_RESULT_SUCCESS_3_BODY" = "Er is al %@ toegevoegd aan uw Skype-account.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "Uw vorige bestelling van Skype-tegoed is nu voltooid. Er is %@ toegevoegd aan uw Skype-account.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "Uw vorige bestelling van Skype-tegoed wordt nu verwerkt.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "Uw vorige bestelling van Skype-tegoed is voltooid.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "Uw aankoop is geannuleerd";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "Onze excuses";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "Skype kan uw bestelling niet verwerken. Probeer het later opnieuw.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "Uw bestelling kan momenteel niet worden voltooid, maar blijft in behandeling. U ontvangt een melding zodra de bestelling is voltooid.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "Uw vorige bestelling van Skype-tegoed kan momenteel niet worden voltooid, maar blijft in behandeling. U ontvangt een melding zodra de bestelling is voltooid.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "U moet de gebruiksvoorwaarden van Skype lezen en accepteren voordat u tegoed aanschaft.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "Skype kan uw bestelling niet verwerken omdat uw betaalprovider momenteel niet beschikbaar is. Probeer het later opnieuw.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "Skype kan uw bestelling niet verwerken omdat uw account wordt beheerd door een beheerder.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "Skype kan uw bestelling niet verwerken. Neem contact op met de klantenservice van Skype voor ondersteuning.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "Uw iTunes-account is momenteel niet beschikbaar.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "Skype kan uw bestelling niet voltooien omdat uw iTunes-account momenteel niet beschikbaar is. Probeer het later opnieuw.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "Skype kan uw bestelling niet verwerken omdat de valuta in uw iTunes-account niet wordt ondersteund.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "De valuta die u voor uw Skype-account hebt ingesteld, komt niet overeen met uw iTunes-account. U kunt de valuta wijzigen in uw accountinstellingen op skype.com.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "Skype kan uw bestelling niet verwerken. Controleer uw netwerkverbinding en probeer het opnieuw.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "Skype kan uw bestelling niet verwerken. Controleer uw netwerkverbinding. Skype probeert uw bestelling opnieuw te verwerken zodra de verbinding is hersteld.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "Skype kan uw vorige bestelling van Skype-tegoed niet verwerken. Controleer uw netwerkverbinding. Skype probeert uw bestelling opnieuw te verwerken zodra de verbinding is hersteld.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "Hulp vragen";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Microsoft-account";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "Annuleer en start opnieuw";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "Gekoppeld Skype-account";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "Dit Skype-account is al gekoppeld aan een ander Microsoft-account. Meld u aan met deze Microsoft-gegevens om door te gaan.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "Er was een probleem met het koppelen van uw accounts. Probeer het opnieuw.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Probleem tijdens het openen van uw account, controleer uw netwerkverbinding en probeer het opnieuw.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "Telefoon";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "Start";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "Werk";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "Mobiel";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "Andere";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "Onbekend nummer";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (Gast)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "Verbinden...";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "Bellen...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "Bellen…";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "Gesprek in de wacht";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "De oproep is beëindigd";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "Starten...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "Bellen...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "Live";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "Gesprek in de wacht";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "In wachtstand gezet";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "Anderen live in gesprek";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "Anderen live, maar gesprek vol";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "Voicemailbericht afspelen";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "Opname";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "Recent live";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "Doorverbinden";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "Aanmelden…";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "Laden contacten…";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "Bijwerken…";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "Dit bericht is verwijderd";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "Kan geen verbinding maken met Skype.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "Controleer uw netwerkinstellingen en probeer opnieuw.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "Deze Skype-naam is ongeldig.";
+"Account::INVALID_EMAIL" = "Dit e-mailadres is ongeldig.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "Controleer het e-mailadres en probeer het opnieuw.";
+"Account::UNACCEPTABLE_PASSWORD" = "Dit wachtwoord is ongeldig.";
+"Account::SKYPENAME_TAKEN" = "Deze Skype-naam is al bezet.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "Voer een nieuwe in.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "Uw Skypenaam en wachtwoord werden niet herkend.";
+"Account::INCORRECT_PASSWORD" = "Uw Skypenaam en wachtwoord werden niet herkend.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "U hebt te vaak geprobeerd uzelf aan te melden.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "Probeer het later nog eens.";
+"Account::ATO_BLOCKED" = "Uw account is tijdelijk stopgezet.\n<a href = 'https://go.skype.com/account.recovery.ios'>Tik hier meer informatie</a>.";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "Er was een probleem met het aanmelden met behulp van uw Microsoft-account. Probeer het later opnieuw.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "Kon niet aanmelden omdat u geen vrije ruimte meer hebt op uw apparaat.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "Kon niet aanmelden. Herstart uw apparaat en probeer opnieuw.(%d)";
+"Account::DB_FAILURE" = "Kon niet aanmelden. Herstart uw apparaat en probeer opnieuw.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "Kon niet aanmelden. Installeer Skype opnieuw uit de App Store.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "Uw wachtwoord is gewijzigd. Meld u aan om Skype te blijven gebruiken.";
+"Account::LOGOUT_REMOTE" = "U bent afgemeld.";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "Deze versie van Skype wordt niet ondersteund.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "Voer een update uit naar de nieuwste versie van Skype om door te gaan.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "Kon niet aanmelden. Probeer het later nog eens.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "Je kunt je niet aanmelden bij Skype omdat je niet voldoet aan de leeftijdsgrens voor je land/regio.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "Probeer opnieuw.(%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "Gesprek";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "Videogesprek";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "Videobericht";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "Toetsenblok"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "Bel telefoonnummers";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "Begin een nieuwe chat";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Begin een nieuwe chat op Skype";
+
+
+"HUB_RECENTS_TITLE" = "Recent";
+"HUB_PEOPLE_TITLE" = "Personen";
+"HUB_FAVOURIES_TITLE" = "Favorieten";
+"CANCEL_ALERT_BUTTON" = "Annuleer";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "Favorieten";
+"PEOPLEPICKER_CONTACTS_TITLE" = "Contacten";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "Zoeken naar contacten";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "Nieuwe contacten zoeken";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "Zoeken naar %@";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Zoeken in Skype-gebruikerslijst\n naar %@";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "Personen";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "Bots";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "Niet verbonden"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "Op Skype"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Toevoegen op Skype";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "Annuleer";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "Voeg toe";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "Nieuwe chat";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "Dubbeltik om te selecteren.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "Recente gesprekken worden hier weergegeven.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "U hebt geen ongelezen berichten";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "Recente oproepen naar mobiele en vaste nummers worden hier weergegeven, <a href=\"open-dialpad\">bel een vriend</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, nieuwe berichten, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "In wachtstand gezet";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "Gesprek in de wacht";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "Huidige gesprek";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "Huidig gesprek, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "Huidig gesprek";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "Bewerkt";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "Wijzig";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "Bewaar foto";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "Bewaar video";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "Toon vind-ik-leuks";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "Vind-ik-leuk";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "Niet leuk";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "Sluiten";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "Vind-ik-leuks";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "Dubbeltik om contact te bekijken";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "Nieuw";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "vindt uw bericht leuk.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "vindt uw bericht leuk: %@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "vindt uw foto leuk.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "%@ vindt uw bericht leuk.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "%1$@ vindt uw bericht leuk: %2$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "%@ vindt uw foto leuk.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>Niemand vindt dit leuk</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "U vindt dit leuk";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "Meld aan";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Skypenaam";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Microsoft-account";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "Maak account";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Meld aan met Skype-naam";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Meld aan met een Microsoft-account";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Maak account";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "Veld voor aanmeldgegevens";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "Gebruikt u Skype al?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "Ja";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Ja, ik heb al een Skype-account.";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "Nee";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Nee, ik heb geen Skype-account.";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "Filter voor lijst met personen";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "Alle contacten";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "Onlinecontacten";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "Toon alle contacten.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "Toon alleen online contacten.";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "Toon alleen Skype-contacten.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "Audiogesprek";
+"CHATINPUT_PLACEHOLDER" = "Voer hier uw bericht in";
+"CHATINPUT_PLACEHOLDER_SMS" = "Typ hier een sms-bericht";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "Zeg hallo tegen %@";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "Hier wordt uw gesprek weergegeven.";
+"CHATTYPING_SINGLEUSER" = "%@ typt...";
+"CHATTYPING_TWOUSERS" = "%@ en %@ typen...";
+"CHATTYPING_THREEUSERS" = "%@, %@ en iemand anders typen...";
+"CHATTYPING_MULTIPLEUSERS" = "%@, %@ en %d anderen typen...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "Bel telefoon";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "Verzend uitnodiging";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Verzend een sms-link om te chatten op Skype.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "Chat";
+"SEND_SMS_TO_CONTACT_BUTTON" = "Sms";
+"EMPTY_PAGE_HEADER_TITLE" = "Zeg gedag tegen";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "Hoi, laten we chatten op Skype: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "Het kost %@ om deze sms te verzenden";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "Selecteer land/regio";
+"DIALPAD_CALL_BUTTON" = "Bel";
+"DIALPAD_STAR_BUTTON" = "Ster";
+"DIALPAD_HASH_BUTTON" = "Hekje";
+"DIALPAD_BACKSPACE_BUTTON" = "Verwijder";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "Sms";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "Opent een chatgesprek met %@";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "Het toetsenblok is verborgen.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "Geef toetsenblok weer";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "Kan deze contactpersoon niet bellen";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "Probleem bij bellen van deze contactpersoon.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "Controleer en probeer opnieuw.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "Alarmnummers";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "Oproepen naar alarmnummers worden niet ondersteund op uw apparaat.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "Ongeldig telefoonnummer";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "Probleem bij bellen van dit telefoonnummer.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "Controleer en probeer opnieuw.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "U bent al in gesprek";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "Er is een actief telefoongesprek.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Hang eerst op voordat u een Skype-gesprek begint.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "U bent al in gesprek";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "Er is een ander Skypegesprek bezig.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Hang eerst op voordat u een nieuw gesprek begint.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "Kan niet bellen";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "Uw operator laat geen Skype-gesprekken via uw mobiele netwerk toe. Maak eerst verbinding met een wifi-netwerk om Skype-gesprekken te voeren.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "Oproep mislukt";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "U kunt uzelf niet bellen.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "Geblokkeerd contact";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "Deblokkeer deze contactpersoon alvorens te bellen.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "Microfoontoegang";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "Zonder toestemming om uw microfoon te gebruiken, horen mensen u niet tijdens gesprekken of videoberichten.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Ga naar uw apparaatinstellingen en dan naar Privacy om toestemming te verlenen.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "Cameratoegang";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "Als Skype geen toegang heeft tot uw camera, kunnen mensen u niet zien tijdens gesprekken of videoberichten.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Ga naar uw apparaatinstellingen en vervolgens naar Privacy om toestemming te verlenen.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "Als u geen toestemming geeft om de camera te gebruiken, kunt u geen foto's maken via Skype.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "Kan niet bellen";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "Een andere audiotoepassing verhindert dat Skype geluid kan weergeven.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "Controleer en probeer opnieuw.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "Kan niet bellen";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "Er is een probleem met het geluid op uw apparaat.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "Controleer en probeer opnieuw.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "Kan niet bellen";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "Er is een probleem met het geluid op uw apparaat.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "Start Skype opnieuw om door te gaan.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "Kan niet bellen";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "Er is een probleem met het geluid op uw apparaat.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "Probeer het later nog eens.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "Kan niet bellen";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "Er is een probleem met het geluid op uw apparaat.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "Probeer het later opnieuw.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "Kan niet bellen";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "Probleem bij verbinden van dit gesprek.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "Probeer het later nog eens.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "Kan niet bellen";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "In India kunt u alleen mensen bellen in India die ook Skype hebben (gratis). U kunt in India niet bellen naar vaste en mobiele nummers via Skype.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "Meer info";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Kan niet deelnemen aan gesprek";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Dit groepsgesprek is vol. Probeer het later nog eens.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "Camera in gebruik";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "U voert momenteel een videogesprek.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "Schakel uw video uit om de camera te gebruiken.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Groepsgesprekken";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Groepen met %d of meer deelnemers kunnen niet worden gebeld met dit apparaat.";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "Groepsvideogesprekken";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Groepen met %d of meer deelnemers kunnen niet worden gebeld met dit apparaat.";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "U bent offline";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "U moet online zijn om te kunnen bellen met Skype.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Groepsgesprekken";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Maximum aantal deelnemers aan dit gesprek bereikt.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "Gesprek in de wacht";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "Hervat uw gesprek voordat u nieuwe deelnemers toevoegt.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "In wachtstand gezet";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "U moet dit gesprek hervatten voordat u nieuwe deelnemers kunt toevoegen.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "Oproep opzetten…";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "U kunt geen deelnemers toevoegen wanneer de verbinding voor de oproep wordt voorbereid.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "De verbinding voor de oproep wordt voorbereid. Een ogenblik geduld.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "Groep";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "Er is een probleem opgetreden bij het toevoegen van deelnemers. Probeer het later opnieuw.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "Kon video niet starten";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "Probleem bij het inschakelen van de video.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "Controleer of iedereen in dit gesprek de nieuwste versie van Skype heeft.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "Kon video niet starten";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skype kan de video niet starten.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "Probeer het later opnieuw.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "Gesprek hervatten";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "Er was een probleem bij het hervatten van dit gesprek.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "Sluit alle toepassingen die momenteel audio gebruiken en beëindig alle lopende gesprekken voordat u dit Skype-gesprek hervat.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "Contactaanvraag";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "Deelnemers zijn toegevoegd of verwijderd";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "Vandaag is <name>%@</name> jarig"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "Er is een groepschat gemaakt";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "Contactpersoon is geblokkeerd";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "Heeft u een videoboodschap gestuurd";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "U hebt een videoboodschap verzonden";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>U</name> en <name>%@</name> zijn nu contacten.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "is nu een contact";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "U hebt uw contactgegevens gedeeld";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "heeft een voicemailbericht naar u verzonden";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "U hebt een voicemailbericht verzonden. ";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "%@ heeft u een contact gestuurd. Deze versie van Skype ondersteunt dat nog niet.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "U hebt een contact verzonden. Deze versie van Skype ondersteunt dat nog niet.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "Dubbeltik om contact te bekijken";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "Dubbeltik om contacten te bekijken";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "Contact verzonden";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "Voeg toe aan contacten";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "Is al een contact";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "Bekijk contacten";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "Contacten verzenden";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "Contacten verzenden";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "& %d andere";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "Contacten selecteren";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "U hebt geen contacten in Skype om te verzenden.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "Geen contacten";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "Contacten";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "Contacten verzenden";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "De contactaanvraag is verzonden";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "Het contactverzoek is in behandeling";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "Verzonden contacten";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "%@ heeft u een bericht gestuurd dat deze versie van Skype nog niet ondersteunt.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "U hebt een bericht verzonden dat deze versie van Skype nog niet ondersteunt.";
+
+"RECENTS_DELETE_CONVERSATION" = "Verwijder chat";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "Markeer als gelezen";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "Markeer als ongelezen";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "Chat";
+"CALL_ACCESSIBILITYLABEL" = "Bellen";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "Aanmelden";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Aanmelden bij Skype";
+"HUB_ACCESSIBILITYLABEL" = "Hub";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "Voorgestelde zoekopdracht %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "Toon emoticons";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "Toon toetsenbord";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "Verwijder";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Zoek";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "Store";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "Recent";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "Emoticons";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Moji's";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "Zoek";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "Suggesties";
+"EXPRESSION_SEARCH_NO_RESULTS" = "Niets gevonden";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "Neem deel aan mijn chat op Skype om deze Moji te bekijken: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "Hoi,\nIk heb je een Moji gestuurd: %@. Neem deel aan mijn chat op Skype om de Moji te bekijken :\nTot snel,";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "Bekijk deze Moji eens";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "Oeps";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "Er is een probleem opgetreden bij het delen van deze Moji. Probeer het later opnieuw.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Skype Store";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "Moji's en emoticons laden...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "Zoek";
+"EXPRESSION_STORE_FREE" = "Gratis";
+"EXPRESSION_STORE_REMOVE" = "Verwijder";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "Gratis download";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "Downloaden…";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "Gedownload";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "Oeps";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "Er is een probleem opgetreden tijdens het laden van de Moji's en emoticons.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "Er is een probleem opgetreden tijdens het zoeken naar Moji's en emoticons. <a href=\"re-try fetching\">Probeer het opnieuw</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "Zoek naar emoticons en Moji's";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "Recent gebruikte emoticons worden hier weergegeven.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "Aanbevolen";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "Dubbeltik om een voorbeeld te bekijken.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "Dubbeltik om te verzenden.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "Dubbeltik om het voorbeeld te sluiten.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "Speel opnieuw af";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Moji-voorbeeld";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "Tik opnieuw om te verzenden.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Geef toegang tot uw microfoon in apparaatinstellingen zodat %@ u kan horen.";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Geef toegang tot uw microfoon in apparaatinstellingen zodat iedereen u kan horen.";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Geef toegang tot uw camera in de apparaatinstellingen zodat %@ u kan zien.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Geef toegang tot uw camera in de apparaatinstellingen zodat iedereen u kan zien.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "Maximum aantal deelnemers aan dit gesprek bereikt";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "U hebt een netwerkverbinding nodig om te bellen";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "De camera is uitgeschakeld in de gesplitste weergave.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Video wordt niet ondersteund in Slide Over.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "Luidsprekertelefoon is ingeschakeld";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "Tap dubbel om de luidsprekertelefoon uit te schakelen.";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "Luidsprekertelefoon is uitgeschakeld";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "Tap dubbel om de luidsprekertelefoon in te schakelen.";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "Gesprek gedempt";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "Tap dubbel om demping gesprek op te heffen.";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "Demping gesprek opgeheven";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "Tap dubbel om gesprek te dempen.";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "Video is ingeschakeld";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "Tap dubbel om video uit te schakelen.";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "Video is uitgeschakeld";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "Tap dubbel om video in te schakelen.";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "Inkomend";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "Uitgaand";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 deelnemer"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d deelnemers"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "Geen deelnemers"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%1$d van %2$d in dit gesprek";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "%1$@ moet Skype bijwerken voordat kan worden deelgenomen aan dit gesprek.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "%1$@ en %2$@ moeten Skype bijwerken voordat zij kunnen deelnemen aan dit gesprek.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "%1$@ en %2$@ moeten Skype bijwerken voordat zij kunnen deelnemen aan dit gesprek.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ", ";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Inkomend Skypegesprek van %@";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Inkomend groepsgesprek van %@ en %@";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Inkomend groepsgesprek van %@, %@ en één andere persoon";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Inkomend groepsgesprek van %@, %@ en %d andere personen";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Inkomend videogesprek van %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Inkomend groepsvideogesprek van %@ en %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Inkomend groepsvideogesprek van %@, %@ en één andere persoon";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Inkomend groepsvideogesprek van %@, %@ en %d andere personen";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skypegesprek naar %@";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Groepsgesprek naar %@ en %@";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Groepsgesprek naar %@, %@ en één andere persoon";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Groepsgesprek naar %@, %@ en %d andere personen";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "Videogesprek naar %@.";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "Videogesprek naar %@ en %@.";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "Videogesprek met %@, %@ en één andere persoon.";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "Videogesprek met %@, %@ en %d andere personen.";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skypegesprek met %@";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Groepsgesprek met %@ en %@";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Groepsgesprek met %@, %@ en één andere persoon";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Groepsgesprek met %@, %@ en %d andere personen";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Videogesprek met %@";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Groepsvideogesprek met %@ en %@";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Groepsvideogesprek met %@, %@ en één andere persoon";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Groepsvideogesprek met %@, %@ en %d andere personen";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skype-gesprek herstellen met %@";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Groepsgesprek herstellen met %@ en %@";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Groepsgesprek herstellen met %@, %@ en één andere persoon";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Groepsgesprek herstellen met %@ %@ en %d andere personen";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Videogesprek herstellen met %@";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Groepsvideogesprek herstellen met %@ en %@";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Goepsvideogesprek herstellen met %@, %@ en één andere persoon";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Groepsvideogesprek herstellen met %@, %@ en %d andere personen";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "Gesprek beëindigd";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "Gespreksduur";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "Voicemailbericht opnemen";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "d";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "d";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "u";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "u";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "min";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "min";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "s";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "s";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "Accepteer";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "Weiger";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> wil u graag toevoegen op Skype \"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> heeft u een bericht verzonden vanuit <location>%@</location>"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "Stuur <name>%@</name> een bericht en voeg deze persoon toe aan de contacten.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ is nog geen contactpersoon.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "%@ <a href=\"edit-contact-request-message\">Bewerk</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "Verzend contactverzoek";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "Voeg toe aan contacten";
+"CONTACT_REQUEST_PENDING" = "<name>%@</name> heeft het contactverzoek nog niet geaccepteerd.\n<a href=\"resend-request\">Verzend het contactverzoek opnieuw</a>";
+"CONTACT_REQUEST_BLOCKED" = "<name>%@</name> is geblokkeerd";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "Deblokkeer";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "Ja";
+"CONTACT_REQUEST_BLOCK_TITLE" = "Blokkeer contact";
+"CONTACT_REQUEST_DECLINED_TITLE" = "Contactaanvraag is geweigerd";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "Annuleer";
+"CONTACT_REQUEST_BLOCK_ALERT" = "Weet u zeker dat u deze contactpersoon wilt blokkeren?";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "Wilt u deze persoon ook blokkeren en rapporteren?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "Blokkeer";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "Blokkeer en verwijder";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "Blokkeren en rapporteren";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "Voeg deelnemers toe";
+"CHAT_OPTION_START_NEW_GROUP" = "Start een nieuwe groep";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "Bekijk profiel";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "Meldingen";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "Meldingen voor deze chat zijn ingeschakeld.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "Meldingen voor deze chat zijn uitgeschakeld.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "Schakel meldingen in";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "Schakel meldingen uit";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "Verlaat groep";
+
+"CHAT_OPTION_PARTICIPANTS" = "Toon deelnemers";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "AAN";
+"MK_SWITCH_OFF_MESSAGE" = "UIT";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "Schakelt in en uit.";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "Nieuwe chat";
+"NEWCHATSCENE_TITLE_TOKEN" = "Aan:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "& %d andere"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "& %d anderen"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "Selecteer contacten";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Start";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Maken van nieuwe groep annuleren";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Nieuwe groep maken";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "Audiogesprek";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "Videogesprek";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "Toetsenblok";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "Annuleren";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "Terug";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "Mijn info";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "Open mediamenu";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "Sluit mediamenu";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "Help";
+"MY_INFO_FEEDBACK_ACTION" = "Verzend feedback";
+
+"MY_INFO_CONNECTING" = "Verbinden...";
+
+"MY_INFO_STATUS" = "Status";
+"MY_INFO_CREDIT" = "Skype-tegoed";
+"MY_INFO_PROFILE_LINK" = "Mijn account";
+"MY_INFO_SETTINGS" = "Instellingen";
+"MY_INFO_SIGN_OUT" = "Meld af";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "Stemmingsbericht invoeren";
+"MY_INFO_MOOD_MESSAGE" = "Stemmingsbericht";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "Tap dubbel om te bewerken";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "Verzend feedback";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "Wijzig profielafbeelding";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "Neem foto";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "Kies bestaande foto";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "Verwijder profielafbeelding";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "Instellingen";
+
+"SETTINGS_GENERAL" = "Algemeen";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "Sta gerichte reclame toe";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "Sta toe dat Microsoft uw Skype-profielinformatie gebruikt om u meer relevante reclame te tonen in deze app. <a href=\"skype.com\">Meer info</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "Chatmeldingen";
+"SETTINGS_PUSH_NOTIFICATIONS" = "Pushmeldingen";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Pushmeldingen";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "U ontvangt meldingen voor nieuwe berichten ook als Skype is gesloten.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "U ontvangt geen meldingen voor nieuwe berichten als Skype is gesloten.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "Meldingen in app";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Meldingen in app";
+"SETTINGS_INAPP_SOUNDS" = "Geluiden in app";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "Geluiden in app";
+"SETTINGS_OTHER" = "Overige";
+
+"SETTINGS_PRIVACY" = "Privacy";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "Hoe mensen mij kunnen vinden";
+"SETTINGS_PRIVACY_EXPLANATION" = "Mensen kunnen deze contactgegevens gebruiken om u op Skype te vinden.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "Voeg telefoonnummer toe";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "Profielfoto";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "Zichtbaar voor iedereen";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "Zichtbaar voor mijn contacten";
+
+"SETTINGS_CONTACTS_HEADER" = "Contacten";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "Mijn vrienden toevoegen";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype controleert nu uw contacten en voegt automatisch personen die u kent toe aan uw Skype-contactenlijst.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "U moet nieuwe contacten handmatig zoeken op en toevoegen aan Skype.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "Voorbeeld van webkoppelingen";
+
+"SETTINGS_EMOTICONS_HEADER" = "Emoticons";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "Gebruik grote emoticons";
+
+"SETTINGS_EDIT_BUTTON" = "Bewerk";
+"SETTINGS_DONE_BUTTON" = "Gereed";
+
+"SETTINGS_ABOUT" = "Over";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "Voer uw nummer in";
+"PNV_HOW_IS_MY_NUMBER_USED" = "Hoe wordt mijn nummer gebruikt?";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "De standaard sms-tarieven kunnen van toepassing zijn.";
+"PNV_ENTER_THE_CODE" = "Voer de code in";
+"PNV_CODE_SENT" = "Er is een code naar uw nummer verzonden";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>Bel me</a> of <a href='pnv://resendcode'>Verzend code opnieuw</a>";
+"PNV_VERIFYING_NUMBER" = "Nummer verifiëren...";
+"PNV_NUMBER_VERIFIED" = "Geverifieerd";
+"PNV_NUMBER_USAGE_EXPLANATION" = "Met uw nummer kunnen uw vrienden u vinden op Skype. Bovendien kunt u zelf ook makkelijker zoeken naar nieuwe contacten.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "Code";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "In %@ in de instellingen kunt u instellen hoe personen u kunnen vinden. Verwijder hier een of meer telefoonnummers of schakel ze uit.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "Als u uw telefoonnummer niet wilt gebruiken en liever handmatig zoekt naar nieuwe contacten en deze toevoegt, selecteert u %@ hieronder.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Privacybeleid van Skype";
+"PNV_NOT_NOW" = "Niet nu";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Telefoonnummer";
+
+"PNV_WELCOME_HEADING" = "Vrienden zoeken is nu nog eenvoudiger.";
+"PNV_WELCOME_PARAGRAPH" = "U hoeft alleen maar uw telefoonnummer toe te voegen.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Volgende";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "Fout";
+"PNV_DEFAULT_ERROR_MESSAGE" = "Er is een probleem opgetreden tijdens het verifiëren van uw nummer. Probeer het later opnieuw.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "U hebt het maximum aantal geverifieerde nummers bereikt. Verwijder een van uw nummers in de instellingen voordat u een nieuw nummer toevoegt.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "U hebt een ongeldig nummer ingevoerd. Controleer de code en probeer het opnieuw.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "Skype kan geen sms naar dit nummer verzenden. Controleer de code en probeer het opnieuw.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "Deze code is verlopen. Selecteer de optie hieronder om een nieuwe code te laten verzenden.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "Deze code is onjuist. Controleer de code en probeer het opnieuw.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "Er is een probleem met uw netwerkverbinding. Controleer uw netwerkinstellingen en probeer het opnieuw.";
+"PNV_ERROR_TRY_AGAIN" = "Opnieuw";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Vrienden toevoegen op Skype";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "Er wordt gezocht naar contacten die actief zijn op Skype en deze personen worden toegevoegd.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Meer info";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "Skype controleert zo nu en dan uw adresboek om personen te zoeken die u kent. Nieuwe Skype-contacten worden dan automatisch toegevoegd. Geen zorgen, uw vrienden worden niet lastiggevallen met verschillende uitnodigingen.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "Als u toch van gedachten verandert, kunt u %@ uitschakelen in uw instellingen. Skype gebruikt uw adresboek dan niet langer om mensen te zoeken die u kent. Nieuwe contacten moet u dan handmatig toevoegen.";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "In %@ in de instellingen kunt u instellen hoe personen u kunnen vinden. Verwijder hier een of meer telefoonnummers of schakel ze uit.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Privacybeleid van Skype";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "Skype kan niet worden gebruikt voor het bellen van alarmnummers";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "Vrienden zoeken is nu nog eenvoudiger";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "Er zijn nieuwe contacten toegevoegd";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "Voeg contact toe";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "Annuleer";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "Zoek";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Annuleren";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "Zoek mensen op Skype met behulp van een Skype-naam, e-mailadres of volledige naam.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "Is al een Skype-contact";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "Geen resultaten gevonden";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "Terug";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "Vooruit";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "Deel";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "Over";
+"ABOUT_APPLICATION_VERSION" = "Skype-versie";
+"ABOUT_COPYRIGHT" = "© 2003-2016 Skype en Microsoft\nPatent aangevraagd";
+"ABOUT_THIRD_PARTY_NOTICES" = "Meldingen van derden";
+"ABOUT_PRIVACY_POLICY" = "Privacybeleid";
+"ABOUT_TERMS_OF_USE" = "Gebruiksvoorwaarden";
+"ABOUT_COPYRIGHT_TEXT" = "De naam Skype, geassocieerde handelsmerken en logo's, en het \"S\" logo zijn handelsmerken van Skype of gerelateerde entiteiten.\n\nWaarschuwing: dit programma wordt auteursrechtelijk beschermd alsmede door internationale verdragen. Ongeautoriseerde vermenigvuldiging of verspreiding van dit programma, of delen daarvan, kan leiden tot zware strafrechtelijke en civiele straffen, en zal tot het uiterste in rechte worden vervolgd.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "Fout";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "Via e-mail";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "Stuur me Skype-nieuws en aanbiedingen per e-mail";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Informeer me over nieuwe Skype-aanbiedingen en functies:";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "Voeg profielafbeelding toe";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "E-mailadres";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "jan@voorbeeld.nl";
+"CREATEACCOUNT_FULLNAME_LABEL" = "Volledige naam";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "Voornaam";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "Achternaam";
+"CREATEACCOUNT_PASSWORD_LABEL" = "Wachtwoord";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6-20 tekens";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "Herhaal wachtwoord";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Skypenaam";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "Vereist";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "Telefoonnummer";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "met landnummer";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "Sommige velden zijn niet ingevuld";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "Wachtwoorden komen niet overeen. Controleer en probeer opnieuw.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Gebruiksvoorwaarden";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "Ja, ik heb de <a href='%1$@'>Gebruiksvoorwaarden</a> en het <a href='%2$@'>Privacybeleid</a> van Skype gelezen en ga ermee akkoord.";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "Geen noodoproepen met Skype";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype is geen vervanging voor uw traditionele telefoon en kan niet voor noodoproepen worden gebruikt.";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "Akkoord";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "Moet 6-32 tekens lang zijn.";
+"SkyLib::TOO_LONG" = "Moet 6-32 tekens lang zijn.";
+"SkyLib::CONTAINS_INVALID_CHAR" = "Ongeldig teken bijv. Σ, à, ß.";
+"SkyLib::CONTAINS_SPACE" = "Mag geen spatie of tab bevatten.";
+"SkyLib::SAME_AS_USERNAME" = "Lijkt teveel op uw Skypenaam.";
+"SkyLib::INVALID_FORMAT" = "Ongeldige indeling.";
+"SkyLib::CONTAINS_INVALID_WORD" = "Te makkelijk te raden bijv. abcd, skype.";
+"SkyLib::TOO_SIMPLE" = "Moet tenminste 1 letter en 1 cijfer bevatten.";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "Moet beginnen met een letter (A-Z).";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "Probeer een nieuwe Skypenaam.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "Probeer een nieuw wachtwoord.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "Probeer een nieuw e-mailadres.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "Probeer opnieuw.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Skypenaam";
+"SkyLib::ACCOUNT_PASSWORD" = "Wachtwoord";
+"SkyLib::CONTACT_EMAILS" = "E-mailadres";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> heeft de naam van deze groep gewijzigd in '%@'";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Skype start";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> heeft de groepsfoto bijgewerkt.";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> heeft de groep bijgewerkt";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "Verberg";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "%d nieuwe meldingen";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "Eén nieuwe melding";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "Geen nieuwe meldingen";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "Hallo, ik wil u graag toevoegen aan Skype.";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "Contactverzoek";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. In %3$@";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "wil u graag toevoegen op Skype";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "Niet nu";
+"ALLOW_BUTTON" = "Sta toe";
+"PERMISSION_VIEW_TITLE" = "Bent u er klaar voor?";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw microfoon.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw camera.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw contacten.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw meldingen.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw microfoon en camera.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw microfoon en contacten.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw microfoon en meldingen.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw camera en contacten.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw camera en meldingen.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw contacten en meldingen.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw microfoon, camera en meldingen.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw microfoon, contacten en meldingen.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw microfoon, camera en meldingen.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw camera, contacten en meldingen.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Voor de beste Skype-ervaring heeft Skype toegang nodig tot uw microfoon, camera, contacten en meldingen.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "Contacten";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "Microfoon";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "Camera";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "Meldingen";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "Weet u het zeker?";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "Als Skype geen toegang heeft tot deze functies, kunt u niet correct bellen of worden gebeld. Bovendien ontvangt u geen meldingen van binnenkomende gesprekken en berichten.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "Uw contactenlijst is leeg en u kunt niet bellen of worden gebeld op Skype.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Meer info";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "Microfoon en camera";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "Skype heeft toegang nodig tot uw microfoon en camera als u via Skype wilt bellen of worden gebeld. Zonder deze machtigingen werkt Skype niet goed.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "Contacten";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "Skype heeft toegang nodig tot uw contacten om uw contactenlijst in Skype in te stellen. Skype controleert zo nu en dan uw contacten om personen te zoeken die u kent. Geen zorgen, uw vrienden worden niet lastiggevallen met verschillende uitnodigingen.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "Als u toch van gedachten verandert, kunt u %@ uitschakelen in uw instellingen. Skype gebruikt uw adresboek dan niet langer om mensen te zoeken die u kent. Nieuwe contacten moet u dan handmatig toevoegen.";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "Meldingen";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "Skype heeft toegang nodig tot Berichtgeving om u te melden wanneer er binnenkomende gesprekken en berichten zijn als Skype is gesloten. Als u niet wilt worden gestoord, kunt u later ook instellen om afzonderlijke chatmeldingen uit te schakelen.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "Geef toegang tot contacten";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Skype heeft toegang nodig tot uw contacten om naar personen te zoeken die u kent. Ga naar Instellingen en schakel Contacten in om Skype toegang te geven.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "Sla over";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "Contacten toevoegen";
+"ONBOARDING_GET_STARTED_BUTTON" = "Aan de slag";
+
+"ONBOARDING_IPHONE_TITLE1" = "Opnieuw ontworpen voor iPhone";
+"ONBOARDING_IPAD_TITLE1" = "Opnieuw ontworpen voor iPad";
+"ONBOARDING_TEXT1" = "Skype is gebruiksvriendelijker dan ooit tevoren en is ideaal voor chatten en bellen met vrienden.";
+
+"ONBOARDING_TITLE2" = "Zoeken";
+"ONBOARDING_TEXT2" = "Zoek personen, groepen of oude gesprekken.";
+
+"ONBOARDING_IPHONE_TITLE3" = "Krijg meer voor elkaar";
+"ONBOARDING_IPAD_TITLE3" = "Doe meer via Skype";
+
+"ONBOARDING_IPHONE_TEXT3" = "Deel locaties en foto's met vrienden en bekijk voorbeelden van webkoppelingen.";
+"ONBOARDING_IPAD_TEXT3" = "Grotere emoticons, voorbeelden van webkoppelingen en nieuwe groepen, allemaal op de iPad.";
+
+"ONBOARDING_TITLE4" = "Skype is leuker met vrienden";
+"ONBOARDING_TEXT4" = "Voeg een telefoonnummer toe aan Skype zodat vrienden u kunnen vinden.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "Delen in een handomdraai";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Tik op de knop voor delen als u websites of foto's van uw camera-album wilt verzenden naar Skype-vrienden.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "Voeg deelnemers toe";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "Toevoegen:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "Is al een deelnemer";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "Al in het gesprek";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "in dit gesprek";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "niet in dit gesprek:";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "Verbinden...";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "Verbinding maken met %@";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "Bellen...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "%@ wordt gebeld";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "Gesprek in de wacht";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "Gesprek in wacht voor %@";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "Voeg favorieten toe";
+"ADDFAVORITES_EMPTY_TITLE" = "Houd al uw favoriete personen bij elkaar - <a href=\"add-favorites\">voeg favorieten toe</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "Skype-contacten";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "Bestandsoverdracht";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ één andere";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ %d andere";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "U hebt dit bestand verstuurd vanaf een ander apparaat.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "U hebt deze bestanden verstuurd vanaf een ander apparaat.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "Deze versie van Skype ondersteunt het ontvangen van bestanden niet.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "Deze app ondersteunt alleen de nieuwe Skype-functies voor foto's delen.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "U hebt een bestand verzonden";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "U hebt %d bestanden verzonden";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "heeft een bestand naar u verzonden";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "Verzond %d bestanden";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "Online";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "Niet storen";
+"CONTACT_AVAILABILITY_AWAY" = "Weg";
+"CONTACT_AVAILABILITY_INVISIBLE" = "Onzichtbaar";
+"CONTACT_AVAILABILITY_OFFLINE" = "Offline";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "Beschikbaar";
+"CONTACT_AVAILABILITY_BUSY" = "Bezet";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "Geblokkeerd";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favoriet";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favoriet";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Deze persoon is favoriet. Dubbeltik om te verwijderen uit favorieten.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Deze persoon is geen favoriet. Dubbeltik om toe te voegen aan favorieten.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favoriet";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favoriet";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Deze groep is niet in uw favorieten. Dubbeltik om toe te voegen aan favorieten.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Deze groep is in uw favorieten. Dubbeltik om te verwijderen uit favorieten.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@ (%3$@)";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@ (%2$@)";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@ (%2$@)";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "SKYPENAAM";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "WEBSITE";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "OVER MIJ";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "VERJAARDAG";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "GESLACHT";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "TAAL";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "CONTACTEN";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "MOGELIJKHEDEN";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "PRIVACY";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "GEMAAKT DOOR";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "BESCHRIJVING";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "Verzend en ontvang chatberichten en foto's.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "Deze bot heeft toegang tot uw schermnaam, Skype-naam en alle chatberichten en inhoud die u en andere deelnemers in de groep delen met de bot.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "Vrouw";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "Man";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "Blokkeer contact";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "Deblokkeer contact";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "Verwijder contact";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "Verwijder contact";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "%@ wordt verwijderd uit de contactenlijst.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "Verwijder";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "Annuleer";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "Verbergen";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "Groepsprofiel";
+"GROUPPROFILE_NOTIFICATIONS" = "Meldingen";
+"GROUPPROFILE_MENU_TITLE" = "Profiel weergeven";
+"GROUPPROFILE_LEAVE_CHAT" = "Groep verlaten";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "Deelnemers";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "Nodig uit";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "Chatuitnodigingen";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "Chatgeschiedenis is zichtbaar voor iedereen";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "Schakel chatuitnodigingen in als u anderen wilt uitnodigingen voor dit chatgesprek.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "Alleen Skype-contacten kunnen worden uitgenodigd voor dit chatgesprek.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "Nodig iedereen uit voor deze chat, zelfs als het geen Skype-gebruikers zijn.";
+"GROUPPROFILE_CHAT_HISTORY" = "Chatgeschiedenis";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "De chatgeschiedenis is momenteel verborgen voor nieuwe deelnemers.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "De chatgeschiedenis is zichtbaar voor iedereen.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "Deelnemers toevoegen";
+"GROUP_ADMIN_STRING" = "%@ (Beheerder)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "Chatuitnodigingen";
+"GROUPPROFILE_ALERT_BODY" = "De uitnodiging voor deze chat is niet beschikbaar. Probeer het later opnieuw.";
+"GROUPPROFILE_ALERT_BUTTON" = "OK";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Neem deel aan mijn chatsessie in Skype: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "Neem deel aan mijn chatsessie";
+"INVITES_MAIL_BODY" = "Hoi,\nIk heb een Skype-groep gemaakt waarin we kunnen chatten, dingen kunnen delen en kunnen samenwerken.\nWord lid van de groep door op de link te klikken:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "Wijzig groepsnaam";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "Wijzig groepsnaam";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "Wijzig naam van contact";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "Dubbeltik om naam van contact te wijzigen";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "Voeg bot toe";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "Verzend contactverzoek";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "Verzend contactverzoek opnieuw";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "Het contactverzoek is verzonden";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "Accepteer";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "Weiger";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "<name>%@</name> wil u toevoegen op Skype"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "Open";
+"PUSH_CHAT_CALL" = "Bel";
+"PUSH_CHAT_TEXT_REPLY" = "Antwoord";
+"PUSH_CALL_ANSWER" = "Beantwoord";
+"PUSH_CALL_DECLINE" = "Weiger";
+"PUSH_CALL_VIDEO_VIDEO" = "Video";
+"PUSH_CALL_VIDEO_AUDIO" = "Audio";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "Bericht";
+"PUSH_MISSED_CALL_CALLBACK" = "Bel terug";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "Probleem met contacten";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "Er is een probleem opgetreden bij het raadplegen van de telefoonnummers in uw contacten. Probeer uw e-mailaccounts opnieuw te synchroniseren via Instellingen om het probleem op te lossen.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "Telefoonnummer bewaren";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "Geen resultaten.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "Eén resultaat.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "%d resultaten.";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@) laatste oproep: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@, laatste oproep: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@ is een contact in uw adresboek.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Voeg toe op Skype";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@ is een contact in uw adresboek. U kunt met deze persoon bellen en chatten op Skype.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Nog geen contact van u op Skype";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "Wis tekst";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Annuleer";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "Zoek in Skype";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "Zoek nieuwe contacten";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "Tik om nieuwe contacten te zoeken";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "Zoek naar %@";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Skype-gebruikerslijst";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "Zoekgeschiedenis";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "Wis";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "Contacten";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "Er zijn geen resultaten gevonden";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "Groepen";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "Gesprekken";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "Bewaar nummer";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "Nummer bewaren";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "Voer een naam in";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "Voer een nummer in";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "Nummer bewaren...";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "Nummer bewaard";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "Ongeldig nummer";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "U kunt dit nummer niet toevoegen omdat het ongeldig is. Voer een andere nummer in.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "Ongeldig nummer";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "Het is niet mogelijk om alarmnummers toe te voegen op Skype.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "Herstel";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "Weet u zeker dat u\n\n%@ wilt bellen?";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "Weet u zeker dat u \n\n%@ wilt videobellen?";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "Audiogesprek";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "Videogesprek";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "Bel";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "Bekijk origineel";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "Bekijk vertaling";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "U hebt een locatie gedeeld";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "Heeft een locatie met u gedeeld";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "Heeft de locatie (%@) gedeeld";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "Dubbeltik om te openen";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "Route naar locatie";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "Locatie";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "Uw locatie delen";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "Heeft een locatie verzonden";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "Locatietoegang";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "Als u geen toestemming geeft om uw locatie te gebruiken, kunt u uw locatie niet delen met uw vrienden op Skype.";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Ga naar uw apparaatinstellingen en vervolgens naar Privacy om toestemming te verlenen.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "Toegang tot contacten";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "Er is toegang tot de contacten nodig om het adresboek in Skype te tonen.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "Ga naar de apparaatinstellingen en dan naar Privacy om toestemming te verlenen.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "Fout";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "Er is een probleem bij het laden van de kaart.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "Controleer uw netwerkverbinding en probeer het opnieuw.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "Wis";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "Toegevoegde spelden wissen";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "Locatie delen";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "U kunt uw locatie niet meer delen tijdens deze chat.";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "De locatie delen";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "Zoeken";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "Er zijn geen resultaten gevonden";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "De locatie is niet gevonden. Probeer het later opnieuw.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Start";
+"TIMELINE_ICON_DIALPAD" = "Toetsenblok";
+"TIMELINE_ICON_PEOPLE" = "Contacten";
+"TIMELINE_SWIPEACTION_MUTE" = "Meldingen uit";
+"TIMELINE_SWIPEACTION_UNMUTE" = "Meldingen aan";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "Pushmeldingen";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "Schakel pushmeldingen in om meldingen te ontvangen voor oproepen en berichten als u niet op Skype bent.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "U kunt meldingen ontvangen voor oproepen en berichten als u niet op Skype bent. Ga hiervoor naar iPhone-instellingen > Berichtencentrum en schakel Skype-meldingen in.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "U kunt meldingen ontvangen voor oproepen en berichten als u niet op Skype bent. Ga hiervoor naar iPhone-instellingen, Berichtgeving en schakel Skype-meldingen in.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "Pushmeldingen";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "Als u pushmeldingen wilt ontvangen, moet u eerst Skype-meldingen inschakelen via de apparaatinstellingen.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "Openen";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "Weergeven";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "Luisteren";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "Afspelen";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Er is een probleem opgetreden bij het openen van het bericht. Controleer de netwerkverbinding en probeer het opnieuw.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "Heeft een mediadocument gedeeld";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "Dubbeltik om te openen";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "Bron is niet betrouwbaar";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "Foto";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "Neem foto";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "Kies bestaande foto";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "Kies een bestaande foto of video";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "Annuleer";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "Kies";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "tap dubbel om te sluiten";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "heeft een foto verzonden. Dubbeltik om het bestand te openen.";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "Foto ontvangen";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "Stuur foto";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "Fout bij het verzenden van de foto";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "Fout bij het ontvangen van de foto";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "tik dubbel om opnieuw te proberen";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "Verzend";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "Annuleer";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "De video kan niet worden verzonden omdat deze groter is dan %d MB";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "De foto kan niet worden verzonden omdat deze groter is dan %d MB";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "heeft een videobericht gestuurd. Dubbeltik om het te openen";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "Videobericht wordt ontvangen";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "Videobericht wordt verzonden";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "Er is een probleem opgetreden bij het verzenden van dit videobericht";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "Er is een probleem opgetreden bij het ontvangen van dit videobericht";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "Het bestand is verzonden. Dubbeltik om te downloaden";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "Bestand ontvangen. Dubbeltik om het te openen";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "Downloaden…";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "%@ is gedownload. Dubbeltik om te openen";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "Het bestand is groter dan %d MB. Er worden mogelijk datakosten in rekening gebracht";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "Dit bestand is niet beschikbaar";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "Start opnieuw";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "Er is een probleem opgetreden bij het ontvangen van dit bestand";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "Dit bestand is mogelijk onveilig";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "Downloaden is niet mogelijk omdat er een virus is gedetecteerd";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "Wachten op internetverbinding…";
+"FILE_TRANSFER_BUTTON_CANCEL" = "Annuleer";
+"FILE_TRANSFER_BUTTON_RETRY" = "Opnieuw";
+"FILE_TRANSFER_LABEL_CANCELED" = "Geannuleerd";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "Download";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "Meer info";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "Gedeelde bestanden worden na %d dagen van Skype verwijderd. Als u een bestand langer wilt bewaren, moet u het op uw apparaat opslaan.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "Dit bestand is niet beschikbaar";
+"FILE_SENDING_LABEL_ERROR" = "Er is een probleem opgetreden bij het verzenden van dit bestand";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "Bestand accepteren?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "Accepteer bestanden alleen van personen die u vertrouwt. Accepteert u het bestand %@ van %@?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "Waarschuwing: dit bestand is mogelijk niet veilig voor uw computer/apparaat";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "Wilt u het bestand %@ van %@ accepteren?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "Vraag me niet opnieuw";
+"FILE_TRANSFER_ACCEPT" = "Accepteer";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "Onvoldoende ruimte";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "Ga naar Instellingen > Algemeen > Gebruik om opslagruimte vrij te maken op dit apparaat.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "De gebruiker heeft de toepassing geen toegang gegeven tot de media";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "Ga naar Instellingen > Privacy > Foto's en schakel Skype in om toegang te geven.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "U hebt een foto gestuurd";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "Heeft u een foto gestuurd";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "%@ heeft een foto gestuurd.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "Dit apparaat ondersteunt nog niet de nieuwe Skype-functies voor foto's delen, maar u kunt ze hier bekijken in uw browser: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "Foto niet beschikbaar";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "Deze foto is momenteel niet beschikbaar.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "Annuleer";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "Opnieuw";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "Foto niet beschikbaar";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "Deze foto is momenteel niet beschikbaar.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "OK";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "Bewaar foto";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "Annuleer";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "Oeps";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "Fout bij het bewaren van de foto.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "Opnieuw";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "Annuleer";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "Webmedia";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "Zoek Gihpy";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Download de nieuwste update voor Skype";
+"FORCE_UPGRADE_CAPTION" = "U gebruikt een verouderde versie van Skype. Download de meest recente versie voor de nieuwste functies en verbeteringen.";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "Download de update vandaag nog";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "Heeft u een Moji verzonden";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "U hebt een Moji verzonden";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "Moji wordt gedownload";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "Er is een probleem bij het downloaden van deze Moji";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "Dubbeltikken om opnieuw te proberen";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "Moji afspelen";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "Deze inhoud is verwijderd";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "Deze inhoud is verlopen";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "Zojuist voor het laatst gezien";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "Een week geleden voor het laatst gezien";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "Telefoon";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "Vind vrienden, berichten of nieuwe contacten in een handomdraai";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Skype-Moji's";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "Moji's zijn nu nog leuker met %@-clips!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "Zoekveld";
+
+"TAB_RECENT_TITLE" = "Recent";
+"TAB_CONTACTS_TITLE" = "Contacten";
+"TAB_CALLS_TITLE" = "Bel telefoons";
+"TAB_MYINFO_TITLE" = "Mijn info";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "Alles";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "Ongelezen";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "Alle";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "Online";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "Bedankt!";
+"APPSTORE_RATING_SUBTITLE" = "We ontvangen heel graag een beoordeling in de App Store. Het is zo gebeurd!";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "Beoordeel app";
+
+"CONTACTS_ADD_FAVORITES" = "Voeg favorieten toe";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "Zoek contacten";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "Geen internetverbinding";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "U bent offline. <a href=\"reconnect\">Maak opnieuw verbinding</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Er zijn problemen met Skype";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "Verbinding maken...";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "Verbonden";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "Gesprekken bijwerken...";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "Verwijder chat";
+"DELETECHAT_ALERT_MESSAGE"              = "Weet u zeker dat u deze chat wilt verwijderen van dit apparaat? De chatgeschiedenis wordt ook verwijderd.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "Verwijder";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "Wijzig";
+"LIST_EDITING_CANCEL" = "Annuleer";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "Markeer als gelezen";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "Markeer als gelezen";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "Alles verwijderen";
+"LIST_EDITING_DELETE_TOOLBAR" = "(%d) verwijderen";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "Alle chats verwijderen";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "Alles verwijderen";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "Alles verbergen";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "Ik lees het bericht straks";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "Nieuwe oproep";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "in de wachtstand";
+"CALLING_BANNER_STATUS_MUTED" = "gedempt";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Door Skype gecertificeerd";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "Een nieuw groepsgesprek starten";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "Nieuw groepsgesprek starten…";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "Uw huidige gesprek wordt beëindigd (laat dit aan de andere persoon weten) en uw nieuwe groepsgesprek wordt gestart";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "Bel";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "Annuleer";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "heeft een <a href=\"%@\">groepsgesprek</a> gemaakt.";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "Verzend een videobericht voor Valentijnsdag";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "Videoberichten voor Valentijnsdag";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "Verzend een speciaal bericht aan iemand die u dierbaar is";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "Deel dit met anderen";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "Verzend een bericht voor Valentijnsdag aan iemand die u dierbaar is.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "Niet nu";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "Verzenden naar contacten";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "Video delen";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "Fijne Valentijnsdag";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "Fijne\nValentijnsdag";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "Ik heb een videobericht voor Valentijnsdag opgenomen, speciaal voor jou. Ga naar https://go.skype.com/vmhci als je zelf een videobericht wilt maken";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "Ik heb een speciaal Valentijnsbericht voor jou.";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "Demp";
+"INCALLCONTROLS_VIDEO_CAPTION" = "Beeld";
+"INCALLCONTROLS_AUDIO_CAPTION" = "Luidspreker";
+"INCALLCONTROLS_ADD_CAPTION" = "Voeg toe";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "Meer";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "Toetsenblok";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "Meer acties";
+"GVC_CALLING_ME_ON_RIBBON" = "Ik";
+
+"GVC_NOTIFICATION_HUNG_UP" = "%@ is weggegaan";
+"GVC_NOTIFICATION_JOINED" = "%@ is erbij gekomen";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "Maak een groep en voer groepsvideogesprekken.";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "Start een groepsvideogesprek direct vanuit de chat.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "Wijzig de weergave.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "Tik opnieuw om deze persoon los te maken.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "Maak hier een gratis groepsvideogesprek van.";
+"GVC_INTERSTITIAL_TITLE" = "Maak kennis met groepsvideobellen";
+"GVC_INTERSTITIAL_CAPTION" = "Kom gratis samen, wanneer u maar wilt.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "Akkoord";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "Voeg deelnemers toe";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";

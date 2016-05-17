@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "%@ ने आपको एक वीडियो मैसेज भेजा";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "%@ ने आपको एक फ़ोटो भेजी";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "%@ ने आपको एक मोजी भेजा है";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "%@ ने आपको एक ध्वनि संदेश भेजा";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "%@ ने आपको एक फ़ाइल भेजी";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "नई पसंद प्राप्त हुई";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "मेरा खाता";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "प्रतिक्रिया भेजें";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "सभी को पढ़ा गया के रूप में चिह्नित करें";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "लोग जोड़ें";
+"HELP_NAVBAR_BUTTON" = "मदद";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "आपके पास नहीं पढ़ा गया प्रतिक्रिया संदेश है.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "डेवलपर प्रतिक्रिया";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "दिखाएँ";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "रद्द करें";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "पसंदीदा में जोड़ें";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "पसंदीदा से निकालें";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "किसी भी संपर्क पर मेनू के माध्यम से नए पसंदीदा जोड़ें.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "साइन आउट करें";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "%@ से कॉल";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "%@ से वीडियो कॉल";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "%@ से ग्रुप कॉल";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "%@ वीडियो मैसेज.";
+"BACKGROUND_MISSEDCALL_ONE" = "%@ से छूटी कॉल.";
+"BACKGROUND_MISSEDCALL_GROUP" = "%@ से छूटी ग्रुप कॉल";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "%@ से नया संपर्क अनुरोध.";
+"BACKGROUND_VOICEMAIL_ONE" = "%@ से नया वॉइस मैसेज.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "कृपया अपनी नेटवर्क सेटिंग्स जाँचें और पुनः प्रयास करें.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "उत्तर दें";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "अस्वीकार करें";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "कॉल में जोड़ें";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "समाप्त करें";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "कॉल समाप्त करें";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "वीडियो संदेश";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "वीडियो मैसेज भेजें";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "रद्द करें";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "पूर्ण";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "सेटिंग्स";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "खाता बनाएँ";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "खाता बनाएँ";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "%@ अमान्य फ़ोन नंबर है. कृपया जाँचें और पुनः प्रयास करें.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "पता पुस्तक";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "देश कोड या क्षेत्र";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "देश या क्षेत्र का कोड बदलता है.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "देश या क्षेत्र का कोड बदलें.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "खोजें";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "फ़ोन नंबर";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "ख़ारिज करें";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "खोलें";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "ईवेंट बनाएँ";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "कैलेंडर दिखाएँ";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "प्रतिलिपि बनाएँ";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "पठन सूची में जोड़ें";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "Safari में खोलें";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "संपादित करें";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "प्रस्ताव";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "%1$@ पर, %2$@ के, %3$@ ने लिखा:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "हटाएँ";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "फ़ॉरवर्ड करें";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "फ़ॉरवर्ड करें";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "शेयर करें";
+"SHARE_MESSAGE_TITLE" = "शेयर करें";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "लोड हो रहा है";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "रद्द करने के लिए डबल टैप करें";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "वीडियो शुरू हो रहा है...";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "कॉल फ़ॉरवर्ड की जा रही है…";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "वीडियो";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "डायल पैड";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "कॉल फिर से शुरू करें";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "तकनीकी कॉल जानकारी";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "कॉल विकल्प";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ अपना वीडियो शेयर करना चाहता है";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ आपका संपर्क नहीं है लेकिन अपना वीडियो शेयर करना चाहता है.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "इस कॉल में शामिल सहभागियों ने वीडियो सक्षम किया है";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "क्या आप इस कॉल में वीडियो स्वीकार करना चाहते हैं?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "स्वीकार करें";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "अस्वीकार करें";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "सहभागी जोड़ें";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "सहभागी जोड़ने के लिए डबल टैप करें.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "पासवर्ड";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "साइन इन करें";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Skype नाम";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Skype नाम, ईमेल या मोबाइल";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "आपके खाते";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "वह खाता चुनें, जिसे आप उपयोग करना चाहेंगे.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Skype खाता";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Microsoft खाता";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "साइन इन करें";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "वह खाता प्रकार चुनें, जिसे आप Skype में साइन इन करने के लिए उपयोग करना चाहेंगे.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Microsoft खाता";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Skype नाम";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "अपना प्रोफ़ाइल वैयक्तिकृत करें";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "फ़ोटो जोड़ें";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "फ़ोटो परिवर्तित करें";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "साइन इन करें";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "साइन इन करने में समस्या है?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "ठीक";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "ठीक, पता चल गया";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "जारी रखें";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "अभी नहीं";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "अधिक जानें";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "सेटिंग्स";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "मुझे फिर से याद न दिलाएँ";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "सूचनाएँ चालू करें";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "टेक्स्ट साफ़ करें";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "भेजें";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "कॉल करें,";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "कॉल करें";
+"CHAT_CALL_EVENT_CALL_STARTED" = "कॉल शुरू हुई";
+"CHAT_CALL_EVENT_NO_ANSWER" = "कॉल, कोई उत्तर नहीं";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "छूटी कॉल";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "%d छूटी कॉल्स";
+"CHAT_CALL_EVENT_BUSY" = "कॉल, व्यस्त";
+"CHAT_CALL_EVENT_BLOCKED" = "ब्लॉक";
+"CHAT_CALL_EVENT_FAILED" = "कॉल, विफल";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "इस कॉल की गुणवत्ता कैसी थी?";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "आपकी प्रतिक्रिया के लिए धन्यवाद.";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "वाकई खराब";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "खराब";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "उचित";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "अच्छा";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "शानदार";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "कॉल करें";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "कॉल करें, %@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "कॉल करें";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "कॉल करें, %@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "कॉल विफल";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "छूटी कॉल";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "कॉल, कोई उत्तर नहीं";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "कॉल, ब्लॉक किया गया है";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "भेजा गया";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "वितरित किया गया";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "पढ़ें";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "भेजा गया";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "वितरित किया गया";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "पढ़ें";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "%@ ने नया ग्रुप बनाया.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "%@ ने %@ के साथ नया ग्रुप बनाया.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "%@ ने %@ और %@ के साथ नया ग्रुप बनाया.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "%@ ने %@, %@ और एक अन्य के साथ नया ग्रुप बनाया.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "%@ ने %@, %@ और %u अन्य के साथ नया ग्रुप बनाया.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "आज <name>%@ का </name> जन्मदिन है";
+"CHAT_GRANTED_AUTH" = "आपने अपने संपर्क विवरण शेयर किए हैं";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "%@ ने %@ को इस ग्रुप में जोड़ा";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "इस समूह में जोड़े गए बॉट्स को प्रत्येक सहभागी के Skype नाम, प्रदर्शन नाम और कोई भी नए चैट संदेशों या समूह में साझा की गई नई सामग्री तक पहुँच प्राप्त होती है.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "आपका स्वागत है! यह समूह एक या अधिक बॉट शामिल करता है. उन्हें प्रत्येक सहभागी के Skype नाम, प्रदर्शन नाम और कोई भी नए चैट संदेशों या समूह में साझा की गई नई सामग्री तक पहुँच प्राप्त है.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "%@ ग्रुप से जुड़ा";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "%@ ने ग्रुप छोड़ा";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "%@ ने %@ को इस ग्रुप से निकाला";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "%@ के लिए अतिथि खाते की समय सीमा समाप्त हो चुकी है";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "आपने %@ को ब्लॉक किया";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "%@ ने %@ की भूमिका %@ पर बदल दी";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "निर्माता";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "व्यवस्थापक";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "दर्शक";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "लेखक";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "वक्ता";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "आवेदक";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "सेवानिवृत्त";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "आउटलॉ";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "भूमिका बदल दी गई थी";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "अनामांकित वार्तालाप";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "चैट दिखाएँ";
+"CONVERSATION_HIDE_CHAT" = "चैट छुपाएँ";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "साइडबार दिखाएँ";
+"CONVERSATION_HIDE_TIMELINE" = "साइडबार छुपाएँ";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "ग्रिड दृश्य पर स्विच करें";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "व्यक्तिगत दृश्य पर स्विच करें";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "कॉल में जुड़ें";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "कॉल में जुड़ें";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "<a href=\"jump\">पुरानी चैट</a> के संदेश दिखाएँ";
+"CHAT_GOTO_NEW_CHAT" = "इस चैट को नए संस्करण पर अपडेट कर दिया गया है. <a href=\"jump\">नई चैट पर जाएँ</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "%@ को इस चैट में शामिल होने के लिए Skype अपडेट करना होगा. उन्हें skype.com/updateme पर भेजकर मदद करें. <a href=\"https://support.skype.com/faq/FA12361/\">नए ग्रुप चैट के बारे में अधिक जानें</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "%@ को इस चैट में शामिल होने के लिए Skype अपडेट करना होगा. उन्हें skype.com/updateme पर भेजकर मदद करें. <a href=\"https://support.skype.com/faq/FA12361/\">नए ग्रुप चैट के बारे में अधिक जानें</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ अब इस चैट में शामिल हो सकता है.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "प्रत्येक के लिए अलग अलग चैट प्रारंभ होती है.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "मुस्कुराना";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "दुखी";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "हँसना";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "बढ़िया";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "आश्चर्यचकित";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "पलक झपकाना";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "रोना";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "पसीना आना";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "निःशब्द";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "चुंबन";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "ढीठ";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "शर्माना";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "विस्मित";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "उँघना";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "आँखें घुमाना";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "प्यार में";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "कपटी मुस्कराहट";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "फ़िंगर्स क्रॉस्ड";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "जम्हाई लेना";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "उल्टी करना";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "हूंह!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "क्रोधित";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "वो मैं नहीं था";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "पार्टी";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "चिंतित";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "मम्म्म"; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "किताबी कीड़ा";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "मेरे मुंह पर ताला लग गया है";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "लहराना";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "चेहरा छुपाना";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "शैतान";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "फ़रिश्ता";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "ईर्ष्या";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "प्रतीक्षा";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "आलिंगन";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "मेक-अप";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "खिल्ली उड़ाना";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "ताली बजाना";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "सोचना";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "नमन";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "हंसी से लोट-पोट होना";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "राहत";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "खुश";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "बनावटी हंसी";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "सम्मति";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "सिर हिलाना";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "इंतज़ार में";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "भावना";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "हाँ";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "नहीं";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "हाथ मिलाना";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "दे ताली";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "दिल";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "अनसुना करना";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "गिलहरी";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "फूल";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "बारिश";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "सूरज";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "टंबलवीड";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "संगीत";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "डाकू";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "बहुत अधिक जानकारी";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "कॉफ़ी";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "पिज़्ज़ा";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "नकद";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "मसल वाली भुजा";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "केक";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "बीयर";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "कॉकटेल";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "नाचना";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "निन्जा";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "सितारा";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "मूनिंग";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "फ़ोन";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "बीच की उंगली";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "पूल पार्टी";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "टूटा दिल";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "शराबी";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "शपथ लेना";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "मूवी";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "धूम्रपान";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "घड़ी";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "आदमी और कुत्ता";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "फ़ोटो ले रहा आदमी";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "आपके लिए मेल है";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "रॉक आउट";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "पंचिंग";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "दीवार पर सिर पटकना";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "मुझे कॉल करें";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "घर से काम कर रहा हूँ";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "बग";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "बोलना";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "अकड़ना";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "हैट पहने हुए आदमी";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "फ़ुटबॉल प्लेयर";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "मुझे नहीं सुनना";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "विचार";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "भेड़";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "बिल्ली";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "बाइक";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "कुत्ता";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "इमोटिकॉन: %@";
+
+"EMOTICON_TYPE_FLAG" = "झंडा: %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "Skype पर नए संपर्क जोड़ने के लिए, <a href=\"add-people\">Skype निर्देशिका खोजें</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "आपके पास Skype पर कोई संपर्क नहीं हैं.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "हमें अभी तक आपकी पता पुस्तिका में कोई Skype संपर्क नहीं मिला है. <a href=\"add-people\">लोग जोड़ें</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "हमें अभी तक आपकी पता पुस्तिका में कोई Skype संपर्क नहीं मिला है.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Skype निर्देशिका खोजें"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "Skype पर अपने परिचित लोग ढूँढें"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "उन लोगों को खोज रहा है जिन्हें आप जानते हैं"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "खोज रद्द करने के लिए डबल टैप करें.";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "अच्छा दिख रहा है!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "जब आप तैयार हों, रिकॉर्ड करें दबाएँ.";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "रिकॉर्डिंग रद्द करें";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "पुनः रिकॉर्ड करें";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "रद्द करें";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "आपको एक नया वीडियो मैसेज प्राप्त हुआ है. इसे देखने के लिए बस यह गुप्त कोड %2 कॉपी करें और अपना वीडियो मैसेज यहाँ देखें: %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "रद्द करें";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "रिकॉर्ड करें";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "रोकें";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "भेजें";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "पूर्वावलोकन";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "सामने के कैमरे पर स्विच करें";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "पीछे के कैमरे पर स्विच करें";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "समय रिकॉर्ड किया गया";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "वीडियो प्रभाव";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "साधारण";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "गुब्बारे";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "भालू";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "केलिडोस्कोप";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "पिक्सलेट";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "स्क्वीज़";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "उभार";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "एक्स-रे";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "पोस्टर";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "हिमपात";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "प्रतिबिंब";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "हार्ट्स";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "पोशाक";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "हेलोवीन";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "उपशीर्षक भाषा";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "रिकॉर्डिंग पूर्ण हो जाने के बाद उपशीर्षक दिखाई देंगे";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "उपशीर्षक बना रहा है...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "उपशीर्षक नहीं बनाया जा सका";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "सुन रहा है";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "वीडियो मैसेज";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "आप अब इस चैट पर वीडियो मैसेज भेजने में समर्थ नहीं हैं.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "ठीक";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "वीडियो हटाएँ";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "क्या आप वाकई इस वीडियो संदेश को हटाना चाहते हैं?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "हटाएँ";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "रद्द करें";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "वीडियो संदेश हटाएँ";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "चलाएँ";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "विराम";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "वॉइस मैसेज";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "वॉइस मैसेज %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "ध्वनि संदेश चलता है";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "प्लेबैक रूक जाता है";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "वीडियो मैसेज";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "चलाने योग्य";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "अपलोड हो रहा है";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "अनुपलब्ध";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "वीडियो संदेश चलता है";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "सामने का कैमरा उपयोग में";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "पीछे का कैमरा उपयोग में";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "रिकॉर्डिंग हो रही है";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "रूक गया";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "भेजा जा रहा है";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "भेजा नहीं गया - इंटरनेट कनेक्शन की प्रतीक्षा कर रहा है...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "कृपया अपना कनेक्शन जाँचें और बाद में पुनः प्रयास करें.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "प्राप्त नहीं किया गया - इंटरनेट कनेक्शन की प्रतीक्षा कर रहा है...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "वीडियो अनुपलब्ध";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "वीडियो अनुपलब्ध";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ एक फ़ोटो भेज रहा है";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "साइन इन करने में समस्या हैं?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "साइन इन करने में समस्या";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "Skype से कनेक्ट होने में असमर्थ, कृपया बाद में पुनः प्रयास करें.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "Microsoft से कनेक्ट होने में असमर्थ, अपनी नेटवर्क सेटिंग्स जाँचें और पुनः प्रयास करें.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "Microsoft से कनेक्ट होने में असमर्थ, कृपया बाद में पुनः प्रयास करें.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "क्षमा करें, आप इस Microsoft खाते से Skype में साइन इन नहीं कर सकते, क्योंकि आप अपने देश/क्षेत्र के लिए निर्धारित आयु सीमा पूरी नहीं करते.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "कृपया अपने विवरण जाँचें";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "हम ये साइन इन विवरण नहीं पहचान पाए, कृपया जाँचें और पुनः प्रयास करें.";
+"LOGIN_PROBLEM_NO_NETWORK" = "साइन इन करने में अक्षम है, कृपया अपना इंटरनेट कनेक्शन जाँचें और पुनः प्रयास करें.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Skype क्रेडिट";
+"IAP_PURCHASE_BUTTON" = "%@ क्रेडिट जोड़ें";
+"IAP_CALLPHONES" = "फ़ोन पर कॉल करें";
+"IAP_SEND_SMS" = "SMS भेजें";
+"IAP_WITHSKYPECREDIT_TITLE" = "Skype क्रेडिट भुगतान क्यों करें?";
+"IAP_WITHSKYPECREDIT_BODY" = "क्योंकि आप कम लागत की दरों पर मोबाइल और लैंडलाइन नंबर पर कॉल करके या SMS भेज कर उन लोगों तक पहुँच सकते हैं जो Skype पर मौजूद नहीं हैं.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Skype से Skype कॉल निःशुल्क हैं, लेकिन थोड़े से क्रेडिट से आप और भी बहुत कुछ कर सकते हैं.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "आपका वर्तमान बैलेंस %@ है";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "मुद्रा परिवर्तन"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "%@ आपकी Skype क्रेडिट बैलेंस के लिए %@ में परिवर्तित हो जाएगा.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "अधिक जानें";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "%@ पर यूरोपीय केंद्रीय बैंक दर पर परिवर्तित.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "ऐसा प्रतीत होता है कि आपके अनुप्रयोग स्टोर की मुद्रा और Skype मुद्रा मेल नहीं खाती. हम इस खरीदारी के लिए अनुप्रयोग स्टोर की मुद्रा को परिवर्तित करेंगे.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "इन सेटिंग्स को परिवर्तित करने के लिए, Skype.com पर साइन इन करें और मेरे खाते में \"मुद्रा परिवर्तित करें\" का चयन करें.";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "अपर्याप्त क्रेडिट";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "इस नंबर पर कॉल करने के लिए आपके पास पर्याप्त Skype क्रेडिट नहीं है.";
+"IAP_CALL_NO_CREDIT_TITLE" = "कोई क्रेडिट नहीं";
+"IAP_CALL_NO_CREDIT_BODY" = "इस नंबर पर कॉल करने के लिए आपको Skype क्रेडिट की आवश्यकता है.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "आपकी खरीदारी सफल रही";
+"IAP_RESULT_SUCCESS_1_BODY" = "%@ को आपके Skype खाते में जोड़ दिया गया है.";
+"IAP_RESULT_SUCCESS_2_BODY" = "%@ को आपके Skype खाते में जोड़ा जा रहा है.";
+"IAP_RESULT_SUCCESS_3_BODY" = "%@ को पहले से ही आपके Skype खाते में जोड़ दिया गया है.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "आपका पिछला Skype क्रेडिट ऑर्डर अब पूरा हो गया है. %@ को आपके Skype खाते में जोड़ दिया गया है.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "आपका पिछला Skype क्रेडिट ऑर्डर वर्तमान में संसाधित किया जा रहा है.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "आपका पिछला Skype क्रेडिट ऑर्डर सफलतापूर्वक पूरा हो गया था.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "आपकी खरीदारी रद्द की गई";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "क्षमा करें";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "हम आपका ऑर्डर संसाधित नहीं कर सके, कृपया बाद में पुनः प्रयास करें.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "आपका ऑर्डर अभी पूरा नहीं किया जा सकता, लेकिन हम प्रयास करते रहेंगे और आपका ऑर्डर पूरा हो जाने के बाद आपको सूचित किया जाएगा.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "आपका पिछला Skype क्रेडिट ऑर्डर अभी पूरा नहीं किया जा सकता, लेकिन हम प्रयास करते रहेंगे और आपका ऑर्डर पूरा हो जाने के बाद आपको सूचित किया जाएगा.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "कृपया क्रेडिट खरीदने से पहले Skype की उपयोग की शर्तें पढ़ें और स्वीकार करें.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "हम आपका ऑर्डर संसाधित नहीं कर सके क्योंकि आपका भुगतान प्रदाता वर्तमान में अनुपलब्ध है, कृपया बाद में पुनः प्रयास करें.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "हम आपका ऑर्डर संसाधित नहीं कर सके क्योंकि आपका खाता किसी व्यवस्थापक द्वारा प्रबंधित है.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "हम आपका ऑर्डर संसाधित नहीं कर सके, कृपया सहायता के लिए Skype की ग्राहक सहायता टीम से संपर्क करें.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "आपका iTunes खाता वर्तमान में अनुपलब्ध है.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "हम आपका ऑर्डर संसाधित नहीं कर सके क्योंकि आपका iTunes खाता वर्तमान में अनुपलब्ध है, कृपया बाद में पुनः प्रयास करें.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "हम आपका ऑर्डर संसाधित नहीं कर सके क्योंकि Skype आपके iTunes खाते में सेट मुद्रा का समर्थन नहीं करता.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "आपके Skype खाते में सेट मुद्रा का आपके iTunes खाते से मिलान नहीं होता है. आप skype.com पर अपनी खाता सेटिंग से मुद्रा स्विच कर सकते हैं.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "हम आपका ऑर्डर संसाधित नहीं कर सके, कृपया अपना नेटवर्क कनेक्शन जाँचें और पुनः प्रयास करें.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "हम आपका ऑर्डर संसाधित नहीं कर सके, कृपया अपना नेटवर्क कनेक्शन जाँचें और आपके द्वारा जल्दी से जल्दी फिर से कनेक्ट होने पर हम पुनः प्रयास करेंगे.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "हम आपका पिछला Skype क्रेडिट ऑर्डर संसाधित नहीं कर सके, कृपया अपना नेटवर्क कनेक्शन जाँचें और आपके द्वारा जल्दी से जल्दी फिर से कनेक्ट होने पर हम पुनः प्रयास करेंगे.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "मदद प्राप्त करें";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Microsoft खाता";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "रद्द करें और पुनः शुरू करें";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "लिंक किया गया Skype खाता";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "यह Skype खाता पहले ही अन्य Microsoft खाते के साथ लिंक किया गया है. जारी रखने के लिए इन Microsoft विवरणों के साथ साइन इन करें.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "आपके खाते लिंक करने में एक समस्या हुई थी, कृपया बाद में पुनः प्रयास करें.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "आपका खाता खोलने में समस्या हुई थी, अपना नेटवर्क कनेक्शन जाँचें और पुनः प्रयास करें.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "फ़ोन";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "घर";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "कार्यालय";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "मोबाइल";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "अन्य";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "अज्ञात नंबर";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (अतिथि)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "कनेक्ट किया जा रहा है...";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "रिंग हो रहा है...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "कॉलिंग...";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "कॉल होल्ड पर है";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "कॉल समाप्त";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "शुरू हो रहा है...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "कॉलिंग...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "लाइव";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "कॉल होल्ड पर है";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "कॉल रीमोट रूप से होल्ड की गई है";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "अन्य लोग लाइव हैं";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "अन्य लोग लाइव हैं फ़ुल";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "वॉइस मैसेज चल रहा है";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "रिकॉर्डिंग हो रही है";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "हाल ही में लाइव";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "स्थानांतरित हो रहा है";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "साइन इन हो रहा है...";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "संपर्क लोड हो रहे हैं…";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "अपडेट हो रहा है…";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "यह संदेश निकाल दिया गया है";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "Skype से कनेक्ट होने में असमर्थ.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "कृपया अपनी नेटवर्क सेटिंग्स जाँचें और पुनः प्रयास करें.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "यह Skype नाम मान्य नहीं है.";
+"Account::INVALID_EMAIL" = "यह ईमेल पता मान्य नहीं है.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "कृपया जाँचें और पुनः प्रयास करें.";
+"Account::UNACCEPTABLE_PASSWORD" = "यह पासवर्ड मान्य नहीं है.";
+"Account::SKYPENAME_TAKEN" = "यह Skype नाम पहले ही ले लिया गया है.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "कृपया नया नाम दर्ज करें.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "हम आपका Skype नाम या पासवर्ड पहचान नहीं पाए.";
+"Account::INCORRECT_PASSWORD" = "हम आपका Skype नाम या पासवर्ड पहचान नहीं पाए.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "आपने कई बार साइन इन करने का प्रयास किया है.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "कृपया बाद में पुनः प्रयास करें.";
+"Account::ATO_BLOCKED" = "आपका खाता रोक दिया है, <a href = 'https://go.skype.com/account.recovery.ios'>अधिक जानकारी के लिए यहाँ टैप करें</a>.";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "आपके Microsoft खाते के साथ साइन इन करने में समस्या हुई थी, कृपया बाद में पुनः प्रयास करें.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "साइन इन करने में असमर्थ, क्योंकि आपके डिवाइस में स्टोरेज स्थान नहीं है.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "साइन इन करने में असमर्थ, कृपया डिवाइस रीस्टार्ट करें और पुनः प्रयास करें.(%d)";
+"Account::DB_FAILURE" = "साइन इन करने में असमर्थ, कृपया डिवाइस रीस्टार्ट करें और पुनः प्रयास करें.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "साइन इन करने में असमर्थ, ऐप स्टोर से Skype पुर्नस्थापित करने का प्रयास करें.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "आपका पासवर्ड बदल दिया गया है, Skype उपयोग करना जारी रखने के लिए साइन इन करें.";
+"Account::LOGOUT_REMOTE" = "आपको साइन आउट कर दिया गया है.";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "Skype का यह संस्करण समर्थित नहीं है.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "जारी रखने के लिए Skype के नवीनतम संस्करण से अद्यतित करें.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "साइन इन करने में असमर्थ, कृपया बाद में पुनः प्रयास करें.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "आप Skype में साइन इन नहीं कर सकते, क्योंकि आप अपने देश/क्षेत्र के लिए निर्धारित न्यूनतम आयु सीमा पूरी नहीं करते हैं.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "कृपया पुनः प्रयास करें.(%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "कॉल करें";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "वीडियो कॉल";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "वीडियो संदेश";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "डायल पैड"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "फ़ोन नंबर्स पर कॉल करें";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "नई चैट शुरू करें";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Skype पर नई चैट शुरू करें";
+
+
+"HUB_RECENTS_TITLE" = "हाल ही के";
+"HUB_PEOPLE_TITLE" = "लोग";
+"HUB_FAVOURIES_TITLE" = "पसंदीदा";
+"CANCEL_ALERT_BUTTON" = "रद्द करें";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "पसंदीदा";
+"PEOPLEPICKER_CONTACTS_TITLE" = "संपर्क";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "संपर्कों को खोजें";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "नए संपर्क ढूँढ़ें";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "\"%@\" खोजें";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Skype डायरेक्टरी में खोजें \"%@\"";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "लोग";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "बॉट्स";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "कनेक्ट नहीं हैं"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "Skype पर"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Skype पर कनेक्ट हों";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "रद्द करें";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "कनेक्ट करें";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "नई चैट";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "चयन करने के लिए डबल टैप करें.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "हाल ही के वार्तालाप यहाँ दिखाई देंगे.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "आपके पास कोई भी नहीं पढ़े गए संदेश नहीं हैं";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "मोबाइल और लैंडलाइन्स के हाल ही के कॉल्स यहाँ दिखाई देंगे, <a href=\"open-dialpad\">call a friend</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, नए संदेश, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "कॉल रीमोट रूप से होल्ड की गई है";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "कॉल होल्ड पर है";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "जारी कॉल";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "वर्तमान कॉल, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "वर्तमान कॉल";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "संपादित";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "संपादित करें";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "फ़ोटो सहेजें";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "वीडियो सहेजें";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "पसंद दिखाएँ";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "पसंद";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "नापसंद";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "बंद करें";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "पसंद";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "संपर्क देखने के लिए डबल-टैप करें";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "नया";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "आपका संदेश पसंद करता है.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "आपका संदेश पसंद करता है: %@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "आपका फ़ोटो पसंद करता है.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "%@ आपका संदेश पसंद करता है.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "%1$@ आपका संदेश पसंद करता है: %2$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "%@ आपका फ़ोटो पसंद करता है.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>इसे अभी तक किसी ने भी पसंद नहीं किया</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "आपको यह पसंद है";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "साइन इन करें";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Skype नाम";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Microsoft खाता";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "खाता बनाएँ";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Skype नाम से साइन इन करें";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "किसी Microsoft खाते से साइन इन करें";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "खाता बनाएँ";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "साइन इन विवरण फ़ील्ड";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "पहले से Skype उपयोग कर रहे हैं?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "हाँ";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "हाँ, मेरे पास पहले से Skype खाता है.";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "नहीं";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "नहीं, मेरे पास Skype खाता नहीं है.";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "लोग सूची फ़िल्टर";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "सभी संपर्क";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "ऑनलाइन संपर्क";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "सभी संपर्क दिखाएँ.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "केवल ऑनलाइन संपर्क दिखाएँ.";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "केवल Skype संपर्क दिखाएँ.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "ध्वनि कॉल";
+"CHATINPUT_PLACEHOLDER" = "संदेश यहाँ लिखें";
+"CHATINPUT_PLACEHOLDER_SMS" = "SMS यहाँ लिखें";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "%@ को नमस्ते कहें";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "आपकी बातचीत यहाँ दिखाई देगी.";
+"CHATTYPING_SINGLEUSER" = "%@ लिख रहा है...";
+"CHATTYPING_TWOUSERS" = "%@ और %@ लिख रहे हैं...";
+"CHATTYPING_THREEUSERS" = "%@, %@ और अन्य लिख रहे हैं...";
+"CHATTYPING_MULTIPLEUSERS" = "%@, %@ और %d अन्य लिख रहे हैं...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "फ़ोन पर कॉल करें";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "आमंत्रण भेजें";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Skype पर चैट करने के लिए उन्हें SMS लिंक भेजें.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "चैट करें";
+"SEND_SMS_TO_CONTACT_BUTTON" = "SMS";
+"EMPTY_PAGE_HEADER_TITLE" = "इनको नमस्ते कहें";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "नमस्ते, आइए Skype पर चैट करें: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "इस SMS को भेजने के लिए %@ शुल्क लगता है";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "देश/क्षेत्र का चयन करें";
+"DIALPAD_CALL_BUTTON" = "कॉल करें";
+"DIALPAD_STAR_BUTTON" = "सितारा";
+"DIALPAD_HASH_BUTTON" = "हैश";
+"DIALPAD_BACKSPACE_BUTTON" = "हटाएँ";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "SMS";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "%@ के साथ चैट खोलता है";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "कुंजीपटल छुपी हुई थी.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "कुंजीपटल दिखाएँ";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "इस संपर्क को कॉल करने में असमर्थ";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "इस संपर्क को कॉल करने में समस्या हुई थी.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "कृपया जाँचें और पुनः प्रयास करें.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "आपातकालिन नंबर्स";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "आपातकालिन नंबर्स पर कॉल करना आपके डिवाइस पर समर्थित नहीं है.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "अमान्य फ़ोन नंबर";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "इस फ़ोन नंबर पर कॉल करने में समस्या हुई थी.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "कृपया जाँचें और पुनः प्रयास करें.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "आप पहले से कॉल पर हैं";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "फ़ोन कॉल जारी है.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Skype कॉल शुरू करने से पहले फ़ोन रखें.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "आप पहले से कॉल पर हैं";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "अन्य Skype कॉल चालू है.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "नई कॉल शुरू करने से पहले फ़ोन रख दें.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "कॉल करने में असमर्थ";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "आपका ऑपरेटर आपके मोबाइल नेटवर्क पर Skype कॉल्स की अनुमति नहीं देता है. Skype कॉल करने से पहले WiFi नेटवर्क से कनेक्ट करें.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "कॉल विफल";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "आप खुद को कॉल नहीं कर सकते हैं.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "ब्लॉक किए गए संपर्क";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "कॉल करने से पहले उन्हें अनब्लॉक करें.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "माइक्रोफ़ोन पहुँच";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "आपका माइक्रोफ़ोन उपयोग करने की अनुमति के बिना लोग कॉल या वीडियो मैसेज के दौरान आपको नहीं देख पाएँगे.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "अनुमति देने के लिए डिवाइस सेटिंग्स और फिर गोपनीयता पर जाएँ.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "कैमरा पहुँच";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "आपकी अनुमति के बिना आपका कैमरा उपयोग करने में लोग कॉल या वीडियो संदेश के दौरान आपको नहीं देख पाएँगे.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "अनुमति देने के लिए अपने डिवाइस सेटिंग्स और फिर गोपनीयता पर जाएँ.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "कैमरा उपयोग करने की अनुमति के बिना आप Skype में फ़ोटो लेने में सक्षम नहीं होंगे.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "कॉल करने में असमर्थ";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "अन्य ऑडियो ऐप्लिकेशन Skype को वीडियो चलाने से रोक रहा है.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "कृपया जाँचें और पुनः प्रयास करें.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "कॉल करने में असमर्थ";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "आपके डिवाइस पर ऑडियो में कोई समस्या है.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "कृपया जाँचें और पुनः प्रयास करें.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "कॉल करने में असमर्थ";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "आपके डिवाइस पर ऑडियो में कोई समस्या है.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "जारी रखने के लिए कृपया Skype रीस्टार्ट करें.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "कॉल करने में असमर्थ";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "आपके डिवाइस पर ऑडियो में कोई समस्या है.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "कृपया बाद में पुनः प्रयास करें.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "कॉल करने में असमर्थ";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "आपके डिवाइस पर ऑडियो में कोई समस्या है.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "कृपया बाद में पुनः प्रयास करें.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "कॉल करने में असमर्थ";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "यह कॉल कनेक्ट करने में समस्या हुई थी.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "कृपया बाद में पुनः प्रयास करें.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "कॉल करने में असमर्थ";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "भारत में रहते हुए, आप देश के अन्य लोगों को तभी कॉल कर सकते हैं यदि वे भी Skype पर हैं (निःशुल्क). दुर्भाग्य से, आप भारत में Skype से मोबाइल या लैंडलाइन पर कॉल नहीं कर सकते हैं.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "अधिक जानें";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "कॉल में शामिल होने में असमर्थ";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "अभी समूह भरा हुआ है, बाद में शामिल होने का प्रयास करें.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "कैमरा उपयोग में";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "आप वर्तमान में वीडियो कॉल पर हैं.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "कैमरा उपयोग करने से पहले सर्वप्रथम अपना वीडियो ऑफ़ करें.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "समूह कॉल";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "इस डिवाइस से %d या अधिक सहभागी वाले ग्रुप पर कॉल नहीं किया जा सकता.";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "समूह वीडियो कॉल";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "इस डिवाइस से %d या अधिक सहभागियों वाले समूह पर कॉल नहीं किया जा सकता.";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "आप ऑफ़लाइन हैं";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "आपको Skype पर कॉल करने के लिए ऑनलाइन होने की आवश्यकता है.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "समूह कॉल";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "इस कॉल में सहभागियों की अधिकतम हो गई है.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "कॉल होल्ड";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "नए सहभागी जोड़ने से पहले सर्वप्रथम अपनी कॉल फिर से शुरू करें.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "कॉल दूरस्थ रूप से होल्ड की गई";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "आपके द्वारा नए सहभागी जोड़े जा सकने से पहले सर्वप्रथम यह कॉल फिर से शुरू करने की आवश्यकता है.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "कॉल सेट किया जा रहा है";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "कॉल कनेक्ट किए जाने के दौरान प्रतिभागियों को जोड़ने में असमर्थ.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "कृपया कॉल के कनेक्ट होने तक प्रतीक्षा करें.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "समूह";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "सहभागियों को जोड़ने में कोई समस्या थी, कृपया बाद में पुनः प्रयास करें.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "वीडियो शुरू करने में असमर्थ";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "वीडियो ऑन करने में समस्या हुई थी.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "जाँचें कि इस कॉल में शामिल प्रत्येक व्यक्ति के पास Skype का नवीनतम संस्करण है.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "वीडियो शुरू करने में असमर्थ";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skype आपके वीडियो को प्रारंभ करने में असमर्थ था.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "कृपया बाद में पुनः प्रयास करें.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "कॉल फिर से शुरू हो रही है";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "यह कॉल फिर से शुरू करने में समस्या हुई थी.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "यह Skype कॉल फिर से शुरू करने से पहले वर्तमान में ऑडियो उपयोग कर रहा कोई भी ऐप्लिकेशन बंद करें और कोई भी जारी फ़ोन कॉल समाप्त करें.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "संपर्क अनुरोध";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "सहभागी जोड़े या निकाले गए";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "आज <name>%@ का </name> जन्मदिन है"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "एक ग्रुप चैट बनाई गई थी";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "संपर्क ब्लॉक किया गया था";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "आपको वीडियो मैसेज भेजा";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "आपने वीडियो मैसेज भेजा";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>आप</name> और <name>%@</name> अब संपर्क हैं.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "अब एक संपर्क है";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "आपने अपने संपर्क विवरण शेयर किए";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "आपको वॉइस मैसेज भेजा";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "आपने वॉइस मैसेज भेजा.";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "%@ ने आपको संपर्क भेजा. Skype का यह संस्करण अभी तक इसका समर्थन नहीं करता है.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "आपने संपर्क भेजा. Skype का यह संस्करण अभी तक इसका समर्थन नहीं करता है.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "संपर्क देखने के लिए डबल-टैप करें.";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "संपर्क देखने के लिए डबल-टैप करें";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "संपर्क भेजा गया";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "संपर्क में जोड़ें";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "पहले से एक संपर्क है";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "संपर्क देखें";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "संपर्क भेजें";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "संपर्क भेजें";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "& %d अन्य";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "संपर्कों का चयन करें";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "भेजने हेतु आपके पास Skype पर कोई संपर्क नहीं हैं.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "कोई संपर्क नहीं";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "संपर्क";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "संपर्क भेजें";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "संपर्क अनुरोध भेजा गया";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "संपर्क अनुरोध लंबित";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "भेजे गए संपर्क";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "%@ ने आपको संदेश भेजा कि Skype का यह संस्करण अभी तरह समर्थन नहीं करता है.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "आपने संदेश भेजा कि Skype का यह संस्करण अभी तक समर्थन नहीं करता है.";
+
+"RECENTS_DELETE_CONVERSATION" = "चैट हटाएँ";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "पढ़ा गया के रूप में चिह्नित करें";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "नहीं पढ़ा गया के रूप में चिह्नित करें";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "चैट करें";
+"CALL_ACCESSIBILITYLABEL" = "कॉल करें";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "मुख्य साइन इन";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Skype खाते से साइन इन करें";
+"HUB_ACCESSIBILITYLABEL" = "हब";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "सुझावित खोज आइटम %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "इमोटिकॉन्स दिखाएँ";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "कुंजीपटल दिखाएँ";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "हटाएँ";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "खोजें";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "स्टोर";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "हाल ही के";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "इमॉटिकॉन्स";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "मोजिस";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "खोजें";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "सुझाव";
+"EXPRESSION_SEARCH_NO_RESULTS" = "कुछ नहीं मिला";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "इस मोजी को देखने के लिए Skype पर मेरी चैट में शामिल हों: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "नमस्ते,\nमेरे द्वारा आपको भेजे गए इस मोजी को देखने के लिए Skype पर मेरी चैट में शामिल हों: %@\nजल्द ही बात करते हैं,";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "इस मोजी को देखें";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "ओह";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "इस मोजी को साझा करने में कोई समस्या थी, कृपया बाद में पुनः प्रयास करें.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Skype स्टोर";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "मोजी और इमॉटिकॉन्स लोड कर रहा है...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "खोजें";
+"EXPRESSION_STORE_FREE" = "निःशुल्क";
+"EXPRESSION_STORE_REMOVE" = "निकालें";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "निःशुल्क डाउनलोड करें";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "डाउनलोड हो रहा है";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "डाउनलोड किया गया";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "ओह";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "मोजी और इमॉटिकॉन्स लोड करने में कोई समस्या थी.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "मोजी और इमॉटिकॉन्स खोजने में कोई समस्या थी, <a href=\"re-try fetching\">पुनः प्रयास करें</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "इमोटिकॉन्स और मोजिस खोजें";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "हाल ही में उपयोग किए गए इमोटिकॉन्स यहाँ दिखाई देंगे.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "फ़ीचर्ड";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "पूर्वावलोकन के लिए डबल टैप करें.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "भेजने के लिए डबल टैप करें.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "पूर्वावलोकन बंद करने के लिए डबल टैप करें.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "प्रत्युत्तर दें";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "मोजी पूर्वावलोकन";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "भेजने के लिए दोबारा टैप करें.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "%@ को आपको सुनने के लिए डिवाइस सेटिंग्स में अपने माइक्रोफ़ोन पर पहुँचने की अनुमति दें.";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "सभी को आपको सुनने के लिए डिवाइस सेटिंग्स में अपने माइक्रोफ़ोन पर पहुँचने की अनुमति दें.";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "आपको देखने के लिए अपने कैमरा पर %@ को डिवाइस सेटिंग्स में पहुँच दें.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "आपको देखने के लिए अपने कैमरा पर प्रत्येक व्यक्ति को डिवाइस सेटिंग्स में पहुँच दें.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "इस कॉल में अधिकतम सहभागियों की संख्या हो गई है";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "कॉल करने के लिए आपको नेटवर्क कनेक्शन की ज़रूरत है";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "विभाजित दृश्य में होने के दौरान आपका कैमरा अक्षम हो जाता है.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Slide Over में वीडियो समर्थित नहीं है.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "स्पीकर फ़ोन ऑन है";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "स्पीकर फ़ोन ऑफ़ करने के लिए डबल टैप करें.";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "स्पीकर फ़ोन ऑफ़ है";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "स्पीकर फ़ोन ऑन करने के लिए डबल टैप करें.";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "कॉल म्यूट किया गया";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "कॉल अनम्यूट करने के लिए डबल टैप करें.";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "कॉल अनम्यूट किया गया";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "कॉल म्यूट करने के लिए डबल टैप करें.";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "वीडियो ऑन है";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "वीडियो ऑफ़ करने के लिए डबल टैप करें.";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "वीडियो ऑफ़ है";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "वीडियो ऑन करने के लिए डबल टैप करें.";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "इनकमिंग";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "आउटगोइंग";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 सहभागी"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d सहभागी"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "कोई सहभागी नहीं"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "इस कॉल पर %1$d %2$d में से";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "%1$@ को इस कॉल में शामिल होने से पहले Skype का अद्यतन करने की आवश्यकता है.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "%1$@ और %2$@ को इस कॉल में शामिल हो सकने से पहले Skype का अद्यतन करने की आवश्यकता है.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "%1$@ और %2$@ को इस कॉल में शामिल हो सकने से पहले Skype का अद्यतन करने की आवश्यकता है.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ", ";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ से इनकमिंग Skype कॉल";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ और %@ से इनकमिंग ग्रुप कॉल";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ और एक अन्य व्यक्ति से इनकमिंग ग्रुप कॉल";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ और %d अन्य लोगों से इनकमिंग ग्रुप कॉल";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ से इनकमिंग वीडियो कॉल";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ और %@ से इनकमिंग ग्रुप वीडियो कॉल";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ और एक अन्य व्यक्ति से इनकमिंग ग्रुप वीडियो कॉल";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ और %d अन्य लोगों से इनकमिंग ग्रुप वीडियो कॉल";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ को Skype कॉल";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ और %@ को ग्रुप कॉल";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ और एक अन्य व्यक्ति को ग्रुप कॉल";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ और %d अन्य लोगों को ग्रुप कॉल";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "%@ के साथ वीडियो कॉल.";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "%@ और %@ के साथ वीडियो कॉल.";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ और एक अन्य व्यक्ति के साथ वीडियो कॉल.";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ और %d अन्य लोगों को वीडियो कॉल.";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ के साथ Skype कॉल";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ और %@ के साथ ग्रुप कॉल";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ और एक अन्य व्यक्ति के साथ ग्रुप कॉल";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ और %d अन्य लोगों के साथ ग्रुप कॉल";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ के साथ वीडियो कॉल";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ और %@ के साथ ग्रुप वीडियो कॉल";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ और एक अन्य व्यक्ति के साथ ग्रुप वीडियो कॉल";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ और %d अन्य लोगों के साथ ग्रुप वीडियो कॉल";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ से Skype कॉल वापस ली जा रही है";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ और %@ से Skype कॉल वापस ली जा रही है";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ और एक अन्य व्यक्ति से ग्रुप कॉल वापस ली जा रही है";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ और %d अन्य लोगों से ग्रुप कॉल वापस ली जा रही है";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ से वीडियो कॉल वापस ली जा रही है";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ और %@ से ग्रुप वीडियो कॉल वापस ली जा रही है";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ और एक अन्य व्यक्ति से ग्रुप वीडियो कॉल वापस ली जा रही है";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ और %d अन्य लोगों से ग्रुप वीडियो कॉल वापस ली जा रही है";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "कॉल समाप्त हो गई थी";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "कॉल अवधि";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "वॉइस मैसेज रिकॉर्ड हो रहा है";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "d";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "d";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "h";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "h";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "min";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "min";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "s";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "s";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "स्वीकार करें";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "अस्वीकार करें";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> आपको Skype पर जोड़ना चाहता है\n\"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> ने आपको यहाँ से एक संदेश भेजा <location>%@</location>"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "<name>%@</name> को नमस्ते कहें और इस व्यक्ति को संपर्क में जोड़ें.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ अभी तक संपर्क नहीं है.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "\"%@\" <a href=\"edit-contact-request-message\">संपादित करें</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "संपर्क अनुरोध भेजें";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "संपर्क में जोड़ें";
+"CONTACT_REQUEST_PENDING" = "<name>%@</name> द्वारा संपर्क अनुरोध स्वीकारने की प्रतीक्षा की जा रही है.\n<a href=\"resend-request\">संपर्क अनुरोध फिर से भेजें</a>";
+"CONTACT_REQUEST_BLOCKED" = "<name>%@</name> ब्लॉक है";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "अनब्लॉक करें";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "हाँ";
+"CONTACT_REQUEST_BLOCK_TITLE" = "सामग्री अवरूद्ध करें";
+"CONTACT_REQUEST_DECLINED_TITLE" = "संपर्क अनुरोध अस्वीकृत किया गया";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "रद्द करें";
+"CONTACT_REQUEST_BLOCK_ALERT" = "क्या आप वाकई यह संपर्क ब्लॉक करना चाहते हैं?";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "क्या आप इस व्यक्ति को अवरोधित करना और इसकी रिपोर्ट करना भी चाहेंगे?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "ब्लॉक करें";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "ब्लॉक करें और निकालें";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "अवरोधित और रिपोर्ट करें";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "सहभागी जोड़ें";
+"CHAT_OPTION_START_NEW_GROUP" = "नया समूह प्रारंभ करें";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "प्रोफ़ाइल देखें";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "सूचनाएँ";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "इस चैट के लिए सूचनाएँ चालू हैं.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "इस चैट के लिए सूचनाएँ बंद हैं.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "सूचनाएँ चालू करें";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "सूचनाएँ बंद करें";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "समूह छोड़ें";
+
+"CHAT_OPTION_PARTICIPANTS" = "प्रतिभागी दिखाएँ";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "ऑन";
+"MK_SWITCH_OFF_MESSAGE" = "ऑफ़";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "ऑन और ऑफ़ होता है.";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "नई चैट";
+"NEWCHATSCENE_TITLE_TOKEN" = "प्रति:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "और %d अन्य"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "और %d अन्य"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "जोड़ने के लिए संपर्क चुनें";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "मुख पृष्ठ";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "नया समूह बनाना रद्द करें";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "नया समूह बनाएँ";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "ध्वनि कॉल";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "वीडियो कॉल";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "डायल पैड";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "रद्द करें";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "वापस";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "मेरी जानकारी";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "मीडिया मेनू खोलें";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "मीडिया मेनू बंद करें";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "मदद";
+"MY_INFO_FEEDBACK_ACTION" = "प्रतिक्रिया भेजें";
+
+"MY_INFO_CONNECTING" = "कनेक्ट किया जा रहा है...";
+
+"MY_INFO_STATUS" = "स्थिति";
+"MY_INFO_CREDIT" = "Skype क्रेडिट";
+"MY_INFO_PROFILE_LINK" = "मेरा खाता";
+"MY_INFO_SETTINGS" = "सेटिंग्स";
+"MY_INFO_SIGN_OUT" = "साइन आउट करें";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "मूड संदेश दर्ज करें";
+"MY_INFO_MOOD_MESSAGE" = "मूड संदेश";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "संपादित करने के लिए डबल टैप करें";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "प्रतिक्रिया भेजें";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "प्रोफ़ाइल चित्र बदलें";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "फ़ोटो लें";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "मौजूदा फ़ोटो चुनें";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "प्रोफ़ाइल चित्र निकालें";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "सेटिंग्स";
+
+"SETTINGS_GENERAL" = "सामान्य";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "लक्षित विज्ञापनों की अनुमति दें";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "आपको इस ऐप्लिकेशन में अधिक प्रासंगिक विज्ञापन दिखाने के लिए Microsoft को आपकी Skype प्रोफ़ाइल जानकारी उपयोग करने की अनुमति दें. <a href=\"skype.com\">अधिक जानें</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "चैट सूचनाएँ";
+"SETTINGS_PUSH_NOTIFICATIONS" = "पुश सूचनाएँ";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "पुश सूचनाएँ";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "Skype बंद होने पर भी आपको संदेश सूचनाएँ प्राप्त होंगी.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "Skype बंद होने पर आपको संदेश सूचनाएँ नहीं प्राप्त होंगी.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "इन-एप्लिकेशन सूचनाएँ";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "इन-एप्लिकेशन सूचनाएँ";
+"SETTINGS_INAPP_SOUNDS" = "इन-एप्लिकेशन ध्वनियाँ";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "इन-एप्लिकेशन ध्वनियाँ";
+"SETTINGS_OTHER" = "अन्य";
+
+"SETTINGS_PRIVACY" = "गोपनीयता";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "लोग द्वारा मुझे खोजने का तरीका";
+"SETTINGS_PRIVACY_EXPLANATION" = "इन संपर्क विवरणों का उपयोग Skype पर आपको खोजने के लिए किया जा सकता है.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "फ़ोन नंबर जोड़ें";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "प्रोफ़ाइल चित्र";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "सभी को दिखाएँ";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "मेरे संपर्कों को दिखाएँ";
+
+"SETTINGS_CONTACTS_HEADER" = "संपर्क";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "मेरे मित्र जोड़ें";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype आपके संपर्कों को जाँचेगा और आपके परिचित लोगों को आपकी Skype संपर्क सूची में स्वचालित रूप से जोड़ देगा.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "आपको Skype पर मित्रों को मैन्युअल रूप से ढूँढना और जोड़ना होगा.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "वेब लिंक पूर्वावलोकन";
+
+"SETTINGS_EMOTICONS_HEADER" = "इमोटिकॉन्स";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "बड़े इमोटिकॉन्स का उपयोग करें";
+
+"SETTINGS_EDIT_BUTTON" = "संपादित करें";
+"SETTINGS_DONE_BUTTON" = "पूर्ण";
+
+"SETTINGS_ABOUT" = "इसके बारे में";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "अपना नंबर डालें";
+"PNV_HOW_IS_MY_NUMBER_USED" = "मेरे नंबर का कैसे उपयोग किया जाता है?";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "मानक SMS दरें लागू हो सकती हैं.";
+"PNV_ENTER_THE_CODE" = "कोड डालें";
+"PNV_CODE_SENT" = "हमने आपके नंबर पर एक कोड भेज दिया है";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>मुझे कॉल करें</a> या <a href='pnv://resendcode'>कोड पुनः भेजें</a>";
+"PNV_VERIFYING_NUMBER" = "नंबर सत्यापित किया जा रहा है";
+"PNV_NUMBER_VERIFIED" = "सत्यापित किया गया";
+"PNV_NUMBER_USAGE_EXPLANATION" = "आपके नंबर का उपयोग मित्रों द्वारा आपको Skype पर ढूँढने में सहायता के लिए किया जाएगा. इससे नए संपर्कों को खोजने में भी बहुत आसानी रहेगी.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "कोड";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "यह बदलने के लिए कि लोग आपको कैसे ढूँढें, अपना कोई भी फ़ोन नंबर निकालने या अक्षम करने के लिए सेटिंग में %@ पर जाएँ.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "वैकल्पिक रूप से, यदि आप अपना नंबर उपयोग नहीं करना चाहते हैं और मैन्युअल रूप से खोजने और नए संपर्कों को जोड़ने को प्राथमिकता देते हैं, तो नीचे दिया गया %@ चुनें.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Skype की गोपनीयता नीति";
+"PNV_NOT_NOW" = "अभी नहीं";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "फ़ोन नंबर";
+
+"PNV_WELCOME_HEADING" = "मित्रों को ढूँढना अधिक आसान हो गया है";
+"PNV_WELCOME_PARAGRAPH" = "प्रारंभ करने के लिए बस अपना फ़ोन नंबर जोड़ें.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "अगला";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "ओह";
+"PNV_DEFAULT_ERROR_MESSAGE" = "आपका नंबर सत्यापित करने में एक समस्या हुई थी, कृपया बाद में पुनः प्रयास करें.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "आप सत्यापित नंबर्स की अधिकतम संख्या तक पहुँच गए हैं. कोई और नंबर जोड़ने से पहले सेटिंग में से अपना एक नंबर हटाएँ.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "आपके द्वारा डाला गया नंबर अमान्य है. कृपया जाँचें और पुनः प्रयास करें.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "हम इस नंबर पर कोई SMS नहीं भेज सकते हैं. कृपया जाँचें और पुनः प्रयास करें.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "लगता है कोड की अवधि समाप्त हो गई है. नया कोड प्राप्त करने के लिए नीचे पुनः भेजे चुनें.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "लगता है कोड गलत था. कृपया जाँचें और पुनः प्रयास करें.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "आपके नेटवर्क कनेक्शन में कोई समस्या है. कृपया अपनी नेटवर्क सेटिंग्स जाँचें और पुनः प्रयास करें.";
+"PNV_ERROR_TRY_AGAIN" = "पुनः प्रयास करें";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Skype पर मित्रों को जोड़ें";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "हम Skype पर आपके परिचित लोगों को ढूँढेंगे और उन्हें आपके संपर्कों में जोड़ देंगे.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "अधिक जानें";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "स्वचालित रूप से नए Skype संपर्क जोड़ने हेतु, हम आपके परिचित लोगों को ढूँढने के लिए समय-समय पर आपकी पता पुस्तिका की जाँच करेंगे. चिंता न करें, हम आपके आमंत्रणों वाले मित्रों को स्पैम नहीं करेंगे.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "यदि आप किसी भी समय अपना विचार बदलते हैं, तो बस सेटिंग में जाकर %@ बंद करें. आपके परिचित लोगों को ढूँढने के लिए अब आपकी पता पुस्तिका का उपयोग नहीं किया जाएगा और आपको मैन्युअल रूप से लोगों को जोड़ना होगा.";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "यह बदलने के लिए कि लोग आपको कैसे ढूँढें, अपना कोई भी फ़ोन नंबर निकालने या अक्षम करने के लिए सेटिंग में %@ पर जाएँ.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Skype की गोपनीयता नीति";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "याद रखें, Skype का उपयोग आपातकालीन कॉल करने के लिए नहीं किया जा सकता है";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "मित्रों को ढूँढना अधिक आसान हो गया है";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "नए संपर्क जोड़ दिए गए हैं";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "संपर्क जोड़ें";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "रद्द करें";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "खोजें";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "रद्द करें";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "Skype पर लोगों को उनके Skype नाम, ईमेल या पूरा नाम उपयोग करके ढूँढें.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "पहले से Skype संपर्क है";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "कोई मिलान नहीं मिला";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "वापस";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "फ़ॉरवर्ड करें";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "शेयर करें";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "इसके बारे में";
+"ABOUT_APPLICATION_VERSION" = "Skype संस्करण";
+"ABOUT_COPYRIGHT" = "© 2003-2016 Skype & Microsoft\nपेटेंट लंबित";
+"ABOUT_THIRD_PARTY_NOTICES" = "तृतीय पक्ष नोटिस";
+"ABOUT_PRIVACY_POLICY" = "गोपनीयता नीति";
+"ABOUT_TERMS_OF_USE" = "उपयोग की शर्तें";
+"ABOUT_COPYRIGHT_TEXT" = "Skype नाम, संबद्ध ट्रेडमार्क और लोगो और \"S\" लोगो Skype या संबंधित इकाइयों के ट्रेडमार्क हैं.\n\nचेतावनी: यह प्रोग्राम कॉपीराइट कानून और अंतर्राष्ट्रीय संधियों द्वारा सुरक्षित है. इस प्रोग्राम या इसके किसी भाग के अनधिकृत पुनरुत्पादन या वितरण के परिणामस्वरूप गंभीर आपराधिक और दीवानी दंड हो सकता है और इसे कानून के अंतर्गत अधिकतम संभावित सीमा तक अभियोजित किया जाएगा.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "त्रुटि";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "ईमेल द्वारा";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "मुझे नए Skype ऑफ़र्स और सुविधाओं के बारे में ईमेल से बताएँ";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "मुझे नए Skype ऑफ़र और सुविधाओं के बारे में बताएँ:";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "प्रोफ़ाइल चित्र जोड़ें";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "ईमेल";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "john@example.com";
+"CREATEACCOUNT_FULLNAME_LABEL" = "पूरा नाम";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "प्रथम नाम";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "अंतिम नाम";
+"CREATEACCOUNT_PASSWORD_LABEL" = "पासवर्ड";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6–20 वर्ण";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "पासवर्ड दोहराएँ";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Skype नाम";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "आवश्यक";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "फ़ोन नंबर";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "देश कोड सहित";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "ऊपर कुछ फ़ील्ड्स रिक्त हैं";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "आपके पासवर्ड मेल नहीं खा रहे हैं, जाँचें और पुनः प्रयास करें.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Skype उपयोग की शर्तें";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "हाँ, मैंने <a href='%1$@'>Skype उपयोग की शर्तें</a> और <a href='%2$@'>गोपनीयता नीति पढ़ीं और स्वीकारी हैं.</a>";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "Skype से कोई आपातकालीन कॉल नहीं";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype आपके टेलीफ़ोन का विकल्प नहीं है और इसे आपातकालीन कॉल के लिए उपयोग नहीं किया जा सकता.";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "मैं सहमत हूँ";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "6–32 वर्ण लंबा होना चाहिए.";
+"SkyLib::TOO_LONG" = "6–32 वर्ण लंबा होना चाहिए.";
+"SkyLib::CONTAINS_INVALID_CHAR" = "अमान्य वर्ण, जैसे Σ, à, ß.";
+"SkyLib::CONTAINS_SPACE" = "स्पेश या टैब शामिल नहीं हो सकता.";
+"SkyLib::SAME_AS_USERNAME" = "आपके Skype नाम से बहुत मिलता-जुलता है.";
+"SkyLib::INVALID_FORMAT" = "अमान्य स्वरूप.";
+"SkyLib::CONTAINS_INVALID_WORD" = "अनुमान लगाने के लिए बहुत आसान है, जैसे abcd, skype.";
+"SkyLib::TOO_SIMPLE" = "कम से कम 1 अक्षर और 1 नंबर अवश्य होना चाहिए.";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "अक्षर (A–Z) से शुरू होना चाहिए.";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "नया Skype नाम आजमाएँ.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "नया पासवर्ड आजमाएँ.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "नया ईमेल पता आजमाएँ.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "कृपया पुनः प्रयास करें.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Skype नाम";
+"SkyLib::ACCOUNT_PASSWORD" = "पासवर्ड";
+"SkyLib::CONTACT_EMAILS" = "ईमेल";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> ने इस ग्रुप का नाम \"%@\" कर दिया";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Skype होम";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> ने ग्रुप फ़ोटो अपडेट किया.";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> ने समूह अद्यतन किया";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "छुपाएँ";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "%d नई सूचनाएँ";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "एक नई सूचना";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "कोई नई सूचना नहीं";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "नमस्ते, मैं आपको Skype पर जोड़ना चाहता/चाहती हूँ";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "संपर्क अनुरोध";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. %3$@ में";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "आपको Skype पर जोड़ना चाहता/चाहती है";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "अभी नहीं";
+"ALLOW_BUTTON" = "अनुमति दें";
+"PERMISSION_VIEW_TITLE" = "आइए सेट अप प्राप्त करें";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके माइक्रोफ़ोन पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके कैमरा पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके संपर्कों पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "श्रेष्ठ Skype अनुभव के लिए हमें आपकी सूचनाओं पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके माइक्रोफ़ोन और कैमरा पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके माइक्रोफ़ोन और संपर्कों पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके माइक्रोफ़ोन और सूचनाओं पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके कैमरा और संपर्कों पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके कैमरा और सूचनाओं पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके संपर्कों और सूचनाओं पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके माइक्रोफ़ोन, कैमरा और सूचनाओं पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके माइक्रोफ़ोन, संपर्कों और सूचनाओं पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके माइक्रोफ़ोन, कैमरा और सूचनाओं पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "श्रेष्ठ Skype अनुभव के लिए हमें आपके कैमरा, संपर्कों और सूचनाओं पर पहुँच की ज़रूरत होगी.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "सर्वश्रेष्ठ Skype अनुभव के लिए हमें आपके माइक्रोफ़ोन, कैमरा, संपर्कों और सूचनाओं पर पहुँच की ज़रूरत होगी.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "संपर्क";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "माइक्रोफ़ोन";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "कैमरा";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "सूचनाएँ";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "क्या आप सुनिश्चित हैं?";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "इन सुविधाओं तक पहुँचे बिना, आप न तो ठीक से कॉल कर सकेंगे या प्राप्त सकेंगे या इनमकिंग कॉल और संदेशों की सूचनाएँ नहीं प्राप्त कर सकेंगे.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "आपकी संपर्क सूची रिक्त हो जाएगी और आप Skype पर न तो कॉल कर सकेंगे या प्राप्त कर सकेंगे.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "अधिक जानें";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "माइक्रोफ़ोन और कैमरा";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "Skype पर कॉल करने या प्राप्त करने के लिए, हमें आपके माइक्रोफ़ोन और कैमरे तक पहुँचने की आवश्यकता है. दुर्भाग्य से, इन अनुमतियों के बिना Skype काम नहीं करेगा.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "संपर्क";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "अपनी Skype संपर्क सूची सेट करने के लिए, हमें आपके संपर्कों तक पहुँचने की आवश्यकता है. हम Skype पर आपके परिचित लोगों को ढूँढने के लिए समय-समय पर आपके संपर्कों की जाँच करेंगे. चिंता न करें, हम आपके आमंत्रणों वाले मित्रों को स्पैम नहीं करेंगे.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "यदि आप किसी भी समय अपना विचार बदलते हैं, तो बस सेटिंग में जाकर %@ बंद करें. आपके परिचित लोगों को ढूँढने के लिए अब आपकी पता पुस्तिका का उपयोग नहीं किया जाएगा और आपको मैन्युअल रूप से लोगों को जोड़ना होगा";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "सूचनाएँ";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "Skype के बंद होने पर आपको इनकमिंग कॉल और संदेशों के बारे में सूचित करने के लिए, हमें सूचनाओं तक पहुँचने की आवश्यकता होती है. यदि आप नहीं चाहते कि कोई व्यवधान हो, तो आप बाद में व्यक्तिगत चैट सूचनाओं को बंद करने पर भी विचार कर सकते हैं.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "संपर्कों तक पहुँच प्रदान करें";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Skype को आपके परिचित लोगों को ढूँढने के लिए संपर्कों तक पहुँचने की आवश्यकता होती है. पहुँच की अनुमति देने के लिए सेटिंग में जाएँ और संपर्कों को सक्षम करें.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "छोड़ें";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "कनेक्टेड रहें";
+"ONBOARDING_GET_STARTED_BUTTON" = "प्रारंभ करें";
+
+"ONBOARDING_IPHONE_TITLE1" = "iPhone के लिए पुनः डिज़ाइन किया गया";
+"ONBOARDING_IPAD_TITLE1" = "IPad के लिए पुन: डिज़ाइन किया गया";
+"ONBOARDING_TEXT1" = "Skype उपयोग में लाना कभी भी इतना आसान नहीं था - चाहे आप मित्रों को संदेश भेज रहे हैं या कॉल कर रहे हैं.";
+
+"ONBOARDING_TITLE2" = "कुछ भी ढूँढें";
+"ONBOARDING_TEXT2" = "लोग, समूहों या पिछले वार्तालापों को ढूँढें.";
+
+"ONBOARDING_IPHONE_TITLE3" = "अधिक कार्य करें";
+"ONBOARDING_IPAD_TITLE3" = "Skype पर और अधिक कार्य करें";
+
+"ONBOARDING_IPHONE_TEXT3" = "अपना स्थान, फ़ोटो या वेब लिंक पूर्वावलोकन साझा करें - यह सब कुछ मित्रों के साथ बातचीत करते समय करें.";
+"ONBOARDING_IPAD_TEXT3" = "बड़े इमोटिकॉन्स, वेब लिंक पूर्वावलोकन का आनंद लें और अपने iPad से नए समूह बनाएँ.";
+
+"ONBOARDING_TITLE4" = "मित्रों के साथ Skype बेहतर है";
+"ONBOARDING_TEXT4" = "आपको ढूँढने में मित्रों की मदद करने के लिए Skype पर अपना फ़ोन नंबर जोड़ें.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "आसान साझाकरण";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Skype पर आपके मित्रों को आपके कैमरा रोल से फ़ोटोज़ या वेबसाइट भेजने के लिए बस साझा करें बटन पर टैप करें.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "सहभागी जोड़ें";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "जोड़ें:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "पहले से सहभागी है";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "पहले से कॉल पर है";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "इस कॉल पर";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "इस कॉल पर नहीं";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "कनेक्ट हो रहें हैं...";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "%@ को कनेक्ट कर रहे हैं";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "कॉलिंग...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "%@ को कॉल कर रहे हैं";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "कॉल होल्ड";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "%@ की कॉल होल्ड";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "पसंदीदा जोड़ें";
+"ADDFAVORITES_EMPTY_TITLE" = "अपने सभी पसंदीदा लोगों को एक साथ रखें, <a href=\"add-favorites\">पसंदीदा जोड़ें</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "Skype संपर्क";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "फ़ाइल ट्रांसफ़र";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ एक अन्य";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ %d अन्य";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "आपने यह फ़ाइल अन्य डिवाइस से भेजी.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "आपने ये फ़ाइलें अन्य डिवाइस से भेजी.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "Skype का यह संस्करण फ़ाइलें प्राप्त करने का समर्थन नहीं करता.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "यह ऐप Skype की केवल नई फ़ोटो साझाकरण सुविधाओं का समर्थन करता है.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "आपने एक फ़ाइल भेजी";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "आपने %d फ़ाइलें भेजीं";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "आपको फ़ाइल भेजी";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "आपको %d फ़ाइलें भेजीं";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "ऑनलाइन";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "परेशान न करें";
+"CONTACT_AVAILABILITY_AWAY" = "दूर";
+"CONTACT_AVAILABILITY_INVISIBLE" = "अनुपलब्ध";
+"CONTACT_AVAILABILITY_OFFLINE" = "ऑफ़लाइन";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "उपलब्ध";
+"CONTACT_AVAILABILITY_BUSY" = "व्यस्त";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "ब्लॉक्ड";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "पसंदीदा";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "पसंदीदा";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "यह व्यक्ति पसंदीदा है. पसंदीदा से निकालने के लिए डबल टैप करें.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "यह व्यक्ति पसंदीदा नहीं है. पसंदीदा में जोड़ने के लिए डबल टैप करें.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "पसंदीदा";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "पसंदीदा";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "यह ग्रुप आपके पसंदीदा में नहीं है. पसंदीदा में जोड़ने के लिए डबल टैप करें.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "यह ग्रुप आपके पसंदीदा में है. पसंदीदा से निकालने के लिए डबल टैप करें.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@ %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@ %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "Skype नाम";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "वेबसाइट";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "मेरे बारे में";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "जन्मदिन";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "लिंग";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "भाषा";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "संपर्क";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "क्षमताएँ";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "गोपनीयता";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "इनके द्वारा निर्मित";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "विवरण";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "तत्काल संदेश और फ़ोटो भेजें और प्राप्त करें.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "इस बॉट को आपके प्रदर्शन नाम, Skype नाम और कोई भी चैट संदेश या सामग्री जो आपने या अन्य समूह सहभागियों ने इससे साझा की उन तक पहुँच प्राप्त होगी.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "महिला";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "पुरुष";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "सामग्री अवरूद्ध करें";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "संपर्क अनब्लॉक करें";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "संपर्क निकालें";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "संपर्क निकालें";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "%@ को आपकी संपर्क सूची से निकाला जाएगा.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "निकालें";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "रद्द करें";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "छुपाएँ";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "समूह प्रोफ़ाइल";
+"GROUPPROFILE_NOTIFICATIONS" = "सूचनाएँ";
+"GROUPPROFILE_MENU_TITLE" = "प्रोफ़ाइल देखें";
+"GROUPPROFILE_LEAVE_CHAT" = "समूह छोड़ें";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "प्रतिभागी";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "आमंत्रित करें";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "चैट आमंत्रण";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "चैट इतिहास सभी के लिए दृश्यमान होगा";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "इस चैट पर किसी भी व्यक्ति को आमंत्रित करने के लिए चैट आमंत्रण सक्षम करें.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "इस चैट पर केवल Skype संपर्क जोड़े जा सकते हैं.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "किसी को भी इस चैट पर आमंत्रित करें, भले ही वे Skype पर न हों.";
+"GROUPPROFILE_CHAT_HISTORY" = "चैट इतिहास";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "चैट इतिहास वर्तमान में नए प्रतिभागियों से छुपाया गया है.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "चैट इतिहास सभी के लिए दृश्यमान है.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "सहभागी जोड़ें";
+"GROUP_ADMIN_STRING" = "%@ (व्यवस्थापक)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "चैट आमंत्रण";
+"GROUPPROFILE_ALERT_BODY" = "वर्तमान में इस चैट के लिए आमंत्रण उपलब्ध नहीं है, कृपया बाद में पुन: प्रयास करें.";
+"GROUPPROFILE_ALERT_BUTTON" = "ठीक";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Skype पर मेरी चैट में शामिल हों: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "मेरे चैट में शामिल हों";
+"INVITES_MAIL_BODY" = "नमस्ते,\nमैंने Skype पर हमारे लिए चैट करने, साझा करने और सहयोग करने के लिए एक समूह बनाया है.\nलिंक पर क्लिक करके इसमें शामिल हों:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "ग्रुप का नाम बदलें";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "ग्रुप का नाम बदलें";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "संपर्क का नाम बदलें";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "संपर्क का नाम बदलने के लिए दो बार टैप करें";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "बॉट जोड़ें";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "संपर्क अनुरोध भेजें";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "संपर्क अनुरोध फिर से भेजें";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "संपर्क अनुरोध भेजा गया";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "स्वीकार करें";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "अस्वीकार करें";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "<name>%@</name> आपको Skype पर जोड़ना चाहता है"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "खोलें";
+"PUSH_CHAT_CALL" = "कॉल करें";
+"PUSH_CHAT_TEXT_REPLY" = "प्रत्युत्तर दें";
+"PUSH_CALL_ANSWER" = "उत्तर दें";
+"PUSH_CALL_DECLINE" = "अस्वीकार करें";
+"PUSH_CALL_VIDEO_VIDEO" = "वीडियो कॉल करना";
+"PUSH_CALL_VIDEO_AUDIO" = "ध्वनि";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "संदेश";
+"PUSH_MISSED_CALL_CALLBACK" = "वापस कॉल करें";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "संपर्कों में समस्या है";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "आपके संपर्कों से फ़ोन नंबर तक पहुँचने में समस्या है. समस्या को ठीक करने के लिए सेटिंग में अपने मेल खातों को पुनः समन्वित करके देखें.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "फ़ोन नंबर सहेजें";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "कोई मेल करता कॉल नहीं.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "मेल खाता हुआ एक कॉल.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "%d मिलान करते हुए कॉल.";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@) अंतिम बार कॉल किया गया: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@, अंतिम कॉल किया गया: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@ एक पता पुस्तिका संपर्क है.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Skype पर कनेक्ट हों";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@ एक पता पुस्तिका संपर्क है. Skype पर आप उन्हें कॉल कर सकते हैं और उनसे चैट कर सकते हैं.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Skype पर अभी तक कनेक्ट नहीं है";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "पाठ हटाएँ";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "रद्द करें";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "Skype में खोजें";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "नए संपर्क ढूँढ़ें";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "नए संपर्क ढूँढ़ने के लिए टाइप करें";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "\"%@\" खोजें";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Skype डायरेक्टरी";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "इतिहास खोजें";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "साफ़ करें";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "संपर्क";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "कोई मिलान नहीं मिला";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "समूह";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "वार्तालाप";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "नंबर सहेजें";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "नंबर सहेजें";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "नाम दर्ज करें";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "एक नंबर दर्ज करें";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "नंबर सहेजा जा रहा है";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "नंबर सहेजा गया";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "अमान्य नंबर";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "आप इस नंबर को जोड़ नहीं सकते क्योंकि यह एक अमान्य नंबर है. कोई भिन्न आज़माएँ.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "अमान्य नंबर";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "आप आपातकालीन नंबर को Skype में जोड़ नहीं सकते.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "छोड़ें";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "क्या आप वाकई %@ पर कॉल करना चाहते हैं?";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "क्या आप वाकई %@ पर वीडियो कॉल करना चाहते हैं?";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "ध्वनि कॉल";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "वीडियो कॉल";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "कॉल करें";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "मूल देखें";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "अनुवाद देखें";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "आपने एक स्थान शेयर किया";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "आपके साथ स्थान शेयर किया";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "स्थान (%@) साझा किया";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "खोलने के लिए डबल टैप करें";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "स्थान के लिए दिशा-निर्देश";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "स्थान";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "मेरा स्थान शेयर करें";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "स्थान भेजें";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "स्थान पहुँच";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "आपके स्थान को बिना अनुमति के उपयोग करने पर आप Skype पर मित्रों के साथ अपना स्थान शेयर करने में समर्थ नहीं होंगे.";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "अनुमति देने के लिए डिवाइस सेटिंग्स और फिर गोपनीयता पर जाएँ.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "संपर्कों तक पहुँच";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "Skype में आपकी पता पुस्तिका दिखाने के पहले हमें आपके संपर्कों तक पहुँच प्राप्त करने की आवश्यकता है.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "अनुमति देने के लिए अपनी डिवाइस सेटिंग्स और फिर गोपनीयता पर जाएँ.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "ओह नहीं";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "मैप लोड करने में समस्या हुई थी.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "अपना नेटवर्क कनेक्शन जाँचें और पुनः प्रयास करें.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "साफ़ करें";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "जोड़े गए पिन साफ़ करें";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "स्थान शेयर करना";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "आप अब इस चैट पर अपना स्थान शेयर करने में समर्थ नहीं हैं.";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "ठीक";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "मेरा स्थान शेयर करें";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "खोजें";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "कोई परिणाम नहीं मिले";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "यह स्थान ढूँढने में समस्या हुई थी, कृपया प्रतीक्षा करें और पुनः प्रयास करें.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "मुख पृष्ठ";
+"TIMELINE_ICON_DIALPAD" = "डायलपैड";
+"TIMELINE_ICON_PEOPLE" = "संपर्क";
+"TIMELINE_SWIPEACTION_MUTE" = "म्यूट करें";
+"TIMELINE_SWIPEACTION_UNMUTE" = "अनम्यूट करें";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "पुश सूचनाएँ";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "आप Skype से दूर होने पर कॉल और संदेश अलर्ट्स प्राप्त करने के लिए पुश सूचनाएँ ऑन करें.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "आप Skype से दूर होने पर iPhone सेटिंग्स > सूचना केंद्र पर जाकर और Skype सूचना ऑन कर कॉल और संदेश अलर्ट्स प्राप्त करें.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "आप Skype से दूर होने पर iPhone सेटिंग्स फिर सूचना केंद्र पर जाकर और Skype सूचना ऑन कर कॉल और संदेश अलर्ट्स प्राप्त करें.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "पुश सूचनाएँ";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "आपको पुश सूचनाएँ प्राप्त कर सकने से पहले अपने डिवाइस सेटिंग्स से Skype सूचनाएँ चालू करने की आवश्यकता होगी.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "खोलें";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "देखें";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "सुनें";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "चलाएँ";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "संदेश खोलने में समस्या हुई थी, अपना नेटवर्क कनेक्शन जाँचें और पुनः प्रयास करें.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "मीडिया दस्तावेज़ शेयर किया गया";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "खोलने के लिए डबल टैप करें";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "स्रोत विश्वसनीय नहीं है";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "फ़ोटो";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "फ़ोटो लें";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "मौजूदा फ़ोटो चुनें";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "मौजूदा फ़ोटो या वीडियो चुनें";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "रद्द करें";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "चुनें";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "बंद करने के लिए डबल टैप करें";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "एक फ़ोटो भेजें. खोलने के लिए डबल टैप करें";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "फ़ोटो प्राप्त हो रही है";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "फ़ोटो भेजी जा रही है";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "यह फ़ोटो भेजने में समस्या हुई थी";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "यह फ़ोटो प्राप्त करने में समस्या हुई थी";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "पुनः प्रयास करने के लिए डबल टैप करें";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "भेजें";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "रद्द करें";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "वीडियो %d MB से बड़ा होने के कारण भेजा नहीं जा सकता";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "फ़ोटो %d MB से बड़ा होने के कारण भेजा नहीं जा सकता";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "एक वीडियो संदेश भेजा गया. खोलने के लिए डबल टैप करें";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "वीडियो संदेश प्राप्त कर रहा है";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "वीडियो संदेश भेज रहा है";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "इस वीडियो संदेश को भेजने में कोई समस्या थी";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "इस वीडियो संदेश को प्राप्त करने में कोई समस्या थी";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "फ़ाइल भेज दी गई. डाउनलोड करने के लिए डबल टैप करें";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "फ़ाइल प्राप्त की है. खोलने के लिए डबल टैप करें";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "डाउनलोड हो रहा है";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "%@ डाउनलोड किया गया. खोलने के लिए डबल टैप करें";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "फ़ाइल %d MB से बड़ी है. डेटा शुल्क लागू हो सकते हैं";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "फ़ाइल उपलब्ध नहीं है";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "पुनरारंभ करें";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "इस फ़ाइल को प्राप्त करने में कोई समस्या थी";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "यह फ़ाइल संभावित रूप से असुरक्षित हो सकती है";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "डाउनलोड नहीं कर सकते, वायरस पाया गया";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "इंटरनेट कनेक्शन के लिए प्रतीक्षा कर रहा है…";
+"FILE_TRANSFER_BUTTON_CANCEL" = "रद्द करें";
+"FILE_TRANSFER_BUTTON_RETRY" = "पुनर्प्रयास करें";
+"FILE_TRANSFER_LABEL_CANCELED" = "रद्द किया गया";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "डाउनलोड करें";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "अधिक जानें";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "%d दिन के बाद Skype से साझा की गई फ़ाइलें हटा दी जाएँगी. फ़ाइल को अधिक समय तक रखने के लिए, इसे अपने डिवाइस पर सहेजें.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "फ़ाइल उपलब्ध नहीं है";
+"FILE_SENDING_LABEL_ERROR" = "इस फ़ाइल को भेजने में कोई समस्या थी";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "फ़ाइल स्वीकारें?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "केवल विश्वसनीय लोगों की फ़ाइलें स्वीकारें. क्या आप %@ की %@ फ़ाइल स्वीकार करना चाहते हैं?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "चेतावनी - यह फ़ाइल आपके कंप्यूटर/डिवाइस के लिए असुरक्षित हो सकती है";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "क्या आप %@ की %@ फ़ाइल स्वीकार करना चाहते हैं?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "दोबारा नहीं पूछें";
+"FILE_TRANSFER_ACCEPT" = "स्वीकारें";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "अपर्याप्त स्थान";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "इस डिवाइस पर स्टोरेज स्थान खाली करने के लिए सेटिंग्स > सामान्य > उपयोग पर जाएँ.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "उपयोगकर्ता ने अपने मीडिया पर इस ऐप्लिकेशन की पहुँच अस्वीकार कर दी";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "अनुमति देने के लिए सेटिंग्स > गोपनीयता > फ़ोटोज़ पर जाएँ और Skype सक्षम करें.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "आपने एक फ़ोटो भेजी";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "आपको एक फ़ोटो भेजी";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "%@ ने एक फ़ोटो भेजी.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "यह डिवाइस अब तक Skype की नई फ़ोटो शेयरिंग सुविधाओं का समर्थन नहीं करता है, लेकिन इन्हें आप यहाँ अपने ब्राउज़र में अभी भी देख सकते हैं: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "फ़ोटो अनुपलब्ध";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "यह फ़ोटो अभी अनुपलब्ध है.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "रद्द करें";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "पुनः प्रयास करें";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "फ़ोटो अनुपलब्ध";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "यह फ़ोटो अभी अनुपलब्ध है.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "ठीक";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "फ़ोटो सहेजें";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "रद्द करें";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "ओह";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "यह फ़ोटो सहेजने में समस्या हुई थी.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "पुनः प्रयास करें";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "रद्द करें";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "वेब मीडिया";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "गिफी खोजें";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Skype अपडेट करें";
+"FORCE_UPGRADE_CAPTION" = "आपका Skype संस्करण पुराना है. नई सुविधाओं और सुधारों का आनंद लेने के लिए नवीनतम संस्करण प्राप्त करें.";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "इसे अभी प्राप्त करें";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "आपको एक मोजी भेजा गया है";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "आपने एक मोजी भेजा";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "मोजी डाउनलोड किया जा रहा है";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "यह मोजी डाउनलोड करने में समस्या हुई थी";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "पुनः प्रयास करने के लिए डबल टैप करें";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "मोजी चलाएँ";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "यह सामग्री निकाल दी गई है";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "इस सामग्री की समय सीमा समाप्त हो चुकी है";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "कुछ क्षण पूर्व अंतिम बार देखा गया";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "एक सप्ताह से अधिक समय पहले अंतिम बार देखा गया";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "फ़ोन";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "मित्र, संदेश या नए संपर्क तुरंत ढूँढ़ें";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "मोजी: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Skype मोजिस";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "अब %@ क्लिप्स के साथ अधिक मोजी मज़ा!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "खोज फ़ील्ड";
+
+"TAB_RECENT_TITLE" = "हाल ही के";
+"TAB_CONTACTS_TITLE" = "संपर्क";
+"TAB_CALLS_TITLE" = "फ़ोन पर कॉल करें";
+"TAB_MYINFO_TITLE" = "मेरी जानकारी";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "सभी";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "अपठित";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "सभी";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "ऑनलाइन";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "धन्यवाद!";
+"APPSTORE_RATING_SUBTITLE" = "प्यार साझा करें और अनुप्रयोग स्टोर में एक मूल्यांकन छोड़ें. इसमें केवल कुछ समय ही लगेगा.";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "अनुप्रयोग का मूल्यांकन करें";
+
+"CONTACTS_ADD_FAVORITES" = "पसंदीदा जोड़ें";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "संपर्क खोजें";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "कोई इंटरनेट कनेक्शन नहीं है";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "आप ऑफ़लाइन हैं. <a href=\"reconnect\">पुन: कनेक्ट करें</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Skype में समस्याएँ हैं";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "कनेक्ट हो रहा है";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "कनेक्ट किया गया";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "वार्तालापों का अद्यतन कर रहा है…";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "चैट हटाएँ";
+"DELETECHAT_ALERT_MESSAGE"              = "क्या आप वाकई इस डिवाइस से यह गपशप हटाना चाहते हैं? गपशप इतिहास भी हटा दिया जाएगा.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "हटाएँ";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "संपादित करें";
+"LIST_EDITING_CANCEL" = "रद्द करें";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "सभी पठित चिह्नित";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "पढ़ा गया चिह्नित करें";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "सभी हटाएँ";
+"LIST_EDITING_DELETE_TOOLBAR" = "(%d) हटाएँ";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "सभी चैट हटाएँ";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "सभी हटाएँ";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "सभी छुपाएँ";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "मैं इस पर बाद में नज़र डालूँगा";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "नई कॉल";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "होल्ड पर है";
+"CALLING_BANNER_STATUS_MUTED" = "म्यूट किया गया";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Skype प्रमाणित";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "एक नया समूह कॉल प्रारंभ करें";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "नया समूह कॉल प्रारंभ किया जा रहा है";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "आपका वर्तमान कॉल समाप्त किया जाएगा (कृपया अन्य व्यक्ति को बताएँ) और आपका नया समूह कॉल प्रारंभ होगा";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "कॉल करें";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "रद्द करें";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "इसने एक <a href=\"%@\">समूह वार्तालाप</a> बनाया.";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "वेलेंटाइंस डे का एक वीडियो संदेश भेजें";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "वेलेंटाइंस डे के वीडियो संदेश";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "अपने किसी प्रियजन का दिन यादगार बनाएँ";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "पसंद साझा करें";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "अपने किसी प्रियजन को वेलेंटाइंस डे का एक संदेश भेजकर उनका दिन यादगार बनाएँ.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "अभी नहीं";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "संपर्कों को भेजें";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "वीडियो साझा करें";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "वैलेंटाइंस डे की शुभकामनाएँ";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "वैलेंटाइंस डे की\nशुभकामनाएँ";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "मैंने सिर्फ आपके लिए वैलेंटाइंस डे का एक विशेष वीडियो संदेश रिकॉर्ड किया है. अपना वीडियो रिकॉर्ड करने के लिए https://go.skype.com/vmhci पर जाएँ";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "आपको वैलेंटाइन डे का एक विशेष संदेश भेज रहा है…";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "म्यूट करें";
+"INCALLCONTROLS_VIDEO_CAPTION" = "वीडियो";
+"INCALLCONTROLS_AUDIO_CAPTION" = "स्पीकर";
+"INCALLCONTROLS_ADD_CAPTION" = "जोड़ें";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "अधिक";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "डायल पैड";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "अधिक क्रियाएँ";
+"GVC_CALLING_ME_ON_RIBBON" = "मुझे";
+
+"GVC_NOTIFICATION_HUNG_UP" = "%@ ने छोड़ दिया";
+"GVC_NOTIFICATION_JOINED" = "%@ शामिल हुए";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "अब समूह वीडियो कॉलिंग के साथ - एक समूह बनाएँ.";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "सीधे अपने चैट से एक समूह वीडियो कॉल प्रारंभ करें.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "दृश्य परिवर्तित करने का प्रयास करें.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "इस व्यक्ति को अनपिन करने के लिए पुनः टैप करें.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "इसे एक निःशुल्क वीडियो कॉल में बदलें.";
+"GVC_INTERSTITIAL_TITLE" = "समूह वीडियो कॉलिंग से परिचित हों";
+"GVC_INTERSTITIAL_CAPTION" = "प्रत्येक व्यक्ति को जब भी आप चाहें, निःशुल्क, साथ लाएँ.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "समझ गए";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "सहभागी जोड़ें";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";

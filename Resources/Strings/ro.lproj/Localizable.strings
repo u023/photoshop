@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "%@ v-a trimis un mesaj video";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "%@ v-a trimis o fotografie";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "%@ v-a trimis un Moji";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "%@ v-a trimis un mesaj vocal";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "%@ v-a trimis un fișier";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "Ați primit o apreciere nouă";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "Contul meu";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "Trimiteți feedback";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "Marcați-le pe toate drept citite";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "Adăugați persoane";
+"HELP_NAVBAR_BUTTON" = "Ajutor";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "Aveți mesaje de feedback necitite.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "Feedback pentru dezvoltatori";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "Afișați";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "Anulați";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "Adăugați la favorite";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "Eliminați din favorite";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "Adăugați favorite noi pentru orice contact cu ajutorul meniului.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "Deconectați-vă";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "Apel de la %@";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "Apel video de la %@";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "Apel în grup de la %@";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "Mesaj video de la %@.";
+"BACKGROUND_MISSEDCALL_ONE" = "Apel pierdut de la %@.";
+"BACKGROUND_MISSEDCALL_GROUP" = "Apel în grup pierdut de la %@";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "Solicitare nouă de adăugare la lista de contacte de la %@.";
+"BACKGROUND_VOICEMAIL_ONE" = "Mesaj vocal nou de la %@.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "Verificați setările de rețea și încercați din nou.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "Răspundeți";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "Respingeți";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "Adăugare la apel";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "Închidere";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "Încheiați apelul";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "Mesaj video";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "Trimiteți mesaj video";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "Anulați";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "Terminat";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "Setări";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "Creați un cont";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "Creați un cont";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "Numărul de telefon %@ este nevalid. Verificați-l și încercați din nou.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "Agendă";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "Prefixul țării sau regiunea";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "Schimbați prefixul de țară sau regiunea.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "Schimbați prefixul de țară.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "Căutare";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Număr de telefon";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "Închideți";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "Deschideți";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "Creaţi eveniment";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "Arată Calendar";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "Copiați";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "Adăugați la lista de lecturi";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "Deschideți în Safari";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "Editați";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "Citare";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "Pe %1$@, la %2$@, %3$@ a scris:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "Ștergeți";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "Redirecționați";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "Redirecționați";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "Partajați";
+"SHARE_MESSAGE_TITLE" = "Partajați";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "Se încarcă";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a anula";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "Se începe transmisia video...";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "Apelul este redirecționat…";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "Video";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "Tastatură";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "Continuare apel";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "Informații tehnice despre apel";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "Opțiuni de apelare";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ dorește să înceapă transmisia video";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ nu este unul dintre contactele dumneavoastră, dar dorește să înceapă transmisia video.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Participanții la această convorbire au activat transmisia video";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Doriți să acceptați transmisia video în această convorbire?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Acceptați";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Respingeți";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "Adăugați participanţi";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a adăuga participanți.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "Parolă";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "Conectați-vă";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Nume Skype";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Nume Skype, e-mail sau mobil";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "Conturile dumneavoastră";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "Selectați contul pe care doriți să-l folosiți.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Cont Skype";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Cont Microsoft";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "Detalii de conectare";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "Selectați tipul de cont pe care doriți să îl folosiți pentru a vă conecta la Skype.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Cont Microsoft";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Nume Skype";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "Personalizați-vă profilul";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "Adăugare fotografie";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "Schimbare fotografie";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Conectare";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Aveți probleme la conectare?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "OK";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "OK, am înțeles";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "Continuați";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "Nu acum";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "Aflați mai multe";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "Setări";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "Nu mai îmi reaminti";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "Activați notificările";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "Ștergere text";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "Trimiteți";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "Apel,";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "Apel";
+"CHAT_CALL_EVENT_CALL_STARTED" = "Apel inițiat";
+"CHAT_CALL_EVENT_NO_ANSWER" = "Apel, niciun răspuns";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "Apel pierdut";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "%d apeluri pierdute";
+"CHAT_CALL_EVENT_BUSY" = "Apel, ocupat";
+"CHAT_CALL_EVENT_BLOCKED" = "Blocat";
+"CHAT_CALL_EVENT_FAILED" = "Apel nereușit";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "Cum vi s-a părut calitatea acestui apel?";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "Vă mulțumim pentru feedback.";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "Foarte slabă";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "Slabă";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "Destul de bună";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "Bună";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "Excelentă";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "Apel";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "Apel, %@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "Apel";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "Apel, %@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "Apel nereușit";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "Apel pierdut";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "Apel, niciun răspuns";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "Apel blocat";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "Trimis";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "Livrat";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "Citit";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "Trimis";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "Livrat";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "Citit";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "%@ a creat un grup nou.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "%@ a creat un grup nou cu %@.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "%@ a creat un grup nou cu %@ și %@.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "%@ a creat un grup nou cu %@, %@ și încă o persoană.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "%@ a creat un grup nou cu %@, %@ și încă %u persoane.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "<name>%@</name> își sărbătorește astăzi ziua de naștere";
+"CHAT_GRANTED_AUTH" = "V-ați partajat detaliile de contact";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "%@ a adăugat în acest grup următorii utilizatori: %@";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "Roboții adăugați la acest grup au acces la numele Skype, numele afișat și orice mesaj sau conținut nou din chat al fiecărui participant, partajat în grup.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "Bine ați venit! Acest grup include unul sau mai mulți roboți. Aceștia au acces la numele Skype, numele afișat și orice mesaj sau conținut nou din chat al fiecărui participant, partajat în grup.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "%@ s-a alăturat grupului";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "%@ a părăsit grupul";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "%@ a eliminat din acest grup următorii utilizatori: %@";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "Contul de invitat pentru %@ a expirat";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "Ați blocat utilizatorul %@";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "%@ a schimbat rolul utilizatorului %@ la %@";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "Creator";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "Administrator";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "Spectator";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "Autor";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "Vorbitor";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "Solicitant";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "Retras";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "Blocat";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "A fost modificat un rol";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "Conversație fără titlu";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "Afișați chatul";
+"CONVERSATION_HIDE_CHAT" = "Ascundeți chatul";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "Afișare bară laterală";
+"CONVERSATION_HIDE_TIMELINE" = "Ascundere bară laterală";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "Comutare pe imagine grilă";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "Comutare pe imagine individuală";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "Participare la apel";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "Participare la apel";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "Afișare mesaje din <a href=\"jump\">chatul vechi</a>";
+"CHAT_GOTO_NEW_CHAT" = "Acest chat a fost actualizat la o versiune nouă. <a href=\"jump\">Accesați noul chat</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "%@ trebuie să actualizeze Skype pentru a participa la acest chat. Ajutați recomandând adresa skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Aflați mai multe despre noul chat în grup</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "%@ trebuie să actualizeze Skype pentru a participa la acest chat. Ajutați recomandând adresa skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Aflați mai multe despre noul chat în grup</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ poate să participe acum la acest chat.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "Deschide chatul individual.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "Zâmbește";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "Trist";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "Râde";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "Șmecher";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "Surprins";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "Face semn cu ochiul";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "Plânge";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "Transpirat";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "Tăcut";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "Sărut";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "Limba scoasă";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "Emoționat";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "Mirat";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "Somnoros";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "Dă ochii peste cap";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "Îndrăgostit";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "Răutăcios";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "Ține pumnii";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "Cască";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "Vomă";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "Dăăă!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "Supărat";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "Nu am fost eu";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "Petrecere";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "Îngrijorat";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "mmm"; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "Tocilar";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "Buze pecetluite";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "Face cu mâna";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "Palmă peste față";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "Diavol";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "Înger";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "Invidie";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "Așteaptă";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "Îmbrățișare";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "Machiaj";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "Chicotește";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "Aplaudă";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "Gânditor";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "Se apleacă";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "Moare de râs";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "Ușurat";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "Fericit";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "Grimasă";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "Încuviințează";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "Dă din cap";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "Aşteaptă";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "Emo";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "Da";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "Nu";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "Strângere de mână";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "Bate palma";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "Inimă";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "Nu ascult";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "Veveriță";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "Floare";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "Ploaie";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "Soare";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "Buruiană purtată de vânt";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "Muzică";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "Bandit";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "Prea multe informații";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "Cafea";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "Pizza";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "Numerar";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "Braț musculos";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "Tort";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "Bere";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "Cocktail";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "Dans";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "Ninja";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "Stea";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "Arată fundul";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "Telefon";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "Degetul mijlociu";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "Petrecere la piscina";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "Inimă frântă";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "Îmbătat";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "Înjură";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "Film";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "Fumează";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "Ceas";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "Om și cățel";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "Om care face o poză";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "Ai un e-mail";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "Ascultă rock";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "Lovește";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "Dă cu capul de perete";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "Sună-mă";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "Lucrez de acasă";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "Gândac";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "Vorbește";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "Merge țanțoș";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "Om care poartă pălărie";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "Fotbalist";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "Nu te ascult";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "Idee";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "Oaie";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "Pisică";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "Bicicletă";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "Câine";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "Emotigramă: %@";
+
+"EMOTICON_TYPE_FLAG" = "Marcaj: %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "Pentru a adăuga contacte noi pe Skype, <a href=\"add-people\">căutați în directorul Skype</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "Nu aveți contacte pe Skype.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "Nu am găsit încă niciun contact Skype în agenda dvs.<a href=\"add-people\">Adăugați persoane</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "Nu am găsit încă niciun contact Skype în agenda dvs.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Căutați în directorul Skype"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "Găsiți persoane cunoscute pe Skype"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "Se caută persoane pe care le cunoașteți"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a anula căutarea";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "Totul arată bine!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "Când sunteți gata, apăsați butonul de înregistrare.";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "Anulați înregistrarea";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "Înregistrați din nou";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "Anulați";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "Ați primit un mesaj video nou. Pentru a-l vizualiza, copiați codul secret %2 și vizionați mesajul video aici: %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "Anulați";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "Înregistrare";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "Oprire";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "Trimitere";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "Previzualizare";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "Comutare la camera frontală";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "Comutare la camera posterioară";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "Durată de înregistrare";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "Efecte video";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "normal";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "baloane";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "urși";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "caleidoscop";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "pixelare";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "strângeţi";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "umflătură";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "Raze X";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "afiş";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "zăpadă";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "oglindă";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "inimi";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "costum";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "Halloween";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "Limbă de subtitrare";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "Subtitrările vor fi afișate după finalizarea înregistrării";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "Se creează subtitrări...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "Imposibil de creat subtitrări";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "Ascultare";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "Mesaj video";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "Nu mai puteți trimite mesaje video la acest chat.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "Ștergeți video";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "Sigur doriţi să ştergeţi acest mesaj video?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "Ștergere";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Anulare";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "Ștergeți mesaj video";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "Redare";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "Pauză";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "Mesaj vocal";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Mesaj vocal, %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "Redă mesajul vocal";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "Oprește redarea";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Mesaj video";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "Poate fi redat";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "Se încarcă";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "Indisponibil";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "Redă mesajul video";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "Se folosește camera frontală";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "Se folosește camera posterioară";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "Se înregistrează";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "Oprit";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "Se trimite";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "Nu s-a trimis - Se așteaptă conexiunea la internet...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "Vă rugăm să verificați conexiunea şi să încercați din nou.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "Nu s-a primit - Se așteaptă conexiunea la internet...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "Componentă video nedisponibilă";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "Componentă video nedisponibilă";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ trimite o fotografie";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "Aveți probleme la conectare?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "Problemă la conectare";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "Nu vă puteți conecta la Skype. Încercați din nou mai târziu.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "Nu vă puteți conecta la Microsoft. Verificați setările de rețea și încercați din nou.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "Nu vă puteți conecta la Microsoft. Încercați din nou mai târziu.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "Deoarece nu îndepliniți limita de vârstă pentru țara/regiunea dumneavoastră, nu vă puteți conecta la Skype cu acest cont Microsoft.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "Verificați-vă datele";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "Nu am recunoscut aceste detalii de conectare. Verificați-le și încercați din nou.";
+"LOGIN_PROBLEM_NO_NETWORK" = "Imposibil de conectat, verificați conexiunea la internet și încercați din nou.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Credit Skype";
+"IAP_PURCHASE_BUTTON" = "Adăugați credit în valoare de %@";
+"IAP_CALLPHONES" = "Apelare telefoane";
+"IAP_SEND_SMS" = "Trimitere SMS";
+"IAP_WITHSKYPECREDIT_TITLE" = "De ce să plătesc pentru creditul Skype?";
+"IAP_WITHSKYPECREDIT_BODY" = "Pentru că puteți lua legătura cu persoane care nu sunt pe Skype, prin apelarea telefoanelor mobile și fixe sau trimiterea de SMS-uri, la tarife reduse.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Apelurile Skype către Skype sunt gratuite, dar, cu puțin credit, beneficiați de multe alte avantaje.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "Soldul dumneavoastră curent este %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "Conversie valutară"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "%@ va fi schimbat în %@ pentru soldul creditului dumneavoastră Skype.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "Aflați mai multe";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "Schimbat la cursul Băncii Centrale Europene din %@.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "Se pare că moneda magazinului de aplicații și moneda Skype nu se potrivesc. Vom converti moneda magazinului de aplicații pentru această achiziție.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "Pentru a schimba aceste setări, conectați-vă la Skype.com și selectați \"Schimbare monedă\" în Contul meu.";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "Credit insuficient";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "Nu aveți suficient credit Skype pentru suna acest număr.";
+"IAP_CALL_NO_CREDIT_TITLE" = "Nu aveți credit";
+"IAP_CALL_NO_CREDIT_BODY" = "Aveți nevoie de credit Skype pentru a suna acest număr.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "Achiziție reușită";
+"IAP_RESULT_SUCCESS_1_BODY" = "%@ a fost adăugat la contul dumneavoastră Skype.";
+"IAP_RESULT_SUCCESS_2_BODY" = "%@ este în curs de adăugare la contul dumneavoastră Skype.";
+"IAP_RESULT_SUCCESS_3_BODY" = "%@ a fost adăugat deja la contul dumneavoastră Skype.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "Comanda dumneavoastră anterioară de credit Skype este finalizată. %@ a fost adăugat la contul dumneavoastră Skype.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "Comanda dumneavoastră anterioară de credit Skype este în curs de procesare.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "Comanda dumneavoastră anterioară de credit Skype a fost finalizată cu succes.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "Achiziție anulată";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "Ne pare rău";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "Nu am reușit să vă procesăm comanda. Încercați din nou mai târziu.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "Comanda dumneavoastră nu poate fi finalizată acum, dar vom continua să încercăm și vă vom înștiința la finalizarea comenzii.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "Comanda dumneavoastră anterioară de credit Skype nu poate fi finalizată acum, dar vom continua să încercăm și vă vom înștiința la finalizarea comenzii.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "Înainte de a achiziționa credit, citiți și acceptați Termenii de utilizare Skype.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "Nu am putut să vă procesăm comanda, deoarece furnizorul dumneavoastră de plăți nu este disponibil momentan. Încercați din nou mai târziu.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "Nu am putut să vă procesăm comanda, deoarece contul dumneavoastră este administrat de un administrator.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "Nu am putut să vă procesăm comanda. Pentru ajutor, contactați echipa Skype de asistență pentru clienți.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "Contul dumneavoastră iTunes nu este disponibil momentan.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "Nu am putut să vă finalizăm comanda, deoarece contul dumneavoastră iTunes nu este disponibil momentan. Încercați din nou mai târziu.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "Nu am putut să vă procesăm comanda, deoarece Skype nu acceptă moneda setată în contul dumneavoastră iTunes.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "Moneda setată în contul Skype nu corespunde contului dumneavoastră iTunes. Puteți să schimbați moneda din setările contului pe skype.com.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "Nu am putut să vă procesăm comanda. Vă rugăm să verificați conexiunea la rețea și apoi să încercați din nou.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "Nu am putut să vă procesăm comanda. Vă rugăm să verificați conexiunea la rețea și să încercați din nou după ce vă reconectați.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "Nu am putut să vă procesăm comanda anterioară de credit Skype. Vă rugăm să verificați conexiunea la rețea și să încercați din nou după ce vă reconectați.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "Primiți ajutor";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Cont Microsoft";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "Anulați și reîncepeți";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "Cont Skype conectat";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "Acest cont Skype a fost deja conectat deja la alt cont Microsoft. Pentru a continua, conectați-vă folosind aceste detalii Microsoft.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "A apărut o problemă la îmbinarea conturilor. Încercați din nou mai târziu.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "A apărut o problemă la deschiderea contului. Verificați conexiunea la rețea și încercați din nou.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "Telefon";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "Acasă";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "Birou";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "Telefon mobil";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "Alt număr de telefon";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "Număr necunoscut";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (invitat)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "Se conectează...";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "Sună...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "Sună…";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "Apel în așteptare";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "Apel încheiat";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "Inițiere...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "Sună…";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "V-ați alăturat la apel";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "Apel în așteptare";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "Apel pus în așteptare de la distanță";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "Alte persoane participă la apel";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "Alte persoane participă la apel; a fost atins numărul maxim de participanți";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "Redare mesaj vocal";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "Se înregistrează";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "V-ați alăturat recent la apel";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "Se transferă";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "Se conectează…";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "Încărcare contacte...";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "Se actualizează...";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "Acest mesaj a fost șters";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "Nu vă puteți conecta la Skype.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "Verificați setările de rețea și încercați din nou.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "Acest nume Skype nu este valid.";
+"Account::INVALID_EMAIL" = "Această adresă de e-mail nu este validă.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "Verificați și încercați din nou.";
+"Account::UNACCEPTABLE_PASSWORD" = "Această parolă nu este validă.";
+"Account::SKYPENAME_TAKEN" = "Acest nume Skype este deja în uz.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "Introduceți alt nume.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "Nu v-am putut recunoaște numele sau parola Skype.";
+"Account::INCORRECT_PASSWORD" = "Nu v-am putut recunoaște numele sau parola Skype.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "Ați încercat de prea multe ori să vă conectați.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "Încercați din nou mai târziu.";
+"Account::ATO_BLOCKED" = "Contul dumneavoastră a fost suspendat. <a href = 'https://go.skype.com/account.recovery.ios'>Atingeți aici pentru mai multe informații</a>.";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "A apărut o problemă la conectarea folosind contul Microsoft. Încercați din nou mai târziu.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "Nu vă puteți conecta deoarece nu mai aveți spațiu liber de stocare pe dispozitiv.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "Nu vă puteți conecta. Reinițializați dispozitivul și încercați din nou.(%d)";
+"Account::DB_FAILURE" = "Nu vă puteți conecta. Reinițializați dispozitivul și încercați din nou.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "Nu vă puteți conecta. Încercați să reinstalați Skype de pe App Store.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "Parola a fost schimbată. Conectați-vă pentru a continua să folosiți Skype.";
+"Account::LOGOUT_REMOTE" = "Ați fost deconectat(ă).";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "Această versiune de Skype nu este acceptată.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "Pentru a continua, actualizați la cea mai recentă versiune de Skype.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "Nu vă puteți conecta. Încercați din nou mai târziu.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "Nu vă puteți conecta la Skype deoarece nu îndepliniți limita de vârstă pentru țara/regiunea dumneavoastră.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "Încercați din nou.(%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "Apel";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "Apel video";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "Mesaj video";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "Tastatură"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "Apelare numere de telefon";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "Începeți un chat nou";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Începeți un chat nou pe Skype";
+
+
+"HUB_RECENTS_TITLE" = "Recente";
+"HUB_PEOPLE_TITLE" = "Persoane";
+"HUB_FAVOURIES_TITLE" = "Favorite";
+"CANCEL_ALERT_BUTTON" = "Anulați";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "Favorite";
+"PEOPLEPICKER_CONTACTS_TITLE" = "Contacte";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "Căutați contacte";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "Găsiți contacte noi";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "Căutați contactul „%@”";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Căutați contactul „%@” în directorul Skype";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "Persoane";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "Roboți";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "Neconectat(ă)"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "Pe Skype"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Conectați-vă pe Skype";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "Anulați";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "Conectați-vă";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "Chat nou";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a selecta.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "Conversațiile recente vor apărea aici.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "Nu aveți mesaje necitite";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "Apelurile recente către telefoane mobile și fixe vor apărea aici, <a href=\"open-dialpad\">sună un prieten</a>\n";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, mesaje noi, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "Apel pus în așteptare de la distanță";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "Apel în așteptare";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "Apel în curs";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "Apel curent, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "Apel curent";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "Editat";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "Editare";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "salvare fotografie";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "Salvare video";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "Arată aprecierile";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "Apreciere";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "Nu-mi mai place";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "Închidere";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "Aprecieri";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "Atingeți de două ori pentru a vedea contactul";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "Nouă";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "Apreciază mesajul dumneavoastră.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "Apreciază mesajul dumneavoastră: %@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "Apreciază fotografia dumneavoastră.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "%@ apreciază mesajul dumneavoastră.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "%1$@ apreciază mesajul dumneavoastră: %2$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "%@ apreciază fotografia dumneavoastră.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>Nimeni nu a apreciat asta încă</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "Ați apreciat asta";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "Conectare";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Nume Skype";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Cont Microsoft";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "Creați un cont";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Conectați-vă cu numele Skype";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Conectați-vă cu un cont Microsoft";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Creare cont";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "Câmpul cu detaliile de conectare";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "Utilizați deja Skype?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "Da";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Da, am deja un cont Skype.";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "Nu";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Nu, nu am cont Skype.";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "Filtrare listă de persoane";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "Toate contactele";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "Contacte conectate";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "Afișați toate contactele.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "Afișați numai contactele online.";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "Afișați numai contactele Skype.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "Apel vocal";
+"CHATINPUT_PLACEHOLDER" = "Scrieți un mesaj aici";
+"CHATINPUT_PLACEHOLDER_SMS" = "Introduceți un SMS aici";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "Începeți o conversație cu %@";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "Aici vor fi afișate conversațiile dumneavoastră.";
+"CHATTYPING_SINGLEUSER" = "%@ scrie un mesaj...";
+"CHATTYPING_TWOUSERS" = "%@ și %@ scriu un mesaj...";
+"CHATTYPING_THREEUSERS" = "%@, %@ și încă o persoană scriu un mesaj...";
+"CHATTYPING_MULTIPLEUSERS" = "%@, %@ și încă %d persoane scriu un mesaj...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "Apelați telefon";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "Trimiteți invitație";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Trimiteți-le un link prin SMS pentru a discuta pe Skype.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "Chat";
+"SEND_SMS_TO_CONTACT_BUTTON" = "SMS";
+"EMPTY_PAGE_HEADER_TITLE" = "Salutați-l(o) pe";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "Salut, te invit să discutăm pe Skype: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "Trimiterea acestui SMS costă %@";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "Selectați țara/regiunea";
+"DIALPAD_CALL_BUTTON" = "Apelați";
+"DIALPAD_STAR_BUTTON" = "Stea";
+"DIALPAD_HASH_BUTTON" = "Diez";
+"DIALPAD_BACKSPACE_BUTTON" = "Ștergeți";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "SMS";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "Deschide un chat cu %@";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "Tastatura este ascunsă.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "Afișați tastatura";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "Acest contact nu poate fi apelat";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "A apărut o problemă la apelarea acestui contact.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "Verificați-l și încercați din nou.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "Numere de urgență";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "Apelurile la numere de urgență nu sunt acceptate pe dispozitivul dumneavoastră.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "Număr de telefon nevalid";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "A apărut o problemă la apelarea acestui număr de telefon.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "Verificați-l și încercați din nou.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "Sunteți deja într-un apel";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "Un apel telefonic este în curs.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Închideți înainte de a începe alt apel.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "Sunteți deja într-un apel";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "Există un alt apel Skype în curs.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Închideți înainte de a începe alt apel.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "Apelul poate fi efectuat";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "Operatorul dumneavoastră nu permite apeluri Skype în rețeaua mobilă. Pentru a efectua apeluri pe Skype, conectați-vă mai întâi la o rețea WiFi.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "Apel nereușit";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "Nu vă puteți suna pe dumneavoastră.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "Contact blocat";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "Deblocați acest contact înainte de a-l apela.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "Acces la microfon";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "Fără permisiunea de a utiliza microfonul, ceilalți nu vă vor putea auzi în timpul apelurilor sau mesajelor video.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Accesați setările dispozitivului și apoi Confidențialitate pentru a acorda permisiunea.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "Acces la cameră";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "Fără permisiunea de a utiliza camera, ceilalți nu vă vor putea vedea în timpul apelurilor sau mesajelor video.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Accesați setările dispozitivului și apoi Confidențialitate pentru a acorda permisiunea.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "Fără permisiunea de a utiliza camera, nu veți putea efectua fotografii pe Skype.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "Apelul poate fi efectuat";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "Altă aplicație audio împiedică Skype să redea sunetul.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "Verificați și încercați din nou.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "Apelul poate fi efectuat";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "Există o problemă cu sunetul pe dispozitiv.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "Verificați și încercați din nou.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "Apelul poate fi efectuat";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "Există o problemă cu sunetul pe dispozitiv.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "Reporniți Skype pentru a continua.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "Apelul poate fi efectuat";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "Există o problemă cu sunetul pe dispozitiv.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "Încercați din nou mai târziu.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "Apelul nu poate fi efectuat";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "Există o problemă cu sunetul pe dispozitiv.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "Încercați din nou mai târziu.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "Apelul poate fi efectuat";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "A apărut o problemă la conectarea acestui apel.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "Încercați din nou mai târziu.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "Apelul nu poate fi efectuat";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "În India nu puteți apela decât alte persoane din țară, cu condiția ca acestea să utilizeze Skype (gratuit). Ne pare rău, dar nu puteți apela telefoane mobile sau fixe din India prin Skype.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "Aflați mai multe";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Nu puteți participa la apel";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Acest apel în grup are momentan numărul maxim de participanți. Încercați să participați mai târziu.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "Camera este în uz";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "Sunteți într-un apel video.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "Dezactivați-vă imaginea video înainte de a încerca să folosiți camera.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Apeluri în grup";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Acest grup este prea mare pentru a iniția un apel audio pe acest dispozitiv (max. %d participanți).";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "Apeluri video în grup";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Acest grup este prea mare pentru un apel de pe acest dispozitiv (are minim %d participanți).";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "Sunteți deconectat(ă)";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "Trebuie să fiți conectat(ă) pentru a efectua apeluri pe Skype.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Apeluri în grup";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "A fost atins numărul maxim de participanți pentru acest apel.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "Apel în așteptare";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "Reluați apelul înainte de a adăuga participanți noi.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "Apel pus în așteptare de la distanță";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "Apelul trebuie să fie reluat înainte de a putea adăuga noi participanți.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "Se configurează apelul";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "Nu se pot adăuga participanți în timp ce apelul se conectează.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "Vă rugăm să aşteptaţi până când apelul s-a conectat.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "Grup";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "Problemă la adăugarea de participanţi, încercaţi din nou mai târziu.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "Transmisia video nu poate fi pornită";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "A apărut o problemă la pornirea transmisiei video.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "Verificați dacă toți participanții la apel au cea mai nouă versiune de Skype.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "Transmisia video nu poate fi pornită";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skype nu a putut porni transmisia video.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "Încercați din nou mai târziu.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "Continuare apel";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "A apărut o problemă la continuarea acestui apel.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "Înainte de a continua acest apel Skype, închideți toate aplicațiile care utilizează în prezent sunetul și încheiați toate apelurile telefonice în desfășurare.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "Solicitare de adăugare la contacte";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "Au fost adăugați sau eliminați participanți";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "<name>%@</name> își sărbătorește astăzi ziua de naștere"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "A fost creat un chat în grup";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "Contactul a fost blocat";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "V-a trimis un mesaj video";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "Ați trimis un mesaj video";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>Dumneavoastră</name> și <name>%@</name> sunteți acum prieteni.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "este acum în lista de contacte";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "V-ați partajat detaliile de contact";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "V-a trimis un mesaj vocal";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "Ați trimis un mesaj vocal.";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "%@ v-a trimis un contact. Această versiune de Skype nu este compatibilă încă cu această funcție.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "Ați trimis un contact. Această versiune de Skype nu este compatibilă încă cu această funcție.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "Atingeți de două ori pentru a vedea contactul";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "Atingeți de două ori pentru a vedea contactele";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "Contact trimis";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "Adăugați la lista de contacte";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "Deja în lista de contacte";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "Vizualizare contacte";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "Trimiteți contacte";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "Trimiteți contacte";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "și încă %d altele";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "Selectați contacte";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "Nu aveţi niciun contact pe Skype pentru a trimite.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "Niciun contact";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "Contacte";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "Trimiteți contacte";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "Cerere de contact trimisă";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "Cerere de contact în curs";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "Contacte trimise";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "%@ v-a trimis un mesaj pentru a vă anunța că această versiune de Skype nu este compatibilă încă cu această funcție.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "Ați trimis un mesaj pentru a anunța că această versiune de Skype nu este compatibilă încă cu această funcție.";
+
+"RECENTS_DELETE_CONVERSATION" = "Ștergeți chatul";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "Marcați drept citit";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "Marcați ca necitit";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "Chat";
+"CALL_ACCESSIBILITYLABEL" = "Apel";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "Conectare principală";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Conectare folosind contul Skype";
+"HUB_ACCESSIBILITYLABEL" = "Hub";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "Element de căutare sugerat %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "Afișare emotigrame";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "Arată tastatură";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "Ștergeți";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Căutare";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "Magazin";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "Recente";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "Emotigrame";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Mesaje Moji";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "Căutare";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "Sugestii";
+"EXPRESSION_SEARCH_NO_RESULTS" = "Niciun rezultat";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "Asociați-vă la chat-ul meu pe Skype pentru a viziona acest mesaj Moji: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "Salut,\nAsociați-vă la chat-ul meu pe Skype pentru a viziona mesajul Moji pe care vi l-am trimis: %@\nVorbim curând,";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "Verificați acest mesaj Moji";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "Ups";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "A apărut o problemă la partajarea acestui mesaj Moji, încercați din nou mai târziu.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Magazin Skype";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "Se încarcă mesaje Moji și emotigrame...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "Căutare";
+"EXPRESSION_STORE_FREE" = "Gratuit";
+"EXPRESSION_STORE_REMOVE" = "Eliminare";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "Descărcare gratuită";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "Se descarcă";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "Descărcat";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "Ups";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "A apărut o problemă la încărcarea mesajelor Moji și a emotigramelor.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "A apărut o problemă la găsirea mesajelor Moji și a emotigramelor, <a href=\"re-try fetching\">reîncercare</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "Căutați emotigrame și Moji";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "Emotigramele folosite recent vor apărea aici.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "Recomandate";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a previzualiza.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a trimite.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a închide previzualizarea.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "Redați din nou";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Previzualizare Moji";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "Atingeți din nou pentru a trimite.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Pentru ca %@ să vă poată auzi, permiteți accesul la microfon în setările dispozitivului.";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Pentru ca toată lumea să vă poată auzi, permiteți accesul la microfon în setările dispozitivului.";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Pentru ca %@ să vă poată vedea, permiteți accesul la cameră în setările dispozitivului.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Pentru ca toată lumea să vă poată vedea, permiteți accesul la cameră în setările dispozitivului.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "A fost atins numărul maxim de participanți pentru acest apel";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "Aveți nevoie de o conexiune la rețea pentru a efectua un apel";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "Camera este dezactivată în vizualizarea scindată.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Componenta video nu este acceptată în Slide Over.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "Difuzorul+microfonul este activat";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a dezactiva difuzorul+microfonul";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "Difuzorul+microfonul este dezactivat";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a activa difuzorul+microfonul";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "Apel pus pe silențios";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a dezactiva modul silențios";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "Mod silențios dezactivat pentru apel";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a activa modul silențios";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "Transmisia video este activată";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a dezactiva transmisia video";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "Transmisia video este dezactivată";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a activa transmisia video";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "Primit";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "Efectuat";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 participant"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d participanți"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "Niciun participant"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%1$d din %2$d participanți la acest apel";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "%1$@ trebuie să actualizeze Skype, pentru de a participa la apel.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "%1$@ și %2$@ trebuie să actualizeze Skype, pentru a participa la acest apel.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "%1$@ și %2$@ trebuie să actualizeze Skype, pentru a participa la acest apel.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ", ";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ vă apelează pe Skype";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ și %@ vă apelează prin apel în grup";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ și încă o persoană vă apelează prin apel în grup";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ și alte %d persoane vă apelează prin apel în grup";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "%@ vă apelează prin apel video";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "%@ și %@ vă apelează prin apel video";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "%@, %@ și încă o persoană vă apelează prin apel video";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "%@, %@ și alte %d persoane vă apelează prin apel video";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Apel Skype către %@";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Apel în grup către %@ și %@";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Apel în grup către %@, %@ și încă o persoană";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Apel în grup către %@, %@ și alte %d persoane";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "Apel video cu %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "Apel video cu %@ și %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "Apel video cu %@, %@ și încă o persoană";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "Apel video către %@, %@ și alte %d persoane";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Apel Skype cu %@";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Apel în grup cu %@ și %@";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Apel în grup cu %@, %@ și încă o persoană";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Apel în grup cu %@, %@ și alte %d persoane";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Apel video cu %@";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Apel video în grup cu %@ și %@";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Apel video în grup cu %@, %@ și încă o persoană";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Apel video în grup cu %@, %@ și alte %d persoane";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Reconectare apel Skype cu %@";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Reconectare apel Skype cu %@ și %@";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Reconectare apel Skype cu %@, %@ și încă o persoană";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Reconectare apel Skype cu %@, %@ și alte %d persoane";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Reconectare apel video cu %@";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Reconectare apel video cu %@ și %@";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Reconectare apel video cu %@, %@ și încă o persoană";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Reconectare apel video cu %@, %@ și alte %d persoane";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "Apel încheiat";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "Durată apel";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "Înregistrare mesaj vocal";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "z";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "z";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "h";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "h";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "min";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "min";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "s";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "s";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "Acceptați";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "Respingeți";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> dorește să vă adauge pe Skype\n\"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> v-a trimis un mesaj din <location>%@</location>"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "Începeți o conversație cu <name>%@</name> și adăugați această persoană la Contacte.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ nu este încă în lista de contacte.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "\"%@\" <a href=\"edit-contact-request-message\">Editați</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "Trimiteți o cerere de contact";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "Adăugați la contacte";
+"CONTACT_REQUEST_PENDING" = "Se așteaptă ca <name>%@</name> să accepte solicitarea de contact.\n<a href=\"resend-request\">Retrimiteți solicitarea de contact</a>";
+"CONTACT_REQUEST_BLOCKED" = "<name>%@</name> este blocat(ă)";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "Deblocați";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "Da";
+"CONTACT_REQUEST_BLOCK_TITLE" = "Blocați contactul";
+"CONTACT_REQUEST_DECLINED_TITLE" = "Cerere de contact refuzată";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "Anulați";
+"CONTACT_REQUEST_BLOCK_ALERT" = "Sigur doriți să blocați acest contact?";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "Doriți să blocați și să raportați această persoană?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "Blocați";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "Blocați și eliminați";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "Blocați și raportați";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "Adăugați participanţi";
+"CHAT_OPTION_START_NEW_GROUP" = "Începeți un grup nou";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "Vedeți profilul";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "Notificări";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "Notificările pentru acest chat sunt activate.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "Notificările pentru acest chat sunt dezactivate.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "Activați notificările";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "Dezactivați notificările";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "Părăsiți grupul";
+
+"CHAT_OPTION_PARTICIPANTS" = "Afișați participanții";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "ACTIVARE";
+"MK_SWITCH_OFF_MESSAGE" = "DEZACTIVARE";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "Activează și dezactivează.";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "Chat nou";
+"NEWCHATSCENE_TITLE_TOKEN" = "CĂTRE:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "și încă %d persoană"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "și încă %d persoane"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "Selectați contacte de adăugat";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Ecran principal";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Anulați crearea unui grup nou";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Creați un grup nou";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "Apel vocal";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "Apel video";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "Tastatură";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "Anulați";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "Înapoi";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "Informațiile mele";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "Deschidere meniu Media";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "Închidere meniu Media";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "Ajutor";
+"MY_INFO_FEEDBACK_ACTION" = "Trimiteți feedback";
+
+"MY_INFO_CONNECTING" = "Se conectează...";
+
+"MY_INFO_STATUS" = "Stare";
+"MY_INFO_CREDIT" = "Credit Skype";
+"MY_INFO_PROFILE_LINK" = "Contul meu";
+"MY_INFO_SETTINGS" = "Setări";
+"MY_INFO_SIGN_OUT" = "Deconectare";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "Inserați un mesaj pentru starea de spirit";
+"MY_INFO_MOOD_MESSAGE" = "Mesaj de stare";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "Atingeți de două ori pentru a edita";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "Trimiteți feedback";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "Schimbare fotografie de profil";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "Realizați o fotografie";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "Selectați o fotografie existentă";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "Eliminați fotografia de profil";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "Setări";
+
+"SETTINGS_GENERAL" = "Setări generale";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "Permiteți reclame direcționate";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "Permiteți Microsoft să utilizeze informațiile profilului Skype pentru a vă afișa reclame mai relevante în această aplicație. <a href=\"skype.com\">Aflați mai multe</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "Notificări pentru chat";
+"SETTINGS_PUSH_NOTIFICATIONS" = "Notificări push";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Notificări push";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "Veți primi mesaje de notificare chiar și atunci când aplicația Skype este închisă.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "Nu veți primi mesaje de notificare atunci când aplicația Skype este închisă.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "Notificări în aplicație";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Notificări în aplicație";
+"SETTINGS_INAPP_SOUNDS" = "Sunete în aplicație";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "Sunete în aplicație";
+"SETTINGS_OTHER" = "Alte setări";
+
+"SETTINGS_PRIVACY" = "Confidențialitate";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "Cum puteți fi găsit";
+"SETTINGS_PRIVACY_EXPLANATION" = "Aceste detalii de contact pot fi utilizate pentru a vă găsi pe Skype.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "Adăugare număr de telefon";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "Imagine de profil";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "Vizibil pentru oricine";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "Vizibil pentru contactele mele";
+
+"SETTINGS_CONTACTS_HEADER" = "Contacte";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "Adăugați-vă prietenii";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype vă va verifica lista de contacte și va adăuga automat persoanele pe care le cunoașteți la lista de contacte Skype.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "Va trebui să căutați și să adăugați manual prieteni noi în Skype.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "Previzualizări de linkuri web";
+
+"SETTINGS_EMOTICONS_HEADER" = "Emotigrame";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "Folosiți emotigrame mari";
+
+"SETTINGS_EDIT_BUTTON" = "Editați";
+"SETTINGS_DONE_BUTTON" = "Terminat";
+
+"SETTINGS_ABOUT" = "Despre";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "Introduceți-vă numărul";
+"PNV_HOW_IS_MY_NUMBER_USED" = "Cum este utilizat numărul meu?";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "Se pot aplica tarifele standard pentru SMS-uri.";
+"PNV_ENTER_THE_CODE" = "Introduceți codul";
+"PNV_CODE_SENT" = "Am trimis un cod la numărul dumneavoastră";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>Apelare</a> sau <a href='pnv://resendcode'>retrimitere cod</a>";
+"PNV_VERIFYING_NUMBER" = "Se verifică numărul";
+"PNV_NUMBER_VERIFIED" = "Verificat";
+"PNV_NUMBER_USAGE_EXPLANATION" = "Numărul dumneavoastră va fi folosit pentru a vă ajuta prietenii să vă găsească pe Skype. De asemenea, va face căutarea contactelor va fi mult mai ușoară.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "Cod";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "Pentru a schimba modul în care vă găsesc ceilalți utilizatori, accesați %@ în Setări pentru a elimina sau a dezactiva oricare dintre numerele dumneavoastră de telefon.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "Alternativ, dacă nu doriți să utilizați numărul și preferați să căutați și să adăugați manual contacte noi, selectați %@ mai jos.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Politica de confidențialitate Skype";
+"PNV_NOT_NOW" = "Nu acum";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Număr de telefon";
+
+"PNV_WELCOME_HEADING" = "Acum este mai ușor să vă găsiți prietenii";
+"PNV_WELCOME_PARAGRAPH" = "Adăugați-vă numărul de telefon pentru a începe.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Înainte";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "Ups!";
+"PNV_DEFAULT_ERROR_MESSAGE" = "A apărut o problemă la verificarea numărului dumneavoastră. Încercați din nou mai târziu.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "Ați ajuns la numărul maxim de numere verificate. Ștergeți unul dintre numerele dumneavoastră din Setări înainte de a adăuga alte numere.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "Numărul pe care l-ați introdus este nevalid. Verificați-l și încercați din nou.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "Nu putem trimite un SMS la acest număr. Verificați-l și încercați din nou.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "Se pare că a expirat codul. Selectați Retrimitere de mai jos pentru a obține un nou cod.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "Se pare că respectivul cod a fost incorect. Verificați-l și încercați din nou.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "A apărut o problemă cu conexiunea dumneavoastră la rețea. Verificați setările de rețea și încercați din nou.";
+"PNV_ERROR_TRY_AGAIN" = "Reîncercați";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Adăugați prieteni pe Skype";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "Vom căuta persoane pe care le cunoașteți pe Skype și le vom adăuga la Contacte.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Aflați mai multe";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "Pentru a adăuga automat contacte noi pe Skype, vă vom verifica periodic agenda pentru a găsi persoane pe care le cunoașteți. Nu vă faceți griji, nu le vom trimite prietenilor mesaje spam cu invitații.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "Oricând vă veți răzgândi, dezactivați opțiunea %@ din Setări. Agenda dumneavoastră nu va mai fi utilizată pentru a găsi persoane pe care le cunoașteți și va trebui să adăugați manual persoane.";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "Pentru a schimba modul în care vă găsesc ceilalți utilizatori, accesați %@ în Setări pentru a elimina sau a dezactiva oricare dintre numerele dumneavoastră de telefon.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Politica de confidențialitate Skype";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "Nu uitați, Skype nu poate fi folosit pentru apeluri de urgență";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "Acum este mai ușor să vă găsiți prietenii";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "Noile contacte au fost adăugate";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "Adăugați contactul";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "Anulați";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "Căutare";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Anulare";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "Căutați persoane pe Skype folosind numele lor Skype, adresa lor de e-mail sau numele complet.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "Deja contact Skype";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "Niciun rezultat";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "Înapoi";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "Redirecționați";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "Partajați";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "Despre";
+"ABOUT_APPLICATION_VERSION" = "Versiune Skype";
+"ABOUT_COPYRIGHT" = "© 2003-2016 Skype & Microsoft\nBrevet în curs de înregistrare";
+"ABOUT_THIRD_PARTY_NOTICES" = "Note privind terțele părți";
+"ABOUT_PRIVACY_POLICY" = "Politică de confidențialitate";
+"ABOUT_TERMS_OF_USE" = "Termeni de utilizare";
+"ABOUT_COPYRIGHT_TEXT" = "Numele Skype, mărcile comerciale și siglele asociate, precum și sigla „S” sunt mărci comerciale ale Skype sau ale entităților afiliate.\n\nAvertisment: Acest program este protejat de legea drepturilor de autor și de tratate internaționale. Reproducerea sau distribuirea neautorizată a acestui program sau a oricărei părți a acestuia poate să atragă sancțiuni civile și penale deosebit de grave și va determina urmărirea pe cale judiciară în limitele maxime permise de lege.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "Eroare";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "Prin e-mail";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "Doresc să aflu despre noile oferte și funcții Skype prin e-mail";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Doresc să aflu despre noile oferte și funcții Skype:";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "Adăugare fotografie de profil";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "E-mail";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "ion@exemplu.com";
+"CREATEACCOUNT_FULLNAME_LABEL" = "Nume complet";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "Prenume";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "Nume";
+"CREATEACCOUNT_PASSWORD_LABEL" = "Parolă";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6-20 caractere";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "Repetare parolă";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Nume Skype";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "Obligatoriu";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "Număr de telefon";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "cu prefixul de țară";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "Unele câmpuri de mai sus nu au fost completate";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "Parolele nu se potrivesc. Verificați și încercați din nou.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Termeni de utilizare Skype";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "Am citit și accept <a href='%1$@'>Termenii de utilizare Skype</a> și <a href='%2$@'>Politica de confidențialitate.</a>";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "Nu se pot efectua apeluri de urgență cu Skype";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype nu înlocuiește telefonul și nu poate fi utilizat pentru apeluri de urgență.";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "Sunt de acord";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "Trebuie să aibă între 6 și 32 de caractere.";
+"SkyLib::TOO_LONG" = "Trebuie să aibă între 6 și 32 de caractere.";
+"SkyLib::CONTAINS_INVALID_CHAR" = "Caracter nepermis; de ex.: Σ, à, ß.";
+"SkyLib::CONTAINS_SPACE" = "Nu poate să conțină spații sau aliniate.";
+"SkyLib::SAME_AS_USERNAME" = "Prea de similar cu numele Skype.";
+"SkyLib::INVALID_FORMAT" = "Format nevalid.";
+"SkyLib::CONTAINS_INVALID_WORD" = "Prea ușor de ghicit; de ex: abcd, skype.";
+"SkyLib::TOO_SIMPLE" = "Trebuie să conțină cel puțin o literă și un număr.";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "Trebuie să înceapă cu o literă (A-Z).";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "Încercați un nou nume Skype.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "Încercați o parolă nouă.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "Încercați o adresă de e-mail nouă.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "Încercați din nou.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Nume Skype";
+"SkyLib::ACCOUNT_PASSWORD" = "Parolă";
+"SkyLib::CONTACT_EMAILS" = "E-mail";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> a redenumit acest grup „%@”";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Ecranul principal Skype";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> a actualizat fotografia grupului.";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> a actualizat grupul";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "Ascundeți";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "%d notificări noi";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "O notificare nouă";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "Nicio notificare nouă";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "Salut, doresc să te adaug în lista Skype.";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "Cerere de contact";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. În %3$@";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "Ar vrea să vă adauge pe Skype";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "Nu acum";
+"ALLOW_BUTTON" = "Permiteți";
+"PERMISSION_VIEW_TITLE" = "Configurare";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la microfon.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la cameră.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la contacte.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la notificări.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la microfon și la cameră.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la microfon și la contacte.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la microfon și la notificări.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la cameră și la contacte.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la cameră și la notificări.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la contacte și la notificări.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la microfon, cameră și notificări.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la microfon, contacte și notificări.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la microfon, cameră și notificări.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la cameră, contacte și notificări.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Pentru a vă oferi o experiență Skype optimă, avem nevoie de acces la microfon, cameră, contacte și notificări.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "Contacte";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "Microfon";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "Cameră";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "Notificări";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "Sunteți sigur?";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "Dacă nu ne oferiți acces, nu veți putea să efectuați sau să primiți apeluri în mod corespunzător sau să primiți notificări cu privire la apeluri și mesaje primite.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "Lista dumneavoastră de contacte va fi goală și nu veți putea efectua sau primi apeluri pe Skype.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Aflați mai multe";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "Microfon și cameră";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "Pentru a putea efectua sau primi apeluri pe Skype, trebuie să ne acordați acces la microfon și la cameră. Ne pare rău, dar Skype nu funcționează fără aceste permisiuni.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "Contacte";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "Pentru a configura lista de contacte Skype, avem nevoie de acces la contactele dumneavoastră. Vă vom verifica periodic contactele pentru a găsi persoane pe care le cunoașteți pe Skype. Nu vă faceți griji, nu le vom trimite prietenilor mesaje spam cu invitații.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "Oricând vă veți răzgândi, dezactivați opțiunea %@ din Setări. Agenda dumneavoastră nu va mai fi utilizată pentru a găsi persoane pe care le cunoașteți și va trebui să adăugați manual persoane.";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "Notificări";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "Pentru a vă notifica cu privire la apeluri și mesaje primite când Skype este închis, avem nevoie de acces la notificări. Ulterior, puteți decide să dezactivați notificările individuale pentru chat dacă nu doriți să fiți deranjat.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "Acordați acces contactelor";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Skype are nevoie de acces la contacte pentru a găsi persoane pe care le cunoașteți. Deplasați-vă la Setări și activați opțiunea Contacte pentru a permite accesul.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "Omiteți";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "Conectați-vă";
+"ONBOARDING_GET_STARTED_BUTTON" = "Începeți";
+
+"ONBOARDING_IPHONE_TITLE1" = "Reproiectat pentru iPhone";
+"ONBOARDING_IPAD_TITLE1" = "Reproiectat pentru iPad";
+"ONBOARDING_TEXT1" = "Skype este mai ușor de folosit ca niciodată, indiferent dacă trimiteți mesaje prietenilor sau efectuați un apel.";
+
+"ONBOARDING_TITLE2" = "Găsiți orice";
+"ONBOARDING_TEXT2" = "Căutați persoane, grupuri sau chiar conversații anterioare.";
+
+"ONBOARDING_IPHONE_TITLE3" = "Realizați mai multe";
+"ONBOARDING_IPAD_TITLE3" = "Faceți mai multe cu Skype";
+
+"ONBOARDING_IPHONE_TEXT3" = "Trimiteți date despre locație sau fotografii sau vedeți previzualizări ale linkurilor web, totul în timp ce țineți legătura cu prietenii.";
+"ONBOARDING_IPAD_TEXT3" = "Beneficiați de emotigrame mai mari și de previzualizări ale linkurilor web și creați grupuri noi direct de pe iPad.";
+
+"ONBOARDING_TITLE4" = "Skype este mai interesant când aveți prieteni";
+"ONBOARDING_TEXT4" = "Adăugați-vă numărul de telefon pe Skype pentru a vă ajuta prietenii să vă găsească.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "Partajarea simplificată";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Trebuie doar să atingeți butonul partajare pentru a trimite site-uri web sau fotografii din Album cameră către prieteni pe Skype.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "Adăugați participanţi";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "ADĂUGARE:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "Deja participant";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "Participă deja la apel";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "PARTICIPĂ LA ACEST APEL";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "NU PARTICIPĂ LA ACEST APEL";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "Se conectează...";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "Se conectează la %@";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "Sună…";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "%@ este apelat(ă)";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "Apel în așteptare";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "Apel în așteptare pentru %@";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "Adăugați favorite";
+"ADDFAVORITES_EMPTY_TITLE" = "Țineți toate persoanele dragi la loc. <a href=\"add-favorites\">Adăugați contacte favorite</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "contacte Skype";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "Transfer de fișiere";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "și încă un fișier";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "și încă %d fișiere";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "Ați trimis acest fișier de pe alt dispozitiv.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "Ați trimis aceste fișiere de pe alt dispozitiv.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "Această versiune de Skype nu acceptă primirea de fișiere.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "Această aplicație nu acceptă noile funcții Skype de trimitere de fotografii.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "Ați trimis un fișier";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "Ați trimis %d fișiere";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "V-a trimis un fișier";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "V-a trimis %d fișiere";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "Online";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "Nu deranjați";
+"CONTACT_AVAILABILITY_AWAY" = "Plecat";
+"CONTACT_AVAILABILITY_INVISIBLE" = "Invizibil";
+"CONTACT_AVAILABILITY_OFFLINE" = "Offline";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "Disponibil";
+"CONTACT_AVAILABILITY_BUSY" = "Ocupat";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "Blocat";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Această persoană este în lista de favorite. Atingeți de două ori pentru a o elimina din lista de favorite.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Această persoană nu este în lista de favorite. Atingeți de două ori pentru a o adăuga în lista de favorite.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Favorit";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Acest grup nu este în lista de favorite. Atingeți de două ori pentru a-l adăuga în lista de favorite.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Acest grup este în lista de favorite. Atingeți de două ori pentru a-l elimina din lista de favorite.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@ %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@ %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "NUME SKYPE";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "SITE WEB";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "DESPRE MINE";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "DATA NAȘTERII";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "SEX";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "LIMBĂ";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "CONTACTE";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "CAPABILITĂȚI";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "CONFIDENȚIALITATE";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "CREAT DE";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "DESCRIERE";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "Trimiteți și primiți mesaje instantanee și fotografii.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "Acest robot va avea acces la numele afișat, numele Skype și orice mesaj sau conținut din chat, pe care dumneavoastră sau ceilalți participanți ai grupului îl partajați/partajează cu el.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "Femeie";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "Bărbat";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "Blocați contactul";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "Deblocați contactul";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "Eliminați contactul";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "Eliminați contactul";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "%@ va fi eliminat din lista de contacte.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "Eliminați";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "Anulați";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "Ascundeți";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "Profilul grupului";
+"GROUPPROFILE_NOTIFICATIONS" = "Notificări";
+"GROUPPROFILE_MENU_TITLE" = "Vedeți profilul";
+"GROUPPROFILE_LEAVE_CHAT" = "Părăsiți grupul";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "Participanți";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "Invitație";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "Invitații la chat";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "Istoricul chatului va fi vizibil pentru toată lumea";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "Permiteți invitații la chat pentru a invita pe oricine la acest chat.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "Numai contacte Skype pot fi adăugate la acest chat.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "Invitați pe oricine la acest chat, chiar dacă nu sunt pe Skype.";
+"GROUPPROFILE_CHAT_HISTORY" = "Istoric chat";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "Istoricul chat-ului este ascuns momentan pentru participanții noi.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "Istoricul chat-ului este vizibil pentru toată lumea.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "Adăugați participanţi";
+"GROUP_ADMIN_STRING" = "%@ (Admin)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "Invitații la chat";
+"GROUPPROFILE_ALERT_BODY" = "Invitația pentru acest chat nu este disponibilă momentan, încercați din nou mai târziu.";
+"GROUPPROFILE_ALERT_BUTTON" = "OK";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Asociați-vă la chatul meu pe Skype: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "Asociați-vă la chatul meu";
+"INVITES_MAIL_BODY" = "Salut,\nAm creat un grup pe Skype în care putem discuta, face schimb de materiale și colabora.\nAsociați-vă prin clic pe linkul:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "Redenumiți grupul";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "Redenumiți grupul";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "Redenumire contact";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "Apăsați de două ori pentru a redenumi contactul";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "Adăugare robot";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "Trimiteți o cerere de contact";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "Retrimiteți cererea de contact";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "Cerere de contact trimisă";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "Acceptați";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "Respingeți";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "<name>%@</name> vrea să vă adauge pe Skype"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "Deschidere";
+"PUSH_CHAT_CALL" = "Apelați";
+"PUSH_CHAT_TEXT_REPLY" = "Răspuns";
+"PUSH_CALL_ANSWER" = "Răspuns";
+"PUSH_CALL_DECLINE" = "Respingere";
+"PUSH_CALL_VIDEO_VIDEO" = "Apelare video";
+"PUSH_CALL_VIDEO_AUDIO" = "Voce";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "Mesaj";
+"PUSH_MISSED_CALL_CALLBACK" = "Sunați înapoi";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "Problemă cu contactele";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "A survenit o problemă la accesarea numerelor de telefon din Contacte. Încercați să resincronizați conturile de e-mail din Setări pentru a rezolva problema.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "Salvare număr de telefon";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "Nu există apeluri corespondente.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "Un apel corespondent.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "%d apeluri corespondente.";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@), ultimul apel: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@, ultimul apel: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@ este un contact din agendă.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Conectați-vă pe Skype";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@ este un contact din agendă. Le puteți apela și discuta cu acestea pe Skype.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Neconectat încă la Skype";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "Ștergere text";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Anulare";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "Căutare pe Skype";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "Găsiți contacte noi";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "Atingeți pentru a găsi contacte noi";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "Căutați contactul „%@”";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Directorul Skype";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "Căutați în istoric";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "Ștergeți";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "Contacte";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "Niciun rezultat";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "Grupuri";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "Conversații";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "Salvați numărul";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "Salvați numărul";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "Introduceți un nume";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "Introduceți un număr";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "Se salvează numărul";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "Număr salvat";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "Număr incorect";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "Nu puteți adăuga acest număr deoarece este nevalid. Încercați alt număr.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "Număr incorect";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "Nu puteți adăuga numere de urgență pe Skype.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "Ștergeți";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "Sigur doriți să efectuați un apel către %@?";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "Sigur doriți să efectuați un apel video către %@?";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "Apel vocal";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "Apel video";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "Apelați";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "Vedeți varianta originală";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "Vedeți traducerea";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "Ați trimis date despre locația dumneavoastră";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "v-a trimis date despre locație";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "A trimis date despre locația (%@)";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a deschide";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "Indicații de orientare până la locație";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "Locație";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "Trimiteți date despre locația dumneavoastră";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "A(ți) trimis date despre locație";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "Acces la locație";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "Fără permisiunea de a utiliza locația, nu veți putea trimite prietenilor de pe Skype date privind locația proprie.";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Accesați setările dispozitivului și apoi Confidențialitate pentru a acorda permisiunea.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "Acces la contacte";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "Avem nevoie de acces la contactele dumneavoastră înainte de a vă putea afișa agenda în Skype.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "Accesați setările dispozitivului și apoi Confidențialitate pentru a acorda permisiunea.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "O, nu!";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "A apărut o problemă la încărcarea hărții.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "Verificați conexiunea la rețea și încercați din nou.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "Ștergeți";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "Ștergeți indicatoarele adăugate";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "Trimiterea datelor despre locație";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "Nu mai puteți trimite date despre locație la acest chat.";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "Trimiteți date despre locație";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "Căutare";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "Nu au fost găsite rezultate";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "A apărut o problemă la găsirea acestei locații. Așteptați și încercați din nou.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Ecran principal";
+"TIMELINE_ICON_DIALPAD" = "Tastatură";
+"TIMELINE_ICON_PEOPLE" = "Contacte";
+"TIMELINE_SWIPEACTION_MUTE" = "Fără sunet";
+"TIMELINE_SWIPEACTION_UNMUTE" = "Activați";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "Notificări push";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "Activați notificările push pentru a primi alerte pentru apeluri și mesaje când nu sunteți pe Skype.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "Primiți alerte pentru apeluri și mesaje când nu sunteți pe Skype accesând Setările iPhone > Centru de notificare și activând notificările Skype.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "Primiți alerte pentru apeluri și mesaje când nu sunteți pe Skype accesând Setările iPhone, apoi Notificări și activând notificările Skype.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "Notificări push";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "Înainte de a putea primi notificări push, va trebui să activați notificările Skype din setările dispozitivului.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "Deschidere";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "Vizualizare";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "Ascultare";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "Redare";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "A apărut o problemă la deschiderea mesajului. Verificați conexiunea la rețea și încercați din nou.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "Trimis ca document media";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "Atingeți de două ori pentru a deschide";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "Sursa nu este de încredere";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "Fotografie";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "Realizați o fotografie";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "Selectați o fotografie existentă";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "Selectați fotografia sau videoclipul existent";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "Anulați";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "Selectați";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "atingeți de două ori pentru a închide";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "A trimis o fotografie. Atingeți de două ori pentru a deschide";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "Se primește fotografia";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "Se trimite fotografia";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "A apărut o problemă la trimiterea acestei fotografii";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "A apărut o problemă la primirea acestei fotografii";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "atingeți de două ori pentru a încerca din nou";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "Trimitere";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "Anulare";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "Videoclipul nu poate fi trimis deoarece este mai mare de %d MB";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "Fotografia nu poate fi trimisă deoarece este mai mare de %d MB";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "Trimiteți un mesaj video. Atingeți de două ori pentru a deschide";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "Se primește mesaj video";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "Se trimite mesaj video";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "A survenit o problemă la trimiterea acestui mesaj video";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "A survenit o problemă la primirea acestui mesaj video";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "Fișier trimis. Atingeți de două ori pentru a descărca";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "Ați primit un fișier. Atingeți de două ori pentru a-l deschide";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "Se descarcă";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "%@ descărcat. Atingeți de două ori pentru a deschide";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "Fișierul este mai mare de %d MB. Se pot aplica taxe pentru date";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "Fişier nedisponibil";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "Repornire";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "A survenit o problemă la primirea acestui fișier";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "Acest fișier ar putea fi nesigur";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "Nu se poate descărca, s-a detectat un virus";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "Se așteaptă conexiunea la internet…";
+"FILE_TRANSFER_BUTTON_CANCEL" = "Revocare";
+"FILE_TRANSFER_BUTTON_RETRY" = "Reîncercați";
+"FILE_TRANSFER_LABEL_CANCELED" = "Revocat";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "Descărcare";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "Aflați mai multe";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "Fişierele partajate sunt șterse din Skype după %d zile. Pentru a păstra un fișier mai mult timp, salvați-l pe dispozitivul personal.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "Fişier nedisponibil";
+"FILE_SENDING_LABEL_ERROR" = "A survenit o problemă la trimiterea acestui fișier";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "Acceptați fișierul?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "Acceptați fișiere numai de la persoane de încredere. Acceptați fișierul %@ de la %@?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "Avertisment - acest fișier poate fi nesigur pentru calculatorul/dispozitivul dumneavoastră";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "Acceptați fișierul %@ de la %@?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "Nu mă mai întreba";
+"FILE_TRANSFER_ACCEPT" = "Acceptați";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "Spațiu insuficient";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "Pentru a elibera spațiu de stocare pe acest dispozitiv, accesați Setări > Setări generale > Utilizare.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "Utilizatorul a refuzat accesul aplicației la fișierele sale media";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "Pentru a permite accesul, accesați Setări > Confidențialitate > Fotografii și activați Skype.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "Ați trimis o fotografie";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "V-a trimis o fotografie";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "%@ a trimis o fotografie.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "Pentru a vedea această fotografie partajată, accesați: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "Fotografie indisponibilă";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "Această fotografie este momentan indisponibilă.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "Anulați";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "Reîncercați";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "Fotografie indisponibilă";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "Această fotografie este momentan indisponibilă.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "OK";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "Salvați fotografia";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "Anulați";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "Ups!";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "A apărut o problemă la salvarea acestei fotografii.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "Reîncercați";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "Anulați";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "Media web";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "Căutare Giphy";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Actualizați Skype";
+"FORCE_UPGRADE_CAPTION" = "Versiunea dumneavoastră de Skype este expirată. Descărcați cea mai recentă versiune pentru a beneficia de noi funcții și îmbunătățiri.";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "Descărcați acum";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "V-a trimis un Moji";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "Ați trimis un Moji";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "Se descarcă mesajul Moji";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "A apărut o problemă la descărcarea acestui Moji";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "Atingeți de două ori pentru a încerca din nou";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "Redați mesajul Moji";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "Acest conținut a fost șters";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "Acest conținut a expirat";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "Văzut(ă) ultima dată acum câteva momente";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "Văzut(ă) ultima dată acum peste o săptămână";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "Telefon";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "Găsiți imediat prieteni, mesaje sau contacte noi";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Moji-uri Skype";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "Mai multă distracție Moji acum cu clipuri %@!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "Câmp de căutare";
+
+"TAB_RECENT_TITLE" = "Recente";
+"TAB_CONTACTS_TITLE" = "Contacte";
+"TAB_CALLS_TITLE" = "Apelați telefoane";
+"TAB_MYINFO_TITLE" = "Informațiile mele";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "Toate";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "Necitite";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "Toate";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "Conectate";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "Vă mulțumim!";
+"APPSTORE_RATING_SUBTITLE" = "Arătați-vă aprecierea și adăugați o evaluare pe App Store. Durează doar o clipă.";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "Evaluați aplicația";
+
+"CONTACTS_ADD_FAVORITES" = "Adăugați favorite";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "Căutați contacte";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "Nu aveți conexiune la internet";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "Sunteți deconectat(ă). <a href=\"reconnect\">Reconectați-vă</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Skype întâmpină probleme";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "Se conectează";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "Conectat";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "Se actualizează conversațiile...";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "Ștergere chat";
+"DELETECHAT_ALERT_MESSAGE"              = "Sunteţi sigur că doriţi să ştergeţi acest chat de pe acest dispozitiv? Istoricul chat-ului va fi, de asemenea, şters.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "Ștergeți";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "Editați";
+"LIST_EDITING_CANCEL" = "Anulare";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "Marchează toate ca citite";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "Marcați ca citit";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "Ștergere toate";
+"LIST_EDITING_DELETE_TOOLBAR" = "Ștergere (%d)";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "Ștergere toate chaturile";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "Ștergere toate";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "Ascundeți toate";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "Mă voi uita mai târziu";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "Apel nou";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "în așteptare";
+"CALLING_BANNER_STATUS_MUTED" = "fără sonor";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Certificat Skype";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "Inițiați un nou apel de grup";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "Se inițiază un nou apel de grup";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "Apelul curent va fi încheiat (anunțați cealaltă persoană) și va începe apelul de grup";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "Apel";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "Revocați";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "a creat o <a href=\"%@\">conversație de grup.</a>";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "Trimiteți un mesaj video de Ziua Îndrăgostiților";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "Mesaje video de Ziua Îndrăgostiților";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "Faceți ziua unei persoane dragi specială";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "Răspândiți iubirea";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "Faceți ziua unei persoane dragi specială trimițându-i un mesaj de Ziua Îndrăgostiților.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "Nu acum";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "Trimiteți către contacte";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "Partajați videoclip";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "O zi a îndrăgostiților fericită";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "O zi a îndrăgostiților fericită";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "Am înregistrat un mesaj video special de Ziua Îndrăgostiților numai pentru tine. Pentru a înregistra propriul mesaj, accesați https://go.skype.com/vmhci";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "Vi se trimite un mesaj special de Ziua Îndrăgostiților…";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "Fără sunet";
+"INCALLCONTROLS_VIDEO_CAPTION" = "Video";
+"INCALLCONTROLS_AUDIO_CAPTION" = "Difuzor";
+"INCALLCONTROLS_ADD_CAPTION" = "Adăugare";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "Mai mult";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "Tastatură";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "Mai multe acțiuni";
+"GVC_CALLING_ME_ON_RIBBON" = "Eu";
+
+"GVC_NOTIFICATION_HUNG_UP" = "%@ a ieșit";
+"GVC_NOTIFICATION_JOINED" = "%@ s-a asociat";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "Creați un grup - acum cu apelare video în grup.";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "Inițiați un apel video în grup direct din chat.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "Încercați să schimbați modul de vizualizare.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "Apăsați din nou pentru a elimina această persoană.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "Transformați acest apel într-un apel video în grup gratuit.";
+"GVC_INTERSTITIAL_TITLE" = "Spuneți bun venit apelurilor video în grup";
+"GVC_INTERSTITIAL_CAPTION" = "Adunați-i pe toți la un loc, oricând doriți, gratuit.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "Am înțeles";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "Adăugare participanţi";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";

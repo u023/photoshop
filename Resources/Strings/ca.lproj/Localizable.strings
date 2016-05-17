@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "%@ us ha enviat un missatge de vídeo";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "%@ us ha enviat una foto";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "%@ us ha enviat un Moji";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "%@ us ha enviat un missatge de veu";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "%@ us ha enviat un fitxer";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "Heu rebut un m'agrada nou";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "El meu compte";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "Envia comentaris";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "Marca-ho tot com a llegit";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "Afegeix persones";
+"HELP_NAVBAR_BUTTON" = "Ajuda";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "Teniu comentaris no llegits.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "Comentaris del desenvolupador";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "Mostra";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "Cancel·la";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "Afegeix als preferits";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "Suprimeix de preferits";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "Afegiu favorits nous amb el menú de qualsevol contacte.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "Tanca la sessió";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "Trucada de %@";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "Videotrucada de %@";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "Trucada de grup de %@";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "Missatge de vídeo de %@.";
+"BACKGROUND_MISSEDCALL_ONE" = "Trucada perduda de %@.";
+"BACKGROUND_MISSEDCALL_GROUP" = "Trucada de grup perduda de %@";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "Nova sol·licitud de contacte de %@.";
+"BACKGROUND_VOICEMAIL_ONE" = "Missatge de veu nou de %@.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "Comproveu la configuració de la xarxa i torneu-ho a provar.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "Respon";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "Rebutja";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "Afegeix a la trucada";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "Penja";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "Finalitza la trucada";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "Missatge de vídeo";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "Envia un missatge de vídeo";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "Cancel·la";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "Fet";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "Configuració";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "Crea un compte";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "Creeu un compte";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "%@ no és un número de telèfon vàlid. Comproveu-lo i torneu-ho a provar.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "Llibreta d'adreces";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "Codi de país o regió";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "Canvi el codi de país o la regió.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "Canvia el codi de país o la regió.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "Cerca";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Número de telèfon";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "Descarta";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "Obre";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "Crea un esdeveniment";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "Mostra el calendari";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "Copia";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "Afegeix a la Llista de lectura";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "Obre-ho al Safari";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "Edita";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "Cita";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "El dia %1$@, a les %2$@, %3$@ va escriure:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "Suprimeix";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "Reenvia";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "Reenvia";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "Comparteix";
+"SHARE_MESSAGE_TITLE" = "Comparteix";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "S'està carregant";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "Toqueu dues vegades per cancel·lar";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "S'està iniciant el vídeo...";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "S'està desviant la trucada…";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "Vídeo";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "Teclat de marcatge";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "Reprèn la trucada";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "Informació tècnica de la trucada";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "Opcions de trucada";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ vol compartir el vídeo";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ no és un contacte, però vol compartir el vídeo.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Els participants d'aquesta trucada han activat el vídeo";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Voleu acceptar el vídeo en aquesta trucada?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Accepta";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Rebutja";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "Afegeix participants";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "Toqueu dues vegades per afegir participants.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "Contrasenya";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "Inicia la sessió";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Nom de Skype";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Nom de Skype, correu o mòbil";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "Els vostres comptes";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "Seleccioneu el compte que voleu utilitzar.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Compte de Skype";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Compte Microsoft";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "Inicia la sessió";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "Seleccioneu el tipus de compte que voleu utilitzar per iniciar la sessió a Skype.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Compte de Microsoft";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Nom de Skype";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "Personalitzeu el vostre perfil";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "Afegeix una foto";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "Canvia la foto";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Inicia la sessió";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Teniu problemes per iniciar la sessió?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "d'acord";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "D'acord";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "Continua";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "Ara no";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "Més informació";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "Configuració";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "No m'ho tornis a recordar";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "Activa les notificacions";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "Esborra el text";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "Envia";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "Trucada,";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "Truca";
+"CHAT_CALL_EVENT_CALL_STARTED" = "Trucada iniciada";
+"CHAT_CALL_EVENT_NO_ANSWER" = "Trucada, sense resposta";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "Trucada perduda";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "%d trucades perdudes";
+"CHAT_CALL_EVENT_BUSY" = "Trucada, ocupat";
+"CHAT_CALL_EVENT_BLOCKED" = "Bloquejat";
+"CHAT_CALL_EVENT_FAILED" = "S'ha produït un error en la trucada";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "Com valoreu la qualitat de la trucada?";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "Gràcies pels comentaris.";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "Dolenta";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "Deficient";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "Normal";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "Bona";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "Excel·lent";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "Truca";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "Trucada, %@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "Truca";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "Trucada, %@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "S'ha produït un error en la trucada";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "Trucada perduda";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "Trucada, sense resposta";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "Trucada bloquejada";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "Enviat";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "Lliurat";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "Llegit";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "Enviat";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "Lliurat";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "Llegit";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "%@ ha creat un grup nou.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "%@ ha creat un grup nou amb %@.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "%@ ha creat un grup nou amb %@ i %@.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "%@ ha creat un grup nou amb %@, %@ i una altra persona.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "%@ ha creat un grup nou amb %@, %@ i %u més.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "Avui <name>%@</name> fa anys";
+"CHAT_GRANTED_AUTH" = "Heu compartit els detalls del contacte";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "%@ ha afegit %@ a aquest grup";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "Els robots que s'afegeixin a aquest grup tindran accés als noms de Skype i als noms de visualització de cada participant i a qualsevol missatge de xat o contingut nou que s'hi hagin compartit.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "Benvinguts! Aquest grup inclou un o més robots que tenen accés als noms de Skype i als noms de visualització de cada participant i a qualsevol missatge de xat o contingut nou que s'hi hagin compartit.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "%@ s'ha unit al grup";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "%@ ha abandonat el grup";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "%@ ha eliminat %@ d'aquest grup";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "El compte d'invitat per a %@ ha caducat";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "Heu bloquejat %@";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "%@ ha canviat la funció de %@ a %@";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "Creador";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "Administrador";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "Espectador";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "Escriptor";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "Orador";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "Candidat";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "Jubilat";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "Bandit";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "S'ha canviat una funció";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "Conversa sense títol";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "Mostra el xat";
+"CONVERSATION_HIDE_CHAT" = "Amaga el xat";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "Mostra la barra lateral";
+"CONVERSATION_HIDE_TIMELINE" = "Amaga la barra lateral";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "Canvia a la visualització de quadrícula";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "Canvia a la visualització individual";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "Uneix-te a la trucada";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "Uneix-te a la trucada";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "Mostra els missatges del <a href=\"jump\">xat antic</a>";
+"CHAT_GOTO_NEW_CHAT" = "Aquest xat s'ha actualitzat a una versió nova. <a href=\"jump\">Vés al xat nou</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "%@ ha d'actualitzar Skype per poder participar en aquest xat. Ajudeu-los i dirigiu-los a skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Obteniu més informació sobre el nou xat de grup</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "%@ han d'actualitzar Skype per poder participar en aquest xat. Ajudeu-los i dirigiu-los a skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Obteniu més informació sobre el nou xat de grup</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ ja pot participar en aquest xat.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "Toqueu dues vegades per obrir el xat un a un.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "Somriure";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "Trist";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "Rient";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "Genial";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "Sorprès";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "Ullet";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "Plorós";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "Suant";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "Bocabadat";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "Petó";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "Murri";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "Ruborós";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "Pensarós";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "Endormiscat";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "Apagat";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "Enamorat";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "Somriure malèvol";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "Creuem els dits";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "Badallant";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "Vomitant";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "Caram!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "Enfadat";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "No he estat jo";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "Festa";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "Preocupat";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "mmm"; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "Repel·lent";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "No obriré la boca";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "Hola!";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "Exasperant";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "Dimoni";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "Àngel";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "Enveja";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "Espera";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "Abraçada";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "Maquillatge";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "Rialleta";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "Aplaudiments";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "Pensant";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "Reverència";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "Morint-se de riure";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "Alleujat";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "Feliç";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "Somriure amb satisfacció";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "Gest afirmatiu";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "Negació";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "Esperant";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "Emo";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "Sí";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "No";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "Encaixada de mans";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "Toca-la!";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "Cor";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "Lalala";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "Heidy";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "Flor";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "Pluja";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "Sol";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "Estepicursor";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "Música";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "Bandit";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "Massa informació";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "Cafè";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "Pizza";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "Diners en efectiu";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "Braç musculós";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "Pastís";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "Cervesa";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "Beguda";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "Ballant";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "Ninja";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "Estrella";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "Culet";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "Telèfon";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "Dit del mig";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "Festa a la piscina";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "Cor trencat";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "Begut";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "Insultant";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "Pel·lícula";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "Fumant";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "Rellotge";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "Home i gos";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "Home fent una foto";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "Heu rebut un correu";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "Rockejar";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "Cop de puny";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "Cops de cap contra la paret";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "Truca'm";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "Treballant des de casa";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "Insecte";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "Parlant";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "Presumit";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "Home amb barret";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "Jugador de futbol";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "Parla a la mà";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "Idea";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "Ovella";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "Gat";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "Bicicleta";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "Gos";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "Emoticona: %@";
+
+"EMOTICON_TYPE_FLAG" = "Bandera: %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "Per afegir contactes nous a Skype a <a href=\"add-people\">cerca al directori de Skype</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "No teniu cap contacte a Skype.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "Encara no hem trobat cap contacte de Skype a la vostra llibreta d'adreces. <a href=\"add-people\">Addició de persones</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "Encara no hem trobat cap contacte de Skype a la vostra llibreta d'adreces.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Cerca al directori de Skype"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "Cerqueu persones que coneixeu a Skype"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "S'estan cercant persones que potser coneixeu"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "Toqueu dues vegades per cancel·lar la cerca";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "Molt bé!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "Premeu el botó d'enregistrar quan estigueu llest.";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "Cancel·la l'enregistrament";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "Torna a enregistrar";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "Cancel·la";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "Heu rebut un missatge de vídeo nou. Per veure'l, copieu aquest codi secret %2 i mireu el missatge de vídeo aquí: %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "Cancel·la";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "Enregistra";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "Atura";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "Envia";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "Previsualitza";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "Canvia a la càmera frontal";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "Canvia a la càmera posterior";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "Temps enregistrat";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "Efectes de vídeo";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "normal";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "globus";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "óssos";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "calidoscopi";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "pixel·lació";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "compressió";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "sobresurt";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "Raigs X";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "pòster";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "neu";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "mirall";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "cors";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "disfressa";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "Halloween";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "Llengua dels subtítols";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "Els subtítols apareixeran un cop s'hagi acabat d'enregistrar";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "S'estan creant els subtítols...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "No s'han pogut crear els subtítols";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "S'està escoltant";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "Missatge de vídeo";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "Ja no podeu enviar missatges de vídeo a aquest xat.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "d'acord";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "Suprimeix el vídeo";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "Esteu segur que voleu suprimir aquest missatge de vídeo?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "Suprimeix";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Cancel·la";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "Suprimeix el missatge de vídeo";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "Reprodueix";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "Pausa";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "Missatge de veu";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Missatge de veu, %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "Toqueu dues vegades per reproduir el missatge de veu";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "Toqueu dues vegades per aturar";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Missatge de vídeo";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "Reproduïble";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "S'està carregant";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "No disponible";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "Toqueu dues vegades per reproduir el missatge de vídeo";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "S'està utilitzant la càmera frontal";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "S'està utilitzant la càmera posterior";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "S'està enregistrant";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "Aturat";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "S'està enviant";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "No s'ha enviat: s'està esperant a una connexió a Internet...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "Comproveu la connexió i torneu-ho a provar més tard.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "No s'ha rebut: s'està esperant a una connexió a Internet...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "Vídeo no disponible";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "Vídeo no disponible";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ està enviant una foto";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "Teniu problemes per iniciar la sessió?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "Hi ha hagut un problema en iniciar la sessió";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "No es pot connectar a Skype. Torneu a provar-ho més tard.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "No s'ha pogut connectar a Microsoft. Comproveu la configuració de la xarxa i torneu-ho a provar.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "No es pot connectar a Microsoft. Torneu a provar-ho més tard.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "No podeu iniciar la sessió a Skype amb aquest compte Microsoft perquè no compliu el límit d'edat del vostre país o regió.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "Comproveu els vostres detalls";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "No podem reconèixer aquesta informació d'inici de sessió. Comproveu-la i torneu-ho a provar.";
+"LOGIN_PROBLEM_NO_NETWORK" = "No s'ha pogut iniciar la sessió. Comproveu la connexió a Internet i torneu-ho a provar.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Crèdit de Skype";
+"IAP_PURCHASE_BUTTON" = "Afegeix %@ de crèdit";
+"IAP_CALLPHONES" = "Truqueu a telèfons";
+"IAP_SEND_SMS" = "Envia SMS";
+"IAP_WITHSKYPECREDIT_TITLE" = "Per què pagar pel crèdit de Skype?";
+"IAP_WITHSKYPECREDIT_BODY" = "Perquè el crèdit de Skype us permet posar-vos en contacte amb gent que no és a Skype mitjançant característiques econòmiques, com ara trucades a mòbils i fixos o enviament de SMS.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Les trucades entre usuaris de Skype són gratuïtes, però si teniu una mica de crèdit podreu fer molt més.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "Teniu un saldo de %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "Conversió de moneda"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "%@ es convertirà en %@ al saldo del teu crèdit de Skype.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "Més informació";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "Segons el tipus de conversió del Banc Central Europeu del %@.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "Sembla que la moneda de la botiga d'aplicacions i la de Skype no coincideixen. Per aquesta compra convertirem la moneda de la botiga d'aplicacions.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "Per tal de canviar la configuració, inicia sessió a Skype.com i selecciona \"Canviar moneda\" a El meu compte.";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "No hi ha prou crèdit";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "No teniu prou crèdit de Skype per trucar a aquest número.";
+"IAP_CALL_NO_CREDIT_TITLE" = "No hi ha crèdit";
+"IAP_CALL_NO_CREDIT_BODY" = "Necessiteu crèdit de Skype per trucar a aquest número.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "La compra s'ha realitzat correctament";
+"IAP_RESULT_SUCCESS_1_BODY" = "S'ha afegit %@ al compte de Skype.";
+"IAP_RESULT_SUCCESS_2_BODY" = "S'està afegint %@ al compte de Skype.";
+"IAP_RESULT_SUCCESS_3_BODY" = "Ja s'ha afegit %@ al compte de Skype.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "La comanda de crèdit de Skype anterior s'ha completat. S'ha afegit %@ al compte de Skype.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "S'està processant la comanda de crèdit de Skype anterior.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "La comanda de crèdit de Skype anterior s'ha completat correctament.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "S'ha cancel·lat la compra";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "Ho sentim";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "No hem pogut processar la comanda. Torneu-ho a provar més tard.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "La comanda no s'ha pogut completar, però ho continuarem provant i rebreu una notificació un cop s'hagi completat.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "La comanda anterior de crèdit de Skype no s'ha pogut completar, però ho continuarem provant i rebreu una notificació un cop s'hagi completat.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "Llegiu i accepteu les Condicions d'ús de Skype abans de comprar crèdit.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "No hem pogut processar la comanda perquè el vostre proveïdor de pagaments no està disponible. Torneu-ho a provar més tard.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "No hem pogut processar la comanda perquè el vostre compte el gestiona un administrador.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "No hem pogut processar la comanda. Poseu-vos en contacte amb el servei d'atenció al client de Skype per obtenir ajuda.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "El vostre compte de iTunes no està disponible.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "No hem pogut completar la comanda perquè el vostre compte de iTunes no està disponible. Torneu-ho a provar més tard.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "No hem pogut processar la comanda perquè Skype no és compatible amb la moneda que heu definit al vostre compte de iTunes.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "La moneda definida al compte de Skype no coincideix amb la del compte de iTunes. Podeu canviar la moneda des de la configuració del compte a skype.com.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "No hem pogut  processar la comanda. Comproveu la vostra connexió a Internet i torneu-ho a provar.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "No hem pogut  processar la comanda. Comproveu la vostra connexió a Internet i  ho tornarem a provar un cop us hàgiu tornat a connectar.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "No hem pogut  processar la comanda  de crèdit de Skype anterior. Comproveu la vostra connexió a Internet i  ho tornarem a provar un cop us hàgiu tornat a connectar.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "Obtén ajuda";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Compte de Microsoft";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "cancel·la i torna a començar";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "Compte de Skype enllaçat";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "Aquest compte de Skype ja està enllaçat a un altre compte Microsoft. Inicieu la sessió amb aquestes dades de Microsoft per continuar.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "Hi ha hagut un problema en enllaçar els comptes. Torneu a provar-ho més tard.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Hi ha hagut un problema en obrir el compte. Comproveu la connexió de xarxa i torneu a provar-ho.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "Telèfon";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "Casa";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "Despatx";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "Mòbil";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "Altres";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "Número desconegut";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (convidat)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "S'està connectant...";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "S'està trucant...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "S'està trucant...";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "Trucada en espera";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "Trucada finalitzada";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "S'està iniciant...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "S'està trucant...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "Connectat";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "Trucada en espera";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "Trucada posada en espera remotament";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "Els altres estan connectats";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "Els altres estan connectats completament";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "S'està reproduint el missatge de veu";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "S'està enregistrant";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "Connectat  fa poc";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "S'està transferint";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "S'està iniciant la sessió...";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "S'estan carregant els contactes…";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "S'està actualitzant";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "Aquest missatge s'ha eliminat";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "No es pot connectar a Skype.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "Comproveu la configuració de la xarxa i torneu-ho a provar.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "Aquest nom de Skype no és vàlid.";
+"Account::INVALID_EMAIL" = "Aquesta adreça electrònica no és vàlida.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "Comproveu-ho i torneu-ho a provar.";
+"Account::UNACCEPTABLE_PASSWORD" = "Aquesta contrasenya no és vàlida.";
+"Account::SKYPENAME_TAKEN" = "Aquest nom de Skype ja s'utilitza.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "Introduïu-ne un altre.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "No es reconeixen el vostre nom d'usuari o la contrasenya de Skype.";
+"Account::INCORRECT_PASSWORD" = "No es reconeixen el vostre nom d'usuari o la contrasenya de Skype.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "Heu intentat iniciar la sessió massa vegades.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "Torneu-ho a provar més tard.";
+"Account::ATO_BLOCKED" = "S'ha suspès el compte. <a href = 'https://go.skype.com/account.recovery.ios'>Toqueu aquí per obtenir més informació</a>.";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "Hi ha hagut un problema en iniciar la sessió amb el compte de Microsoft. Torneu a provar-ho més tard.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "No es pot iniciar la sessió perquè no teniu prou espai d'emmagatzematge al dispositiu.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "No es pot iniciar la sessió. Reinicieu el dispositiu i torneu a provar-ho.(%d)";
+"Account::DB_FAILURE" = "No es pot iniciar la sessió. Reinicieu el dispositiu i torneu a provar-ho.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "No es pot iniciar la sessió. Proveu de reinstal·lar Skype des de App Store.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "S'ha canviat la vostra contrasenya. Inicieu la sessió per continuar utilitzant Skype.";
+"Account::LOGOUT_REMOTE" = "Hem tancat la vostra sessió.";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "Aquesta versió de Skype no s'admet.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "Per continuar, actualitzeu a la darrera versió de Skype.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "No es pot iniciar la sessió. Torneu a provar-ho més tard.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "No podeu iniciar la sessió a Skype perquè no compliu el límit d'edat del vostre país o regió.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "Torneu-ho a provar.(%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "Truca";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "Videotrucada";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "Missatge de vídeo";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "Teclat de marcatge"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "Truca als números de telèfon";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "Inicia un xat nou";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Inicia un xat nou a Skype";
+
+
+"HUB_RECENTS_TITLE" = "Recents";
+"HUB_PEOPLE_TITLE" = "Persones";
+"HUB_FAVOURIES_TITLE" = "Preferits";
+"CANCEL_ALERT_BUTTON" = "Cancel·la";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "Preferits";
+"PEOPLEPICKER_CONTACTS_TITLE" = "Contactes";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "Cerca de contactes";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "Cerca contactes nous";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "Cerca \"%@\"";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Cerca \"%@\" al directori de Skype";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "Persones";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "Robots";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "No hi ha cap connexió"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "A Skype"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Connecteu-hi mitjançant Skype";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "Cancel·la";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "Connecta";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "Xat nou";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "Feu dos tocs per seleccionar.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "Les converses recents apareixeran aquí.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "No teniu cap missatge sense llegir";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "Les trucades a mòbils i a telèfons fixes recents apareixeran aquí, <a href=\"open-dialpad\">truqueu a un amic</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, missatges nous, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "Trucada posada en espera remotament";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "Trucada en espera";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "Trucada en curs";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "Trucada actual, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "Trucada actual";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "Editat";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "Edita";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "desa foto";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "Desa el vídeo";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "Mostra els \"M'agrada\"";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "M'agrada";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "Ja no m'agrada";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "Tanca";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "M'agrada";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "Toqueu dues vegades per visualitzar el contacte";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "Nou";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "Li agrada el teu missatge.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "A %@ li agrada el teu missatge";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "Li agrada la teva foto.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "A %@ li agrada el teu missatge.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "A %1$@ li agrada el teu missatge: %2$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "A %@ li agrada la teva foto.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>Encara no li agrada a ningú</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "T'agrada";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "Inicia la sessió";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Nom de Skype";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Compte de Microsoft";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "Creeu un compte";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Inicia la sessió amb el nom de Skype";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Inicia la sessió amb un compte Microsoft";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Crea un compte";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "Camp d'informació d'inici de sessió";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "Ja utilitzeu Skype?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "Sí";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Sí, ja tinc un compte de Skype.";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "No";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "No, no tinc cap compte de Skype.";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "Filtre de la llista de persones";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "Tots els contactes";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "Contactes connectats";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "Mostra tots els contactes.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "Mostra només els contactes connectats.";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "Mostra només els contactes de Skype.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "Trucada de veu";
+"CHATINPUT_PLACEHOLDER" = "Escriviu un missatge aquí";
+"CHATINPUT_PLACEHOLDER_SMS" = "Escriviu un SMS aquí";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "Saludeu a %@";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "La vostra conversa apareixerà aquí.";
+"CHATTYPING_SINGLEUSER" = "%@ està escrivint...";
+"CHATTYPING_TWOUSERS" = "%@ i %@ estan escrivint...";
+"CHATTYPING_THREEUSERS" = "%@, %@ i una altra persona estan escrivint...";
+"CHATTYPING_MULTIPLEUSERS" = "%@, %@ i %d més estan escrivint...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "Truca a un telèfon";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "Envia una invitació";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Envieu-li un enllaç per SMS per oferir-li xatejar a Skype.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "Xat";
+"SEND_SMS_TO_CONTACT_BUTTON" = "SMS";
+"EMPTY_PAGE_HEADER_TITLE" = "Digueu hola a";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "Hola, què et sembla si xategem a Skype?: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "L'enviament d'aquest SMS té un preu de %@";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "Seleccioneu el país o la regió";
+"DIALPAD_CALL_BUTTON" = "Truca";
+"DIALPAD_STAR_BUTTON" = "Estrella";
+"DIALPAD_HASH_BUTTON" = "Funció hash";
+"DIALPAD_BACKSPACE_BUTTON" = "Suprimeix";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "SMS";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "Obre un xat amb %@";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "S'ha amagat el teclat numèric.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "Mostra el teclat numèric";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "No es pot trucar a aquest contacte";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "Hi ha hagut un problema en trucar a aquest contacte.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "Comproveu-lo i torneu-ho a provar.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "Números d'emergència";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "Aquest dispositiu no és compatible amb les trucades a números d'emergència.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "El número de telèfon no és vàlid";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "Hi ha hagut un problema en trucar a aquest número de telèfon.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "Comproveu-lo i torneu-ho a provar.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "Ja sou a una trucada";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "Hi ha una trucada telefònica en curs.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Pengeu primer abans d'iniciar una altra trucada.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "Ja sou a una trucada";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "Hi ha una altra trucada de Skype en curs.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Pengeu primer abans d'iniciar una altra trucada.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "No es pot fer la trucada";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "El vostre operador no permet les trucades de Skype amb la vostra xarxa mòbil. Connecteu-vos a una xarxa Wi-Fi per fer trucades de Skype.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "S'ha produït un error en la trucada";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "No us podeu fer una trucada a vós mateix.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "Contacte bloquejat";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "Per trucar a aquest contacte primer l'heu de desbloquejar.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "Accés al micròfon";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "Si no teniu permís per utilitzar el micròfon ningú us podrà sentir als missatges de vídeo o les trucades.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Aneu a la configuració del dispositiu i, tot seguit, aneu a Privadesa per concedir el permís.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "Accés a la càmera";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "Si no teniu permís per utilitzar la càmera, ningú us podrà veure als missatges de vídeo o les trucades.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Aneu a la configuració del dispositiu i, tot seguit, aneu a Privadesa per concedir el permís.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "Si no doneu permís per utilitzar la càmera, no podreu fer fotos a l'Skype.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "No es pot fer cap trucada";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "Hi ha una altra aplicació d'àudio que evita que Skype reprodueixi l'àudio.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "Comproveu-lo i torneu-ho a provar.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "No es pot fer cap trucada";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "S'ha produït un problema amb l'àudio del dispositiu.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "Comproveu-lo i torneu-ho a provar.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "No es pot fer cap trucada";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "S'ha produït un problema amb l'àudio del dispositiu.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "Reinicieu Skype per continuar.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "No es pot fer cap trucada";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "S'ha produït un problema amb l'àudio del dispositiu.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "Torneu-ho a provar més tard.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "No es pot fer cap trucada";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "S'ha produït un error amb l'àudio del dispositiu.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "Torneu-ho a provar més tard.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "No es pot fer la trucada";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "Hi ha hagut un problema en connectar aquesta trucada.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "Torneu-ho a provar més tard.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "No es pot fer la trucada";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "Mentre sigueu a l'Índia només podreu trucar a altres persones que siguin al país si també són a Skype (gratuïts). Malauradament no podeu trucar a mòbils o fixes de l'Índia mitjançant Skype.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "Més informació";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "No és possible unir-se a la trucada";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Aquesta trucada de grup ara mateix és plena, proveu d'unir-vos-hi més tard.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "Càmera en ús";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "Actualment esteu en una trucada de vídeo.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "Desactiveu el vídeo abans d'intentar usar la càmera.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Trucades de grup";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Aquest grup és massa gran per iniciar una trucada d'àudio en aquest dispositiu (màx. %d participants).";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "Videotrucades de grup";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "En aquest dispositiu no es poden fer trucades a grups amb %d participants o més.";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "Esteu fora de línia";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "Per realitzar trucades a Skype, cal que estigueu connectat.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Trucades de grup";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "S'ha assolit el nombre màxim de participants en aquesta trucada.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "Trucada en espera";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "Repreneu la trucada abans d'afegir-hi participants nous.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "Trucada posada en espera remotament";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "Aquesta trucada s'ha de reprendre abans que pugueu afegir-hi participants nous.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "S'està configurant la trucada";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "No es poden afegir participants mentre s'està connectant la trucada.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "Espereu fins que no s'hagi connectat la trucada.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "Grup";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "Hi ha hagut un problema en afegir participants. Torneu-ho a provar més tard.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "No es pot iniciar el vídeo";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "Hi ha hagut un problema en activar el vídeo.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "Comproveu que tots els participants d'aquesta trucada tinguin l'última versió de Skype.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "No es pot iniciar el vídeo";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skype no ha pogut iniciar el vídeo.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "Torneu-ho a provar més tard.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "S'està reprenent la trucada";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "Hi ha hagut un problema en reprendre aquesta trucada.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "Tanqueu totes les aplicacions que estiguin utilitzant l'àudio i finalitzeu totes les trucades en curs abans de reprendre aquesta trucada de Skype.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "Sol·licitud de contacte";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "S'han afegit o eliminat participants.";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "Avui <name>%@</name> fa anys"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "S'ha creat un xat de grup";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "S'ha bloquejat el contacte";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "Ha enviat un missatge de vídeo";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "Heu enviat un missatge de vídeo";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>Vós</name> i <name>%@</name> ara sou contactes.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "és ara un contacte";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "Heu compartit els detalls del contacte";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "Us ha enviat un missatge de veu";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "Heu enviat un missatge de veu.";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "%@ us ha enviat un contacte. Aquesta versió de Skype encara no admet aquesta funció.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "Heu enviat un contacte. Aquesta versió de Skype encara no admet aquesta funció.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "Toqueu dues vegades per visualitzar el contacte";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "Toqueu dues vegades per visualitzar els contactes";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "S'ha enviat el contacte";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "Afegeix als contactes";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "Ja és un contacte";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "Visualitza els contactes";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "Envia els contactes";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "Envia els contactes";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "i & %d més";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "Selecciona els contactes";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "No teniu cap contacte per enviar a Skype.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "No hi ha cap contacte";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "Contactes";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "Envia els contactes";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "S'ha enviat la sol·licitud de contacte";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "Sol·licitud de contacte pendent";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "Contactes enviats";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "%@ us ha enviat un missatge que aquesta versió de Skype encara no admet.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "Heu enviat un missatge que aquesta versió de Skype encara no admet.";
+
+"RECENTS_DELETE_CONVERSATION" = "Suprimeix el xat";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "Marca-ho com a llegit";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "Marca com a no llegit";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "Xat";
+"CALL_ACCESSIBILITYLABEL" = "Truca";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "Inici de sessió principal";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Inicieu la sessió amb el compte de Skype";
+"HUB_ACCESSIBILITYLABEL" = "Concentrador";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "Element de cerca suggerit: %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "Mostra emoticones";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "Mostra el teclat";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "Suprimeix";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Cerca";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "Botiga";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "Recents";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "Emoticones";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Mojis";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "Cerca";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "Suggeriments";
+"EXPRESSION_SEARCH_NO_RESULTS" = "No s'ha trobat res";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "Uneix-te al meu xat de Skype per poder veure aquest Moji: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "Hola,\nUneix-te al meu xat a Skype per poder veure el Moji que t'he enviat: %@\nFins aviat,";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "Proveu aquest Moji";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "Vaja!";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "Hi ha hagut un problema en compartir aquest Moji. Torneu-ho a provar més tard.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Botiga de l'Skype";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "S'estan carregant els Mojis i les emoticones...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "Cerca";
+"EXPRESSION_STORE_FREE" = "De franc";
+"EXPRESSION_STORE_REMOVE" = "Suprimeix";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "Baixada gratuïta";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "S'està baixant";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "Baixats";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "Vaja!";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "Hi ha hagut un problema en carregar els Mojis i les emoticones.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "Hi ha hagut un problema en cercar els Mojis i les emoticones. <a href=\"re-try fetching\">Torneu-ho a provar</a>.";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "Cerqueu emoticones i Mojis";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "Les emoticones que s'hagin utilitzat recentment es mostraran aquí.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "Destacats";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "Toqueu dues vegades per obtenir una visualització prèvia.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "Toqueu dues vegades per enviar-ho.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "Toqueu dues vegades per tancar la visualització prèvia.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "Torna a reproduir";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Visualització prèvia del Moji";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "Torneu a tocar per enviar-ho.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Concediu accés al micròfon a la configuració del dispositiu per tal que %@ us senti.";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Concediu accés al micròfon a la configuració del dispositiu per tal que tothom us senti.";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Concediu accés a la càmera a la configuració del dispositiu per tal que %@ us vegi.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Concediu accés a la càmera a la configuració del dispositiu per tal que tothom us vegi.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "Nombre màxim de participants assolit en aquesta trucada";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "Us cal una connexió de xarxa per poder fer una trucada";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "Durant la visualització dividida la càmera s'inhabilita.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "El vídeo no és compatible amb l'Slide Over.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "El mans lliures està activat";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "Toqueu dues vegades per desactivar el mans lliures";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "El mans lliures està desactivat";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "Toqueu dues vegades per activar el mans lliures";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "Trucada silenciada";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "Toqueu dues vegades per activar el so de la trucada";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "So de la trucada activat";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "Toqueu dues vegades per silenciar la trucada";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "El vídeo està activat";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "Toqueu dues vegades per desactivar el vídeo";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "El vídeo està desactivat";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "Toqueu dues vegades per activar el vídeo";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "Entrant";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "Sortint";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 participant"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d participants"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "Cap participant"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%1$d de %2$d en aquesta trucada";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "%1$@ ha d'actualitzar el Skype per poder unir-se a aquesta trucada.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "%1$@ i %2$@ han d'actualitzar el Skype per poder unir-se a aquesta trucada.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "%1$@ i %2$@ han d'actualitzar el Skype per poder unir-se a aquesta trucada.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ", ";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Trucada entrant de Skype de %@";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Trucada de grup entrant de %@ i %@";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Trucada de grup entrant de %@, %@ i una altra persona";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Trucada de grup entrant de %@, %@ i %d persones més";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Videotrucada entrant de %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Videotrucada de grup entrant de %@ i %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Videotrucada de grup entrant de %@, %@ i una altra persona";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Videotrucada de grup entrant de %@, %@ i %d persones més";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Trucada de Skype a %@";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Trucada de grup a %@ i %@";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Trucada de grup a %@, %@ i una altra persona";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Trucada de grup a %@, %@ i %d persones més";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "Videotrucada amb %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "Videotrucada amb %@ i %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "Videotrucada amb %@, %@ i una altra persona";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "Videotrucada a %@, %@ i %d persones més";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Trucada de Skype amb %@";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Trucada de grup amb %@ i %@";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Trucada de grup amb %@, %@ i una altra persona";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Trucada de grup amb %@, %@ i %d persones més";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Videotrucada amb %@";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Videotrucada de grup amb %@ i %@";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Videotrucada de grup amb %@, %@ i una altra persona";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Videotrucada de grup amb %@, %@ i %d persones més";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "S'està recuperant la trucada de Skype amb %@";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "S'està recuperant la trucada de grup amb %@ i %@";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "S'està recuperant la trucada de grup amb %@, %@ i una altra persona";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "S'està recuperant la trucada de grup amb %@, %@ i %d persones més";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "S'està recuperant la videotrucada amb %@";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "S'està recuperant la videotrucada de grup amb %@ i %@";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "S'està recuperant la videotrucada de grup amb %@, %@ i una altra persona";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "S'està recuperant la videotrucada de grup amb %@, %@ i %d persones més";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "La trucada ha finalitzat";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "Durada de la trucada";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "S'està enregistrant el missatge de veu";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "d";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "d";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "h";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "h";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "min";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "min";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "s";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "s";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "Accepta";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "Rebutja";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> us vol afegir a Skype\n\"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> us ha enviat un missatge des de <location>%@</location>"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "Saludeu a <name>%@</name> i afegiu aquesta persona a Contactes.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ encara no és un contacte.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "\"%@\" <a href=\"edit-contact-request-message\">Edita</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "Envia la sol·licitud de contacte";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "Afegeix als contactes";
+"CONTACT_REQUEST_PENDING" = "S'està esperant que <name>%@</name> accepti la sol·licitud de contacte.\n<a href=\"resend-request\">Reenvia la sol·licitud de contacte</a>";
+"CONTACT_REQUEST_BLOCKED" = "<name>%@</name> està bloquejat";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "Desbloqueja";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "Sí";
+"CONTACT_REQUEST_BLOCK_TITLE" = "Bloqueja el contacte";
+"CONTACT_REQUEST_DECLINED_TITLE" = "Sol·licitud de contacte rebutjada";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "Cancel·la";
+"CONTACT_REQUEST_BLOCK_ALERT" = "Esteu segur que voleu bloquejar aquest contacte?";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "També voleu bloquejar i denunciar aquesta persona?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "Bloqueja";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "Bloqueja i suprimeix";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "Bloqueja i denuncia";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "Addició de participants";
+"CHAT_OPTION_START_NEW_GROUP" = "Inicia un grup nou";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "Visualitza el perfil";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "Notificacions";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "Les notificacions d'aquest xat estan activades.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "Les notificacions d'aquest xat estan desactivades.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "Activa les notificacions";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "Desactiva les notificacions";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "Abandona el grup";
+
+"CHAT_OPTION_PARTICIPANTS" = "Mostra els participants";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "ACTIVAT";
+"MK_SWITCH_OFF_MESSAGE" = "DESACTIVAT";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "Toqueu dues vegades per activar i desactivar";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "Xat nou";
+"NEWCHATSCENE_TITLE_TOKEN" = "PER A:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "i & %d més"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "i %d més"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "Seleccioneu contactes per afegir";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Inici";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Cancel·la la creació del grup";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Crea un grup nou";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "Trucada de veu";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "Videotrucada";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "Teclat de marcatge";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "Cancel·la";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "Enrere";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "La meva informació";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "Obre el menú multimèdia";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "Tanca el menú multimèdia";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "Ajuda";
+"MY_INFO_FEEDBACK_ACTION" = "Envia comentaris";
+
+"MY_INFO_CONNECTING" = "S'està connectant...";
+
+"MY_INFO_STATUS" = "Estat";
+"MY_INFO_CREDIT" = "Crèdit de Skype";
+"MY_INFO_PROFILE_LINK" = "El meu compte";
+"MY_INFO_SETTINGS" = "Configuració";
+"MY_INFO_SIGN_OUT" = "Tanca la sessió";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "Introduïu un estat d'ànim";
+"MY_INFO_MOOD_MESSAGE" = "Missatge d'estat";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "Toqueu dues vegades per editar";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "Envia comentaris";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "Canvia la foto de perfil";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "Fes una foto";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "Tria una foto existent";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "Suprimeix la foto de perfil";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "Configuració";
+
+"SETTINGS_GENERAL" = "General";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "Permet la publicitat segmentada";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "Permeteu que Microsoft utilitzi la informació del perfil de Skype perquè mostri anuncis més rellevants en aquesta aplicació. <a href=\"skype.com\">Més informació</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "Notificacions de xat";
+"SETTINGS_PUSH_NOTIFICATIONS" = "Notificacions push";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Notificacions push";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "Rebreu notificacions de missatges encara que Skype estigui tancat.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "No rebreu cap notificació de missatges quan Skype estigui tancat.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "Notificacions a les aplicacions";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Notificacions a les aplicacions";
+"SETTINGS_INAPP_SOUNDS" = "Sons a les aplicacions";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "Sons a les aplicacions";
+"SETTINGS_OTHER" = "Altres";
+
+"SETTINGS_PRIVACY" = "Privadesa";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "Com em troben els usuaris";
+"SETTINGS_PRIVACY_EXPLANATION" = "Aquests detalls de contacte es poden fer servir per cercar-vos a Skype.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "Afegeix un número de telèfon";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "Foto de perfil";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "Visible per a tothom";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "Visible per als meus contactes";
+
+"SETTINGS_CONTACTS_HEADER" = "Contactes";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "Afegeix amics";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype consultarà Contactes i afegirà automàticament persones que conegueu a la llista de contactes de Skype.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "Haureu de trobar i afegir amics a Skype manualment.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "Vis. prèvia d'enllaços";
+
+"SETTINGS_EMOTICONS_HEADER" = "Emoticones";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "Emoticones grans";
+
+"SETTINGS_EDIT_BUTTON" = "Edita";
+"SETTINGS_DONE_BUTTON" = "Fet";
+
+"SETTINGS_ABOUT" = "Quant a";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "Escriviu el vostre número";
+"PNV_HOW_IS_MY_NUMBER_USED" = "Com s'utilitza el meu número?";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "Es poden aplicar tarifes d'SMS estàndard.";
+"PNV_ENTER_THE_CODE" = "Introduïu el codi";
+"PNV_CODE_SENT" = "Hem enviat un codi al vostre número";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>Truca'm</a> o <a href='pnv://resendcode'>torna a enviar-me el codi</a>";
+"PNV_VERIFYING_NUMBER" = "S'està verificant el número";
+"PNV_NUMBER_VERIFIED" = "Verificat";
+"PNV_NUMBER_USAGE_EXPLANATION" = "S'utilitzarà el vostre número perquè els amics us puguin trobar a Skype més fàcilment. Això també farà que cercar nous contactes sigui molt més fàcil.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "Codi";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "Si voleu canviar com us poden trobar, aneu a %@ a Configuració per esborrar o desactivar qualsevol dels vostres números de telèfon.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "D'altra banda, si no voleu fer servir el vostre número i preferiu cercar i afegir nous contactes manualment, seleccioneu %@ més avall.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Política de privadesa de Skype";
+"PNV_NOT_NOW" = "Ara no";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Número de telèfon";
+
+"PNV_WELCOME_HEADING" = "Ara, trobar amics és més fàcil";
+"PNV_WELCOME_PARAGRAPH" = "Només cal que afegiu el vostre número de telèfon per començar.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Següent";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "Vaja.";
+"PNV_DEFAULT_ERROR_MESSAGE" = "S'ha produït un problema en verificar el vostre número; torneu-ho a provar més tard.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "Heu arribat al nombre màxim de números verificats. Esborreu un número a Configuració abans d'afegir-ne cap altre.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "El número que heu introduït no és vàlid. Comproveu-lo i torneu-ho a provar.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "No podem enviar un SMS a aquest número. Comproveu-lo i torneu-ho a provar.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "Sembla que aquest codi ha caducat. Seleccioneu Torna a enviar a continuació per obtenir un nou codi.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "Sembla que aquest codi era incorrecte. Comproveu-lo i torneu-ho a provar.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "S'ha produït un problema amb la vostra connexió de xarxa. Comproveu la configuració de la xarxa i torneu-ho a provar.";
+"PNV_ERROR_TRY_AGAIN" = "Torna-ho a provar";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Afegeix amics a Skype";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "Cercarem persones que coneixeu a Skype i les afegirem als Contactes.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Més informació";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "Per tal d'afegir contactes nous a Skype automàticament, consultarem la vostra llibreta de contactes de tant en tant per trobar persones que coneixeu. No patiu, no enviarem correu brossa amb invitacions als vostres amics.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "Si canvieu d'opinió en qualsevol moment, només cal que desactiveu %@  a Configuració. Ja no es consultarà l'agenda per trobar persones que conegueu i les hi haureu d'afegir manualment.";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "Si voleu canviar com us poden trobar, aneu a %@ a Configuració per esborrar o desactivar qualsevol dels vostres números de telèfon.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Política de privadesa de Skype";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "Recordeu que Skype no es pot utilitzar per fer trucades d'emergència";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "Ara, cercar els amics és més fàcil";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "S'han afegit contactes nous";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "Afegeix el contacte";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "Cancel·la";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "Cerca";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Cancel·la";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "Cerqueu persones a Skype escrivint-ne el nom de Skype, l'adreça electrònica o el nom complet.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "Ja és un contacte de Skype";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "No hi ha coincidències de cerca";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "Enrere";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "Endavant";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "Comparteix";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "Quant a";
+"ABOUT_APPLICATION_VERSION" = "Versió de Skype";
+"ABOUT_COPYRIGHT" = "© 2003-2016 Skype i Microsoft\nPatent pendent";
+"ABOUT_THIRD_PARTY_NOTICES" = "Avisos de tercers";
+"ABOUT_PRIVACY_POLICY" = "Estratègia de privadesa";
+"ABOUT_TERMS_OF_USE" = "Condicions d'ús";
+"ABOUT_COPYRIGHT_TEXT" = "El nom de Skype, les marques registrades i els logotips associats i el logotip de la \"S\" són marques registrades de Skype o d'entitats relacionades.\n\nAdvertiment: Aquest programa està protegit per les lleis de drets d'autor i altres tractats internacionals. La reproducció o la distribució no autoritzades d'aquest programa, o de qualsevol part d'aquest, està penalitzada per la llei i serà objecte de totes les accions judicials corresponents.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "Error";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "Per correu electrònic";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "Informa'm d'ofertes i de característiques noves de Skype per correu electrònic";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Informa'm d'ofertes i de característiques noves de Skype:";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "Afegeix una foto de perfil";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "Correu electrònic";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "john@exemple.com";
+"CREATEACCOUNT_FULLNAME_LABEL" = "Nom complet";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "Nom";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "Cognoms";
+"CREATEACCOUNT_PASSWORD_LABEL" = "Contrasenya";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6 – 20 caràcters";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "Repetiu la contrasenya";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Nom de Skype";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "Obligatori";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "Número de telèfon";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "amb el codi de país";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "Alguns dels camps anteriors no s'han emplenat";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "Les contrasenyes no coincideixen. Comproveu-les i torneu a intentar-ho.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Condicions d'ús de Skype";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "Sí, he llegit i accepto les <a href='%1$@'>Condicions d'ús de Skype</a> i la <a href='%2$@'>Política de privadesa.</a>";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "No es poden fer trucades d'emergència amb Skype";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype no es pot fer servir com un telèfon i, per tant, no es pot usar per fer trucades d'emergència.";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "Accepto";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "Ha de tenir entre 6 i 32 caràcters.";
+"SkyLib::TOO_LONG" = "Ha de tenir entre 6 i 32 caràcters.";
+"SkyLib::CONTAINS_INVALID_CHAR" = "Caràcter no vàlid, per exemple, Σ, à, ß.";
+"SkyLib::CONTAINS_SPACE" = "No pot contenir cap espai ni tabulació.";
+"SkyLib::SAME_AS_USERNAME" = "S'assembla massa al vostre nom d'usuari de Skype.";
+"SkyLib::INVALID_FORMAT" = "Format no vàlid.";
+"SkyLib::CONTAINS_INVALID_WORD" = "Es pot endevinar molt fàcilment, per exemple, abcd, skype.";
+"SkyLib::TOO_SIMPLE" = "Ha de tenir com a mínim 1 lletra i 1 número.";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "Ha de començar per una lletra (A-Z).";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "Proveu un nom d'usuari nou de Skype.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "Proveu una contrasenya nova.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "Proveu una nova adreça de correu electrònic.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "Torneu-ho a provar.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Nom de Skype";
+"SkyLib::ACCOUNT_PASSWORD" = "Contrasenya";
+"SkyLib::CONTACT_EMAILS" = "Correu electrònic";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> ha canviat el nom d'aquest grup per \"%@\"";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Portada de Skype";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> ha actualitzat la foto del grup.";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> ha actualitzat el grup.";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "Amaga";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "%d notificacions noves";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "Una notificació nova";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "No hi ha cap notificació nova";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "Hola! M'agradaria afegir-te a Skype.";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "Sol·licitud de contacte";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. A %3$@";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "Us vol afegir a Skype";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "Ara no";
+"ALLOW_BUTTON" = "Permet";
+"PERMISSION_VIEW_TITLE" = "Comencem";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir al micròfon.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir a la càmera.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir als contactes.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir a les notificacions.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir al micròfon i a la càmera.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir al micròfon i als contactes.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir al micròfon i a les notificacions.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir a la càmera i als contactes.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir a la càmera i a les notificacions.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir als contactes i a les notificacions.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir al micròfon, a la càmera i a les notificacions.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir al micròfon, als contactes i a les notificacions.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir al micròfon, a la càmera i a les notificacions.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir al micròfon, a la càmera i a les notificacions.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Per poder oferir la millor experiència amb l'Skype, necessitem accedir al micròfon, la càmera, els contactes i les notificacions.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "Contactes";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "Micròfon";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "Càmera";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "Notificacions";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "N'esteu segur?";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "Si no podem accedir a aquestes característiques, no podreu fer o rebre trucades correctament ni rebre notificacions de trucades i missatges entrants.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "La vostra llibreta d'adreces serà buida i no podreu fer ni rebre trucades a Skype.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Més informació";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "Micròfon i càmera";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "Per fer o rebre trucades a Skype, necessitem accedir al micròfon i a la càmera. Malauradament Skype no pot funcionar sense aquests permisos.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "Contactes";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "Per tal de definir la llibreta d'adreces de Skype, necessitem accedir a Contactes. Comprovarem Contactes de tant en tant per trobar persones que coneixeu a Skype. No patiu, no enviarem correu brossa amb invitacions als vostres amics.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "Si canvieu d'opinió en qualsevol moment, només cal que desactiveu %@  a Configuració. Ja no consultarem la llibreta de contactes per trobar persones que conegueu i les hi haureu d'afegir manualment.";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "Notificacions";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "Per tal d'informar-vos de missatges i trucades entrants quan Skype estigui tancat, necessitem accedir a Notificacions. També podeu decidir desactivar les notificacions de xat individual més endavant si no voleu que us molestem.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "Permet l'accés a Contactes";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Skype necessita accedir a Contactes per trobar persones que coneixeu. Aneu a Configuració i activeu Contactes per permetre-hi l'accés.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "Omet";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "Connecteu-vos-hi";
+"ONBOARDING_GET_STARTED_BUTTON" = "Comença";
+
+"ONBOARDING_IPHONE_TITLE1" = "Redissenyat per a l'iPhone";
+"ONBOARDING_IPAD_TITLE1" = "Redissenyat per a l'iPad";
+"ONBOARDING_TEXT1" = "Skype és més fàcil de fer servir que mai, tant si envieu missatges als amics com si feu una trucada.";
+
+"ONBOARDING_TITLE2" = "Trobeu el que sigui";
+"ONBOARDING_TEXT2" = "Cerqueu persones, grups o, fins it tot, converses anteriors.";
+
+"ONBOARDING_IPHONE_TITLE3" = "Feu més feina";
+"ONBOARDING_IPAD_TITLE3" = "Feu més a Skype";
+
+"ONBOARDING_IPHONE_TEXT3" = "Compartiu la ubicació o les fotos i previsualitzeu enllaços web mentre us poseu al dia amb els amics.";
+"ONBOARDING_IPAD_TEXT3" = "Gaudiu d'emoticones més grans, visualitzacions prèvies d’enllaços web i la creació de grups directament des de l'iPad.";
+
+"ONBOARDING_TITLE4" = "Skype es gaudeix millor amb els amics";
+"ONBOARDING_TEXT4" = "Afegiu el vostre número a Skype perquè els amics us puguin trobar.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "Compartir és fàcil";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Per enviar llocs web o fotos des del rodet als amics de Skype només cal que toqueu el botó per compartir.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "Afegeix participants";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "AFEGEIX:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "Ja és un participant";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "Ja participa a la trucada";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "EN AQUESTA TRUCADA";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "NO SÓN EN AQUESTA TRUCADA";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "S'està connectant...";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "S'està connectant a %@";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "S'està trucant...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "S'està trucant a %@";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "Trucada en espera";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "Trucada en espera per a %@";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "Afegeix preferits";
+"ADDFAVORITES_EMPTY_TITLE" = "Manteniu les vostres persones preferides juntes a <a href=\"add-favorites\">afegeix favorits</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "llista de contactes de Skype";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "Transferència de fitxers";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ un altre";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ %d més";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "Heu enviat aquest fitxer des d'un altre dispositiu.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "Heu enviat aquests fitxers des d'un altre dispositiu.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "Aquesta versió de Skype no admet la recepció de fitxers.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "Aquesta aplicació només és compatible amb les noves funcions d'Skype per compartir fotos.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "Heu enviat un fitxer";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "Heu enviat %d fitxers";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "Us ha enviat un fitxer";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "Us ha enviat %d fitxers";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "Connectat";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "Ocupat";
+"CONTACT_AVAILABILITY_AWAY" = "Absent";
+"CONTACT_AVAILABILITY_INVISIBLE" = "Invisible";
+"CONTACT_AVAILABILITY_OFFLINE" = "Desconnectat";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "Disponible";
+"CONTACT_AVAILABILITY_BUSY" = "Ocupat";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "Bloquejat";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Preferit";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Preferit";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Aquesta persona és un favorit. Toqueu dues vegades per eliminar-lo de favorits.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Aquesta persona no és un favorit. Toqueu dues vegades per afegir-lo a favorits.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Preferit";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Preferit";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Aquest grup no és als vostres favorits. Toqueu dues vegades per afegir-lo a favorits.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Aquest grup és als vostres favorits. Toqueu dues vegades per eliminar-lo de favorits.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@ %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@ %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "NOM DE SKYPE";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "LLOC WEB";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "SOBRE MI";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "ANIVERSARI";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "SEXE";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "IDIOMA";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "CONTACTES";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "CAPACITATS";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "PRIVADESA";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "CREAT PER";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "DESCRIPCIÓ";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "Envieu i rebeu missatges instantanis i fotos.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "Aquest robot tindrà accés al vostre nom de visualització, nom de Skype i als missatges de xat o continguts que qualsevol participant del grup hagi compartit amb ell.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "Dona";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "Home";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "Bloqueja el contacte";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "Desbloqueja el contacte";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "Suprimeix el contacte";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "Suprimeix el contacte";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "Se suprimirà %@ de la llista de contactes.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "Suprimeix";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "Cancel·la";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "Amaga";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "Perfil del grup";
+"GROUPPROFILE_NOTIFICATIONS" = "Notificacions";
+"GROUPPROFILE_MENU_TITLE" = "Mostra el perfil";
+"GROUPPROFILE_LEAVE_CHAT" = "Abandona el grup";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "Participants";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "Convida";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "Invitacions de xat";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "Tothom podrà veure l'historial del xat";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "Habilita les invitacions de xat per convidar contactes al xat.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "Només és possible afegir contactes de Skype a aquest xat.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "Convideu qualsevol usuari a aquest xat, sigui o no usuari de Skype.";
+"GROUPPROFILE_CHAT_HISTORY" = "Historial de xat";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "Els participants nous no podran visualitzar l'historial del xat.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "Tots els participants podran visualitzar l'historial del xat.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "Afegiu participants";
+"GROUP_ADMIN_STRING" = "%@ (Administrador)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "Invitacions de xat";
+"GROUPPROFILE_ALERT_BODY" = "Actualment, no és possible convidar usuaris al xat, torna-ho a provar més tard.";
+"GROUPPROFILE_ALERT_BUTTON" = "D'acord";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Participeu en el meu xat a Skype: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "Participeu en el meu xat";
+"INVITES_MAIL_BODY" = "Hola,\nHe creat un grup a Skype perquè puguem parlar, compartir coses i col·laborar.\nHi podeu participar fent clic a l'enllaç:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "Canvia el nom de grup";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "Canvia el nom de grup";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "Canvi del nom del contacte";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "Toqueu el contacte dues vegades per canviar-li el nom";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "Afegeix un robot";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "Envia la sol·licitud de contacte";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "Reenvia la sol·licitud de contacte";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "S\\'ha enviat la sol·licitud de contacte";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "Accepta";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "Rebutja";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "A <name>%@</name> li agradaria afegir-vos a Skype"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "Obre";
+"PUSH_CHAT_CALL" = "Truca";
+"PUSH_CHAT_TEXT_REPLY" = "Respon";
+"PUSH_CALL_ANSWER" = "Respon a";
+"PUSH_CALL_DECLINE" = "Rebutja";
+"PUSH_CALL_VIDEO_VIDEO" = "Trucada de vídeo";
+"PUSH_CALL_VIDEO_AUDIO" = "Veu";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "Missatge";
+"PUSH_MISSED_CALL_CALLBACK" = "Torna la trucada";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "Problemes amb Contactes";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "Hi ha hagut un problema a l'hora d'accedir a números de telèfon de Contactes. Proveu de tornar a sincronitzar les vostres adreces de correu a Configuració per solucionar el problema.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "Desa el número de telèfon";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "No hi ha cap trucada que coincideixi.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "Hi ha una trucada que coincideix.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "%d trucades que coincideixen.";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@) darrera trucada: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@, última trucada: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@ és un contacte de la llibreta d'adreces.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Connecteu-vos a Skype";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@ és un contacte de la llibreta d'adreces. Podeu trucar-lo i xatejar-hi a Skype.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Sense connexió a Skype";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "Esborra el text";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Cancel·la";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "Cerca a Skype";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "Cerca contactes nous";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "Toqueu per cercar contactes nous";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "Cerca \"%@\"";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Directori de Skype";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "Historial de cerca";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "Esborra";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "Contactes";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "No hi ha coincidències de cerca";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "Grups";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "Converses";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "Desa el número";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "Desa el número";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "Introduïu un nom";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "Escriviu un número";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "S'està desant el número";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "S'ha desat el número";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "El número no és vàlid";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "No podeu afegir aquest número perquè és un número no vàlid. Proveu-ne un altre.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "El número no és vàlid";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "No podeu afegir números d'emergència a Skype.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "Descarta";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "Esteu segur que voleu trucar a \n\n%@?";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "Esteu segur que voleu videotrucar a\n\n%@?";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "Trucada de veu";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "Videotrucada";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "Truca";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "Mostra l'original";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "Mostra la traducció";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "Heu compartit una ubicació";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "Ha compartit una ubicació amb vós";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "Ha compartit la ubicació (%@)";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "Toqueu dues vegades per obrir";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "Indicacions per arribar a la ubicació";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "Ubicació";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "Compartiu la vostra ubicació";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "Envia una ubicació";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "Accés a la ubicació";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "Si no disposeu de permís per utilitzar la ubicació, no podreu compartir-la amb els amics a Skype.";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Aneu a la configuració del dispositiu i, tot seguit, aneu a Privadesa per concedir el permís.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "Accés als contactes";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "Necessitem accedir als contactes per mostrar-vos la llibreta d'adreces a Skype.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "Aneu a la configuració del dispositiu i, a continuació, aneu a Privadesa per concedir el permís.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "Vaja...";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "S'ha produït un error en carregar el mapa.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "Comproveu la configuració de la xarxa i torneu-ho a provar.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "Esborra";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "Esborra els marcadors afegits";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "Ús compartit de la ubicació";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "Ja no podeu compartir la ubicació en aquest xat.";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "D'acord";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "Comparteix la ubicació";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "Cerca";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "No s'han trobat cap resultat";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "S'ha produït un error en cercar aquesta ubicació. Espereu i torneu-ho a provar.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Inici";
+"TIMELINE_ICON_DIALPAD" = "Teclat";
+"TIMELINE_ICON_PEOPLE" = "Contactes";
+"TIMELINE_SWIPEACTION_MUTE" = "Silencia";
+"TIMELINE_SWIPEACTION_UNMUTE" = "Activa el so";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "Notificacions push";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "Activeu les notificacions push per rebre alertes de trucades i de missatges quan no sigueu a Skype.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "Podeu rebre alertes de trucades i de missatges quan no sigueu a Skype; per activar-les, aneu a la configuració de l'iPhone > Centre de notificacions i activeu les notificacions de Skype.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "Podeu rebre alertes de trucades i de missatges quan no sigueu a Skype; per activar-les, aneu a la configuració de l'iPhone, després al Centre de notificacions i activeu les notificacions de Skype.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "Notificacions push";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "Si voleu rebre notificacions push, primer haureu d'activar les notificacions de Skype des de la configuració del dispositiu.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "Obre";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "Mostra";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "Escolta";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "Reprodueix";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Hi ha hagut un problema en obrir el missatge; comproveu la connexió de xarxa i torneu a provar-ho.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "S'ha compartit un document multimèdia";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "Toqueu dues vegades per obrir";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "L'origen no és de confiança";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "Foto";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "Fes una foto";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "Tria una foto existent";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "Trieu una foto o un vídeo existent";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "Cancel·la";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "Tria";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "toqueu dues vegades per tancar";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "ha enviat una foto. Toqueu dues vegades per obrir-la";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "S'està rebent una foto";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "S'està enviant una foto";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "Hi ha hagut un problema en enviar aquesta foto";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "Hi ha hagut un problema en rebre aquesta foto";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "toqueu dues vegades per reintentar";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "Envia";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "Cancel·la";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "No s'ha pogut enviar el vídeo perquè té més de %d MB";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "No s'ha pogut enviar la foto perquè té més de %d MB";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "Envieu un missatge de vídeo. Toqueu dues vegades per obrir-lo";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "S\\'està rebent el missatge de vídeo";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "S'està enviant el missatge de vídeo";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "No s'ha pogut enviar aquest missatge de vídeo";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "No s'ha pogut rebre aquest missatge de vídeo";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "S'ha enviat el fitxer. Feu dos tocs per baixar-lo";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "Has rebut un fitxer. Toca dos cops per obrir-lo.";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "S'està baixant";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "S'ha baixat %@ . Feu dos tocs per obrir-lo.";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "El fitxer té més de %d MB. Pot ser que s'apliquin càrrecs per la transferència de dades.";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "Fitxer no disponible";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "Reinicia";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "S'ha produït un problema en rebre aquest fitxer";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "És probable que aquest fitxer no sigui segur";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "No es pot baixar: s'hi ha detectat un virus";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "S'està esperant la connexió a Internet…";
+"FILE_TRANSFER_BUTTON_CANCEL" = "Cancel·la";
+"FILE_TRANSFER_BUTTON_RETRY" = "Torna-ho a provar";
+"FILE_TRANSFER_LABEL_CANCELED" = "S'ha cancel·lat";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "Baixa";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "Més informació";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "Els fitxers compartits se suprimeixen de Skype quan passen %d dies. Per mantenir un fitxer durant més temps, deseu-lo al vostre dispositiu.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "Fitxer no disponible";
+"FILE_SENDING_LABEL_ERROR" = "S'ha produït un problema en enviar aquest fitxer";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "Voleu acceptar el fitxer?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "Accepteu fitxers només d'usuaris que conegueu. Voleu acceptar el fitxer %@ de %@?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "Avís: és possible que aquest fitxer no sigui segur per al vostre ordinador o dispositiu.";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "Voleu acceptar el fitxer %@ de %@?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "No m'ho tornis a preguntar";
+"FILE_TRANSFER_ACCEPT" = "Accepta";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "No hi ha prou espai";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "Aneu a Configuració > General > Ús per alliberar espai d'emmagatzematge en aquest dispositiu.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "L'usuari ha denegat a l'aplicació l'accés al contingut multimèdia";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "Per permetre l'accés, aneu a Configuració > Privadesa > Fotos i habiliteu Skype.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "Heu enviat una foto";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "Us ha enviat una foto";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "%@ ha enviat una foto.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "Per veure aquesta foto compartida heu d'anar a: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "Foto no disponible";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "Aquesta foto no està disponible actualment.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "Cancel·la";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "Torna-ho a provar";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "Foto no disponible";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "Aquesta foto no està disponible actualment.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "d'acord";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "Desa la foto";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "Cancel·la";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "Vaja.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "Hi ha hagut un problema a l'hora de desar aquesta foto.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "Reintentar";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "Cancel·la";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "Fitxers multimèdia del web";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "Cerca al Giphy";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Actualització de Skype";
+"FORCE_UPGRADE_CAPTION" = "La vostra versió de Skype és massa antiga. Actualitzeu-la per aconseguir les últimes funcions y millores.";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "Baixa ara";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "Us ha enviat un Moji";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "Heu enviat un Moji";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "S'està baixant el Moji";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "Hi ha hagut un problema per baixar aquest Moji";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "Toqueu dues vegades per tornar-ho a provar";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "Reprodueix el Moji";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "Aquest contingut s'ha eliminat";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "Aquest contingut ha caducat";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "Vist per darrer cop fa un moment";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "Vist per darrer cop fa més d'una setmana";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "Telèfon";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "Trobeu amics, missatges o contactes nous a l'instant";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Mojis de Skype";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "Ara gaudiu de més Moji amb els clips de %@.";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "Camp de cerca";
+
+"TAB_RECENT_TITLE" = "Recent";
+"TAB_CONTACTS_TITLE" = "Contactes";
+"TAB_CALLS_TITLE" = "Truqueu a telèfons";
+"TAB_MYINFO_TITLE" = "La meva informació";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "Tots";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "No llegits";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "Tots";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "Connectat";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "Gràcies!";
+"APPSTORE_RATING_SUBTITLE" = "Compartiu la vostra opinió: valoreu l'aplicació a l'App Store. Només serà un moment.";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "Valoreu l'aplicació";
+
+"CONTACTS_ADD_FAVORITES" = "Afegeix preferits";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "Cerca als contactes";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "No hi ha cap connexió a Internet";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "Esteu fora de línia. <a href=\"reconnect\">Torna a connectar</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Skype té problemes.";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "S'està connectant";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "Connectat";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "S'estan actualitzant les converses...";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "Elimina el xat";
+"DELETECHAT_ALERT_MESSAGE"              = "Esteu segur que voleu eliminar aquest xat del dispositiu? També s'eliminarà l'historial de xat.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "Suprimeix";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "Edita";
+"LIST_EDITING_CANCEL" = "Cancel·la";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "Tot com a llegit";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "Marca-ho com a llegit";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "Suprimeix-ho tot";
+"LIST_EDITING_DELETE_TOOLBAR" = "Suprimeix (%d)";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "Suprimeix tots els xats";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "Suprimeix-ho tot";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "Amaga-ho tot";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "M'ho miraré més tard";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "Trucada nova";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "en espera";
+"CALLING_BANNER_STATUS_MUTED" = "silenciat";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Certificat per Skype";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "Iniciar una trucada de grup nova";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "S'està iniciant una trucada de grup nova";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "La trucada activa finalitzarà (aviseu-ne l'altre participant) i s'iniciarà la trucada de grup nova";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "Truca";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "Cancel·la";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "ha creat una <a href=\"%@\">conversa de grup</a>.";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "Envieu un missatge de vídeo del dia de Sant Valentí";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "Missatges de vídeo del dia de Sant Valentí";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "Animeu el dia d'un ésser estimat";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "Compartiu la vostra opinió";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "Animeu el dia d'un ésser estimat enviant un missatge del dia de Sant Valentí.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "Ara mateix no";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "Envia als contactes";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "Comparteix el vídeo";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "Bon dia de Sant Valentí";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "Bon dia de \nSant Valentí";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "He enregistrat un missatge de vídeo especial del dia de Sant Valentí per a tu. Per enregistrar el teu, visita https://go.skype.com/vmhci";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "S'està enviant el vostre missatge especial del dia de Sant Valentí...";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "Silencia";
+"INCALLCONTROLS_VIDEO_CAPTION" = "Vídeo";
+"INCALLCONTROLS_AUDIO_CAPTION" = "Altaveu";
+"INCALLCONTROLS_ADD_CAPTION" = "Afegeix";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "Més";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "Teclat de marcatge";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "Més accions";
+"GVC_CALLING_ME_ON_RIBBON" = "Jo";
+
+"GVC_NOTIFICATION_HUNG_UP" = "%@ ha sortit de la trucada";
+"GVC_NOTIFICATION_JOINED" = "%@ s'ha unit a la trucada";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "Creeu un grup (ara, amb l'opció d'iniciar una videotrucada de grup).";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "Inicieu una videotrucada de grup directament des del xat.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "Proveu de canviar la visualització.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "Torneu a tocar per desancorar aquesta persona.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "Convertiu això en una videotrucada de grup gratuïta.";
+"GVC_INTERSTITIAL_TITLE" = "Coneixeu la videotrucada de grup";
+"GVC_INTERSTITIAL_CAPTION" = "Reuniu-vos amb tothom, en qualsevol moment i de franc.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "Entesos";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "Afegeix participants";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";

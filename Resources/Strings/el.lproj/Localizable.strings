@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "Ο χρήστης %@ σας έστειλε ένα βιντεομήνυμα";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "Ο χρήστης %@ σας έστειλε μία φωτογραφία";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "Ο χρήστης %@ σάς έστειλε ένα Moji";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "Ο χρήστης %@ σας έστειλε ένα φωνητικό μήνυμα";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "Ο χρήστης %@ σας έστειλε ένα αρχείο";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "Νέα ένδειξη \"Μου αρέσει\"";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "Ο λογαριασμός μου";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "Αποστολή σχολίων";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "Σήμανση όλων ως αναγνωσμένων";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "Προσθήκη ατόμων";
+"HELP_NAVBAR_BUTTON" = "Βοήθεια";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "Έχετε μη αναγνωσμένα σχόλια.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "Σχόλια προγραμματιστή";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "Εμφάνιση";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "Ακύρωση";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "Προσθήκη στα αγαπημένα";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "Κατάργηση από αγαπημένα";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "Προσθήκη νέων αγαπημένων μέσω του μενού ή οποιασδήποτε επαφής.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "Αποσύνδεση";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "Κλήση από %@";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "Βιντεοκλήση από %@";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "Ομαδική κλήση από %@";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "Μήνυμα βίντεο από %@.";
+"BACKGROUND_MISSEDCALL_ONE" = "Αναπάντητη κλήση από %@.";
+"BACKGROUND_MISSEDCALL_GROUP" = "Αναπάντητη ομαδική κλήση από %@";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "Νέο αίτημα νέας επαφής από %@.";
+"BACKGROUND_VOICEMAIL_ONE" = "Νέο φωνητικό μήνυμα από %@.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "Παρακαλούμε ελέγξτε τις ρυθμίσεις δικτύου σας και δοκιμάστε ξανά.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "Απάντηση";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "Απόρριψη";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "Προσθήκη στην κλήση";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "Τερματισμός κλήσης";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "Τερματισμός κλήσης";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "Βιντεομήνυμα";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "Αποστολή βιντεομηνύματος";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "Ακύρωση";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "Τέλος";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "Ρυθμίσεις";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "Δημιουργία λογαριασμού";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "Δημιουργία λογαριασμού";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "Το %@ είναι μη έγκυρος αριθμός τηλεφώνου. Ελέγξτε τον και δοκιμάστε ξανά.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "Βιβλίο διευθύνσεων";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "Κωδικός χώρας ή περιοχή";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "Αλλάζει τον κωδικό χώρας ή την περιοχή.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "Αλλάξτε τον κωδικό χώρας ή την περιοχή.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "Αναζήτηση";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Αριθμός τηλεφώνου";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "Απόρριψη";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "Άνοιγμα";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "Δημιουργία συμβάντος";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "Εμφάνιση ημερολογίου";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "Αντιγραφή";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "Προσθήκη στη λίστα ανάγνωσης";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "Άνοιγμα στο Safari";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "Επεξεργασία";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "Απόσπασμα";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "Την %1$@, στις %2$@, ο χρήστης %3$@ έγραψε:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "Διαγραφή";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "Προώθηση";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "Προώθηση";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "Κοινή χρήση";
+"SHARE_MESSAGE_TITLE" = "Κοινή χρήση";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "Φόρτωση";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "Πατήστε δύο φορές για ακύρωση";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "Έναρξη βίντεο...";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "Η κλήση προωθείται...";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "Βίντεο";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "Πληκτρολόγιο κλήσης";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "Συνέχιση κλήσης";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "Τεχνικές πληροφορίες κλήσεων";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "Επιλογές κλήσης";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Ο χρήστης %@ θέλει να κάνει κοινή χρήση του βίντεό του";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Ο χρήστης %@ δεν ανήκει στις επαφές σας, αλλά θέλει να κάνει κοινή χρήση του βίντεό του.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Οι συμμετέχοντες σε αυτή την κλήση έχουν ενεργοποιήσει το βίντεο";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Θέλετε να αποδεχτείτε το βίντεο σε αυτήν την κλήση;";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Αποδοχή";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Απόρριψη";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "Προσθ. συμ/χόντων";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "Πατήστε δύο φορές για να προσθέσετε συμμετέχοντες.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "Κωδικός πρόσβασης";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "Είσοδος";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Όνομα Skype";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Όνομα Skype, email ή κινητό";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "Οι λογαριασμοί σας";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "Επιλέξτε το λογαριασμό που θα θέλατε να χρησιμοποιήσετε.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Λογαριασμός Skype";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Λογαριασμός Microsoft";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "Είσοδος";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "Επιλέξτε τον τύπο λογαριασμού που θέλετε να χρησιμοποιήσετε για να συνδεθείτε στο Skype.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Λογαριασμός Microsoft";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Όνομα Skype";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "Εξατομικεύστε το προφίλ σας";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "Προσθήκη φωτογραφίας";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "Αλλαγή φωτογραφίας";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Είσοδος";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Έχετε πρόβλημα να συνδεθείτε;";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "OK";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "Εντάξει, κατάλαβα!";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "Συνέχεια";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "Όχι τώρα";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "Μάθετε περισσότερα";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "Ρυθμίσεις";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "Να μην γίνει ξανά υπενθύμιση";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "Ενεργοποίηση ειδοποιήσεων";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "Διαγραφή κειμένου";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "Αποστολή";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "Call";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "Κλήση";
+"CHAT_CALL_EVENT_CALL_STARTED" = "Η κληση άρχισε";
+"CHAT_CALL_EVENT_NO_ANSWER" = "Κλήση, καμία απάντηση";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "Αναπάντητη κλήση";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "%dαναπάντητες κλήσεις";
+"CHAT_CALL_EVENT_BUSY" = "Κλήση, απασχολημένο";
+"CHAT_CALL_EVENT_BLOCKED" = "Αποκλεισμένη επαφή";
+"CHAT_CALL_EVENT_FAILED" = "αποτυχία κλήσης";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "Πώς ήταν η ποιότητα αυτής της κλήσης;";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "Ευχαριστούμε για τα σχόλιά σας.";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "Πολύ κακή";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "Κακή";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "Μέτρια";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "Καλή";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "Άριστη";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "Κλήση";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "Κλήση, %@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "Κλήση";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "Κλήση, %@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "Η κλήση απέτυχε";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "Αναπάντητη κλήση";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "Κλήση, καμία απάντηση";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "Κλήση, αποκλείστηκε";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "Στάλθηκε";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "Παραδόθηκε";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "Διαβάστηκε";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "Στάλθηκε";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "Παραδόθηκε";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "Διαβάστηκε";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "Ο χρήστης %@ δημιουργήστε μια νέα ομάδα.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "Ο χρήστης %@ δημιούργησε μια νέα ομάδα με %@.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "Ο χρήστης %@ δημιούργησε μια νέα ομάδα με %@ και %@.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "Ο χρήστης %@ δημιούργησε μια νέα ομάδα με %@, %@ και έναν ακόμη χρήστη.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "Ο χρήστης %@ δημιούργησε μια νέα ομάδα με %@, %@ και %u άλλους χρήστες.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "Σήμερα είναι τα γενέθλια της επαφής <name>%@'s</name>";
+"CHAT_GRANTED_AUTH" = "Έχετε κάνει κοινή χρήση των στοιχείων επαφής σας";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "Ο χρήστης %@ πρόσθεσε %@ σε αυτή την ομάδα";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "Τα bot που έχουν προστεθεί σε αυτήν την ομάδα έχουν πρόσβαση στο Όνομα Skype, το εμφανιζόμενο όνομα και τα νέα μηνύματα συνομιλίας ή το νέο περιεχόμενο κάθε συμμετέχοντα που είναι κοινόχρηστο στην ομάδα.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "Καλώς ορίσατε! Αυτή η ομάδα περιλαμβάνει ένα ή περισσότερα bot. Έχουν πρόσβαση στο Όνομα Skype, το εμφανιζόμενο όνομα και τα νέα μηνύματα συνομιλίας ή το νέο περιεχόμενο κάθε συμμετέχοντα που είναι κοινόχρηστο στην ομάδα.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "Ο χρήστης %@ εισήλθε στην ομάδα";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "Ο χρήστης %@ αποχώρησε από την ομάδα";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "Ο χρήστης %@ αφαίρεσε τον χρήστη %@ από αυτή την ομάδα";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "Ο λογαριασμός επισκέπτη για τον χρήστη %@ έληξε";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "Αποκλείσατε το χρήστη %@";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "Ο χρήστης %@ άλλαξε το ρόλο του χρήστη %@ σε %@";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "Δημιουργός";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "Διαχειριστής";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "Θεατής";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "Συντάκτης";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "Ομιλητής";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "Αιτών";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "Αποχωρήσας";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "Αποκλεισμένος";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "Ένας ρόλος άλλαξε";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "Συνομιλία χωρίς τίτλο";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "Εμφάνιση συνομιλίας";
+"CONVERSATION_HIDE_CHAT" = "Απόκρυψη συνομιλίας";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "Εμφάνιση πλαϊνής στήλης";
+"CONVERSATION_HIDE_TIMELINE" = "Απόκρυψη πλαϊνής στήλης";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "Εναλλαγή σε προβολή πλέγματος";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "Εναλλαγή σε μεμονωμένη προβολή";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "Ένωση κλήσης";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "Ένωση κλήσης";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "Εμφάνιση μηνυμάτων από <a href=\"jump\">παλιότερη συνομιλία</a>";
+"CHAT_GOTO_NEW_CHAT" = "Αυτή η συνομιλία έχει ενημερωθεί σε νέα έκδοση. <a href=\"jump\">Μεταβείτε στη νέα συνομιλία</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "Ο χρήστης %@ πρέπει να ενημερώσει το Skype, για να συμμετάσχει σε αυτήν τη συνομιλία. Βοηθήστε προτείνοντάς τους την τοποθεσία skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Μάθετε περισσότερα σχετικά με τη νέα ομαδική συνομιλία</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "Ο χρήστης %@ πρέπει να ενημερώσει το Skype, για να συμμετάσχει σε αυτήν τη συνομιλία. Βοηθήστε προτείνοντάς τους την τοποθεσία skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Μάθετε περισσότερα σχετικά με τη νέα ομαδική συνομιλία</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "Ο χρήστης %@ μπορεί πλέον να συμμετάσχει σε αυτήν τη συνομιλία.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "Έναρξη συνομιλίας μεταξύ δύο ατόμων.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "Χαμόγελο";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "Λύπη";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "Γέλιο";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "Άνεση";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "Έκπληξη";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "Ματάκι";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "Κλάμα";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "Ιδρώτας";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "Άφωνος";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "Φιλί";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "Γλώσσα έξω";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "Ντροπή";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "Αναρωτιέμαι";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "Νύστα";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "φφφφφ…";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "Ερωτευμένος";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "Σατανικό χαμόγελο";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "Με λίγη τύχη";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "Χασμουρητό";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "Εμετός";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "Ενόχληση";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "Θυμωμένος";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "Δεν ήμουν εγώ";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "Πάρτι";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "Ανήσυχος";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "μμμμμ…"; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "Σπασίκλας";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "Τα χείλη μου είναι σφραγισμένα";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "Γεια σου";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "Έλεος";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "Διάβολος";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "Άγγελος";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "Ζήλια";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "Περίμενε";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "Αγκαλιάζω";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "Βάφομαι";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "Γελάκι";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "Χειροκροτώ";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "Σκέφτομαι";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "Υπόκλιση";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "\"Χτυπιέμαι\" από τα γέλια";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "Ανακούφιση";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "Ευτυχισμένος";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "Αυτάρεσκο χαμόγελο";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "Καταφατικό νεύμα";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "Άρνηση";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "Αναμονή";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "Emo";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "Ναι";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "Όχι";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "Χειραψία";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "Κόλλα το";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "Καρδιά";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "Λα-λα-λα";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "Σκίουρος";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "Λουλούδι";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "Βρέχει";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "Ήλιος";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "Σιωπή";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "Μουσική";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "Μούτρο";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "Πολλές πληροφορίες";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "Καφές";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "Πίτσα";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "Μετρητά";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "Μυώδης βραχίονας";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "Κέικ";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "Μπύρα";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "Ποτό";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "Χορεύω";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "Νίντζα";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "Αστέρι";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "Σ' έχω γραμμένο";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "Τηλέφωνο";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "Μεσαίο δάχτυλο";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "Πάρτι στην πισίνα";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "Ραγισμένη καρδιά";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "Μεθυσμένος";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "Βρισιές";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "Ταινία";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "Καπνίζω";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "Ρολόι";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "Άνδρας και σκύλος";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "Φωτογράφος";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "Έχετε αλληλογραφία";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "Ροκάρω";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "Μπουνιές";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "Χτυπάω το κεφάλι μου στον τοίχο";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "Να κληθώ";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "Δουλεύω από το σπίτι";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "Έντομο";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "Μιλάω";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "Μάγκας";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "Άνδρας με καπέλο";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "Ποδοσφαιριστής";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "Μίλα στο χέρι";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "Ιδέα";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "Πρόβατο";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "Γάτα";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "Ποδήλατο";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "Σκύλος";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "Emoticon: %@";
+
+"EMOTICON_TYPE_FLAG" = "Σημεία: %@ ";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "Για να προσθέσετε νέες επαφές στο Skype, <a href=\"add-people\">κάντε αναζήτηση στον κατάλογο Skype</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "Δεν έχετε επαφές στο Skype.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "Δεν βρέθηκαν ακόμα επαφές Skype στο βιβλίο διευθύνσεων. <a href=\"add-people\">Προσθήκη ατόμων</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "Δεν βρήκαμε ακόμα επαφές Skype στο βιβλίο διευθύνσεών σας.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Αναζήτηση στον Κατάλογο Skype"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "Βρείτε τους γνωστούς σας στο Skype"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "Αναζήτηση ατόμων που γνωρίζετε"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "Αγγίξτε δύο φορές για ακύρωση της αναζήτησης";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "Όλα φαίνονται μια χαρά!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "Όταν είστε έτοιμοι, πατήστε εγγραφή.";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "Ακύρωση εγγραφής";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "Επανεγγραφή";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "Ακύρωση";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "Έχετε λάβει ένα νέο βιντεομήνυμα. Για να το δείτε, απλά αντιγράψτε αυτόν τον μυστικό κωδικό %2 και παρακολουθήστε το βιντεομήνυμά σας εδώ: %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "Ακύρωση";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "Εγγραφή";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "Διακοπή";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "Αποστολή";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "Προεπισκόπηση";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "Αλλαγή στη μπροστινή κάμερα";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "Αλλαγή στην πίσω κάμερα";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "Χρόνος εγγραφής";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "Εφέ βίντεο";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "κανονικό";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "μπαλόνια";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "αρκούδες";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "καλειδοσκόπιο";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "παραμόρφωση pixel";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "συμπίεση";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "έξαρση";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "ακτινογραφία";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "αφίσα";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "χιόνι";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "καθρέπτης";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "καρδιές";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "στολή";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "Απόκριες";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "Γλώσσα υποτίτλων";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "Οι υπότιτλοι εμφανίζονται μετά την ολοκλήρωση της εγγραφής";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "Δημιουργία υποτίτλων...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "Δεν ήταν δυνατό να δημιουργηθούν υπότιτλοι";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "Ακρόαση";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "Βιντεομήνυμα";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "Δεν μπορείτε πλέον να στέλνετε μηνύματα βίντεο σε αυτήν τη συνομιλία.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "Διαγραφή βίντεο";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το βιντεομήνυμα;";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "Διαγραφή";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Άκυρο";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "Διαγραφή βιντεομηνύματος";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "Αναπαραγωγή";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "Παύση";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "Φωνητικό μήνυμα";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Φωνητικό μήνυμα, %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "Αναπαραγωγή φωνητικού μηνύματος";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "Διακοπή αναπαραγωγής";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Βιντεομήνυμα";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "Με δυνατότητα αναπαραγωγής";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "Φόρτωση";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "Μη διαθέσιμος-η";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "Αναπαραγωγή βιντεομηνύματος";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "Χρήση της μπροστινής κάμερας";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "Χρήση της πίσω κάμερας";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "Εγγραφή";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "Διακόπηκε";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "Αποστολή";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "Δεν έγινε αποστολή - Αναμονή για σύνδεση στο Internet...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά αργότερα.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "Δεν έγινε λήψη - Αναμονή για σύνδεση στο Internet...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "Μη διαθέσιμο βίντεο";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "Μη διαθέσιμο βίντεο";
+
+"CHAT_PHOTO_NOTIFICATION" = "Ο χρήστης %@ αποστέλλει φωτογραφία";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "Έχετε πρόβλημα να συνδεθείτε;";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "Πρόβλημα σύνδεσης";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "Δεν είναι δυνατή η σύνδεση στο Skype. Δοκιμάστε ξανά αργότερα.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "Δεν είναι δυνατή η σύνδεση στη Microsoft. Ελέγξτε τις ρυθμίσεις δικτύου σας και δοκιμάστε ξανά.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "Δεν είναι δυνατή η σύνδεση στη Microsoft. Δοκιμάστε ξανά αργότερα.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "Λυπούμαστε αλλά δεν μπορείτε να συνδεθείτε στο Skype με το συγκεκριμένο λογαριασμό Microsoft, καθώς δεν πληροίτε το ελάχιστο όριο ηλικίας για τη χώρα/περιοχή σας.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "Παρακαλούμε ελέγξτε τα στοιχεία σας";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "Αυτά τα στοιχεία σύνδεσης δεν αναγνωρίστηκαν. Ελέγξτε τα και δοκιμάστε ξανά.";
+"LOGIN_PROBLEM_NO_NETWORK" = "Δεν είναι δυνατή η είσοδος. Ελέγξτε τη σύνδεσή σας στο Internet και προσπαθήστε ξανά.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Πίστωση Skype";
+"IAP_PURCHASE_BUTTON" = "Προσθήκη πίστωσης %@";
+"IAP_CALLPHONES" = "Κλήση τηλεφώνων";
+"IAP_SEND_SMS" = "Αποστολή SMS";
+"IAP_WITHSKYPECREDIT_TITLE" = "Γιατί να πληρώσω για την Πίστωση Skype;";
+"IAP_WITHSKYPECREDIT_BODY" = "Επειδή μπορείτε να επικοινωνείτε με άτομα που δεν έχουν Skype, καλώντας προς κινητά και σταθερά ή με την αποστολή SMS με χαμηλές χρεώσεις.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Οι κλήσεις από Skype σε Skype είναι δωρεάν, αλλά με λίγη πίστωση μπορείτε να κάνετε ακόμη περισσότερα.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "Το τρέχον υπόλοιπό σας είναι %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "Μετατροπή νομίσματος"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "Θα γίνει μετατροπή %@ σε %@ για το υπόλοιπο της Πίστωσης Skype.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "Μάθετε περισσότερα";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "Έγινε μετατροπή με βάση το επιτόκιο της Ευρωπαϊκής Κεντρικής Τράπεζας στις %@.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "Φαίνεται ότι το νόμισμα του App Store και το νόμισμα το Skype δεν ταιριάζουν. Θα μετατρέψουμε το νόμισμα του App Store για αυτήν την αγορά.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "Για να αλλάξετε αυτές τις ρυθμίσεις, εισέλθετε στο Skype.com και επιλέξτε \"Αλλαγή νομίσματος\" από την επιλογή \"Ο λογαριασμός μου\".";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "Μη επαρκής πίστωση";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "Δεν έχετε αρκετή Πίστωση Skype για να καλέσετε αυτόν τον αριθμό.";
+"IAP_CALL_NO_CREDIT_TITLE" = "Δεν έχετε πίστωση";
+"IAP_CALL_NO_CREDIT_BODY" = "Για να καλέσετε αυτόν τον αριθμό χρειάζεστε Πίστωση Skype.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "Η αγορά σας ήταν επιτυχής";
+"IAP_RESULT_SUCCESS_1_BODY" = "%@ προστέθηκαν στο λογαριασμό σας Skype.";
+"IAP_RESULT_SUCCESS_2_BODY" = "%@ προστίθενται στο λογαριασμό σας Skype.";
+"IAP_RESULT_SUCCESS_3_BODY" = "%@ έχουν ήδη προστεθεί στο λογαριασμό σας Skype.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "Η προηγούμενη παραγγελία σας για Πίστωση Skype ολοκληρώθηκε. %@ προστέθηκαν στο λογαριασμό σας Skype.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "Η προηγούμενη παραγγελία σας για Πίστωση Skype είναι υπό επεξεργασία.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "Η προηγούμενη παραγγελία σας για Πίστωση Skype πραγματοποιήθηκε με επιτυχία.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "Η αγορά σας ακυρώθηκε";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "Λυπούμαστε";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "Δεν ήταν δυνατή η επεξεργασία της παραγγελίας σας. Δοκιμάστε ξανά αργότερα.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "Δεν είναι δυνατή η ολοκλήρωση της παραγγελίας σας προς το παρόν. Θα συνεχίσουμε τις προσπάθειες και θα σας ενημερώσουμε μόλις ολοκληρωθεί.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "Δεν είναι δυνατή η ολοκλήρωση της προηγούμενης παραγγελίας σας για Πίστωση Skype προς το παρόν. Θα συνεχίσουμε τις προσπάθειες και θα σας ενημερώσουμε μόλις ολοκληρωθεί.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "Προτού αγοράσετε πίστωση, διαβάστε και αποδεχτείτε τους Όρους χρήσης του Skype.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "Δεν ήταν δυνατή η επεξεργασία της παραγγελίας σας, επειδή ο πάροχος πληρωμών σας δεν είναι προς το παρόν διαθέσιμος. Δοκιμάστε ξανά αργότερα.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "Δεν ήταν δυνατή η επεξεργασία της παραγγελίας σας, επειδή η διαχείριση του λογαριασμού σας γίνεται από διαχειριστή.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "Δεν ήταν δυνατή η επεξεργασία της παραγγελίας σας. Επικοινωνήστε με την ομάδα υποστήριξης πελατών Skype για βοήθεια.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "Ο λογαριασμός σας iTunes δεν είναι προς το παρόν διαθέσιμος.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "Δεν ήταν δυνατή η ολοκλήρωση της παραγγελίας σας, επειδή ο λογαριασμός iTunes δεν είναι διαθέσιμος προς το παρόν. Δοκιμάστε ξανά αργότερα.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "Δεν ήταν δυνατή η επεξεργασία της παραγγελίας σας, επειδή το Skype δεν υποστηρίζει το νόμισμα που ορίσατε στο λογαριασμό iTunes.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "Το νόμισμα που ορίσατε στο λογαριασμό Skype δεν αντιστοιχεί με αυτό του λογαριασμού iTunes. Μπορείτε να αλλάξετε το νόμισμα από τις ρυθμίσεις λογαριασμού στην τοποθεσία skype.com.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "Δεν ήταν δυνατή η επεξεργασία της παραγγελίας σας. Ελέγξτε τη σύνδεση δικτύου και δοκιμάστε ξανά.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "Δεν ήταν δυνατή η επεξεργασία της παραγγελίας σας. Ελέγξτε τη σύνδεση δικτύου και θα δοκιμάσουμε ξανά μόλις συνδεθείτε.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "Δεν ήταν δυνατή η επεξεργασία της προηγούμενης παραγγελίας σας για Πίστωση Skype. Ελέγξτε τη σύνδεση δικτύου και θα δοκιμάσουμε ξανά μόλις συνδεθείτε.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "Λήψη βοήθειας";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Λογαριασμός Microsoft";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "Ακύρωση και επανεκκίνηση";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "Συνδεδεμένος λογαριασμός Skype";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "Αυτός ο λογαριασμός Skype έχει ήδη συνδεθεί με έναν άλλο λογαριασμό Microsoft. Πραγματοποιήστε είσοδο με αυτά τα στοιχεία Microsoft για να συνεχίσετε.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "Παρουσιάστηκε κάποιο πρόβλημα με τη σύνδεση των λογαριασμών σας. Δοκιμάστε ξανά αργότερα.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Παρουσιάστηκε κάποιο πρόβλημα με το άνοιγμα του λογαριασμού σας. Ελέγξτε τη σύνδεση δικτύου σας και δοκιμάστε ξανά.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "Τηλέφωνο";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "Σπίτι";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "Γραφείο";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "Κινητό";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "Άλλος";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "Άγνωστος αριθμός";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (Επισκέπτης)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "Πραγματοποιείται σύνδεση...";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "Κουδούνισμα...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "Πραγματοποιείται κλήση...";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "Κλήση σε αναμονή";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "Τέλος κλήσης";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "Έναρξη...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "Πραγματοποιείται κλήση...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "Ζωντανά";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "Κλήση σε αναμονή";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "Κλήση σε αναμονή από συνομιλητή";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "Άλλοι είναι σε ζωντανή λειτουργία";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "Άλλοι είναι σε πλήρη ζωντανή λειτουργία";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "Αναπαραγωγή φωνητ. μηνύματος";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "Εγγραφή";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "Πρόσφατα σε ζωντανή λειτουργία";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "Γίνεται μεταφορά";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "Σύνδεση…";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "Φόρτωση επαφών...";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "Ενημέρωση...";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "Αυτό το μήνυμα αφαιρέθηκε";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "Δεν είναι δυνατή η σύνδεση με το Skype.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "Παρακαλούμε ελέγξτε τις ρυθμίσεις δικτύου σας και δοκιμάστε ξανά.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "Αυτό το όνομα Skype δεν είναι έγκυρο.";
+"Account::INVALID_EMAIL" = "Αυτή η διεύθυνση email δεν είναι έγκυρη.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "Ελέγξτε και δοκιμάστε ξανά.";
+"Account::UNACCEPTABLE_PASSWORD" = "Αυτός ο κωδικός πρόσβασης δεν είναι έγκυρος.";
+"Account::SKYPENAME_TAKEN" = "Αυτό το όνομα Skype χρησιμοποιείται ήδη.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "Εισαγάγετε ένα νέο όνομα.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "Το Όνομα Skype ή ο κωδικός πρόσβασής σας δεν αναγνωρίστηκαν.";
+"Account::INCORRECT_PASSWORD" = "Το Όνομα Skype ή ο κωδικός πρόσβασής σας δεν αναγνωρίστηκαν.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "Προσπαθήσατε να συνδεθείτε πάρα πολλές φορές.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "Δοκιμάστε ξανά αργότερα.";
+"Account::ATO_BLOCKED" = "Ο λογαριασμός σας διακόπηκε προσωρινά. <a href = 'https://go.skype.com/account.recovery.ios'>Πατήστε εδώ για περισσότερες πληροφορίες</a>.";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "Παρουσιάστηκε κάποιο πρόβλημα με τη σύνδεση με το λογαριασμό Microsoft. Δοκιμάστε ξανά αργότερα.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "Δεν είναι δυνατή η σύνδεση, καθώς δεν υπάρχει ελεύθερος χώρος αποθήκευσης στη συσκευή σας.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "Δεν είναι δυνατή η σύνδεση. Επανεκκινήστε τη συσκευή σας και δοκιμάστε ξανά.(%d)";
+"Account::DB_FAILURE" = "Δεν είναι δυνατή η σύνδεση. Επανεκκινήστε τη συσκευή σας και δοκιμάστε ξανά.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "Δεν είναι δυνατή η σύνδεση. Δοκιμάστε να επανεγκαταστήσετε το Skype από το App Store.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "Ο κωδικός πρόσβασής σας έχει αλλάξει. Συνδεθείτε για να συνεχίσετε να χρησιμοποιείτε το Skype.";
+"Account::LOGOUT_REMOTE" = "Έχετε αποσυνδεθεί.";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "Η συγκεκριμένη έκδοση του Skype δεν υποστηρίζεται.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "Πραγματοποιήστε ενημέρωση στη νεότερη έκδοση του Skype για να συνεχίσετε.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "Δεν ήταν δυνατή η σύνδεση, δοκιμάστε ξανά αργότερα.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "Δεν μπορείτε να συνδεθείτε στο Skype, επειδή δεν πληροίτε το ελάχιστο όριο ηλικίας για τη χώρα/περιοχή σας.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "Παρακαλούμε προσπαθήστε ξανά. (%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "Κλήση";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "Βιντεοκλήση";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "Βιντεομήνυμα";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "Πληκτρολόγιο"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "Κλήση τηλεφωνικών αριθμών";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "Ξεκινήστε μια νέα συνομιλία";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Ξεκινήστε μια νέα συνομιλία στο Skype";
+
+
+"HUB_RECENTS_TITLE" = "Πρόσφατα";
+"HUB_PEOPLE_TITLE" = "Άτομα";
+"HUB_FAVOURIES_TITLE" = "Αγαπημένα";
+"CANCEL_ALERT_BUTTON" = "Ακύρωση";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "Αγαπημένα";
+"PEOPLEPICKER_CONTACTS_TITLE" = "Επαφές";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "Αναζήτηση επαφών";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "Εύρεση νέων επαφών";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "Αναζήτηση για \"%@\"";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Αναζήτηση στον κατάλογο Skype για \"%@\"";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "Άτομα";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "Bot";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "Δεν συνδέθηκε"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "Στο Skype"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Σύνδεση στο Skype";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "Ακύρωση";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "Σύνδεση";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "Νέα συνομιλία";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "Πατήστε δύο φορές για επιλογή.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "Οι πρόσφατες συνομιλίες θα εμφανίζονται εδώ.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "Δεν έχετε μη αναγνωσμένα μηνύματα";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "Οι πρόσφατες κλήσεις σε κινητά και σταθερά θα εμφανίζονται εδώ, <a href=\"open-dialpad\">καλέστε έναν φίλο</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, νέα μηνύματα, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "Κλήση σε αναμονή από συνομιλητή";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "Κλήση σε αναμονή";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "Τρέχουσα κλήση";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "Τρέχουσα κλήση, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "Τρέχουσα κλήση";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "Επεξεργασία από το χρήστη";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "Επεξεργασία";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "αποθήκευση φωτογραφίας";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "Αποθήκευση βίντεο";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "Εμφάνιση ενδείξεων \"Μου αρέσει\"";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "Μου αρέσει";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "Δεν μου αρέσει";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "Κλείσιμο";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "Ενδείξεις \"Μου αρέσει\"";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "Πατήστε δύο φορές για προβολή της επαφής";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "Νέα";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "Του αρέσει το μήνυμά σας.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "Του αρέσει το μήνυμά σας: %@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "Του αρέσει η φωτογραφία σας.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "Το μήνυμά σας αρέσει στον χρήστη %@.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "Το μήνυμα σας %2$@ αρέσει στον χρήστη %1$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "Η φωτογραφία σας αρέσει στον χρήστη %@.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>Δεν αρέσει σε κάποιον ακόμη</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "Αρέσει σε εσάς";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "Είσοδος";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Όνομα Skype";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Λογαριασμός Microsoft";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "Δημιουργία λογαριασμού";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Σύνδεση με το Όνομα Skype";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Σύνδεση με λογαριασμό Microsoft";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Δημιουργία λογαριασμού";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "Πεδίο στοιχείων σύνδεσης";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "Χρησιμοποιείτε ήδη το Skype;";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "Ναι";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Ναι, έχω λογαριασμό στο Skype.";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "Όχι";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Όχι, δεν έχω λογαριασμό στο Skype.";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "Φίλτρο της λίστας \"Άτομα\"";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "Όλες οι επαφές";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "Συνδεδεμένες επαφές";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "Εμφάνιση όλων των επαφών.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "Εμφάνιση μόνο των συνδεδεμένων επαφών.";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "Εμφάνιση μόνο των επαφών Skype.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "Φωνητική κλήση";
+"CHATINPUT_PLACEHOLDER" = "Γράψτε ένα μήνυμα εδώ";
+"CHATINPUT_PLACEHOLDER_SMS" = "Πληκτρολογήστε εδώ το μήνυμα SMS";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "Πείτε γεια στο χρήστη %@";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "Εδώ θα εμφανίζεται η συνομιλία σας.";
+"CHATTYPING_SINGLEUSER" = "Ο χρήστης %@ πληκτρολογεί...";
+"CHATTYPING_TWOUSERS" = "Οι χρήστες %@ και %@ πληκτρολογούν...";
+"CHATTYPING_THREEUSERS" = "Οι χρήστες %@, %@ και ένας ακόμη χρήστης πληκτρολογούν...";
+"CHATTYPING_MULTIPLEUSERS" = "Οι χρήστες %@, %@ και %d άλλοι πληκτρολογούν...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "Κλήση τηλεφώνου";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "Αποστολή πρόσκλησης";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Στείλτε τους μια σύνδεση μέσω SMS για να συνομιλήσετε στο Skype.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "Συνομιλία";
+"SEND_SMS_TO_CONTACT_BUTTON" = "SMS";
+"EMPTY_PAGE_HEADER_TITLE" = "Πείτε γεια στον χρήστη";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "Γεια σου, ας μιλήσουμε στο Skype: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "Η αποστολή αυτού του SMS κοστίζει %@";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "Επιλογή χώρας/περιοχής";
+"DIALPAD_CALL_BUTTON" = "Κλήση";
+"DIALPAD_STAR_BUTTON" = "Αστέρι";
+"DIALPAD_HASH_BUTTON" = "Δίεση";
+"DIALPAD_BACKSPACE_BUTTON" = "Διαγραφή";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "SMS";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "Ανοίγει μια συνομιλία με το %@";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "Το πληκτρολόγιο ήταν κρυφό.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "Εμφάνιση πληκτρολογίου";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "Δεν είναι δυνατή η κλήση αυτής της επαφής";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "Παρουσιάστηκε κάποιο πρόβλημα με την κλήση αυτής της επαφής.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "Ελέγξτε τον και δοκιμάστε ξανά.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "Αριθμοί έκτακτης ανάγκης";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "Η συσκευή σας δεν υποστηρίζει κλήσεις σε αριθμούς έκτακτης ανάγκης.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "Μη έγκυρος αριθμός τηλεφώνου";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "Παρουσιάστηκε κάποιο πρόβλημα με την κλήση αυτού του τηλεφωνικού αριθμού.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "Ελέγξτε τον και δοκιμάστε ξανά.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "Βρίσκεστε ήδη σε κλήση";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "Υπάρχει τηλεφωνική κλήση σε εξέλιξη.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Τερματίστε την πρώτη κλήση για να ξεκινήσετε μια νέα.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "Βρίσκεστε ήδη σε κλήση";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "Μια άλλη κλήση Skype βρίσκεται σε εξέλιξη.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Τερματίστε την πρώτη κλήση για να ξεκινήσετε μια νέα.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "Δεν είναι δυνατή η πραγματοποίηση κλήσης";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "Ο πάροχός σας δεν επιτρέπει κλήσεις Skype μέσω του δικτύου κινητής τηλεφωνίας σας. Συνδεθείτε πρώτα σε ένα δίκτυο WiFi για να κάνετε κλήσεις Skype.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "Η κλήση απέτυχε";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "Δεν μπορείτε να κάνετε μια κλήση Skype με τον εαυτό σας.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "Αποκλεισμένες επαφές";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "Καταργήστε πρώτα τον αποκλεισμό αυτής της επαφής για να την καλέσετε.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "Πρόσβαση στο μικρόφωνο";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "Χωρίς άδεια χρήσης του μικροφώνου σας, τα άτομα δεν θα μπορούν να σας ακούνε κατά τη διάρκεια των κλήσεων ή των μηνυμάτων βίντεο.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Μεταβείτε στις ρυθμίσεις της συσκευής σας και, στη συνέχεια, στην επιλογή \"Απόρρητο\" για την παραχώρηση άδειας.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "Πρόσβαση στην κάμερα";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "Χωρίς άδεια χρήσης της κάμεράς σας, τα άτομα δεν θα μπορούν να σας δουν κατά τη διάρκεια των κλήσεων ή των βιντεομηνυμάτων.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Μεταβείτε στις ρυθμίσεις της συσκευής σας και, στη συνέχεια, στην επιλογή \"Απόρρητο\" για την παραχώρηση άδειας.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "Χωρίς άδεια χρήσης της κάμεράς σας, δεν θα μπορείτε να βγάζετε φωτογραφίες στο Skype.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "Δεν είναι δυνατή η πραγματοποίηση κλήσης";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "Μία άλλη εφαρμογή ήχου αποτρέπει την αναπαραγωγή ήχου από το Skype.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "Ελέγξτε τον και δοκιμάστε ξανά.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "Δεν είναι δυνατή η πραγματοποίηση κλήσης";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "Υπάρχει κάποιο πρόβλημα με τον ήχο στη συσκευή σας.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "Ελέγξτε τον και δοκιμάστε ξανά.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "Δεν είναι δυνατή η πραγματοποίηση κλήσης";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "Υπάρχει κάποιο πρόβλημα με τον ήχο στη συσκευή σας.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "Κάντε επανεκκίνηση του Skype για να συνεχίσετε.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "Δεν είναι δυνατή η πραγματοποίηση κλήσης";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "Υπάρχει κάποιο πρόβλημα με τον ήχο στη συσκευή σας.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "Δοκιμάστε ξανά αργότερα.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "Δεν είναι δυνατή η πραγματοποίηση κλήσης";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "Υπάρχει κάποιο πρόβλημα με τον ήχο στη συσκευή σας.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "Δοκιμάστε ξανά αργότερα.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "Δεν είναι δυνατή η πραγματοποίηση κλήσης";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "Παρουσιάστηκε πρόβλημα με τη σύνδεση αυτής της κλήσης.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "Δοκιμάστε ξανά αργότερα.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "Αδύνατη η πραγματοποίηση κλήσεων";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "Στην Ινδία, θα μπορείτε να καλείτε άλλα άτομα στη χώρα μόνο μέσω λογαριασμού Skype (δωρεάν). Δυστυχώς, στην Ινδία δεν μπορείτε να καλείτε σταθερά ή κινητά μέσω Skype.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "Μάθετε περισσότερα";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Δεν είναι δυνατή η συμμετοχή στην κλήση";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Αυτή η ομαδική κλήση είναι πλήρης αυτήν τη στιγμή, προσπαθήστε να συμμετάσχετε αργότερα.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "H κάμερα χρησιμοποιείται";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "Αυτήν τη στιγμή βρίσκεστε σε μια ομαδική βιντεοκλήση.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "Απενεργοποιήστε το βίντεο πριν επιχειρήσετε να χρησιμοποιήσετε την κάμερα.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Ομαδικές κλήσεις";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Αυτή η ομάδα είναι πολύ μεγάλη για την έναρξη ηχητικής κλήσης σε αυτήν τη συσκευή (μέγ. %d συμμετέχοντες).";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "Ομαδικές κλήσεις βίντεο";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Δεν είναι δυνατή η κλήση ομάδων με %d ή περισσότερους συμμετέχοντες από αυτήν τη συσκευή.";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "Δεν είστε συνδεδεμένοι";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "Πρέπει να είστε συνδεδεμένοι για να πραγματοποιείτε κλήσεις στο Skype.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Ομαδικές κλήσεις";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Ο μέγιστος αριθμός συμμετεχόντων σε αυτήν την κλήση έχει επιτευχθεί.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "Κλήση σε αναμονή";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "Συνεχίστε πρώτα την κλήση σας και μετά προσθέστε νέους συμμετέχοντες.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "Κλήση σε αναμονή από συνομιλητή";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "Αυτή η κλήση πρέπει να συνεχιστεί πρώτα για να μπορέσετε να προσθέσετε νέους συμμετέχοντες.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "Γίνεται ρύθμιση της κλήσης";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "Δεν είναι δυνατή η προσθήκη συμμετεχόντων κατά τη σύνδεση της κλήσης.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "Περιμένετε μέχρι να συνδεθεί η κλήση.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "Ομάδα";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "Παρουσιάστηκε πρόβλημα κατά την προσθήκη συμμετεχόντων. Δοκιμάστε ξανά αργότερα.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "Δεν είναι δυνατή η έναρξη βίντεο";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "Παρουσιάστηκε κάποιο πρόβλημα με την ενεργοποίηση του βίντεο.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "Ελέγξτε ότι όλοι σε αυτή την κλήση διαθέτουν την τελευταία έκδοση Skype.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "Δεν είναι δυνατή η έναρξη βίντεο";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Δεν ήταν δυνατή η έναρξη του βίντεό σας από το Skype.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "Δοκιμάστε ξανά αργότερα.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "Συνέχιση κλήσης";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "Παρουσιάστηκε πρόβλημα με την επαναφορά αυτής της κλήσης.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "Κλείστε τυχόν εφαρμογές που χρησιμοποιούν αυτήν τη στιγμή ήχο και τερματίστε τρέχουσες τηλεφωνικές κλήσεις, για να επαναφέρετε αυτή την κλήση Skype.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "Αίτημα επαφής";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "Προστέθηκαν ή αφαιρέθηκαν συμμετέχοντες";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "Σήμερα είναι τα γενέθλια του χρήστη <name>%@</name>"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "Δημιουργήθηκε ομαδική συνομιλία";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "Η επαφή αποκλείστηκε";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "Έστειλε ένα βιντεομήνυμα";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "Στείλατε ένα βιντεομήνυμα";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>Εσείς</name> και ο χρήστης <name>%@</name> είστε πλέον επαφές.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "προστέθηκε στις επαφές";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "Έχετε κάνει κοινή χρήση των στοιχείων επαφής σας";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "Σας έστειλε ένα φωνητικό μήνυμα";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "Στείλατε ένα φωνητικό μήνυμα.";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "Ο %@ σας έστειλε μια επαφή. Αυτή η έκδοση Skype δεν υποστηρίζει ακόμα τη συγκεκριμένη λειτουργία.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "Αποστείλατε μια επαφή. Αυτή η έκδοση Skype δεν υποστηρίζει ακόμα τη συγκεκριμένη λειτουργία.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "Πατήστε δύο φορές για προβολή της επαφής";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "Πατήστε δύο φορές για προβολή των επαφών";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "Η επαφή στάλθηκε";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "Προσθήκη στις επαφές";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "Η επαφή υπάρχει ήδη";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "Προβολή επαφών";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "Αποστολή επαφών";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "Αποστολή επαφών";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "και %d άλλοι";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "Επιλογή επαφών";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "Δεν έχετε επαφές στο Skype για αποστολή.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "Καμία επαφή";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "Επαφές";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "Αποστολή επαφών";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "Το αίτημα επαφής εστάλη";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "Αίτημα επαφής σε εκκρεμότητα";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "Στάλθηκαν επαφές";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "Ο χρήστης %@ έστειλε ένα μήνυμα το οποίο δεν υποστηρίζεται ακόμη από αυτή την έκδοση Skype.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "Στείλατε ένα μήνυμα το οποίο δεν υποστηρίζεται ακόμη από αυτή την έκδοση Skype.";
+
+"RECENTS_DELETE_CONVERSATION" = "Διαγραφή συνομιλίας";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "Σήμανση ως αναγνωσμένου";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "Σήμανση ως μη αναγνωσμένου";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "Συνομιλία";
+"CALL_ACCESSIBILITYLABEL" = "Κλήση";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "Κύρια είσοδος";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Σύνδεση με έναν λογαριασμό Skype";
+"HUB_ACCESSIBILITYLABEL" = "Κόμβος";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "Προτεινόμενο στοιχείο αναζήτησης %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "Εμφάνιση \"φατσών\"";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "Εμφάνιση πληκτρολογίου";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "Διαγραφή";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Αναζήτηση";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "Κατάστημα";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "Πρόσφατα";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "Emoticon";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Moji";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "Αναζήτηση";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "Προτάσεις";
+"EXPRESSION_SEARCH_NO_RESULTS" = "Δεν βρέθηκε τίποτα";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "Λάβε μέρος στη συνομιλία μου στο Skype, για να δεις αυτό το Moji: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "Γεια σου,\nΛάβε μέρος στη συνομιλία μου στο Skype, για να δεις το Moji που σου έστειλα: %@\nΤα λέμε σύντομα,";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "Δες αυτό το Moji";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "Ωχ!";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "Παρουσιάστηκε πρόβλημα κατά την κοινή χρήση αυτού του Moji, δοκιμάστε ξανά αργότερα.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Κατάστημα Skype";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "Φόρτωση Moji και emoticon...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "Αναζήτηση";
+"EXPRESSION_STORE_FREE" = "Δωρεάν";
+"EXPRESSION_STORE_REMOVE" = "Κατάργηση";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "Δωρεάν λήψη";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "Πραγματοποιείται λήψη";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "Έγινε λήψη";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "Ωχ!";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "Παρουσιάστηκε πρόβλημα κατά τη φόρτωση Moji και emoticon.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "Παρουσιάστηκε πρόβλημα κατά την εύρεση Moji και emoticon, <a href=\"re-try fetching\">επανάληψη</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "Αναζήτηση για emoticon και Moji";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "Τα emoticon που χρησιμοποιήσατε πρόσφατα θα εμφανίζονται εδώ.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "Επιλεγμένα";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "Αγγίξτε δύο φορές για προεπισκόπηση.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "Αγγίξτε δύο φορές για αποστολή.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "Αγγίξτε δύο φορές για κλείσιμο της προεπισκόπησης.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "Αναπαραγωγή";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Προεπισκόπηση Moji";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "Αγγίξτε ξανά για αποστολή.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Παραχωρήστε πρόσβαση στο μικρόφωνό σας στις ρυθμίσεις συσκευής, για να σας ακούει ο χρήστης %@.";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Παραχωρήστε πρόσβαση στο μικρόφωνό σας στις ρυθμίσεις συσκευής, για να σας ακούνε όλοι.";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Παραχωρήστε πρόσβαση στην κάμερά σας στις ρυθμίσεις συσκευής, για να σας βλέπει ο χρήστης %@.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Παραχωρήστε πρόσβαση στην κάμερά σας στις ρυθμίσεις συσκευής, για να σας βλέπουν όλοι.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "Ο μέγιστος αριθμός συμμετεχόντων σε αυτήν την κλήση έχει επιτευχθεί";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "Χρειάζεστε σύνδεση στο δίκτυο για την πραγματοποίηση κλήσης";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "Η κάμερα είναι απενεργοποιημένη στη διαιρεμένη προβολή.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Δεν υποστηρίζεται βίντεο στην Πλευρική προβολή.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "Το ηχείο είναι ενεργοποιημένο";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "Αγγίξτε δύο φορές για να απενεργοποιήσετε το ηχείο";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "Το ηχείο είναι απενεργοποιημένο";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "Αγγίξτε δύο φορές για να ενεργοποιήσετε το ηχείο";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "Κλήση σε σίγαση";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "Αγγίξτε δύο φορές για κατάργηση σίγασης της κλήσης";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "Καταργήθηκε η σίγαση της κλήσης";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "Αγγίξτε δύο φορές για σίγαση της κλήσης";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "Το βίντεο ενεργοποιήθηκε";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "Αγγίξτε δύο φορές για να απενεργοποιήσετε το βίντεο";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "Το βίντεό σας είναι απενεργοποιημένο";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "Αγγίξτε δύο φορές για να ενεργοποιήσετε το βίντεο";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "Εισερχόμενα";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "Εξερχόμενο";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 συμμετέχων"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d συμμετέχοντες"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "Κανένας συμμετέχων"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%1$d από %2$d σε αυτήν την κλήση";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "Η επαφή %1$@ πρέπει να ενημερώσει το Skype, για να συμμετάσχει σε αυτήν την κλήση.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "Οι επαφές %1$@ και %2$@ πρέπει να ενημερώσουν το Skype, για να συμμετάσχουν σε αυτή την κλήση.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "Οι επαφές %1$@ και %2$@ πρέπει να ενημερώσουν το Skype, για να συμμετάσχουν σε αυτή την κλήση.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ", ";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Εισερχόμενη κλήση Skype από τον χρήστη %@";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Εισερχόμενη ομαδική κλήση από τον χρήστη %@ και %@";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Εισερχόμενη ομαδική κλήση από %@, %@ και ένα ακόμη άτομο";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Εισερχόμενη ομαδική κλήση από %@, %@ και %d άλλα άτομα";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Εισερχόμενη βιντεοκλήση από %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Εισερχόμενη ομαδική βιντεοκλήση από %@ και %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Εισερχόμενη ομαδική βιντεοκλήση από %@, %@ και ένα ακόμη άτομο";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Εισερχόμενη ομαδική βιντεοκλήση από %@, %@ και %d άλλα άτομα";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Κλήση Skype σε %@";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Ομαδική κλήση σε %@ και %@";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Ομαδική κλήση σε %@, %@ και ένα ακόμη άτομο";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Ομαδική κλήση σε %@, %@ και %d άλλα άτομα";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "Βιντεοκλήση με %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "Βιντεοκλήση με τον χρήστη %@ και %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "Βιντεοκλήση με %@, %@ και ένα ακόμη άτομο";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "Βιντεοκλήση σε %@, %@ και %d άλλα άτομα";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Κλήση Skype με %@";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Βιντεοκλήση με %@ και %@";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Ομαδική κλήση με %@, %@ και ένα ακόμη άτομο";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Ομαδική κλήση με %@, %@ και %d άλλα άτομα";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Βιντεοκλήση με %@";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Ομαδική βιντεοκλήση με %@ και %@";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Ομαδική βιντεοκλήση με %@, %@ και ένα ακόμη άτομο";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Ομαδική βιντεοκλήση με %@, %@ και %d άλλα άτομα";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Ανάκτηση κλήσης Skype με %@";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Ανάκτηση ομαδικής κλήσης με %@ και %@";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Ανάκτηση ομαδικής κλήσης με %@, %@ και ένα ακόμη άτομο";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Ανάκτηση ομαδικής κλήσης με %@, %@ και %d άλλα άτομα";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Ανάκτηση βιντεοκλήσης με %@";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Ανάκτηση ομαδικής βιντεοκλήσης με %@ και %@";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Ανάκτηση ομαδικής βιντεοκλήσης με %@, %@ και ένα ακόμη άτομο";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Ανάκτηση ομαδικής βιντεοκλήσης με %@, %@ και %d άλλα άτομα";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "Τέλος κλήσης";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "Διάρκεια κλήσης";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "Εγγραφή φωνητικού μηνύματος";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "η";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "η";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "ω";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "ω";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "λεπτά";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "λεπτό";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "λ";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "λ";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "Αποδοχή";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "Απόρριψη";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "Ο χρήστης <name>%@</name> θέλει να σας προσθέσει στο Skype\n\"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "Ο χρήστης <name>%@</name> σάς έστειλε ένα μήνυμα από <location>%@</location>"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "Πείτε γεια στον χρήστη <name>%@</name> και προσθέστε αυτό το άτομο στις Επαφές σας.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "Ο χρήστης %@ δεν έχει προστεθεί ακόμα στις επαφές.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "\"%@\"<a href=\"edit-contact-request-message\">Επεξεργασία</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "Αποστολή αιτήματος επαφής";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "Προσθήκη στις επαφές";
+"CONTACT_REQUEST_PENDING" = "Αναμονή για αποδοχή του αιτήματος επαφής από τον χρήστη <name>%@</name>.\n<a href=\"resend-request\">Νέα αποστολή αιτήματος επαφής</a>";
+"CONTACT_REQUEST_BLOCKED" = "Η επαφή <name>%@</name> είναι αποκλεισμένη";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "Αναίρεση αποκλεισμού";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "Ναι";
+"CONTACT_REQUEST_BLOCK_TITLE" = "Αποκλεισμός επαφής";
+"CONTACT_REQUEST_DECLINED_TITLE" = "Το αίτημα επαφής απορρίφθηκε";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "Ακύρωση";
+"CONTACT_REQUEST_BLOCK_ALERT" = "Είστε βέβαιοι ότι θέλετε να αποκλείσετε αυτή την επαφή;";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "Θέλετε επίσης να αποκλείσετε και να αναφέρετε αυτό το άτομο;";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "Αποκλεισμός";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "Αποκλεισμός και κατάργηση";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "Αποκλεισμός και αναφορά";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "Προσθ. συμ/χόντων";
+"CHAT_OPTION_START_NEW_GROUP" = "Δημιουργία νέας ομάδας";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "Προβολή προφίλ";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "Ειδοποιήσεις";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "Οι ειδοποιήσεις για αυτήν τη συνομιλία έχουν ενεργοποιηθεί.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "Οι ειδοποιήσεις για αυτήν τη συνομιλία έχουν απενεργοποιηθεί.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "Ενεργ. ειδοποιήσεων";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "Απενεργ. ειδοποιήσεων";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "Αποχώρηση από ομάδα";
+
+"CHAT_OPTION_PARTICIPANTS" = "Εμφάνιση συμμετεχόντων";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "ΕΝΕΡΓΟΠΟΙΗΜΕΝΟ";
+"MK_SWITCH_OFF_MESSAGE" = "ΑΠΕΝΕΡΓΟΠΟΙΗΜΕΝΟ";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "Ενεργοποίηση και απενεργοποίηση.";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "Νέα συνομιλία";
+"NEWCHATSCENE_TITLE_TOKEN" = "ΠΡΟΣ:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "και %d άλλοι"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "και %d άλλοι"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "Επιλογή επαφών για προσθήκη";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Αρχική";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Ακύρωση δημιουργίας νέας ομάδας";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Δημιουργία νέας ομάδας";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "Φωνητική κλήση";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "Βιντεοκλήση";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "Πληκτρολόγιο";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "Ακύρωση";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "Πίσω";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "Τα στοιχεία μου";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "Άνοιγμα μενού πολυμέσων";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "Κλείσιμο μενού πολυμέσων";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "Βοήθεια";
+"MY_INFO_FEEDBACK_ACTION" = "Αποστολή σχολίων";
+
+"MY_INFO_CONNECTING" = "Σύνδεση...";
+
+"MY_INFO_STATUS" = "Κατάσταση";
+"MY_INFO_CREDIT" = "Πίστωση Skype";
+"MY_INFO_PROFILE_LINK" = "Ο λογαριασμός μου";
+"MY_INFO_SETTINGS" = "Ρυθμίσεις";
+"MY_INFO_SIGN_OUT" = "Αποσύνδεση";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "Εισάγετε μήνυμα διάθεσης";
+"MY_INFO_MOOD_MESSAGE" = "Μήνυμα διάθεσης";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "Αγγίξτε δύο φορές για επεξεργασία";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "Αποστολή σχολίων";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "Αλλάξτε εικόνα προφίλ";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "Λήψη φωτογραφίας";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "Επιλογή υπάρχουσας φωτογραφίας";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "Αφαίρεση εικόνας προφίλ";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "Ρυθμίσεις";
+
+"SETTINGS_GENERAL" = "Γενικά";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "Να επιτρέπονται οι στοχευμένες διαφημίσεις";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "Να επιτρέπεται στη Microsoft η χρήση των πληροφοριών προφίλ σας στο Skype, για την εμφάνιση περισσότερων σχετικών διαφημίσεων σε αυτή την εφαρμογή. <a href=\"skype.com\">Μάθετε περισσότερα</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "Ειδοποιήσεις συνομιλίας";
+"SETTINGS_PUSH_NOTIFICATIONS" = "Ειδοποιήσεις push";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Ειδοποιήσεις push";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "Θα λαμβάνετε ειδοποιήσεις για μηνύματα, ακόμα κι να το Skype είναι κλειστό.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "Δεν θα λαμβάνετε ειδοποιήσεις για μηνύματα όταν το Skype είναι κλειστό.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "Ειδοπ. εντός εφαρμογής";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Ειδοπ. εντός εφαρμογής";
+"SETTINGS_INAPP_SOUNDS" = "Ήχοι εντός εφαρμογής";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "Ήχοι εντός εφαρμογής";
+"SETTINGS_OTHER" = "Άλλος";
+
+"SETTINGS_PRIVACY" = "Απόρρητο";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "Τρόπος εντοπισμού";
+"SETTINGS_PRIVACY_EXPLANATION" = "Αυτά τα στοιχεία επικοινωνίας μπορούν να χρησιμοποιηθούν για να σας βρίσκουν στο Skype.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "Προσθήκη αριθμού τηλεφώνου";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "Εικόνα προφίλ";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "Ορατή σε όλους";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "Ορατή στις επαφές μου";
+
+"SETTINGS_CONTACTS_HEADER" = "Επαφές";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "Προσθήκη φίλων";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Το Skype θα ελέγξει τις Επαφές σας και θα προσθέσει αυτόματα στη λίστα επαφών Skype τα άτομα που γνωρίζετε.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "Θα πρέπει να βρείτε και να προσθέσετε τους φίλους σας στο Skype μη αυτόματα.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "Προεπισκοπήσεις συνδέσεων Web";
+
+"SETTINGS_EMOTICONS_HEADER" = "Emoticon";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "Χρήση μεγάλων emoticon";
+
+"SETTINGS_EDIT_BUTTON" = "Επεξεργασία";
+"SETTINGS_DONE_BUTTON" = "Τέλος";
+
+"SETTINGS_ABOUT" = "Πληροφορίες";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "Πληκτρολογήστε τον αριθμό σας";
+"PNV_HOW_IS_MY_NUMBER_USED" = "Πώς χρησιμοποιείται ο αριθμός μου;";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "Ενδέχεται να ισχύουν τυπικές χρεώσεις SMS.";
+"PNV_ENTER_THE_CODE" = "Εισαγάγετε τον κωδικό";
+"PNV_CODE_SENT" = "Στείλαμε έναν κωδικό στον αριθμό σας";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>Καλέστε με</a> ή <a href='pnv://resendcode'>Επανάληψη αποστολής κωδικού</a>";
+"PNV_VERIFYING_NUMBER" = "Επαλήθευση αριθμού";
+"PNV_NUMBER_VERIFIED" = "Επαληθεύτηκε";
+"PNV_NUMBER_USAGE_EXPLANATION" = "Ο αριθμός σας θα χρησιμοποιηθεί για να σας βρίσκουν οι φίλοι σας στο Skype. Επίσης, θα σας διευκολύνει στην αναζήτηση νέων επαφών.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "Κωδικός";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "Για να αλλάξετε τον τρόπο που θα σας βρίσκουν, μεταβείτε στην επιλογή %@ στις Ρυθμίσεις για να καταργήσετε ή να απενεργοποιήσετε οποιονδήποτε από τους αριθμούς τηλεφώνου σας.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "Εναλλακτικά, αν δεν θέλετε να χρησιμοποιείτε τον αριθμό σας και προτιμάτε να αναζητήσετε και να προσθέσετε μόνοι σας επαφές, επιλέξτε %@ παρακάτω.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Πολιτική απορρήτου του Skype";
+"PNV_NOT_NOW" = "Όχι τώρα";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Αριθμός τηλεφώνου";
+
+"PNV_WELCOME_HEADING" = "Βρείτε φίλους πιο εύκολα από ποτέ";
+"PNV_WELCOME_PARAGRAPH" = "Απλώς προσθέστε τον αριθμό του τηλεφώνου σας και ξεκινήστε.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Επόμενο";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "Ωχ!";
+"PNV_DEFAULT_ERROR_MESSAGE" = "Παρουσιάστηκε κάποιο πρόβλημα με την επαλήθευση του αριθμού σας, δοκιμάστε ξανά αργότερα.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "Έχετε φτάσει στο μέγιστο αριθμό επαληθευμένων αριθμών. Διαγράψτε έναν αριθμό από τις \"Ρυθμίσεις\" πριν προσθέσετε κάποιον άλλο.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "Ο αριθμός που δώσατε δεν είναι έγκυρος. Ελέγξτε τον και δοκιμάστε ξανά.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "Δεν μπορούμε να στείλουμε μήνυμα SMS σε αυτόν τον αριθμό. Ελέγξτε τον και δοκιμάστε ξανά.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "Φαίνεται ότι ο κωδικός έχει λήξει. Επιλέξτε την επανάληψη αποστολής παρακάτω για να λάβετε έναν νέο κωδικό.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "Φαίνεται ότι ο κωδικός αυτός είναι λανθασμένος. Ελέγξτε τον και δοκιμάστε ξανά.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "Παρουσιάστηκε κάποιο πρόβλημα με τη σύνδεση του δικτύου σας. Ελέγξτε τις ρυθμίσεις δικτύου και δοκιμάστε ξανά.";
+"PNV_ERROR_TRY_AGAIN" = "Δοκιμάστε ξανά";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Προσθήκη φίλων στο Skype";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "Θα αναζητούμε άτομα που γνωρίζετε στο Skype και θα τα προσθέτουμε στη λίστα επαφών σας.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Μάθετε περισσότερα";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "Για την αυτόματη προσθήκη νέων επαφών στο Skype, θα ελέγχουμε ανά διαστήματα το βιβλίο διευθύνσεών σας για να βρίσκουμε άτομα που γνωρίζετε. Μην ανησυχείτε, δεν θα επιβαρύνουμε τους φίλους σας με προσκλήσεις.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "Αν αλλάξετε γνώμη οποιαδήποτε στιγμή, απλώς απενεργοποιήστε την επιλογή %@ από τις Ρυθμίσεις. Έτσι, το βιβλίο διευθύνσεών σας δεν θα χρησιμοποιείται πλέον για τον εντοπισμό ατόμων που γνωρίζετε. Αν θέλετε να προσθέσετε κάποιον, θα πρέπει να το κάνετε μη αυτόματα.";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "Για να αλλάξετε τον τρόπο που θα σας βρίσκουν, μεταβείτε στην επιλογή %@ στις Ρυθμίσεις για να καταργήσετε ή να απενεργοποιήσετε οποιονδήποτε από τους αριθμούς τηλεφώνου σας.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Πολιτική απορρήτου του Skype";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "Λάβετε υπόψη ότι το Skype δεν μπορεί να χρησιμοποιηθεί για κλήσεις έκτακτης ανάγκης";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "Βρείτε φίλους πιο εύκολα από ποτέ";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "Προστέθηκαν νέες επαφές";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "Προσθήκη επαφής";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "Ακύρωση";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "Αναζήτηση";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Ακύρωση";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "Αναζητήστε άτομα στο Skype που χρησιμοποιούν το όνομα Skype, τη διεύθυνση email ή το πλήρες όνομά τους.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "Η επαφή Skype υπάρχει ήδη";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "Δεν βρέθηκε καμία αντιστοίχηση";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "Πίσω";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "Προώθηση";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "Κοινή χρήση";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "Πληροφορίες";
+"ABOUT_APPLICATION_VERSION" = "Έκδοση Skype";
+"ABOUT_COPYRIGHT" = "© 2003-2016 Skype & Microsoft\nΕκκρεμούν διπλώματα ευρεσιτεχνίας";
+"ABOUT_THIRD_PARTY_NOTICES" = "Γνωστοποιήσεις τρίτων";
+"ABOUT_PRIVACY_POLICY" = "Πολιτική απορρήτου";
+"ABOUT_TERMS_OF_USE" = "Όροι Χρήσης";
+"ABOUT_COPYRIGHT_TEXT" = "Η ονομασία Skype, τα αντίστοιχα εμπορικά σήματα και λογότυπα, καθώς και το λογότυπο \"S\" αποτελούν σήματα κατατεθέντα της Skype ή των σχετικών νομικών προσώπων.\n\nΠροειδοποίηση: Το παρόν πρόγραμμα προστατεύεται από το νόμο περί πνευματικής ιδιοκτησίας και από διεθνείς συμβάσεις. Η μη εξουσιοδοτημένη αναπαραγωγή ή διανομή αυτού του προγράμματος ή τμήματος αυτού μπορεί να οδηγήσει σε σοβαρές αστικές και ποινικές κυρώσεις και θα ασκηθούν ποινικές διώξεις στο μέγιστο επιτρεπόμενο από τη νομοθεσία βαθμό.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "Σφάλμα";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "Μέσω email";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "Να με ενημερώνετε για νέες προσφορές και λειτουργίες του Skype μέσω email";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Να με ενημερώνετε για νέες προσφορές και λειτουργίες του Skype:";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "Προσθήκη εικόνας προφίλ";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "Email";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "john@example.com";
+"CREATEACCOUNT_FULLNAME_LABEL" = "Ονοματεπώνυμο";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "Όνομα";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "Επίθετο";
+"CREATEACCOUNT_PASSWORD_LABEL" = "Κωδικός πρόσβασης";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6–20 χαρακτήρες";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "Επανάληψη κωδικού πρόσβασης";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Όνομα Skype";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "Απαιτείται";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "Αριθμός τηλεφώνου";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "με κωδικό χώρας";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "Ορισμένα πεδία παραπάνω δεν έχουν συμπληρωθεί";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "Οι κωδικοί πρόσβασής σας δεν ταιριάζουν. Ελέγξτε και δοκιμάστε ξανά.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Όροι Χρήσης του Skype";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "Ναι, έχω διαβάσει και αποδέχομαι τους <a href='%1$@'>Όρους χρήσης του Skype</a> και την <a href='%2$@'>Πολιτική απορρήτου του Skype.</a>";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "Δεν είναι δυνατές οι κλήσεις έκτακτης ανάγκης με το Skype";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Το Skype δεν αντικαθιστά την τηλεφωνική σας γραμμή και δεν μπορεί να χρησιμοποιηθεί για κλήσεις έκτακτης ανάγκης.";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "Συμφωνώ";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "Πρέπει να έχει μήκος 6-32 χαρακτήρες.";
+"SkyLib::TOO_LONG" = "Πρέπει να έχει μήκος 6-32 χαρακτήρες.";
+"SkyLib::CONTAINS_INVALID_CHAR" = "Μη έγκυρος χαρακτήρας, π.χ. Σ, à, ß.";
+"SkyLib::CONTAINS_SPACE" = "Δεν μπορεί να περιλαμβάνει κενό διάστημα ή tab.";
+"SkyLib::SAME_AS_USERNAME" = "Παρόμοιος με το όνομά σας Skype.";
+"SkyLib::INVALID_FORMAT" = "Μη έγκυρη μορφή.";
+"SkyLib::CONTAINS_INVALID_WORD" = "Πολύ κοινός, όπως abcd, Skype.";
+"SkyLib::TOO_SIMPLE" = "Πρέπει να περιλαμβάνει τουλάχιστον 1 γράμμα και 1 αριθμό.";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "Πρέπει να αρχίζει με γράμμα (A-Ζ).";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "Επιλέξτε ένα νέο Όνομα Skype.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "Δοκιμάστε έναν νέο κωδικό πρόσβασης.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "Δοκιμάστε μια νέα διεύθυνση email.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "Παρακαλούμε προσπαθήστε ξανά.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Όνομα Skype";
+"SkyLib::ACCOUNT_PASSWORD" = "Κωδικός πρόσβασης";
+"SkyLib::CONTACT_EMAILS" = "Email";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "Ο χρήστης <name>%@</name> μετονόμασε αυτή την ομάδα σε \"%@\"";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Αρχική σελίδα Skype";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "Ο χρήστης <name>%@</name> ενημέρωσε τη φωτογραφία της ομάδας.";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "Ο χρήστης <name>%@</name> ενημέρωσε την ομάδα";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "Απόκρυψη";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "%dνέες ειδοποιήσεις";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "Μία νέα ειδοποίηση";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "Καμία νέα ειδοποίηση";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "Γεια σου, θα ήθελα να σε προσθέσω στο Skype.";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "Αίτημα επαφής";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. Σε %3$@";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "Θέλει να σας προσθέσει στο Skype";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "Όχι τώρα";
+"ALLOW_BUTTON" = "Να επιτρέπεται";
+"PERMISSION_VIEW_TITLE" = "Ας κάνουμε μερικές ρυθμίσεις";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στο μικρόφωνό σας.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στην κάμερά σας.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στις επαφές σας.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στις γνωστοποιήσεις σας.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στο μικρόφωνο και την κάμερά σας.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στο μικρόφωνο και τις επαφές σας.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στο μικρόφωνο και τις γνωστοποιήσεις σας.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στην κάμερα και τις επαφές σας.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στην κάμερα και τις γνωστοποιήσεις σας.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στις επαφές και τις γνωστοποιήσεις σας.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στο μικρόφωνο, την κάμερα και τις γνωστοποιήσεις σας.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στο μικρόφωνο, τις επαφές και τις γνωστοποιήσεις σας.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στο μικρόφωνο, την κάμερα και τις γνωστοποιήσεις σας.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στην κάμερα, τις επαφές και τις γνωστοποιήσεις σας.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Για να έχετε την καλύτερη εμπειρία Skype, χρειαζόμαστε πρόσβαση στο μικρόφωνο, την κάμερα, τις επαφές και τις γνωστοποιήσεις σας.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "Επαφές";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "Μικρόφωνο";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "Κάμερα";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "Ειδοποιήσεις";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "Είστε βέβαιοι;";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "Χωρίς πρόσβαση σε αυτές τις δυνατότητες, δεν θα μπορείτε να πραγματοποιείτε ή να λαμβάνετε κλήσεις σωστά ούτε να ενημερώνεστε για εισερχόμενες κλήσεις και μηνύματα.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "Η λίστα επαφών σας θα είναι κενή και δεν θα μπορείτε να πραγματοποιείτε ή να λαμβάνετε κλήσεις στο Skype.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Μάθετε περισσότερα";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "Μικρόφωνο και κάμερα";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "Για να πραγματοποιείτε ή να λαμβάνετε κλήσεις στο Skype, χρειαζόμαστε πρόσβαση στο μικρόφωνο και την κάμερά σας. Δυστυχώς, χωρίς αυτά τα δικαιώματα, το Skype δεν θα λειτουργεί.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "Επαφές";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "Για να δημιουργήσουμε τη λίστα επαφών σας στο Skype, χρειαζόμαστε πρόσβαση στις Επαφές. Θα ελέγχουμε ανά διαστήματα τις Επαφές σας για να βρίσκουμε άτομα που γνωρίζετε στο Skype. Μην ανησυχείτε, δεν θα επιβαρύνουμε τους φίλους σας με προσκλήσεις.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "Αν αλλάξετε γνώμη οποιαδήποτε στιγμή, απλώς απενεργοποιήστε την επιλογή %@ από τις Ρυθμίσεις. Έτσι, το βιβλίο διευθύνσεών σας δεν θα χρησιμοποιείται πλέον για τον εντοπισμό ατόμων που γνωρίζετε. Αν θέλετε να προσθέσετε κάποιον, θα πρέπει να το κάνετε μη αυτόματα";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "Ειδοποιήσεις";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "Για να σας ενημερώνουμε για εισερχόμενες κλήσεις και μηνύματα όταν το Skype είναι κλειστό, χρειαζόμαστε πρόσβαση στις Ειδοποιήσεις. Επίσης, αν δεν θέλετε να σας ενοχλούν, μπορείτε να αποφασίσετε αργότερα αν θα απενεργοποιήσετε τις ειδοποιήσεις για μεμονωμένες συνομιλίες.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "Να επιτρέπεται η πρόσβαση στις Επαφές";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Το Skype χρειάζεται πρόσβαση στις Επαφές για να βρει άτομα που γνωρίζετε. Για να επιτρέψετε την πρόσβαση, μεταβείτε στις Ρυθμίσεις και ενεργοποιήστε την επιλογή Επαφές.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "Παράλειψη";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "Συνδεθείτε";
+"ONBOARDING_GET_STARTED_BUTTON" = "Γρήγορα αποτελέσματα";
+
+"ONBOARDING_IPHONE_TITLE1" = "Επανασχεδιασμένο για iPhone";
+"ONBOARDING_IPAD_TITLE1" = "Επανασχεδιασμένο για iPad";
+"ONBOARDING_TEXT1" = "Το Skype είναι πιο εύκολο στη χρήση από ποτέ - είτε στέλνετε μηνύματα σε φίλους είτε κάνετε κλήσεις.";
+
+"ONBOARDING_TITLE2" = "Βρείτε τα πάντα";
+"ONBOARDING_TEXT2" = "Αναζητήστε επαφές, ομάδες ή ακόμα και προηγούμενες συνομιλίες.";
+
+"ONBOARDING_IPHONE_TITLE3" = "Κάντε περισσότερα";
+"ONBOARDING_IPAD_TITLE3" = "Κάντε περισσότερα στο Skype";
+
+"ONBOARDING_IPHONE_TEXT3" = "Μοιραστείτε την τοποθεσία και τις φωτογραφίες σας ή δείτε προεπισκοπήσεις συνδέσεων web - όλα αυτά ενώ επικοινωνείτε με τους φίλους σας.";
+"ONBOARDING_IPAD_TEXT3" = "Απολαύστε μεγαλύτερα emoticon, προεπισκοπήσεις συνδέσεων web και δημιουργήστε νέες ομάδες απευθείας από το iPad σας.";
+
+"ONBOARDING_TITLE4" = "Επικοινωνήστε με τους φίλους σας καλύτερα μέσω Skype";
+"ONBOARDING_TEXT4" = "Προσθέστε τον τηλεφωνικό αριθμό σας στο Skype, για να σας βρίσκουν οι φίλοι σας.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "Εύκολη κοινή χρήση";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Απλά πατήστε το κουμπί κοινής χρήσης, για να στείλετε τοποθεσίες web ή φωτογραφίες από το Άλμπουμ κάμερας σε φίλους στο Skype.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "Προσθ. συμ/χόντων";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "ΠΡΟΣΘΗΚΗ:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "Ήδη συμμετέχων";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "Βρίσκεται ήδη στην κλήση";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "ΣΕ ΑΥΤΗ ΤΗΝ ΚΛΗΣΗ";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "ΔΕΝ ΣΥΜΜΕΤΕΧΟΥΝ ΣΕ ΑΥΤΗ ΤΗΝ ΚΛΗΣΗ";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "Πραγματοποιείται σύνδεση...";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "Σύνδεση με %@";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "Πραγματοποιείται κλήση...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "Κλήση %@";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "Κλήση σε αναμονή";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "Κλήση σε αναμονή από το χρήστη %@";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "Προσθήκη αγαπημένων";
+"ADDFAVORITES_EMPTY_TITLE" = "Συγκεντρώστε όλα τα αγαπημένα σας άτομα σε ένα σημείο. <a href=\"add-favorites\">προσθέστε αγαπημένα</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "επαφές Skype";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "Μεταφορά αρχείου";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ ένας άλλος";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ %d άλλοι";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "Στείλατε αυτό το αρχείο από άλλη συσκευή.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "Στείλατε αυτά τα αρχεία από άλλη συσκευή.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "Η συγκεκριμένη έκδοση του Skype δεν υποστηρίζει τη λήψη αρχείων.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "Η εφαρμογή αυτή υποστηρίζει μόνο τις νέες δυνατότητες κοινής χρήσης φωτογραφιών του Skype.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "Αποστείλατε ένα αρχείο";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "Αποστείλατε %d αρχεία";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "Σας έστειλε ένα αρχείο";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "Σας έστειλε %d αρχεία";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "Συνδεδεμένος-η";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "Μην ενοχλείτε";
+"CONTACT_AVAILABILITY_AWAY" = "Λείπω";
+"CONTACT_AVAILABILITY_INVISIBLE" = "Αόρατος-η";
+"CONTACT_AVAILABILITY_OFFLINE" = "Αποσυνδεδεμένος-η";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "Διαθέσιμος";
+"CONTACT_AVAILABILITY_BUSY" = "Απασχολημένος";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "Αποκλεισμένη επαφή";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Αγαπημένα";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Αγαπημένα";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Αυτό το άτομο είναι αγαπημένο. Αγγίξτε δύο φορές για αφαίρεση από τα αγαπημένα.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Αυτό το άτομο δεν είναι αγαπημένο. Αγγίξτε δύο φορές για προσθήκη στα αγαπημένα.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Αγαπημένα";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Αγαπημένα";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Αυτή η ομάδα δεν είναι στα αγαπημένα σας. Αγγίξτε δύο φορές για προσθήκη στα αγαπημένα.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Αυτή η ομάδα είναι στα αγαπημένα σας. Αγγίξτε δύο φορές για αφαίρεση από τα αγαπημένα.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@ %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@ %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "ΟΝΟΜΑ SKYPE";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "ΙΣΤΟΤΟΠΟΣ";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "ΣΧΕΤΙΚΑ ΜΕ ΕΜΕΝΑ";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "ΓΕΝΕΘΛΙΑ";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "ΦΥΛΟ";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "ΓΛΩΣΣΑ";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "ΕΠΑΦΕΣ";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "ΔΥΝΑΤΟΤΗΤΕΣ";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "ΑΠΟΡΡΗΤΟ";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "ΔΗΜΙΟΥΡΓΗΘΗΚΕ ΑΠΟ";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "ΠΕΡΙΓΡΑΦΗ";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "Αποστολή και παραλαβή άμεσων μηνυμάτων και φωτογραφιών.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "Αυτό το bot θα αποκτήσει πρόσβαση στο εμφανιζόμενο όνομα, το Όνομα Skype και σε μηνύματα συνομιλίας ή περιεχόμενο που κοινοποιείται από εσάς ή άλλους συμμετέχοντες της ομάδας.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "Γυναίκα";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "Άνδρας";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "Αποκλεισμός επαφής";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "Αναίρεση αποκλεισμού επαφής";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "Κατάργηση επαφής";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "Κατάργηση επαφής";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "Ο χρήστης %@ θα καταργηθεί από τη λίστα επαφών σας.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "Κατάργηση";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "Ακύρωση";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "Απόκρυψη";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "Ομαδικό προφίλ";
+"GROUPPROFILE_NOTIFICATIONS" = "Ειδοποιήσεις";
+"GROUPPROFILE_MENU_TITLE" = "Προβολή προφίλ";
+"GROUPPROFILE_LEAVE_CHAT" = "Αποχώρηση από ομάδα";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "Συμμετέχοντες";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "Πρόσκληση";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "Προσκλήσεις συνομιλίας";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "Το ιστορικό της συνομιλίας θα είναι ορατό σε όλους";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "Ενεργοποιήστε τις προσκλήσεις συνομιλίας για να προσκαλέσετε οποιονδήποτε σε αυτήν τη συνομιλία.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "Μόνο επαφές Skype μπορούν να προστεθούν σε αυτήν τη συνομιλία.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "Προσκαλέστε οποιονδήποτε σε αυτήν τη συνομιλία, ακόμη και εάν δεν είναι στο Skype.";
+"GROUPPROFILE_CHAT_HISTORY" = "Ιστορικό συνομιλίας";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "Το ιστορικό της συνομιλίας είναι κρυφό αυτήν τη στιγμή για τους νέους συμμετέχοντες.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "Το ιστορικό της συνομιλίας είναι ορατό σε όλους.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "Προσθήκη συμμετεχόντων";
+"GROUP_ADMIN_STRING" = "%@ (διαχειριστής)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "Προσκλήσεις συνομιλίας";
+"GROUPPROFILE_ALERT_BODY" = "Η πρόσκληση για αυτήν τη συνομιλία δεν είναι διαθέσιμη αυτήν τη στιγμή, δοκιμάστε ξανά αργότερα.";
+"GROUPPROFILE_ALERT_BUTTON" = "ΟΚ";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Συμμετοχή στη συνομιλία μου στο Skype: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "Συμμετοχή στη συνομιλία μου";
+"INVITES_MAIL_BODY" = "Γεια σας,\nέχω δημιουργήσει μια ομάδα στο Skype για να συνομιλούμε, να μοιραζόμαστε και να συνεργαζόμαστε.\nΛάβετε μέρος κάνοντας κλικ στη σύνδεσμο:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "Μετονομασία ομάδας";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "Μετονομασία ομάδας";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "Μετονομασία επαφής";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "Πατήστε δύο φορές για να μετονομάσετε την επαφή";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "Προσθήκη bot";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "Αποστολή αιτήματος επαφής";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "Νέα αποστολή αιτήματος επαφής";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "Το αίτημα επαφής εστάλη";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "Αποδοχή";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "Απόρριψη";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "Ο χρήστης <name>%@</name> θέλει να σας προσθέσει στο Skype"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "Άνοιγμα";
+"PUSH_CHAT_CALL" = "Κλήση";
+"PUSH_CHAT_TEXT_REPLY" = "Απάντηση";
+"PUSH_CALL_ANSWER" = "Απάντηση στο χρήστη";
+"PUSH_CALL_DECLINE" = "Απόρριψη";
+"PUSH_CALL_VIDEO_VIDEO" = "Βιντεοκλήσεις";
+"PUSH_CALL_VIDEO_AUDIO" = "Φωνητικές κλήσεις";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "Μήνυμα";
+"PUSH_MISSED_CALL_CALLBACK" = "Επιστροφή κλήσης";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "Πρόβλημα με τις Επαφές";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "Παρουσιάστηκε πρόβλημα πρόσβασης σε αριθμούς τηλεφώνου από τις Επαφές σας. Για να διορθώσετε το πρόβλημα, δοκιμάστε να συγχρονίσετε ξανά τους λογαριασμούς αλληλογραφίας στις Ρυθμίσεις.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "Αποθήκευση αριθμού τηλεφώνου";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "Δεν υπάρχουν κλήσεις που να ταιριάζουν.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "Μία κλήση που ταιριάζει.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "%d κλήσεις που ταιριάζουν.";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@), τελευταία κλήση: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@, τελευταία κλήση: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "Ο χρήστης %@ είναι επαφή του βιβλίου διευθύνσεων.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Σύνδεση στο Skype";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "Ο χρήστης %@ είναι επαφή του βιβλίου διευθύνσεων. Μπορείτε να τον καλέσετε και να συνομιλήσετε μαζί του στο Skype.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Δεν είναι ακόμα επαφή";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "Διαγραφή κειμένου";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Ακύρωση";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "Αναζήτηση Skype";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "Εύρεση νέων επαφών";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "Πατήστε για να βρείτε νέες επαφές";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "Αναζήτηση για \"%@\"";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Κατάλογος Skype";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "Αναζήτηση ιστορικού";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "Εκκαθάριση";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "Επαφές";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "Δεν βρέθηκε καμία αντιστοίχηση";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "Ομάδες";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "Συνομιλίες";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "Αποθήκευση αριθμού";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "Αποθήκευση αριθμού";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "Πληκτρολογήστε όνομα";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "Πληκτρολογήστε αριθμό";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "Αποθήκευση αριθμού";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "Ο αριθμός αποθηκεύτηκε";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "Μη έγκυρος αριθμός";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "Δεν μπορείτε να προσθέσετε αυτόν τον αριθμό διότι είναι μη έγκυρος. Δοκιμάστε με έναν άλλο.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "Μη έγκυρος αριθμός";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "Δεν μπορείτε να προσθέσετε αριθμούς έκτακτης ανάγκης στο Skype.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "Απόρριψη";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "Είστε βέβαιοι ότι θέλετε να πραγματοποιήσετε κλήση προς %@;";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "Είστε βέβαιοι ότι θέλετε να πραγματοποιήσετε βιντεοκλήση προς %@;";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "Φωνητική κλήση";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "Βιντεοκλήση";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "Κλήση";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "Προβολή αρχικού";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "Προβολή μετάφρασης";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "Μοιραστήκατε μια τοποθεσία";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "Μοιράστηκε μια τοποθεσία με εσάς";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "Μοιράστηκε μια τοποθεσία (%@)";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "Αγγίξτε δύο φορές για άνοιγμα";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "Οδηγίες προς την τοποθεσία";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "Τοποθεσία";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "Κοινοποίηση της τοποθεσίας σας";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "Αποστολή μιας τοποθεσίας";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "Πρόσβαση στην τοποθεσία";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "Εάν δεν επιτρέψετε τη χρήση της τοποθεσίας σας, δεν θα μπορείτε να κοινοποιήσετε την τοποθεσία σας σε φίλους στο Skype.";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Μεταβείτε στις ρυθμίσεις της συσκευής σας και, στη συνέχεια, στην επιλογή \"Απόρρητο\" για την παραχώρηση άδειας.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "Πρόσβαση στις επαφές";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "Χρειαζόμαστε πρόσβαση στις επαφές σας για να εμφανίσουμε το βιβλίο διευθύνσεών σας στο Skype.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "Μεταβείτε στις ρυθμίσεις της συσκευής σας και, στη συνέχεια, στην επιλογή \"Απόρρητο\" για την παραχώρηση άδειας.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "Ωχ όχι";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "Παρουσιάστηκε κάποιο πρόβλημα με τη φόρτωση του χάρτη.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "Ελέγξτε τη σύνδεσή σας στο δίκτυο και προσπαθήστε ξανά.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "Εκκαθάριση";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "Εκκαθάριση των πινεζών που προστέθηκαν";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "Κοινοποίηση τοποθεσίας";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "Δεν μπορείτε πλέον να κοινοποιήσετε την τοποθεσία σας σε αυτήν τη συνομιλία.";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "ΟΚ";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "Κοινοποίηση της τοποθεσίας";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "Αναζήτηση";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "Δεν βρέθηκαν αποτελέσματα";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "Παρουσιάστηκε κάποιο πρόβλημα με την εύρεση αυτής της τοποθεσίας, περιμένετε και δοκιμάστε σιγά.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Αρχική";
+"TIMELINE_ICON_DIALPAD" = "Πληκτρολόγιο κλήσεων";
+"TIMELINE_ICON_PEOPLE" = "Επαφές";
+"TIMELINE_SWIPEACTION_MUTE" = "Σίγαση";
+"TIMELINE_SWIPEACTION_UNMUTE" = "Κατάργηση σίγασης";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "Ειδοποιήσεις push";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "Ενεργοποιήστε τις ειδοποιήσεις push για να λαμβάνετε ενημερώσεις για κλήσεις και μηνύματα όταν είστε εκτός Skype.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "Λάβετε ενημερώσεις για κλήσεις και μηνύματα όταν είστε εκτός Skype. Μεταβείτε στις Ρυθμίσεις του iPhone > Ειδοποιήσεις και ενεργοποιήστε τις ειδοποιήσεις Skype.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "Λάβετε ενημερώσεις για κλήσεις και μηνύματα όταν είστε εκτός Skype. Μεταβείτε στις \"Ρυθμίσεις\" του iPhone, στη συνέχεια επιλέξτε \"Κέντρο γνωστοποιήσεων\" και ενεργοποιήστε τις ειδοποιήσεις Skype.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "Ειδοποιήσεις push";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "Για να μπορείτε να λάβετε ειδοποιήσεις push, θα πρέπει να ενεργοποιήσετε πρώτα τις ειδοποιήσεις Skype από τις ρυθμίσεις της συσκευής σας.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "Άνοιγμα";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "Προβολή";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "Ακρόαση";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "Αναπαραγωγή";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Παρουσιάστηκε κάποιο πρόβλημα κατά το άνοιγμα του μηνύματος. Ελέγξτε τη σύνδεση του δικτύου σας και δοκιμάστε ξανά.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "Κοινοποιήθηκε ένα αρχείο πολυμέσων";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "Αγγίξτε δύο φορές για άνοιγμα";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "Η πηγή δεν είναι έγκυρη";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "Φωτογραφία";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "Λήψη φωτογραφίας";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "Επιλογή υπάρχουσας φωτογραφίας";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "Επιλέξτε υπάρχουσα φωτογραφία ή βίντεο";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "Ακύρωση";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "Επιλογή";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "αγγίξτε δύο φορές για κλείσιμο";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "Έστειλε φωτογραφία. Πατήστε δύο φορές για άνοιγμα";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "Λήψη φωτογραφίας";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "Αποστολή φωτογραφίας";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "Παρουσιάστηκε κάποιο πρόβλημα με την αποστολή αυτής της φωτογραφίας";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "Παρουσιάστηκε κάποιο πρόβλημα με τη λήψη αυτής της φωτογραφίας";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "αγγίξτε δύο φορές για επανάληψη";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "Αποστολή";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "Άκυρο";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "Το βίντεο δεν μπορεί να αποσταλεί, επειδή είναι μεγαλύτερο από %d MB";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "Η φωτογραφία δεν μπορεί να αποσταλεί, επειδή είναι μεγαλύτερη από %d MB";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "Έστειλε ένα βιντεομήνυμα. Πατήστε δύο φορές για άνοιγμα";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "Λήψη βιντεομηνύματος";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "Αποστολή βιντεομηνύματος";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "Παρουσιάστηκε πρόβλημα κατά την αποστολή αυτού του βιντεομηνύματος";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "Παρουσιάστηκε πρόβλημα κατά τη λήψη αυτού του βιντεομηνύματος";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "Το αρχείο στάλθηκε. Πατήστε δύο φορές για λήψη";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "Λάβατε ένα αρχείο. Πατήστε δύο φορές για άνοιγμα";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "Πραγματοποιείται λήψη";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "Έγινε λήψη του αρχείου %@. Πατήστε δύο φορές για άνοιγμα";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "Το αρχείο είναι μεγαλύτερο από %d MB. Ενδέχεται να ισχύουν χρεώσεις δεδομένων";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "Μη διαθέσιμο αρχείο";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "Επανεκκίνηση";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "Παρουσιάστηκε πρόβλημα κατά τη λήψη αυτού του αρχείου";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "Αυτό το αρχείο ενδέχεται να μην είναι ασφαλές";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "Δεν είναι δυνατή η λήψη, εντοπίστηκε ιός";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "Αναμονή για σύνδεση στο Internet…";
+"FILE_TRANSFER_BUTTON_CANCEL" = "Άκυρο";
+"FILE_TRANSFER_BUTTON_RETRY" = "Επανάληψη";
+"FILE_TRANSFER_LABEL_CANCELED" = "Ακυρώθηκε";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "Λήψη";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "Μάθετε περισσότερα";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "Τα κοινόχρηστα αρχεία διαγράφονται από το Skype μετά από %d ημέρες. Για να διατηρήσετε ένα αρχείο για περισσότερο χρόνο, αποθηκεύστε το στη συσκευή σας.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "Μη διαθέσιμο αρχείο";
+"FILE_SENDING_LABEL_ERROR" = "Παρουσιάστηκε πρόβλημα κατά την αποστολή αυτού του αρχείου";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "Αποδοχή αρχείου;";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "Να αποδέχεστε αρχεία μόνο από άτομα που εμπιστεύεστε. Θέλετε να αποδεχτείτε το αρχείο %@ από το χρήστη %@;";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "Προειδοποίηση - αυτό το αρχείο ενδέχεται να είναι επισφαλές για τον υπολογιστή/τη συσκευή σας";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "Θέλετε να αποδεχτείτε το αρχείο %@ από το χρήστη %@;";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "Να μην ερωτηθώ ξανά";
+"FILE_TRANSFER_ACCEPT" = "Αποδοχή";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "Ανεπαρκής χώρος";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "Μεταβείτε στις Ρυθμίσεις > Γενικά > Χρήση, για να ελευθερώσετε χώρο αποθήκευσης σε αυτήν τη συσκευή.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "Ο χρήστης απέρριψε την πρόσβαση της εφαρμογής στα μέσα τους";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "Για να επιτρέπεται, μεταβείτε στις Ρυθμίσεις > Απόρρητο > Φωτογραφίες και ενεργοποιείστε το Skype.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "Στείλατε φωτογραφία";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "Σας έστειλε φωτογραφία";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "Ο χρήστης %@ έστειλε μια φωτογραφία.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "Για να δείτε αυτή την κοινόχρηστη φωτογραφίας, μεταβείτε σε: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "Μη διαθέσιμη φωτογραφία";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "Αυτή η φωτογραφία δεν είναι διαθέσιμη αυτήν τη στιγμή.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "Ακύρωση";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "Επανάληψη";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "Μη διαθέσιμη φωτογραφία";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "Αυτή η φωτογραφία δεν είναι διαθέσιμη αυτήν τη στιγμή.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "OK";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "Αποθήκευση φωτογραφίας";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "Ακύρωση";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "Ωχ!";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "Παρουσιάστηκε κάποιο πρόβλημα με την αποθήκευση αυτής της φωτογραφίας.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "Επανάληψη";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "Ακύρωση";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "Πολυμέσα web";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "Αναζήτηση Giphy";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Ενημέρωση Skype";
+"FORCE_UPGRADE_CAPTION" = "Αυτή η έκδοση του Skype είναι παλιά. Αποκτήστε την τελευταία έκδοση και επωφεληθείτε από τις νέες λειτουργίες και βελτιώσεις.";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "Άμεση λήψη";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "Σας έστειλε ένα Moji";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "Στείλατε ένα Moji";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "Λήψη Moji";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "Παρουσιάστηκε πρόβλημα με τη λήψη αυτού του Moji";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "Πατήστε δύο φορές για να δοκιμάσετε ξανά";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "Αναπαραγωγή Moji";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "Αυτό το περιεχόμενο αφαιρέθηκε";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "Αυτό το περιεχόμενο έληξε";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "Τελευταία εμφάνιση πριν από λίγο";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "Τελευταία εμφάνιση πριν από μια εβδομάδα";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "Τηλέφωνο";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "Βρείτε άμεσα φίλους, μηνύματα ή νέες επαφές";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Moji του Skype";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "Διασκεδάστε περισσότερο με τα Moji τώρα με αποσπάσματα από %@!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "Πεδίο αναζήτησης";
+
+"TAB_RECENT_TITLE" = "Πρόσφατα";
+"TAB_CONTACTS_TITLE" = "Επαφές";
+"TAB_CALLS_TITLE" = "Κλήση τηλεφώνων";
+"TAB_MYINFO_TITLE" = "Στοιχεία";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "Όλα";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "Μη αναγνωσμένα";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "Όλα";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "Συνδεδεμένος";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "Σας ευχαριστούμε!";
+"APPSTORE_RATING_SUBTITLE" = "Μοιραστείτε την αγάπη και αφήστε μια αξιολόγηση στο App Store. Θα σας πάρει μόνο μια στιγμή.";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "Αξιολόγηση εφαρμογής";
+
+"CONTACTS_ADD_FAVORITES" = "Προσθήκη αγαπημένων";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "Αναζήτηση επαφών";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "Δεν υπάρχει σύνδεση στο διαδίκτυο";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "Είστε εκτός σύνδεσης. <a href=\"reconnect\">Επανασυνδεθείτε</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Το Skype αντιμετωπίζει πρόβλημα";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "Πραγματοποιείται σύνδεση";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "Συνδέθηκε";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "ενημέρωση συνομιλιών...";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "Διαγραφή συνομιλίας";
+"DELETECHAT_ALERT_MESSAGE"              = "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτήν τη συνομιλία από τη συσκευή; Θα διαγραφεί επίσης το ιστορικό της συνομιλίας.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "Διαγραφή";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "Επεξεργασία";
+"LIST_EDITING_CANCEL" = "Άκυρο";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "Σήμ. όλων ως αναγν.";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "Σήμανση ως αναγνωσμένου";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "Διαγραφή όλων";
+"LIST_EDITING_DELETE_TOOLBAR" = "Διαγραφή (%d)";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "Διαγραφή όλων των συνομιλιών";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "Διαγραφή όλων";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "Απόκρυψη όλων";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "Θα ρίξω μια ματιά αργότερα";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "Νέα κλήση";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "σε αναμονή";
+"CALLING_BANNER_STATUS_MUTED" = "σε σίγαση";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Με πιστοποίηση Skype";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "Έναρξη νέας ομαδικής κλήσης";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "Έναρξη νέας ομαδικής κλήσης";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "Η τρέχουσα κλήση θα τερματιστεί (ενημερώστε το άλλο άτομο) και θα ξεκινήσει η νέα ομαδική κλήση";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "Κλήση";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "Άκυρο";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "δημιούργησε μια <a href=\"%@\">ομαδική συνομιλία.</a>";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "Αποστολή βιντεομηνύματος για τη γιορτή του Αγίου Βαλεντίνου";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "Βιντεομηνύματα για τη γιορτή του Αγίου Βαλεντίνου";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "Κάντε κάτι ξεχωριστό για τους αγαπημένους σας";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "Μεταδώστε την αγάπη";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "Κάντε κάτι ξεχωριστό για τους αγαπημένους σας, στέλνοντας ένα μήνυμα για τη γιορτή του Αγίου Βαλεντίνου.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "Όχι τώρα";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "Αποστολή σε επαφές";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "Κοινή χρήση βίντεο";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "Χρόνια πολλά για τη γιορτή του Αγίου Βαλεντίνου";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "Χρόνια πολλά για τη\nγιορτή του Αγίου Βαλεντίνου";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "Έφτιαξα μόνο για σένα ένα βιντεομήνυμα ειδικά για τη γιορτή του Αγίου Βαλεντίνου. Φτιάξε και εσύ το δικό σου στη διεύθυνση https://go.skype.com/vmhci";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "Αποστολή μηνύματος ειδικά για τη γιορτή του Αγίου Βαλεντίνου...";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "Σίγαση";
+"INCALLCONTROLS_VIDEO_CAPTION" = "Βίντεο";
+"INCALLCONTROLS_AUDIO_CAPTION" = "Ηχείο";
+"INCALLCONTROLS_ADD_CAPTION" = "Προσθήκη";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "Άλλα";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "Πληκτρολόγιο";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "Περισσότερες ενέργειες";
+"GVC_CALLING_ME_ON_RIBBON" = "Εγώ";
+
+"GVC_NOTIFICATION_HUNG_UP" = "Ο χρήστης %@ έφυγε";
+"GVC_NOTIFICATION_JOINED" = "Ο χρήστης %@ συμμετέχει";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "Δημιουργήστε μια ομάδα - τώρα με ομαδική βιντεοκλήση.";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "Έναρξη ομαδικής βιντεοκλήσης κατευθείαν από τη συνομιλία.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "Προσπαθήστε να αλλάξετε την προβολή.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "Πατήστε ξανά για να ξεκαρφιτσώσετε αυτό το άτομο.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "Μετατρέψτε αυτήν την κλήση σε μια δωρεάν ομαδική βιντεοκλήση.";
+"GVC_INTERSTITIAL_TITLE" = "Υποδεχτείτε τις ομαδικές βιντεοκλήσεις";
+"GVC_INTERSTITIAL_CAPTION" = "Μαζέψτε όλους τους χρήστες μαζί, όποτε θέλετε, δωρεάν.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "Το κατάλαβα";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "Προσθήκη συμμετεχόντων";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";

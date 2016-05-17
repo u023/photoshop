@@ -1,0 +1,2967 @@
+/* Push ^_^ */
+
+/* 1-1 and group chat push notification format: sender, body (one letter to save space in notification payload) */
+"M" = "%@: %@";
+
+/* Video message push notification format: sender */
+"PNVIMFMT" = "%@ lähetti sinulle videoviestin";
+
+/* Photo sharing message push notification format: sender */
+"PNPICFMT" = "%@ lähetti sinulle kuvan";
+
+/* Moji message push notification format: sender */
+"PNMOJIFMT" = "%@ lähetti sinulle Mojin";
+
+/* Audio message push notification format: sender */
+"PNAUDFMT" = "%@ lähetti sinulle ääniviestin";
+
+/* File message push notification format: sender */
+"PNFSFMT" = "%@ lähetti sinulle tiedoston";
+
+/* Someone hearted a message of yours push notification format */
+"PNHRTFMT" = "Uusi tykkäys";
+
+/* Backwards compatible APN format strings. These format string were used in 4.17. If the old 4.17 fails to unregister,
+   and the new 5.0 has not yet registered, APNs with these formats can be received. */
+"PN_SINGLE_IM_FMT" = "%@: %@";  // single IM
+"PGCFMT" = "%@";                // group chat
+
+
+/* Translator disclaimer. This string will be read by the Translator when a translated call is about to start. */
+"TRANSLATOR_DISCLAIMER" = "Hi. This call is being translated by Skype.  If you continue, the call will be recorded and may be used to improve Skype and Microsoft services.";
+
+
+/* Title for a list item leading to a view to edit own profile. */
+"ACCOUNT_EDITPROFILE_LABEL" = "Oma tili";
+
+/* HUB app bar menu items */
+"FEEDBACK_NAVBAR_BUTTON" = "Lähetä palautetta";
+"MARK_ALL_AS_READ_NAVBAR_BUTTON" = "Merkitse kaikki luetuiksi";
+"ADD_PEOPLE_NAVBAR_BUTTON" = "Lisää henkilöitä";
+"HELP_NAVBAR_BUTTON" = "Ohje";
+
+"NEW_FEEDBACK_ALERT_MESSAGE" = "Sinulla on lukemattomia palauteviestejä.";
+
+"NEW_FEEDBACK_ALERT_TITLE" = "Kehittäjän palaute";
+
+"NEW_FEEDBACK_ALERT_SHOW_BUTTON" = "Näytä";
+
+"NEW_FEEDBACK_ALERT_CANCEL_BUTTON" = "Kumoa";
+
+/* Button to add to favourites list a conversation. */
+"ACCOUNT_ADD_FAVOURITE_ACTIONSHEET_BUTTON" = "Lisää suosikkeihin";
+
+/* Button to remove from favourites list a conversation. */
+"ACCOUNT_REMOVE_FAVOURITE_ACTIONSHEET_BUTTON" = "Poista suosikeista";
+
+/* Message shown when the list of favourite conversations is empty. */
+"ACCOUNT_EMPTY_FAVOURITES_LIST_TEXT" = "Lisää uusia suosikkeja minkä tahansa yhteystiedon valikon kautta.";
+
+/* Navigation bar button for signing the current user out. */
+"ACCOUNT_SIGNOUT_NAVBAR_BUTTON" = "Kirjaudu ulos";
+
+/* Live call, posted when app is in background (OS 4.0) */
+"BACKGROUND_CALL_FORMAT" = "%@ soittaa";
+"BACKGROUND_VIDEO_CALL_FORMAT" = "Näköpuhelu käyttäjältä %@";
+"BACKGROUND_CONFERENCECALLFROM_FORMAT" = "Ryhmäpuhelu käyttäjältä %@";
+
+/* Missed events, posted when app is in background (OS 4.0) [#AAASA-655] */
+"BACKGROUND_VIDEOMESSAGE_ONE" = "Videoviesti lähettäjältä %@.";
+"BACKGROUND_MISSEDCALL_ONE" = "Vastaamaton puhelu henkilöltä %@.";
+"BACKGROUND_MISSEDCALL_GROUP" = "Vastaamaton ryhmäpuhelu henkilöltä %@";
+"BACKGROUND_GROUPCHATMESSAGE_ONE" = "%@: %@";
+"BACKGROUND_AUTHREQUEST_ONE" = "Uusi yhteyspyyntö henkilöltä %@.";
+"BACKGROUND_VOICEMAIL_ONE" = "Uusi äänitervehdys henkilöltä %@.";
+
+/* Alert text for general failure because of no Skype connection. */
+"APP_NONETWORK_ALERT_MESSAGE" = "Tarkista verkkoasetuksesi ja yritä uudelleen.";
+
+/* Button for accepting an incoming call. */
+"CALL_ANSWER_BUTTON" = "Vastaa";
+
+/* Button for rejecting an incoming call. */
+"CALL_DECLINE_BUTTON" = "Hylkää";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_ADDTOCALL_BUTTON_ACCESSIBILITY_LABEL" = "Lisää puheluun";
+
+/* Button for adding participants to the ongoing call. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_HANGUP_BUTTON_ACCESSIBILITY_LABEL" = "Lopeta puhelu";
+
+/* Button for ending a call. Standard version. */
+"CALL_ENDCALL_BUTTON" = "Lopeta puhelu";
+
+/* Button for starting a video message. Standard version. */
+"CALL_VIDEO_MESSAGE_BUTTON" = "Videoviesti";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIDEO_MESSAGE_BUTTON_ACCESSIBILITY_LABEL" = "Lähetä videoviesti";
+
+/* Button for canceling an action. */
+"CANCEL_BUTTON" = "Kumoa";
+
+/* Button to finalize an action */
+"DONE_BUTTON" = "Valmis";
+
+/* Button to navigate to settings bundle */
+"SETTINGS_BUTTON" = "Asetukset";
+
+/* Button for creating a new Skype account */
+"CREATE_ACCOUNT_BUTTON" = "Luo tili";
+
+/* Navigation bar title in creating a new Skype account view */
+"CREATE_ACCOUNT_NAVBAR_TITLE" = "Luo tili";
+
+/* Alert text for call failure because the phone number is not valid. */
+"DIALPAD_INVALID_NUMBER_ALERT" = "%@ on virheellinen puhelinnumero. Tarkista ja yritä uudelleen.";
+
+/* Dialpad accessibility label (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_ADDRESS_BOOK_BUTTON_ACCESSIBILITY_LABEL" = "Osoitteisto";
+
+/* Dialpad accessibility label for the country code picker. Will be read out by the operating system before the actual country code.
+ A label should not mention the type of control.
+ For example: "Country code. Sweden (+46)". Note that the country code and its name is not included in this string. (according to Apple's guidelines, labels should not end with a period)  */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_LABEL" = "Maan tai alueen suuntanumero";
+
+/* Dialpad accessibility hint for the country code picker. Will be read out by the operating system after the actual country code.
+ A hint should describe the results of the action and start with a third person declerative verb (prefer "plays" over "play").
+ For example: "Sweden (+46). Changes the country code.". Note that the country code and its name is not included in this string. (according to Apple's guidelines, hints _should_ end with a period) */
+"DIALPAD_COUNTRY_CODE_PICKER_BUTTON_ACCESSIBILITY_HINT" = "Vaihtaa maan tai alueen suuntanumeron.";
+
+/* Dialpad alternative accessibility action for the input field. The user is be able to swipe up and down to select the action executed. This action changes the country code.
+ An action should describe what the action does and being with a verb (possibly an imperative) so that it reads as a command or instruction (from the user to the app). */
+"DIALPAD_INPUT_FIELD_CHANGE_COUNTRY_CODE_ACCESSIBILITY_ACTION" = "Vaihda maan tai alueen suuntanumero.";
+
+/* placeholder string in a search bar of a coutry code picker */
+"DIALPAD_COUNTRY_CODE_PICKER_SEARCH_PLACEHOLDER" = "Haku";
+
+/* Dialpad accessibility label for the phone number field. Will be read out by the operating system before the actual number.
+ For example: "Phone number. +46 123 45 67". Note that the phone number itself is not included in this string. (according to Apple's guidelines, labels should not end with a period) */
+"DIALPAD_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Puhelinnumero";
+
+/* A general dismiss button for alerts. */
+"DISMISS_BUTTON" = "Ohita";
+
+/* Button to open link (link may open in Safari, but also other apps, depending on scheme)  */
+"OPEN_LINK_BUTTON_TITLE" = "Avaa";
+
+/* Button to create an event in the calendar  */
+"CREATE_EVENT_BUTTON_TITLE" = "Luo tapahtuma";
+
+/* Button to show the calendar  */
+"SHOW_CALENDAR_BUTTON_TITLE" = "Näytä kalenteri";
+
+/* Button to copy url of current wab page */
+"COPY_URL_BUTTON_TITLE" = "Kopioi";
+
+/* Button to send the current page to Safari's reading list */
+"SEND_URL_TO_READING_LIST" = "Lisää lukulistaan";
+
+/* Button to open the current page in Safari */
+"OPEN_URL_IN_SAFARI" = "Avaa Safarissa";
+
+/* Action sheet button to edit a message */
+"EDIT_MESSAGE_TITLE" = "Muokkaa";
+
+/* Action sheet button to quote a message */
+"QUOTE_MESSAGE_TITLE" = "Lainaus";
+/* Formatting for quote text.  First varible is date, second is quoted author name, third is the quoted text. */
+"QUOTE_MESSAGE_FORMATTING" = "%1$@, kello %2$@, %3$@ kirjoitti:\n> %4$@\n\n";
+
+/* Action sheet button to delete a message */
+"DELETE_MESSAGE_TITLE" = "Poista";
+
+/* Action sheet button to forward a message */
+"FORWARD_MESSAGE_TITLE" = "Lähetä edelleen";
+"FORWARD_BUTTON_ACCESSIBILITY_LABEL" = "Lähetä edelleen";
+
+/* Action sheet button to share a message */
+"SHARE_BUTTON_ACCESSIBILITY_LABEL" = "Jaa";
+"SHARE_MESSAGE_TITLE" = "Jaa";
+
+/* Share sheet waiting indicator */
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_LABEL" = "Ladataan";
+"SHARE_MESSAGE_WAITING_VIEW_ACCESSIBILITY_HINT" = "Peruuta kaksoisnapauttamalla";
+
+/* Status message before video is displayed */
+"VIDEOCALL_STARTING_STATUS_MESSAGE" = "Aloitetaan näköpuhelu…";
+
+/* The user is informed that the outbound call is being forwarded. */
+"CALL_IS_BEING_FORWARDED" = "Puhelu on siirretty";
+
+/* Button for accepting an incoming call. */
+"VIDEO_CALL_ANSWER_BUTTON" = "Video­";
+
+/* In call button for showing the phone keypad used to send DTMF tones. */
+"LIVECALL_DIALPAD_BUTTON" = "Valintapaneeli";
+
+/* In call button for resuming the call if it is on hold. (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_RESUME_BUTTON_LOCALLY_HELD_ACCESSIBILITY_LABEL" = "Jatka puhelua";
+
+/* In call button for turning on/off technical call info view. */
+"LIVECALL_TECHCALLINFO_BUTTON" = "Puhelun tekniset tiedot";
+
+/* Bubble button popup using during a live call.*/
+"LIVECALL_BUBBLE_BUTTON" = "Puheluasetukset";
+
+/* Alert title for incoming video from non-authorized contact. E.g.: <Triin> wants to share their video*/
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "%@ haluaa jakaa videon";
+
+/* Alert message for incoming video from non-authorized contact. E.g.: <Triin> is not one of your contacts but wants to share their video.*/
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "%@ ei ole yhteystiedoissasi, mutta haluaa jakaa videon.";
+
+/* Alert title for incoming video from non-authorized contact.*/
+"LIVEGROUPCALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_TITLE" = "Tämän puhelun osallistujat ovat ottaneet videokuvan käyttöön";
+
+/* Alert message for incoming video from non-authorized contact. */
+"LIVEGROUPCALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_MESSAGE" = "Haluatko ottaa vastaan videokuvaa tässä puhelussa?";
+
+/* Button for accepting incoming video from a contact that has not been authorized. */
+"LIVECALL_ACCEPT_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Hyväksy";
+
+/* Button for declining incoming video from a contact that has not been authorized. */
+"LIVECALL_DECLINE_VIDEO_RECEIVED_FROM_NONAUTHORIZED_CONTACT_BUTTON" = "Hylkää";
+
+/* In call button for add participant. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_LABEL" = "Lisää osallistujia";
+
+/* In call button for add participant. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_ADD_PARTICIPANTS_ACCESSIBILITY_HINT" = "Lisää osallistujia kaksoisnapauttamalla.";
+
+/* List item title for a field where the user should give the password. */
+"LOGIN_PASSWORD_TEXT_PLACEHOLDER" = "Salasana";
+
+/* Button for signing in with a Skype account. */
+"LOGIN_SIGNIN_BUTTON" = "Kirjaudu sisään";
+
+/* List item title for a field where user should give his or her Skype name. */
+"LOGIN_SKYPENAME_TEXT_PLACEHOLDER" = "Skype-nimi";
+
+/* Unified login */
+"LOGIN_UNIFIED_USER_IDENTIFIER_TEXT_PLACEHOLDER" = "Skype-nimi, sähköposti tai puh.nro";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_TITLE" = "Tilisi";
+"LOGIN_UNIFIED_USER_YOUR_ACCOUNTS_SUBTITLE" = "Valitse tili, jota haluat käyttää.";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_SKYPE" = "Skype-tili";
+"LOGIN_UNIFIED_USER_ACCOUNT_TYPE_MSA" = "Microsoft-tili";
+"LOGIN_UNIFIED_ERROR_ALERT_TITLE" = "Kirjaudu sisään";
+"LOGIN_UNIFIED_ERROR_ALERT_MESSAGE"= "Valitse tilityyppi, jolla haluat kirjautua Skypeen.";
+"LOGIN_UNIFIED_ERROR_ALERT_MICROSOFT_ACCOUNT_BUTTON_TITLE"= "Microsoft-tili";
+"LOGIN_UNIFIED_ERROR_ALERT_SKYPE_ACCOUNT_BUTTON_TITLE"= "Skype-nimi";
+
+/* MSA Personalise profile after creating a LW account. */
+"MSA_PERSONALISE_PROFILE_PAGE_TITLE" = "Mukauta profiiliasi";
+
+/* Button asking the user to add a new display picture */
+"ADD_DISPLAY_IMAGE_BUTTON" = "Lisää kuva";
+
+/* Button asking the user to change existing display picture */
+"CHANGE_DISPLAY_IMAGE_BUTTON" = "Vaihda kuva";
+
+/* Accessibility label for the button that signs you in (according to Apple's guidelines, labels should not end with a period)*/
+"LOGIN_VIEW_SIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Kirjaudu";
+"LOGIN_VIEW_PROBLEMSIGNIN_BUTTON_ACCESSIBILITY_LABEL" = "Ongelmia sisäänkirjautumisessa?";
+
+/* Button for acknowledging an action or alert. */
+"OK_BUTTON" = "OK";
+
+/* Button for informally acknowledging an action or alert. */
+"OK_GOT_IT_BUTTON" = "OK, selvä";
+
+/* Button for continuation of a flow. */
+"CONTINUE_BUTTON" = "Jatka";
+
+/* Button for skipping of a flow. */
+"NOT_NOW_BUTTON" = "Ei nyt";
+
+/* Button to learn more about an action. */
+"LEARN_MORE_BUTTON" = "Lisätietoja";
+
+/* Button to go to iOS Settings app. */
+"GO_TO_SETTINGS_BUTTON" = "Asetukset";
+
+/* Button to not be reminded again about a reminder view. */
+"DONT_REMIND_ME_AGAIN_BUTTON" = "Älä muistuta uudelleen";
+
+/* Button to turn on notifications. */
+"TURN_ON_NOTIFICATIONS_BUTTON" = "Ota ilmoitukset käyttöön";
+
+/* Clearing the text field */
+"TEXTFIELD_CLEAR_TEXT" = "Tyhjennä teksti";
+
+/* pop up title */
+"CHAT_SEND_BUTTON" = "Lähetä";
+
+/* Chat cells for call events */
+"CHAT_CALL_EVENT_CALL_WITH_DURATION" = "Puhelu,";
+"CHAT_CALL_EVENT_CALL_WITHOUT_DURATION" = "Puhelu";
+"CHAT_CALL_EVENT_CALL_STARTED" = "Puhelu alkoi";
+"CHAT_CALL_EVENT_NO_ANSWER" = "Puhelu, ei vastausta";
+"CHAT_CALL_EVENT_MISSED_CALL_SINGLE" = "Vastaamaton puhelu";
+"CHAT_CALL_EVENT_MISSED_CALL_MULTIPLE" = "%d vastaamatonta puhelua";
+"CHAT_CALL_EVENT_BUSY" = "Puhelu, varattu";
+"CHAT_CALL_EVENT_BLOCKED" = "Estetty";
+"CHAT_CALL_EVENT_FAILED" = "Puhelu, epäonnistui";
+
+// Label shown before user has rated a call (call-to-action)
+"CHAT_CALL_EVENT_RATING_INTRO" = "Millainen oli puhelun laatu?";
+
+// Label shown after the user has rated a call (thank you)
+"CHAT_CALL_EVENT_RATING_OUTRO" = "Kiitos palautteestasi.";
+
+// Labels shown while user is rating
+"CHAT_CALL_EVENT_RATING_1_STAR" = "Todella huono";
+"CHAT_CALL_EVENT_RATING_2_STARS" = "Heikko";
+"CHAT_CALL_EVENT_RATING_3_STARS" = "Kohtalainen";
+"CHAT_CALL_EVENT_RATING_4_STARS" = "Hyvä";
+"CHAT_CALL_EVENT_RATING_5_STARS" = "Erinomainen";
+
+/* Call events in Recents */
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_DURATION_UNKNOWN"  = "Puhelu";
+"CALL_EVENT_IN_RECENTS_INCOMING_CALL_WITH_DURATION"     = "Puhelu, %@";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_DURATION_UNKNOWN"  = "Puhelu";
+"CALL_EVENT_IN_RECENTS_OUTGOING_CALL_WITH_DURATION"     = "Puhelu, %@";
+"CALL_EVENT_IN_RECENTS_CALL_FAILED"                     = "Puhelu epäonnistui";
+"CALL_EVENT_IN_RECENTS_MISSED_CALL"                     = "Vastaamaton puhelu";
+"CALL_EVENT_IN_RECENTS_NO_ANSWER"                       = "Puhelu, ei vastausta";
+"CALL_EVENT_IN_RECENTS_BLOCKED"                         = "Puhelu, estetty";
+
+/* Label shown in chat for the most recently sent message */
+"CHAT_DELIVERY_STATUS_SENT" = "Lähetetty";
+
+/* Label shown in chat for the most recently delivered message */
+"CHAT_DELIVERY_STATUS_DELIVERED" = "Toimitettu";
+
+/* Label shown in chat for the most recently read message */
+"CHAT_DELIVERY_STATUS_READ" = "Luettu";
+
+/* Accessibility indicator that this message has been sent */
+"CHAT_DELIVERY_STATUS_SENT_ACCESSIBILITY_LABEL" = "Lähetetty";
+
+/* Accessibility indicator that this message has been delivered */
+"CHAT_DELIVERY_STATUS_DELIVERED_ACCESSIBILITY_LABEL" = "Toimitettu";
+
+/* Accessibility indicator that this message has been read */
+"CHAT_DELIVERY_STATUS_READ_ACCESSIBILITY_LABEL" = "Luettu";
+
+/*
+ Chat message texts show when a conference has been created.
+ */
+"CHAT_SPAWNED_CONFERENCE_ZERO" = "%@ loi uuden ryhmän.";
+"CHAT_SPAWNED_CONFERENCE_ONE" = "%@ loi uuden ryhmän henkilön %@ kanssa.";
+"CHAT_SPAWNED_CONFERENCE_TWO" = "%@ loi uuden ryhmän henkilöiden %@ ja %@ kanssa.";
+"CHAT_SPAWNED_CONFERENCE_THREE" = "%@ loi uuden ryhmän henkilöiden %@, %@ ja yhden muun kanssa.";
+"CHAT_SPAWNED_CONFERENCE_FOUR_OR_MORE" = "%@ loi uuden ryhmän henkilöiden %@, %@ ja %u muun kanssa.";
+
+/*
+ A message shown in a 1:1 chat when it's the contacts birthday.
+ The parameter (%@) is the full name of that person.
+ The <name> </name> tags should appear before and after the name.
+ You can put additional text inside the name tags (like the English 's suffix).
+ */
+"CHAT_BIRTHDAY_MESSAGE" = "Tänään on henkilön <name>%@</name> syntymäpäivä";
+"CHAT_GRANTED_AUTH" = "Olet jakanut yhteystietosi";
+
+/*
+ A message shown in a group conversation when someone adds more people to the conversation.
+ The first parameter is the full name of the person who adds them
+ The second parameter is the people being added (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_ADDED" = "%@ lisäsi henkilön %@ tähän ryhmään";
+
+"CHAT_PARTICIPANT_CHANGE_BOT_ADDED" = "Tähän ryhmään lisätyt botit voivat käyttää kunkin osallistujan Skype-nimeä, näyttönimeä ja uusia keskusteluviestejä tai ryhmässä jaettua uutta sisältöä.";
+
+"CHAT_PARTICIPANT_CHANGE_ADDED_WITH_EXISTING_BOT" = "Tervetuloa! Tässä ryhmässä on vähintään yksi botti. Ne voivat käyttää kunkin osallistujan Skype-nimeä, näyttönimeä ja uusia keskusteluviestejä tai ryhmässä jaettua uutta sisältöä.";
+
+/*
+ A message shown in a group conversation when someone joins the conversation on their own.
+ The parameter is the full name of the person who joined
+ */
+"CHAT_PARTICIPANT_CHANGE_JOINED" = "%@ liittyi ryhmään";
+
+/*
+ A message shown in a group conversation when someone leaves the conversation on their own.
+ The parameter is the full name of the person who left
+ */
+"CHAT_PARTICIPANT_CHANGE_LEFT" = "%@ poistui ryhmästä";
+
+/*
+ A message shown in a group conversation when someone ejects someone else from the conversation.
+ The first parameter is the full name of the person who ejects the other person
+ The second parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"CHAT_PARTICIPANT_CHANGE_EJECTED" = "%@ poisti henkilön %@ tästä ryhmästä";
+
+/*
+ A message shown in a group conversation when the Guest account expires and ejected from the conversation.
+ The first parameter is the full name of the people being ejected (may be one or more names (comma separated))
+ */
+"GUEST_PARTICIPANT_ACCOUNT_EXPIRED" = "Seuraavien henkilöiden vierailijatili on vanhentunut: %@ ";
+
+/*
+ A message shown in a conversation when you have blocked a contact
+ The parameter is the full name of the person who was blocked
+ */
+"CHAT_USER_BLOCKED" = "Estit henkilön %@";
+
+/*
+ A message shown in a conversation when the rank of a contact has been changed
+ The parameters:
+ name of the person making the change,
+ name of the person whose rank is changed
+ the name of the new rank
+ */
+"CHAT_SET_RANK_MESSAGE" = "%@ vaihtoi henkilön %@ rooliksi %@";
+"CHAT_SET_RANK_MESSAGE_CREATOR" = "Vaihtaja";
+"CHAT_SET_RANK_MESSAGE_ADMIN" = "Järjestelmänvalvoja";
+"CHAT_SET_RANK_MESSAGE_SPECTATOR" = "Katselija";
+"CHAT_SET_RANK_MESSAGE_WRITER" = "Kirjoittaja";
+"CHAT_SET_RANK_MESSAGE_SPEAKER" = "Puhuja";
+"CHAT_SET_RANK_MESSAGE_APPLICANT" = "Ehdokas";
+"CHAT_SET_RANK_MESSAGE_RETIRED" = "Vanhentunut";
+"CHAT_SET_RANK_MESSAGE_OUTLAW" = "Kielletty";
+/* As shown in Recents (if last message) */
+"MESSAGE_SUMMARY_SET_RANK" = "Rooli vaihdettiin";
+
+/* String related to the Group conversation title is same as the current user's Skype name */
+"CONVERSATION_TITLE_UNTITLED" = "Nimetön keskustelu";
+
+/* Strings related to the conversation view controller's showing and hiding of the in-call chat */
+"CONVERSATION_SHOW_CHAT" = "Näytä keskustelu";
+"CONVERSATION_HIDE_CHAT" = "Piilota keskustelu";
+
+/* Strings related to the conversation view controller's showing and hiding of the timeline sidebar (iPad or "regular" horizontal size class) */
+"CONVERSATION_SHOW_TIMELINE" = "Näytä sivupalkki";
+"CONVERSATION_HIDE_TIMELINE" = "Piilota sivupalkki";
+
+/* Accessibitily string for switching the layout of a group video call to a grid */
+"CONVERSATION_SHOW_GRID" = "Näytä ruudukkonäkymä";
+/* Accessibitily string for switching the layout of a group video call to an individual view with only a full bleed video shown */
+"CONVERSATION_SHOW_FOCUS" = "Näytä yksilöllinen näkymä";
+
+/* The cell at the bottom of the chat for joining an ongoing call. */
+"CHAT_CELL_ONGOING_CALL_JOIN"                       = "Liity puheluun";
+"CHAT_CELL_ONGOING_CALL_JOIN_ACCESSIBILITY_LABEL"   = "Liity käynnissä olevaan puheluun";
+
+/* Links between cloud (new) and p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text: "older chat"/"Go to the new chat") */
+"CHAT_GOTO_OLD_CHAT" = "Näytä <a href=\"jump\">vanhan keskustelun</a> viestit";
+"CHAT_GOTO_NEW_CHAT" = "Tämä keskustelu on päivitetty uuteen versioon. <a href=\"jump\">Siirry uuteen keskusteluun</a>";
+
+// Legacy migration messages according to https://confluence.skype.net/display/IMP/UX+Specification+for+Server-Based+Groups
+"CHAT_ADDED_LEGACY_CONSUMER_SINGULAR" = "Henkilön %@ on päivitettävä Skype osallistuakseen tähän keskusteluun. Uuden version voi ladata osoitteesta skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Lisätietoja uudesta ryhmäkeskustelusta</a>.";
+"CHAT_ADDED_LEGACY_CONSUMERS_PLURAL" = "%@ tarvitsevat uudemman Skype-version osallistuakseen tähän keskusteluun. Uuden version voi ladata osoitteesta skype.com/updateme. <a href=\"https://support.skype.com/faq/FA12361/\">Lisätietoja uudesta ryhmäkeskustelusta</a>.";
+"CHAT_LEGACY_MEMBER_UPGRADED" = "%@ voi nyt osallistua keskusteluun.";
+
+/* Accessibility hint for an author name label (visible in group chats). Activating this element opens a 1:1 chat with the author (according to Apple's guidelines, hints _should_ end with a period) */
+"CHAT_AUTHOR_LABEL_ACCESSIBILITY_HINT" = "Avaa kahdenkeskisen keskustelun.";
+
+/* The name of all the smiley (not flag) emoticons.
+ These are used to make the emoticon picker accessible and are.
+ also used inside the chat, mood messages etc.
+ 
+ Inside the emoticon picker they are only read as their name
+ but inside the chat etc, they are read together with the
+ EMOTICON_TYPE_SMILEY string, for example:
+ Emoticon: Smiling
+ for the SMILE emoticon within a chat. This is done for you.
+ 
+ They all follow the naming conventions:
+ EMOTICON_SMILEY_<name of smiley>_LABEL
+ */
+
+"EMOTICON_SMILEY_SMILE_ACCESSIBILITY_LABEL" = "Hymy";
+
+"EMOTICON_SMILEY_SAD_ACCESSIBILITY_LABEL" = "Suru";
+
+"EMOTICON_SMILEY_LAUGH_ACCESSIBILITY_LABEL" = "Naurava";
+
+"EMOTICON_SMILEY_COOL_ACCESSIBILITY_LABEL" = "Viileä hymy";
+
+"EMOTICON_SMILEY_SURPRISED_ACCESSIBILITY_LABEL" = "Yllättynyt";
+
+"EMOTICON_SMILEY_WINK_ACCESSIBILITY_LABEL" = "Iskee silmää";
+
+"EMOTICON_SMILEY_CRY_ACCESSIBILITY_LABEL" = "Itkee";
+
+"EMOTICON_SMILEY_SWEAT_ACCESSIBILITY_LABEL" = "Hikoileva";
+
+"EMOTICON_SMILEY_SPEECHLESS_ACCESSIBILITY_LABEL" = "Mykistynyt";
+
+"EMOTICON_SMILEY_KISS_ACCESSIBILITY_LABEL" = "Pusu";
+
+"EMOTICON_SMILEY_TONGUEOUT_ACCESSIBILITY_LABEL" = "Näyttää kieltä";
+
+"EMOTICON_SMILEY_BLUSH_ACCESSIBILITY_LABEL" = "Ujo";
+
+"EMOTICON_SMILEY_WONDER_ACCESSIBILITY_LABEL" = "Ihmettelee";
+
+"EMOTICON_SMILEY_SLEEPY_ACCESSIBILITY_LABEL" = "Uninen";
+
+"EMOTICON_SMILEY_DULL_ACCESSIBILITY_LABEL" = "Pyörittelee silmiään";
+
+"EMOTICON_SMILEY_INLOVE_ACCESSIBILITY_LABEL" = "Rakastunut";
+
+"EMOTICON_SMILEY_EG_ACCESSIBILITY_LABEL" = "Virnistää ilkeästi";
+
+"EMOTICON_SMILEY_FINGERSCROSSED_ACCESSIBILITY_LABEL" = "Sormet ristissä";
+
+"EMOTICON_SMILEY_YAWN_ACCESSIBILITY_LABEL" = "Haukottelee";
+
+"EMOTICON_SMILEY_PUKE_ACCESSIBILITY_LABEL" = "Oksentaa";
+
+"EMOTICON_SMILEY_DOH_ACCESSIBILITY_LABEL" = "No niin!";
+
+"EMOTICON_SMILEY_ANGRY_ACCESSIBILITY_LABEL" = "Vihainen";
+
+"EMOTICON_SMILEY_WASNTME_ACCESSIBILITY_LABEL" = "En se minä ollut";
+
+"EMOTICON_SMILEY_PARTY_ACCESSIBILITY_LABEL" = "Juhliva";
+
+"EMOTICON_SMILEY_WORRY_ACCESSIBILITY_LABEL" = "Huolestunut";
+
+"EMOTICON_SMILEY_MMM_ACCESSIBILITY_LABEL" = "mmm"; /* Find a name that reads well with VoiceOver */
+
+"EMOTICON_SMILEY_NERDY_ACCESSIBILITY_LABEL" = "Nörtti";
+
+"EMOTICON_SMILEY_LIPSSEALED_ACCESSIBILITY_LABEL" = "En kerro";
+
+"EMOTICON_SMILEY_HI_ACCESSIBILITY_LABEL" = "Vilkuttaa";
+
+"EMOTICON_SMILEY_FACEPALM_ACCESSIBILITY_LABEL" = "Käsi naaman eteen";
+
+"EMOTICON_SMILEY_DEVIL_ACCESSIBILITY_LABEL" = "Piru";
+
+"EMOTICON_SMILEY_ANGEL_ACCESSIBILITY_LABEL" = "Enkeli";
+
+"EMOTICON_SMILEY_ENVY_ACCESSIBILITY_LABEL" = "Kateellinen";
+
+"EMOTICON_SMILEY_WAIT_ACCESSIBILITY_LABEL" = "Odota";
+
+"EMOTICON_SMILEY_HUG_ACCESSIBILITY_LABEL" = "Halitaan";
+
+"EMOTICON_SMILEY_MAKEUP_ACCESSIBILITY_LABEL" = "Ehostus";
+
+"EMOTICON_SMILEY_GIGGLE_ACCESSIBILITY_LABEL" = "Hihittää";
+
+"EMOTICON_SMILEY_CLAP_ACCESSIBILITY_LABEL" = "Taputtaa";
+
+"EMOTICON_SMILEY_THINK_ACCESSIBILITY_LABEL" = "Miettii";
+
+"EMOTICON_SMILEY_BOW_ACCESSIBILITY_LABEL" = "Kumarrus";
+
+"EMOTICON_SMILEY_ROFL_ACCESSIBILITY_LABEL" = "Nauraa kippurassa";
+
+"EMOTICON_SMILEY_WHEW_ACCESSIBILITY_LABEL" = "Helpottunut";
+
+"EMOTICON_SMILEY_HAPPY_ACCESSIBILITY_LABEL" = "Onnellinen";
+
+"EMOTICON_SMILEY_SMIRK_ACCESSIBILITY_LABEL" = "Virnistys";
+
+"EMOTICON_SMILEY_NOD_ACCESSIBILITY_LABEL" = "Nyökkäys";
+
+"EMOTICON_SMILEY_SHAKE_ACCESSIBILITY_LABEL" = "Pudistaa päätä";
+
+"EMOTICON_SMILEY_WAITING_ACCESSIBILITY_LABEL" = "Odotetaan";
+
+"EMOTICON_SMILEY_EMO_ACCESSIBILITY_LABEL" = "Emo";
+
+"EMOTICON_SMILEY_YES_ACCESSIBILITY_LABEL" = "Kyllä";
+
+"EMOTICON_SMILEY_NO_ACCESSIBILITY_LABEL" = "Ei";
+
+"EMOTICON_SMILEY_HANDSHAKE_ACCESSIBILITY_LABEL" = "Kädenpuristus";
+
+"EMOTICON_SMILEY_HIGHFIVE_ACCESSIBILITY_LABEL" = "Ylävitonen";
+
+"EMOTICON_SMILEY_HEART_ACCESSIBILITY_LABEL" = "Sydän";
+
+"EMOTICON_SMILEY_LALALA_ACCESSIBILITY_LABEL" = "Ei kuuntele";
+
+"EMOTICON_SMILEY_HEIDY_ACCESSIBILITY_LABEL" = "Orava";
+
+"EMOTICON_SMILEY_FLOWER_ACCESSIBILITY_LABEL" = "Kukka";
+
+"EMOTICON_SMILEY_RAIN_ACCESSIBILITY_LABEL" = "Sataa";
+
+"EMOTICON_SMILEY_SUN_ACCESSIBILITY_LABEL" = "Paistaa";
+
+"EMOTICON_SMILEY_TUMBLEWEED_ACCESSIBILITY_LABEL" = "Tumbleweed";
+
+"EMOTICON_SMILEY_MUSIC_ACCESSIBILITY_LABEL" = "Musiikki";
+
+"EMOTICON_SMILEY_BANDIT_ACCESSIBILITY_LABEL" = "Rosvo";
+
+"EMOTICON_SMILEY_TMI_ACCESSIBILITY_LABEL" = "Liikaa tietoa";
+
+"EMOTICON_SMILEY_COFFEE_ACCESSIBILITY_LABEL" = "Kahvia";
+
+"EMOTICON_SMILEY_PIZZA_ACCESSIBILITY_LABEL" = "Pizza";
+
+"EMOTICON_SMILEY_CASH_ACCESSIBILITY_LABEL" = "Käteinen";
+
+"EMOTICON_SMILEY_MUSCLE_ACCESSIBILITY_LABEL" = "Lihaskimppu";
+
+"EMOTICON_SMILEY_CAKE_ACCESSIBILITY_LABEL" = "Kakku";
+
+"EMOTICON_SMILEY_BEER_ACCESSIBILITY_LABEL" = "Tuoppi";
+
+"EMOTICON_SMILEY_DRINK_ACCESSIBILITY_LABEL" = "Cocktail";
+
+"EMOTICON_SMILEY_DANCE_ACCESSIBILITY_LABEL" = "Tanssi";
+
+"EMOTICON_SMILEY_NINJA_ACCESSIBILITY_LABEL" = "Ninja";
+
+"EMOTICON_SMILEY_STAR_ACCESSIBILITY_LABEL" = "Tähti";
+
+/* Secret emoticons that we may get but that are not in the Picker */
+
+"EMOTICON_SMILEY_MOONING_ACCESSIBILITY_LABEL" = "Pyllistys";
+
+"EMOTICON_SMILEY_PHONE_ACCESSIBILITY_LABEL" = "Puhelin";
+
+"EMOTICON_SMILEY_FINGER_ACCESSIBILITY_LABEL" = "Keskisormi";
+
+"EMOTICON_SMILEY_POOLPARTY_ACCESSIBILITY_LABEL" = "Juhlat";
+
+"EMOTICON_SMILEY_BROKENHEART_ACCESSIBILITY_LABEL" = "Särkynyt sydän";
+
+"EMOTICON_SMILEY_DRUNK_ACCESSIBILITY_LABEL" = "Juopunut";
+
+"EMOTICON_SMILEY_SWEAR_ACCESSIBILITY_LABEL" = "Kiroilu";
+
+"EMOTICON_SMILEY_MOVIE_ACCESSIBILITY_LABEL" = "Filmi";
+
+"EMOTICON_SMILEY_SMOKE_ACCESSIBILITY_LABEL" = "Tupakoiva";
+
+"EMOTICON_SMILEY_TIME_ACCESSIBILITY_LABEL" = "Kello";
+
+"EMOTICON_SMILEY_TOIVO_ACCESSIBILITY_LABEL" = "Mies ja koira";
+
+"EMOTICON_SMILEY_PRIIDU_ACCESSIBILITY_LABEL" = "Mies ottaa valokuvaa";
+
+"EMOTICON_SMILEY_MAIL_ACCESSIBILITY_LABEL" = "Sinulle on postia";
+
+"EMOTICON_SMILEY_ROCK_ACCESSIBILITY_LABEL" = "Rokataan";
+
+"EMOTICON_SMILEY_PUNCH_ACCESSIBILITY_LABEL" = "Isku";
+
+"EMOTICON_SMILEY_SKYPE_ACCESSIBILITY_LABEL" = "Skype";
+
+"EMOTICON_SMILEY_HEADBANG_ACCESSIBILITY_LABEL" = "Iskee päätä seinään";
+
+"EMOTICON_SMILEY_CALL_ACCESSIBILITY_LABEL" = "Soita minulle";
+
+"EMOTICON_SMILEY_WFH_ACCESSIBILITY_LABEL" = "Tekee töitä kotoa";
+
+"EMOTICON_SMILEY_BUG_ACCESSIBILITY_LABEL" = "Ötökkä";
+
+"EMOTICON_SMILEY_TALK_ACCESSIBILITY_LABEL" = "Puhelias";
+
+"EMOTICON_SMILEY_HOLLEST_ACCESSIBILITY_LABEL" = "Leveilee";
+
+"EMOTICON_SMILEY_OLIVER_ACCESSIBILITY_LABEL" = "Hattupäinen mies";
+
+"EMOTICON_SMILEY_BERTLETT_ACCESSIBILITY_LABEL" = "Amerikkalaisen jalkapallon pelaaja";
+
+// New ones
+
+"EMOTICON_SMILEY_TALKTOTHEHAND_ACCESSIBILITY_LABEL" = "Puhu pukille";
+
+"EMOTICON_SMILEY_IDEA_ACCESSIBILITY_LABEL" = "Idea";
+
+"EMOTICON_SMILEY_SHEEP_ACCESSIBILITY_LABEL" = "Lammas";
+
+"EMOTICON_SMILEY_CAT_ACCESSIBILITY_LABEL" = "Kissa";
+
+"EMOTICON_SMILEY_BIKE_ACCESSIBILITY_LABEL" = "Polkupyörä";
+
+"EMOTICON_SMILEY_DOG_ACCESSIBILITY_LABEL" = "Koira";
+
+"EMOTICON_SMILEY_MALTHE_ACCESSIBILITY_LABEL" = "Malthe";
+
+"EMOTICON_SMILEY_TAURI_ACCESSIBILITY_LABEL" = "Tauri";
+
+
+/* These two will be used together with the name of an emoticon in a chat
+ * For example:
+ * The "smile" emoticon :) would be read as "Emoticon: Smile"
+ * Similarly the flags are read as "Flag: <Name of country>"        */
+"EMOTICON_TYPE_SMILEY" = "Hymiö: %@";
+
+"EMOTICON_TYPE_FLAG" = "Lippu: %@";
+
+/* Catch-all for any group except the above. */
+"CONTACTLIST_NO_CONTACTS_TEXT" = "Lisää uusia yhteyshenkilöitä Skypeen <a href=\"add-people\">etsimällä Skype-hakemistosta</a>";
+"CONTACTLIST_NO_CONTACTS_TEXT_MULTISELECT" = "Sinulla ei ole yhteyshenkilöitä Skypessä.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT" = "Osoitteistostasi ei ole vielä löytynyt yhtään Skype-yhteyshenkilöä. <a href=\"add-people\">Lisää henkilöitä</a>.";
+"CONTACTLIST_NO_CONTACTS_AFTER_CS_TEXT_MULTISELECT" = "Osoitteistostasi ei ole vielä löytynyt yhtään Skype-yhteyshenkilöä.";
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_TITLE" = "Hae Skype-hakemistosta"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_SKYPE_DIRECTORY_SEARCH_CELL_CAPTION" = "Hae tuttujasi Skypestä"; // displayed in the last cell of people search
+"CONTACTLIST_SEARCH_IN_PROGRESS" = "Etsitään tuttujasi"; // displayed in the empty people view while performing contact short circuit search
+
+/* for overlay that appears when search is active and nothing is typed (according to Apple's guidelines, hints _should_ end with a period) */
+"CONTACTLIST_SEARCH_CANCEL_OVERLAY_ACCESSIBILITY_HINT" = "Peruuta haku kaksoisnapauttamalla.";
+
+
+/* The title of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_TEXT" = "Hyvältä näyttää!";
+/* The body/message of the "welcome message" that shows up when you open the video message recoring UI */
+"VIDEO_MESSAGE_SMILEY_BUBBLE_SUBTEXT" = "Kun olet valmis, paina äänityspainiketta.";
+
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the chat. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_RECORDING_BUTTON" = "Peruuta tallennus";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button will cancel the recording and take the user back to the recording UI so that a new recording can be made. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_TAKE_AGAIN_BUTTON" = "Tallenna uudelleen";
+/* One button in the action sheet that appears when you press "cancel" after having recorded a vidoe message. This button dismisses the action sheet. In other words, it cancels the cancellation. */
+"VIDEO_MESSAGE_CANCEL_RECORDING_CANCEL_BUTTON" = "Kumoa";
+
+"VIDEO_MESSAGE_LEGACY_TEXT" =  "Olet saanut uuden videoviestin. Kun kopioit salaisen koodin %2, voit katsoa videoviestin täältä: %1";
+
+/* The title of the button that cencels a video message recording*/
+"VIDEO_MESSAGE_CANCEL_BUTTON" = "Kumoa";
+/* Accessibility label for the record button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_RECORD_ACCESSIBILITY_LABEL" = "Tallenna";
+/* Accessibility label for the stop button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_STOP_ACCESSIBILITY_LABEL" = "Seis";
+/* Accessibility label for the send button (that sends the recorded video as a message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SEND_ACCESSIBILITY_LABEL" = "Lähetä";
+/* Accessibility label for the preview button (that plays back the recorded video before the user sends it) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_PREVIEW_ACCESSIBILITY_LABEL" = "Esikatselu";
+/* Accessibility label for the "switch camera" button when the rear camera is currently used and tapping the button would switch to the front camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_FRONT_ACCESSIBILITY_LABEL" = "Vaihda etukameraan";
+/* Accessibility label for the "switch camera" button when the front camera is currently used and tapping the button would switch to the rear/back camera (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SWITCH_TO_REAR_ACCESSIBILITY_LABEL" = "Vaihda takakameraan";
+/* Accessibility label for the timer that shows how many minutes and seconds of video that have been recorded. (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_TIMER_ACCESSIBILITY_LABEL" = "Äänityksen kesto";
+/* Accessibility label for the "video effects" button (that shows the filter roster) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTERS_BUTTON" = "Videotehosteet";
+/* Accessibility label for the "normal" filter roster button (that applies no video effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_NORMAL_BUTTON" = "normaali";
+/* Accessibility label for the "balloons" filter roster button (that applies balloons effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BALLOONS_BUTTON" = "ilmapallot";
+/* Accessibility label for the "bears" filter roster button (that applies bears effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BEARS_BUTTON" = "nallekarhut";
+/* Accessibility label for the "kaleidoscope45" filter roster button (that applies kaleidoscope45 effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_KALEIDOSCOPE45_BUTTON" = "kaleidoskooppi";
+/* Accessibility label for the "pixelate" filter roster button (that applies minecraft effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_PIXELATE_BUTTON" = "pikselöinti";
+/* Accessibility label for the "squeeze" filter roster button (that applies squeeze effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SQUEEZE_BUTTON" = "puristettu";
+/* Accessibility label for the "bulge" filter roster button (that applies bulge effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_BULGE_BUTTON" = "pullistuva";
+/* Accessibility label for the "xray" filter roster button (that applies xray effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_XRAY_BUTTON" = "röntgensäde";
+/* Accessibility label for the "poster" filter roster button (that applies poster effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_POSTER_BUTTON" = "juliste";
+/* Accessibility label for the "snow" filter roster button (that applies snow effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_SNOW_BUTTON" = "lumisade";
+/* Accessibility label for the "mirror" filter button (that applies mirror effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_MIRROR_BUTTON" = "peili";
+/* Accessibility label for the "hearts" filter roster button (that applies hearts effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HEARTS_BUTTON" = "sydämet";
+/* Accessibility label for the "costume" filter roster button (that applies costume effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_COSTUME_BUTTON" = "naamiaiset";
+/* Accessibility label for the "Halloween" filter roster button (that applies halloween effect while recording video message) (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_FILTER_HALLOWEEN_BUTTON" = "Halloween";
+
+/* Accessibility label for the "Subtitle language" title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LANGUAGE_TITLE" = "Tekstityksen kieli";
+/* An extra hint to the user that the "Subtitles will appear after recording has completed" (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_HINT" = "Tekstitykset näkyvät, kun tallennus on valmis";
+/* Accessibility label for the "Creating subtitles..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CREATION_IN_PROGRESS" = "Luodaan tekstityksiä...";
+/* A generic error message for the "Subtitles could not be created" when we fail to create subtitles (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_CANNOT_CREATE_ERROR" = "Tekstityksiä ei voitu luoda";
+/* Accessibility label for the "Listening..." which indicates a progress after recording (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_SUBTITLE_LISTENING" = "Kuunnellaan";
+
+/* The title of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_TITLE" = "Videoviesti";
+/* The body/message of an error message the is shown when a video can't be sent in the current chat.
+ (This should be a very uncommon error. For example, if while you were recording a video, more people were added to the conversation so that it was no longer capable of video messages at the point when the video was sent (but was capable when the recording started)) */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_BODY" = "Videoviestien lähettäminen keskusteluun ei enää onnistu.";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+
+/* Accessibility label for the "Delete video" alert title (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_TITLE" = "Poista video";
+/* Accessibility label for the "Delete video" alert message body (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_MESSAGE_BODY" = "Haluatko varmasti poistaa tämän videoviestin?";
+/* A button that deletes video (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_DELETE_BUTTON_ACCESSIBILITY_LABEL" = "Poista";
+/* A button that dismisses the alert view */
+"VIDEO_MESSAGE_DELETE_VIDEO_ALERT_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Peruuta";
+/* Accessibility label for the "Delete video" button (according to Apple's guidelines, labels should not end with a period) */
+"VIDEO_MESSAGE_DELETE_VIDEO_BUTTON_ACCESSIBILITY_LABEL" = "Poista videoviesti";
+/* A button that plays video message */
+"VIDEO_MESSAGE_PLAY_BUTTON_ACCESSIBILITY_HINT" = "Toista";
+/* A button that pauses video message */
+"VIDEO_MESSAGE_PAUSE_BUTTON_ACCESSIBILITY_HINT" = "Tauko";
+
+/* The title shown next to a voice message in chat. */
+"CHAT_VOICE_MESSAGE_CELL_TITLE" = "Ääniviesti";
+/* Parameter is substituted for the duration of the voice message */
+"CHAT_VOICE_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Ääniviesti, %@";
+"CHAT_VOICE_MESSAGE_CELL_PLAY_ACCESSIBILITY_HINT" = "Toistaa ääniviestin";
+"CHAT_VOICE_MESSAGE_CELL_STOP_ACCESSIBILITY_HINT" = "Pysäyttää toiston";
+
+
+/* The accessibility label for a video message in the chat */
+"VIDEO_MESSAGE_CELL_ACCESSIBILITY_LABEL" = "Videoviesti";
+/* An extra status of the video message that tells the user that it is playable.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_VALUE" = "Toistettava";
+/* An extra status of the video message that tells the user that it is uploading and not yet available for the receiver.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UPLOADING_ACCESSIBILITY_VALUE" = "Ladataan";
+/* An extra status of the video message that tells the user that it is unavailable. This could for example be because of a lack of internet access or because of a broken file. The string is intended to be very general.
+ (This is a separate string because the "value" can be changed without changing the "label" and the OS manages their order.) */
+"VIDEO_MESSAGE_CELL_UNAVAILABLE_ACCESSIBILITY_VALUE" = "Ei tavoitettavissa";
+
+/* An extra hint to the user that the video message can be played. This hint is only shown/read when the video is actually playable. */
+"VIDEO_MESSAGE_CELL_PLAYABLE_ACCESSIBILITY_HINT" = "Toistaa videoviestin";
+
+/* Informs a visually impared user when the video message record UI opens that the front camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_FRONT_CAMERA_ANNOUNCEMENT" = "Käytetään etukameraa";
+/* Informs a visually impared user when the video message record UI opens that the rear camera is being used. */
+"VIDEO_MESSAGE_STARTED_SHOWING_REAR_CAMERA_ANNOUNCEMENT" = "Käytetään takakameraa";
+
+/* Informs a visually impared user that video recording has started */
+"VIDEO_MESSAGE_STARTED_RECORDING_ANNOUNCEMENT" = "Äänittää";
+/* Informs a visually impared user that video recording has stopped */
+"VIDEO_MESSAGE_STOPPED_RECORDING_ANNOUNCEMENT" = "Lopetettu";
+/* Informs a visually impared user that the recorded video message is being sent */
+"VIDEO_MESSAGE_STARTED_SENDING_ANNOUNCEMENT" = "Lähetetään";
+
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_NO_INTERNET" = "Ei lähetetty - odotetaan Internet-yhteyttä...";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_SENDING_CHECK_YOUR_CONNECTION" = "Tarkista verkkoyhteys ja yritä myöhemmin uudelleen.";
+"VIDEO_MESSAGE_MESSAGE_PROBLEM_RECEIVING_NO_INTERNET" = "Ei vastaanotettu - odotetaan Internet-yhteyttä...";
+"VIDEO_MESSAGE_LABEL_NOT_AVAILABLE" = "Video ei käytettävissä";
+"VIDEO_MESSAGE_LEARNMORE_ALERT_MESSAGE_TITLE" = "Video ei käytettävissä";
+
+"CHAT_PHOTO_NOTIFICATION" = "%@ lähettää kuvaa";
+"LOGIN_FORGOT_PASSWORD_BUTTON" = "Eikö kirjautuminen onnistu?";
+
+/* New Login with Skype/LiveId: problems in corelib/backend*/
+"LOGIN_PROBLEM_BACKEND_REPORTED_TITLE" = "Ongelma sisäänkirjautumisessa";
+"LOGIN_PROBLEM_SKYPE_BACKEND_REPORTED_SERVER_ERROR" = "Skypeen ei saada yhteyttä, yritä myöhemmin uudelleen.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_INTERNAL_ERROR" = "Microsoft-tiliin ei saada yhteyttä. Tarkista verkkoasetuksesi ja yritä uudelleen.";
+"LOGIN_PROBLEM_LIVEID_BACKEND_REPORTED_SERVER_ERROR" = "Microsoft-tiliin ei saada yhteyttä, yritä myöhemmin uudelleen.";
+"LOGIN_PROBLEM_LIVEID_USER_IS_UNDERAGE" = "Et voi kirjautua Skypeen tällä Microsoft-tilillä, koska et täytä maasi tai alueesi alaikärajaa.";
+"LOGIN_WRONG_CREDENTIALS_ERROR" = "Tarkista tietosi.";
+"LOGIN_PROBLEM_UNKNOWN_ACCOUNT_ERROR" = "Sisäänkirjautumistietoja ei tunnistettu. Tarkista tiedot ja yritä uudelleen.";
+"LOGIN_PROBLEM_NO_NETWORK" = "Sisäänkirjautuminen epäonnistui. Tarkista verkkoyhteys ja yritä uudelleen.";
+
+/* In app purchase: general */
+"IAP_SKYPE_CREDIT_TITLE" = "Skype-saldo";
+"IAP_PURCHASE_BUTTON" = "Lisää %@-saldoa";
+"IAP_CALLPHONES" = "Soita puhelimiin";
+"IAP_SEND_SMS" = "Lähetä tekstiviesti";
+"IAP_WITHSKYPECREDIT_TITLE" = "Miksi Skype-saldosta kannattaa maksaa?";
+"IAP_WITHSKYPECREDIT_BODY" = "Koska voit ottaa yhteyttä henkilöihin, jotka eivät ole Skypessä, soittamalla heille matka- ja lankapuhelimiin tai lähettämällä tekstiviestejä edullisesti.";
+"IAP_NO_CREDIT_PURCHASE_SCREEN" = "Skypestä Skypeen -puhelut ovat maksuttomia, mutta saldon avulla voit tehdä paljon muutakin.";
+"IAP_CONTENT_CURRENT_BALANCE_ACCESSIBILITY_LABEL" = "Tämänhetkinen saldosi on %@";
+
+/* In app purchase: converted currency scenarios */
+"IAP_CONVERSION_TITLE" = "Valuutan muuntaminen"; /* Title of the currency conversion page */
+/* Shown when the user purchases credit from an Apple AppStore from another country
+ First param: The amount the user is charged in the currency of the country they are in.
+ Second param: The amount the user is credited.
+ Example: User's Skype currency is GBP. They are somewhere in Europe (EUR). This string should say: "€5 will convert to £3.61 for your Skype Credit balance."
+*/
+"IAP_CONVERSION_BALANCE_BODY" = "Skype-saldosi määrä %@ vastaa summaa %@.";
+
+/* This learn more button takes the user to the currency conversion page, which will show the current conversion rate. */
+"IAP_CONVERSION_BALANCE_LEARNMORE" = "Lisätietoja";
+/* Shown on the currency conversion page. Informing the user of the rates used from the shown date.
+ Date: Formatted Month, Day Year. The date inserted in here is using a standard date formatter (in code) that is being used in other places in the application too.
+ Example: Converted at the European Central Bank rate on December, 8 2015.
+*/
+"IAP_CONVERSION_BALANCE_RATESOURCE" = "Muunnettu Euroopan keskuspankin kurssilla %@.";
+/* Displaying the conversion rate.
+ First param: A value in the foreign currency that Skype is selling on the AppStore (i.e. - €1)
+ Second param: Shows the converted rate based on the rate pulled from our servers.
+ Example: €1 = £0.72
+ */
+"IAP_CONVERSION_LATEST_RATE" = "%@ = %@";
+/* Shown on the currency conversion page. Informs the user why the currency needs to be converted (AppStore/Skype currenct mismatch, unsupported currency). */
+"IAP_CONVERSION_INFO_BODY" = "Näyttää siltä, että App Store -valuuttasi ja Skype-valuuttasi eivät täsmää. Muunnamme App Store -valuutan ostoa varten.";
+/* Instruction for the user to change their currency on the Skype.com website. "Skype.com" is not a link. */
+"IAP_CONVERSION_INFO_CHANGESETTINGS" = "Jos haluat muuttaa näitä asetuksia, kirjaudu osoitteessa Skype.com ja valitse Oma tili -kohdassa Vaihda valuutta.";
+
+/* In app purchase: call alerts */
+"IAP_CALL_INSUFFICIENT_CREDIT_TITLE" = "Saldo ei riitä";
+"IAP_CALL_INSUFFICIENT_CREDIT_BODY" = "Skype-saldosi ei riitä tähän numeroon soittamiseen.";
+"IAP_CALL_NO_CREDIT_TITLE" = "Ei saldoa";
+"IAP_CALL_NO_CREDIT_BODY" = "Tarvitset Skype-saldoa, jos haluat soittaa tähän numeroon.";
+
+/* In app purchase: success alerts */
+"IAP_RESULT_SUCCESS_TITLE" = "Osto onnistui";
+"IAP_RESULT_SUCCESS_1_BODY" = "%@ on lisätty Skype-tiliisi.";
+"IAP_RESULT_SUCCESS_2_BODY" = "%@ lisätään Skype-tiliisi.";
+"IAP_RESULT_SUCCESS_3_BODY" = "%@ on jo lisätty Skype-tiliisi.";
+"IAP_RESULT_SUCCESS_1_PREVIOUS_BODY" = "Aiemmin tekemäsi Skype-saldotilaus on nyt käsitelty. %@ on lisätty Skype-tiliisi.";
+"IAP_RESULT_SUCCESS_2_PREVIOUS_BODY" = "Aiemmin tekemääsi Skype-saldotilausta käsitellään.";
+"IAP_RESULT_SUCCESS_3_PREVIOUS_BODY" = "Aiemmin tekemäsi Skype-saldotilaus on käsitelty.";
+
+/* In app purchase: cancel alerts */
+"IAP_RESULT_CANCEL_TITLE" = "Osto peruutettiin";
+
+/* In app purchase: failure alerts */
+"IAP_RESULT_FAILURE_TITLE" = "Olemme pahoillamme";
+"IAP_RESULT_FAILURE_GENERIC_BODY" = "Tilaustasi ei voitu käsitellä. Yritä myöhemmin uudelleen.";
+"IAP_RESULT_FAILURE_GENERIC_PAID_BODY" = "Tilaustasi ei voitu käsitellä juuri nyt, mutta järjestelmä jatkaa käsittelyä mahdollisimman pian. Saat ilmoituksen, kun tilaus on valmis.";
+"IAP_RESULT_FAILURE_GENERIC_PREVIOUS_BODY" = "Aiempaa Skype-saldotilaustasi ei voitu käsitellä juuri nyt, mutta järjestelmä jatkaa käsittelyä mahdollisimman pian. Saat ilmoituksen, kun tilaus on valmis.";
+"IAP_RESULT_FAILURE_TERMSOFSERVICE_BODY" = "Lue ja hyväksy Skypen käyttöehdot ennen kuin jatkat saldon ostamista.";
+"IAP_RESULT_FAILURE_PAYMENTPROVIDERUNAVAILABLE_BODY" = "Tilaustasi ei voitu käsitellä, koska maksupalveluntarjoaja ei ole juuri nyt käytettävissä. Yritä myöhemmin uudelleen.";
+"IAP_RESULT_FAILURE_MANAGEDACCOUNT_BODY" = "Tilaustasi ei voitu käsitellä, koska järjestelmänvalvoja hallinnoi tiliäsi.";
+"IAP_RESULT_FAILURE_DECLINEDDUETORISK_BODY" = "Tilaustasi ei voitu käsitellä. Pyydä lisätietoja Skypen asiakastuesta.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_1_BODY" = "iTunes-tilisi ei ole juuri nyt käytettävissä.";
+"IAP_RESULT_FAILURE_NOAPPSTORE_2_BODY" = "Tilaustasi ei voitu käsitellä, koska iTunes-tilisi ei ole juuri nyt käytettävissä. Yritä myöhemmin uudelleen.";
+"IAP_RESULT_FAILURE_UNSUPPORTEDCURRENCY_BODY" = "Tilaustasi ei voitu käsitellä, koska Skype ei tue iTunes-tilisi valuuttaa.";
+"IAP_RESULT_FAILURE_MISMATCHINGCURRENCY_BODY" = "Skype-tilisi valuutta ei vastaa iTunes-tilisi valuuttaa. Voit vaihtaa valuutan tilisi asetuksissa osoitteessa skype.com.";
+"IAP_RESULT_FAILURE_NETWORK_BODY" = "Tilaustasi ei voitu käsitellä. Tarkista verkkoyhteys ja yritä uudelleen.";
+"IAP_RESULT_FAILURE_NETWORK_PAID_BODY" = "Tilaustasi ei voitu käsitellä. Tarkista verkkoyhteys. Käsittelyä jatketaan, kun yhteys on muodostettu.";
+"IAP_RESULT_FAILURE_NETWORK_PREVIOUS_BODY" = "Aiempaa Skype-saldotilaustasi ei voitu käsitellä. Tarkista verkkoyhteys. Käsittelyä jatketaan, kun yhteys on muodostettu.";
+
+/* In app purchase: Support button for IAP failure alerts*/
+"SUPPORT_BUTTON" = "Pyydä neuvoja";
+
+/* Linkin Procedure LiveId */
+"LINKING_ACCOUNT_MICROSOFTACCOUNT" = "Microsoft-tili";
+"LINKING_CANCEL_AND_START_AGAIN_BUTTON" = "Kumoa ja aloita alusta";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_TITLE" = "Yhdistetty Skype-tili";
+"LINKING_ACCOUNT_ALREADY_MERGED_ALERT_MESSAGE" = "Tämä Skype-tili on jo yhdistetty Microsoft-tiliin. Jatka kirjautumalla kyseisillä Microsoft-tunnuksilla.";
+"LINKING_ACCOUNT_UNKNOWN_ERROR" = "Tilien yhdistämisessä tapahtui virhe. Yritä myöhemmin uudelleen.";
+
+/* MyAccount web portal */
+"ACCOUNT_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Virhe tilin avaamisessa. Tarkista verkkoyhteys ja yritä uudelleen.";
+
+/* List item title for user's generic phone number */
+"CONTACT_PHONE" = "Puhelin";
+
+/* From removed SkypeKit.strings */
+/* List item title for user's home phone number. */
+"CONTACT_PHONE_HOME" = "Koti";
+
+/* List item title for user's office phone number */
+"CONTACT_PHONE_OFFICE" = "Työ";
+
+/* List item title for user's mobile phone number. */
+"CONTACT_PHONE_MOBILE" = "Kännykkä";
+
+/* List item title for user's other phone number. */
+"CONTACT_PHONE_OTHER" = "Muu";
+
+/* A hidden phone number. */
+"CONTACT_UNKNOWN_PSTN_DISPLAYNAME" = "Tuntematon numero";
+
+/* A guest user contact with temporaty skype name with suffixed 'guest' */
+"CONTACT_GUEST_DISPLAYNAME" = "%@ (vieras)";
+
+/* ===== PARTICIPANT_VOICE_STATUS ===== */
+
+/* VOICE_CONNECTING status used when a call is being routed by the network but not ringing yet. */
+"PARTICIPANT_VOICE_STATUS_CONNECTING" = "Yhdistetään...";
+
+/* RINGING status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_RINGING" = "Hälyttää...";
+
+/* EARLY_MEDIA status when a participant is ringing. */
+"PARTICIPANT_VOICE_STATUS_EARLY_MEDIA" = "Soitetaan…";
+
+/* ON_HOLD status when a participant is held. */
+"PARTICIPANT_VOICE_STATUS_ON_HOLD" = "Puhelu pidossa";
+
+/* STOPPED status when a participant has stopped. */
+"PARTICIPANT_VOICE_STATUS_STOPPED" = "Puhelu päättyi";
+
+/* ===== CONVERSATION_LOCAL_LIVESTATUS ===== */
+"CONVERSATION_LOCAL_LIVESTATUS_STARTING" = "Aloitetaan...";
+"CONVERSATION_LOCAL_LIVESTATUS_RINGING_FOR_ME" = "Soitetaan...";
+"CONVERSATION_LOCAL_LIVESTATUS_IM_LIVE" = "Live";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_LOCALLY" = "Puhelu pidossa";
+"CONVERSATION_LOCAL_LIVESTATUS_ON_HOLD_REMOTELY" = "Toinen puoli pani pitoon";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE" = "Toisilla on puhelu käynnissä";
+"CONVERSATION_LOCAL_LIVESTATUS_OTHERS_ARE_LIVE_FULL" = "Puhelu käynnissä, maksimimäärä osallistujia";
+"CONVERSATION_LOCAL_LIVESTATUS_PLAYING_VOICE_MESSAGE" = "Toistaa äänitervehdystä";
+
+/* voicemail recording status will be appended by the duration. The full string is constructed as: <this label> - time, e.g.: "Recording - 00:22" */
+"CONVERSATION_LOCAL_LIVESTATUS_RECORDING_VOICE_MESSAGE" = "Tallennetaan";
+"CONVERSATION_LOCAL_LIVESTATUS_RECENTLY_LIVE" = "Äskettäiset puhelut";
+"CONVERSATION_LOCAL_LIVESTATUS_TRANSFERRING" = "Siirretään";
+
+"ACCOUNTMANAGER_LOGIN_STATUS" = "Kirjaudutaan…";
+"ACCOUNTMANAGER_CBLSYNC_STATUS" = "Lataa kontakteja…";
+"ACCOUNTMANAGER_UPGRADEDB_STATUS" = "Päivitetään...";
+
+/* Chat item shown in place of the message to tell that the message has been removed by its writer. */
+"CHATMESSAGE_MESSAGEREMOVED_TEXT" = "Tämä viesti on poistettu";
+
+/* ===== SkyLib Error/Result Codes ===== */
+
+/* sync errors at login/registration */
+"LOGOUTREASON_NETWORKERROR" = "Skypeen ei saatu yhteyttä.";
+"LOGOUTREASON_NETWORKERROR_RECOVERYSUGGESTION" = "Tarkista verkkoasetuksesi ja yritä uudelleen.";
+
+/* sync errors at registration */
+"Account::INVALID_SKYPENAME" = "Skype-nimi ei kelpaa.";
+"Account::INVALID_EMAIL" = "Sähköpostiosoite ei kelpaa.";
+"Account::INVALID_EMAIL_RECOVERYSUGGESTION" = "Tarkista ja yritä uudelleen.";
+"Account::UNACCEPTABLE_PASSWORD" = "Salasana ei kelpaa.";
+"Account::SKYPENAME_TAKEN" = "Nimi on jo käytössä.";
+"Account::SKYPENAME_TAKEN_RECOVERYSUGGESTION" = "Yritä uudelleen.";
+
+/* sync errors at login */
+"Account::NO_SUCH_IDENTITY" = "Tuntematon Skype-nimi tai salasana.";
+"Account::INCORRECT_PASSWORD" = "Tuntematon Skype-nimi tai salasana.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS" = "Liikaa kirjautumisyrityksiä.";
+"Account::TOO_MANY_LOGIN_ATTEMPTS_RECOVERYSUGGESTION" = "Yritä uudestaan.";
+"Account::ATO_BLOCKED" = "Tilisi käyttö on estetty. \n<a href = 'https://go.skype.com/account.recovery.ios'>Katso lisätietoja napauttamalla tätä</a>.";
+"Account::ACCESS_TOKEN_RENEWAL_FAILED" = "Virhe kirjauduttaessa Microsoft-tilillä. Yritä myöhemmin uudelleen.";
+
+/* no more free disk space on device to be able write to database detected at login */
+"Account::DB_DISK_FULL" = "Sisäänkirjautuminen ei onnistu, sillä laitteesi tallennustila on loppu.";
+
+/* generic problem trying to open the database file */
+"Account::DB_IO_ERROR" = "Sisäänkirjautuminen ei onnistu. Käynnistä laite uudelleen ja yritä uudelleen.(%d)";
+"Account::DB_FAILURE" = "Sisäänkirjautuminen epäonnistui. Käynnistä laite ja yritä uudelleen.(%d)";
+
+/* database file corruption detected at login (not recoverable by a restart of the app) */
+"Account::DB_CORRUPT" = "Sisäänkirjautuminen epäonnistui. Kokeile asentaa Skype uudelleen App Storesta.(%d)";
+
+/* async errors (can happen anytime while logged in) */
+"Account::PASSWORD_HAS_CHANGED" = "Salasanasi on muutettu. Jatka Skypen käyttöä kirjautumalla sisään.";
+"Account::LOGOUT_REMOTE" = "Sinut on kirjattu ulos.";
+
+/* Old or unsupported version. */
+"Account::UNSUPPORTED_VERSION" = "Tätä Skype-versiota ei tueta.";
+"Account::UNSUPPORTED_VERSION_RECOVERY_SUGGESTION" = "Jatka päivittämällä Skypen uusimpaan versioon.";
+
+/* This one is cryptic. Basically the user can't login right now... */
+"Account::PERIODIC_UIC_UPDATE_FAILED" = "Sisäänkirjautuminen epäonnistui. Yritä myöhemmin uudelleen.";
+
+/* Under age. */
+"Account::REJECTED_AS_UNDERAGE" = "Et voi kirjautua Skypeen, koska et täytä maasi tai alueesi alaikärajaa.";
+
+"LOGOUTREASON_GENERIC_RECOVERYSUGGESTION" = "Yritä uudestaan.(%d)";
+
+/* Modern new strings */
+
+/* The accessibility label for the call (audio) button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_CALL_ACCESSIBILITY_LABEL" = "Puhelu";
+
+/* The accessibility label for the video call button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOCALL_ACCESSIBILITY_LABEL" = "Videopuhelu";
+
+/* The accessibility label for the video message button in the app bar (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_VIDEOMESSAGE_ACCESSIBILITY_LABEL" = "Videoviesti";
+
+/* The accessibility label for the dialpad button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_LABEL" = "Valintapaneeli"; // 'dial pad' reads better with voice over than 'dialpad'
+/* The accessibility hint for the dialpad button, explaining that the dialpad is used to call phone numbers (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_DIALPAD_ACCESSIBILITY_HINT" = "Soita puhelinnumeroihin";
+
+/* The accessibility label for the 'new chat' button in the app bar (in the hub) (according to Apple's guidelines, labels should not end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_LABEL" = "Aloita uusi keskustelu";
+/* The accessibility hint for the 'new chat' button , explaining that the button is used to start a new chat (according to Apple's guidelines, hints _should_ end with a period) */
+"APPBAR_MESSAGE_ACCESSIBILITY_HINT" = "Aloita uusi keskustelu Skypessä";
+
+
+"HUB_RECENTS_TITLE" = "Äskettäin käytetyt";
+"HUB_PEOPLE_TITLE" = "Ihmiset";
+"HUB_FAVOURIES_TITLE" = "Suosikit";
+"CANCEL_ALERT_BUTTON" = "Kumoa";
+
+
+/* People Picker */
+"PEOPLEPICKER_FAVORITES_TITLE" = "Suosikit";
+"PEOPLEPICKER_CONTACTS_TITLE" = "Yhteystiedot";
+"PEOPLEPICKER_SEARCH_BAR_ACCESSIBILITY_LABEL" = "Etsi yhteyshenkilöitä";
+/* Title for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_TITLE" = "Etsi uusia yhteyshenkilöitä";
+/* Subtitle for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_CAPTION" = "Etsi %@";
+/* Accessibility label for item shown last in the list when searching in single-select (People) mode */
+"PEOPLEPICKER_SEARCH_SKYPE_DIRECTORY_ITEM_ACCESSIBILITY_LABEL" = "Etsi Skype-hakemistosta %@";
+
+/* Search Skype Directory */
+"SEARCH_SKYPE_DIRECTORY_PEOPLE_TITLE" = "Ihmiset";
+"SEARCH_SKYPE_DIRECTORY_BOTS_TITLE" = "Botit";
+
+/* New Chat */
+
+"NEW_CHAT_NOT_AUTHORIZED_DETAIL_LABEL" = "Ei yhteyttä"; // detail text for contacts that are not yet buddies (pending)
+
+"NEW_CHAT_SC_ONE_WAY_MATCH_DETAIL_LABEL" = "Skypessä"; // detail text for contacts that are SC One way matches.
+
+/* Dialog to presented when the user selects an Address Book contact (Short Circuit contact) which is not authorized */
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_TITLE" = "Yhdistä Skypeen";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CANCEL_BUTTON" = "Kumoa";
+"NEW_CHAT_ONE_WAY_MATCH_DIALOG_CONNECT_BUTTON" = "Yhdistä";
+
+/* Note: these are "screen titles", and there is not room for elaborate texts */
+"NEW_CHAT_MULTI_SELECT_TITLE" = "Uusi keskustelu";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"NEW_CHAT_CONTACT_SELECT_ACCESSIBILITY_HINT" = "Valitse kaksoisnapauttamalla.";
+
+/* When there are no recent conversation, we display an empty view with this text. */
+"RECENTS_EMPTY_VIEW_LABEL" = "Viimeisimmät keskustelut näytetään tässä.";
+
+/* When there are no unread messages, we display an empty view with this text.
+ The string and localization is copied from the Watch Resources */
+"UNREAD_NOTIFICATIONS_LONGTITLE_NOMESSAGES" = "Sinulla ei ole lukemattomia viestejä";
+
+/* When there are no recent PSTN calls (in the list of phone calls that show before the dialpad), we display an empty view with this text. */
+"RECENT_CALLS_EMPTY_VIEW_LABEL" = "Äskettäin soitetut puhelut matkapuhelimiin ja lankaliittymiin näkyvät tässä. <a href=\"open-dialpad\">Soita kaverille</a>";
+
+
+/* Accessibility for a cell in Recents.
+ There's four versions, depending on contact presence (only applies to 1:1 chats) and unread status. The components are:
+ Name      - The name of the conversation
+ Caption   - The last message
+ Timestamp - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970". */
+"RECENTS_CELL_ACCESSIBILITY_LABEL"                  = "%@, %@, %@, %@";                         // name, caption, timestamp
+"RECENTS_CELL_UNREAD_ACCESSIBILITY_LABEL"           = "%@, uusia viestejä, %@, %@, %@";           // name, "new messages", caption, timestamp
+
+/* Cells in recents where I'm live or others are live */
+"RECENTS_CELL_SUMMARY_ON_HOLD_REMOTELY" = "Toinen puoli pani pitoon";     // Shown in Recents as summary when the remote side put the call on hold
+"RECENTS_CELL_SUMMARY_ON_HOLD_LOCALLY" = "Puhelu pidossa";            // Shown in Recents as summary when I'm on hold in a live conversation
+"RECENTS_CELL_SUMMARY_ONGOING_CALL" = "Puhelu käynnissä";               // Shown in Recents as summary when others are live in a conversation that I can join
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITH_DURATION" = "Nykyinen puhelu, %@";           // Shown in Recents as summary when I'm live in a conversation. The duration is included, e.g. "Current call, 1min 5s"
+"RECENTS_CELL_SUMMARY_CURRENT_CALL_WITHOUT_DURATION" = "Nykyinen puhelu";           // Shown in Recents as summary when I'm live in a conversation. Same as above but no comma when duration is 0.
+
+/* Part of synthesized accessibility label for an message in a chat. The full string is constucted as: <author name>, <message>, <this label>, <time stamp>.
+ This part is used to indicate that the message was edited after it was first sent. (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_EDITED_MESSAGE_ACCESSIBILITY_LABEL" = "Muokattu";
+
+/* Chat menu items and resulting UI strings */
+
+"CHAT_MESSAGE_EDIT_MENU_ITEM" = "Muokkaa";
+"CHAT_MESSAGE_SAVE_TO_CAMERA_ROLL_MENU_ITEM" = "Tallenna kuva";
+"CHAT_MESSAGE_SAVE_VIDEO_TO_CAMERA_ROLL_MENU_ITEM" = "Tallenna video";
+
+/* Label for menu item to show hearts for a chat message */
+"CHAT_MESSAGE_SHOW_HEARTS_MENU_ITEM" = "Näytä tykkäykset";
+
+/* Label for menu item to "heart" (like) a chat message */
+"CHAT_MESSAGE_ADD_HEART_MENU_ITEM" = "Tykkäys";
+
+/* Label for menu item to "unheart" (unlike) a chat message */
+"CHAT_MESSAGE_REMOVE_HEART_MENU_ITEM" = "Poista tykkäys";
+
+/* Accessibility label for button to close list of hearts */
+"CHAT_HEARTS_LIST_CLOSE_BUTTON_ACCESSIBILITY_LABEL" = "Sulje";
+
+/** Title for list of hearts */
+"CHAT_HEARTS_LIST_TITLE" = "Tykkäykset";
+
+/* Hint for cell in hearts list */
+"CHAT_HEARTS_ACCESSIBILITYHINT_DOUBLE_TAP" = "Näytä yhteystieto kaksoisnapauttamalla";
+
+/* Text used for "new heart jump button" (looks like this: "up/down arrow + CHAT_NOTIFICATION_NEW_HEART + heart icon") */
+"CHAT_NOTIFICATION_NEW_HEART" = "Uusi";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_WAS_LIKED" = "Tykkää viestistäsi.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_EXCERPT_WAS_LIKED" = "Tykkää viestistäsi: %@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in 1:1 chat */
+"MESSAGE_1-1_PHOTO_WAS_LIKED" = "Tykkää kuvastasi.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_WAS_LIKED" = "%@ tykkää viestistäsi.";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_EXCERPT_WAS_LIKED" = "%1$@ tykkää viestistäsi: %2$@";
+
+/* Text used for sub-title of in-app notification to notify about a message being hearted in group chat (include name of "liker") */
+"MESSAGE_GROUP_PHOTO_WAS_LIKED" = "%@ tykkää kuvastasi.";
+
+
+/*
+ Shown in chat beneath a message if no one has yet loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ Loc={Placeholder="<a href=''>"}        Must include this HTML tag
+ Loc={Placeholder="</a>"}               Must include this HTML tag
+ */
+"CHAT_HEARTS_NO_ONE" = "<a href=''>Kukaan ei ole vielä tykännyt tästä</a>";
+
+/*
+ Shown in chat beneath a message if only the user has loved the message
+ Loc={EscapeChars="&=&amp;"}            Must escape & (because string must be valid HTML)
+ */
+"CHAT_HEARTS_MYSELF" = "Sinä tykkäät tästä";
+
+
+/* (MSA) Landing page. */
+"LANDING_PAGE_SKYPE_SIGN_IN_LABEL" = "Kirjaudu";
+"LANDING_PAGE_SKYPE_NAME_BUTTON" = "Skype-nimi";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON" = "Microsoft-tili";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON" = "Luo tili";
+
+/* (MSA) Landing page accessibility labels for Voice Over. */
+"LANDING_PAGE_SKYPE_NAME_BUTTON_ACCESSIBILITY_LABEL" = "Kirjaudu sisään Skype-nimellä";
+"LANDING_PAGE_MS_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Kirjaudu sisään Microsoft-tilillä";
+"LANDING_PAGE_CREATE_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Luo tili";
+"LANDING_PAGE_UNIFIED_USER_IDENTIFIER_FIELD_ACCESSIBILITY_LABEL" = "Sisäänkirjautumistietojen kenttä";
+
+/* Linking Microsoft account to Skype account */
+"LOGIN_LINK_USER_HAS_SKYPE_ACCOUNT" = "Käytätkö jo Skypeä?";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON" = "Kyllä";
+"LOGIN_LINKEXISTINGACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Kyllä, minulla on jo Skype-tili.";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON" = "Ei";
+"LOGIN_LINKNEWSKYPEACCOUNT_BUTTON_ACCESSIBILITY_LABEL" = "Ei, minulla ei ole Skype-tiliä.";
+
+/* People filter */
+"CONTACT_GROUP_FILTER_BUTTON_ACCESSIBILITY_LABEL" = "Henkilöluettelon suodatin";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON" = "Kaikki yhteyshenkilöt";
+"CONTACT_GROUP_ONLINE_FILTER_BUTTON" = "Online-yhteyshenkilöt";
+
+"CONTACT_GROUP_ALLFILTER_BUTTON_ACCESSIBILITY_HINT" = "Näytä kaikki yhteyshenkilöt.";
+"CONTACT_GROUP_ONLINE_BUTTON_ACCESSIBILITY_HINT" = "Näytä vain yhteyshenkilöt, jotka ovat online-tilassa.";
+"CONTACT_GROUP_SKYPE_BUTTON_ACCESSIBILITY_HINT" = "Näytä vain Skype-yhteyshenkilöt.";
+
+/* SKPChatViewController */
+"APPBAR_CHATVIEW_VOICECALL" = "Äänipuhelu";
+"CHATINPUT_PLACEHOLDER" = "Kirjoita viesti tähän";
+"CHATINPUT_PLACEHOLDER_SMS" = "Kirjoita tekstiviesti tähän";
+"CHATEMPTYPAGE_TITLE_PLACEHOLDER" = "Tervehdi henkilöä %@";
+"CHATEMPTYPAGE_CAPTION_PLACEHOLDER" = "Keskustelusi näkyy tässä.";
+"CHATTYPING_SINGLEUSER" = "%@ kirjoittaa...";
+"CHATTYPING_TWOUSERS" = "%@ ja %@ kirjoittavat...";
+"CHATTYPING_THREEUSERS" = "%@, %@ ja yksi muu kirjoittavat...";
+"CHATTYPING_MULTIPLEUSERS" = "%@, %@ ja %d muuta kirjoittavat...";
+
+/* SKPEmptyContardView */
+"CALL_PHONE_BUTTON" = "Soita puhelimeen";
+"INVITE_CONTACT_TO_JOIN_SKYPE_BUTTON" = "Lähetä kutsu";
+"INVITE_CONTACT_TO_CHAT_ON_SKYPE" = "Lähetä tekstiviestilinkki Skype-keskusteluun.";
+"SEND_MESSAGE_TO_CONTACT_BUTTON" = "Aloita keskustelu";
+"SEND_SMS_TO_CONTACT_BUTTON" = "Tekstiviesti";
+"EMPTY_PAGE_HEADER_TITLE" = "Tervehdi henkilöä";
+"CONTACT_NOT_CONNECTED_SKYPE_NETWORK" = "Skype";
+
+/* Text of the SMS sent to invite a non-Skype user - combined with the local skype name (DO NOT LOCALIZE LINK), (Avoid Unicode when possible) */
+"SMS_INVITE_SMS_TEXT" = "Hei! Jutellaan Skypessä: https://www.skype.com/go/download (%@)";
+
+/* Accessibility label for cost of sending an SMS (used in input bar) - combined with SMS_CAPACITY_REMAINING_ACCESSIBILITY_LABEL_PLURAL */
+"SMS_COST_ACCESSIBILITY_LABEL" = "Tämän tekstiviestin lähettäminen maksaa %@";
+
+/* SKPDialPadViewController */
+"DIALPAD_COUNTRYCODE_FILTER_EMPTY" = "Valitse maa/alue";
+"DIALPAD_CALL_BUTTON" = "Soita";
+"DIALPAD_STAR_BUTTON" = "Tähti";
+"DIALPAD_HASH_BUTTON" = "Risuaita";
+"DIALPAD_BACKSPACE_BUTTON" = "Poista";
+
+/* The accessibility label of the SMS button in the dialpad (that opens a chat to that phone number) */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_LABEL" = "Tekstiviesti";
+/* The accessibility hint of the SMS button in the dialpad, e */
+"DIALPAD_SMS_BUTTON_ACCESSIBILITY_HINT" = "Avaa keskustelun henkilön %@ kanssa";
+
+
+/* An accessibility announcement that is made when the user scrolls in the recent calls list, to tell the user that the keypad was hidden.
+ This is mirrored by the "show keypad" label below, so that "hide" and "show" are antonyms. */
+"DIALPAD_KEYPAD_DID_HIDE_ACCESSIBILITY_ANNOUNCEMENT" = "Näppäimistö piilotettiin.";
+
+/* The accessiblity label of the button that shows on the app bar in the dailpad view when the keypad is hidden. Pressing this button brings back the keypad (shows it again). */
+"DIALPAD_SHOW_KEYPAD_BUTTON_ACCESSIBILITY_LABEL" = "Näytä näppäimistö";
+
+/* Errors for the call service, TO BE VERIFIED */
+"ERROR_SKYPECONTACTINVALID_FAILUREREASON" = "Yhteystiedolle ei voi soittaa";
+"ERROR_SKYPECONTACTINVALID_FAILUREDESCRIPTION" = "Yhteystiedolle soitettaessa tapahtui virhe.";
+"ERROR_SKYPECONTACTINVALID_FAILURERECOVERYSUGGESTION" = "Tarkista ja yritä uudelleen.";
+
+"ERROR_EMERGENCYCALL_FAILUREREASON" = "Hätänumerot";
+"ERROR_EMERGENCYCALL_FAILUREDESCRIPTION" = "Laitteesi ei tue hätänumeroihin soittamista.";
+
+"ERROR_PHONENUMBERINVALID_FAILUREREASON" = "Virheellinen puhelinnumero";
+"ERROR_PHONENUMBERINVALID_FAILUREDESCRIPTION" = "Puhelinnumeroon soitettaessa tapahtui virhe.";
+"ERROR_PHONENUMBERINVALID_FAILURERECOVERYSUGGESTION" = "Tarkista ja yritä uudelleen.";
+
+"ERROR_NATIVECALLINPROGRESS_FAILUREREASON" = "Puhelu on jo käynnissä";
+"ERROR_NATIVECALLINPROGRESS_FAILUREDESCRIPTION" = "Puhelu käynnissä.";
+"ERROR_NATIVECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Lopeta puhelu ennen Skype-puhelun aloittamista.";
+
+"ERROR_SKYPECALLINPROGRESS_FAILUREREASON" = "Puhelu on jo käynnissä";
+"ERROR_SKYPECALLINPROGRESS_FAILUREDESCRIPTION" = "Toinen Skype-puhelu on jo käynnissä.";
+"ERROR_SKYPECALLINPROGRESS_FAILURERECOVERYSUGGESTION" = "Lopeta puhelu ennen uuden puhelun aloittamista.";
+
+"ERROR_VOIPBLOCKED_FAILUREREASON" = "Puhelu epäonnistui";
+"ERROR_VOIPBLOCKED_FAILUREDESCRIPTION" = "Operaattorisi ei salli Skype-puheluita matkapuhelinverkon välityksellä. Soita Skype-puheluita muodostamalla yhteys WiFi-verkkoon.";
+
+"ERROR_CANTTALKTOYOURSELF_FAILUREREASON" = "Puhelu epäonnistui";
+"ERROR_CANTTALKTOYOURSELF_FAILUREDESCRIPTION" = "Et voi soittaa itsellesi.";
+
+"ERROR_CONTACTBLOCKED_FAILUREREASON" = "Estetty yhteystieto";
+"ERROR_CONTACTBLOCKED_FAILURERECOVERYSUGGESTION" = "Poista yhteystiedon esto ennen puhelua.";
+
+"ERROR_CONTACTIGNORED_FAILUREREASON" = "Ignored contact";
+"ERROR_CONTACTIGNORED_FAILUREDESCRIPTION" = "You received a call which was ignored.";
+
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREREASON" = "Mikrofonin käyttö";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILUREDESCRIPTION" = "Sinua ei kuulla puheluiden tai videoviestien aikana, jos mikrofoniasi ei ole lupa käyttää.";
+"ERROR_MICROPHONEPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Siirry laitteen asetuksiin ja tietosuoja-asetuksiin ja salli käyttö.";
+
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREREASON" = "Kameran käyttö";
+"ERROR_CAMERAPERMISSIONDENIED_FAILUREDESCRIPTION" = "Sinua ei nähdä puheluiden tai videoviestien aikana, jos kameraasi ei ole lupa käyttää.";
+"ERROR_CAMERAPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Salli käyttö siirtymällä laitteesi asetuksiin ja valitsemalla Tietosuoja.";
+/* Shown in alert when take photo is selected but camera permission is denied */
+"ERROR_CAMERAPERMISSIONDENIED_TAKE_PHOTO_FAILUREDESCRIPTION" = "Jos et ole myöntänyt kameran käyttöoikeutta, et voi ottaa kuvia Skypessä.";
+
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREREASON" = "Puhelu epäonnistui";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILUREDESCRIPTION"       = "Toinen äänentoistosovellus estää Skypeä toistamasta ääntä.";
+"ERROR_AUDIOSESSIONINVALID_INTERRUPTED_FAILURERECOVERYSUGGESTION" = "Tarkista ja yritä uudelleen.";
+
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREREASON" = "Puhelu epäonnistui";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILUREDESCRIPTION"       = "Laitteen äänentoistossa on ongelma.";
+"ERROR_AUDIOSESSIONINVALID_MEDIASERVER_FAILURERECOVERYSUGGESTION" = "Tarkista ja yritä uudelleen.";
+
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREREASON" = "Puhelu epäonnistui";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILUREDESCRIPTION"          = "Laitteen äänentoistossa on ongelma.";
+"ERROR_AUDIOSESSIONINVALID_INACTIVE_FAILURERECOVERYSUGGESTION" = "Jatka käynnistämällä Skype uudelleen.";
+
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREREASON" = "Puhelu epäonnistui";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILUREDESCRIPTION" = "Laitteen äänentoistossa on ongelma.";
+"ERROR_AUDIOSESSIONINVALID_AUDIOLIBRARY_BUSY_FAILURERECOVERYSUGGESTION" = "Yritä uudestaan.";
+
+/* Alert view shown when the user tries to make an outgoing call, answer a incoming call or join a ongoing group call and we cannot record from the microphone */
+"ERROR_MICROPHONERECORDING_FAILUREREASON" = "Puhelua ei voida soittaa";
+"ERROR_MICROPHONERECORDING_FAILUREDESCRIPTION" = "Laitteen äänentoistossa on ongelma.";
+"ERROR_MICROPHONERECORDING_FAILURERECOVERYSUGGESTION" = "Yritä myöhemmin uudelleen.";
+
+"ERROR_GENERALCALLINGERROR_FAILUREREASON" = "Puhelu epäonnistui";
+"ERROR_GENERALCALLINGERROR_FAILUREDESCRIPTION" = "Puhelun yhdistämisessä tapahtui virhe.";
+"ERROR_GENERALCALLINGERROR_FAILURERECOVERYSUGGESTION" = "Yritä myöhemmin uudelleen.";
+
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREREASON" = "Puhelu epäonnistui";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_FAILUREDESCRIPTION" = "Voit soittaa Intiassa vain henkilöille, jotka ovat Skype-käyttäjiä (maksuton palvelu). Et voi soittaa Intiassa Skype-puheluita matka- tai lankapuhelimiin.";
+"ERROR_PSTNBLOCKEDREGULATORINDIA_LEARNMORE_BUTTON" = "Lisätietoja";
+
+/* Alert view shown when the user attempts to join a group audio call which is at capacity. */
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Puheluun liittyminen epäonnistui";
+"ERROR_SKYPECALL_UNABLE_TO_JOIN_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Ryhmäpuhelu on täynnä, yritä myöhemmin uudelleen.";
+
+/* Alert view shown when the user tries to use the camera to take a photo or set a profile picture while but is not allowed as they are currently in a video call */
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREREASON" = "Kamera käytössä";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILUREDESCRIPTION" = "Osallistut parhaillaan videopuheluun.";
+"ERROR_SKYPECALL_CAMERA_IN_USE_FAILURERECOVERYSUGGESTION" = "Poista video käytöstä ennen kuin yrität käyttää kameraa.";
+
+/* Alert view shown when the user attempts to make a group audio call. */
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Ryhmäpuhelut";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "%d tai useamman osallistujan ryhmille ei voida soittaa tästä laitteesta.";
+"ERROR_SKYPECALL_MAXIMUM_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a group video call. */
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREREASON" = "Ryhmävideopuhelut";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "%d tai useamman osallistujan ryhmille ei voida soittaa tästä laitteesta.";
+"ERROR_SKYPECALL_MAXIMUM_VIDEO_PARTICIPANTS_REACHED_FAILURERECOVERYSUGGESTION" = "";
+
+/* Alert view shown when the user attempts to make a call while being Offline. */
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILUREREASON" = "Olet offline-tilassa";
+"ERROR_SKYPECALL_YOU_ARE_OFFLINE_FAILURERECOVERYSUGGESTION" = "Puheluiden soittaminen Skypessä edellyttää verkkoyhteyttä.";
+
+/* Alert view shown when the live call reached it maximum number of participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREREASON" = "Ryhmäpuhelut";
+"ERROR_SKYPECALL_ADDPARTICIPANT_MAXIMUM_PARTICIPANTS_REACHED_FAILUREDESCRIPTION" = "Puheluun osallistujien enimmäismäärä saavutettu.";
+
+/* Alert view shown when the live call has been put on hold and prohibits the user to add more participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_FAILUREREASON" = "Puhelu pidossa";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_LOCALLY_RECOVERYSUGGESTION" = "Palaa ensimmäiseen puheluun ennen uusien osallistujien lisäämistä.";
+
+/* Alert view shown when the live call is put on hold by the remote side and prohibits the user to add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_FAILUREREASON" = "Vastapuoli asettanut puhelun pitoon";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_ON_HOLD_REMOTELY_RECOVERYSUGGESTION" = "Tähän puheluun on palattava ennen uusien osallistujien lisäämistä.";
+
+/* Alert view shown when the call is being initialize and the user is not yet allowed to try and add participants. */
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREREASON" = "Puhelua valmistellaan";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_FAILUREDESCRIPTION" = "Osallistujia ei voi lisätä, kun puhelua yhdistetään.";
+"ERROR_SKYPECALL_ADDPARTICIPANT_CALL_SETUP_IN_PROGRESS_RECOVERYSUGGESTION" = "Odota, kunnes puhelu on yhdistetty.";
+
+/* */
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREREASON" = "Ryhmä";
+"ERROR_CONVERSATION_ADDING_PARTICIPANTS_FAILED_FAILUREDESCRIPTION" = "Osallistujien lisäämisessä tapahtui virhe. Yritä uudelleen.";
+
+"ERROR_VIDEOCODECMISMATCH_FAILUREREASON" =  "Videokuvaa ei voi käynnistää";
+"ERROR_VIDEOCODECMISMATCH_FAILUREDESCRIPTION" = "Virhe videon käynnistämisessä.";
+"ERROR_VIDEOCODECMISMATCH_FAILURERECOVERYSUGGESTION" = "Varmista, että kaikki puheluun osallistuvat käyttävät Skypen uusinta versiota.";
+
+"ERROR_GENERALVIDEOERROR_FAILUREREASON" =  "Videokuvaa ei voi käynnistää";
+"ERROR_GENERALVIDEOERROR_FAILUREDESCRIPTION" = "Skype ei voinut aloittaa videota.";
+"ERROR_GENERALVIDEOERROR_FAILURERECOVERYSUGGESTION" = "Yritä myöhemmin uudelleen.";
+
+/* Resuming call */
+"ERROR_RESUMECALLINGERROR_FAILUREREASON" = "Jatketaan puhelua";
+"ERROR_RESUMECALLINGERROR_FAILUREDESCRIPTION" = "Puhelun jatkamisessa tapahtui virhe.";
+"ERROR_RESUMECALLINGERROR_FAILURERECOVERYSUGGESTION_LONG" = "Sulje kaikki ääntä käyttävät ohjelmat ja lopeta meneillään olevat puhelut ennen tämän Skype-puhelun jatkamista.";
+
+/* Recents list */
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW" = "Now";
+//"CLOCK_HUMANREADABLE_TIMESTAMP_NOW_ACCESSIBILITY_LABEL" = "Now";
+
+"MESSAGE_SUMMARY_CONTACT_REQUEST" = "Yhteyspyyntö";
+"MESSAGE_SUMMARY_PARTICIPANTS_CHANGED" = "Osallistujia lisättiin tai poistettiin";
+
+"MESSAGE_SUMMARY_BIRTHDAY" = "Tänään on henkilön <name>%@</name> syntymäpäivä"; /* The parameter (%@) is the full name of that person. The <name> </name> tags should appear before and after the name. You can put additional text inside the name tags (like the English 's suffix). */
+
+"MESSAGE_SUMMARY_SPAWN_CONFERENCE" = "Ryhmäkeskustelu luotiin";
+
+"MESSAGE_SUMMARY_USER_BLOCKED" = "Yhteyshenkilö estettiin";
+
+"MESSAGE_SUMMARY_INCOMING_VIDEO_MESSAGE" = "lähetti sinulle videoviestin";
+"MESSAGE_SUMMARY_OUTGOING_VIDEO_MESSAGE" = "Lähetit videoviestin";
+
+"MESSAGE_SUMMARY_OTHER_CONTACT_AUTHORIZED" = "<name>Sinä</name> ja <name>%@</name> olette nyt toistenne yhteyshenkilöitä.";
+"MESSAGE_SUMMARY_INCOMING_GRANTED_AUTHORIZATION" = "on nyt yhteyshenkilö";
+"MESSAGE_SUMMARY_OUTGOING_GRANTED_AUTHORIZATION" = "Olet jakanut yhteystietosi";
+
+"MESSAGE_SUMMARY_INCOMING_VOICE_MESSAGE" = "lähetti sinulle videoviestin";
+"MESSAGE_SUMMARY_OUTGOING_VOICE_MESSAGE" = "Lähetit ääniviestin.";
+
+"MESSAGE_SUMMARY_INCOMING_SHARED_CONTACT" = "%@ lähetti sinulle yhteystiedon. Tämä Skype-versio ei vielä tue ominaisuutta.";
+"MESSAGE_SUMMARY_OUTGOING_SHARED_CONTACT" = "Lähetit yhteystiedon. Tämä Skype-versio ei vielä tue ominaisuutta.";
+
+/* Share contacts */
+/* Hint for cell when only one contact was in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SINGLE_CONTACT" = "Näytä yhteystieto kaksoisnapauttamalla";
+/* Hint for cell when more than one contact is in the message */
+"SHARE_CONTACTS_ACCESSIBILITYHINT_DOUBLE_TAP_SEVERAL_CONTACTS" = "Näytä yhteystietoja kaksoisnapauttamalla";
+/* Share contact cell */
+/* Label on the contact that is shown when you sent a contact */
+"SHARE_CONTACTS_CONTACT_CONTACT_SENT" = "Yhteystieto lähetetty";
+/* Label on the contact that is shown when you receive a contact that is not already a contact */
+"SHARE_CONTACTS_CONTACT_ADD_TO_CONTACTS" = "Lisää yhteystietoihin";
+/* Label on the contact that is shown when you receive a contact that is already a contact */
+"SHARE_CONTACTS_CONTACT_ALREADY_A_CONTACT" = "On jo yhteystiedoissa";
+/* Label on the contact cell if several contacts where in the message */
+"SHARE_CONTACTS_CONTACT_VIEW_CONTACTS" = "Näytä yhteystiedot";
+/* Title of picker when selecting contacts to send */
+"SHARE_CONTACTS_PICKER_TITLE" = "Lähetä yhteystietoja";
+/* Accessibility label for button to send contacts */
+"SHARE_CONTACTS_PICKER_SEND_BUTTON_ACCESSIBILITYLABEL" = "Lähetä yhteystietoja";
+/* If more than X contacts are added to the token field (Contacts: field) in share contacts, the additional ones are represented by this string instead */
+"SHARE_CONTACTS_PICKER_ENDTOKENTITLE" = "ja %d muuta";
+/* Placeholder string for contact picker in share contacts */
+"SHARE_CONTACTS_PICKER_PLACEHOLDERTOKENFIELD" = "Valitse yhteystiedot";
+/* Message displayed in an alert if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_MESSAGE" = "Sinulla ei ole lähetettäviä yhteystietoja Skypessä.";
+/* Title of alert that is shown if the user have no contacts and tries to share contacts */
+"SHARE_CONTACTS_PICKER_ALERT_NO_CONTACTS_TITLE" = "Ei yhteystietoja";
+/* Title of the entry that is shown in the activity picker as the entry point to share contacts */
+"SHARE_CONTACTS_ACTIVITY_TITLE" = "Yhteystiedot";
+/* Accessibility label for the entry in the activity picker */
+"SHARE_CONTACTS_ACTIVITY_TITLE_ACCESSIBILITYLABEL" = "Lähetä yhteystietoja";
+/* Detailed text of a shared contact if you have sent a contact request */
+"SHARE_CONTACTS_CONTACT_REQUEST_SENT" = "Yhteyspyyntö lähetetty";
+/* Detailed text of a shared contact if contact is waiting for you to authorize them as a contact */
+"SHARE_CONTACTS_CONTACT_WAITING_YOUR_AUTHORIZATION" = "Yhteyspyyntö odottaa";
+/* Title of view when looking at a message where you sent several contacts */
+"SHARE_CONTACTS_VIEWER_TITLE" = "Lähetetyt yhteystiedot";
+
+"MESSAGE_SUMMARY_INCOMING_UNSUPPORTED_MESSAGE" = "%@ lähetti sinulle viestin, jota tämä Skype-versio ei vielä tue.";
+"MESSAGE_SUMMARY_OUTGOING_UNSUPPORTED_MESSAGE" = "Lähetit viestin, jota tämä Skype-versio ei vielä tue.";
+
+"RECENTS_DELETE_CONVERSATION" = "Poista keskustelu";
+"RECENTS_MARK_CONVERSATION_AS_READ" = "Merkitse luetuksi";
+"RECENTS_MARK_CONVERSATION_AS_UNREAD" = "Merkitse lukemattomaksi";
+
+/* Accessibility scenes. Used by automation. */
+"CHAT_ACCESSIBILITYLABEL" = "Keskustelut";
+"CALL_ACCESSIBILITYLABEL" = "Äänipuhelu";
+"LANDINGSIGNIN_ACCESSIBILITYLABEL" = "Pääsisäänkirjautuminen";
+"MSASIGNIN_ACCESSIBILITYLABEL" = "MSA sign in";
+"SKYPESIGNIN_ACCESSIBILITYLABEL" = "Skype-kirjautuminen";
+"HUB_ACCESSIBILITYLABEL" = "Siirtymisruutu";
+
+/* Accessibility label for the expression search category collection view cell */
+"EXPRESSION_SEARCH_CATEGORY_CELL_ACCESSIBILITY_LABEL" = "Ehdotettu hakukohde %@";
+
+/* Accessibility label for the button that opens the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BUTTON_ACCESSIBILITY_LABEL" = "Näytä hymiöt";
+
+/* Accessibility label for the button that opens the Keyboard(according to Apple's guidelines, labels should not end with a period) */
+"KEYBOARD_BUTTON_ACCESSIBILITY_LABEL" = "Näytä näppäimistö";
+
+/* The accesibility label for the backspace button in the emoticon picker keyboard (according to Apple's guidelines, labels should not end with a period) */
+"EMOTICONPICKER_BACKSPACE_BUTTON_ACCESSIBILITY_LABEL" = "Poista";
+
+/* The accesibility label for the search button in the emoticon picker keyboard */
+"EMOTICONPICKER_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Etsi";
+
+/* The accesibility label for the Skype store button in the emoticon picker keyboard */
+"EMOTICONPICKER_STORE_BUTTON_ACCESSIBILITY_LABEL" = "Kauppa";
+
+/* The tite for section of recently picker emoticons (in the emoticon picker) */
+"EMOTICONPICKER_RECENTLY_USED_TAB_TITLE" = "Äskettäin käytetyt";
+
+/* The tite for section of default emoticons (in the emoticon picker) */
+"EMOTICONPICKER_EMOTICONS_TAB_TITLE" = "Hymiöt";
+
+/* The tite for section of default mojis (in the emoticon picker) */
+"EMOTICONPICKER_MOJIS_TAB_TITLE" = "Mojit";
+
+/* Expression Search */
+"EXPRESSION_SEARCH_TITLE" = "Etsi";
+"EXPRESSION_SEARCH_SUGGESTIONS_TITLE" = "Ehdotuksia";
+"EXPRESSION_SEARCH_NO_RESULTS" = "Mitään ei löytynyt";
+
+/* Sharing moji*/
+/* Default moji share message. %@ is an URL */
+"MOJI_SHARE_DEFAULT_TEXT" = "Katso tämä Moji liittymällä keskusteluuni Skypessä: %@";
+/* Email moji share message. %@ is an URL */
+"MOJI_SHARE_EMAIL_TEXT" = "Hei!\nLiittymällä keskusteluuni Skypessä voit katsoa Mojin, jonka lähetin sinulle: %@\nJutellaan pian!";
+
+"MOJI_SHARE_SUBJECT_TEXT" = "Katso tämä Moji";
+
+"MOJI_SHARE_GENERIC_FAILURE_TITLE" = "Virhe";
+"MOJI_SHARE_GENERIC_FAILURE_BODY" = "Mojin jakamisessa oli ongelma, yritä myöhemmin uudelleen.";
+
+/* Expression Store */
+"EXPRESSION_STORE_TITLE" = "Skype-kauppa";
+"EXPRESSION_STORE_FETCHING_STATUS_TITLE" = "Ladataan Moji-leikkeitä ja hymiöitä...";
+
+"EXPRESSION_STORE_SEARCH_BAR_PLACEHOLDER" = "Etsi";
+"EXPRESSION_STORE_FREE" = "Maksuton";
+"EXPRESSION_STORE_REMOVE" = "Poista";
+
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOAD_FOR_FREE_TITLE" = "Maksuton lataus";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADING_TITLE" = "Ladataan";
+"EXPRESSION_STORE_ITEM_STATE_DOWNLOADED_TITLE" = "Ladattu";
+
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_TITLE" = "Virhe";
+"EXPRESSION_STORE_GENERIC_DOWNLOAD_FAILURE_BODY" = "Moji-leikkeiden ja hymiöiden lataamisessa tapahtui virhe.";
+
+/* When there are is no content fetched from store, we display failure text. */
+"EXPRESSION_STORE_FETCH_FAILURE_TEXT" = "Moji-leikkeiden ja hymiöiden hakemisessa tapahtui virhe. <a href=\"re-try fetching\">Yritä uudelleen</a>";
+
+
+/* The placeholder string for the emoticon / moji search bar */
+"EXPRESSION_SEARCH_SEARCHBOX_PLACEHOLDER_TEXT" = "Etsi hymiöitä ja Moji-leikkeitä";
+
+/* Text in the emoticon picker recents page when there are no (zero) recents */
+"EMOTICONPICKER_NO_RECENT_EMOTICONS" = "Viimeisimmäksi käytetyt hymiöt näkyvät tässä.";
+
+/* Header in emoticon picker for featured items  */
+"EMOTICONPICKER_FEATURED_HEADER" = "Esittelyssä";
+
+/* Hint to select and preview a moji */
+"EMOTICONPICKER_MOJI_ACCESSIBILITY_HINT" = "Esikatsele kaksoisnapauttamalla.";
+
+/* Hint to send already selected moji */
+"EMOTICONPICKER_SELECTED_MOJI_ACCESSIBILITY_HINT" = "Lähetä kaksoisnapauttamalla.";
+
+/* Hint to close Moji preview */
+"EMOTICONPICKER_MOJI_PREVIEW_ACCESSIBILITY_HINT" = "Sulje esikatselu kaksoisnapauttamalla.";
+
+/* Replay button in the moji preview */
+"MOJI_PREVIEW_REPLAY_BUTTON_ACCESSIBILITY_LABEL" = "Toista uudelleen";
+
+/* Moji preview view */
+"MOJI_PREVIEW_VIEW_ACCESSIBILITY_LABEL" = "Moji-esikatselu";
+
+/* Announcement after a moji was played. */
+"EMOTICONPICKER_MOJI_PREVIEW_PLAYED_ACCESSIBILITY_ANNOUNCEMENT" = "Lähetä napauttamalla uudelleen.";
+
+/* Microphone permission notification view shown in a dialog call when the app does not have any microphone permissions. E.g.: Grant access to your microphone in device settings for <Triin> to hear you. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Ota mikrofoni käyttöön laitteen asetuksista, jotta %@ kuulee sinut.";
+
+/* Microphone permission notification view shown in a group call when the app does not have any microphone permissions. */
+"LIVECALL_NOMICROPHONE_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Ota mikrofoni käyttöön laitteen asetuksista, jotta muut kuulevat sinut.";
+
+/* Camera permission notification view shown in a dialog call when the app does not have any camera permissions. E.g.: Grant access to your camera in device settings for <Triin> to see you. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_DIALOG_CALL_NOTIFICATION_MESSAGE" = "Ota kamera käyttöön laitteen asetuksissa, jotta %@ näkee sinut.";
+
+/* Camera permission notification view shown in a group call when the app does not have any camera permissions. */
+"LIVECALL_NOCAMERA_PERMISSIONS_ALERT_GROUP_CALL_NOTIFICATION_MESSAGE" = "Ota kamera käyttöön laitteen asetuksissa, jotta kaikki näkevät sinut.";
+
+/* Alert banner view shown in a group call when the call reached it maximum number of participants. */
+"LIVECALL_MAXIMUM_NUMBER_OF_PARTICIPANTS_REACHED_NOTIFICATION_MESSAGE" = "Puheluun osallistujien enimmäismäärä saavutettu";
+
+/* Alert banner view shown when a call has been started with no internet connection */
+"LIVECALL_NO_INTERNET_CONNECTION_NOTIFICATION_MESSAGE" = "Puhelun soittaminen edellyttää verkkoyhteyttä";
+
+/* Alert banner view shown when the outgoing video has stopped in a multi-app layout, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_MULTIAPPLAYOUT_NOTIFICATION_MESSAGE" = "Kamera ei ole käytössä Split View -näkymässä.";
+
+/* Alert banner view shown when both incoming and outgoing video has stopped when app is in slide over state, introduced in iOS 9 */
+"LIVECALL_VIDEOSTOPPED_APPSLIDEOVER_NOTIFICATION_MESSAGE" = "Videota ei tueta jaetulla näytöllä.";
+
+/* In call button for disabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_LABEL" = "Kaiutin käytössä";
+/* In call button for disabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEON_ACCESSIBILITY_HINT" = "Poista kaiutin käytöstä kaksoisnapauttamalla.";
+/* In call button for enabling the speaker phone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_LABEL" = "Kaiutin pois käytöstä";
+/* In call button forenabling the speaker phone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_SPEAKERPHONE_BUTTON_SPEAKERPHONEOFF_ACCESSIBILITY_HINT" = "Ota kaiutin käyttöön kaksoisnapauttamalla.";
+
+/* In call button for unmuting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_LABEL" = "Puhelu mykistetty";
+/* In call button for unmuting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_MUTED_ACCESSIBILITY_HINT" = "Poista puhelun mykistys kaksoisnapauttamalla.";
+/* In call button for muting the microphone. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_LABEL" = "Puhelun mykistys poistettu";
+/* In call button for muting the microphone. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_MUTE_BUTTON_UNMUTED_ACCESSIBILITY_HINT" = "Mykistä puhelu kaksoisnapauttamalla.";
+
+/* In call button for disabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_LABEL" = "Video käytössä";
+/* In call button for disabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOON_ACCESSIBILITY_HINT" = "Poista video käytöstä kaksoisnapauttamalla.";
+/* In call button for enabling the video. (label) (according to Apple's guidelines, labels should not end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_LABEL" = "Video pois käytöstä";
+/* In call button forenabling the video. (hint) (according to Apple's guidelines, hints _should_ end with a period) */
+"LIVECALL_VIDEO_BUTTON_VIDEOOFF_ACCESSIBILITY_HINT" = "Ota video käyttöön kaksoisnapauttamalla.";
+
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was incoming (made by someone else). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_INCOMING_CALL_ACCESSIBILITY_LABEL" = "Saapuva";
+/* Part of synthesized accessibility label for an call in a chat. The full string is constructed as: <this label>, <message (see the CHAT_CALL_EVENT_ strings)>, <call duration>, <time stamp>.
+ This part is used to indicate that the call was outoging (made by you). (according to Apple's guidelines, labels should not end with a period) */
+"CHAT_VIEW_OUTGOING_CALL_ACCESSIBILITY_LABEL" = "Lähtevä";
+
+
+"CHAT_PARTICIPANTS_SINGLE" = "1 osallistuja"; // not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_MULTIPLE" = "%d osallistujaa"; // "3 Participants". not in a call. the secondary line in a chat navigation bar
+"CHAT_PARTICIPANTS_NONE" = "Ei osallistujia"; // No participants at all.
+"CHAT_PARTICIPANTS_WAITING_FOR_COUNT_TITLE" = "..."; // When number of participants is unknown and we wait for actual value
+
+/* Group call navigation bar caption when some participants are present. e.g. "2 of 3 on this call " */
+"CONVERSATION_CONFERENCE_CALL_SOME_PARTICIPANTS_HERE"                               = "%1$d / %2$d tässä puhelussa";
+
+/* Message shown when one contact needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the contact. E.g.: "John Johnson needs to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_ONE"   = "Henkilön %1$@ on päivitettävä Skype ennen tähän puheluun liittymistä.";
+
+/* Message shown when two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is the display name of the first contact; %2$@ is the display name of the second contact.
+   E.g.: "John Johnson and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_TWO"   = "Henkilöiden %1$@ ja %2$@ on päivitettävä Skype ennen kuin he voivat liittyä tähän puheluun.";
+
+/* Message shown when more than two contacts needs to be upgrade their Skype client before they are able to join:
+   %1$@ is a list of display names of the contacts (separate by CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR);
+   %2$@ is the display name of the last contact.
+   E.g.: "John Johnson, Jake Wu, Sarah Tomas and Peter Anderson need to update Skype before joining this call. */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_MANY"  = "Henkilöiden %1$@ ja %2$@ on päivitettävä Skype ennen kuin he voivat liittyä tähän puheluun.";
+
+/* Separator for components of the next generation calling upgrade notification when listing more than two contacts */
+"CHAT_NEXT_GENERATION_CALLING_UPGRADE_NOTIFICATION_SEPARATOR" = ", ";
+
+// Incoming calls (Skype and Video)
+
+/* Accessibility labels for an incoming Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Saapuva Skype-puhelu käyttäjältä %@";
+/* Accessibility labels for an incoming Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Saapuva ryhmäpuhelu henkilöiltä %@ ja %@";
+/* Accessibility labels for an incoming Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Saapuva ryhmäpuhelu henkilöiltä %@, %@ ja yhdeltä muulta henkilöltä";
+/* Accessibility labels for an incoming Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Saapuva ryhmäpuhelu henkilöiltä %@, %@ ja %d muulta henkilöltä";
+
+/* Accessibility labels for an incoming video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Saapuva näköpuhelu käyttäjältä %@";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Saapuva ryhmävideopuhelu henkilöiltä %@ ja %@";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Saapuva ryhmävideopuhelu henkilöiltä %@, %@ ja yhdeltä muulta henkilöltä";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_INCOMING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Saapuva ryhmävideopuhelu henkilöiltä %@, %@ ja %d muulta henkilöltä";
+
+
+// Outgoing calls (Skype and Video)
+
+/* Accessibility labels for an outgoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skype-puhelu käyttäjälle %@";
+/* Accessibility labels for an outgoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Ryhmäpuhelu henkilöille %@ ja %@";
+/* Accessibility labels for an outgoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Ryhmäpuhelu henkilöille %@, %@ ja yhdelle muulle henkilölle";
+/* Accessibility labels for an outgoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_OUTGOING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Ryhmäpuhelu henkilöille %@, %@ ja %d muulle henkilölle";
+
+/* Accessibility labels for an outgoing video call from one person. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A" = "Näköpuhelu käyttäjälle %@.";
+/* Accessibility labels for an incoming video call from two people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_AND_B" = "Näköpuhelu käyttäjille %@ ja %@.";
+/* Accessibility labels for an incoming video call from three people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_ONE_OTHER_USER" = "Ryhmävideopuhelu henkilöiden %@, %@ ja yhden muun henkilön kanssa.";
+/* Accessibility labels for an incoming video call from more than 3 people. (according to Apple's guidelines, hints _should_ end with a period) */
+"CALL_VIEW_ACCESSIBILITY_HINT_OUTGOING_VIDEO_CALL_WITH_A_B_AND_X_OTHER_USERS" = "Videopuhelu henkilöille %@, %@ ja %d muulle henkilölle.";
+
+
+// Ongoing calls (Skype and Video)
+
+/* Accessibility labels for an ongoing Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Skype-puhelu käyttäjän %@ kanssa";
+/* Accessibility labels for an ongoing Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Ryhmäpuhelu henkilöiden %@ ja %@ kanssa";
+/* Accessibility labels for an ongoing Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Ryhmäpuhelu henkilöiden %@, %@ ja yhden muun henkilön kanssa";
+/* Accessibility labels for an ongoing Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Ryhmäpuhelu henkilöiden %@, %@ ja %d muun henkilön kanssa";
+/* Accessibility labels for an ongoing video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Näköpuhelu käyttäjän %@ kanssa";
+/* Accessibility labels for an ongoing video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Ryhmävideopuhelu henkilöiden %@ ja %@ kanssa";
+/* Accessibility labels for an ongoing video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Ryhmävideopuhelu henkilöiden %@, %@ ja yhden muun henkilön kanssa";
+/* Accessibility labels for an ongoing video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Ryhmävideopuhelu henkilöiden %@, %@ ja %d muun henkilön kanssa";
+
+// Recovering calls (Skype and Video)
+
+/* Accessibility labels for a recovering Skype call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Palauta Skype-puhelun henkilön %@ kanssa";
+/* Accessibility labels for a recovering Skype call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Palautetaan ryhmäpuhelua henkilöiden %@ ja %@ kanssa";
+/* Accessibility labels for a recovering Skype call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Palautetaan ryhmäpuhelua henkilöiden %@, %@ ja yhden muun henkilön kanssa";
+/* Accessibility labels for a recovering Skype call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_SKYPE_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Palautetaan ryhmäpuhelua henkilöiden %@, %@ ja %d muun henkilön kanssa";
+/* Accessibility labels for a recovering video call from one person. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A" = "Palautetaan videopuhelua henkilön %@ kanssa";
+/* Accessibility labels for a recovering video call from two people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_AND_B" = "Palautetaan ryhmävideopuhelua henkilöiden %@ ja %@ kanssa";
+/* Accessibility labels for a recovering video call from three people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_ONE_OTHER_USER" = "Palautetaan ryhmävideopuhelua henkilöiden %@, %@ ja yhden muun henkilön kanssa";
+/* Accessibility labels for a recovering video call from more than 3 people. (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_RECOVERING_VIDEO_CALL_ACCESSIBILITY_LABEL_WITH_A_B_AND_X_OTHER_USERS" = "Palautetaan ryhmävideopuhelua henkilöiden %@, %@ ja %d muun henkilön kanssa";
+
+/* Call ended (according to Apple's guidelines, labels should not end with a period) */
+"CALL_VIEW_CALL_ENDED_ACCESSIBILITY_LABEL" = "Puhelu päättyi";
+
+/* Accessiblity label for the call duration (according to Apple's guidelines, labels should not end with a period) */
+"CALL_DURATION_ACCESSIBILITY_LABEL" = "Puhelun kesto";
+
+/* Accessiblity label for the voice message recording duration (according to Apple's guidelines, labels should not end with a period) */
+"VOICE_MESSAGE_RECORDING_DURATION_ACCESSIBILITY_LABEL" = "Tallennetaan ääniviestiä";
+
+/* Suffix for call duration days (plural) */
+"CALL_DURATION_DAY_MANY" = "pv";
+
+/* Suffix for call duration day (singular) */
+"CALL_DURATION_DAY_ONE" = "pv";
+
+/* Suffix for call duration hours (plural) */
+"CALL_DURATION_HOUR_MANY" = "h";
+
+/* Suffix for call duration hours (singular) */
+"CALL_DURATION_HOUR_ONE" = "h";
+
+/* Suffix for call duration minutes (plural) */
+"CALL_DURATION_MINUTE_MANY" = "min";
+
+/* Suffix for call duration minute (singular) */
+"CALL_DURATION_MINUTE_ONE" = "min";
+
+/* Suffix for call duration seconds (plural) */
+"CALL_DURATION_SECOND_MANY" = "s";
+
+/* Suffix for call duration second (singular) */
+"CALL_DURATION_SECOND_ONE" = "s";
+
+/* Separator for components of the duration string. This needs to be a non-breaking space or else the WTT tool will kill it. */
+"CALL_DURATION_SEPARATOR" = " ";
+
+"CONTACT_REQUEST_MESSAGE_ACCEPT_BUTTON_TITLE" = "Hyväksy";
+"CONTACT_REQUEST_MESSAGE_DENY_BUTTON_TITLE" = "Hylkää";
+"CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> haluaa lisätä sinut Skypeen\n\"%@\""; // <name>Peter<name> would like to add you on Skype\n "Hello World!"
+
+// Used when we hide contact request messages
+"IMPLICIT_CONTACT_REQUEST_MESSAGE_REQUEST" = "<name>%@</name> lähetti sinulle viestin sijainnista <location>%@</location>"; // <name>Peter<name> sent you a message from <location>London, United Kingdom</location>
+
+"CONTACT_REQUEST_MESSAGE_NONE" = "Tervehdi henkilöä <name>%@</name> ja lisää hänet yhteystietoihisi.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_TITLE" = "%@ ei ole vielä yhteyshenkilöissäsi.";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT" = "\"%@\" <a href=\"edit-contact-request-message\">Muokkaa</a>";
+"CONTACT_REQUEST_MESSAGE_NONE_EMPTY_CHAT_BUTTON" = "Lähetä yhteyspyyntö";
+
+"CONTACT_REQUEST_MESSAGE_NONE_BUTTON_TITLE" = "Lisää yhteystietoihin";
+"CONTACT_REQUEST_PENDING" = "Odotetaan, että <name>%@</name> hyväksyy yhteyspyynnön.\n<a href=\"resend-request\">Lähetä yhteyspyyntö uudelleen</a>";
+"CONTACT_REQUEST_BLOCKED" = "<name>%@</name> on estetty";
+"CONTACT_REQUEST_UNBLOCK_BUTTON" = "Poista esto";
+"CONTACT_REQUEST_BLOCK_BUTTON" = "Kyllä";
+"CONTACT_REQUEST_BLOCK_TITLE" = "Estä yhteyshenkilö";
+"CONTACT_REQUEST_DECLINED_TITLE" = "Yhteyspyyntö hylätty";
+"CONTACT_REQUEST_BLOCK_CANCEL_BUTTON" = "Kumoa";
+"CONTACT_REQUEST_BLOCK_ALERT" = "Haluatko varmasti estää tämän yhteystiedon?";
+"CONTACT_REQUEST_BLOCK_REPORT_ALERT" = "Haluatko myös estää tämän henkilön ja lähettää raportin?";
+
+"CHAT_OPTION_BLOCK_CONTACT" = "Estä";
+"CHAT_OPTION_BLOCK_AND_REMOVE_CONTACT" = "Estä ja poista";
+"CHAT_OPTION_BLOCK_AND_REPORT_CONTACT" = "Estä ja lähetä raportti";
+"CHAT_OPTION_ADD_PARTICIPANTS" = "Lisää osallistujia";
+"CHAT_OPTION_START_NEW_GROUP" = "Aloita uusi ryhmä";
+"CHAT_OPTION_SHOW_CONTACT_PROFILE" = "Näytä profiili";
+
+/* Option shown in ... menu in chat view controller, allowing user to get to get to the settings for turning on or off notifications */
+"CHAT_OPTION_NOTIFICATIONS" = "Ilmoitukset";
+
+/*Translator option in conversation title drop down menu*/
+"CHAT_OPTION_TRANSLATOR_SETTINGS" = "Translate";
+
+/* Chat notification settings sheet items */
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_ON" = "Tämän keskustelun ilmoitukset ovat käytössä.";
+"CHAT_NOTIFICATION_SETTINGS_MESSAGE_OFF" = "Tämän keskustelun ilmoitukset eivät ole käytössä.";
+"CHAT_NOTIFICATION_SETTINGS_TURN_ON_BUTTON" = "Ota ilmoitukset käyttöön";
+"CHAT_NOTIFICATION_SETTINGS_TURN_OFF_BUTTON" = "Poista ilmoitukset käytöstä";
+
+/* Option shown in ... menu in chat view controller, allowing user to leave a group chat */
+"CHAT_OPTION_LEAVE" = "Poistu ryhmästä";
+
+"CHAT_OPTION_PARTICIPANTS" = "Näytä osallistujat";
+
+/* Switch (toggle button) UI control accessibility */
+"MK_SWITCH_ON_MESSAGE" = "KÄYTÖSSÄ";
+"MK_SWITCH_OFF_MESSAGE" = "EI KÄYTÖSSÄ";
+/* Accessibility hint for a swith in ModernKit. (according to Apple's guidelines, hints _should_ end with a period)*/
+"MK_SWITCH_ACCESSIBILITY_HINT" = "Ottaa käyttöön ja pois käytöstä.";
+
+/* New chat view. */
+"NEWCHATSCENE_TITLE" = "Uusi keskustelu";
+"NEWCHATSCENE_TITLE_TOKEN" = "Vastaanottaja:"; // Title for the field containing the list of users (tokens)
+"NEWCHAT_SINGLE_ENDTOKENTITLE" = "& %d muu"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHAT_MULTIPLE_ENDTOKENTITLE" = "& %d muuta"; // If more than 11 users are added to the token field (TO: field), the last ones are represented by this string instead
+"NEWCHATSCENE_PLACEHOLDERTOKENFIELD" = "Lisää yhteyshenkilöt";
+"NEWCHATSCENE_BANNER_ENTRYPOINT" = "Aloitus";
+"NEWCHATSCENE_DISABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Peruuta uuden ryhmän luominen";
+"NEWCHATSCENE_ENABLE_MULTI_SELECT_ACCESSIBILITY_LABEL" = "Luo uusi ryhmä";
+"NEWCHATSCENE_VOICE_CALL_ACCESSIBILITY_LABEL" = "Äänipuhelu";
+"NEWCHATSCENE_VIDEO_CALL_ACCESSIBILITY_LABEL" = "Videopuhelu";
+"NEWCHATSCENE_SHOW_DIALPAD_ACCESSIBILITY_LABEL" = "Valintapaneeli";
+"NEWCHATSCENE_CANCEL_ACCESSIBILITY_LABEL" = "Peruuta";
+
+/* Accessibility label for the button that navigates you back one level (according to Apple's guidelines, labels should not end with a period) */
+"BACK_BUTTON_ACCESSIBILITY_LABEL" = "Takaisin";
+
+/* Accessibility label for the button in the hub that takes you to "My Info" (according to Apple's guidelines, labels should not end with a period) */
+"MY_INFO_HUB_BUTTON_ACCESSIBILITY_LABEL" = "Omat tiedot";
+
+/* Input Field Accessibility labels when the menu is closed and the action will open the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_CLOSED_ACCESSIBILITY_LABEL" = "Avaa mediavalikko";
+/* Input Field Accessibility labels when the menu is opened and the action will close the menu (according to Apple's guidelines, labels should not end with a period) */
+"PLUSMENU_BUTTON_OPENED_ACCESSIBILITY_LABEL" = "Sulje mediavalikko";
+
+/* My Info options */
+"MY_INFO_HELP_ACTION" = "Ohje";
+"MY_INFO_FEEDBACK_ACTION" = "Lähetä palautetta";
+
+"MY_INFO_CONNECTING" = "Yhdistetään...";
+
+"MY_INFO_STATUS" = "Tila";
+"MY_INFO_CREDIT" = "Skype-saldo";
+"MY_INFO_PROFILE_LINK" = "Oma tili";
+"MY_INFO_SETTINGS" = "Asetukset";
+"MY_INFO_SIGN_OUT" = "Kirjaudu ulos";
+"MY_INFO_EMPTY_MOOD_MESSAGE" = "Kirjoita fiilisviesti";
+"MY_INFO_MOOD_MESSAGE" = "Fiilisviesti";
+
+"MY_INFO_EDIT_MOOD_MESSAGE_HINT" = "Muokkaa kaksoisnapauttamalla";
+
+/* Send Feedback */
+"SEND_FEEDBACK_TITLE" = "Lähetä palautetta";
+
+/* My Info Change avatar image (according to Apple's guidelines, labels should not end with a period) */
+"MYINFO_AVATAR_BUTTON_ACCESSIBILITY_LABEL" = "Vaihda profiilikuva";
+
+"ACCOUNT_TAKEPHOTO_BUTTON" = "Ota kuva";
+"ACCOUNT_CHOOSEPHOTO_BUTTON" = "Valitse valokuva";
+"ACCOUNT_REMOVEPHOTO_BUTTON" = "Poista profiilikuva";
+
+/* Settings */
+"SETTINGS_NAV_BAR_TITLE" = "Asetukset";
+
+"SETTINGS_GENERAL" = "Yleiset";
+
+"SETTINGS_ALLOW_TARGETED_ADS" = "Salli kohdistetut mainokset";
+"SETTINGS_ALLOW_TARGETED_ADS_EXPLANATION" = "Anna Microsoftin käyttää Skype-profiilisi tietoja kiinnostavampien mainosten näyttämiseksi tässä sovelluksessa. <a href=\"skype.com\">Lisätietoja</a>";
+
+"SETTINGS_CHAT_NOTIFICATIONS" = "Keskusteluilmoitukset";
+"SETTINGS_PUSH_NOTIFICATIONS" = "Push-ilmoitukset";
+/* Accessibility label for the setting that enables or disables push notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_PUSH_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Push-ilmoitukset";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_ON" = "Saat ilmoitukset viesteistä myös Skypen ollessa suljettuna.";
+"SETTINGS_PUSH_NOTIFICATIONS_EXPLANATION_OFF" = "Et saa ilmoituksia viesteistä, kun Skype on suljettu.";
+"SETTINGS_INAPP_NOTIFICATIONS" = "Sovelluksen ilmoitukset";
+/* Accessibility label for the setting that enables or disable in-app notifications (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_NOTIFICATIONS_SWITCH_ACCESSIBILITY_LABEL" = "Sovelluksen ilmoitukset";
+"SETTINGS_INAPP_SOUNDS" = "Sovelluksen äänet";
+/* Accessibility label for the setting that enables or disable sounds within the app (according to Apple's guidelines, labels should not end with a period) */
+"SETTINGS_INAPP_SOUNDS_SWITCH_ACCESSIBILITY_LABEL" = "Sovelluksen äänet";
+"SETTINGS_OTHER" = "Muut";
+
+"SETTINGS_PRIVACY" = "Tietosuoja";
+"SETTINGS_HOW_PEOPLE_FIND_ME" = "Miten muut voivat etsiä minut";
+"SETTINGS_PRIVACY_EXPLANATION" = "Sinut voidaan etsiä näillä yhteystiedoilla Skypessä.";
+"SETTINGS_PRIVACY_ADD_PHONE_NUMBER" = "Lisää puhelinnumero";
+
+"SETTINGS_PROFILE_PICTURE_PRIVACY" = "Profiilikuva";
+"SETTINGS_PROFILE_PICTURE_EVERYONE" = "Näytetään kaikille";
+"SETTINGS_PROFILE_PICTURE_CONTACTS_ONLY" = "Näytetään omille yhteyshenkilöille";
+
+"SETTINGS_CONTACTS_HEADER" = "Yhteystiedot";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE" = "Lisää omat kaverit";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_ON" = "Skype tarkistaa yhteystietosi ja lisää Skypen yhteystietoluetteloon tuttujasi automaattisesti.";
+"SETTINGS_AUTOMATICALLY_ADD_FRIENDS_EXPLANATION_OFF" = "Sinun on etsittävä ja lisättävä yhteyshenkilöitä manuaalisesti.";
+
+"SETTINGS_ENABLE_URL_PREVIEW_SWITCH_TITLE" = "Linkin esikatselu";
+
+"SETTINGS_EMOTICONS_HEADER" = "Hymiöt";
+"SETTINGS_ENABLE_LARGE_EMOTICONS_SWITCH_TITLE" = "Käytä suuria hymiöitä";
+
+"SETTINGS_EDIT_BUTTON" = "Muokkaa";
+"SETTINGS_DONE_BUTTON" = "Valmis";
+
+"SETTINGS_ABOUT" = "Tietoja";
+
+/* Phone number verification */
+"PNV_ENTER_PHONE_NUMBER" = "Anna numerosi";
+"PNV_HOW_IS_MY_NUMBER_USED" = "Mihin numeroani käytetään?";
+"PNV_STANDARD_SMS_RATES_MAY_APPLY" = "Tavalliset tekstiviestihinnat voivat olla käytössä.";
+"PNV_ENTER_THE_CODE" = "Anna koodi";
+"PNV_CODE_SENT" = "Lähetimme koodin numeroosi";
+"PNV_RESEND_CODE_OR_CALL_ME" = "<a href='pnv://callme'>Soita minulle</a> tai <a href='pnv://resendcode'>lähetä koodi uudelleen</a>";
+"PNV_VERIFYING_NUMBER" = "Vahvistetaan numeroa";
+"PNV_NUMBER_VERIFIED" = "Vahvistettu";
+"PNV_NUMBER_USAGE_EXPLANATION" = "Numerosi auttaa muita löytämään sinut Skypessä. Se myös helpottaa uusien yhteystietojen etsimistä.";
+"PNV_CODE_VIEW_ACCESSIBILITY_LABEL" = "Koodi";
+
+/* Info text for the user on how to disable the "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"PNV_SETTINGS_EXPLANATION" = "Jos haluat muuttaa tapaa, jolla muut voivat etsiä sinut, siirry asetuksissa kohtaan %@ ja poista käytöstä mikä tahansa puhelinnumeroistasi.";
+
+/* Info text for the user on how to skip this flow, (variable=PNV_NOT_NOW) */
+"PNV_SETTINGS_EXPLANATION_ALTERNATIVE" = "Jos et halua käyttää puhelinnumeroasi, vaan haluat etsiä ja lisätä yhteyshenkilöt itse, valitse %@.";
+
+"PNV_SKYPE_PRIVACY_POLICY" = "Skypen tietosuojakäytäntö";
+"PNV_NOT_NOW" = "Ei nyt";
+"PNV_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Puhelinnumero";
+
+"PNV_WELCOME_HEADING" = "Kavereiden etsiminen on nyt entistä helpompaa";
+"PNV_WELCOME_PARAGRAPH" = "Alkuun pääset lisäämällä puhelinnumerosi.";
+
+"PNV_VERIFY_PHONE_NUMBER_ACCESSIBILITY_LABEL" = "Seuraava";
+
+/* Phone number verification errors */
+"PNV_ALERT_ERROR_TITLE" = "Virhe";
+"PNV_DEFAULT_ERROR_MESSAGE" = "Numerosi vahvistamisessa tapahtui virhe. Yritä myöhemmin uudelleen.";
+
+"PNV_ACTIVITY_LIMIT_REACHED_ERROR_MESSAGE" = "Vahvistettujen numeroiden enimmäismäärä on saavutettu. Poista jokin numeroista asetuksissa ennen kuin lisäät uuden numeron.";
+"PNV_ACTIVITY_INVALID_PHONE_NUMBER_ERROR_MESSAGE" = "Antamasi numero on virheellinen. Tarkista ja yritä uudelleen.";
+"PNV_UNSUPPORTED_VERIFY_METHOD_ERROR_MESSAGE" = "Tekstiviestiä ei voi lähettää tähän numeroon. Tarkista ja yritä uudelleen.";
+"PNV_EXPIRED_TOKEN_ERROR_MESSAGE" = "Koodi on vanhentunut. Hanki uusi koodi valitsemalla alta Lähetä uudelleen.";
+"PNV_WRONG_TOKEN_ERROR_MESSAGE" = "Koodi oli virheellinen. Tarkista ja yritä uudelleen.";
+
+/* Phone number verification, special error screens */
+"PNV_NETWORK_ISSUES_ERROR_MESSAGE" = "Ongelma verkkoyhteydessä. Tarkista verkkoasetukset ja yritä uudelleen.";
+"PNV_ERROR_TRY_AGAIN" = "Yritä uudelleen";
+
+/* Short circuit view shown when Skype is about to ask the user for permission to upload their native address book and match contacts on the server */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_TITLE" = "Lisää kavereitasi Skypestä";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_VIEW_SUBTITLE" = "Etsimme tuttujasi Skypestä ja lisäämme heidät yhteystietoluetteloon.";
+
+/* Short circuit learn more view to explain what it means to allow Skype to do contact matching */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Lisätietoja";
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_CHECK_PARAGRAPH" = "Jotta uusia Skype-yhteystietoja voitaisiin lisätä automaattisesti, osoitteistosi tarkistetaan ajoittain. Emme kuitenkaan lähetä kavereillesi kutsuja.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_DISABLE_INGESTION_PARAGRAPH" = "Jos muutat mielesi, poista %@ käytöstä asetuksissa. Osoitteistoasi ei enää käytetä tuttujesi etsimiseen, ja voit itse lisätä henkilöitä manuaalisesti";
+
+/* Info text for the user on how to remove a phone number using "How people find me" setting, (variable=SETTINGS_HOW_PEOPLE_FIND_ME) */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_REMOVE_PHONE_NUMBER_PARAGRAPH" = "Jos haluat muuttaa tapaa, jolla muut voivat etsiä sinut, siirry asetuksissa kohtaan %@ ja poista käytöstä mikä tahansa puhelinnumeroistasi.";
+
+/* Privacy policy button */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_LEARN_MORE_VIEW_PRIVACY_POLICY_BUTTON" = "Skypen tietosuojakäytäntö";
+
+/* Emergency disclaimer text */
+"SHORT_CIRCUIT_ADD_FRIENDS_ON_SKYPE_EMERGENCY_DISCLAIMER_LABEL" = "Muistathan, että Skypellä ei voi soittaa hätäpuheluita";
+
+/* Short Circuit notifications */
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_TITLE" = "Skype";
+"SHORT_CIRCUIT_PROMOTION_NOTIFICATION_CAPTION" = "Kavereiden etsiminen on nyt entistä helpompaa";
+"SHORT_CIRCUIT_FOUND_FRIENDS_NOTIFICATION_CAPTION" = "Uusia yhteyshenkilöitä on lisätty";
+
+/* Search people */
+"ADD_CONTACT_PICKER_TITLE" = "Lisää yhteyshenkilö";
+"ADD_CONTACT_PICKER_CANCEL_BUTTON" = "Kumoa";
+"ADD_CONTACT_PICKER_SEARCH_BAR_PLACEHOLDER" = "Hae";
+"ADD_CONTACT_PICKER_SEARCH_BAR_CANCEL_BUTTON_ACCESSIBILITY_LABEL" = "Kumoa";
+"ADD_CONTACT_PICKER_EMPTY_SCREEN_HINT" = "Etsi henkilöä Skypessä kirjoittamalla hänen Skype-nimensä, sähköpostiosoitteensa tai nimensä.";
+"ADD_CONTACT_PICKER_ALREADY_BUDDY" = "On jo Skype-yhteyshenkilö";
+"ADD_CONTACT_PICKER_NO_MATCHES_FOUND" = "Tuloksia ei löytynyt";
+
+/* In App Browser app bar capitons */
+"IN_APP_BROWSER_BACK_BUTTON_CAPITON" = "Takaisin";
+"IN_APP_BROWSER_FORWARD_BUTTON_CAPITON" = "Seuraava";
+"IN_APP_BROWSER_SHARE_ACCESSIBILITY_LABEL" = "Jaa";
+
+/* About Screen */
+"ABOUT_SCREEN_TITLE" = "Tietoja";
+"ABOUT_APPLICATION_VERSION" = "Skype-versio";
+"ABOUT_COPYRIGHT" = "© 2003–2016 Skype & Microsoft\nPatenttia haettu";
+"ABOUT_THIRD_PARTY_NOTICES" = "Kolmansien osapuolten ilmoitukset";
+"ABOUT_PRIVACY_POLICY" = "Tietosuojakäytäntö";
+"ABOUT_TERMS_OF_USE" = "Käyttöehdot";
+"ABOUT_COPYRIGHT_TEXT" = "Nimi Skype, siihen liittyvät tavaramerkit ja logot sekä S-logo ovat Skypen tai siihen sidoksissa olevien tahojen tavaramerkkejä.\n\nVaroitus: tätä ohjelmaa suojaavat tekijänoikeuslaki ja kansainväliset sopimukset. Tämän ohjelman tai sen jonkin osan luvaton kopiointi ja jakelu voi johtaa ankariin siviili- tai rikosoikeudellisiin rangaistuksiin, ja rikkomukset aiheuttavat syytteen nostamisen lain ankarimman kirjaimen mukaisesti.";
+
+"ALERTVIEW_GENERIC_ERROR_TITLE" = "Virhe";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL" = "Sähköpostilla";
+/* Accessibility label for the check box that says that you want emails about offers and new features (according to Apple's guidelines, labels should not end with a period) */
+"CREATE_ACCOUNT_SPAM_BY_EMAIL_ACCESSIBILITY_LABEL" = "Minulle saa lähettää tietoa Skypen tarjouksista ja ominaisuuksista sähköpostitse";
+
+/* Ask for marketing offers */
+"CREATE_ACCOUNT_SPAM_SECTION_TITLE" = "Ilmoittakaa minulle Skypen uusista tarjouksista ja ominaisuuksista.";
+
+
+/* Create account fields */
+"CREATEACCOUNT_ADD_PROFILE_PICTURE_LABEL" = "Lisää profiilikuva";
+"CREATEACCOUNT_EMAILADDRESS_LABEL" = "Sähköposti";
+"CREATEACCOUNT_EMAILADDRESS_PLACEHOLDER" = "juuso@esimerkki.fi";
+"CREATEACCOUNT_FULLNAME_LABEL" = "Koko nimi";
+"CREATEACCOUNT_FIRSTNAME_PLACEHOLDER" = "Etunimi";
+"CREATEACCOUNT_LASTNAME_PLACEHOLDER" = "Sukunimi";
+"CREATEACCOUNT_PASSWORD_LABEL" = "Salasana";
+"CREATEACCOUNT_PASSWORD_PLACEHOLDER" = "6–20 merkkiä";
+"CREATEACCOUNT_REPEAT_PASSWORD_PLACEHOLDER" = "Anna salasana uudelleen";
+"CREATEACCOUNT_SKYPENAME_LABEL" = "Skype-nimi";
+"CREATEACCOUNT_SKYPENAME_PLACEHOLDER" = "Pakollinen";
+"CREATEACCOUNT_PHONENUMBER_LABEL" = "Puhelinnumero";
+"CREATEACCOUNT_PHONENUMBER_PLACEHOLDER" = "ja maatunnus";
+
+"CREATEACCOUNT_BUTTON_DISABLED_HINT" = "Kaikkia yllä olevia kenttiä ei ole täytetty";
+
+
+/* Passwords do not match alert */
+"CREATEACCOUNT_PASSWORDMISMATCH_ALERT" = "Salasanat eivät täsmää, tarkista ja yritä uudelleen.";
+
+/* Terms and Conditions */
+"TERMSANDCONDITION_SKYPE_TERMS_TITLE" = "Skypen käyttöehdot";
+
+"TERMSANDCONDITION_EULA_READ_AND_ACCEPT_SKYPE_TERMS_LABEL" = "Kyllä, olen tutustunut <a href='%1$@'>Skypen käyttöehtoihin</a> ja <a href='%2$@'>Skypen tietosuojakäytäntöön</a> ja hyväksyn ne.";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_TITLE" = "Ei hätäpuheluja Skypellä";
+"TERMSANDCONDITION_NO_EMERGENCY_CALL_SUBTITLE" = "Skype ei korvaa perinteistä puhelinpalveluasi eikä sillä voi soittaa hätäpuheluita.";
+"TERMSANDCONDITION_ACCEPT_BUTTON_TITLE" = "Hyväksyn";
+
+/* Account property validation error */
+"SkyLib::TOO_SHORT" = "Pituuden on oltava 6–32 merkkiä.";
+"SkyLib::TOO_LONG" = "Pituuden on oltava 6–32 merkkiä.";
+"SkyLib::CONTAINS_INVALID_CHAR" = "Virheellinen merkki, esim. Σ, à, ß";
+"SkyLib::CONTAINS_SPACE" = "Välilyönti tai sarkain ei ole sallittu.";
+"SkyLib::SAME_AS_USERNAME" = "Liian samankaltainen kuin Skype-nimesi.";
+"SkyLib::INVALID_FORMAT" = "Virheellinen muoto.";
+"SkyLib::CONTAINS_INVALID_WORD" = "Liian helppo arvata, esim. abcd, skype.";
+"SkyLib::TOO_SIMPLE" = "Vähintään yksi kirjain ja yksi numero.";
+"SkyLib::STARTS_WITH_INVALID_CHAR" = "Täytyy alkaa kirjaimella (A–Z).";
+
+/* Account property validation error - NSLocalizedRecoverySuggestionErrorKey */
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_SKYPENAME" = "Kokeile uutta Skype-nimeä.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_ACCOUNT_PASSWORD" = "Koeta jotain toista salasanaa.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION_CONTACT_EMAILS" = "Koeta jotain toista sähköpostiosoitetta.";
+"SkyLib::VALIDATERESULT_RECOVERYSUGGESTION" = "Yritä uudelleen.";
+
+/*Account property validation error titles - NSLocalizedFailureReasonErrorKey [#HELLC-1021], [#WIN-364] */
+"SkyLib::CONTACT_SKYPENAME" = "Skype-nimi";
+"SkyLib::ACCOUNT_PASSWORD" = "Salasana";
+"SkyLib::CONTACT_EMAILS" = "Sähköposti";
+
+/* Change group chat metadata message; topic */
+"CHAT_METADATA_MESSAGE_TOPIC_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> antoi tämän ryhmän nimeksi %@";
+
+/* Change group chat metadata message; picture */
+/* Hub logo */
+"HUB_LOGO_ACCESSIBILITY_LABEL" = "Skypen koti";
+
+"CHAT_METADATA_MESSAGE_PICTURE_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> päivitti ryhmän kuvan.";
+
+/* Change group chat metadata message; unknown */
+
+"CHAT_METADATA_MESSAGE_UNKNOWN_CHANGE_ATTRIBUTED_SUMMARY" = "<name>%@</name> päivitti ryhmän";
+
+/* Hide dialpad during a call */
+"HIDE_DIALPAD_BUTTON" = "Piilota";
+
+/* Hub badge notification accessibility when there is more than one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_MANY_FORMAT" = "%d uutta ilmoitusta";
+/* Hub badge notification accessibility when there is one new notifiaction (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ONE_FORMAT" = "Yksi uusi ilmoitus";
+/* Hub badge notification accessibility when there are no new notifiactions (according to Apple's guidelines, labels should not end with a period) */
+"HUB_BADGEVIEW_ACCESSIBILITY_LABEL_ZERO_FORMAT" = "Ei uusia ilmoituksia";
+
+"CONTACT_REQUEST_DEFAULT_MESSAGE" = "Hei, haluaisin lisätä sinut Skype-yhteyshenkilöihini.";
+"CONTACT_REQUEST_MESSAGE_EDIT_TITLE" = "Yhteyspyyntö";
+
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a group chat.
+ The announcement has three parameters: "Author name", "Message text", "Conversation name".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?' in the chat 'Vacation Plans'"
+ and is probably clear enough for the user to understand where the message came from.
+ 
+ ---
+ 
+ Since the different parameters have different length and different importance AND since the message could be interupted (either by another message or by a user action) at any time, consider the order of the parameters (where the language permits doing so):
+ 
+ - "Author name" is often fairly short and resonably important
+ - "Message text" is the actual content (which makes it the most important part of information) but it could be a full paragraph of text.
+ - "Conversation name" is often fairly short but is only relevant if the author is in multiple group chats with the user.
+ 
+ For example, in the messages below the user can resonably figure out by the message what chat it belongs to and can then confirm their assumption after the full message has been read. Note that this difference is most notable when there are multiple messages recieved in the same chat.
+ 
+ Compare these two variations (same messages):
+ 
+ "David Rönnqvist: 'What will the weather be like?'. In 'Vacation Plans'"
+ "David Rönnqvist: 'I don't what clothes I should bring'. In 'Vacation Plans'"
+ "David Rönnqvist: 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'. In 'Vacation Plans'"
+ 
+ "David Rönnqvist in 'Vacation Plans': 'What will the weather be like?'"
+ "David Rönnqvist in 'Vacation Plans': 'I don't what clothes I should bring'"
+ "David Rönnqvist in 'Vacation Plans': 'Do you think that I need to bring a sweater if we leave the first week of August or will it still be warm enough?'"
+ 
+ In the second example, reading the conversation name before the message could end up being an annoyance, delaying the user from getting to the new message.
+ */
+"NEW_MESSAGE_IN_OTHER_GROUP_CHAT_ANNOUNCEMENT" = "%1$@: %2$@. Keskustelussa %3$@";
+
+/* This text is announced using VoiceOver when a new message is recieved (in the foreground) in chat that is currently not on screen, where the chat that the message originated from is a one to one chat.
+ The announcement has two parameters: "Author name" and "Message text".
+ 
+ ---
+ 
+ Since the message could potentially be announced frequently and distrupt the user, please make the string as concise as possible.
+ 
+ For example:
+ "David Rönnqvist: 'What will the weather be like?'"
+ is more concise than
+ "David Rönnqvist said 'What will the weather be like?'"
+ and is probably clear enough for the user to understand who the message was from.
+ */
+"NEW_MESSAGE_IN_OTHER_ONE_TO_ONE_CHAT_ANNOUNCEMENT" = "%1$@: %2$@";
+
+
+
+/* Toast Contact Request */
+"TOAST_CONTACT_REQUEST_MESSAGE" = "Haluaa lisätä sinut Skype-yhteyshenkilöihinsä";
+
+/* Onboarding */
+"DONTALLOW_BUTTON" = "Ei nyt";
+"ALLOW_BUTTON" = "Salli";
+"PERMISSION_VIEW_TITLE" = "Määritä asetukset";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää mikrofoniasi.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää kameraasi.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää yhteystietojasi.";
+"PERMISSION_VIEW_SUBTITLE_NOTIFICATIONS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää ilmoituksiasi.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää mikrofoniasi ja kameraasi.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää mikrofoniasi ja yhteystietojasi.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_NOTIFICATIONS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää mikrofoniasi ja ilmoituksiasi.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää kameraasi ja yhteystietojasi.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_NOTIFICATIONS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää kameraasi ja ilmoituksiasi.";
+"PERMISSION_VIEW_SUBTITLE_CONTACTS_AND_NOTIFICATIONS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää yhteystietojasi ja ilmoituksiasi.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää mikrofoniasi, kameraasi ja ilmoituksiasi.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CONTACTS_AND_NOTIFICATIONS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää mikrofoniasi, yhteystietojasi ja ilmoituksiasi.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_NOTIFICATIONS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää mikrofoniasi, kameraasi ja ilmoituksiasi.";
+"PERMISSION_VIEW_SUBTITLE_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää kameraasi, yhteystietojasi ja ilmoituksiasi.";
+"PERMISSION_VIEW_SUBTITLE_MICROPHONE_AND_CAMERA_AND_CONTACTS_AND_NOTIFICATIONS" = "Skypen paras mahdollinen käyttökokemus edellyttää, että järjestelmä voi käyttää mikrofoniasi, kameraasi, yhteystietojasi ja ilmoituksiasi.";
+
+"PERMISSIONS_VIEW_ITEM_CONTACTS" = "Yhteystiedot";
+"PERMISSIONS_VIEW_ITEM_MICROPHONE" = "Mikrofoni";
+"PERMISSIONS_VIEW_ITEM_CAMERA" = "Kamera";
+"PERMISSIONS_VIEW_ITEM_NOTIFICATIONS" = "Ilmoitukset";
+
+"PERMISSION_GENERAL_CONFIRMATION_TITLE" = "Oletko varma?";
+"PERMISSION_GENERAL_CONFIRMATION_MESSAGE" = "Ilman näitä ominaisuuksia et voi soittaa tai vastaanottaa puheluita kunnolla tai vastaanottaa ilmoituksia saapuvista puheluista tai viesteistä.";
+"PERMISSION_SPECIFIC_ADDRESSBOOK_CONFIRMATION_MESSAGE" = "Yhteystietoluettelosi ei ole käytettävissä, joten et voi soittaa tai vastaanottaa puheluita Skypessä.";
+
+/* Info text to Permissions learn more view to explain what it means to allow Skype to do contact matching */
+"PERMISSION_LEARN_MORE_VIEW_NAVBAR_TITLE" = "Lisätietoja";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_TITLE" = "Mikrofoni ja kamera";
+"PERMISSION_LEARN_MORE_VIEW_CAMERA_AND_MICROPHONE_PARAGRAPH" = "Puheluiden soittaminen ja vastaanottaminen edellyttää, että Skype voi käyttää mikrofoniasi ja kameraasi. Skype ei valitettavasti toimi ilman näitä käyttöoikeuksia.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_TITLE" = "Yhteystiedot";
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_FIRST_PARAGRAPH" = "Yhteystietoluettelon määrittäminen edellyttää, että Skype voi käyttää yhteystietojasi. Yhteystietosi tarkistetaan ajoittain, jotta löydät tuttujasi Skypessä. Emme kuitenkaan lähetä kavereillesi kutsuja.";
+
+/* Info text for the user on how to disable the "Automatically add friends" setting, (variable=SETTINGS_AUTOMATICALLY_ADD_FRIENDS_SWITCH_TITLE) */
+"PERMISSION_LEARN_MORE_VIEW_CONTACTS_SECOND_PARAGRAPH" = "Jos muutat mielesi, poista %@ käytöstä asetuksissa. Osoitteistoasi ei enää käytetä tuttujesi etsimiseen, ja voit itse lisätä henkilöitä manuaalisesti";
+
+/* Info text for the user to inform them about notifications shown when the application is backgrounded */
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_TITLE" = "Ilmoitukset";
+"PERMISSION_LEARN_MORE_VIEW_NOTIFICATIONS_PARAGRAPH" = "Saat ilmoituksia saapuvista puheluista ja viesteistä Skypen ollessa suljettuna, jos sallit ilmoitustoiminnon käytön. Voit myöhemmin tarvittaessa poistaa keskusteluilmoitukset käytöstä, jos et halua tulla häirityksi.";
+
+"CONTACTS_PERMISSION_DENIED_TITLE" = "Salli yhteystietojen käyttö";
+"CONTACTS_PERMISSION_DENIED_MESSAGE" = "Tuttujesi etsiminen edellyttää, että Skype voi käyttää yhteystietojasi. Siirry asetuksiin ja salli yhteystietojen käyttö.";
+
+/* Timeline onboarding */
+"ONBOARDING_SKIP_BUTTON" = "Ohita";
+"ONBOARDING_GET_CONNECTED_BUTTON" = "Pidä yhteyttä";
+"ONBOARDING_GET_STARTED_BUTTON" = "Aloita käyttö";
+
+"ONBOARDING_IPHONE_TITLE1" = "Suunniteltu uudelleen iPhonelle";
+"ONBOARDING_IPAD_TITLE1" = "Suunniteltu uudelleen iPadille";
+"ONBOARDING_TEXT1" = "Skypen käyttö on entistä helpompaa - lähetä viestejä kavereille tai soita puheluita.";
+
+"ONBOARDING_TITLE2" = "Etsi mitä tahansa";
+"ONBOARDING_TEXT2" = "Etsi henkilöitä, ryhmiä tai jopa aiempia keskusteluja.";
+
+"ONBOARDING_IPHONE_TITLE3" = "Tee enemmän";
+"ONBOARDING_IPAD_TITLE3" = "Tee enemmän Skypessä";
+
+"ONBOARDING_IPHONE_TEXT3" = "Jaa sijainti tai kuvia tai esikatsele verkkolinkkejä samalla, kun vaihdat kuulumisia kavereiden kanssa.";
+"ONBOARDING_IPAD_TEXT3" = "Käytä suurempiä hymiöitä, esikatsele verkkolinkkejä ja luo uusia ryhmiä suoraan iPadilla.";
+
+"ONBOARDING_TITLE4" = "Skype auttaa kavereiden etsimisessä";
+"ONBOARDING_TEXT4" = "Kun lisäät puhelinnumerosi Skypeen, kaverisi löytävät sinut helpommin.";
+
+/* Share extension onboarding */
+"SHARE_EXTENSION_ONBOARDING_HEADING" = "Jakamisesta on nyt tehty helppoa";
+"SHARE_EXTENSION_ONBOARDING_PARAGRAPH" = "Voit lähettää helposti verkkosivuja tai kuvia kameran kuvista Skype-kavereillesi napauttamalla Jaa-painiketta.";
+
+/* Add participant */
+"ADDPARTICIPANTSSCENE_TITLE" = "Lisää osallistujia";
+"ADDPARTICIPANTSSCENE_TITLE_TOKEN" = "Lisää:"; // Title for the field containing the list of users (tokens)
+"ALREADY_A_PARTICIPANT_CAPTION_TEXT" = "On jo osallistujissa";
+"ALREADY_A_PARTICIPANT_LIVE_CALL_CAPTION_TEXT" = "Puhelu on jo käynnissä";
+
+/* section header title for participants that are live in the call (speaking/listening) */
+"PARTICIPANT_LIST_SECTION_HEADER_ON_THIS_CALL" = "tässä puhelussa";
+
+/* section header title for participants that are not live in the call (offline, not joined yet etc.) */
+"PARTICIPANT_LIST_SECTION_HEADER_NOT_ON_THIS_CALL" = "ei tässä puhelussa";
+
+/* caption in the table cell for participants that are connecting into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_CONNECTING" = "Yhdistetään...";
+
+/* Accessbility label for the table cell for participants that are being rang into the ongoing call. e.g. "Connecting to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_CONNECTING_ACCESSIBILITY_LABEL" = "Yhdistetään: %@";
+
+/* caption in the table cell for participants that are being called into the ongoing call. */
+"PARTICIPANT_LIST_CAPTION_RINGING" = "Soitetaan...";
+
+/* Accessbility label for the table cell for participants that are being called into the ongoing call. e.g. "Calling to Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_RINGING_ACCESSIBILITY_LABEL" = "Soitetaan: %@";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD" = "Puhelu pidossa";
+
+/* caption in the table cell for participants that have put the live call on hold remotely or have been held locally. e.g. "Call on hold for Triin" (according to Apple's guidelines, labels should not end with a period) */
+"PARTICIPANT_LIST_CAPTION_ON_HOLD_ACCESSIBILITY_LABEL" = "Puhelu pidossa: %@";
+
+/* Favorites */
+"ADDFAVORITES_FOOTERLIST_BUTTON" = "Lisää suosikkeja";
+"ADDFAVORITES_EMPTY_TITLE" = "Pidä kaikki suosikkihenkilösi samassa paikassa, <a href=\"add-favorites\">lisää suosikkeja</a>.";
+
+/* Contact group filter */
+"CONTACT_GROUP_SKYPEFILTER_BUTTON" = "Skype-yhteystiedot";
+
+/* File sharing from legacy clients */
+
+/* This title normally holds the filename of a file transfer message. If for some reason we don't know the files involved, we fall back to this. */
+"FILE_TRANSFER_TITLE_FALLBACK" = "Tiedostonsiirto";
+/* Supplementary title. Main title holds a filename. "+ 1 other" */
+"FILENAME_PLUS_ONE_OTHER" = "+ yksi muu";
+/* Supplementary title. Main title holds a filename. + <x> others */
+"FILENAME_PLUS_MORE_OTHERS" = "+ %d muuta";
+/* File sent from another device */
+"FILE_SENT_FROM_ANOTHER_DEVICE" = "Tämä tiedosto on lähetetty toisesta laitteesta.";
+/* Files sent from another device */
+"FILES_SENT_FROM_ANOTHER_DEVICE" = "Nämä tiedostot on lähetetty toisesta laitteesta.";
+/* No support for receiving files for this version */
+"NO_SUPPORT_FOR_RECEIVING_FILES" = "Tämä Skype-versio ei tue tiedostojen vastaanottamista.";
+"NO_SUPPORT_FOR_RECEIVING_PHOTO" = "Tämä sovellus tukee vain Skypen uusia kuvanjakamistoimintoja.";
+
+// file transfer summaries in Recents
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILE" =  "Lähetit tiedoston";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_SENT_FILES" =  "Lähetit %d tiedostoa";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_FILE" =  "Lähetti sinulle tiedoston";
+"FILE_TRANSFER_RECENTS_SUMMARY_YOU_RECIEVED_SENT_FILES" =  "Lähetti %d tiedostoa";
+
+
+/* Contact availability */
+"CONTACT_AVAILABILITY_ONLINE" = "Online";
+"CONTACT_AVAILABILITY_DO_NOT_DISTURB" = "Älä häiritse";
+"CONTACT_AVAILABILITY_AWAY" = "Poissa";
+"CONTACT_AVAILABILITY_INVISIBLE" = "Huomaamaton";
+"CONTACT_AVAILABILITY_OFFLINE" = "Offline";
+
+/* Contact simplified availability */
+"CONTACT_AVAILABILITY_AVAILABLE" = "Tavoitettavissa";
+"CONTACT_AVAILABILITY_BUSY" = "Varattu";
+
+"PEOPLE_RICH_MOOD_MESSAGE_BLOCKED" = "Estetty";
+
+/* app bar item title when the contact isn't a favorite */
+"CONTACT_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Suosikki";
+
+/* app bar item title when the contact is a favorite */
+"CONTACT_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Suosikki";
+
+/* app bar item hint when the contact is a favorite */
+"CONTACT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Tämä henkilö on suosikki. Poista suosikeista kaksoisnapauttamalla.";
+
+/* app bar item hint when the contact isn't favorite */
+"CONTACT_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Tämä henkilö ei ole suosikki. Lisää suosikkeihin kaksoisnapauttamalla.";
+
+/* app bar item title when the group isn't a favorite */
+"GROUP_MAKE_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Suosikki";
+
+/* app bar item title when the group is a favorite */
+"GROUP_MAKE_NOT_FAVORITE_PROFILE_APPBAR_ITEM_TITLE" = "Suosikki";
+
+/* app bar item hint when the group isn't favorite */
+"GROUP_NOT_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Tämä ryhmä ei ole suosikeissa. Lisää suosikkeihin kaksoisnapauttamalla.";
+
+/* app bar item hint when the group is a favorite */
+"GROUP_MARKED_AS_FAVORITE_PROFILE_APPBAR_ITEM_HINT" = "Tämä ryhmä on suosikeissa. Poista suosikeista kaksoisnapauttamalla.";
+
+/* Contact Profile view location string formats */
+"CONTACT_CITY_AND_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@, %3$@";
+"CONTACT_COUNTRY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_TIMEZONE" = "%1$@, %2$@";
+"CONTACT_CITY_AND_COUNTRY" = "%1$@, %2$@";
+
+/* Contact Profile view row titles */
+"CONTACT_PROFILE_SKYPENAME_ROW_TITLE" = "SKYPE-NIMI";
+"CONTACT_PROFILE_WEBSITE_ROW_TITLE" = "VERKKOSIVUSTO";
+"CONTACT_PROFILE_ABOUT_ROW_TITLE" = "OMAT TIEDOT";
+"CONTACT_PROFILE_BIRTHDAY_ROW_TITLE" = "SYNTYMÄPÄIVÄ";
+"CONTACT_PROFILE_GENDER_ROW_TITLE" = "SUKUPUOLI";
+"CONTACT_PROFILE_LANGUAGE_ROW_TITLE" = "KIELI";
+"CONTACT_PROFILE_CONTACTS_ROW_TITLE" = "YHTEYSHENKILÖT";
+"CONTACT_PROFILE_CAPABILITIES_ROW_TITLE" = "OMINAISUUDET";
+"CONTACT_PROFILE_PRIVACY_ROW_TITLE" = "TIETOSUOJA";
+"CONTACT_PROFILE_CREATEDBY_ROW_TITLE" = "LUONUT";
+"CONTACT_PROFILE_DESCRIPTION_ROW_TITLE" = "KUVAUS";
+
+/* Bot profile values */
+"CONTACT_PROFILE_BOT_CAPABILITIES_VALUE" = "Lähettää ja vastaanottaa pikaviestejä ja valokuvia.";
+"CONTACT_PROFILE_BOT_PRIVACY_VALUE" = "Tämä botti voi käyttää näyttönimeäsi, Skype-nimeäsi ja sellaisia keskusteluviestejä tai sisältöjä, jotka sinä tai muut ryhmän osallistujat jaatte sen kanssa.";
+
+/* Man or woman contact profile value. */
+"CONTACT_PROFILE_FEMALE_GENDER_VALUE" = "Nainen";
+"CONTACT_PROFILE_MALE_GENDER_VALUE" = "Mies";
+
+/* Block and Unblock contact */
+"CONTACT_PROFILE_BLOCK_CONTACT_TITLE" = "Estä yhteyshenkilö";
+"CONTACT_PROFILE_UNBLOCK_CONTACT_TITLE" = "Poista yhteyshenkilön esto";
+
+/* Contact remove */
+"CONTACT_PROFILE_REMOVE_MENU_ITEM_TITLE" = "Poista yhteyshenkilö";
+"CONTACT_PROFILE_REMOVE_SHEET_TITLE" = "Poista yhteyshenkilö";
+"CONTACT_PROFILE_REMOVE_SHEET_SUBTITLE" = "%@ poistetaan yhteystiedoista.";
+"CONTACT_PROFILE_REMOVE_SHEET_REMOVE_BUTTON_TITLE" = "Poista";
+"CONTACT_PROFILE_REMOVE_SHEET_CANCEL_BUTTON_TITLE" = "Kumoa";
+
+"HIDECHAT_ALERT_POSITIVEACTION" = "Piilota";
+
+/* Group Profile */
+"GROUPPROFILE_TITLE" = "Ryhmän profiili";
+"GROUPPROFILE_NOTIFICATIONS" = "Ilmoitukset";
+"GROUPPROFILE_MENU_TITLE" = "Näytä profiili";
+"GROUPPROFILE_LEAVE_CHAT" = "Poistu ryhmästä";
+"GROUPPROFILE_PARTICIPANTS_TITLE" = "Osallistujat";
+"GROUPPROFILE_CHAT_INVITES_BUTTON" = "Kutsu";
+"GROUPPROFILE_CHAT_INVITES_TITLE" = "Keskustelukutsut";
+"GROUPPROFILE_CHAT_HISTORY_DESCRIPTION" = "Keskusteluhistoria näkyy kaikille";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_ADMIN" = "Kutsu keskusteluun osallistujia ottamalla käyttöön keskustelukutsut.";
+"GROUP_PARTICIPANT_CHAT_INVITES_OFF_PARTICIPANT" = "Vain Skype-yhteyshenkilöitä voi lisätä tähän keskusteluun.";
+"GROUP_PARTICIPANT_CHAT_INVITES_ON" = "Voit kutsua keskusteluun myös henkilöitä, jotka eivät ole Skypessä.";
+"GROUPPROFILE_CHAT_HISTORY" = "Keskusteluhistoria";
+"GROUPPROFILE_CHAT_HISTORY_OFF" = "Keskusteluhistoria on piilotettu uusilta osallistujilta.";
+"GROUPPROFILE_CHAT_HISTORY_ON" = "Kaikki näkevät keskusteluhistorian.";
+"GROUPPROFILE_ADD_PARTICIPANTS_TITLE" = "Lisää osallistujia";
+"GROUP_ADMIN_STRING" = "%@ (järjestelmänvalvoja)"; //Shows next to a contacts name in the list to designate the Admin of the group.
+"GROUPPROFILE_ALERT_TITLE" = "Keskustelukutsut";
+"GROUPPROFILE_ALERT_BODY" = "Tämän keskustelun kutsu ei ole tällä hetkellä käytettävissä. Yritä myöhemmin uudelleen.";
+"GROUPPROFILE_ALERT_BUTTON" = "OK";
+
+/* Invites */
+"INVITES_SOCIAL_APP" = "Liity keskusteluuni Skypessä: %@"; //%@ is for 35 character join link.
+"INVITES_MAIL_SUBJECT" = "Liity keskusteluuni";
+"INVITES_MAIL_BODY" = "Hei!\nOlen luonut Skype-ryhmän, jossa voimme keskustella, jakaa sisältöä ja tehdä yhteistyötä.\nLiity ryhmään napsauttamalla linkkiä:\n%@"; //%@ is for 35 character join link.
+
+/* Rename Group */
+"GROUPPROFILE_RENAMEGROUP_TITLE" = "Nimeä ryhmä uudelleen";
+"GROUPPROFILE_RENAMEGROUP_BUTTONTITLE" = "Nimeä ryhmä uudelleen";
+
+/* Rename Display Name */
+"CONTACT_PROFILE_RENAME_CONTACT_TITLE" = "Nimeä yhteystieto uudelleen";
+"CONTACT_PROFILE_RENAME_CONTACT_ACCESSIBILITY_HINT" = "Nimeä yhteystieto uudelleen kaksoisnapauttamalla";
+
+
+/* Contact profile contact request button titles*/
+"CONTACT_PROFILE_ADD_BOT" = "Lisää botti";
+"CONTACT_PROFILE_SEND_CONTACT_REQUEST" = "Lähetä yhteyspyyntö";
+"CONTACT_PROFILE_RESEND_CONTACT_REQUEST" = "Lähetä yhteyspyyntö uudelleen";
+"CONTACT_PROFILE_DID_SEND_CONTACT_REQUEST" = "Yhteyspyyntö lähetetty";
+"CONTACT_PROFILE_ACCEPT_CONTACT_REQUEST" = "Hyväksy";
+"CONTACT_PROFILE_DECLINE_CONTACT_REQUEST" = "Hylkää";
+"CONTACT_PROFILE_ACCEPT_DECLINE_HEADER" = "<name>%@</name> haluaisi lisätä sinut Skypeen"; // <name>Peter<name> would like to add you on Skype
+
+/* Interactive Notification Strings */
+"PUSH_CHAT_OPEN" = "Avaa";
+"PUSH_CHAT_CALL" = "Soita";
+"PUSH_CHAT_TEXT_REPLY" = "Vastaa";
+"PUSH_CALL_ANSWER" = "Vastaa";
+"PUSH_CALL_DECLINE" = "Hylkää";
+"PUSH_CALL_VIDEO_VIDEO" = "Video­";
+"PUSH_CALL_VIDEO_AUDIO" = "Ääni";
+"PUSH_MISSED_CALL_SENDMESSAGE" = "Viesti";
+"PUSH_MISSED_CALL_CALLBACK" = "Soita takaisin";
+
+/* Contact Types */
+"CONTACT_TYPE_MESSENGER" = "Messenger";
+
+/* Dialpad (timeline) */
+"DIALPAD_CORRUPTEDADDRESSBOOK_TITLE" = "Ongelma yhteystietojen käytössä";
+"DIALPAD_CORRUPTEDADDRESSBOOK_MESSAGE" = "Järjestelmä havaitsi virheen yritettäessä käyttää puhelinnumeroita yhteystiedoistasi. Siirry asetuksiin ja yritä synkronoida sähköpostitilit uudelleen.";
+"DIALPAD_RECENT_CALL_PHONE_NUMBER_WITH_LABEL" = "%@, %@";
+"DIALPAD_RECENT_CALLS_SAVE_NUMBER_ITEM_TITLE" = "Tallenna puhelinnumero";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are no (zero) matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ZERO" = "Ei vastaavia puheluita.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are one matching calls.
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_ONE" = "Yksi vastaava puhelu.";
+
+/*
+ An announcement that is made when a VoiceOver user types part of a phone number
+ in the dialpad and the number of phone numbers, (shown in the recent calls list)
+ that matches what the user has types so far, changes.
+ This variant is for when there are more than one matching calls (with the number).
+ This announcement could be made very frequently, so try and keep is concise.
+ */
+"DIALPAD_RECENT_CALLS_SEARCH_RESULTS_COUNT_CHANGED_ACCESSIBILITY_ANNOUNCEMENT_MANY" = "%d vastaavaa puhelua.";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "John Smith (+46 123 45 67) last called: Friday 11:36"
+ 
+ There are three parameters: Displayname, Phonenumber and Timestamp:
+ Displayname - Already formatted by Skylib.
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_WITH_CUSTOM_NAME_ACCESSIBILITY_LABEL" = "%1$@ (%2$@) viimeksi soitettu: %3$@";
+
+/*
+ The accessibility label for a recently called phone number in the list.
+ The entry in the recent calls list represent a phone number that have previously
+ been called and the time when it was last called.
+ For example: "+46 123 45 67, last called: Friday 11:36"
+ 
+ There are two parameters: Phonenumber and Timestamp:
+ Phonenumber - Already formatted string for the phonenumber, e.g. "+46 123 45 67" or "+1 (123) 466 789"
+ Timestamp   - Already localized (by iOS) label of the timestamp, e.g. "Just now", "6.30pm", "Friday" or "January 1, 1970".
+ */
+"DIALPAD_RECENT_CALLS_ACCESSIBILITY_LABEL" = "%1$@, soitettu viimeksi: %2$@";
+
+/* Short Circuit contact request */
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST" = "%@ on osoitteiston yhteyshenkilö.";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_CONTACT_REQUIRES_CONTACT_REQUEST_BUTTON" = "Yhdistä Skypeen";
+"SHORT_CIRCUIT_CONTACT_REQUEST_MESSAGE_AUTOBUDDIES" = "%@ on osoitteiston yhteyshenkilö. Voit soittaa ja keskustella hänen kanssaan Skypessä.";
+"SHORT_CIRCUIT_ADD_PARTICIPANT_CONTACT_NOT_YET_A_BUDDY" = "Ei vielä yhteyshenkilö Skypessä";
+
+/* Search bar */
+"SEARCH_BAR_CLEAR_TEXT_BUTTON_ACCESSIBILITY_LABEL" = "Tyhjennä teksti";
+"SEARCH_BAR_CANCEL_SEARCH_BUTTON_ACCESSIBILITY_LABEL" = "Peruuta";
+
+// placeholder text in the search field at the top of the Timeline and in the Search view
+"SEARCH_BAR_PLACEHOLDER_TIMELINE" = "Hae Skypestä";
+
+// text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE" = "Etsi uusia yhteyshenkilöitä";
+
+// alternative text for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_TAP_TO_SEARCH" = "Etsi uusia yhteyshenkilöitä napauttamalla";
+
+// caption for the cell that takes the user to Skype Directory Search
+"SEARCH_SKYPE_DIRECTORY_TIMELINE_CAPTION" = "Etsi käyttäjä %@";
+
+// text for the table view header when searching Skype Directory
+"SEARCH_SKYPE_DIRECTORY_HEADER_TITLE_TIMELINE" = "Skype-hakemisto";
+
+// text for the table view header when showing search history
+"SEARCH_HISTORY_HEADER_TITLE_TIMELINE" = "Hakuhistoria";
+
+// text for button to clear seach history
+"SEARCH_HISTORY_HEADER_BUTTON_TIMELINE" = "Tyhjennä";
+
+// header title for the contacts section in search results
+"SEARCH_CONTACTS_SECTION_HEADER_TITLE" = "Yhteystiedot";
+
+// this string is presented if there are no matches in contacts
+"SEARCH_CONTACTS_NO_MATCHES_SECTION_HEADER_TITLE" = "Tuloksia ei löytynyt";
+
+// header title for the groups conversations section in search results
+"SEARCH_GROUPS_SECTION_HEADER_TITLE" = "Ryhmät";
+
+// header title for the messages section in search results
+"SEARCH_MESSAGES_SECTION_HEADER_TITLE" = "Keskustelut";
+
+
+/* Save number */
+"SAVE_NUMBER_NUMBER_TITLE" = "Tallenna numero";
+"SAVE_NUMBER_RECENT_CELL_SAVE_BUTTON_ACCESSIBILITY_LABEL" = "Tallenna numero";
+"SAVE_NUMBER_NAME_FIELD_PLACEHOLDER" = "Kirjoita nimi";
+"SAVE_NUMBER_PHONE_FIELD_PLACEHOLDER" = "Kirjoita numero";
+"SAVE_NUMBER_SAVING_PHONE_NUMBER_LABEL" = "Tallennetaan numero";
+"SAVE_NUMBER_SAVED_PHONE_NUMBER_LABEL" = "Numero tallennettu";
+
+// alert when user entered too bad number to call, when validation process says NO to call it.
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_TITLE" = "Virheellinen numero";
+"SAVE_NUMBER_INVALID_NUMBER_ALERT_MESSAGE" = "Et voi lisätä tätä numeroa, koska se on virheellinen numero. Yritä toista numeroa.";
+
+// alert when user entered an emergency number
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_TITLE" = "Virheellinen numero";
+"SAVE_NUMBER_EMERGENCY_NUMBER_ALERT_MESSAGE" = "Et voi lisätä tätä numeroa Skypeen, koska se on hätänumero.";
+
+// discard button in error alerts. When it's pressed current bad number will be reverted to initial one (from which we started saving flow)
+"SAVE_NUMBER_ERROR_ALERT_DISCARD_CHANGE_BUTTON_TITLE" = "Hylkää";
+
+
+/* URL scheme handling call confirmation alert */
+/* Alert message before a call is started (with audio). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_CALL_MESSAGE" = "Haluatko varmasti soittaa henkilölle\n\n%@?";
+/* Alert message before a call is started (with video). Parameter will be replaced with one or more names and/or phone numbers. */
+"URL_ALERT_VIDEO_CALL_MESSAGE" = "Haluatko varmasti soittaa videopuhelun henkilölle\n\n%@?";
+/* Title of the alert to confirm and start the call (with audio). */
+"URL_ALERT_CALL_TITLE" = "Äänipuhelu";
+/* Title of the alert to confirm and start the call (with video). */
+"URL_ALERT_VIDEO_CALL_TITLE" = "Videopuhelu";
+/* Title of the button to confirm and start the call (video or audio call). */
+"URL_ALERT_CALL_BUTTON" = "Soita";
+
+
+/* Translation feature */
+/* Button label to show original message in translation */
+"TRANSLATION_CHAT_CELL_SEE_ORIGINAL_BUTTON_TITLE" = "Näytä alkuperäinen";
+/* Button label to show translated message in translation */
+"TRANSLATION_CHAT_CELL_SEE_TRANSLATION_BUTTON_TITLE" = "Näytä käännös";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_ORIGINAL_BUTTON_TITLE" = "Hide original";
+/* Button label to hide original message in translation */
+"TRANSLATION_CHAT_CELL_HIDE_TRANSLATION_BUTTON_TITLE" = "Hide translation";
+
+
+/* Location sharing */
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_SENT_LOCATION" =  "Jaoit sijainnin";
+"LOCATION_SHARING_RECENTS_SUMMARY_YOU_RECIEVED_LOCATION" =  "Jakoi sijainnin kanssasi";
+"LOCATION_SHARING_ACCESSIBILITY_LABEL" = "Jakoi sijainnin (%@)";
+"LOCATION_SHARING_ACCESSIBILITY_HINT" = "Avaa kaksoisnapauttamalla";
+"LOCATION_SHARING_BUTTON_DIRECTIONS_TO_LOCATION" = "Ohjeet sijaintiin";
+
+/* Button for starting location sharing. Standard version. */
+"LOCATION_SHARING_BUTTON" = "Sijainti";
+
+/* Button for starting a video message. Standard version. (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_BUTTON_ACCESSIBILITY_LABEL" = "Jaa oma sijainti";
+
+/* Text used in legacy messages if no address or point of interest is available */
+"LOCATION_SHARING_DEFAULT_LEGACY_TEXT" = "Lähetti sijainnin";
+
+/* Title for alert view when no permission to use location */
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREREASON" = "Sijaintitietojen käyttö";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILUREDESCRIPTION" = "Ilman sijaintitietojen käyttöoikeutta et voi jakaa sijaintiasi kavereillesi Skypen kautta.";
+"ERROR_LOCATIONPERMISSIONDENIED_FAILURERECOVERYSUGGESTION" = "Salli käyttö siirtymällä laitteesi asetuksiin ja valitsemalla Tietosuoja.";
+
+/* Title for alert view when no permission to access the users address book */
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREREASON" = "Yhteystietojen käyttö";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILUREDESCRIPTION" = "Sinun on myönnettävä Yhteystietojen käyttöoikeus, ennen kuin voimme näyttää osoitteistosi Skypessä.";
+"ERROR_CONTACTSPERMISSIONDENIED_ADDRESSBOOK_FAILURERECOVERYSUGGESTION" = "Salli käyttö siirtymällä laitteesi asetuksiin ja valitsemalla Tietosuoja.";
+
+
+/* Title for alert view when loading map */
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_TITLE" = "Voi ei";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_DESCRIPTION" = "Kartan lataamisessa tapahtui virhe.";
+"ERROR_LOCATION_SHARING_LOADING_MAP_FAILED_RECOVERYSUGGESTION" = "Tarkista verkkoyhteytesi ja yritä uudelleen.";
+
+/* A button that clears the map view */
+"LOCATION_SHARING_CLEAR_BUTTON_LABEL" = "Tyhjennä";
+/* Accessibility label for the clear button (that clears all added annotation pins from the mapview) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_CLEAR_BUTTON_ACCESSIBILITY_LABEL" = "Poista lisätyt nastat";
+
+/* The title of an error message the is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_TITLE" = "Sijainnin jakaminen";
+/* The body/message of an error message that is shown when a location can't be sent in the current chat. */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_BODY" = "Et voi enää jakaa sijaintiasi tässä keskustelussa.";
+/* A button that dismisses the alert view */
+"LOCATION_SHARING_CANNOT_SEND_ERROR_OK_BUTTON" = "OK";
+/* Accessibility label for the send button (that sends the current location as a message) (according to Apple's guidelines, labels should not end with a period) */
+"LOCATION_SHARING_SEND_BUTTON_ACCESSIBILITY_LABEL" = "Jaa sijainti";
+/* Shown in search bar when no user input exists */
+"LOCATION_SHARING_SEARCH_BAR_PLACEHOLDER" = "Etsi";
+/* Shown in alert view if search returns no results */
+"LOCATION_SHARING_SEARCH_RESULTS_NO_RESULTS" = "Tuloksia ei löytynyt";
+/* Shown in alert view if search returns an error that is different from no results */
+"LOCATION_SHARING_SEARCH_RESULTS_GENERIC_ERROR" = "Sijainnin etsimisessä tapahtui virhe. Odota hetki ja yritä sitten uudelleen.";
+
+
+/* Timeline */
+"TIMELINE_ICON_HOME" = "Aloitus";
+"TIMELINE_ICON_DIALPAD" = "Valintapaneeli";
+"TIMELINE_ICON_PEOPLE" = "Yhteystiedot";
+"TIMELINE_SWIPEACTION_MUTE" = "Vaimenna";
+"TIMELINE_SWIPEACTION_UNMUTE" = "Poista vaimennus";
+
+/* Notifications are disabled reminder view */
+/* Title of reminder view. */
+"NOTIFICATIONS_DISABLED_REMINDER_TITLE" = "Push-ilmoitukset";
+/* Message below title in reminder view (variant 1). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_1" = "Ota käyttöön push-ilmoitukset, niin saat ilmoituksen puheluista ja viesteistä, kun et ole Skypessä.";
+/* Message below title in reminder view (variant 2). */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2" = "Saat ilmoituksen puheluista ja viesteistä, kun et ole Skypessä, siirtymällä iPhonessa kohtaan Asetukset > Ilmoituskeskus ja ottamalla käyttöön Skypen ilmoitukset.";
+/* Accessbility label for NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2 */
+"NOTIFICATIONS_DISABLED_REMINDER_MESSAGE_2_ACCESSIBILITY_LABEL" = "Saat ilmoituksen puheluista ja viesteistä, kun et ole Skypessä, siirtymällä iPhonessa kohtaan Asetukset Ilmoitukset ja ottamalla käyttöön Skypen ilmoitukset.";
+
+
+/* Notifications enabled in app settings alert */
+/* Title of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_TITLE" = "Push-ilmoitukset";
+/* Message of alert when enabling notifications in app settings. */
+"NOTIFICATIONS_ENABLED_ALERT_MESSAGE" = "Skypen ilmoitukset on otettava käyttöön laitteen asetuksissa, ennen kuin voit vastaanottaa push-ilmoituksia.";
+
+/* Generic fallback XMM message */
+/* Verbs describing opening the message in the inapp web view */
+"GENERIC_FALLBACK_MESSAGE_VERB_OPEN" = "Avaa";
+"GENERIC_FALLBACK_MESSAGE_VERB_VIEW" = "Näytä";
+"GENERIC_FALLBACK_MESSAGE_VERB_LISTEN" = "Kuuntele";
+"GENERIC_FALLBACK_MESSAGE_VERB_PLAY" = "Toista";
+
+/* Generic fallback SSO backed web portal */
+"GENERIC_FALLBACK_WEB_PORTAL_UNABLE_TO_OPEN_PAGE" = "Virhe viestin avaamisessa. Tarkista verkkoyhteys ja yritä uudelleen.";
+
+/* Generic fallback recents message */
+"GENERIC_FALLBACK_RECENT_TEXT" = "Jakoi mediatiedoston";
+"GENERIC_FALLBACK_DOUBLE_TAP_TO_OPEN" = "Avaa kaksoisnapauttamalla";
+"GENERIC_FALLBACK_SOURCE_NOT_TRUSTED" = "Lähteeseen ei luoteta";
+
+/* Used as a type of activity in activities menu of the conversation view */
+"MEDIA_DOCUMENT_ACTIVITY_TYPE" = "Kuva";
+
+/* Button to open the camera application to take a new picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_TAKE_PHOTO" = "Ota kuva";
+
+/* Button to open the camera roll to choose a picture that will be sent as media document. */
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING" = "Valitse nykyinen valokuva";
+"CHAT_MEDIA_DOCUMENT_CHOOSE_EXISTING_PHOTO_OR_VIDEO" = "Valitse olemassa oleva kuva tai video";
+
+/* Title for cancel button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CANCEL" = "Kumoa";
+
+/* Title for choose button in review view of choosed photo from image picker */
+"IMAGE_PREVIEW_CHOOSE" = "Valitse";
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_BROWSER_IMAGE" = "sulje kaksoisnapauttamalla";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_IMAGE" = "lähetti kuvan. Avaa kaksoisnapauttamalla";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_DOWNLOADING" = "Vastaanotetaan kuvaa";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_UPLOADING" = "Lähetetään kuvaa";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SENDING_ERROR" = "Virhe kuvan lähettämisessä";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RECEIVING_ERROR" = "Virhe kuvan vastaanottamisessa";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_RETRY" = "yritä uudelleen kaksoisnapauttamalla";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_SEND" = "Lähetä";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_CANCEL" = "Kumoa";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SIZE_ERROR" = "Videota ei voi lähettää, koska se on yli %d Mt";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_PHOTO_SIZE_ERROR" = "Kuvaa ei voi lähettää, koska se on yli %d Mt";
+
+
+/* Accessibility strings for media messaging */
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO" = "Lähetti videoviestin. Avaa se kaksoisnapauttamalla";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_DOWNLOADING" = "Vastaanotetaan videoviestiä";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_UPLOADING" = "Lähetetään videoviestiä";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_SENDING_ERROR" = "Ongelma videoviestin lähettämisessä";
+"MEDIA_DOCUMENT_ACCESSIBILITY_LABEL_VIDEO_RECEIVING_ERROR" = "Ongelma videoviestin vastaanottamisessa";
+
+/* Accessibility strings for file sharing */
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_PREDOWNLOAD" = "Tiedosto lähetetty. Lataa kaksoisnapauttamalla";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOAD" = "Tiedosto vastaanotettu. Avaa kaksoisnapauttamalla";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADING" = "Ladataan";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_DOWNLOADED" = "%@ ladattu. Avaa kaksoisnapauttamalla";
+"FILE_TRANSFER_ACCESSIBILITY_LABEL_SIZE_WARNING" = "Tiedosto on yli %d Mt. Tiedonsiirtomaksuja voidaan veloittaa";
+
+/* Strings for file sharing */
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_EXPIRED" = "Tiedosto ei käytettävissä";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_RESTART" = "Käynnistä uudelleen";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED" = "Ongelma tiedoston vastaanottamisessa";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_UNSAFE" = "Tämä tiedosto on ehkä haitallinen";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_MALWARE" = "Ei voida ladata, havaittiin virus";
+"FILE_TRANSFER_LABEL_DOWNLOAD_FAILED_NO_INTERNET" = "Odotetaan internet-yhteyttä...";
+"FILE_TRANSFER_BUTTON_CANCEL" = "Peruuta";
+"FILE_TRANSFER_BUTTON_RETRY" = "Yritä uudelleen";
+"FILE_TRANSFER_LABEL_CANCELED" = "Peruutettu";
+"FILE_TRANSFER_LABEL_DOWNLOAD" = "Lataa";
+"FILE_TRANSFER_LABEL_LEARNMORE" = "Lisätietoja";
+"FILE_TRANSFER_LABEL_LEARNMORE_INFO" = "Jaetut tiedostot poistetaan Skypestä %d päivän kuluttua. Jos haluat säilyttää tiedoston pidempään, tallenna se laitteeseesi.";
+"FILE_TRANSFER_LABEL_LEARNMORE_EXPIRED" = "Tiedosto ei käytettävissä";
+"FILE_SENDING_LABEL_ERROR" = "Ongelma tiedoston lähettämisessä";
+
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_TITLE" = "Hyväksytäänkö tiedosto?";
+"FILE_TRANSFER_ACCEPT_SAFE_FILE_BODY" = "Hyväksy tiedostoja vain luotettavilta henkilöiltä. Haluatko hyväksyä tiedoston %@ henkilöltä %@?";
+
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_TITLE" = "Varoitus - tämä tiedosto voi olla haitaksi tietokoneellesi/laitteellesi";
+"FILE_TRANSFER_ACCEPT_UNSAFE_FILE_BODY" = "Haluatko hyväksyä tiedoston %@ henkilöltä %@?";
+
+"FILE_TRANSFER_ACCEPT_DONOT_ASK" = "Älä kysy uudelleen";
+"FILE_TRANSFER_ACCEPT" = "Hyväksy";
+
+/* Camera roll errors. That should be specified.*/
+
+/* No space to store photo. */
+"CAMERA_ROLL_NO_SPACE_ERROR_TITLE" = "Tila ei riitä";
+
+/* No space to store photo. Description how to fix. Presented in model alert view as message.*/
+"CAMERA_ROLL_NO_SPACE_ERROR_DESCRIPTION" = "Siirry kohtaan Asetukset > Yleiset > Käyttö ja vapauta tilaa laitteesta.";
+
+/* Access denied. Usually that means that User denied it manually once before. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_TITLE" = "Käyttäjä on estänyt sovellusta käyttämästä sisältöä";
+
+/* Acceess denied. Description how to fix. Presented in model alert view as message. */
+"CAMERA_ROLL_WRITE_ACCESS_USER_DENIED_ERROR_DESCRIPTION" = "Salli käyttö siirtymällä kohtaan Asetukset > Tietosuoja > Valokuvat ja ota Skype käyttöön.";
+
+/* Recents list */
+
+"RECENT_LIST_SENT_MEDIA_MESSAGE_SUMMARY" = "Sinä lähetit kuvan";
+"RECENT_LIST_RECEIVED_MEDIA_MESSAGE_SUMMARY" = "Lähetti sinulle kuvan";
+
+"MEDIA_DOCUMENT_LEGACY_TITLE" = "%@ lähetti kuvan.";
+"MEDIA_DOCUMENT_LEGACY_TEXT" =  "Tämä laite ei tue Skypen uusia kuvanjakamistoimintoja, mutta voit katsoa kuvan selaimessa täällä: %1";
+
+
+/* Alert view information that appears when photo downloading has been failed */
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TITLE" = "Kuva ei ole käytettävissä";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_TEXT" = "Kuva ei ole käytettävissä juuri nyt.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_CLOSE_BTN_TEXT" = "Kumoa";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_TEMPORARY_RETRY_BTN_TEXT" = "Yritä uudelleen";
+
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TITLE" = "Kuva ei ole käytettävissä";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_TEXT" = "Kuva ei ole käytettävissä juuri nyt.";
+"MEDIA_DOCUMENT_ORIGINAL_DOWNLOADING_FAILED_PERMANENTLY_CLOSE_BTN_TEXT" = "OK";
+
+/* save media document */
+"SAVE_PHOTO_PHOTO_BROWSER_SAVE_BUTTON" = "Tallenna kuva";
+"SAVE_PHOTO_PHOTO_BROWSER_CANCEL_BUTTON" = "Kumoa";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_TITLE" = "Virhe";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_MESSAGE" = "Virhe kuvan tallentamisessa.";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_RETRY_BUTTON" = "Yritä uudelleen";
+"SAVE_PHOTO_SAVING_ERROR_ALERT_CANCEL_BUTTON" = "Kumoa";
+
+"WEB_MEDIA_CHAT_PLUGIN_ACTIVITY_NAME" = "Verkkomedia";
+/* Search bar placeholder for Giphy search */
+"SEARCH_GIPHY_PLACEHOLDER" = "Giphy-haku";
+
+/* force upgrade */
+"FORCE_UPGRADE_TITLE" = "Päivitä Skype";
+"FORCE_UPGRADE_CAPTION" = "Skype-versiosi on vanhentunut. Hanki viimeisin versio, jotta saat käyttöösi uusimmat toiminnot ja parannukset.";
+"FORCE_UPGRADE_BUTTON_GET_IT_NOW" = "Hanki se nyt";
+
+/* Recent title (and in-app banner) for received moji message */
+"RECENT_LIST_RECEIVED_MOJI_SUMMARY" = "Lähetti sinulle Mojin";
+/* Recent title (and in-app banner) for sent moji message */
+"RECENT_LIST_SENT_MOJI_SUMMARY" = "Sinä lähetit Mojin";
+
+/* Accessibility label for a state when a moji is being downloaded (thumbnail or video) */
+"MOJI_DOWNLOADING_STATE_ACCESSIBILITY_LABEL" = "Ladataan Moji";
+/* Acc label for a case when we couldn't fetch either a thumbnail or a video */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_LABEL" = "Tämän Mojin latauksessa havaittiin ongelma";
+/* Acc hint for a retry button */
+"MOJI_FAILED_TO_DOWNLOAD_STATE_ACCESSIBILITY_HINT" = "Yritä uudelleen kaksoisnapauttamalla";
+/* Acc label for play button */
+"MOJI_PLAY_BUTTON_ACCESSIBILITY_LABEL" = "Toista Moji";
+/* Title for a state when moji was removed */
+"MOJI_CONTENT_HAS_BEEN_REMOVED_TITLE" = "Tämä sisältö on poistettu";
+/* Moji was expired. For example, license for Disney films was expired or it was a temporary Moji Pack */
+"MOJI_CONTENT_HAS_EXPIRED_TITLE" = "Tämä sisältö on vanhentunut";
+
+/* Displayed for a contact that has been offline for less than 2 minutes */
+"CONTACT_LAST_SEEN_MOMENTS_AGO" = "Viimeksi paikalla hetki sitten";
+/* Displayed for a contact that has been offline for more than 7 days */
+"CONTACT_LAST_SEEN_OVER_ONE_WEEK_AGO" = "Viimeksi paikalla yli viikko sitten";
+
+"CALL_OPTIONS_SKYPECALL" = "Skype";
+"CALL_OPTIONS_SKYPEOUTCALL" = "Puhelin";
+
+"TIMELINE_SEARCH_ONBOARD_TEXT" = "Löydä kaverit, viestit tai uudet yhteyshenkilöt hetkessä";
+
+/* Moji general accessibility label */
+"MOJI_GENERAL_ACCESSIBILITY_LABEL" = "Moji: %@";
+
+/* Moji promotion banner: the title of the banner */
+"MOJI_PROMOTION_BANNER_TITLE" = "Skypen Mojit";
+
+/* Moji promotion banner: the main text of the banner. This string paramemer is supposed to be a moji name, for instance, a name of a movie, cartoon, etc. For instance, "More Moji fun now with Despicable Me clips!" */
+"MOJI_PROMOTION_BANNER_TEXT" = "Pidä hauskaa Moji %@ -leikkeillä!";
+
+
+"SEARCH_BAR_ACCESSIBILITY_LABEL" = "Hakukenttä";
+
+"TAB_RECENT_TITLE" = "Äskettäin käytetyt";
+"TAB_CONTACTS_TITLE" = "Yhteystiedot";
+"TAB_CALLS_TITLE" = "Soita puhelimiin";
+"TAB_MYINFO_TITLE" = "Omat tiedot";
+
+"TIMELINE_SEGMENTED_CONTROL_ALL" = "Kaikki";
+"TIMELINE_SEGMENTED_CONTROL_UNREAD" = "Lukemattomat";
+
+"CONTACTS_SEGMENTED_CONTROL_ALL" = "Kaikki";
+"CONTACTS_SEGMENTED_CONTROL_ONLINE" = "Online";
+
+/* Ask for AppStore ratings panel */
+"APPSTORE_RATING_TITLE" = "Kiitos!";
+"APPSTORE_RATING_SUBTITLE" = "Anna palautetta ja arvioi sovellus App Storessa. Se vie vain hetken.";
+"APPSTORE_RATING_OPEN_APPSTORE_BUTTON_TITLE" = "Arvioi sovellus";
+
+"CONTACTS_ADD_FAVORITES" = "Lisää suosikkeihin";
+"SEARCH_BAR_PLACEHOLDER_CONTACTS" = "Etsi yhteystietoja";
+
+"CONNECTION_INDICATOR_NOINTERNETCONNECTION" = "Ei verkkoyhteyttä";
+"CONNECTION_INDICATOR_PRESENCEOFFLINE" = "Olet offline-tilassa. <a href=\"reconnect\">Yhdistä uudelleen</a>";
+"CONNECTION_INDICATOR_SERVICE_HAVING_PROBLEMS" = "Skype on havainnut ongelmia";
+"CONNECTION_INDICATOR_CONNECTING_TO_SERVICE" = "Yhdistetään";
+"CONNECTION_INDICATOR_CONNECTED_TO_SERVICE" = "Yhdistetty";
+"CONNECTION_INDICATOR_OUT_OF_SYNC" = "Päivitetään keskusteluja...";
+"CONNECTION_INDICATOR_TRANSLATOR_UNAVAILABLE" = "Translator is unavailable";
+
+
+/* Delete/Hide chat */
+"DELETECHAT_ALERT_TITLE"                = "Poista keskustelu";
+"DELETECHAT_ALERT_MESSAGE"              = "Haluatko varmasti poistaa tämän keskustelun tästä laitteesta? Toiminto poistaa myös keskusteluhistorian.";
+"DELETECHAT_ALERT_POSITIVEACTION"       = "Poista";
+
+/* Editing mode in recents */
+"LIST_EDITING_EDIT" = "Muokkaa";
+"LIST_EDITING_CANCEL" = "Kumoa";
+
+"LIST_EDITING_MARKALLASREAD_TOOLBAR" = "Merkitse luetuiksi";
+"LIST_EDITING_MARKASREAD_TOOLBAR" = "Merkitse luetuksi";
+
+"LIST_EDITING_DELETEALL_TOOLBAR" = "Poista kaikki";
+"LIST_EDITING_DELETE_TOOLBAR" = "Poista (%d)";
+
+"LIST_EDITING_DELETE_ALL_ALERT_TITLE" = "Poista kaikki keskustelut";
+"LIST_EDITING_DELETE_ALERT_ALL_POSITIVEACTION" = "Poista kaikki";
+"LIST_EDITING_HIDE_ALERT_ALL_POSITIVEACTION" = "Piilota kaikki";
+
+/* Here to be translate, but it should be moved to the watch loc file */
+"MEDIA_INPUT_SUGGESTION_1" = "Luen tämän myöhemmin";
+
+"NEW_CALL_MULTI_SELECT_TITLE" = "Uusi puhelu";
+
+/* The following are used in the following context: display name (on hold) - 00:00 */
+"CALLING_BANNER_STATUS_ONHOLD" = "pidossa";
+"CALLING_BANNER_STATUS_MUTED" = "vaimennettu";
+
+/* Agents */
+"AGENTS_MOOD_CERTIFIEDCONTACT" = "Skype-sertifioitu";
+
+/* 1:1 escalation to group call */
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_NAV_TITLE" = "Aloita uusi ryhmäpuhelu";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_TITLE" = "Uusi ryhmäpuhelu alkamassa";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_MESSAGE" = "Nykyinen puhelu päättyy (ilmoita asiasta muille) ja uusi ryhmäpuhelu alkaa";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_POSITIVE_ACTION" = "Puhelu";
+"ADD_PARTICIPANT_FLOW_FROMP2PTOGVC_ALERT_NEGATIVE_ACTION" = "Peruuta";
+
+/* Links between gvc (new) and 1:1 p2p (old) chats (DO NOT LOCALIZE LINK AND HREF BITS; only link content text) */
+"ADD_PARTICIPANT_FLOW_INLINE_NOTIFICATION" = "on luonut <a href=\"%@\">ryhmäkeskustelun.</a>";
+
+/* Holiday Video Filter */
+"HOLIDAY_VIDEO_FILTER_NAVBAR_ENTRY_POINT" = "Lähetä ystävänpäiväaiheinen videoviesti";
+
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_TITLE" = "Ystävänpäiväaiheinen videoviestit";
+"HOLIDAY_VIDEO_FILTER_INAPP_TOAST_CAPTION" = "Muista sinulle tärkeää henkilöä";
+
+"HOLIDAY_VIDEO_FILTER_OVERLAY_TITLE" = "Kerro, että välität";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_MESSAGE" = "Muista sinulle tärkeitä henkilöitä lähettämällä heille ystävänpäiväviesti.";
+"HOLIDAY_VIDEO_FILTER_OVERLAY_NOTNOW" = "Ei nyt";
+
+"HOLIDAY_VIDEO_FILTER_SEND_CONTACTS" = "Lähetä yhteyshenkilöille";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE" = "Jaa video";
+"HOLIDAY_VIDEO_FILTER_MESSAGE" = "Hyvää ystävänpäivää";
+// In case of small device size, split the string into two lines
+"HOLIDAY_VIDEO_FILTER_MESSAGE_TWOLINE" = "Hyvää\nystävänpäivää";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_BODY" = "Olen tallentanut sinulle ystävänpäiväaiheisen videoviestin. Voit luoda omasi osoitteessa https://go.skype.com/vmhci";
+"HOLIDAY_VIDEO_FILTER_SOCIAL_SHARE_SUBJECT" = "Ystävänpäiväviesti juuri sinulle...";
+
+/* In call controls captions */
+"INCALLCONTROLS_MUTE_CAPTION" = "Vaimenna";
+"INCALLCONTROLS_VIDEO_CAPTION" = "Video­";
+"INCALLCONTROLS_AUDIO_CAPTION" = "Kaiutin";
+"INCALLCONTROLS_ADD_CAPTION" = "Lisää";
+"INCALLCONTROLS_TRANSCRIPT_CAPTION" = "Translation";
+"INCALLCONTROLS_MORE_CAPTION" = "Valinnat";
+"INCALLCONTROLS_DIALPAD_CAPTION" = "Valintapaneeli";
+
+/* Accessibility label for the translation button in the call controls */
+"LIVECALL_TRANSCRIPT_BUTTON" = "Translations";
+
+/* Accessibility label for the more button in the call controls */
+"LIVECALL_MORE_BUTTON" = "Lisää toimintoja";
+"GVC_CALLING_ME_ON_RIBBON" = "Minä";
+
+"GVC_NOTIFICATION_HUNG_UP" = "%@ poistui";
+"GVC_NOTIFICATION_JOINED" = "%@ liittyi";
+ 
+"GVC_OVERLAY_BUBBLE_CREATE_NEW_GROUP" = "Luo ryhmä - nyt se on mahdollista myös ryhmävideopuheluissa.";
+"GVC_OVERLAY_BUBBLE_START_GROUP_VIDEO_CALL" = "Aloita ryhmävideopuhelu suoraan keskustelussa.";
+"GVC_OVERLAY_BUBBLE_TOGGLE_GRID_SWITCH" = "Kokeile vaihtaa näkymää.";
+"GVC_OVERLAY_BUBBLE_UNPIN_PERSON" = "Poista tämän henkilön kiinnitys napauttamalla uudelleen.";
+"GVC_OVERLAY_BUBBLE_ESCALATE_GVC" = "Tee tästä maksuton ryhmävideopuhelu.";
+"GVC_INTERSTITIAL_TITLE" = "Tutustu ryhmävideopuheluihin";
+"GVC_INTERSTITIAL_CAPTION" = "Kokoa kaikki yhteen milloin tahansa - maksutta.";
+"GVC_INTERSTITIAL_GOT_IT_BUTTON" = "Selvä";
+
+/*Translator Settings in conversation*/
+"TRANSLATOR_SETTINGS_TITLE" = "Translate";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_TITLE" = "Call translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_SPEECH" = "Outgoing calls";
+"TRANSLATOR_SETTINGS_SPEECH_SETTING_DISABLED_FOOTER" = "Selected language only supports message translation";
+
+"TRANSLATOR_SETTINGS_TEXT_SETTING_TITLE" = "Message translation";
+"TRANSLATOR_SETTINGS_TRANSLATE_TEXT" = "Outgoing messages";
+"TRANSLATOR_SETTINGS_SHOW_BOTH_LANGUAGES" = "Show both languages";
+
+"TRANSLATOR_SETTINGS_LANGUAGE_SETTING_TITLE" = "Language setting";
+"TRANSLATOR_SETTINGS_LOCAL_LANGUAGE" = "Translate from";
+"TRANSLATOR_SETTINGS_REMOTE_LANGUAGE" = "Translate to";
+
+"TRANSLATOR_SETTINGS_SPEECH_AND_TEXT_SUPPORTED_LANGUAGES_TITLE" = "Support both IM and calls";
+"TRANSLATOR_SETTINGS_TEXT_ONLY_SUPPORTED_LANGUAGES_TITLE" = "Support IM only";
+
+/* Accessibility hint to indicate to the user that on a double tap the contact is selected */
+"TRANSLATOR_SETTINGS_SELECT_LANGUAGE_ACCESSIBILITY_HINT" = "Double tap to select a language.";
+
+/* Option to start translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_TURNONTRANSLATOR" = "Turn on translation";
+/* Option to add participants to the outgoing call, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_ADDPARTICIPANTS" = "Lisää osallistujia";
+/* Option to mute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_MUTEAUDIO" = "Mute audio translation";
+/* Option to unmute the ingoing audio translator, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_UNMUTEAUDIO" = "Unmute audio translation";
+/* Option to hide the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_HIDESUBTITLE" = "Hide subtitle";
+/* Option to show the transcript subtitles, shown after have tapped the more (...) button during a call */
+"LIVECALL_MORE_OPTIONS_SHOWSUBTITLE" = "Show subtitle";
